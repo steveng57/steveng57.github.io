@@ -22,9 +22,3 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
-group :jekyll_plugins do
-  gem 'jekyll-feed', '~> 0.12'
-  gem 'jekyll-remote-theme'
-  gem 'jekyll-sitemap'
-  gem 'jekyll-seo-tag'
-end
