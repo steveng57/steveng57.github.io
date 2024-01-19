@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Introduction to Steve's Stuff
-date: 2024-01-08 17:56:00 +0800
+title: Bag Toss Game
+date: 2024-01-09 17:56:00 +0800
 categories: [Woodworking]
 updated: true
-tags: [Intro, Wood, Woodworking, Workbench, Assembly Table]
+tags: [Wood, Woodworking, Game, Outdoors]
 pin: true
-lastmod:  2024-01-18 19:20:00 +0800
 image: /assets/img/posts/20240118/20170127_010801.jpg
 ---
 
