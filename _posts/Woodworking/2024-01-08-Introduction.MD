@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Introduction to my Website
-date: 2024-01-08 17:56:00
+title: Introduction to Steve's Stuff
+date: 2024-01-08 17:56:00 +0800
 categories: [Woodworking]
-tags: [Intro, Wood, Woodworking, Workbench]
+updated: true
+tags: [Intro, Wood, Woodworking, Workbench, Assembly Table]
 pin: true
-lastmod:  2024-01-18 19:20:00 
+lastmod:  2024-01-18 19:20:00 +0800
 image: assets/img/posts/20240118/20170127_010801.jpg
 ---
 
