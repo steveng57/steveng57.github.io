@@ -6,7 +6,6 @@ categories: [Woodworking]
 updated: true
 tags: [Intro, Wood, Woodworking, Workbench, Assembly Table]
 pin: true
-lastmod:  2024-01-18 19:20:00 +0800
 image: /assets/img/posts/20240118/20170127_010801.jpg
 ---
 

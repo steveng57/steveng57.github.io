@@ -5,21 +5,22 @@ date: 2024-01-09 17:56:00 +0800
 categories: [Woodworking]
 updated: true
 tags: [Wood, Woodworking, Game, Outdoors]
-pin: true
-image: /assets/img/posts/20240118/20170127_010801.jpg
+image: /assets/img/posts/20240109/20170724_234953.jpg
 ---
 
 ## Introduction
 
-Welcome to my photo blog of various "maker" things I am up to, mostly wooodworking.  It will also contain a few other things, like life-hacks, yard and house projects and other maker things, but mostly woodworking.
+One of my first tricky projects was a bean bag toss game.  Fun around the pool in the back yard.  
 
-## Some Background
+## Background
 
-Around 8 or 9 years ago, I started to setup a workshop in the basement.  Retirement was around the corner, and my one of my fathers favorite wisdoms was to retire to something, not retire from something.  I had the Dewalt mitre saw from a while back, bought the Rigid table saw from the local Home Depot.  With the help of my buddy, I threw some pegboard on the wall.
+I hadn't done a whole lot of circles and curves with the router before.  This changed that in a hurry.  To make the curves on the outside rim, I had to make a really big jig, like six feet long that provided the proper radius.
 
-## The First Workbench
+## Mistakes Were Made
 
-Then, I decided to make my first workbench / assembly table.  I have become quite enamored with assembly tables as future posts will tell.
+While the face board was just your vanilla big-box-store plywood, the back boards were made of cedar.  My thinking at the time was that this choice would be a good one since these are outdoors and on the grass a lot.  The problem is that cedar is a very soft wood, and my screws were doing all kinds of wonky things, most problematically not staying were they should.
 
-![My First Workbench](assets/img/posts/20240118/20170202_151701.jpg)  
-My first workbench, shown here after the orange paint.
+Copious amounts of waterproof glue helped fix the situation.
+
+![Game Time](/assets/img/posts/20240109/20170724_234944.jpg)  
+The two Bag Toss Boards.  They were later painted candy-apple red.
