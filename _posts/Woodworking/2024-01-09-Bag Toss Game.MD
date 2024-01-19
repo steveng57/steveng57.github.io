@@ -3,7 +3,7 @@ layout: post
 title: Bag Toss Game
 date: 2024-01-09 17:56:00 +0800
 categories: [Woodworking]
-updated: true
+updated: 2024-01-18 17:56:00 +0800
 tags: [Wood, Woodworking, Game, Outdoors]
 image: /assets/img/posts/20240109/20170724_234953.jpg
 ---
