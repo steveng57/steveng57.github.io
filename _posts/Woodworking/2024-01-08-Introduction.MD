@@ -21,8 +21,8 @@ Around 8 or 9 years ago, I started to setup a workshop in the basement.  Retirem
 
 Then, I decided to make my first workbench / assembly table.  I have become quite enamored with assembly tables as future posts will tell.
 
-![My First Workbench][Orange Bench]  
-_My first workbench, shown here after the orange paint._
+![My First Workbench][Orange Bench]
+*My first workbench, shown here after the orange paint.*
 
 ## Materials
 
