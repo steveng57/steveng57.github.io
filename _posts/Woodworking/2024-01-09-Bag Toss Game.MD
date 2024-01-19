@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Bag Toss Game
+title: Bean Bag Toss Game
 date: 2024-01-09 17:56:00 +0800
 categories: [Woodworking]
 updated: 2024-01-18 17:56:00 +0800
 tags: [Wood, Woodworking, Game, Outdoors]
 image: 20170724_234953.jpg
-img_path: "/assets/img/posts/20240109"
+img_path: "/assets/img/posts/BeanBagTossGame"
 ---
 
 ## Introduction

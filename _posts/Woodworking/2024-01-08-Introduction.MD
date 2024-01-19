@@ -3,10 +3,11 @@ layout: post
 title: Introduction to Steve's Stuff
 date: 2024-01-08 17:56:00 +0800
 categories: [Woodworking]
-updated: 2024-01-17 17:56:00 +0800
 tags: [Intro, Wood, Woodworking, Workbench, Assembly Table]
+updated: 2024-01-17 17:56:00 +0800
 pin: true
-image: /assets/img/posts/20240118/20170127_010801.jpg
+image: 20170127_010801.jpg
+img_path: /assets/img/posts/Introduction
 ---
 
 ## Introduction
@@ -31,4 +32,4 @@ _My first workbench, shown here after the orange paint._
 - Kreg Clamp Track
 - Lee Valley Mobile Wheels
 
-[Orange Bench]: /assets/img/posts/20240118/20170202_151701.jpg
+[Orange Bench]: 20170202_151701.jpg
