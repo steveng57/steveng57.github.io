@@ -23,9 +23,9 @@ While the face board was just your vanilla big-box-store plywood, the back board
 Copious amounts of waterproof glue helped fix the situation.
 
 ![Game Time][Two Boards]
-_The two Bag Toss Boards.  They were later painted candy-apple red._
+_The two Bag Toss Boards were later painted candy-apple red._
 
-### Materials
+## Materials
 
 - Oak venear plywood from Home Depot
 - Cedar 2x4s
