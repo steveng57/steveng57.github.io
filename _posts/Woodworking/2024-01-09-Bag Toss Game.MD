@@ -24,3 +24,7 @@ Copious amounts of waterproof glue helped fix the situation.
 
 ![Game Time](/assets/img/posts/20240109/20170724_234944.jpg)  
 The two Bag Toss Boards.  They were later painted candy-apple red.
+
+### Materials
+- Oak venear plywood from Home Depot
+- Cedar 2x4s
