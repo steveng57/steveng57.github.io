@@ -12,7 +12,7 @@ image: /assets/img/posts/20240118/20170127_010801.jpg
 
 ## Introduction
 
-Welcome to my photo blog of various "maker" things I am up to, mostly wooodworking.  It will also contain a few other things, like life-hacks, yard and house projects and other maker things, but mostly woodworking.   
+Welcome to my photo blog of various "maker" things I am up to, mostly wooodworking.  It will also contain a few other things, like life-hacks, yard and house projects and other maker things, but mostly woodworking.
 
 ## Some Background
 
@@ -24,4 +24,3 @@ Then, I decided to make my first workbench / assembly table.  I have become quit
 
 ![My First Workbench](assets/img/posts/20240118/20170202_151701.jpg)  
 My first workbench after the orange paint.
-
