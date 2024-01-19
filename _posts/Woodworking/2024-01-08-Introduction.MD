@@ -3,7 +3,7 @@ layout: post
 title: Introduction to Steve's Stuff
 date: 2024-01-08 17:56:00 +0800
 categories: [Woodworking]
-updated: 2024-01-18 17:56:00 +0800
+updated: 2024-01-17 17:56:00 +0800
 tags: [Intro, Wood, Woodworking, Workbench, Assembly Table]
 pin: true
 image: /assets/img/posts/20240118/20170127_010801.jpg
