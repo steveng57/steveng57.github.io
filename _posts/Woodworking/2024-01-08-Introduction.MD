@@ -22,9 +22,10 @@ Around 8 or 9 years ago, I started to setup a workshop in the basement.  Retirem
 Then, I decided to make my first workbench / assembly table.  I have become quite enamored with assembly tables as future posts will tell.
 
 ![My First Workbench](/assets/img/posts/20240118/20170202_151701.jpg)  
-My first workbench, shown here after the orange paint.
+_My first workbench, shown here after the orange paint._
 
-### Materials
+## Materials
+
 - Standard Home Depot 2x4s
 - MDF
 - Kreg Clamp Track
