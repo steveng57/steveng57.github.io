@@ -22,6 +22,8 @@ While the face board was just your vanilla big-box-store plywood, the back board
 
 Copious amounts of waterproof glue helped fix the situation.
 
+Debbie stamped some dog paw prints on the final version which made it look really cool.  I will add a pic of that when the spring thaw comes and the back shed is a little more accessible.
+
 ![Game Time][Two Boards]
 _The two Bag Toss Boards were later painted candy-apple red._
 
