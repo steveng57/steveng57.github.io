@@ -16,7 +16,7 @@ Welcome to my photo blog of various "maker" things I am up to, mostly wooodworki
 
 ## Some Background
 
-Around 8 or 9 years ago, I started to setup a workshop in the basement.  Retirement was around the corner, and my one of my fathers favorite wisdoms was to retire to something, not retire from something.  I had the Dewalt mitre saw from a while back, bought the Rigid table saw from the local Home Depot.  With the help of my buddy, I threw some pegboard on the wall.
+Around 8 or 9 years ago, I started to setup a workshop in the basement.  Retirement was around the corner, and my one of my fathers favorite wisdoms was to _"retire to something, don't retire from something"_.  I had the Dewalt mitre saw from a while back, bought the Rigid table saw from the local Home Depot.  With the help of my buddy, I threw some pegboard on the wall.
 
 ## The First Workbench
 

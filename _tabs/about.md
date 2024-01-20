@@ -1,8 +1,7 @@
 ---
 # the default layout is 'page'
-icon: fas fa-info-circle
+icon: fas fa-user
 order: 4
 ---
-
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
+>Steven Goulet - generally a happy camper.
 {: .prompt-tip }
