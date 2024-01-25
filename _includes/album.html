@@ -3,7 +3,7 @@
     {% for image in site.static_files %}
         {% if image.path contains 'assets/img/posts' | where: "image", true %}
             <a href="{{ image.path }}" >
-                <img src="{{ image.path }}" title="{{image.path}}" />
+                <img src="{{ image.path }}" title="{{image.path}}" alt="{{ image.name }}" />
             </a>
         {% endif %}
     {% endfor %}
