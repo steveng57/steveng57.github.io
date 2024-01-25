@@ -196,15 +196,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-
-mini_magick:
-    photoFolders:
-        source: assets/img/posts
-        destination: assets/img/thumbnails
-        resize: "320x240^"
-        gravity: "center"
-        extent: "320x240"
-
-exiftag:
-  sources:
-    - assets/img/posts

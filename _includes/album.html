@@ -1,33 +1,11 @@
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha256-9SEPo+fwJFpMUet/KACSwO+Z/dKMReF9q4zFhU/fT9M=" crossorigin="anonymous" defer=""></script>
-<script src="https://cdn.jsdelivr.net/combine/npm/lightgallery@2/lightgallery.min.js,npm/lightgallery@2/plugins/thumbnail/lg-thumbnail.min.js,npm/lightgallery@2/plugins/video/lg-video.min.js,npm/shaka-player@3,npm/masonry-layout@4/dist/masonry.pkgd.min.js,npm/imagesloaded@5/imagesloaded.pkgd.min.js" defer=""></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2/css/lightgallery-bundle.min.css">
-
 <div id="{{include.albumname}}">
 
     {% for image in site.static_files %}
-        {% if image.path contains 'assets/img/posts' %}
-            <a href="{{ image.path }}" data-sub-html="{% exiftag image_description, , {{ image.path }} %}" >
-                <img src="{{ image.path }}" title="Image description" />
+        {% if image.path contains 'assets/img/posts' | where: "image", true %}
+            <a href="{{ image.path }}" >
+                <img src="{{ image.path }}" title="{{image.path}}" />
             </a>
         {% endif %}
     {% endfor %}
 
 </div>
-<script>
-window.addEventListener('DOMContentLoaded',() =>{ 
-        lightGallery(document.getElementById('{{include.albumname}}'), {
-            plugins: [lgVideo, lgThumbnail],
-            thumbnail: true,
-            animateThumb: true,
-            speed: 500
-        });
-        imagesLoaded(document.getElementById('{{include.albumname}}'), function() {
-            new Masonry( document.getElementById('{{include.albumname}}'), {
-                itemSelector: ".{{include.albumname}}_Item",
-                columnWidth: 320,
-                gutter: 5
-            });
-        });
-    });
-
-</script>
