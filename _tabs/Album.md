@@ -1,9 +1,6 @@
 ---
-# the default layout is 'page'
-icon: fas fa-user
+layout: default
+icon: fas fa-image
 order: 4
 ---
->Steven Goulet - generally a happy camper.
-{: .prompt-tip }
-
 {% include album.html albumname="myAlbumName" %}

@@ -1,10 +1,18 @@
 <div id="{{include.albumname}}">
-
+    {% assign lastpostname = '' %}
     {% for image in site.static_files %}
-        {% if image.path contains 'assets/img/posts' | where: "image", true %}
-            <a href="{{ image.path }}" >
-                <img src="{{ image.path }}" title="{{image.path}}" alt="{{ image.name }}" />
+        {% if image.path contains 'assets/img/posts' and image.path contains 'Thumbnails' | where: "image", true %}
+            {% assign postname = image.path | replace: '/Thumbnails', '' | replace: '/assets/img/posts','' | replace: image.name,'' | replace: '/','' %}
+            {% if lastpostname != postname%}
+                {% assign lastpostname = postname %}
+                <h2>{{ postname }}</h2>
+            {% endif %}
+            
+            {% assign redirect = '/posts/' | append: postname %}
+            <a href="{{ redirect }}" >
+                <img src="{{ image.path }}" title="{{ redirect }}" alt="{{ redirect }}" />
             </a>
+            <br><br>
         {% endif %}
     {% endfor %}
 
