@@ -1,5 +1,5 @@
 ---
 layout: archives
 icon: fas fa-calendar
-order: 3
+order: 2
 ---
