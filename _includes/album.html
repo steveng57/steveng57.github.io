@@ -26,7 +26,7 @@
             
             {% assign redirect = '/posts/' | append: postname %}
             <a href="{{ redirect }}">
-                <img src="{{ image.path }}" title="{{ redirect }}" alt="{{ redirect }}" />
+                <img data-src="{{ image.path }}" title="{{ redirect }}" alt="{{ redirect }}" />
             </a>
             <br><br>
         </div>
@@ -62,6 +62,33 @@
     var prevPageLinks = document.querySelectorAll('#prev-page-top, #prev-page-bottom');
     var nextPageLinks = document.querySelectorAll('#next-page-top, #next-page-bottom');
     var total_pages = parseInt(document.querySelector('#pagination-top').getAttribute('data-total-pages'));
+
+    var images = document.querySelectorAll('img[data-src]');
+    var config = {
+        rootMargin: '0px 0px 50px 0px',
+        threshold: 0
+    };
+
+    var imageObserver = new IntersectionObserver(function(entries, self) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                preloadImage(entry.target);
+                self.unobserve(entry.target);
+            }
+        });
+    }, config);
+
+    images.forEach(function(image) {
+        imageObserver.observe(image);
+    });
+
+    function preloadImage(img) {
+        const src = img.getAttribute('data-src');
+        if (!src) {
+            return;
+        }
+        img.src = src;
+    }
 
     function showPage(page) {
         pages.forEach(function(pageDiv) {
@@ -110,7 +137,6 @@
             if (currentPage < total_pages) showPage(currentPage + 1);
         });
     });
-
     showPage(currentPage);
 });
 </script>
