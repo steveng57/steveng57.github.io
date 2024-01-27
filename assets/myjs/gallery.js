@@ -51,10 +51,12 @@
             link.classList.remove('current-page');
         });
 
-        // Add the current-page class to the current page link
-        var currentPageLink = document.querySelector('.page-link[data-page="' + currentPage + '"]');
-        if (currentPageLink) {
-            currentPageLink.classList.add('current-page');
+        // Add the current-page class to the current page links
+        var currentPageLinks = document.querySelectorAll('.page-link[data-page="' + currentPage + '"]');
+        if (currentPageLinks) {
+            currentPageLinks.forEach(function(link) {
+                link.classList.add('current-page');
+            });
         }
     }
 
