@@ -88,28 +88,28 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     links.forEach(function(link) {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            var page = link.getAttribute('data-page');
-            if (page) {
-                showPage(page);
-            }
-        });
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var page = parseInt(link.getAttribute('data-page')); // Convert the page attribute to a number
+        if (page) {
+            showPage(page);
+        }
     });
+});
 
-    prevPageLinks.forEach(function(link) {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            if (currentPage > 1) showPage(currentPage - 1);
-        });
+prevPageLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (currentPage > 1) showPage(currentPage - 1);
     });
+});
 
-    nextPageLinks.forEach(function(link) {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            if (currentPage < total_pages) showPage(currentPage + 1);
-        });
+nextPageLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (currentPage < total_pages) showPage(currentPage + 1);
     });
+});
 
     showPage(currentPage);
 });
