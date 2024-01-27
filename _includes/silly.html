@@ -1,0 +1,56 @@
+{% assign templateImageFiles = site.static_files | where_exp: "item", "item.path contains 'Thumbnails'" %}
+{% assign imageFiles = templateImageFiles | where_exp: "item", "item.path contains 'assets/img/posts'" %}
+{% assign images_per_page = 5 %}
+{% assign total_pages = imageFiles.size | divided_by: images_per_page | plus: 1 %}
+{% assign lastpostname = '' %}
+
+<!-- Pagination links (top)-->
+<div id="pagination-top" data-total-pages="{{ total_pages }}">
+    <a href="#" class="page-link" id="prev-page-top"><i class="fas fa-chevron-left"></i></a>
+    {% for i in (1..total_pages) %}
+        <a href="#" class="page-link" data-page="{{ i }}">{{ i }}</a>
+    {% endfor %}
+    <a href="#" class="page-link" id="next-page-top"><i class="fas fa-chevron-right"></i></a>
+</div>
+
+<div id="{{ include.albumname }}">
+    {% for image in imageFiles %}
+        {% assign postname = image.path | replace: '/Thumbnails', '' | replace: '/assets/img/posts', '' | replace: image.name, '' | replace: '/', '' %}
+        {% assign page = forloop.index | divided_by: images_per_page | plus: 1 %}
+        
+        <div class="page" data-page="{{ page }}">
+            {% if lastpostname != postname %}
+                <h2>{{ postname }}</h2>
+                {% assign lastpostname = postname %}
+            {% endif %}
+            
+            {% assign redirect = '/posts/' | append: postname %}
+            <a href="{{ redirect }}">
+                <img data-src="{{ image.path }}"  src="" title="{{ redirect }}" alt="{{ redirect }}" />
+            </a>
+            <br><br>
+        </div>
+    {% endfor %}
+</div>
+
+<!-- Pagination links (bottom)-->
+<div id="pagination-bottom" data-total-pages="{{ total_pages }}">
+    <a href="#" class="page-link" id="prev-page-bottom"><i class="fas fa-chevron-left"></i></a>
+    {% for i in (1..total_pages) %}
+        <a href="#" class="page-link" data-page="{{ i }}">{{ i }}</a>
+    {% endfor %}
+    <a href="#" class="page-link" id="next-page-bottom"><i class="fas fa-chevron-right"></i></a>
+</div>
+
+<style>
+    #pagination-top, #pagination-bottom {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .current-page {
+        font-weight: bold;
+    }
+</style>
+<script type="text/javascript" src="/assets/myjs/silly.js"></script>
