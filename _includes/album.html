@@ -55,6 +55,7 @@
 </style>
 
 <script>
+document.addEventListener('DOMContentLoaded', function() {
     var pages = document.querySelectorAll('.page');
     var links = document.querySelectorAll('.page-link');
     var prevPageLinks = document.querySelectorAll('#prev-page-top, #prev-page-bottom');
@@ -111,4 +112,5 @@
     });
 
     showPage(currentPage);
+});
 </script>
