@@ -10,12 +10,20 @@ foreach ($subfolder in $subfolders) {
    Write-Output $subfolder.Name
 
    # Create a directory called Thumbnails in the subfolder
-   New-Item -Path "$($subfolder.FullName)\Thumbnails" -ItemType Directory -Force
+   $thumbnailsPath = "$($subfolder.FullName)\Thumbnails"
+   New-Item -Path $thumbnailsPath -ItemType Directory -Force
 
-   # Delete any files present in the Thumbnails directory
-   Remove-Item -Path "$($subfolder.FullName)\Thumbnails\*" -Force
-   
-   # Execute the Magick program in the Thumbnails directory with the specified parameters
-   Start-Process -FilePath "magick" -ArgumentList "mogrify -resize 50% -path $($subfolder.FullName)\Thumbnails *.jpg" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName 
-
+   # Loop through each image file in the subfolder
+   $imageFiles = Get-ChildItem -Path $subfolder.FullName -Filter "*.jpg" -File
+   foreach ($imageFile in $imageFiles) {
+      Write-Output "Source:" $imageFile.FullName
+      # Check if a thumbnail already exists
+      $thumbnailPath = Join-Path -Path $thumbnailsPath -ChildPath $imageFile.Name
+      Write-Output "Destination:" $thumbnailPath
+      if (-not (Test-Path -Path $thumbnailPath)) {
+         # Generate a new thumbnail using Magick
+         Write-Output "Convert command: " "convert $($imageFile.FullName) -resize 50% $thumbnailPath"
+         Start-Process -FilePath "magick" -ArgumentList "convert $($imageFile.FullName) -resize 50% $thumbnailPath" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName
+      }
+   }
 }

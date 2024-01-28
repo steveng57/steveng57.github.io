@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 {% assign templateImageFiles = site.static_files | where_exp: "item", "item.path contains 'Thumbnails'" %}
 {% assign imageFiles = templateImageFiles | where_exp: "item", "item.path contains 'assets/img/posts'" %}
 {% assign images_per_page = 5 %}
