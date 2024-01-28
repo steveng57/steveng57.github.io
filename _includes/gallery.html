@@ -1,19 +1,11 @@
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<script type="text/javascript" src="/assets/myjs/gallery.js"></script>
+
 {% assign templateImageFiles = site.static_files | where_exp: "item", "item.path contains 'Thumbnails'" %}
 {% assign imageFiles = templateImageFiles | where_exp: "item", "item.path contains 'assets/img/posts'" %}
 {% assign images_per_page = 5 %}
 {% assign total_pages = imageFiles.size | divided_by: images_per_page | plus: 1 %}
 {% assign lastpostname = '' %}
-
-<script type="text/javascript" src="/assets/myjs/gallery.js"></script>
-<script>   
-    function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }    
-</script>
 
 <!-- Pagination links (top)-->
 <div id="pagination-top" data-total-pages="{{ total_pages }}">
