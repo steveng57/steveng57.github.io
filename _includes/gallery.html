@@ -5,13 +5,23 @@
 {% assign total_pages = imageFiles.size | divided_by: images_per_page | plus: 1 %}
 {% assign lastpostname = '' %}
 
+<script type="text/javascript" src="/assets/myjs/gallery.js"></script>
+<script>   
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }    
+</script>
+
 <!-- Pagination links (top)-->
 <div id="pagination-top" data-total-pages="{{ total_pages }}">
-    <a href="#" class="page-link" id="prev-page-top"><i class="fas fa-chevron-left"></i></a>
+    <a href="#" class="page-link" id="prev-page-top" onclick="scrollToTop()"><i class="fas fa-chevron-left"></i></a>
     {% for i in (1..total_pages) %}
-        <a href="#" class="page-link" data-page="{{ i }}">{{ i }}</a>
+        <a href="#" class="page-link" data-page="{{ i }}" onclick="scrollToTop()">{{ i }}</a>
     {% endfor %}
-    <a href="#" class="page-link" id="next-page-top"><i class="fas fa-chevron-right"></i></a>
+    <a href="#" class="page-link" id="next-page-top" onclick="scrollToTop()"><i class="fas fa-chevron-right"></i></a>
 </div>
 
 <div id="{{ include.albumname }}">
@@ -36,22 +46,10 @@
 
 <!-- Pagination links (bottom)-->
 <div id="pagination-bottom" data-total-pages="{{ total_pages }}">
-    <a href="#" class="page-link" id="prev-page-bottom"><i class="fas fa-chevron-left"></i></a>
+    <a href="#" class="page-link" id="prev-page-bottom" onclick="scrollToTop()"><i class="fas fa-chevron-left"></i></a>
     {% for i in (1..total_pages) %}
-        <a href="#" class="page-link" data-page="{{ i }}">{{ i }}</a>
+        <a href="#" class="page-link" data-page="{{ i }}" onclick="scrollToTop()">{{ i }}</a>
     {% endfor %}
-    <a href="#" class="page-link" id="next-page-bottom"><i class="fas fa-chevron-right"></i></a>
+    <a href="#" class="page-link" id="next-page-bottom" onclick="scrollToTop()"><i class="fas fa-chevron-right"></i></a>
 </div>
 
-<style>
-    #pagination-top, #pagination-bottom {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .current-page {
-        font-weight: bold;
-    }
-</style>
-<script type="text/javascript" src="/assets/myjs/gallery.js"></script>

@@ -1,3 +1,13 @@
 img {
     border-radius: 10px;
 }
+
+#pagination-top, #pagination-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.current-page {
+    font-weight: bold;
+}
