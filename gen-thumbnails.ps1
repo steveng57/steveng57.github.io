@@ -14,7 +14,9 @@ foreach ($subfolder in $subfolders) {
    New-Item -Path $thumbnailsPath -ItemType Directory -Force
 
    # Loop through each image file in the subfolder
-   $imageFiles = Get-ChildItem -Path $subfolder.FullName -Filter "*.jpg" -File
+   $imageFiles = Get-ChildItem -Path $subfolder.FullName -Filter "*.jpeg" -File
+   $imageFiles += Get-ChildItem -Path $subfolder.FullName -Filter "*.jpg" -File
+   
    foreach ($imageFile in $imageFiles) {
       Write-Output "Source:" $imageFile.FullName
       # Check if a thumbnail already exists
