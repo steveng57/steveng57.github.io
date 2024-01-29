@@ -22,7 +22,8 @@
         {% assign page = forloop.index | divided_by: images_per_page | plus: 1 %}
         
         <div class="page" data-page="{{ page }}">
-            {% if lastpostname != postname %}
+            {% assign remainder = forloop.index | modulo: images_per_page %}
+            {% if lastpostname != postname or remainder == 0  %}
                 <h2>{{ postname }}</h2>
                 {% assign lastpostname = postname %}
             {% endif %}
