@@ -28,7 +28,7 @@
                 {% assign lastpostname = postname %}
             {% endif %}
             
-            {% assign redirect = '/posts/' | append: postname %}
+            {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
             <a href="{{ redirect }}">
                 <img data-src="{{ image.path }}"  src="" title="{{ redirect }}" alt="{{ redirect }}" />
             </a>
