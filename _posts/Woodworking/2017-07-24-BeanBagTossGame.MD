@@ -36,5 +36,7 @@ _The two Bag Toss Boards were later painted candy-apple red._
 
 - Oak venear plywood from Home Depot
 - Cedar 2x4s
+- Kreg pocket hole jig and screws
+- Custom built router large radius jig
 
 [Two Boards]: 20170724_234944.jpg
