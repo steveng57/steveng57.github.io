@@ -4,7 +4,10 @@ $folderPath = ".\assets\img\posts"
 # Get all the subfolders
 $subfolders = Get-ChildItem -Path $folderPath -Directory
 
-# Loop through each subfolder
+# Ask the user if existing thumbnails should be deleted
+$deleteExisting = Read-Host -Prompt "Should existing thumbnails be deleted? (yes/no)"
+
+# Loop through each subfo  lder
 foreach ($subfolder in $subfolders) {
    # Print the name of the subfolder
    Write-Output $subfolder.Name
@@ -12,6 +15,12 @@ foreach ($subfolder in $subfolders) {
    # Create a directory called Thumbnails in the subfolder
    $thumbnailsPath = "$($subfolder.FullName)\Thumbnails"
    New-Item -Path $thumbnailsPath -ItemType Directory -Force
+
+  # If the user chose to delete existing thumbnails, delete them
+  if ($deleteExisting -eq "yes") {
+    Get-ChildItem -Path $thumbnailsPath -File | Remove-Item -Force
+  }
+
 
    # Loop through each image file in the subfolder
    $imageFiles = Get-ChildItem -Path $subfolder.FullName -Filter "*.jpeg" -File
@@ -29,3 +38,4 @@ foreach ($subfolder in $subfolders) {
       }
    }
 }
+
