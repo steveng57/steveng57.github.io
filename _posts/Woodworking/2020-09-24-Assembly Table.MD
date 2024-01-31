@@ -5,7 +5,7 @@ date: 2020-09-24 17:58:00 +0800
 categories: [Woodworking]
 tags: [Wood, Woodworking, Assembly Table, Workbench]
 image: /Thumbnails/20201001_193728.jpg
-img_path: /assets/img/posts/AssemblyTable
+img_path: "/assets/img/posts/Assembly Table"
 ---
 
 ## Introduction
