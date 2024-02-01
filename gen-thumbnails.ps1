@@ -41,11 +41,11 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
       
       # Loop through each image file in the subfolder
       foreach ($imageFile in $imageFiles) {
-         Write-Output "Source:" $imageFile.FullName
          # Check if a thumbnail already exists
          $thumbnailPath = Join-Path -Path $thumbnailsPath -ChildPath $imageFile.Name
-         Write-Output "Destination:" $thumbnailPath
          if (-not (Test-Path -Path $thumbnailPath)) {
+            Write-Output "Source:" $imageFile.FullName
+            Write-Output "Destination:" $thumbnailPath
             # Generate a new thumbnail using Magick
             Write-Output "Convert command: " "convert $($imageFile.FullName) -resize 50% $thumbnailPath"
             Start-Process -FilePath "magick" -ArgumentList "convert `"$($imageFile.FullName)`" -resize 50% `"$thumbnailPath`"" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName

@@ -3,7 +3,7 @@ layout: post
 title: Shop Stands
 date: 2021-03-21 17:58:00 +0800
 categories: [Woodworking]
-tags: [Wood, Woodworking, Workbench, Drawers, Stand]
+tags: [Wood, Woodworking, Drawers, Stand, Plywood]
 image: /Thumbnails/20210321_210903.jpeg
 img_path: "/assets/img/posts/Shop Stands"
 ---
