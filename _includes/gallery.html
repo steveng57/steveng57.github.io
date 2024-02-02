@@ -4,7 +4,7 @@
 {% assign albumfolder = include.albumfolder %}
 {% assign templateImageFiles = site.static_files | where_exp: "item", "item.path contains 'Thumbnails'" %}
 {% assign imageFiles = templateImageFiles | where_exp: "item", "item.path contains albumfolder" %}
-{% assign images_per_page = 5 %}
+{% assign images_per_page = 7 %}
 {% assign total_pages = imageFiles.size | divided_by: images_per_page | plus: 1 %}
 {% assign lastpostname = '' %}
 
