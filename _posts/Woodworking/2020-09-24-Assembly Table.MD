@@ -40,8 +40,6 @@ The MDF top was yet another whole project.  The 4x8 sheet of MDF was used to cre
 ![Finished and Ready][Finished 2]
 _Ready to go_
 
-
-
 ## Materials
 
 - Aluminum - Lots and lots of it
