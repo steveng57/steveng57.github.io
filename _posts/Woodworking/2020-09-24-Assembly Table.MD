@@ -8,9 +8,7 @@ image: /Thumbnails/20201001_193728.jpeg
 img_path: "/assets/img/posts/Assembly Table"
 ---
 
-## Introduction
-
-I've always wanted a monster sized assembly table.  They are great to spread your project out and do all kinds of things from cuts, to glue-ups, to finishing.  While I love me previous assembly table, it was kinda small, only about 2.5 feet by 3.5 feet.  Projects just wouldn't fit on it, and it was always a worry that something, either a workpiece or my favorite tool, was going to fall off the end.  There is nothing like being able to spread yourself out and visualize your work, and do it with confidence. 
+I've always wanted a monster sized assembly table.  They are great to spread your project out and do all kinds of things from cuts, to glue-ups, to finishing.  While I love me previous assembly table, it was kinda small, only about 2.5 feet by 3.5 feet.  Projects just wouldn't fit on it, and it was always a worry that something, either a workpiece or my favorite tool, was going to fall off the end.  There is nothing like being able to spread yourself out and visualize your work, and do it with confidence.
 
 ## Background
 

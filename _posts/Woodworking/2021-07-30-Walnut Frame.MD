@@ -8,8 +8,6 @@ image: /Thumbnails/20210730_234747896_iOS.jpeg
 img_path: "/assets/img/posts/Walnut Frame"
 ---
 
-## Introduction
-
 "I've been framed!!!", said the yellow bird to the blue bird.  This one was pretty simple but it's one of the first things I did in walnut.  Beautiful wood to work with.  A little smelly, but I try not to inhale.
 
 ## Details

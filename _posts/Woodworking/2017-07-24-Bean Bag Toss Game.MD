@@ -8,8 +8,6 @@ image: /Thumbnails/20170724_234953.jpg
 img_path: "/assets/img/posts/Bean Bag Toss Game"
 ---
 
-## Introduction
-
 One of my first tricky projects was a bean bag toss game.  Fun around the pool in the back yard.  
 
 ## Getting to Work

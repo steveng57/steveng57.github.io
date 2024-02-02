@@ -9,8 +9,6 @@ image: /Thumbnails/20170127_010801.jpeg
 img_path: /assets/img/posts/Introduction
 ---
 
-## Introduction
-
 Welcome to my photo blog of various "maker" things I am up to, mostly wooodworking.  It will also contain a few other things, like life-hacks, yard and house projects and other maker things, but mostly woodworking.
 
 ## Some Background

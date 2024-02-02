@@ -8,8 +8,6 @@ image: /Thumbnails/IMG_0536.jpeg
 img_path: "/assets/img/posts/Boys Bench"
 ---
 
-## Introduction
-
 This is a strange one, and looking back on it, not one that I am all that proud of.  It was designed to be a general purpose bench to be placed near the dog-run door to attend to  many things pup-related.  That, and throw in a plant stand for good measure.  Lots of learning what NOT to do on this one.
 
 ## Details

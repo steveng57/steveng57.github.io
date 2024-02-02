@@ -8,8 +8,6 @@ image: /Thumbnails/20210827_212517.jpeg
 img_path: "/assets/img/posts/Vacuum Dolly"
 ---
 
-## Introduction
-
 Shop furniture is the best place to practice.  In this case it was practice with dowels, rods, and other round things.  
 
 ## Details

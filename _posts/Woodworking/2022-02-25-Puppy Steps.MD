@@ -8,13 +8,11 @@ image: /Thumbnails/20220225_091904.jpeg
 img_path: "/assets/img/posts/Puppy Steps"
 ---
 
-## Introduction
-
 This one was really simple, but a much needed project.  Just a box really, but a couple of steps to make life easier for Riley and Ozzie, jumping up on the daybed, or on the mudroom desk to get ready to go for a walk.
 
 ## Under Contruction
 
-This was the first time I attempted any engraving or detail work, note the paws on both steps.  The first one for the mudroom was done by hand and then painted.  The second one was done with my new [Shaper Origin].  Much more on this tool in coming posts, its one of my favorite things ever.
+This was the first time I attempted any engraving or detail work, note the paws on both steps.  The first paw prints for the mudroom were done freehand with a stencil and router and then painted.  The second set of prints was done with my new [Shaper Origin]{:target="_blank"}.  Much more on this tool in coming posts, its one of my favorite things ever.  In both cases, the prints were carved about 6mm deep.
 
 ![Step 1][Step 1]
 

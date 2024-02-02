@@ -8,8 +8,6 @@ image: /Thumbnails/20220114_114921.jpeg
 img_path: "/assets/img/posts/Theatre Kitchen"
 ---
 
-## Introduction
-
 This was a long project and my first shot at doing kitchen-style cabinetry.  We had some space at the back of our theatre room, and it seemed like a good use of the space to make this happen.  
 
 ## Under Contruction
