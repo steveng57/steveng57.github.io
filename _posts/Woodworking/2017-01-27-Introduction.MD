@@ -5,7 +5,7 @@ date: 2017-01-27 17:56:00 +0800
 categories: [Woodworking]
 tags: [Intro, Wood, Woodworking, Workbench, Assembly Table]
 pin: true
-image: /Thumbnails/20170127_010801.jpg
+image: /Thumbnails/20170127_010801.jpeg
 img_path: /assets/img/posts/Introduction
 ---
 
@@ -21,6 +21,8 @@ Around 8 or 9 years ago, I started to setup a workshop in the basement.  Retirem
 
 Then, I decided to make my first workbench / assembly table.  I have become quite enamored with assembly tables as future posts will tell.
 
+This one was fairly straightforward.  A whole lot of 2x4s from the big box store, pocket screws holding it all together.  I put some Kreg track on the top, the blue aluminum extrusion shown here, which one can use to clamp things down with.  Finished it off with some enamel orange paint and coated the 2x4s in a couple of coats of tung oil.
+
 ![My First Workbench][Orange Bench]
 _My first workbench, shown here after the orange paint._
 
@@ -30,5 +32,6 @@ _My first workbench, shown here after the orange paint._
 - MDF
 - Kreg Clamp Track
 - Lee Valley Mobile Wheels
+- Tung oil
 
-[Orange Bench]: 20170202_151701.jpg
+[Orange Bench]: 20170202_151701.jpeg
