@@ -4,7 +4,7 @@ title: Assembly Table
 date: 2020-09-24 17:58:00 +0800
 categories: [Woodworking]
 tags: [Wood, Woodworking, Assembly Table, Workbench]
-image: /Thumbnails/20201001_193728.jpg
+image: /Thumbnails/20201001_193728.jpeg
 img_path: "/assets/img/posts/Assembly Table"
 ---
 
@@ -48,7 +48,7 @@ _Ready to go_
 - MDF for the top
   
 [Vention]: https://Vention.io
-[Frame 1]: 20200908_213627.jpg
-[Frame 2]: 20200908_213651.jpg
-[Finished 1]: 20201001_193728.jpg
-[Finished 2]: 20201001_194851.jpg
+[Frame 1]: 20200908_213627.jpeg
+[Frame 2]: 20200908_213651.jpeg
+[Finished 1]: 20201001_193728.jpeg
+[Finished 2]: 20201001_194851.jpeg
