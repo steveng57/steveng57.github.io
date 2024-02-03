@@ -10,4 +10,8 @@ img {
 
 .current-page {
     font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }

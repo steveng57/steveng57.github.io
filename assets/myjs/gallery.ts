@@ -48,6 +48,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Remove the current-page class from all links
         links.forEach(function(link: Element) {
             link.classList.remove('current-page');
+            if (link.parentElement) {
+                link.parentElement.classList.remove('active');
+            }
         });
 
         // Add the current-page class to the current page links
@@ -55,6 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentPageLinks) {
             currentPageLinks.forEach(function(link: Element) {
                 link.classList.add('current-page');
+                if (link.parentElement) {
+                    link.parentElement.classList.add('active');
+                }
             });
         }
     }

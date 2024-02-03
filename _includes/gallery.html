@@ -10,11 +10,21 @@
 
 <!-- Pagination links (top)-->
 <div id="pagination-top" data-total-pages="{{ total_pages }}">
-    <a href="#" class="page-link" id="prev-page-top" onclick="scrollToTop()"><i class="fas fa-chevron-left"></i></a>
-    {% for i in (1..total_pages) %}
-        <a href="#" class="page-link" data-page="{{ i }}" onclick="scrollToTop()">{{ i }}</a>
-    {% endfor %}
-    <a href="#" class="page-link" id="next-page-top" onclick="scrollToTop()"><i class="fas fa-chevron-right"></i></a>
+    <nav aria-label="Page Navigation">
+        <ul class="pagination align-items-center mt-4 mb-0">
+            <li class="page-item">
+                <a href="#" class="page-link" id="prev-page-top" onclick="scrollToTop()"><i class="fas fa-angle-left"></i></a>
+            </li>
+            {% for i in (1..total_pages) %}
+                <li class="page-item">
+                    <a href="#" class="page-link" data-page="{{ i }}" onclick="scrollToTop()">{{ i }}</a>
+                </li>
+            {% endfor %}
+            <li class="page-item">
+                <a href="#" class="page-link" id="next-page-top" onclick="scrollToTop()"><i class="fas fa-angle-right"></i></a>
+            </li>
+        </ul>
+    </nav>
 </div>
 
 <div id="{{ include.albumname }}">
@@ -40,10 +50,19 @@
 
 <!-- Pagination links (bottom)-->
 <div id="pagination-bottom" data-total-pages="{{ total_pages }}">
-    <a href="#" class="page-link" id="prev-page-bottom" onclick="scrollToTop()"><i class="fas fa-chevron-left"></i></a>
-    {% for i in (1..total_pages) %}
-        <a href="#" class="page-link" data-page="{{ i }}" onclick="scrollToTop()">{{ i }}</a>
-    {% endfor %}
-    <a href="#" class="page-link" id="next-page-bottom" onclick="scrollToTop()"><i class="fas fa-chevron-right"></i></a>
+    <nav aria-label="Page Navigation">
+        <ul class="pagination align-items-center mt-4 mb-0">
+            <li class="page-item">
+                <a href="#" class="page-link" id="prev-page-bottom" onclick="scrollToTop()" aria-label="previous-page"><i class="fas fa-angle-left"></i></a>
+            </li>
+            {% for i in (1..total_pages) %}
+            <li class="page-item">
+                <a href="#" class="page-link" data-page="{{ i }}" onclick="scrollToTop()">{{ i }}</a>
+            </li> 
+            {% endfor %}
+            <li class="page-item">
+                <a href="#" class="page-link" id="next-page-bottom" onclick="scrollToTop()" aria-label="next-page"><i class="fas fa-angle-right"></i></a>
+            </li>
+        </ul>
+    </nav>
 </div>
-
