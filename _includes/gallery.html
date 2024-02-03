@@ -8,6 +8,7 @@
 {% assign total_pages = imageFiles.size | divided_by: images_per_page | plus: 1 %}
 {% assign lastpostname = '' %}
 
+{% if total_pages > 1 %}
 <!-- Pagination links (top)-->
 <div id="pagination-top" data-total-pages="{{ total_pages }}">
     <nav aria-label="Page Navigation">
@@ -26,6 +27,7 @@
         </ul>
     </nav>
 </div>
+{% endif %}
 
 <div id="{{ include.albumname }}">
     {% for image in imageFiles %}
@@ -48,6 +50,7 @@
     {% endfor %}
 </div>
 
+{% if total_pages > 1 %}
 <!-- Pagination links (bottom)-->
 <div id="pagination-bottom" data-total-pages="{{ total_pages }}">
     <nav aria-label="Page Navigation">
@@ -67,3 +70,4 @@
         </ul>
     </nav>
 </div>
+{% endif %}
