@@ -14,7 +14,7 @@ Ok, so the difference between a charcuterie board and a cutting board, is that a
 
 Take a bunch of sticks, glue them together in just the right order, then run them thru the planer to get a start on the smoothing process, then start sanding at 80 grit.  I wanted a smooth glossy look, so I sanded all the way to 600 grit.
 
-What makes these things look cool is the different woods, and the contrast between them.  It has walnut, maple, Sapele, Mahogany, and Padauk.  If you are really into the wood types, I have included a way too detailed description of each of them below.
+The thing that makes these look cool is the different woods, and the contrast between them.  It has walnut, maple, Sapele, Mahogany, and Padauk.  If you are really into the wood types, I have included a way too detailed description of each of them below.
 
 ![Making it work][Construction]
 _**Friendship Trays** one for Debbie and one for Theresa_
@@ -34,7 +34,5 @@ It was finished with a food safe product called Honeybees Natural Wood Cream, mo
 - **Padauk:** From Africa, the wood color can vary, ranging from a pale pinkish orange to a deep brownish red. Most pieces tend to start reddish orange when freshly cut, darkening substantially over time to a reddish/purplish brown (some lighter pieces age to a grayish brown).  
 Padauk has a very unique reddish orange coloration, and the wood is sometimes referred to by the name Vermillion. This dramatic color darkens to a beautiful deep red-brown. Padauk is moderately heavy, strong, and stiff, with exceptional stability. It’s a popular hardwood among hobbyist woodworkers because of its unique color and versatility.
 
-
-  
 [Construction]: 20220227_191600.jpeg
 [Production]: IMG_0547.jpeg
