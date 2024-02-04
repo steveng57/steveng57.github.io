@@ -3,7 +3,7 @@ layout: post
 title: Shop Projects
 date: 2023-04-05 18:32:00 +0800
 categories: [Woodworking]
-tags: [Wood, Woodworking, Workshop, Router, Table]
+tags: [Wood, Woodworking, Workshop, Router, Mitre Stand, Table]
 image: /Thumbnails/20230405_141755.jpeg
 img_path: "/assets/img/posts/Shop Projects"
 ---
