@@ -15,14 +15,17 @@ This table was specially made to fit into Debbie's craft area setup.  It of my o
 A big piece of 4x8 Baltic Birch plywood was used as the main surface.  If you've not worked with that material before, I highly recommend it.  It is nice stuff, super strong, made of 13 layers of wood instead of the 5 or 7 you get at the big box store.  Bought mine at [KJP]{:target="_blank"}, check it out!
 
 ![Under Construction 3][Under Construction 3]
+_Its a big table_
 
 To make it strong enough over that 4x8 span, it created a 'Torsion Box' using various scraps of other plywood that I had lying around from other projects.  It basically means that you put 3 to 4 inch strips running down the length and width of the plywood, which makes it incredibly strong.  The maple trim around the outside also helped with the structural integrity.
 
 ![Under Construction 2][Under Construction 2]
+_The torsion box supports_
 
 The legs worked well.  I was a little nervous about this design at the outset, but it turned out rock solid, with 12 screws on each leg securing it to the top.
 
 ![Under Construction 1][Under Construction 1]
+_Lots and lots of screws_
 
 ## In Play
 
