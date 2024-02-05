@@ -15,15 +15,17 @@ In late winter of 2023, I decided a workshop upgrade was due.  You can never hav
 I bought a couple or three pieces of plywood from [KJP Select Hardwoods]{:target="_blank"}, and fashioned up a sketchup drawing of the router table I was going to make, along with one for the mitre stand.
 
 ![Under Construction 3][Under Construction 3]
-_Router Table_
-
-![Under Construction 4][Under Construction 4]
-_Mitre Stand - 3 of these were strung together_
+_Router table drawing in Sketchup_
 
 The steel top on the new router table is awesome.  Nice level even cuts each and every time.
 
 ![Under Construction 2][Under Construction 2]
 _Router table with new steel top, and parts from Jessem_
+
+The mitre stand is basically a big cabinet box with a drawer.  I built three of them and strung them together.
+
+![Under Construction 4][Under Construction 4]
+_Mitre stand Sketchup drawing_
 
 ## In the Shop
 
