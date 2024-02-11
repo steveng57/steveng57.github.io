@@ -10,11 +10,21 @@ img_path: "/assets/img/posts/Serving Trays"
 
 So these were a bit tricky, in the sense that with the epoxy inlay in the tray bottom, suddenly decisions about which part to do first become important.  How do you assemble it, before or after the expoxy?  How do you finish it, before or after the epoxy?  Answers!  I demand answers.
 
-## Under Contruction
+## Flower Tray
 
+![Tray 1][Tray 1]
+_The Trees_
+
+## Tree Tray
+
+![Tray 2][Tray 2]
+_The Flowers_
 
 ## Materials
 
 - Poplar
 - Various coloured epoxies
 - Shaper Origin to carve the inlays
+
+[Tray 1]: 20230405_141951.jpeg
+[Tray 2]: 20230405_141946.jpeg
