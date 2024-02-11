@@ -12,12 +12,12 @@ So these were a bit tricky, in the sense that with the epoxy inlay in the tray b
 
 ## Flower Tray
 
-![Tray 1][Tray 1]
+![Tray 2][Tray 2]
 _The Trees_
 
 ## Tree Tray
 
-![Tray 2][Tray 2]
+![Tray 1][Tray 1]
 _The Flowers_
 
 ## Materials
