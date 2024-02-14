@@ -12,11 +12,11 @@ For my father's birthday, I made him this walnut cribbage board. He says it is w
 
 Almost half the work on this one was at the computer making sure the design was right.  I didn't do the entire layout, I spent about $20 for a design off of Etsy, then made a bunch of modifications using the online tools from [Shaper Hub]{:target="_blank"}.
 
-Lots of pictures on this one.  Hey, it was a lot of work.
-
 ![Board][Board]
 
 ## Under Contruction
+
+Lots of pictures on this one.  Hey, it was a lot of work.
 
 The sheer madness of trying to do 391 individual holes with the router, even a computerized one, is...well...madness.  
 
@@ -47,4 +47,4 @@ _At home and in use_
 [Board3]: 20230720_163338.jpeg
 [Board4]: 20230720_163408.jpeg
 [Board5]: IMG_0626.jpeg
-[Shaper Hub]: https://hub.shapertools.com/
+[Shaper Hub]: https://hub.shapertools.com
