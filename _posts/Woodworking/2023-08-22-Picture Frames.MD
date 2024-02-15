@@ -22,6 +22,8 @@ I used a new kind of paint on this one, mixing a couple of colours together to g
 ![Frame 3][Frame 3]
 _Making two is almost the same amount of work as one_
 
+I made these out of poplar, it's a lighter wood, but still strong enough.  Not as sappy as pine, and paints very well.  Less pricey than other woods, and if you are going to paint it anyway, might as well spend more on the paint and less on the wood.
+
 ![Frame 1][Frame 1]
 _Firmly mounted picture_
 
