@@ -3,7 +3,7 @@ layout: post
 title: Ozzie Dreams
 date: 2022-03-28 18:32:00 +0800
 categories: [Woodworking]
-tags: [Wood, Woodworking, Ozzie, Epoxy, Inlay]
+tags: [Wood, Woodworking, Ozzie, Epoxy, Inlay, Red Oak]
 image: /Thumbnails/20220328_071254.jpeg
 img_path: "/assets/img/posts/Ozzie Dreams"
 ---

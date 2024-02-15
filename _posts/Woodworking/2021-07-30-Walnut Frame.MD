@@ -3,7 +3,7 @@ layout: post
 title: Walnut Picture Frame
 date: 2021-07-30 18:32:00 +0800
 categories: [Woodworking]
-tags: [Wood, Woodworking, Picture Frame]
+tags: [Wood, Woodworking, Picture Frame, Walnut]
 image: /Thumbnails/20210730_234747896_iOS.jpeg
 img_path: "/assets/img/posts/Walnut Frame"
 ---

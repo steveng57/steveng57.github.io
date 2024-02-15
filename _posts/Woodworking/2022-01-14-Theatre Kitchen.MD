@@ -3,7 +3,7 @@ layout: post
 title: Theatre Kitchen
 date: 2022-01-14 18:32:00 +0800
 categories: [Woodworking]
-tags: [Wood, Woodworking, Plywood, Cabinets]
+tags: [Wood, Woodworking, Plywood, Cabinets, Red Oak]
 image: /Thumbnails/20220114_114921.jpeg
 img_path: "/assets/img/posts/Theatre Kitchen"
 ---

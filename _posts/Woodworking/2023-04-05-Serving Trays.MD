@@ -3,7 +3,7 @@ layout: post
 title: Serving Trays
 date: 2023-04-05 18:33:00 +0800
 categories: [Woodworking]
-tags: [Wood, Woodworking, Serving Tray, Tray]
+tags: [Wood, Woodworking, Serving Tray, Tray, Poplar]
 image: /Thumbnails/20230405_141951.jpeg
 img_path: "/assets/img/posts/Serving Trays"
 ---
