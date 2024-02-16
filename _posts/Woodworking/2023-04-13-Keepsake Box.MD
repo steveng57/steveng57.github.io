@@ -4,7 +4,7 @@ title: Keepsake Box
 date: 2023-04-13 18:32:00 +0800
 categories: [Woodworking]
 tags: [Wood, Woodworking, Keepsake Box, Walnut, Maple, Jewelry Box, Epxoy]
-image: /Thumbnails/IMG_0638.jpeg
+image: /Thumbnails/IMG_0639.jpeg
 img_path: "/assets/img/posts/Keepsake Box"
 ---
 
