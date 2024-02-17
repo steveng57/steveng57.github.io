@@ -31,7 +31,7 @@
 
 <div id="{{ include.albumname }}">
     {% for image in imageFiles %}
-        {% assign postname = image.path | replace: '/Thumbnails', '' | replace: albumfolder, '' | replace: image.name, '' | replace: '/', '' %}
+        {% assign postname = image.path | replace: '/Thumbnails', '' | replace: albumfolder, '' | replace: image.name, '' | replace: '/', '' | replace: '-', ' ' %}
         {% assign page = forloop.index0 | divided_by: images_per_page | plus: 1 %}
         
         <div class="page" data-page="{{ page }}">
