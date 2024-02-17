@@ -5,7 +5,7 @@ date: 2017-07-24 17:56:00 +0800
 categories: [Woodworking]
 tags: [Wood, Woodworking, Game, Outdoors, Plywood, Red Oak]
 image: /Thumbnails/20170724_234953.jpg
-img_path: "/assets/img/posts/Bean Bag Toss Game"
+img_path: "/assets/img/posts/Bean-Bag-Toss-Game"
 ---
 
 One of my first tricky projects was a bean bag toss game.  Fun around the pool in the back yard.  
