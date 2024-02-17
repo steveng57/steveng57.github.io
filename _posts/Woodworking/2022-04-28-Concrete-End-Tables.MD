@@ -5,7 +5,7 @@ date: 2022-04-28 18:32:00 +0800
 categories: [Woodworking]
 tags: [Wood, Woodworking, Concrete, Table, End Table, Red Oak]
 image: /Thumbnails/IMG_0553.jpeg
-img_path: "/assets/img/posts/Concrete End Tables"
+img_path: "/assets/img/posts/Concrete-End-Tables"
 ---
 
 I tried something very new with these concrete nested end tables.  It ended up in the right place, but it was a bit of a bear to get it there.  Working with concrete is _very_ different than working with wood.  That might sound obvious but it needs to be said.  And my artistic skill with the materials were novice at best.  Details below.

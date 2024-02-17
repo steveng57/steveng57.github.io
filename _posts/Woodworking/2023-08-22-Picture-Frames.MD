@@ -5,7 +5,7 @@ date: 2023-08-22 18:32:00 +0800
 categories: [Woodworking]
 tags: [Wood, Woodworking, Picture Frame, Poplar]
 image: /Thumbnails/20230822_191820.jpeg
-img_path: "/assets/img/posts/Picture Frames"
+img_path: "/assets/img/posts/Picture-Frames"
 ---
 
 These picture frames are sometimes called "Shadow Boxes" or "Shadow Frames".  They really add a lot to the artwork that they frame.  I have a bunch more to do, but these are a good start.  

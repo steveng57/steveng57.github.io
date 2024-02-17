@@ -5,7 +5,7 @@ date: 2023-02-04 18:32:00 +0800
 categories: [Woodworking]
 tags: [Wood, Woodworking, Table, Craft, Plywood, Maple]
 image: /Thumbnails/20230405_134555.jpeg
-img_path: "/assets/img/posts/Punkins Playground"
+img_path: "/assets/img/posts/Punkins-Playground"
 ---
 
 This table was specially made to fit into Debbie's craft area setup.  It of my own design, and turned out to be very sturdy even though its a 4ft by 8ft span.

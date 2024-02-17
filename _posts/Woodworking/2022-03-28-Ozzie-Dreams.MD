@@ -5,7 +5,7 @@ date: 2022-03-28 18:32:00 +0800
 categories: [Woodworking]
 tags: [Wood, Woodworking, Ozzie, Epoxy, Inlay, Red Oak]
 image: /Thumbnails/20220328_071254.jpeg
-img_path: "/assets/img/posts/Ozzie Dreams"
+img_path: "/assets/img/posts/Ozzie-Dreams"
 ---
 
 A true labour of love.  Our boy Ozzie needed a new place to sleep.  It seems he was never very content to stay in one place at night, so we thought we would make him a nice new comfy spot to be in.

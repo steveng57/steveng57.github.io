@@ -5,7 +5,7 @@ date: 2021-04-28 18:32:00 +0800
 categories: [Woodworking]
 tags: [Wood, Woodworking, Taper, Stand, Red Oak]
 image: /Thumbnails/20210428_181207.jpeg
-img_path: "/assets/img/posts/Plant Stands"
+img_path: "/assets/img/posts/Plant-Stands"
 ---
 
 Its always nice when you work on a piece that is going to be on display.  I also like mixing materials into my projects, and these ceramic pots were just the ticket.
