@@ -15,6 +15,8 @@ When I set out to do this, I hadn't really thought of the complications that are
 
 ## Under Contruction
 
+As seems to be my usual for mitres these days, I used the Festool domino to add strength to the mitre, and make it easy to glue-up.
+
 ![Tray 1][Tray 1]
 _Right side shot_
 
