@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Picture Frames
-date: 2023-08-22 18:32:00 +0800
+date: 2023-08-22 18:32:00 -0500
+last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Picture Frame, Poplar]
 image: /Thumbnails/20230822_191820.jpeg

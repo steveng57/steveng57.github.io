@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Plant Stands
-date: 2021-04-28 18:32:00 +0800
+date: 2021-04-28 18:32:00 -0500
+last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Taper, Stand, Red Oak]
 image: /Thumbnails/20210428_181207.jpeg

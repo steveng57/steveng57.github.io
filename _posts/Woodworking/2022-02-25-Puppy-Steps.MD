@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Puppy Steps
-date: 2022-02-25 18:32:00 +0800
+date: 2022-02-25 18:32:00 -0500
+last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Poplar, Bench]
 image: /Thumbnails/20220225_091904.jpeg

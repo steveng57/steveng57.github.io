@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Shop Projects
-date: 2023-04-05 18:32:00 +0800
+date: 2023-04-05 18:32:00 -0500
+last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Workshop, Router, Mitre Stand, Table, Plywood]
 image: /Thumbnails/20230405_141755.jpeg

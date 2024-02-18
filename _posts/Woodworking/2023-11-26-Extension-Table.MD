@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Extension Table
-date: 2023-11-26 18:32:00 +0800
+date: 2023-11-26 18:32:00 -0500
+last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Ash]
 image: /Thumbnails/IMG_0221.jpeg

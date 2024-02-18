@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Raised Beds
-date: 2022-06-28 18:32:00 +0800
+date: 2022-06-28 18:32:00 -0500
+last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Raised Bed, Garden, Cedar]
 image: /Thumbnails/20220628_125950.jpeg

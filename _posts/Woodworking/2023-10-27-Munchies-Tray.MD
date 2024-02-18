@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Munchies Tray
-date: 2023-10-27 18:32:00 +0800
+date: 2023-10-27 18:32:00 -0500
+last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Walnut, Tray, Epxoy, Inlay]
 image: /Thumbnails/IMG_0079.jpeg

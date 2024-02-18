@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Vacuum Dolly
-date: 2021-08-27 18:32:00 +0800
+date: 2021-08-27 18:32:00 -0500
+last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Workshop, Plywood]
 image: /Thumbnails/20210827_212517.jpeg

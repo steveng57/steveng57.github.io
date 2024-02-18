@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Boys Bench
-date: 2021-02-06 17:58:00 +0800
+date: 2021-02-06 17:58:00 -0500
+last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Bench, Drawers, Poplar]
 image: /Thumbnails/IMG_0536.jpeg

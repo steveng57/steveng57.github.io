@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Concrete Nested End Tables
-date: 2022-04-28 18:32:00 +0800
+date: 2022-04-28 18:32:00 -0500
+last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Concrete, Table, End Table, Red Oak]
 image: /Thumbnails/IMG_0553.jpeg

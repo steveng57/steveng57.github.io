@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Assembly Table
-date: 2020-09-24 17:58:00 +0800
+date: 2020-09-24 17:58:00 -0500
+last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Assembly Table, Workbench]
 image: /Thumbnails/20201001_193728.jpeg
