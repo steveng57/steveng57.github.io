@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Introduction to Steve's Stuff
+title: First Workbench
 date: 2017-01-27 17:56:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Intro, Wood, Woodworking, Workbench, Assembly Table]
-pin: true
+pin: false
 image: /Thumbnails/20170127_010801.jpeg
-img_path: /assets/img/posts/Introduction
+img_path: /assets/img/posts/First-Workbench
 ---
 
-Welcome to my photo blog of various "maker" things I am up to, mostly wooodworking.  It will also contain a few other things, like life-hacks, yard and house projects and other maker things, but mostly woodworking.
+Every shop needs a workbench, and there is a first for everything.  This is the first workbench I built in this shop.
 
 ## Some Background
 
-Around 8 or 9 years ago, I started to setup a workshop in the basement.  Retirement was around the corner, and my one of my fathers favorite wisdoms was to _"retire to something, don't retire from something"_.  I had the Dewalt mitre saw from a while back, bought the Rigid table saw from the local Home Depot.  With the help of my buddy, I threw some pegboard on the wall.
+In setting up my workshop, I had the Dewalt mitre saw from a while back, bought the Rigid table saw from the local Home Depot.  With the help of my buddy, I threw some pegboard on the wall.
 
 ## The First Workbench
 
