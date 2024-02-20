@@ -27,7 +27,7 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
       Write-Output $subfolder.Name
 
       # Create a directory called Thumbnails in the subfolder
-      $thumbnailsPath = "$($subfolder.FullName)\Thumbnails"
+      $thumbnailsPath = "$($subfolder.FullName)\thumbnails"
       $null = New-Item -Path $thumbnailsPath -ItemType Directory -Force
 
       # If the user chose to delete existing thumbnails, delete them
