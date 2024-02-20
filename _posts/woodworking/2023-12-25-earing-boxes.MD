@@ -41,11 +41,6 @@ All filled with all kinds of earings.  Looks like I might have to make more!
 ![Boxes 5][Boxes 5]
 _Earings in place_
 
-Here they are in their new home.  
-
-![Boxes 6][Boxes 6]
-_This is a nice place_
-
 ## Materials
 
 - Walnut
@@ -58,6 +53,5 @@ _This is a nice place_
 [Boxes 3]: IMG_0466.jpeg
 [Boxes 4]: IMG_0467.jpeg
 [Boxes 5]: earing-box-01.jpeg
-[Boxes 6]: earing-box-02.jpeg
 
 [Shaper Origin]: https://www.shapertools.com/en-ca
