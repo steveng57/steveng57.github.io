@@ -5,8 +5,8 @@ date: 2021-08-27 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Workshop, Plywood]
-image: /Thumbnails/20210827_212517.jpeg
-img_path: "/assets/img/posts/Vacuum-Dolly"
+image: /thumbnails/20210827_212517.jpeg
+img_path: "/assets/img/posts/vacuum-dolly"
 ---
 
 Shop furniture is the best place to practice.  In this case it was practice with dowels, rods, and other round things.  

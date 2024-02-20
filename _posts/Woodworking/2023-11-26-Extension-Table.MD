@@ -5,8 +5,8 @@ date: 2023-11-26 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Ash]
-image: /Thumbnails/IMG_0221.jpeg
-img_path: "/assets/img/posts/Extension-Table"
+image: /thumbnails/IMG_0221.jpeg
+img_path: "/assets/img/posts/extension-table"
 ---
 
 This was my first project using Ash.  Its a very nice hardwood, similar to Red Oak but with a little less grain, but not totally closed pores.  

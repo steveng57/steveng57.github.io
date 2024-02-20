@@ -5,8 +5,8 @@ date: 2022-02-25 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Poplar, Bench]
-image: /Thumbnails/20220225_091904.jpeg
-img_path: "/assets/img/posts/Puppy-Steps"
+image: /thumbnails/20220225_091904.jpeg
+img_path: "/assets/img/posts/puppy-steps"
 ---
 
 This one was really simple, but a much needed project.  Just a box really, but a couple of steps to make life easier for Riley and Ozzie, jumping up on the daybed, or on the mudroom desk to get ready to go for a walk.

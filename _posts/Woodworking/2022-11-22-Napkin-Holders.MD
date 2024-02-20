@@ -5,8 +5,8 @@ date: 2022-11-22 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Napkin Holder, Kitchen, Walnut]
-image: /Thumbnails/20221122_113942.jpeg
-img_path: "/assets/img/posts/Napkin-Holders"
+image: /thumbnails/20221122_113942.jpeg
+img_path: "/assets/img/posts/napkin-holders"
 ---
 
 The napkin holder projects are among my favorites.  Making these is a small challenge, it makes you work at it, but not too hard.

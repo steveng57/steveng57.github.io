@@ -5,8 +5,8 @@ date: 2021-03-21 17:58:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Drawers, Stand, Plywood, Workshop]
-image: /Thumbnails/20210321_210903.jpeg
-img_path: "/assets/img/posts/Shop-Stands"
+image: /thumbnails/20210321_210903.jpeg
+img_path: "/assets/img/posts/shop-stands"
 ---
 
 There really is no more fun a project than a shop project.  Doing shop stuff is perfect for practicing your craft, honing your skills.  And best of all, if you make a mistake, noone will ever ever notice.  Except you of course, where the mistake will be staring at you from across the room, taunting you, snickering, slowly driving you crazy until you are forced to fix it.  Ask me how I know.

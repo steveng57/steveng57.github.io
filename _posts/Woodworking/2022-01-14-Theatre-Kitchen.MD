@@ -5,8 +5,8 @@ date: 2022-01-14 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Plywood, Cabinets, Red Oak]
-image: /Thumbnails/20220114_114921.jpeg
-img_path: "/assets/img/posts/Theatre-Kitchen"
+image: /thumbnails/20220114_114921.jpeg
+img_path: "/assets/img/posts/theatre-kitchen"
 ---
 
 This was a long project and my first shot at doing kitchen-style cabinetry.  We had some space at the back of our theatre room, and it seemed like a good use of the space to make this happen.  

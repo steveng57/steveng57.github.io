@@ -5,8 +5,8 @@ date: 2023-07-20 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Router, Cribbage Board, Sharper Origin, Walnut]
-image: /Thumbnails/IMG_0626.jpeg
-img_path: "/assets/img/posts/Cribbage-Board"
+image: /thumbnails/IMG_0626.jpeg
+img_path: "/assets/img/posts/cribbage-board"
 ---
 
 For my father's birthday, I made him this walnut cribbage board. He says it is working well and that it keeps very good score.

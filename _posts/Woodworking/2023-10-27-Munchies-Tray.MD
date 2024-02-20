@@ -5,8 +5,8 @@ date: 2023-10-27 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Walnut, Tray, Epxoy, Inlay]
-image: /Thumbnails/IMG_0079.jpeg
-img_path: "/assets/img/posts/Munchies-Tray"
+image: /thumbnails/IMG_0079.jpeg
+img_path: "/assets/img/posts/munchies-tray"
 ---
 
 When I set out to do this, I hadn't really thought of the complications that are involved in doing angled cuts like this.  I mean, I knew there would be some, but I had to really dig deep and reserect some old trigonometry skills.  Nah, not really, I used an online calculator, but still it was a lot of weird angles.  It's a 15 degree angle to the sides, but when you are doing the cuts, its a double mitre angle cut at 13.1 degress tilt, and 34 degrees mitre.  Yikes.

@@ -5,8 +5,8 @@ date: 2023-04-13 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Keepsake Box, Walnut, Maple, Jewelry Box, Epxoy]
-image: /Thumbnails/IMG_0639.jpeg
-img_path: "/assets/img/posts/Keepsake-Box"
+image: /thumbnails/IMG_0639.jpeg
+img_path: "/assets/img/posts/keepsake-box"
 ---
 
 Only had a couple of days after finishing the previous project before Debbie's birthday, but I decided to try something new and get in done in time for her day.

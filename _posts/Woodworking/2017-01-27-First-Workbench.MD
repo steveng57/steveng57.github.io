@@ -6,8 +6,8 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
 tags: [Intro, Wood, Woodworking, Workbench, Assembly Table]
 pin: false
-image: /Thumbnails/20170127_010801.jpeg
-img_path: /assets/img/posts/First-Workbench
+image: /thumbnails/20170127_010801.jpeg
+img_path: /assets/img/posts/first-workbench
 ---
 
 Every shop needs a workbench, and there is a first for everything.  This is the first workbench I built in this shop.
