@@ -2,7 +2,7 @@
 <script type="text/javascript" src="/assets/myjs/gallery.js"></script>
 
 {% assign albumfolder = include.albumfolder %}
-{% assign templateImageFiles = site.static_files | where_exp: "item", "item.path contains 'Thumbnails'" %}
+{% assign templateImageFiles = site.static_files | where_exp: "item", "item.path contains 'thumbnails'" %}
 {% assign imageFiles = templateImageFiles | where_exp: "item", "item.path contains albumfolder" %}
 {% assign images_per_page = 7 %}
 {% assign total_pages = imageFiles.size | minus: 1 | divided_by: images_per_page | plus: 1 %}
@@ -31,7 +31,7 @@
 
 <div id="{{ include.albumname }}">
     {% for image in imageFiles %}
-        {% assign postname = image.path | replace: '/Thumbnails', '' | replace: albumfolder, '' | replace: image.name, '' | replace: '/', '' | replace: '-', ' ' %}
+        {% assign postname = image.path | replace: '/thumbnails', '' | replace: albumfolder, '' | replace: image.name, '' | replace: '/', '' | replace: '-', ' ' %}
         {% assign page = forloop.index0 | divided_by: images_per_page | plus: 1 %}
         
         <div class="page" data-page="{{ page }}">

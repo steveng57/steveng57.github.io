@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Workbench huh
+title: First Workbench
 date: 2017-01-27 17:56:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking]
