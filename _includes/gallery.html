@@ -5,7 +5,42 @@
 {% assign templateImageFiles = site.static_files | where_exp: "item", "item.path contains 'thumbnails'" %}
 {% assign imageFiles = templateImageFiles | where_exp: "item", "item.path contains albumfolder" %}
 {% assign images_per_page = 12 %}
-{% assign total_pages = imageFiles.size | minus: 1 | divided_by: images_per_page | plus: 1 %}
+
+{% assign lastpostname = '' %}
+{% assign currentpost = 0 %}
+{% assign postarray = "" %}
+{% assign imagecount = 0 %}
+{%  assign currentpage =  1 %}
+{% for image in imageFiles %}
+    {% assign postname = image.path | replace: '/thumbnails', '' | replace: albumfolder, '' | replace: image.name, '' | replace: '/', '' | replace: '-', ' ' %}
+    {% if forloop.first == false  %}
+        {% if postname != lastpostname %}
+            {% assign postarray = postarray | append: imagecount | append: ',' %}
+            {% assign currentpost = currentpost | plus: 1 %}
+            {% assign imagecount = 0 %}   
+        {% endif %}
+    {% endif %}
+    {% assign imagecount = imagecount | plus: 1 %}
+    {% assign lastpostname = postname %} 
+{% endfor %}
+{% assign postarray = postarray | append: imagecount | append: ',' %}
+
+
+{% assign postarray = postarray | split: ',' %}
+{% assign pagearray = "" %}
+{% assign currentpage = 1 %}
+{% assign pageimagecount = 0 %}
+{% for postcount in postarray %}
+    {% assign pageimagecount =  pageimagecount | plus: postcount %}
+    {% if pageimagecount > images_per_page %}
+        {% assign currentpage = currentpage | plus: 1%}
+        {% assign pageimagecount = postcount %}
+    {% endif %}
+    {% assign pagearray = pagearray |  append:  currentpage | append: ',' %} 
+{% endfor %}
+{% assign postpagearray = pagearray | split: ',' %}
+
+{% assign total_pages = currentpage %}
 {% assign lastpostname = '' %}
 
 {% if total_pages > 1 %}
@@ -31,36 +66,46 @@
 
 <div id="{{ include.albumname }}">
     <table>
-        <tr>
-            {% for image in imageFiles %}
+        {% assign currentcolumn = 0 %}
+        {% assign maxcolumns = 2 %}
+        {% assign currentimageindex = 0 %}
+        {% for imagecount in postarray %}
+            {% assign page = postpagearray[forloop.index0] %}    
+            {% assign ubound = imagecount | minus: 1 %}
+            {% for i in (0..ubound) %}
+                {% assign image = imageFiles[currentimageindex] %}
                 {% assign postname = image.path | replace: '/thumbnails', '' | replace: albumfolder, '' | replace: image.name, '' | replace: '/', '' | replace: '-', ' ' %}
-                {% assign page = forloop.index0 | divided_by: images_per_page | plus: 1 %}
-                
-                {% assign remainder = forloop.index0 | modulo: 2 %}
-                {% if remainder == 0 %}
-                    {% if forloop.index0 != 0 %}
-                        </tr><tr>
-                    {% endif %}
+                {% if forloop.first %}
+                    <tr class="page" data-page="{{ page }}">
+                    <td>
+                    <h2>{{ postname }}</h2>
+                    </td>
+                    </tr>
                 {% endif %}
-                
+                {% if currentcolumn == 0 %}
+                    <tr class="page" data-page="{{ page }}">
+                {% endif %}
+
                 <td>
-                    <div class="page" data-page="{{ page }}">
-                        {% assign remainder = forloop.index0 | modulo: images_per_page %}
-                        {% if lastpostname != postname or remainder == 0 %}
-                            {% assign lastpostname = postname %}
-                            <h2>{{ postname }}</h2>
-                        {% else %}
-                            <h2> </h2>
-                        {% endif %}
-                        {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
-                        <a href="{{ redirect }}">
-                            <img data-src="{{ image.path }}" src="" title="{{ redirect }}" alt="{{ redirect }}" />
-                        </a>
-                        <br><br>
-                    </div>
+                {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
+                <a href="{{ redirect }}">
+                    <img data-src="{{ image.path }}" src="" title="{{ redirect }}" alt="{{ redirect }}" />
+                </a>
+                <br><br>                
                 </td>
+                {% assign currentcolumn = currentcolumn | plus: 1 %}
+                {% if forloop.last or currentcolumn == maxcolumns %}
+                    {% for j in (currentcolumn..maxcolumns) %}
+                        <td></td>
+                    {% endfor %}
+                    </tr>
+                    {% assign currentcolumn = 0 %}
+                {% endif %}
+                {% assign currentimageindex = currentimageindex | plus: 1 %}
+
             {% endfor %}
-        </tr>
+
+        {% endfor %}
     </table>
 </div>
 
@@ -85,3 +130,13 @@
     </nav>
 </div>
 {% endif %}
+
+<style>
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  td {
+    width: 50%;
+  }
+</style>
