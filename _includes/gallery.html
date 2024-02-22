@@ -1,9 +1,11 @@
 ---
 ---
-
+<head>
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 <script type="text/javascript" src="/assets/myjs/gallery.js"></script>
+</head>
 
+<body>
 {% assign albumfolder = include.albumfolder %}
 {% assign templateImageFiles = site.static_files | where_exp: "item", "item.path contains 'thumbnails'" %}
 {% assign imageFiles = templateImageFiles | where_exp: "item", "item.path contains albumfolder" %}
@@ -72,7 +74,7 @@
 {% endif %}
 
 <div id="image-gallery" class="image-gallery">
-    <table>
+    <table class="gallery-table">
         {% assign currentcolumn = 0 %}
         {% assign maxcolumns = 2 %}
         {% assign currentimageindex = 0 %}
@@ -93,7 +95,7 @@
                     <tr class="page" data-page="{{ page }}">
                 {% endif %}
 
-                <td>
+                <td class="gallery-td">
                 <div class="image-container">
                 {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
                 <a href="{{ redirect }}">
@@ -143,28 +145,4 @@
     </nav>
 </div>
 {% endif %}
-
-<style>
-  table {
-    width: 100%;
-    table-layout: fixed;
-  }
-  td {
-    width: 50%;
-  }
-
-  .image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .image-container {
-    margin: 10px;
-  }
-
-  .gallery-image {
-    width: auto;
-    height: auto;
-  }
-</style>
+</body>

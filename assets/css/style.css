@@ -15,3 +15,27 @@ img {
     justify-content: center;
     gap: 10px;
 }
+
+.gallery-td {
+    width: 50%;
+}
+
+.image-container {
+    margin: 10px;
+}
+
+.gallery-table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-image {
+    width: auto;
+    height: auto;
+}
