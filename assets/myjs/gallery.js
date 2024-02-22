@@ -56,6 +56,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
         }
+        var mobileSpans = document.querySelectorAll('.mobile-span');
+        mobileSpans.forEach(function (span) {
+            span.textContent = currentPage.toString();
+        });
     }
     links.forEach(function (link) {
         link.addEventListener('click', function (e) {

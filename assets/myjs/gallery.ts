@@ -63,6 +63,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         }
+
+        const mobileSpans: NodeListOf<Element> = document.querySelectorAll('.mobile-span');
+        mobileSpans.forEach(function(span: Element) {
+            span.textContent = currentPage.toString();
+        });
+
     }
 
     links.forEach(function(link: Element) {

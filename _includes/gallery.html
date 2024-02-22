@@ -4,24 +4,24 @@
 {% assign albumfolder = include.albumfolder %}
 {% assign templateImageFiles = site.static_files | where_exp: "item", "item.path contains 'thumbnails'" %}
 {% assign imageFiles = templateImageFiles | where_exp: "item", "item.path contains albumfolder" %}
-{% assign images_per_page = 12 %}
+{% assign gallery_images_per_page = 12 %}
 
-{% assign lastpostname = '' %}
-{% assign currentpost = 0 %}
+{% assign last_post_name = '' %}
+{% assign current_post = 0 %}
 {% assign postarray = "" %}
 {% assign imagecount = 0 %}
 {%  assign currentpage =  1 %}
 {% for image in imageFiles %}
     {% assign postname = image.path | replace: '/thumbnails', '' | replace: albumfolder, '' | replace: image.name, '' | replace: '/', '' | replace: '-', ' ' %}
     {% if forloop.first == false  %}
-        {% if postname != lastpostname %}
+        {% if postname != last_post_name %}
             {% assign postarray = postarray | append: imagecount | append: ',' %}
-            {% assign currentpost = currentpost | plus: 1 %}
+            {% assign current_post = current_post | plus: 1 %}
             {% assign imagecount = 0 %}   
         {% endif %}
     {% endif %}
     {% assign imagecount = imagecount | plus: 1 %}
-    {% assign lastpostname = postname %} 
+    {% assign last_post_name = postname %} 
 {% endfor %}
 {% assign postarray = postarray | append: imagecount | append: ',' %}
 
@@ -32,7 +32,7 @@
 {% assign pageimagecount = 0 %}
 {% for postcount in postarray %}
     {% assign pageimagecount =  pageimagecount | plus: postcount %}
-    {% if pageimagecount > images_per_page %}
+    {% if pageimagecount > gallery_images_per_page %}
         {% assign currentpage = currentpage | plus: 1%}
         {% assign pageimagecount = postcount %}
     {% endif %}
@@ -41,7 +41,7 @@
 {% assign postpagearray = pagearray | split: ',' %}
 
 {% assign total_pages = currentpage %}
-{% assign lastpostname = '' %}
+{% assign last_post_name = '' %}
 
 {% if total_pages > 1 %}
 <!-- Pagination links (top)-->
@@ -56,6 +56,10 @@
                     <a href="#" class="page-link" data-page="{{ i }}" onclick="scrollToTop()">{{ i }}</a>
                 </li>
             {% endfor %}
+            <li class="page-index align-middle">
+                <span class="mobile-span">1</span>
+                <span class="text-muted"> / {{ total_pages }}</span>
+            </li>
             <li class="page-item">
                 <a href="#" class="page-link" id="next-page-top" onclick="scrollToTop()"><i class="fas fa-angle-right"></i></a>
             </li>
@@ -122,9 +126,14 @@
                 <a href="#" class="page-link" data-page="{{ i }}" onclick="scrollToTop()">{{ i }}</a>
             </li> 
             {% endfor %}
+            <li class="page-index align-middle">
+                <span class="mobile-span">1</span>
+                <span class="text-muted"> / {{ total_pages }} </span>
+            </li>
             <li class="page-item">
                 <a href="#" class="page-link" id="next-page-bottom" onclick="scrollToTop()" aria-label="next-page"><i class="fas fa-angle-right"></i></a>
             </li>
+            
 
         </ul>
     </nav>
