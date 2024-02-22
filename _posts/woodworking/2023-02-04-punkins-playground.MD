@@ -2,7 +2,7 @@
 layout: post
 title: Punkin's Playground
 date: 2023-02-04 18:32:00 -0500
-last_modified_at: 2024-02-17 18:32:00 -0500
+last_modified_at: 2024-02-22 09:53:54 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Table, Craft, Plywood, Maple]
 image: /thumbnails/20230405_134555.jpeg
@@ -20,13 +20,9 @@ _Its a big table_
 
 To make it strong enough over that 4x8 span, it created a 'Torsion Box' using various scraps of other plywood that I had lying around from other projects.  It basically means that you put 3 to 4 inch strips running down the length and width of the plywood, which makes it incredibly strong.  The maple trim around the outside also helped with the structural integrity.
 
-![Under Construction 2][Under Construction 2]
-_The torsion box supports_
+| ![Under Construction 2][Under Construction 2]_The torsion box supports_ | ![Under Construction 1][Under Construction 1]_Lots and lots of screws_ |
 
 The legs worked well.  I was a little nervous about this design at the outset, but it turned out rock solid, with 12 screws on each leg securing it to the top.
-
-![Under Construction 1][Under Construction 1]
-_Lots and lots of screws_
 
 ## In Play
 
