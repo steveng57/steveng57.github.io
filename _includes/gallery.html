@@ -1,3 +1,6 @@
+---
+---
+
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 <script type="text/javascript" src="/assets/myjs/gallery.js"></script>
 
@@ -68,7 +71,7 @@
 </div>
 {% endif %}
 
-<div id="{{ include.albumname }}">
+<div id="image-gallery" class="image-gallery">
     <table>
         {% assign currentcolumn = 0 %}
         {% assign maxcolumns = 2 %}
@@ -91,11 +94,12 @@
                 {% endif %}
 
                 <td>
+                <div class="image-container">
                 {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
                 <a href="{{ redirect }}">
-                    <img data-src="{{ image.path }}" src="" title="{{ redirect }}" alt="{{ redirect }}" />
+                    <img class="gallery-image" data-src="{{ image.path }}" src="" title="{{ redirect }}" alt="{{ redirect }}" />
                 </a>
-                <br><br>                
+                </div>             
                 </td>
                 {% assign currentcolumn = currentcolumn | plus: 1 %}
                 {% if forloop.last or currentcolumn == maxcolumns %}
@@ -147,5 +151,20 @@
   }
   td {
     width: 50%;
+  }
+
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .image-container {
+    margin: 10px;
+  }
+
+  .gallery-image {
+    width: auto;
+    height: auto;
   }
 </style>
