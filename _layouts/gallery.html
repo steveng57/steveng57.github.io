@@ -2,12 +2,13 @@
 layout: page
 ---
 <head>
-<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-<script type="text/javascript" src="/assets/myjs/gallery.js"></script>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <script type="text/javascript" src="/assets/myjs/gallery.js"></script>
 </head>
 
 <body>
-{% assign albumfolder = "/assets/img/posts" %}
+{% assign albumfolder = page.albumfolder %}
+{{ page.description }}
 {% assign templateImageFiles = site.static_files | where_exp: "item", "item.path contains 'thumbnails'" %}
 {% assign imageFiles = templateImageFiles | where_exp: "item", "item.path contains albumfolder" %}
 {% assign gallery_images_per_page = 12 %}
