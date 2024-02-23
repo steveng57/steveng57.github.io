@@ -9,7 +9,7 @@ image: /thumbnails/20230405_141951.jpeg
 img_path: "/assets/img/posts/serving-trays"
 ---
 
-So these were a bit tricky, in the sense that with the epoxy inlay in the tray bottom, suddenly decisions about which part to do first become important.  How do you assemble it, before or after the expoxy?  How do you finish it, before or after the epoxy?  Answers!  I demand answers.
+I went for a bit of the artsy, rustic look on these.  They were a bit tricky, in the sense that with the epoxy inlay in the tray bottom, suddenly decisions about which part to do first become important.  How do you assemble it, before or after the expoxy?  How do you finish it, before or after the epoxy?  Answers!  I demand answers.
 
 ## Flower Tray
 
