@@ -40,7 +40,7 @@ _I had no idea how to fix this_
 
 ### The Fix Is In
 
-Six weeks pass.  During that time I tried various things.  Many, many various things, including just walking away in disgust for a week.  Eventually I applied a thin layer of a beigy concrete topcoat, and sanded and smooth it down until I got the finish I wanted.  If you have ever sanded concrete, well it makes sanding wood seem like a dream.  If you sand concrete when its dry, you get a toxic cloud of ultra fine dust everywhere. If you do it wet, you have a mud batch sprayed in every direction.  No fun either way.
+Six weeks pass.  During that time I tried various things.  Many, many various things, including just walking away in disgust for a week.  Eventually I applied a thin layer of a beigy concrete topcoat, and sanded and smooth it down until I got the finish I wanted.  If you have ever sanded concrete, well it makes sanding wood seem like a dream.  If you sand concrete when its dry, you get a toxic cloud of ultra fine dust everywhere. If you do it wet, you have mud splattered in every direction.  No fun either way.
 
 But it turned out great at the end.  I can honestly say I am very happy with how it turned out, a nice eggshell and beige patina.
 
