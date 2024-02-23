@@ -1,4 +1,5 @@
 ---
+layout: page
 ---
 <head>
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
@@ -6,7 +7,7 @@
 </head>
 
 <body>
-{% assign albumfolder = include.albumfolder %}
+{% assign albumfolder = "/assets/img/posts" %}
 {% assign templateImageFiles = site.static_files | where_exp: "item", "item.path contains 'thumbnails'" %}
 {% assign imageFiles = templateImageFiles | where_exp: "item", "item.path contains albumfolder" %}
 {% assign gallery_images_per_page = 12 %}
@@ -99,7 +100,7 @@
                 <div class="image-container">
                 {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
                 <a href="{{ redirect }}">
-                    <img class="gallery-image" data-src="{{ image.path }}" src="" title="{{ redirect }}" alt="{{ redirect }}" />
+                    <img class="gallery-image" data-src="{{ image.path }}" title="{{ redirect }}" alt="{{ redirect }}" />
                 </a>
                 </div>             
                 </td>
