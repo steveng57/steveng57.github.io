@@ -13,7 +13,7 @@ This one was really simple, but a much needed project.  Just a box really, but a
 
 ## Under Contruction
 
-This was the first time I attempted any engraving or detail work, note the paws on both steps.  The first paw prints for the mudroom were done freehand with a stencil and router and then painted.  The second set of prints was done with my new [Shaper Origin]{:target="_blank"}.  Much more on this tool in coming posts, its one of my favorite things ever.  In both cases, the prints were carved about 6mm deep.
+This was the first time I attempted any engraving or detail work, note the paws on both steps.  The first paw prints for the mudroom were done freehand with a stencil and router and then painted.  The second set of prints was done with my new {{ site.data.links.shaper }}.  Much more on this tool in coming posts, its one of my favorite things ever.  In both cases, the prints were carved about 6mm deep.
 
 ![Step 1][Step 1]
 
@@ -34,4 +34,3 @@ _Mudroom version for access to the desk_
 [Step 2]: IMG_0543.jpeg
 [Step 3]: IMG_0545.jpeg
 
-[Shaper Origin]: https://www.shapertools.com/en-ca/

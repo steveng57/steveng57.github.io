@@ -22,31 +22,24 @@ The thinking is that when not in use, it sits against the wall and acts as a ser
 
 There was a deep gouge in the top of this that took a fair amount of epoxy and sanding to make disappear.  If you know where to look...actually no, you can't see it at all.
 
-![Table 1][Table 1]
-_Mmmm chocolate_
-
-![Table 2][Table 2]
-_Another angle_
+|![Table 1][Table 1]_Mmmm chocolate_|![Table 2][Table 2]_Another angle_|
 
 ## In Position
 
-![Table 3][Table 3]
-_Looking good_
-
 The metal legs look a little spindly here, but that is for a reason.  When the table is used in "extension mode" it is moved next to the dining table.  When seated at it, the legs had to be inset to give diners ample legroom and not to bang their knees.  
 
-![Table 4][Table 4]
-_From high_
+|![Table 4][Table 4]_From high_|![Table 5][Table 5]_From low_|
 
 The tricky part was getting the edging to look the same as on the original table.  The blocks on the end and the groove on the edge are part of that.
 
-![Table 5][Table 5]
-_From low_
+![Table 3][Table 3]
+_Looking good_
 
 ## Materials
 
 - Ash
 - Metal legs purchased from [Rusty Design].  The irony (see what I did there) is not lost on me.  
+- Rubio Monocoat and Chocolate Precolour Easy.
 
 [Table 1]: IMG_0216.jpeg
 [Table 2]: IMG_0218.jpeg

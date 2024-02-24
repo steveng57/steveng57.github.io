@@ -23,7 +23,7 @@ _Maple strip for some pizzaz_
 So what you do is make a board long enough to make a side plus one end of the box.  You need to make it thick enough so that it is double the thickness of your final boards.
 
 ![Box 2][Box 2]
-_Orange expoxy inlay, carved with the Shaper Origin_
+_Orange expoxy inlay, carved with the {{ site.data.links.shaper }}_
 
 In my case, I did the above, but also put a maple strip in there, fashioned at an angle, to give the piece a little contrast.
 

@@ -11,7 +11,7 @@ img_path: "/assets/img/posts/cribbage-board"
 
 For my father's birthday, I made him this walnut cribbage board. He says it is working well and that it keeps very good score.
 
-Almost half the work on this one was at the computer making sure the design was right.  I didn't do the entire layout, I spent about $20 for a design off of Etsy, then made a bunch of modifications using the online tools from [Shaper Hub]{:target="_blank"}.
+Almost half the work on this one was at the computer making sure the design was right.  I didn't do the entire layout, I spent about $20 for a design off of Etsy, then made a bunch of modifications using the online tools from {{ site.data.links.shaperhub }}.
 
 ![Board][Board]
 
@@ -41,11 +41,10 @@ _At home and in use_
 
 - Walnut
 - Black epoxy inlay
-- Shaper Origin for carving
+- {{ site.data.links.shaper }} for carving
 
 [Board]: CribbageBoard02.jpeg
 [Board2]: 20230720_200245-1.jpeg
 [Board3]: 20230720_163338.jpeg
 [Board4]: 20230720_163408.jpeg
 [Board5]: IMG_0626.jpeg
-[Shaper Hub]: https://hub.shapertools.com

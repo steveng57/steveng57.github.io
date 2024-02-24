@@ -37,7 +37,7 @@ _At home in the theatre_
 
 - Walnut
 - Grey epoxy
-- Shaper Origin carve
+- {{ site.data.links.shaper }} for the lettering
 - Festool dominoes for mitre joinery
 
 [Tray 1]: IMG_0074.jpeg

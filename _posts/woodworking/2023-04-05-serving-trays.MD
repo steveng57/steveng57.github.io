@@ -25,7 +25,7 @@ _The Flowers_
 
 - Poplar
 - Various coloured epoxies
-- Shaper Origin to carve the inlays
+- {{ site.data.links.shaper }} to carve the inlays
 
 [Tray 1]: 20230405_141951.jpeg
 [Tray 2]: 20230405_141946.jpeg

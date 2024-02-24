@@ -13,7 +13,7 @@ img_path: "/assets/img/posts/earing-boxes"
 
 I really like making special things for other people.  This is a fun example of that.  Debbie thought it would be cool to make a set of earing boxes for her sister for Christmas.  I could not agree more.  This was a first of its kind for me.  While I have made a great many boxes in the past, the insert was a whole new kind of thing.
 
->**Cool Tool**: The [Shaper Origin]{:target="_blank"} was critical here, no way I could make this with just tools.  It is truly an amazing machine.
+>**Cool Tool**: The {{ site.data.links.shaper }} was critical here, no way I could make this with just tools.  It is truly an amazing machine.
 {: .prompt-tip }
 
 ## Under Contruction
@@ -56,4 +56,3 @@ _Earings in place_
 [Boxes 4]: IMG_0467.jpeg
 [Boxes 5]: earing-box-01.jpeg
 
-[Shaper Origin]: https://www.shapertools.com/en-ca
