@@ -31,7 +31,7 @@ Then you can start cutting, but you need to do it all in a single pass.  No taki
 
 _391 holes.  Go ahead...count 'em._
 
-<br><br>
+---
 
 ![Board3][Board3]{: width="972" height="589" .w-50 .right}
 
@@ -39,6 +39,9 @@ Finishing this one was a little tricky too.  I use a hard-wax oil called {{ site
 
 But then there was the problem of the wax and the holes.  The was loved to get in there, but the look was not good, and I am sure the functionality would have been even worse.  But a 1/8 inch drill bit came to my rescue ,
 
+Sanding was also a little...special.  Sand too little and its rough obviously, but sand too much and there are any number of unrepairable things that could go wrong.
+
+---
 
 ## The Backside
 
