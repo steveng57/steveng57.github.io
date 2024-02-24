@@ -55,4 +55,3 @@ _Earings in place_
 [Boxes 3]: IMG_0466.jpeg
 [Boxes 4]: IMG_0467.jpeg
 [Boxes 5]: earing-box-01.jpeg
-

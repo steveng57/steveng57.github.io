@@ -37,7 +37,7 @@ _Proudly on display in our guest bedroom_
 
 - Poplar
 - Acrylic Paint
-- Festool dominoes for mitre joinery
+- {{ site.data.links.domino }} for mitre joinery
 
 [Frame 1]: 20230822_191820.jpeg
 [Frame 2]: 20230822_184956.jpeg

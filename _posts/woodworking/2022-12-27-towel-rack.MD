@@ -5,7 +5,7 @@ date: 2022-12-27 18:32:00 -0500
 last_modified_at: 2024-02-23 11:45:18 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Maple, Towel Rack]
-image: /thumbnails/IMG_0677.jpeg
+image: /thumbnails/IMG_0681.jpeg
 img_path: "/assets/img/posts/towel-rack"
 ---
 
@@ -34,13 +34,11 @@ _In the bath_
 
 ## Materials
 
-- Maple
+- Maple from {{ site.data.links.kjp }}
 - Polyeurethane finish
 - Festool Dominoes for joinery
 
-[Towel Rack 1]: IMG_0675.jpeg
+[Towel Rack 1]: IMG_0681.jpeg
 [Towel Rack 3]: IMG_0677.jpeg
 [Towel Rack 4]: IMG_0678.jpeg
 [Towel Rack 5]: towel-rack-sketchup.jpeg
-
-

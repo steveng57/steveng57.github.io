@@ -33,4 +33,3 @@ _Mudroom version for access to the desk_
 [Step 1]: 20220225_091904.jpeg
 [Step 2]: IMG_0543.jpeg
 [Step 3]: IMG_0545.jpeg
-
