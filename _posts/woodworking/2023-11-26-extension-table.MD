@@ -38,7 +38,7 @@ _Looking good_
 ## Materials
 
 - Ash
-- Metal legs purchased from [Rusty Design].  The irony (see what I did there) is not lost on me.  
+- Metal legs purchased from {{ site.data.links.rustydesign }}.  The irony (see what I did there) is not lost on me.  
 - Rubio Monocoat and Chocolate Precolour Easy.
 
 [Table 1]: IMG_0216.jpeg
@@ -46,4 +46,3 @@ _Looking good_
 [Table 3]: IMG_0219.jpeg
 [Table 4]: IMG_0221.jpeg
 [Table 5]: IMG_0226.jpeg
-[Rusty Design]: https://rustydesign.ca/pages/about-us
