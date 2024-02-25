@@ -23,7 +23,7 @@ The steel top on the new router table is awesome.  Nice level even cuts each and
 
 ### Mitre Stand
 
-The mitre stand is basically a big cabinet box with a drawer.  I built three of them and strung them together.  Here you see it modelled in {{ site.data.links.sketchup }} before the construction began. 
+The mitre stand is basically a big cabinet box with a drawer.  I built three of them and strung them together.  Here you see it modelled in {{ site.data.links.sketchup }} before the construction began.
 
 ![Under Construction 4][Under Construction 4]
 _Mitre stand Sketchup drawing_

@@ -23,15 +23,24 @@ Doing the finishing on this one was pretty messy, partly due to the number of pi
 ![Boxes 1][Boxes 1]
 _Lots of moving parts_
 
-The insert with all the square was cut as a separate piece from the main box. The green velvet was placed on the bottom of the box and the insert placed over it.
+Nice to have a big work surface to spread out.  Especially when you are messy, messy woodworker.
 
-![Boxes 3][Boxes 3]
-_Lots of moving parts_
+![Boxes 3][Boxes 3]{: .right .w-75 }
 
-![Boxes 4][Boxes 4]
-_Close up_
+The insert with all the squares was cut as a separate piece from the main box. It was carved using the {{ site.data.links.origin }} from a single block of walnut.  This left me with about 72 little cubes of walnut that I still haven't figured out what to do with.
+
+{% include clear-float.html %}
+
+![Boxes 4][Boxes 4]{: .left .w-75  }
+The green velvet was placed on the bottom of the box and the insert placed over it.
 
 The top engraving was a little nerve wracking. Make a mistake here and its hard to patch nicely.
+
+{% include clear-float.html %}
+
+## Ready
+
+Here they are, ready and waiting for the big day.
 
 ![Boxes 2][Boxes 2]
 _Engraving done_
@@ -46,8 +55,8 @@ _Earings in place_
 ## Materials
 
 - Walnut
-- Rubio Monocoat Walnut for finish
-- Hardware from Lee Valley
+- {{ site.data.links.rubio }} Walnut for finish
+- Hardware from {{ site.data.links.leevalley }}
 - Green Velvet from Amazon
 
 [Boxes 1]: IMG_0455.jpeg
