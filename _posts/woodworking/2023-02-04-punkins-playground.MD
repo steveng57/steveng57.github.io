@@ -9,20 +9,20 @@ image: /thumbnails/20230405_134555.jpeg
 img_path: "/assets/img/posts/punkins-playground"
 ---
 
-This table was specially made to fit into Debbie's craft area setup.  It of my own design, and turned out to be very sturdy even though its a 4ft by 8ft span.
+This table was specially made to fit into Debbie's craft area setup. It of my own design, and turned out to be very sturdy even though its a 4ft by 8ft span.
 
-## Under Contruction
+## Under Construction
 
-A big piece of 4x8 Baltic Birch plywood was used as the main surface.  If you've not worked with that material before, I highly recommend it.  It is nice stuff, super strong, made of 13 layers of wood instead of the 5 or 7 you get at the big box store.  Bought mine at [KJP]{:target="_blank"}, check it out!
+A big piece of 4x8 Baltic Birch plywood was used as the main surface. If you've not worked with that material before, I highly recommend it. It is nice stuff, super strong, made of 13 layers of wood instead of the 5 or 7 you get at the big box store. Bought mine at [KJP]{:target="\_blank"}, check it out!
 
 ![Under Construction 3][Under Construction 3]
 _Its a big table_
 
-To make it strong enough over that 4x8 span, it created a 'Torsion Box' using various scraps of other plywood that I had lying around from other projects.  It basically means that you put 3 to 4 inch strips running down the length and width of the plywood, which makes it incredibly strong.  The maple trim around the outside also helped with the structural integrity.
+To make it strong enough over that 4x8 span, it created a 'Torsion Box' using various scraps of other plywood that I had lying around from other projects. It basically means that you put 3 to 4 inch strips running down the length and width of the plywood, which makes it incredibly strong. The maple trim around the outside also helped with the structural integrity.
 
 | ![Under Construction 2][Under Construction 2]_The torsion box supports_ | ![Under Construction 1][Under Construction 1]_Lots and lots of screws_ |
 
-The legs worked well.  I was a little nervous about this design at the outset, but it turned out rock solid, with 12 screws on each leg securing it to the top.
+The legs worked well. I was a little nervous about this design at the outset, but it turned out rock solid, with 12 screws on each leg securing it to the top.
 
 ## In Play
 

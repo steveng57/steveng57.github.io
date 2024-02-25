@@ -9,11 +9,11 @@ image: /thumbnails/20220328_071254.jpeg
 img_path: "/assets/img/posts/ozzie-dreams"
 ---
 
-A true labour of love.  Our boy Ozzie needed a new place to sleep.  It seems he was never very content to stay in one place at night, so we thought we would make him a nice new comfy spot to be in.
+A true labour of love. Our boy Ozzie needed a new place to sleep. It seems he was never very content to stay in one place at night, so we thought we would make him a nice new comfy spot to be in.
 
-## Under Contruction
+## Under Construction
 
-Lots and lots of slats on this one.  About 30+ of them all up.  Using the Festool Domino for the loose-tenon joinery made things a bit easier.
+Lots and lots of slats on this one. About 30+ of them all up. Using the Festool Domino for the loose-tenon joinery made things a bit easier.
 
 ![Construction 1][Construction 1]
 _All these sticks!_

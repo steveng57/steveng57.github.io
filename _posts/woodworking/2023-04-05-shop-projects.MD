@@ -11,24 +11,26 @@ img_path: "/assets/img/posts/shop-projects"
 
 In late winter of 2023, I decided a workshop upgrade was due.  You can never have enough shop storage, and shop projects are always a fun way to get better at all kinds of things.  You can experiment, and if it fails, no one will know.
 
-## Under Contruction
+## Under Construction
+
+### Router Stand
 
 I bought a couple or three pieces of plywood from [KJP Select Hardwoods]{:target="_blank"}, and fashioned up a sketchup drawing of the router table I was going to make, along with one for the mitre stand.
 
-![Under Construction 3][Under Construction 3]
-_Router table drawing in Sketchup_
-
 The steel top on the new router table is awesome.  Nice level even cuts each and every time.
 
-![Under Construction 2][Under Construction 2]
-_Router table with new steel top, and parts from Jessem_
+|![Under Construction 3][Under Construction 3]_Router table drawing in Sketchup_|![Under Construction 2][Under Construction 2]_Router table with new steel top, and parts from Jessem_|
 
-The mitre stand is basically a big cabinet box with a drawer.  I built three of them and strung them together.
+### Mitre Stand
+
+The mitre stand is basically a big cabinet box with a drawer.  I built three of them and strung them together.  Here you see it modelled in {{ site.data.links.sketchup }} before the construction began. 
 
 ![Under Construction 4][Under Construction 4]
 _Mitre stand Sketchup drawing_
 
 ## In the Shop
+
+It is so nice to have a proper set of workshop stands for the router and the mitre saw along this wall.  I would show you a _"before"_ drawing so that you could see the difference, but that would be embarrassing.  
 
 ![Under Construction 1][Under Construction 1]
 _Lots of new storage_

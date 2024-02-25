@@ -9,12 +9,12 @@ image: /thumbnails/IMG_0079.jpeg
 img_path: "/assets/img/posts/munchies-tray"
 ---
 
-When I set out to do this, I hadn't really thought of the complications that are involved in doing angled cuts like this.  I mean, I knew there would be some, but I had to really dig deep and reserect some old trigonometry skills.  Nah, not really, I used an online calculator, but still it was a lot of weird angles.  It's a 15 degree angle to the sides, but when you are doing the cuts, its a double mitre angle cut at 13.1 degress tilt, and 34 degrees mitre.  Yikes.
+When I set out to do this, I hadn't really thought of the complications that are involved in doing angled cuts like this. I mean, I knew there would be some, but I had to really dig deep and reserect some old trigonometry skills. Nah, not really, I used an online calculator, but still it was a lot of weird angles. It's a 15 degree angle to the sides, but when you are doing the cuts, its a double mitre angle cut at 13.1 degress tilt, and 34 degrees mitre. Yikes.
 
->**Mitre Calculater**: For those who are interested in a really good online mitre cut calculator, here is the one I used: [Compound Angle Calculator]{:target="_blank"}
-{: .prompt-tip }
+> **Mitre Calculater**: For those who are interested in a really good online mitre cut calculator, here is the one I used: [Compound Angle Calculator]{:target="\_blank"}
+> {: .prompt-tip }
 
-## Under Contruction
+## Under Construction
 
 As seems to be my usual for mitres these days, I used the Festool domino to add strength to the mitre, and make it easy to glue-up.
 

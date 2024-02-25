@@ -9,12 +9,12 @@ image: /thumbnails/20221122_113942.jpeg
 img_path: "/assets/img/posts/napkin-holders"
 ---
 
-The napkin holder projects are among my favorites.  Making these is a small challenge, it makes you work at it, but not too hard.
+The napkin holder projects are among my favorites. Making these is a small challenge, it makes you work at it, but not too hard.
 
->When doing a project like this, do **not** cut the outside first and attempt to get the inlay groove magically aligned with it.  Instead, use the router and your templates to cut the outline of the piece and the groove at the same time.  That way they will automagically align.  Otherwise things will be a mess.  Ask me how I know.
-{: .prompt-tip }
+> When doing a project like this, do **not** cut the outside first and attempt to get the inlay groove magically aligned with it. Instead, use the router and your templates to cut the outline of the piece and the groove at the same time. That way they will automagically align. Otherwise things will be a mess. Ask me how I know.
+> {: .prompt-tip }
 
-## Under Contruction
+## Under Construction
 
 White epoxy inlay finished with Rubio Monocoat Pure.
 

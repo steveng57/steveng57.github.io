@@ -1,4 +1,6 @@
 .image-left {
     float: left; 
-    margin-right: 10px;
+    position: absolute;
+    margin: 0.75rem 1rem 1rem 0;
+    width: 25%;
 }

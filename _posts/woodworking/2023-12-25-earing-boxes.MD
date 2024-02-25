@@ -5,25 +5,25 @@ date: 2023-12-25 18:32:00 -0500
 last_modified_at: 2024-02-20 11:44:45 -0500
 categories: [Woodworking]
 tags: [Wood, Woodworking, Walnut, Box, Earing]
-image: 
-    path: /thumbnails/IMG_0461.jpeg
-    alt: Earings
+image:
+  path: /thumbnails/IMG_0461.jpeg
+  alt: Earings
 img_path: "/assets/img/posts/earing-boxes"
 ---
 
-I really like making special things for other people.  This is a fun example of that.  Debbie thought it would be cool to make a set of earing boxes for her sister for Christmas.  I could not agree more.  This was a first of its kind for me.  While I have made a great many boxes in the past, the insert was a whole new kind of thing.
+I really like making special things for other people. This is a fun example of that. Debbie thought it would be cool to make a set of earing boxes for her sister for Christmas. I could not agree more. This was a first of its kind for me. While I have made a great many boxes in the past, the insert was a whole new kind of thing.
 
->**Cool Tool**: The {{ site.data.links.shaper }} was critical here, no way I could make this with just tools.  It is truly an amazing machine.
-{: .prompt-tip }
+> **Cool Tool**: The {{ site.data.links.shaper }} was critical here, no way I could make this with just tools. It is truly an amazing machine.
+> {: .prompt-tip }
 
-## Under Contruction
+## Under Construction
 
 Doing the finishing on this one was pretty messy, partly due to the number of pieces, and also all the nooks and crannies to get into.
 
 ![Boxes 1][Boxes 1]
 _Lots of moving parts_
 
-The insert with all the square was cut as a separate piece from the main box.  The green velvet was placed on the bottom of the box and the insert placed over it.
+The insert with all the square was cut as a separate piece from the main box. The green velvet was placed on the bottom of the box and the insert placed over it.
 
 ![Boxes 3][Boxes 3]
 _Lots of moving parts_
@@ -31,14 +31,14 @@ _Lots of moving parts_
 ![Boxes 4][Boxes 4]
 _Close up_
 
-The top engraving was a little nerve wracking.  Make a mistake here and its hard to patch nicely.
+The top engraving was a little nerve wracking. Make a mistake here and its hard to patch nicely.
 
 ![Boxes 2][Boxes 2]
 _Engraving done_
 
 ## In Position
 
-All filled with all kinds of earings.  Looks like I might have to make more!
+All filled with all kinds of earings. Looks like I might have to make more!
 
 ![Boxes 5][Boxes 5]
 _Earings in place_
