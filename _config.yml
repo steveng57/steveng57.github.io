@@ -188,8 +188,8 @@ exclude:
   - LICENSE
   - rollup.config.js
   - package*.json
-  - *.ps1
-  - *.cmd
+  - "*.ps1"
+  - "*.cmd"
 
 jekyll-archives:
   enabled: [categories, tags]
