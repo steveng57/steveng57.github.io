@@ -1,6 +1,7 @@
-.image-left {
-    float: left; 
-    position: absolute;
-    margin: 0.75rem 1rem 1rem 0;
-    width: 25%;
+.w-66 {
+    width: 66% !important;
+}
+
+.w-33 {
+    width: 33% !important;
 }

@@ -8,7 +8,7 @@ tags: [Wood, Woodworking, Router, Cribbage Board, Sharper Origin, Walnut]
 image: /thumbnails/IMG_0626.jpeg
 img_path: "/assets/img/posts/cribbage-board"
 ---
-
+{% include head-mypost.html %}
 For my father's birthday, I made him this cribbage board from a nice piece of marbled walnut. He says it is working well and that it keeps very good score.
 
 Almost half the work on this one was at the computer making sure the design was right. I didn't do the entire layout, I spent about $20 for a design off of Etsy, then made a bunch of modifications using the online tools from {{ site.data.links.shaperhub }}.
@@ -17,11 +17,9 @@ Almost half the work on this one was at the computer making sure the design was 
 
 ## Under Construction
 
-Lots of pictures on this one. Hey, it was a lot of work.
+Lots of pictures on this one. **Hey, it was a lot of work.**
 
-![Board2][Board2]{: .left .w-50 }
-
-The sheer madness of trying to do 391 individual holes with the router, even a computerized one, is...well...madness.
+![Board2][Board2]{: .left .w-66 }The sheer madness of trying to do 391 individual holes with the router, even a computerized one, is...well...madness.
 
 First you need to be sure that the computerized layout has no flaws. If you discover one in the middle of the cut, well good luck with that.
 
@@ -31,17 +29,15 @@ Then you can start cutting, but you need to do it all in a single pass. No takin
 
 _391 holes. Go ahead...count 'em._
 
----
+{% include clear-float.html %}
 
-![Board3][Board3]{: .w-50 .right}
-
-Finishing this one was a little tricky too. I use a hard-wax oil called {{ site.data.links.rubio }} for most of my projects theses days. It makes for a great, durable, and repairable finish. It is also way less finicky that other finishes: you apply it, wait a bit, and wipe off the excess. Dust does not really stick to it, so shop dust is not so much of a problem.
+![Board3][Board3]{: .w-66 .right}Finishing this one was a little tricky too. I use a hard-wax oil called {{ site.data.links.rubio }} for most of my projects theses days. It makes for a great, durable, and repairable finish. It is also way less finicky that other finishes: you apply it, wait a bit, and wipe off the excess. Dust does not really stick to it, so shop dust is not so much of a problem.
 
 But then there was the problem of the wax and the holes. The wax loved to get in there, but the look was not good, and I am sure the functionality would have been even worse. But a 1/8 inch drill bit came to my rescue ,
 
 Sanding was also a little...special. Sand too little and its rough obviously, but sand too much and there are any number of unrepairable things that could go wrong.
 
----
+{% include clear-float.html %}
 
 ## The Backside
 

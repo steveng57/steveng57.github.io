@@ -10,6 +10,7 @@ image:
   alt: Earings
 img_path: "/assets/img/posts/earing-boxes"
 ---
+{% include head-mypost.html %}
 
 I really like making special things for other people. This is a fun example of that. Debbie thought it would be cool to make a set of earing boxes for her sister for Christmas. I could not agree more. This was a first of its kind for me. While I have made a great many boxes in the past, the insert was a whole new kind of thing.
 
@@ -25,13 +26,13 @@ _Lots of moving parts_
 
 Nice to have a big work surface to spread out.  Especially when you are messy, messy woodworker.
 
-![Boxes 3][Boxes 3]{: .right .w-75 }
+![Boxes 3][Boxes 3]{: .right .w-66 }
 
 The insert with all the squares was cut as a separate piece from the main box. It was carved using the {{ site.data.links.origin }} from a single block of walnut.  This left me with about 72 little cubes of walnut that I still haven't figured out what to do with.
 
 {% include clear-float.html %}
 
-![Boxes 4][Boxes 4]{: .left .w-75  }
+![Boxes 4][Boxes 4]{: .left .w-66 }
 The green velvet was placed on the bottom of the box and the insert placed over it.
 
 The top engraving was a little nerve wracking. Make a mistake here and its hard to patch nicely.
