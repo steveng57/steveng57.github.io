@@ -13,7 +13,7 @@ These picture frames are sometimes called "Shadow Boxes" or "Shadow Frames". The
 
 ## Under Construction
 
-Nothing too fancy here, but there is a bit of finess in making them strong, since the frame thickness is only a little over a cm. Festool dominoes are strategically placed at the mitres to give added strength, and while they are a bit of extra work, they make alignment during the glue-up much easier.
+Nothing too fancy here, but there is a bit of finesse in making them strong, since the frame thickness is only a little over a cm. Festool dominoes are strategically placed at the mitres to give added strength, and while they are a bit of extra work, they make alignment during the glue-up much easier.
 
 ![Frame 2][Frame 2]{: .left .w-66 }I used a new kind of paint on this one, mixing a couple of colours together to get just the right shade. The interior of the frame is painted black to accentuate the shadow effect.
 
@@ -38,7 +38,7 @@ _Proudly on display in our guest bedroom_
 ## Materials
 
 - Poplar from {{ site.data.links.kjp }}
-- Acrylic Paint
+- Acrylic Paint from {{ site.data.links.michaels }}
 - {{ site.data.links.domino }} for mitre joinery
 
 [Frame 1]: 20230822_191820.jpeg
