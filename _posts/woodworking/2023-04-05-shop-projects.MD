@@ -15,8 +15,7 @@ In late winter of 2023, I decided a workshop upgrade was due.  You can never hav
 
 ### Router Stand
 
-![Under Construction 3][Under Construction 3]{: .left .w-66 }I bought a couple or three pieces of plywood from {{ site.data.links.balticbirch }}, and fashioned up a {{ site.data.links.sketchup 
-}} drawing of the router table I was going to make, along with one for the mitre stand.
+![Under Construction 3][Under Construction 3]{: .left .w-66 }I bought a couple or three pieces of plywood from {{ site.data.links.balticbirch }}, and fashioned up a {{ site.data.links.sketchup }} drawing of the router table I was going to make, along with one for the mitre stand.
 {% include clear-float.html %}
 
 ![Under Construction 2][Under Construction 2]{: .right .w-66 }The steel top on the new router table is awesome.  Nice level even cuts each and every time.

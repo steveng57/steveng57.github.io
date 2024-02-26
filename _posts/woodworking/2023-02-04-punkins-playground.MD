@@ -40,4 +40,3 @@ _I'm a crafty one_
 [Under Construction 2]: IMG_0559.jpeg
 [Under Construction 3]: IMG_0560.jpeg
 [In Production 1]: 20230405_134555.jpeg
-[KJP]: https://www.kjpselecthardwoods.com/pages/baltic-birch-plywood

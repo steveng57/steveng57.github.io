@@ -20,10 +20,9 @@ The thinking is that when not in use, it sits against the wall and acts as a ser
 
 ## Under Construction
 
-
 ![Table 1][Table 1]{: .right .w-66 }There was a deep gouge in the top of this that took a fair amount of epoxy and sanding to make disappear. If you know where to look...actually no, you can't see it at all.
 
-Mmmm...{{ site.data.links.rubio }} **Chocolate** was the colour used here.   
+Mmmm...{{ site.data.links.rubio }} **Chocolate** was the colour used here.  Mmmm...
 
 {% include clear-float.html %}
 
