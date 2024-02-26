@@ -22,7 +22,7 @@ At the request of the customer, I made a custom towel rack to fit precisely in a
 ![Towel Rack 3][Towel Rack 3]{: .w-66 .right }I was a little worried about moisture affective the piece, since it was going to be installed in a bathroom and subject to lots of humidity, and also damp towels directly on the rods. So...I heavily lathered everything with 6 or 7 coats of poly, making sure the rods got an extra dose.
 {% include clear-float.html %}
 
-![Towel Rack 4][Towel Rack 4]{: .w-66 .left }
+![Towel Rack 4][Towel Rack 4]{: .w-66 .left }The rods are solid maple, picked up at {{ site.data.links.leevalley }}.  Pretty strong and with all that poly, they should resist any moisture.
 {% include clear-float.html %}
 
 ## In Position

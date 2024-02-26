@@ -8,21 +8,19 @@ tags: [Wood, Woodworking, Napkin Holder, Kitchen, Walnut]
 image: /thumbnails/20221122_113942.jpeg
 img_path: "/assets/img/posts/napkin-holders"
 ---
-
-The napkin holder projects are among my favorites. Making these is a small challenge, it makes you work at it, but not too hard.
+{% include head-mypost.html %}
+The napkin holder projects are among my favorites. Making these is a small challenge, it makes you work at it, but not too hard.  I made one for our kitchen, then another for our friends Theresa and Doug.  Hence the Theresa and Doug engraving.  It would be silly to put Patty and Dave on it, and then give it to Theresa and Doug.
 
 > When doing a project like this, do **not** cut the outside first and attempt to get the inlay groove magically aligned with it. Instead, use the router and your templates to cut the outline of the piece and the groove at the same time. That way they will automagically align. Otherwise things will be a mess. Ask me how I know.
 {: .prompt-tip }
 
 ## Under Construction
 
-White epoxy inlay finished with Rubio Monocoat Pure.
+![Under Construction 2][Under Construction 2]{: .w-66 .left}White epoxy inlay finished with {{ site.data.links.rubio }} Pure.
+{% include clear-float.html %}
 
-![Under Construction 2][Under Construction 2]
-_Just waiting for a napkin to hold_
-
-![Under Construction 1][Under Construction 1]
-_Could I get a napkin please_
+![Under Construction 1][Under Construction 1]{: .w-66 .right}A slightly rotated angle for your viewing pleasure.
+{% include clear-float.html %}
 
 After getting confident with the epoxy outline, I decided to try some lettering for the one for our friends.
 
@@ -30,16 +28,16 @@ After getting confident with the epoxy outline, I decided to try some lettering 
 
 ## At Home in the Kitchen
 
-![In Production 1][In Production 1]
-_Looking sweet with some good company_
+![In Production 1][In Production 1]{: .w-66 .right }Looking sweet with some good company.
+{% include clear-float.html %}
 
-![In Production 3][In Production 3]
-_Its gettin crowded in here_
+![In Production 3][In Production 3]{: .w-66 .left }Its getting crowded in here.
+{% include clear-float.html %}
 
 ## Materials
 
-- Walnut
-- Dominoes
+- Walnut from {{ site.data.links.kjp }}
+- {{ site.data.links.domino }}
 - White epoxy for the inlay
 
 [Under Construction 1]: 20221122_113942.jpeg
