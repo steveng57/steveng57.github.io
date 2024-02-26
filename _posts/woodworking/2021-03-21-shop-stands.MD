@@ -18,7 +18,7 @@ These were a lot of fun to make, and they turned out great for the most part (Th
 ![Almost Finished][Stands 1]
 _Did I mention that there were **15** drawers!!!_
 
-This was the first time I had done any extensive work with Baltic Birch playwood.  This is marvelous stuff to work with, and several notches above anything you can get at the big box stores.
+This was the first time I had done any extensive work with Baltic Birch plywood.  This is marvelous stuff to work with, and several notches above anything you can get at the big box stores.
 
 ![Finished][Stands 3]
 _Putting stuff on them.  Still waiting on the spindle sander_

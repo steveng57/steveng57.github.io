@@ -13,7 +13,7 @@ This table was specially made to fit into Debbie's craft area setup. It of my ow
 
 ## Under Construction
 
-A big piece of 4x8 Baltic Birch plywood was used as the main surface. If you've not worked with that material before, I highly recommend it. It is nice stuff, super strong, made of 13 layers of wood instead of the 5 or 7 you get at the big box store. Bought mine at [KJP]{:target="\_blank"}, check it out!
+A big piece of 4x8 Baltic Birch plywood was used as the main surface. If you've not worked with that material before, I highly recommend it. It is nice stuff, super strong, made of 13 layers of wood instead of the 5 or 7 you get at the big box store. You can get it here at {{ site.data.links.balticbirch }}, check it out!
 
 ![Under Construction 3][Under Construction 3]
 _Its a big table_
