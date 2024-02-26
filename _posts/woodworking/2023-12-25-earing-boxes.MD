@@ -24,7 +24,7 @@ Doing the finishing on this one was pretty messy, partly due to the number of pi
 ![Boxes 1][Boxes 1]
 _Lots of moving parts_
 
-Nice to have a big work surface to spread out.  Especially when you are messy, messy woodworker.
+Nice to have a big work surface to spread out.  Especially when you are a messy, messy woodworker.
 
 ![Boxes 3][Boxes 3]{: .right .w-66 }
 

@@ -36,5 +36,4 @@ _Third shot_
 [Angle 1]: 20220628_125859.jpeg
 [Angle 2]: 20220628_125916.jpeg
 [Angle 3]: 20220628_125950.jpeg
-[The Wood Source]: https://wood-source.com
 [Cutek Extreme]: https://wood-source.com/product/cutek-extreme

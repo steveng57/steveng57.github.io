@@ -8,17 +8,15 @@ tags: [Wood, Woodworking, Charcuterie Board]
 image: /thumbnails/20220227_191616.jpeg
 img_path: "/assets/img/posts/charcuterie-boards"
 ---
-
+{% include head-mypost.html %}
 Ok, so the difference between a charcuterie board and a cutting board, is that a charcuterie board is meant for serving things, not cutting things. Now that we have that out of the way...these are super fun to make. Not too hard to make but they do require **a lot** of sanding.
 
 ## Under Construction
 
-Take a bunch of sticks, glue them together in just the right order, then run them thru the planer to get a start on the smoothing process, then start sanding at 80 grit. I wanted a smooth glossy look, so I sanded all the way to 600 grit.
+![Making it work][Construction]{: .w-66 .left }Take a bunch of sticks, glue them together in just the right order, then run them thru the planer to get a start on the smoothing process, then start sanding at 80 grit. I wanted a smooth glossy look, so I sanded all the way to 600 grit.
 
 The thing that makes these look cool is the different woods, and the contrast between them. It has walnut, maple, Sapele, Mahogany, and Padauk. If you are really into the wood types, I have included a way too detailed description of each of them below.
-
-![Making it work][Construction]
-_**Friendship Trays** one for Debbie and one for Theresa_
+{% include clear-float.html %}
 
 It was finished with a food safe product called Honeybees Natural Wood Cream, mostly beeswax. Doesn't that sound just yummy? The rubber feet and stainless-steel connecting screws were procured from local artisans (Lee Valley and Home Depot respectively).
 
