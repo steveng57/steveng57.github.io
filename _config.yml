@@ -54,7 +54,7 @@ google_analytics:
   id: # fill in your Google Analytics ID
 
 goatcounter:
-  id: 9830369
+  id: "9830369"
 
 # Prefer color scheme setting.
 #
