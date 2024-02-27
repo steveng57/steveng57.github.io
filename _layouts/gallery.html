@@ -96,9 +96,17 @@ layout: page
                 {% if currentcolumn == 0 %}
                     <tr class="page" data-page="{{ page }}">
                 {% endif %}
+                {% assign maxcolumns_minus_1 = maxcolumns |  minus: 1 %}
+                {% if currentcolumn == 0 %}
+                    {% assign mymargin = "image-container-left" %}
+                {%  elsif currentcolumn == maxcolumns_minus_1 %}
+                    {% assign mymargin = "image-container-right" %}
+                {% else %}
+                    {% assign mymargin = "image-container" %}
+                {% endif %}
 
                 <td class="gallery-td">
-                <div class="image-container">
+                <div class={{ mymargin }}>
                 {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
                 <a href="{{ redirect }}">
                     <img class="gallery-image" data-src="{{ image.path }}" title="{{ redirect }}" alt="{{ redirect }}" />

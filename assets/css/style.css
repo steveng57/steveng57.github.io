@@ -24,6 +24,14 @@ img {
     margin: 5px 5px 5px 5px;
 }
 
+.image-container-left {
+    margin: 5px 5px 5px 0px;
+}
+
+.image-container-right {
+    margin: 5px 0px 5px 5px;
+}
+
 .gallery-table {
     width: 100%;
     table-layout: fixed;
