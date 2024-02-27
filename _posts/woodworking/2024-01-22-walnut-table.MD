@@ -44,9 +44,7 @@ So you put the tops on the legs of both the tables and the two benches, assemble
 
 Here is a mini photo gallery of the table and benches setup in our theatre room.  Click on a pic to zoom in for details if you are so inclined.
 
-![Table 8]{: .left .w-split }
-![Table 9]{: .right .w-split }
-{% include clear-float.html %}
+{% include html-sxs.html img1="IMG_0689.jpeg" img2="IMG_0691.jpeg" %}
 
 ![Table 10]{: .center .w-75 }
 {% include clear-float.html %}

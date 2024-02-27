@@ -7,7 +7,7 @@ img_path: /assets/img/about
 ---
 ![Steves Workshop]_The most precious thing in my shop.  A gift from the family._
 
-Welcome to my photo blog of various "maker" things I am up to, mostly woodworking.  
+Welcome to my photo blog of various "maker" things I am up to, mostly woodworking.  The above picture is a sign hanging in my workshop, given to me by the family.  It's pretty cool.
 
 I have been focussing more and more on "maker" type things, including woodworking for the last decade or so. While woodworking is my primary focus, but I like to include other things...anything high tech or gadgety will do nicely. Also, life-hacks, yard and house projects and other maker things, will do nicely but mostly woodworking.
 
