@@ -16,22 +16,22 @@ When I set out to do this, I hadn't really thought of the complications that are
 
 ## Under Construction
 
-![Tray 4][Tray 4]{: .left .w-75}This is the {{ site.data.links.sketchup }} drawing used to plan the whole thing.  
+![Tray 4]{: .left .w-75}This is the {{ site.data.links.sketchup }} drawing used to plan the whole thing.  
 
 It ended up being bigger than this in the end, as I called an audible during the construction process.  Doing such a reckless thing can often come back to haunt you, but in this case it worked out okay.  The overall size was never an issue, it was all those angles that were the risky part.
 {% include clear-float.html %}
 
-![Tray 1][Tray 1]{: .right .w-66} As seems to be my usual for mitres these days, I used the {{ site.data.links.domino }} to add strength to the mitre, and make it easy to glue-up.
+![Tray 1]{: .right .w-66} As seems to be my usual for mitres these days, I used the {{ site.data.links.domino }} to add strength to the mitre, and make it easy to glue-up.
 {% include clear-float.html %}
 
-![Tray 2][Tray 2]{: .left .w-66}A fun build, while the angles were indeed odd, it was a lot of fun to see it come together.
+![Tray 2]{: .left .w-66}A fun build, while the angles were indeed odd, it was a lot of fun to see it come together.
 {% include clear-float.html %}
 
 ## In Production
 
 A tray full of munchies in its new home, which is normally resting upon the [extension table](/posts/extension-table) from the previous post.
 
-![Tray 3][Tray 3]
+![Tray 3]
 _At home in the theatre_
 
 ## Materials

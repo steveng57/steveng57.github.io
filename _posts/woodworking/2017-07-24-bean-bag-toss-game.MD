@@ -8,7 +8,7 @@ tags: [Wood, Woodworking, Game, Outdoors, Plywood, Red Oak]
 image: /thumbnails/20170724_234953.jpg
 img_path: "/assets/img/posts/bean-bag-toss-game"
 ---
-
+{% include head-mypost.html %}
 One of my first tricky projects was a bean bag toss game.  Fun around the pool in the back yard.  
 
 ## Getting to Work
@@ -19,23 +19,27 @@ The inner circles were just done with a router circle jig I crafted.  Drilled so
 
 ## Mistakes Were Made
 
-While the face board was just your vanilla big-box-store plywood, the back boards were made of cedar.  My thinking at the time was that this choice would be a good one since these are outdoors and on the grass a lot.  The problem is that cedar is a very soft wood, and my screws were doing all kinds of wonky things, most problematically not staying were they should.
-
 >**Pro tip**: Cedar is a squishy wood. Use it wisely.
 {: .prompt-tip }
 
 Copious amounts of waterproof glue helped fix the situation.
 
-Debbie stamped some dog paw prints on the final version which made it look really cool.  I will add a pic of that when the spring thaw comes and the back shed is a little more accessible.
+![Two Boards]{: .left .w-66 }While the face board was just your vanilla big-box-store plywood, the back boards were made of cedar.  My thinking at the time was that this choice would be a good one since these are outdoors and on the grass a lot.  The problem is that cedar is a very soft wood, and my screws were doing all kinds of wonky things, most problematically not staying were they should.
 
-![Game Time][Two Boards]
-_The two Bag Toss Boards were later painted candy-apple red._
+The two Bag Toss Boards were later painted candy-apple red.
+{% include clear-float.html %}
+
+![Boards 2]{: .right .w-66 }These are taken out many times every summer and its pretty cool to see people having fun with them.  It never gets old.
+
+Debbie stamped some dog paw prints on the final version which made it look really cool.  I will add a pic of that when the spring thaw comes and the back yard is a little more accessible.
+{% include clear-float.html %}
 
 ## Materials
 
-- Oak venear plywood from Home Depot
+- Oak veneer plywood from Home Depot
 - Cedar 2x4s
 - Kreg pocket hole jig and screws
 - Custom built router large radius jig
 
 [Two Boards]: 20170724_234944.jpg
+[Boards 2]: 20170724_234953.jpg

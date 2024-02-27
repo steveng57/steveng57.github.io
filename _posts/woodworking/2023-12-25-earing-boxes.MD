@@ -11,7 +11,6 @@ image:
 img_path: "/assets/img/posts/earing-boxes"
 ---
 {% include head-mypost.html %}
-
 I really like making special things for other people. This is a fun example of that. Debbie thought it would be cool to make a set of earing boxes for her sister for Christmas. I could not agree more. This was a first of its kind for me. While I have made a great many boxes in the past, the insert was a whole new kind of thing.
 
 > **Cool Tool**: The {{ site.data.links.shaper }} was critical here, no way I could make this with just tools. It is truly an amazing machine.
@@ -21,18 +20,18 @@ I really like making special things for other people. This is a fun example of t
 
 Doing the finishing on this one was pretty messy, partly due to the number of pieces, and also all the nooks and crannies to get into.
 
-![Boxes 1][Boxes 1]
+![Boxes 1]
 _Lots of moving parts_
 
 Nice to have a big work surface to spread out.  Especially when you are a messy, messy woodworker.
 
-![Boxes 3][Boxes 3]{: .right .w-66 }
+![Boxes 3]{: .right .w-66 }
 
 The insert with all the squares was cut as a separate piece from the main box. It was carved using the {{ site.data.links.origin }} from a single block of walnut.  This left me with about 72 little cubes of walnut that I still haven't figured out what to do with.
 
 {% include clear-float.html %}
 
-![Boxes 4][Boxes 4]{: .left .w-66 }
+![Boxes 4]{: .left .w-66 }
 The green velvet was placed on the bottom of the box and the insert placed over it.
 
 The top engraving was a little nerve wracking. Make a mistake here and its hard to patch nicely.
@@ -43,19 +42,19 @@ The top engraving was a little nerve wracking. Make a mistake here and its hard 
 
 Here they are, ready and waiting for the big day.
 
-![Boxes 2][Boxes 2]
+![Boxes 2]
 _Engraving done_
 
 ## In Position
 
 All filled with all kinds of earings. Looks like I might have to make more!
 
-![Boxes 5][Boxes 5]
+![Boxes 5]
 _Earings in place_
 
 ## Materials
 
-- Walnut
+- Walnut from {{ site.data.links.kjp }}
 - {{ site.data.links.rubio }} Walnut for finish
 - Hardware from {{ site.data.links.leevalley }}
 - Green Velvet from Amazon
