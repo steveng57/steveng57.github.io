@@ -7,7 +7,7 @@ categories: [Woodworking]
 tags: [Wood, Woodworking, Walnut, Table, Bench]
 image:
   path: /thumbnails/IMG_0693.jpeg
-  alt: Walnut Table
+  alt: Walnut Table and Benches
 img_path: "/assets/img/posts/walnut-table"
 ---
 {% include head-mypost.html %}
