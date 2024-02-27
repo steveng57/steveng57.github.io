@@ -193,6 +193,7 @@ exclude:
   - package*.json
   - "*.ps1"
   - "*.cmd"
+  - "*.afphoto"
 
 jekyll-archives:
   enabled: [categories, tags]
