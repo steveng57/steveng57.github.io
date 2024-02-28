@@ -26,7 +26,7 @@ The [Image Gallery](/gallery) is an alphabetical listing of all the images in al
 
 The [Categories](/categories) link shows the posts group by their categories and sub-categories.  I am just getting these categories sorted as of this writing.
 
-The [Tags](/tags) links will display a tag wall splattered with alls tags from all posts.  Click on a random one to see what fun that brings.
+The [Tags](/tags) links will display a tag wall splattered with all tags from all posts.  Click on a random one to see what fun that brings.
 
 To all the fans of this website, pictured below, please be [let me know](mailto:steveng57@outlook.com) if you find any bugs or other inaccuracies.  This is very much a work in progress.
 
