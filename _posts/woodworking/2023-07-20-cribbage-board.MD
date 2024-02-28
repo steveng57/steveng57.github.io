@@ -3,7 +3,7 @@ layout: post
 title: Cribbage Board
 date: 2023-07-20 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
-categories: [Woodworking]
+categories: [Woodworking, Games]
 tags: [Wood, Woodworking, Router, Cribbage Board, Sharper Origin, Walnut]
 image: /thumbnails/IMG_0626.jpeg
 img_path: "/assets/img/posts/cribbage-board"

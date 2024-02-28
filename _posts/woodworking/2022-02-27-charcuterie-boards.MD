@@ -3,7 +3,7 @@ layout: post
 title: Charcuterie Boards
 date: 2022-02-25 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
-categories: [Woodworking]
+categories: [Woodworking, Kitchen]
 tags: [Wood, Woodworking, Charcuterie Board]
 image: /thumbnails/20220227_191616.jpeg
 img_path: "/assets/img/posts/charcuterie-boards"

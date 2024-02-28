@@ -3,7 +3,7 @@ layout: post
 title: Walnut Table and Benches
 date: 2024-02-22 18:32:00 -0500
 last_modified_at: 2024-02-25 18:59:24 -0500
-categories: [Woodworking]
+categories: [Woodworking, Furniture]
 tags: [Wood, Woodworking, Walnut, Table, Bench]
 image:
   path: /thumbnails/IMG_0693.jpeg

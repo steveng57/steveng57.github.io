@@ -3,7 +3,7 @@ layout: post
 title: Punkin's Playground
 date: 2023-02-04 18:32:00 -0500
 last_modified_at: 2024-02-22 09:53:54 -0500
-categories: [Woodworking]
+categories: [Woodworking, Furniture]
 tags: [Wood, Woodworking, Table, Craft, Plywood, Maple]
 image: /thumbnails/20230405_134555.jpeg
 img_path: "/assets/img/posts/punkins-playground"

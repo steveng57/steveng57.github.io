@@ -3,7 +3,7 @@ layout: post
 title: Napkin Holders
 date: 2022-11-22 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
-categories: [Woodworking]
+categories: [Woodworking, Kitchen]
 tags: [Wood, Woodworking, Napkin Holder, Kitchen, Walnut]
 image: /thumbnails/20221122_113942.jpeg
 img_path: "/assets/img/posts/napkin-holders"

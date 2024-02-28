@@ -3,7 +3,7 @@ layout: post
 title: Walnut Picture Frame
 date: 2021-07-30 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
-categories: [Woodworking]
+categories: [Woodworking, Home Decor]
 tags: [Wood, Woodworking, Picture Frame, Walnut]
 image: /thumbnails/20210730_234747896_iOS.jpeg
 img_path: "/assets/img/posts/walnut-frame"

@@ -3,7 +3,7 @@ layout: post
 title: Boys Bench
 date: 2021-02-06 17:58:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
-categories: [Woodworking]
+categories: [Woodworking, Pets]
 tags: [Wood, Woodworking, Bench, Drawers, Poplar]
 image: /thumbnails/IMG_0536.jpeg
 img_path: "/assets/img/posts/boys-bench"
