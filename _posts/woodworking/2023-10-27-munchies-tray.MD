@@ -4,7 +4,7 @@ title: Munchies Tray
 date: 2023-10-27 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Home Decor]
-tags: [Wood, Woodworking, Walnut, Tray, Epxoy, Inlay]
+tags: [Wood, Woodworking, Walnut, Trays, Epoxy, Inlay, Home Decor]
 image: /thumbnails/IMG_0079.jpeg
 img_path: "/assets/img/posts/munchies-tray"
 ---

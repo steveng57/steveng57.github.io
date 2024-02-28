@@ -4,7 +4,7 @@ title: Raised Beds
 date: 2022-06-28 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Furniture]
-tags: [Wood, Woodworking, Raised Bed, Garden, Cedar]
+tags: [Wood, Woodworking, Raised Bed, Garden, Cedar, Outdoors, Furniture]
 image: /thumbnails/20220628_125950.jpeg
 img_path: "/assets/img/posts/raised-beds"
 ---

@@ -4,7 +4,7 @@ title: Earing Boxes
 date: 2023-12-25 18:32:00 -0500
 last_modified_at: 2024-02-20 11:44:45 -0500
 categories: [Woodworking, Jewelry Boxes]
-tags: [Wood, Woodworking, Walnut, Box, Earing]
+tags: [Wood, Woodworking, Walnut, Box, Earing, Jewelry Boxes]
 image:
   path: /thumbnails/IMG_0461.jpeg
   alt: Earings

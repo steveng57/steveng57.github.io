@@ -4,7 +4,7 @@ title: Bean Bag Toss Game
 date: 2017-07-24 17:56:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Games]
-tags: [Wood, Woodworking, Game, Outdoors, Plywood, Red Oak]
+tags: [Wood, Woodworking, Games, Outdoors, Plywood, Red Oak, Cedar]
 image: /thumbnails/20170724_234953.jpg
 img_path: "/assets/img/posts/bean-bag-toss-game"
 ---

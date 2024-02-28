@@ -4,7 +4,7 @@ title: Extension Table
 date: 2023-11-26 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Furniture]
-tags: [Wood, Woodworking, Ash]
+tags: [Wood, Woodworking, Ash, Furniture]
 image: /thumbnails/IMG_0221.jpeg
 img_path: "/assets/img/posts/extension-table"
 ---
