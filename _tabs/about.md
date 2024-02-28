@@ -2,12 +2,35 @@
 # the default layout is 'page'
 icon: fas fa-user
 order: 5
-image: 20150131_134612.jpg
+image: 
+    path: IMG_0697.jpeg
+    alt: The most precious thing in my shop.  A gift from the family.
 img_path: /assets/img/about
+date: 2024-01-28 10:59:55 -0500
+last_modified_at: 2024-02-28 10:59:55 -0500
 ---
+{% include lang.html %}
+{% include mydatetime.html date=page.last_modified_at lang=lang prefix="Last Updated: " %}
+
 ![Steves Workshop]_The most precious thing in my shop.  A gift from the family._
 
 Welcome to my photo blog of various "maker" things I am up to, mostly woodworking.  The above picture is a sign hanging in my workshop, given to me by the family.  It's pretty cool.
+
+## About this Site
+
+The [Home Page](/) is an inverse chronological listing of the various projects I have taken on.  As you go further back in time, the projects get a little more primitive...not that my more recent things are perfect, but you learn a lot over time in this craft.  Some of that learning I have actually managed to apply in my more recent efforts.
+
+In the early days, I did not take many pictures of the shop or the projects as they were in progress, so a lot of the pics will be of the finished product.  I will be taking more "under construction" photos as time progresses, hopefully that will make the posts more interesting to those of you who like a bit of the "behind-the-scenes" thing.
+
+The [Image Gallery](/gallery) is an alphabetical listing of all the images in all the posts on the site.  This is meant to be a purely visual experience, and if you want more details on something of interest, you can clip on the image to drill down into the original post.
+
+The [Categories](/categories) link shows the posts group by their categories and sub-categories.  I am just getting these categories sorted as of this writing.
+
+The [Tags](/tags) links will display a tag wall splattered with alls tags from all posts.  Click on a random one to see what fun that brings.
+
+To all the fans of this website, pictured below, please be [let me know](mailto:steveng57@outlook.com) if you find any bugs or other inaccuracies.  This is very much a work in progress.
+
+# About the Author
 
 I have been focussing more and more on "maker" type things, including woodworking for the last decade or so. While woodworking is my primary focus, but I like to include other things...anything high tech or gadgety will do nicely. Also, life-hacks, yard and house projects and other maker things, will do nicely but mostly woodworking.
 
@@ -18,7 +41,7 @@ I live in a rural suburb of Ottawa called Manotick with my wife Debbie and two b
 ![Boys Pic]
 _Debbie took this great shot of the boys_
 
-I am also a Pisces, which is silly because there is no science behind that stuff at all, and if you believe in it, then I have some magic pixie dust to sell you, but that's about all you are going to get about me.
+I am also a Pisces, which is silly because there is no science behind that stuff at all.  The other thing you should know about me is that I am all about science.  So if you believe in astrology, then I have some magic pixie dust to sell you, but that's about all you are going to get about me.
 
 [Boys Pic]: 20150131_134612.jpg
 [Steves Workshop]: IMG_0697.jpeg

@@ -1,19 +1,14 @@
 #  The contact options.
 
-- type: github
-  icon: "fab fa-github"
-
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
-- type: rss
-  icon: "fas fa-rss"
-  noblank: true
 
 - type: facebook
   icon: "fab fa-facebook" 
-  url:  'https://www.facebook.com/steven.goulet.58'                  # Fill with your Facebook account page, rel="me" will be applied for verification 
+  url:  'https://www.facebook.com/steven.goulet.58'                  
+  # Fill with your Facebook account page, rel="me" will be applied for verification 
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
@@ -27,3 +22,6 @@
 # - type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
 #   url:  ''                  # Fill with your stackoverflow homepage
+
+- type: github
+  icon: "fab fa-github"

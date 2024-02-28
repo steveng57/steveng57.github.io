@@ -30,7 +30,7 @@ Added a bottom shelf for more shop storage, because...you know...storage.  I als
 
 ## Today
 
-While it is no longer my primary workbench / assembly table, it still gets a lot of use in the shop.  It serves as both an outfeed table for the table saw, as well as staging area for other tools, and still gets some exercise as a secondary assembly table.
+While it is no longer my primary workbench / assembly table, it still gets a lot of use in the shop.  It serves as an out-feed table for the table saw, as a staging area for other tools, and it still gets some exercise as a secondary assembly table.
 
 ![First Bench]{: .w-75 }
 
