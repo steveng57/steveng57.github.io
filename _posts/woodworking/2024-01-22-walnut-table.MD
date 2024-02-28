@@ -33,6 +33,8 @@ The other difference is that there were twice as many legs on the benches.
 {% include clear-float.html %}
 
 ![Table 6]{: .right .w-66 }The bench tops were a lot easier than the table top.  Each of them is a little less than half that of the table top, so there is much less worry about warps and twists.
+
+The photo here makes the tops look a little blotchy.  I don't know why.  In real life they are much smoother and look way better than this photo.  I gotta work on my photography skills.
 {% include clear-float.html %}
 
 ![Table 7]{: .left .w-66 }The bench table legs.  The inside stretchers in the middle are really just for alignment of the outside stretchers, keeping them parallel.
