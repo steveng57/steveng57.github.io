@@ -10,6 +10,10 @@
 - type: rss
   icon: "fas fa-rss"
   noblank: true
+
+- type: facebook
+  icon: "fab fa-facebook" 
+  url:  'https://www.facebook.com/steven.goulet.58'                  # Fill with your Facebook account page, rel="me" will be applied for verification 
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
