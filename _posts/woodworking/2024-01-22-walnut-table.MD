@@ -11,7 +11,7 @@ image:
 img_path: "/assets/img/posts/walnut-table"
 ---
 {% include head-mypost.html %}
-This is perhaps my most complicated project to date, with the possible exception of the [daybed](/daybed).  It took about six or seven weeks.  The design called for the table to fit in a certain area in our theatre room.  We watch movies there, but its a big room and we also use it for other things.  This table is to serve as a craft table for my niece Lilly and any other folk who want to make stuff here.  You can make whatever you want at this table.
+This is perhaps my most complicated project to date, with the possible exception of the [daybed](/posts/daybed).  It took about six or seven weeks.  The design called for the table to fit in a certain area in our theatre room.  We watch movies there, but its a big room and we also use it for other things.  This table is to serve as a craft table for my niece Lilly and any other folk who want to make stuff here.  You can make whatever you want at this table.
 
 ## Under Construction
 
