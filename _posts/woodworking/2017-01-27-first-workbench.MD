@@ -28,6 +28,12 @@ This one was fairly straightforward.  A whole lot of 2x4s from the big box store
 Added a bottom shelf for more shop storage, because...you know...storage.  I also added a vice to the side because...you know...vice.
 {% include clear-float.html %}
 
+## Today
+
+While it is no longer my primary workbench / assembly table, it still gets a lot of use in the shop.  It serves as both an outfeed table for the table saw, as well as staging area for other tools, and still gets some exercise as a secondary assembly table.
+
+![First Bench]{: .w-75 }
+
 ## Materials
 
 - Standard Home Depot 2x4s
@@ -38,3 +44,4 @@ Added a bottom shelf for more shop storage, because...you know...storage.  I als
 
 [Orange Bench]: 20170202_151701.jpeg
 [Orange Bench 2]: 20170127_010801.jpeg
+[First Bench]: IMG_0699.jpeg
