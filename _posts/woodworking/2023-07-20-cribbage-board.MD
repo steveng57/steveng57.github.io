@@ -56,7 +56,7 @@ _At home and in use_
 ## Materials
 
 - Walnut from {{ site.data.links.kjp }}
-- Black epoxy inlay
+- Black {{ site.data.links.chillepoxy }} inlay
 - {{ site.data.links.shaper }} for carving
 
 [Board]: CribbageBoard02.jpeg

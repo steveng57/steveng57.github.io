@@ -27,7 +27,7 @@ Then you cut the board in two, slicing it down the middle, yielding two long boa
 
 I am not sure I am making myself clear here, no do I think I can in this post.  But if you really want some of the finer details on this stuff, check out the YouTube video from [The Wood Whisperer](https://www.youtube.com/@woodwhisperer){:target='_blank'} on the [Four Corner Grain Match](https://youtu.be/SUd3I6Kx1Z0?si=ZVx0jnFtcppiO9HG){:target='_blank'}.  Marc is one of my YouTube woodworking heroes,
 
-Orange epoxy inlay, carved with the {{ site.data.links.shaper }}
+Orange {{ site.data.links.chillepoxy }} inlay, carved with the {{ site.data.links.shaper }}
 
 ## All done
 
@@ -37,7 +37,7 @@ _A nice contemporary piece_
 ## Materials
 
 - Maple, Walnut from {{ site.data.links.kjp }}
-- Epoxy with orange colouring
+- {{ site.data.links.chillepoxy }} with orange colouring
 - {{ site.data.links.domino }} for mitre joinery
 - {{ site.data.links.rubio }} Pure finish
 

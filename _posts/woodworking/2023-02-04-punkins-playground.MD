@@ -34,7 +34,7 @@ _I'm a crafty one_
 - Baltic Birch plywood for the top and legs
 - Maple trim
 - {{ site.data.links.shaper }} to carve the inlay
-- Gray epoxy for the inlay
+- Gray {{ site.data.links.chillepoxy }} for the inlay
 
 [Under Construction 1]: IMG_0558.jpeg
 [Under Construction 2]: IMG_0559.jpeg
