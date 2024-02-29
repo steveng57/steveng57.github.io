@@ -9,7 +9,7 @@ img_path: /assets/img/about
 date: 2024-01-28 10:59:55 -0500
 last_modified_at: 2024-02-28 10:59:55 -0500
 ---
-{% include mydatetime.html date=page.last_modified_at lang=site.lang prefix="Last Updated: " %}
+{% include mydatetime.html date=page.last_modified_at prefix="Last Updated: " %}
 
 ![Steves Workshop]_The most precious thing in my shop.  A gift from the family._
 
