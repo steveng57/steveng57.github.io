@@ -1,4 +1,31 @@
-<div style="display: flex;">
-  <img src="{{ include.img1 }}" style="flex: 0 1 auto;  margin: 0 10px 0 0; ">
-  <img src="{{ include.img2 }}" style="flex: 0 1 auto;  margin: 0 0 0 10px; ">
+<style>
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+.flex-item {
+  flex: 1;
+  text-align: center;
+}
+.flex-item img {
+  width: 100%; /* Adjust as needed */
+}
+figcaption {
+  font-size: 0.8em; /* Adjust as needed */
+}
+</style>
+
+{% assign caption1 = site.data.img-info[include.img1].title %}
+{% assign caption2 = site.data.img-info[include.img2].title %}
+
+<div class="flex-container">
+  <figure class="flex-item">
+    <img src="{{ include.img1 }}" style="flex: 0 1 auto;  margin: 0 10px 0 0; ">
+    <figcaption class="text-center pt-2 pb-2">{{ caption1 }}</figcaption>
+  </figure>
+  <figure class="flex-item">
+    <img src="{{ include.img2 }}" style="flex: 0 1 auto;  margin: 0 0 0 10px; ">
+    <figcaption class="text-center pt-2 pb-2" >{{ caption2 }}</figcaption>
+  </figure>
 </div>
+

@@ -18,6 +18,18 @@ Generates thumbnails for images in the "C:\Images" folder and deletes any existi
 #>
 function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
 
+   # Create a Shell.Application object
+   $shell = New-Object -ComObject Shell.Application
+
+   # Create a hashtable to store the metadata
+   $metadata = @{}
+
+   # Define the property indices for the title, subject, and date taken
+   # These indices might vary depending on the version of Windows
+   $titleIndex = 21
+   $subjectIndex = 22
+   $dateTakenIndex = 12
+
    # Get all the subfolders
    $subfolders = Get-ChildItem -Path $folderPath -Directory
 
@@ -49,9 +61,37 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
             # Generate a new thumbnail using Magick
             Write-Output "Convert command: " "convert $($imageFile.FullName) -resize 50% $thumbnailPath"
             Start-Process -FilePath "magick" -ArgumentList "convert `"$($imageFile.FullName)`" -resize 50% `"$thumbnailPath`"" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName
+         }   
+         # Get the folder and file objects
+         $folder = Split-Path $imageFile
+         $file = Split-Path $imageFile -Leaf
+         $shellFolder = $shell.Namespace($folder)
+         $shellFile = $shellFolder.ParseName($file)
+
+               # Get the properties
+         $title = $shellFolder.GetDetailsOf($shellFile, $titleIndex)
+         $subject = $shellFolder.GetDetailsOf($shellFile, $subjectIndex)
+         $dateTaken = $shellFolder.GetDetailsOf($shellFile, $dateTakenIndex)
+
+         # Add the properties to the hashtable
+         $metadata[$file] = @{
+            'title' = $title
+            'subject' = $subject
+            'datetaken' = $dateTaken
+      
          }
       }
    }
+
+   # Convert the $metadata object to JSON format
+   $jsonContent = $metadata | ConvertTo-Json
+   #$badChar = [char]0x200E
+   #$yamlContent = $yamlContent.Replace($badChar, "")
+   # Define the file path for the YAML file
+   $jsonFilePath = Join-Path -Path "_data" -ChildPath "img-info.json"
+
+   # Write the JSON content to the file
+   $jsonContent | Out-File -FilePath $jsonFilePath -Encoding UTF8
 }
 
 # Call the function with the specified folder path

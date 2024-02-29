@@ -1,0 +1,12 @@
+---
+layout: default
+---
+Here we go!
+{% assign filename = "IMG_0626.jpeg" %}
+{% assign specific_entry = site.data.img-info[filename] %}
+
+Title: {{ specific_entry.title }}
+Subject: {{ specific_entry.subject }}
+Date Taken: {{ specific_entry.datetaken }}
+
+Real test:  {{ site.data.img-info[filename].title }}
