@@ -10,3 +10,9 @@ Subject: {{ specific_entry.subject }}
 Date Taken: {{ specific_entry.datetaken }}
 
 Real test:  {{ site.data.img-info[filename].title }}
+
+Now for the pageviews
+
+site.pageviews.provider: {{ site.pageviews.provider }}
+
+site.analytics[site.pageviews.provider].id: {{ site.analytics[site.pageviews.provider].id }}
