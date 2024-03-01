@@ -1,0 +1,16 @@
+{% assign caption = site.data.img-info[include.img].title %}
+
+{% case include.align %}
+  {% when left %}
+    {% assign class = "sjg-left" %}
+  {% when right %}
+    {% assign class = "sjg-right" %}
+  {% when center %}
+    {% assign class = "sjg-center" %}
+{% endcase %}
+
+<div class="{{ class }}">
+    <img src="{{ include.img }}" alt="{{ include.img }}" title="{{ caption }}">
+    <figcaption class="text-center">{{ caption }}</figcaption>
+</div>
+

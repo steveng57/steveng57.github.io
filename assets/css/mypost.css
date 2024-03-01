@@ -9,3 +9,39 @@
 img {
     border-radius: 10px;
 }
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-item {
+    flex: auto;
+    text-align: center;
+}
+
+.flex-item img {
+    width: 100%; /* Adjust as needed */
+}
+
+figcaption {
+    font-size: 0.8em; /* Adjust as needed */
+}
+
+.sjg-left {
+    float: left;
+    width: 66% !important;
+    margin: 0rem 1rem 1rem 0rem;
+}
+
+.sjg-right {
+    float: right;
+    width: 66% !important;
+    margin: 0rem 0rem 1rem 1rem;
+}
+
+.sjg-center {
+    width: 75% !important;
+    margin: auto;
+}
+
