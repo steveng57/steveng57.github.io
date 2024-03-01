@@ -20,18 +20,17 @@ I really like making special things for other people. This is a fun example of t
 
 Doing the finishing on this one was pretty messy, partly due to the number of pieces, and also all the nooks and crannies to get into.
 
-![Boxes 1]
-_Lots of moving parts_
+{% include html-side.html img="IMG_0455.jpeg" align="center" %}
 
 Nice to have a big work surface to spread out.  Especially when you are a messy, messy woodworker.
 
-![Boxes 3]{: .right .w-66 }
+{% include html-side.html img="IMG_0466.jpeg" align="right" %}
 
 The insert with all the squares was cut as a separate piece from the main box. It was carved using the {{ site.data.links.origin }} from a single block of walnut.  This left me with about 72 little cubes of walnut that I still haven't figured out what to do with.
 
 {% include clear-float.html %}
 
-![Boxes 4]{: .left .w-66 }
+{% include html-side.html img="IMG_0467.jpeg" align="left" %}
 The green velvet was placed on the bottom of the box and the insert placed over it.
 
 The top engraving was a little nerve wracking. Make a mistake here and its hard to patch nicely.
@@ -40,17 +39,13 @@ The top engraving was a little nerve wracking. Make a mistake here and its hard 
 
 ## Ready
 
-Here they are, ready and waiting for the big day.
-
-![Boxes 2]
-_Engraving done_
+{% include html-side.html img="IMG_0461.jpeg" align="right" %}Here they are, ready and waiting for the big day.
+{% include clear-float.html %}
 
 ## In Position
 
-All filled with all kinds of earings. Looks like I might have to make more!
-
-![Boxes 5]
-_Earings in place_
+{% include html-side.html img="earing-box-01.jpeg" align="center" %}All filled with all kinds of earings. Looks like I might have to make more!
+{% include clear-float.html %}
 
 ## Materials
 
@@ -58,9 +53,3 @@ _Earings in place_
 - {{ site.data.links.rubio }} Walnut for finish
 - Hardware from {{ site.data.links.leevalley }}
 - Green Velvet from Amazon
-
-[Boxes 1]: IMG_0455.jpeg
-[Boxes 2]: IMG_0461.jpeg
-[Boxes 3]: IMG_0466.jpeg
-[Boxes 4]: IMG_0467.jpeg
-[Boxes 5]: earing-box-01.jpeg
