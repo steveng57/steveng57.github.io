@@ -54,7 +54,7 @@ analytics:
   google:
     id: # fill in your Google Analytics ID
   goatcounter:
-    id: "9830369"
+    id: '9830369'
 
 # Pageviews settings
 pageviews:

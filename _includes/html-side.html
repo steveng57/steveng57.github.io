@@ -1,11 +1,11 @@
 {% assign caption = site.data.img-info[include.img].title %}
 
 {% case include.align %}
-  {% when left %}
+  {% when "left" %}
     {% assign class = "sjg-left" %}
-  {% when right %}
+  {% when "right" %}
     {% assign class = "sjg-right" %}
-  {% when center %}
+  {% when "center" %}
     {% assign class = "sjg-center" %}
 {% endcase %}
 
