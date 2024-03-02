@@ -20,7 +20,7 @@ I used a new kind of paint on this one, mixing a couple of colours together to g
 
 Its an acrylic paint I picked up at {{ site.data.links.michaels }}.
 
-{% include clear-float.html %}
+{% include clear-float.html break = 1 %}
 
 {% include html-side.html img="20230822_184948.jpeg" align="right" %}
 I made these out of poplar.  It's a lighter wood, but still strong enough. Not as sappy as pine, and paints very well. Less pricey than other woods, and if you are going to paint it anyway, might as well spend more on the paint and less on the wood.

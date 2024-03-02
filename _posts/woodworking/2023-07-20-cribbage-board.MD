@@ -31,6 +31,8 @@ _391 holes. Go ahead...count 'em._
 
 {% include clear-float.html %}
 
+## Finish
+
 {% include html-side.html img="20230720_163338.jpeg" align="right" %}
 Finishing this one was a little tricky too. I use a hard-wax oil called {{ site.data.links.rubio }} for most of my projects theses days. It makes for a great, durable, and repairable finish. It is also way less finicky that other finishes: you apply it, wait a bit, and wipe off the excess. Dust does not really stick to it, so shop dust is not so much of a problem.
 

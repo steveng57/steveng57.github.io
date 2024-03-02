@@ -20,7 +20,7 @@ When I set out to do this, I hadn't really thought of the complications that are
 This is the {{ site.data.links.sketchup }} drawing used to plan the whole thing.  
 
 It ended up being bigger than this in the end, as I called an audible during the construction process.  Doing such a reckless thing can often come back to haunt you, but in this case it worked out okay.  The overall size was never an issue, it was all those angles that were the risky part.
-{% include clear-float.html %}
+{% include clear-float.html break = 1 %}
 
 {% include html-side.html img="IMG_0074.jpeg" align="center-full" %}
 As seems to be my usual for mitres these days, I used the {{ site.data.links.domino }} to add strength to the mitre, and make it easy to glue-up.

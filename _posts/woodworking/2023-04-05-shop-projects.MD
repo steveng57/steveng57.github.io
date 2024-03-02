@@ -15,30 +15,28 @@ In late winter of 2023, I decided a workshop upgrade was due.  You can never hav
 
 ### Router Stand
 
-![Under Construction 3][Under Construction 3]{: .left .w-66 }I bought a couple or three pieces of plywood from {{ site.data.links.balticbirch }}, and fashioned up a {{ site.data.links.sketchup }} drawing of the router table I was going to make, along with one for the mitre stand.
-{% include clear-float.html %}
+{% include html-side.html img="Sketchup%20of%20Router%20Table.jpeg" align="left" %}
 
-![Under Construction 2][Under Construction 2]{: .right .w-66 }The steel top on the new router table is awesome.  Nice level even cuts each and every time.
+I bought a couple or three pieces of plywood from {{ site.data.links.balticbirch }}, and fashioned up a {{ site.data.links.sketchup }} drawing of the router table I was going to make, along with one for the mitre stand.
+{% include clear-float.html break=1 %}
+
+{% include html-side.html img="20230405_141755.jpeg" align="right" %}
+The steel top on the new router table is awesome.  Nice level even cuts each and every time.
 {% include clear-float.html %}
 
 ### Mitre Stand
 
-![Under Construction 4][Under Construction 4]{: .left .w-66 }Each unit in the mitre stand is basically built as a big cabinet box with a drawer.  You build three of those and string them together using about 10 beefy cabinet screws, and there you have a mitre stand.  Here you see it modelled in {{ site.data.links.sketchup }} before the construction began.
+{% include html-side.html img="Sketchup%20of%20Mitre%20Stand.jpeg" align="left" %}
+Each unit in the mitre stand is basically built as a big cabinet box with a drawer.  You build three of those and string them together using about 10 beefy cabinet screws, and there you have a mitre stand.  Here you see it modelled in {{ site.data.links.sketchup }} before the construction began.
 {% include clear-float.html %}
 
 ## In the Shop
 
 It is so nice to have a proper set of workshop stands for the router and the mitre saw along this wall.  I would show you a _"before"_ drawing so that you could see the difference, but that would be embarrassing.  
 
-![Under Construction 1][Under Construction 1]
-_Lots of new storage_
+{% include html-side.html img="20230405_141747.jpeg" %}
 
 ## Materials
 
 - {{ site.data.links.balticbirch }}
 - Blum hardware for doors and drawers
-
-[Under Construction 1]: 20230405_141747.jpeg
-[Under Construction 2]: 20230405_141755.jpeg
-[Under Construction 3]: Sketchup%20of%20Router%20Table.jpeg
-[Under Construction 4]: Sketchup%20of%20Mitre%20Stand.jpeg

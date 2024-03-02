@@ -13,12 +13,15 @@ I went for a bit of the artsy, rustic look on these.  They were a bit tricky, in
 
 ## Tree Tray
 
-![Tray 2][Tray 2]{: .left .w-66}The Tree Tray was done first, and so I learned how not do it here.  Basically on something like this, you need to sand and finish before final assembly, otherwise it it too difficult to get into corners and things.
+{% include html-side.html img="20230405_141951.jpeg" align="left" %}
+The Tree Tray was done first, and so I learned how not do it here.  Basically on something like this, you need to sand and finish before final assembly, otherwise it it too difficult to get into corners and things.
 {% include clear-float.html %}
 
 ## Flower Tray
 
-![Tray 1][Tray 1]{: .right .w-66 }The Flower Tray is where the learnings were applied and turned out better than the tree, but they make a good set.
+{% include html-side.html img="20230405_141946.jpeg" align="right" %}
+
+The Flower Tray is where the learnings were applied and turned out better than the tree, but they make a good set.
 {% include clear-float.html %}
 
 ## Materials
@@ -26,6 +29,3 @@ I went for a bit of the artsy, rustic look on these.  They were a bit tricky, in
 - Poplar from {{ site.data.links.kjp }}
 - Various coloured epoxies
 - {{ site.data.links.shaper }} to carve the inlays
-
-[Tray 1]: 20230405_141951.jpeg
-[Tray 2]: 20230405_141946.jpeg

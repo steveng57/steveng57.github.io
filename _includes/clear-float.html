@@ -1,1 +1,13 @@
-<div style="clear: both;"><br></div>
+{% if include.break %}
+    {% assign break = include.break %}
+{% else %}
+    {% assign break = 0 %}
+{% endif %}
+<div style="clear: both;">
+
+{% if break %}
+    {% for i in (1..break) %}
+        <br>
+    {% endfor %}
+{% endif %}
+</div>

@@ -16,22 +16,30 @@ The napkin holder projects are among my favorites. Making these is a small chall
 
 ## Under Construction
 
-![Under Construction 2][Under Construction 2]{: .w-66 .left}White epoxy inlay finished with {{ site.data.links.rubio }} Pure.
+{% include html-side.html img="20221122_113946.jpeg" align="left" %}
+White epoxy inlay finished with {{ site.data.links.rubio }} Pure.
+{% include clear-float.html break = 1 %}
+
+{% include html-side.html img="20221122_113942.jpeg" align="right" %}
+A slightly rotated angle for your viewing pleasure.
 {% include clear-float.html %}
 
-![Under Construction 1][Under Construction 1]{: .w-66 .right}A slightly rotated angle for your viewing pleasure.
-{% include clear-float.html %}
+## One for Friends
 
 After getting confident with the epoxy outline, I decided to try some lettering for the one for our friends.
 
-![In Production 2][In Production 2]
+{% include html-side.html img="IMG_DT1.jpeg" align="center-wide"%}
 
 ## At Home in the Kitchen
 
-![In Production 1][In Production 1]{: .w-66 .right }Looking sweet with some good company.
-{% include clear-float.html %}
+{% include html-side.html img="IMG_DT2.jpeg" align="right" %}
+Looking sweet with some good company.
+{% include clear-float.html break = 1%}
 
-![In Production 3][In Production 3]{: .w-66 .left }Its getting crowded in here.
+{% include html-side.html img="IMG_0555.jpeg" align="left" %}
+Its getting crowded in here.  
+
+If you are so inclined, you can check out the [charcuterie board](/posts/charcuterie-boards) here.  Look, I can even spell _charcuterie_ now.
 {% include clear-float.html %}
 
 ## Materials
@@ -39,9 +47,3 @@ After getting confident with the epoxy outline, I decided to try some lettering 
 - Walnut from {{ site.data.links.kjp }}
 - {{ site.data.links.domino }}
 - White epoxy for the inlay
-
-[Under Construction 1]: 20221122_113942.jpeg
-[Under Construction 2]: 20221122_113946.jpeg
-[In Production 1]: Napkin%20Holder%20-%20Theresa%20and%20Doug.jpeg
-[In Production 2]: Napkin%20Holder%20Close%20UP%20-%20Theresa%20and%20Doug.jpeg
-[In Production 3]: IMG_0555.jpeg

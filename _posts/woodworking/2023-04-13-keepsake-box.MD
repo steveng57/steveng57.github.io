@@ -13,13 +13,15 @@ Only had a couple of days after finishing the previous project before Debbie's b
 
 ## Under Construction
 
-![Box 1][Box 1]{: .left .w-66}On this box, the grain flows all the way around, and is sometimes called a "continuous grain" or "matching grain" design. When done on a piece with a horizontal surface that flows onto a vertical one, it is often called a "waterfall".
+{% include html-side.html img="IMG_0637.jpeg" align="left" %}
+On this box, the grain flows all the way around, and is sometimes called a "continuous grain" or "matching grain" design. When done on a piece with a horizontal surface that flows onto a vertical one, it is often called a "waterfall".
 
 This is actually a pretty complicated thing to do. And if you make a mistake on a board, you need to fix it or else throw out all the boards, since the grain won't match if you try to substitute a new board.
 
 {% include clear-float.html %}
 
-![Box 4][Box 4]{: .right .w-66 }So what you do is make a board long enough to make a side plus one end of the box. You need to make it thick enough so that it is double the thickness of your final boards.
+{% include html-side.html img="IMG_0640.jpeg" align="right" %}
+So what you do is make a board long enough to make a side plus one end of the box. You need to make it thick enough so that it is double the thickness of your final boards.
 
 In my case, I did the above, but also put a maple strip in there, fashioned at an angle, to give the piece a little contrast.
 
@@ -31,8 +33,7 @@ Orange {{ site.data.links.chillepoxy }} inlay, carved with the {{ site.data.link
 
 ## All done
 
-![Box 3][Box 3]
-_A nice contemporary piece_
+{% include html-side.html img="IMG_0639.jpeg"%}
 
 ## Materials
 
@@ -40,7 +41,3 @@ _A nice contemporary piece_
 - {{ site.data.links.chillepoxy }} with orange colouring
 - {{ site.data.links.domino }} for mitre joinery
 - {{ site.data.links.rubio }} Pure finish
-
-[Box 1]: IMG_0637.jpeg
-[Box 3]: IMG_0639.jpeg
-[Box 4]: IMG_0640.jpeg

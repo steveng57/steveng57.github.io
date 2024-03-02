@@ -15,25 +15,23 @@ When the weather gets warmer, I will head out back and take some pics of the fin
 
 ## Under Construction
 
-![Angle 1][Angle 1]{: .left .w-66 }The Western Red Cedar was purchased just down the way from where I live at a place called {{ site.data.links.woodsource }}. They have a great selection of hardwood and supplies to choose from. Its nice to have a place like this just a few minutes away.
-{% include clear-float.html %}
+{% include html-side.html img="20220628_125859.jpeg" align="left" %}
+The Western Red Cedar was purchased just down the way from where I live at a place called {{ site.data.links.woodsource }}. They have a great selection of hardwood and supplies to choose from. Its nice to have a place like this just a few minutes away.
+{% include clear-float.html break = 1 %}
 
-![Angle 2][Angle 2]{: .right .w-66}These were eventually finished with another product from The Wood Source called [Cutek Extreme], which is an outdoor wood protection oil. The neat thing about this stuff is that they have a pretty broad spectrum of colouring called "Colourtone" that you can add to the base product so that you can get exactly the colour you want.
+{% include html-side.html img="20220628_125916.jpeg" align="right" %}
+These were eventually finished with another product from The Wood Source called [Cutek Extreme]{:target="_blank"}, which is an outdoor wood protection oil. The neat thing about this stuff is that they have a pretty broad spectrum of colouring called "Colourtone" that you can add to the base product so that you can get exactly the colour you want.
 {% include clear-float.html %}
 
 ## Ready For Stain
 
-![Angle 3][Angle 3]
-_Third shot_
+{% include html-side.html img="20220628_125950.jpeg" align="center-wide" %}
 
 ## Materials
 
 - Western Red Cedar from {{ site.data.links.woodsource }}
 - Kreg pocket screws
 - Titebond III waterproof glue
-- [Cutek Extreme]{:target="\_blank"}
+- [Cutek Extreme]{:target="_blank"}
 
-[Angle 1]: 20220628_125859.jpeg
-[Angle 2]: 20220628_125916.jpeg
-[Angle 3]: 20220628_125950.jpeg
 [Cutek Extreme]: https://wood-source.com/product/cutek-extreme
