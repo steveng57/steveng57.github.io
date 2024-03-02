@@ -45,3 +45,12 @@ figcaption {
     margin: auto;
 }
 
+.sjg-center-full {
+    width: 100% !important;
+    margin: auto;
+}
+
+.sjg-center-wide {
+    width: 90% !important;
+    margin: auto;
+}

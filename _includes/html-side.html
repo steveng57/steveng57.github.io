@@ -7,6 +7,10 @@
     {% assign class = "sjg-right" %}
   {% when "center" %}
     {% assign class = "sjg-center" %}
+  {% when "center-wide" %}
+    {% assign class = "sjg-center-wide" %}
+  {% when "center-full" %}
+     {% assign class = "sjg-center-full" %}
 {% endcase %}
 
 <div class="{{ class }}">

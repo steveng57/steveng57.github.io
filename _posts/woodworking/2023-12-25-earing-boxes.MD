@@ -20,7 +20,7 @@ I really like making special things for other people. This is a fun example of t
 
 Doing the finishing on this one was pretty messy, partly due to the number of pieces, and also all the nooks and crannies to get into.
 
-{% include html-side.html img="IMG_0455.jpeg" align="center" %}
+{% include html-side.html img="IMG_0455.jpeg" align="center-full" %}
 
 Nice to have a big work surface to spread out.  Especially when you are a messy, messy woodworker.
 
@@ -44,7 +44,7 @@ The top engraving was a little nerve wracking. Make a mistake here and its hard 
 
 ## In Position
 
-{% include html-side.html img="earing-box-01.jpeg" align="center" %}All filled with all kinds of earings. Looks like I might have to make more!
+{% include html-side.html img="earing-box-01.jpeg" align="center-wide" %}All filled with all kinds of earings. Looks like I might have to make more!
 {% include clear-float.html %}
 
 ## Materials
