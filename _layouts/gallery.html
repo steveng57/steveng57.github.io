@@ -108,8 +108,12 @@ layout: page
                 <td class="gallery-td">
                 <div class={{ mymargin }}>
                 {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
+                {% assign caption = site.data.img-info[image.name].title %}
                 <a href="{{ redirect }}">
                     <img class="gallery-image" data-src="{{ image.path }}" title="{{ redirect }}" alt="{{ redirect }}" />
+                    {% if page.captions %}
+                    <figcaption class="text-center">{{ caption }}</figcaption>
+                    {% endif %}
                 </a>
                 </div>             
                 </td>

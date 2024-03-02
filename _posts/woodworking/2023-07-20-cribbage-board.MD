@@ -2,7 +2,7 @@
 layout: post
 title: Cribbage Board
 date: 2023-07-20 18:32:00 -0500
-last_modified_at: 2024-02-17 18:32:00 -0500
+last_modified_at: 2024-03-01 18:32:00 -0500
 categories: [Woodworking, Games]
 tags: [Wood, Woodworking, Router, Cribbage Board, Sharper Origin, Walnut, Games]
 image: /thumbnails/IMG_0626.jpeg
@@ -13,13 +13,13 @@ For my father's birthday, I made him this cribbage board from a nice piece of ma
 
 Almost half the work on this one was at the computer making sure the design was right. I didn't do the entire layout, I spent about $20 for a design off of Etsy, then made a bunch of modifications using the online tools from {{ site.data.links.shaperhub }}.
 
-![Board][Board]
-
 ## Under Construction
 
 Lots of pictures on this one. **Hey, it was a lot of work.**
 
-![Board2][Board2]{: .left .w-66 }The sheer madness of trying to do 391 individual holes with the router, even a computerized one, is...well...madness.
+{% include html-side.html img="CribbageBoard02.jpeg" align="left" %}
+
+The sheer madness of trying to do 391 individual holes with the router, even a computerized one, is...well...madness.
 
 First you need to be sure that the computerized layout has no flaws. If you discover one in the middle of the cut, well good luck with that.
 
@@ -31,7 +31,8 @@ _391 holes. Go ahead...count 'em._
 
 {% include clear-float.html %}
 
-![Board3][Board3]{: .w-66 .right}Finishing this one was a little tricky too. I use a hard-wax oil called {{ site.data.links.rubio }} for most of my projects theses days. It makes for a great, durable, and repairable finish. It is also way less finicky that other finishes: you apply it, wait a bit, and wipe off the excess. Dust does not really stick to it, so shop dust is not so much of a problem.
+{% include html-side.html img="20230720_163338.jpeg" align="right" %}
+Finishing this one was a little tricky too. I use a hard-wax oil called {{ site.data.links.rubio }} for most of my projects theses days. It makes for a great, durable, and repairable finish. It is also way less finicky that other finishes: you apply it, wait a bit, and wipe off the excess. Dust does not really stick to it, so shop dust is not so much of a problem.
 
 But then there was the problem of the wax and the holes. The wax loved to get in there, but the look was not good, and I am sure the functionality would have been even worse. But a 1/8 inch drill bit came to my rescue ,
 
@@ -43,24 +44,16 @@ Sanding was also a little...special. Sand too little and its rough obviously, bu
 
 On the back, I did a little signature thing. I eventually fixed the half-finished g in Au**g**ust. I also carved out a couple of storage holes for pegs with a magnetic seal.
 
-![Board4][Board4]
-_Engraving_
+{% include html-side.html img="20230720_163408.jpeg" %}
 
 ## In Production
 
-The pic below is of the board at my dad's place on a dining table that has been in the family for probably 50 year. Nice to mix the old and the new. Here he is beating me 112 to 11. I need to practise a bit...a lot.
+The pic below is of the board at my dad's place on a dining table that has been in the family for probably 50 year. Nice to mix the old and the new. Here he is beating me 112 to 11. I need to practice a bit...a lot.
 
-![Board5][Board5]{: .w-75 }
-_At home and in use_
+{% include html-side.html img="IMG_0626.jpeg" %}
 
 ## Materials
 
 - Walnut from {{ site.data.links.kjp }}
 - Black {{ site.data.links.chillepoxy }} inlay
 - {{ site.data.links.shaper }} for carving
-
-[Board]: CribbageBoard02.jpeg
-[Board2]: 20230720_200245-1.jpeg
-[Board3]: 20230720_163338.jpeg
-[Board4]: 20230720_163408.jpeg
-[Board5]: IMG_0626.jpeg
