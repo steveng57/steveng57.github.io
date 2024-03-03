@@ -19,36 +19,41 @@ It was all good up until this point.
 
 ### Big Oops
 
-![Kitchen 1][Kitchen 1]{: .left .w-66 }It was at this point I went to put on the drawer faces, pictured below.  To my shock and horror, I made them **the wrong size!** Instead of being the required 762mm in width, they were made 726mm in width.  My mild dyslexia had bitten me once more.  
-{% include clear-float.html %}
+{% include html-side.html img="20220114_114921.jpeg" align="left" %}
+It was at this point I went to put on the drawer faces, pictured below.  To my shock and horror, I made them **the wrong size!** Instead of being the required 762mm in width, they were made 726mm in width.  My mild dyslexia had bitten me once more.  
+{% include clear-float.html break = 1 %}
 
-![Kitchen 5][Kitchen 5]{: .right .w-66 }These are still in my shop, awaiting the next project that requires four drawer faces of exactly 726mm width.  Or I could sell them.  Anyone need a good deal on some 726mm drawer fronts?  We can haggle.
+{% include html-side.html img="IMG_0542.jpeg" align="right" %}
+These are still in my shop, awaiting the next project that requires four drawer faces of exactly 726mm width.  Or I could sell them.  Anyone need a good deal on some 726mm drawer fronts?  We can haggle.
 {% include clear-float.html %}
 
 ### The Floor
 
-![Kitchen 2][Kitchen 2]{: .left .w-66 }Installing this on the basement floor was quite a challenge.  The floor is not level, not even close.  There is about a 40mm (1.5in) drop from one end to the other that I had to shim on the toe-kick.  Thankfully, there were quite a few YouTube videos on dealing with this exact problem.
+{% include html-side.html img="20220123_191254.jpeg" align="left" %}
+Installing this on the basement floor was quite a challenge.  The floor is not level, not even close.  There is about a 40mm (1.5in) drop from one end to the other that I had to shim on the toe-kick.  Thankfully, there were quite a few YouTube videos on dealing with this exact problem.
 {% include clear-float.html %}
 
 ### The Fridge
 
-![Kitchen 3][Kitchen 3]{: .right .w-66 }The new fridge in place.  Cool blue lights.
+{% include html-side.html img="20220131_222101.jpeg" align="right" %}
+The new fridge in place.  Cool blue lights.
+
+The floor is so crooked, that I even had to shim a few things for the fridge to look right.  Actually at this point I don't know if its the floors that are crooked or the walls are out of whack.
 {% include clear-float.html %}
 
 ### Lighting
 
-![Kitchen 7][Kitchen 7]{: .left .w-66 }Since the theatre room is sometimes very dark, I added a lot of in-cabinet lighting throughout.  I hooked up micro-switches to all the doors and drawers to control them.  There is a storage area behind this wall, so it was easy to wire the lights to the power from the back.
+{% include html-side.html img="IMG_0154.jpeg" align="left" %}
+Since the theatre room is sometimes very dark, I added a lot of in-cabinet lighting throughout.  I hooked up micro-switches to all the doors and drawers to control them.  There is a storage area behind this wall, so it was easy to wire the lights to the power from the back.
 {% include clear-float.html %}
 
 ## In Production
 
 We scavenged the granite top from our upstairs kitchen remodel and repurposed it down here.  It fit almost perfectly, just had to carve off a bit off the end.
 
-![Kitchen 4][Kitchen 4]{: .w-75 }
-_Granite top added_
-
-![Kitchen 6][Kitchen 6]{: .w-75 }
-_Popcorn maker at the ready_
+{% include html-side.html img="IMG_0541.jpeg" align="center" %}
+{% include clear-float.html break = 1 %}
+{% include html-side.html img="IMG_0540.jpeg" align="center" %}
 
 ## Materials
 
@@ -56,11 +61,3 @@ _Popcorn maker at the ready_
 - Solid red oak
 - {{ site.data.links.domino }} joinery
 - {{ site.data.links.leevalley }} LED strip lighting
-  
-[Kitchen 1]: 20220114_114921.jpeg
-[Kitchen 2]: 20220123_191254.jpeg
-[Kitchen 3]: 20220131_222101.jpeg
-[Kitchen 4]: IMG_0541.jpeg
-[Kitchen 5]: IMG_0542.jpeg
-[Kitchen 6]: IMG_0540.jpeg
-[Kitchen 7]: IMG_0154.jpeg

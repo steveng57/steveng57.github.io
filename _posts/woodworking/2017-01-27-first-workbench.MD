@@ -18,12 +18,14 @@ In setting up my workshop, I had the DeWalt mitre saw from a while back, bought 
 
 ## The First Workbench
 
-![Orange Bench 2]{: .left .w-66 }Then, I decided to make my first workbench / assembly table.  I have become quite enamored with assembly tables as future posts will tell.
+{% include html-side.html img="20170127_010801.jpeg" align = "left" %}
+Then, I decided to make my first workbench / assembly table.  I have become quite enamored with assembly tables as future posts will tell.
 
 This one was fairly straightforward.  A whole lot of 2x4s from the big box store, pocket screws holding it all together.  I put some Kreg track on the top, the blue aluminum extrusion shown here, which one can use to clamp things down with.  Finished it off with some enamel orange paint and coated the 2x4s in a couple of coats of Tung oil.
-{% include clear-float.html %}
+{% include clear-float.html break = 1 %}
 
-![Orange Bench]{: .right .w-66 }A couple of thick coats of orange acrylic paint to help make the top more durable.  
+{% include html-side.html img="20170202_151701.jpeg" align = "right" %}
+A couple of thick coats of orange acrylic paint to help make the top more durable.  
 
 Added a bottom shelf for more shop storage, because...you know...storage.  I also added a vice to the side because...you know...vice.
 {% include clear-float.html %}
@@ -32,7 +34,7 @@ Added a bottom shelf for more shop storage, because...you know...storage.  I als
 
 While it is no longer my primary workbench / assembly table, it still gets a lot of use in the shop.  It serves as an out-feed table for the table saw, as a staging area for other tools, and it still gets some exercise as a secondary assembly table.
 
-![First Bench]{: .w-75 }
+{% include html-side.html img="IMG_0699.jpeg" align="center-wide" %}
 
 ## Materials
 
@@ -41,7 +43,3 @@ While it is no longer my primary workbench / assembly table, it still gets a lot
 - Kreg Clamp Track
 - {{ site.data.links.leevalley}} Mobile Wheels
 - Tung oil
-
-[Orange Bench]: 20170202_151701.jpeg
-[Orange Bench 2]: 20170127_010801.jpeg
-[First Bench]: IMG_0699.jpeg

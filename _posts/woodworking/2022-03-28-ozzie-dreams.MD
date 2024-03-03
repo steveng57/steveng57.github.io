@@ -13,25 +13,24 @@ A true labour of love. Our boy Ozzie needed a new place to sleep. It seems he wa
 
 ## Under Construction
 
-![Construction 1][Construction 1]{: .right .w-66}Lots and lots of slats on this one. About 30+ of them all up. Using the {{ site.data.links.domino }} for the loose-tenon joinery made things a bit easier.  By this point in my wood working career, I had fiqured out how to make things a little bit lighter.  The bottom is a much thinner plywood, but has a support in the centre to keep it strong.
-{% include clear-float.html %}
+{% include html-side.html img="20220310_084545.jpeg" align="left" %}
+Lots and lots of slats on this one. About 30+ of them all up. Using the {{ site.data.links.domino }} for the loose-tenon joinery made things a bit easier.  By this point in my wood working career, I had figured out how to make things a little bit lighter.  The bottom is a much thinner plywood, but has a support in the centre to keep it strong.
+{% include clear-float.html break = 1 %}
 
-![Construction 2][Construction 2]{: .left .w-66}Stained, {{ site.data.links.rubio }} hard-wax oil applied and ready for the epoxy inlay.
+{% include html-side.html img="20220316_201504.jpeg" align="right" %}
+Stained, {{ site.data.links.rubio }} hard-wax oil applied and ready for the epoxy inlay.
+
+I finally had the good sense to make this piece a little lighter than my others.  While the slats are solid wood, red oak, the bottom is a thinner, lighter plywood, making it somewhat easier to move around.
 {% include clear-float.html %}
 
 ## Don't Bother Me
 
 Epoxy inlay complete, pillows installed and Ozzie giving it a trial run.
 
-![Sleepy Boy][Sleepy Boy]
-_Zzzzz_
+{% include html-side.html img="20220328_071254.jpeg" %}
 
 ## Materials
 
 - Red Oak from {{ site.data.links.kjp }}
 - {{ site.data.links.domino }} for joinery
 - {{ site.data.links.rubio }} Intense Black and Black 2C for the finish
-
-[Construction 1]: 20220310_084545.jpeg
-[Construction 2]: 20220316_201504.jpeg
-[Sleepy Boy]: 20220328_071254.jpeg

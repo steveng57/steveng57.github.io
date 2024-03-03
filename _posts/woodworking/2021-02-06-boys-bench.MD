@@ -13,7 +13,9 @@ This is a strange one, and looking back on it, not one that I am all that proud 
 
 ## Details
 
-![Bench for the Boys][Boys Bench 1]{: .left .w-66}There were a couple of firsts for me on this one, including under-mount drawer slides and rubber paint (more on this below), which made it fun.
+{% include html-side.html img="IMG_0536.jpeg" align = "left" %}
+
+There were a couple of firsts for me on this one, including under-mount drawer slides and rubber paint (more on this below), which made it fun.
 
 But its heavy.  Really heavy, I would not make it like this again if I had a do over.  There is way to much wood used here, 3/4 thick ply where 1/4 inch would have done just fine.  Double layers where one would have been plenty. and the solid red oak for most of the exterior doesn't help keep it light.  
 
@@ -33,8 +35,7 @@ There are a couple of cool things about this bench though, some stuff where I wa
 - The rightmost bottom two drawers are actually a single double-depth drawer for storing boats.  I am kinda happy at how you cannot tell that this is the case.
 - The top right thing is a plant box.  It was waterproofed with about 56 layers of a paintable rubber compound, which is one of the messiest things I have ever done.  It is still holding watertight a couple of years later...we'll see.
 
-![Bench for the Boys][Boys Bench 2]
-_The "Magic Drawer" that double as a step for the boys to jump on._
+{% include html-side.html img="IMG_0537.jpeg" %}
 
 ## Retirement
 
@@ -46,6 +47,3 @@ This is one of my first pieces to be 'retired', where we will soon be taking it 
 - Solid red oak trim from {{ site.data.links.kjp }}
 - Lots and lots of pocket screws
 - Rubber paint from Amazon
-  
-[Boys Bench 1]: IMG_0536.jpeg
-[Boys Bench 2]: IMG_0537.jpeg

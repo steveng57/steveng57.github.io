@@ -24,12 +24,14 @@ The inner circles were just done with a router circle jig I crafted.  Drilled so
 
 Copious amounts of waterproof glue helped fix the situation.
 
-![Two Boards]{: .left .w-66 }While the face board was just your vanilla big-box-store plywood, the back boards were made of cedar.  My thinking at the time was that this choice would be a good one since these are outdoors and on the grass a lot.  The problem is that cedar is a very soft wood, and my screws were doing all kinds of wonky things, most problematically not staying were they should.
+{% include html-side.html img="20170724_234944.jpeg" align = "left" %}
+While the face board was just your vanilla big-box-store plywood, the back boards were made of cedar.  My thinking at the time was that this choice would be a good one since these are outdoors and on the grass a lot.  The problem is that cedar is a very soft wood, and my screws were doing all kinds of wonky things, most problematically not staying were they should.
 
 The two Bag Toss Boards were later painted candy-apple red.
-{% include clear-float.html %}
+{% include clear-float.html break = 1 %}
 
-![Boards 2]{: .right .w-66 }These are taken out many times every summer and its pretty cool to see people having fun with them.  It never gets old.
+{% include html-side.html img="20170724_234953.jpeg" align = "right" %}
+These are taken out many times every summer and its pretty cool to see people having fun with them.  It never gets old.
 
 Debbie stamped some dog paw prints on the final version which made it look really cool.  I will add a pic of that when the spring thaw comes and the back yard is a little more accessible.
 {% include clear-float.html %}
@@ -40,6 +42,3 @@ Debbie stamped some dog paw prints on the final version which made it look reall
 - Cedar 2x4s
 - Kreg pocket hole jig and screws
 - Custom built router large radius jig
-
-[Two Boards]: 20170724_234944.jpg
-[Boards 2]: 20170724_234953.jpg

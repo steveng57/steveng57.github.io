@@ -13,16 +13,18 @@ Ok, so the difference between a charcuterie board and a cutting board, is that a
 
 ## Under Construction
 
-![Making it work][Construction]{: .w-66 .left }Take a bunch of sticks, glue them together in just the right order, then run them thru the planer to get a start on the smoothing process, then start sanding at 80 grit. I wanted a smooth glossy look, so I sanded all the way to 600 grit.
+{% include html-side.html img="20220227_191600.jpeg" align="left" %}
+
+Take a bunch of sticks, glue them together in just the right order, then run them thru the planer to get a start on the smoothing process, then start sanding at 80 grit. I wanted a smooth glossy look, so I sanded all the way to 600 grit.
 
 The thing that makes these look cool is the different woods, and the contrast between them. It has walnut, maple, Sapele, Mahogany, and Padauk. If you are really into the wood types, I have included a way too detailed description of each of them below.
-{% include clear-float.html %}
+{% include clear-float.html break = 1%}
 
 It was finished with a food safe product called Honeybees Natural Wood Cream, mostly beeswax. Doesn't that sound just yummy? The rubber feet and stainless-steel connecting screws were procured from local artisans (Lee Valley and Home Depot respectively).
 
 ## In Production
 
-![Production][Production]
+{% include html-side.html img="IMG_0547.jpeg" %}
 
 ## Materials
 
@@ -32,6 +34,3 @@ It was finished with a food safe product called Honeybees Natural Wood Cream, mo
 - **Mahogony:** From Africa, the color is variable, ranging from a very pale pink to a deeper reddish brown, sometimes with streaks of medium to dark reddish brown. Color tends to darken with age. Quartersawn surfaces can also exhibit a ribbon-stripe appearance. Comprised of a handful of species from the Khaya genus, all of which are native to Africa. Sometimes lacks the deeper reddish brown color and durability that is common for true mahogany.
 - **Padauk:** From Africa, the wood color can vary, ranging from a pale pinkish orange to a deep brownish red. Most pieces tend to start reddish orange when freshly cut, darkening substantially over time to a reddish/purplish brown (some lighter pieces age to a grayish brown).  
   Padauk has a very unique reddish orange coloration, and the wood is sometimes referred to by the name Vermillion. This dramatic color darkens to a beautiful deep red-brown. Padauk is moderately heavy, strong, and stiff, with exceptional stability. It’s a popular hardwood among hobbyist woodworkers because of its unique color and versatility.
-
-[Construction]: 20220227_191600.jpeg
-[Production]: IMG_0547.jpeg

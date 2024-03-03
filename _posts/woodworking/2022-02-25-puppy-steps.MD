@@ -13,22 +13,21 @@ This one was really simple, but a much needed project. Just a box really, but a 
 
 ## Under Construction
 
-![Step 1][Step 1]{: .left .w-66 }This was the first time I attempted any engraving or detail work like this, note the paws on both steps. The first set of paw prints for the mudroom were done freehand with a stencil and a palm router and then painted.
-{% include clear-float.html %}
+{% include html-side.html img="20220225_091904.jpeg" align="left" %}
 
-![Step 2][Step 2]{: .right .w-66 }The second set of prints was done with my new {{ site.data.links.shaper }}. Much more on this tool in coming posts, its one of my favorite things ever. In both cases, the prints were carved about 6mm deep.
+This was the first time I attempted any engraving or detail work like this, note the paws on both steps. The first set of paw prints for the mudroom were done freehand with a stencil and a palm router and then painted.
+{% include clear-float.html break = 1%}
+
+{% include html-side.html img="IMG_0543.jpeg" align="left" %}
+
+The second set of prints was done with my new {{ site.data.links.shaper }}. Much more on this tool in coming posts, its one of my favorite things ever. In both cases, the prints were carved about 6mm deep.
 {% include clear-float.html %}
 
 ## In Production
 
-![Step 3][Step 3]
-_Mudroom version for access to the desk_
+{% include html-side.html img="IMG_0545.jpeg" align="left" %}
 
 ## Materials
 
 - Poplar
 - Domino joinery
-
-[Step 1]: 20220225_091904.jpeg
-[Step 2]: IMG_0543.jpeg
-[Step 3]: IMG_0545.jpeg
