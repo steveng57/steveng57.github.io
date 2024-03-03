@@ -113,10 +113,10 @@ layout: page
                 {% assign caption = site.data.img-info[image.name].title %}
                 <a href="{{ redirect }}">
                     <img class="gallery-image" data-src="{{ image.path }}" title="{{ redirect }}" alt="{{ redirect }}" />
-                    {% if show_captions  %}
-                    <figcaption class="text-center">{{ caption }}</figcaption>
-                    {% endif %}
                 </a>
+                {% if show_captions  %}
+                <figcaption class="text-center">{{ caption }}</figcaption>
+                {% endif %}
                 </div>             
                 </td>
                 {% assign currentcolumn = currentcolumn | plus: 1 %}
