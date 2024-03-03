@@ -16,10 +16,6 @@ img {
     gap: 10px;
 }
 
-.gallery-td {
-    width: auto;
-}
-
 .image-container {
     margin: 5px 5px 5px 5px;
 }
@@ -32,18 +28,11 @@ img {
     margin: 5px 0px 5px 5px;
 }
 
-.gallery-table {
-    width: 100%;
-    table-layout: fixed;
-}
-
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.gallery-image {
-    width: auto;
-    height: auto;
+.image-container-center {
+    display: block;
+    margin: 5px auto 5px auto;
+    justify-content: center;  
+    align-items: center;
+    text-align: center;
+    width: 75%;
 }
