@@ -34,5 +34,9 @@ img {
     justify-content: center;  
     align-items: center;
     text-align: center;
+    width: 100%;
+}
+
+.image-container-center img {
     width: 75%;
 }
