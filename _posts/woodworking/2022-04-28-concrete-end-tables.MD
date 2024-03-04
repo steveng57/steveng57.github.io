@@ -32,7 +32,7 @@ Standard leg with an apron. Only tricky part here is that I made the apron extra
 ### The Poor Pour
 
 {% include html-side.html img="20220503_133849.jpeg" align="left" %}
-OMG did these turn out **awful** :confounded: .  When I initially poured the tops, I had such high hopes. My buddy Mike helped me blend the concrete in a bucket and make the pour. That was tough but it went well enough. In my dream, I had though this was going to be an eggshell white with a few flecks of gray. Boy was I wrong. I looked like some kind of bad Rorschach Inkblot test. Not a happy camper at this point.  I had no idea how to fix this.
+OMG did these turn out **awful**.  When I initially poured the tops, I had such high hopes. My buddy Mike helped me blend the concrete in a bucket and make the pour. That was tough but it went well enough. In my dream, I had though this was going to be an eggshell white with a few flecks of gray. Boy was I wrong. I looked like some kind of bad Rorschach Inkblot test. Not a happy camper at this point.  I had no idea how to fix this.
 {% include clear-float.html %}
 
 ### The Fix Is In
