@@ -7,8 +7,9 @@ image:
     alt: The most precious thing in my shop.  A gift from the family.
 img_path: /assets/img/about
 date: 2024-01-28 10:59:55 -0500
-last_modified_at: 2024-02-28 10:59:55 -0500
+last_modified_at: 2024-03-03 10:59:55 -0500
 ---
+{% include head-mypost.html %}
 {% include mydatetime.html date=page.last_modified_at prefix="Last Updated: " %}
 
 ![Steves Workshop]_The most precious thing in my shop.  A gift from the family._
@@ -37,7 +38,7 @@ Sometime in late 2016, I started to setup a workshop in the basement.  Retiremen
 
 I live in a rural suburb of Ottawa called Manotick with my wife Debbie and two boys, Riley and Ozzie.
 
-![Boys Pic]
+![Boys Pic]{: .w-75}
 _Debbie took this great shot of the boys_
 
 I am also a Pisces, which is silly because there is no science behind that stuff at all.  The other thing you should know about me is that I am all about science.  So if you believe in astrology, then I have some magic pixie dust to sell you, but that's about all you are going to get about me.
