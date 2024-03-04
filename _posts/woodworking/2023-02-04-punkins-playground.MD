@@ -13,6 +13,12 @@ This table was specially made to fit into Debbie's craft area setup. It of my ow
 
 ## Background
 
+{% include html-side.html img="punkins-playground-sketchup.jpeg" align="right" %}As usual with most projects, the design starts in {{ site.data.links.sketchup }}.  It is a super-cool tool that, once you get the hang of it, lets you draw up things like this pretty quick.  It lets you really visualize the work.  
+
+There is even a plug-in for Sketchup, called [Open Cut List](https://docs.opencutlist.org/){: target="_blank" }, that will take your drawing and generate a parts list for you, complete with all the cuts that need to made on either the plywood or the solid wood.  Its really quite amazing.
+
+{% include clear-float.html break = 1%}
+
 A big piece of 4x8 Baltic Birch plywood was used as the main surface. If you've not worked with that material before, I highly recommend it. It is nice stuff, super strong, made of 13 layers of wood instead of the 5 or 7 you get at the big box store. You can get it here at {{ site.data.links.balticbirch }}, check it out!
 
 {% include html-side.html img="IMG_0560.jpeg" %}
