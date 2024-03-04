@@ -10,8 +10,15 @@ img_path: "/assets/img/posts/plant-stands"
 ---
 {% include head-mypost.html %}
 Its always nice when you work on a piece that is going to be on display.  I also like mixing materials into my projects, and these ceramic pots were just the ticket to go along with the espresso stained oak stands.
+{% include clear-float.html %}
 
 ## Details
+
+### The Design
+
+{% include html-side.html img="plant-stands-sketchup.jpeg" align="right" %}
+This seems a bit silly looking back on it now, to have gone to this length in the design.  But it was a great way to learn {{ site.data.links.sketchup }}, which has been super valuable in many projects.
+{% include clear-float.html %}
 
 ### The Stands
 
