@@ -39,12 +39,18 @@ The top engraving was a little nerve wracking. Make a mistake here and its hard 
 
 ## Ready
 
-{% include html-side.html img="IMG_0461.jpeg" align="right" %}Here they are, ready and waiting for the big day.
+Here they are, ready and waiting for the big day.
+
+{% include html-side.html img="IMG_0461.jpeg" align="center-full" %}
 {% include clear-float.html %}
 
 ## In Position
 
-{% include html-side.html img="earing-box-01.jpeg" align="center-wide" %}All filled with all kinds of earings. Looks like I might have to make more!
+All filled with all kinds of earings. Looks like I might have to make more!
+{% include html-side.html img="earing-box-01.jpeg" align="center-wide" %}
+{% include clear-float.html break = 1 %}
+
+{% include html-side.html img="earings-from-top.jpeg" align="center-wide" %}
 {% include clear-float.html %}
 
 ## Materials
