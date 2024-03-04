@@ -2,7 +2,7 @@
 layout: post
 title: Punkin's Playground
 date: 2023-02-04 18:32:00 -0500
-last_modified_at: 2024-02-22 09:53:54 -0500
+last_modified_at: 2024-03-04 10:26:32 -0500
 categories: [Woodworking, Furniture]
 tags: [Wood, Woodworking, Table, Craft, Inlay, Plywood, Maple, Furniture]
 image: /thumbnails/20230405_134555.jpeg
@@ -25,17 +25,20 @@ To make it strong enough over that 4x8 span, it created a 'Torsion Box' using va
 {% include clear-float.html break = 1%}
 
 {% include html-side.html img="IMG_0558.jpeg" align="right" %}
-The legs worked well. I was a little nervous about this design at the outset, but it turned out rock solid, with 12 screws on each leg securing it to the top.
+The legs worked well. I was a little nervous about this design at the outset, but it turned out rock solid, with 16 screws on each leg securing it to the top.  
+
+The legs are removable in case we ever want to move it.  That's never going to happen.
 
 {% include clear-float.html %}
 
 ## In Play
 
-{% include html-side.html img="20230405_134555.jpeg" %}
+{% include html-side.html img="20230405_134555.jpeg" align="center-wide" %}
 
 ## Materials
 
-- Baltic Birch plywood for the top and legs
-- Maple trim
+- Baltic Birch plywood for the top and legs from {{ site.data.links.balticbirch }}
+- Maple trim also from KJP
 - {{ site.data.links.shaper }} to carve the inlay
 - Gray {{ site.data.links.chillepoxy }} for the inlay
+- Latex paint from Benjamin Moore
