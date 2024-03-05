@@ -22,10 +22,13 @@ img {
 
 .image-container-left {
     margin: 5px 5px 5px 0px;
+    flex: 1 0 200px; /* Grow and shrink, with a base size of 200px */
+
 }
 
 .image-container-right {
     margin: 5px 0px 5px 5px;
+    flex: 1 0 200px; /* Grow and shrink, with a base size of 200px */
 }
 
 .image-container-center {
@@ -40,3 +43,9 @@ img {
 .image-container-center img {
     width: 75%;
 }
+
+.image-layout {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }

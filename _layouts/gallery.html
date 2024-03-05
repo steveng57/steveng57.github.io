@@ -78,8 +78,8 @@ layout: page
 {% endif %}
 
 <div id="image-gallery" >
-    <table class="gallery-table">
-        {% assign currentcolumn = 0 %}
+
+        {% assign currentcolumn = 1 %}
         {% assign maxcolumns = 2 %}
         {% assign currentimageindex = 0 %}
         {% for imagecount in postarray %}
@@ -89,54 +89,56 @@ layout: page
                 {% assign image = imageFiles[currentimageindex] %}
                 {% assign postname = image.path | replace: '/thumbnails', '' | replace: albumfolder, '' | replace: image.name, '' | replace: '/', '' | replace: '-', ' ' %}
                 {% if forloop.first %}
-                    <tr class="page" data-page="{{ page }}">
-                    <td>
-                    <h2>{{ postname }}</h2>
-                    </td>
-                    </tr>
+                    <div class="page" data-page="{{ page }}">
                 {% endif %}
-                {% if currentcolumn == 0 %}
-                    <tr class="page" data-page="{{ page }}">
+
+                {% if forloop.first %}
+                    <div class="page-header"><h2>{{ postname }}</h2></div>
                 {% endif %}
-                {% assign maxcolumns_minus_1 = maxcolumns |  minus: 1 %}
-                {% if currentcolumn == 0 %}
+                
+                {% if currentcolumn == 1 %}
+                    <div class="image-layout">
+                {% endif %}
+
+                {% if currentcolumn == 1 %}
                     {% assign mymargin = "image-container-left" %}
-                {%  elsif currentcolumn == maxcolumns_minus_1 %}
+                {%  elsif currentcolumn == maxcolumns %}
                     {% assign mymargin = "image-container-right" %}
                 {% else %}
                     {% assign mymargin = "image-container" %}
                 {% endif %}
 
                 {% if forloop.last %}
-                    {% assign j = forloop.index0 | modulo: 2 %}
-                    {% if j == 0 %}
+                    {% assign j = forloop.index | modulo: 2 %}
+                    {% if j == 1 %}
                         {% assign mymargin = "image-container-center" %}
                     {% endif %}
                 {% endif %}
 
-                <td>
-                    <div class={{ mymargin }}>
-                        {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
-                        {% assign caption = site.data.img-info[image.name].title %}
-                        <a href="{{ redirect }}">
-                            <img data-src="{{ image.path }}" title="{{ redirect }}" alt="{{ redirect }}" />
-                        </a>
-                        {% if show_captions  %}
-                        <figcaption class="text-center">{{ caption }}</figcaption>
-                        {% endif %}
-                    </div>             
-                </td>
-                {% assign currentcolumn = currentcolumn | plus: 1 %}
-                {% if forloop.last or currentcolumn == maxcolumns %}
-                    </tr>
+                <div class={{ mymargin }}>
+                    {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
+                    {% assign caption = site.data.img-info[image.name].title %}
+                    <a href="{{ redirect }}">
+                        <img data-src="{{ image.path }}" title="{{ redirect }}" alt="{{ redirect }}" />
+                    </a>
+                    {% if show_captions  %}
+                    <figcaption class="text-center">{{ caption }}</figcaption>
+                    {% endif %}
+                </div>            
+                 
+                {% if currentcolumn == maxcolumns or forloop.last %}
+                    </div>
                     {% assign currentcolumn = 0 %}
                 {% endif %}
+                {% if forloop.last %}
+                    </div>
+                    {% assign currentcolumn = 0 %}
+                {% endif %}
+
+                {% assign currentcolumn = currentcolumn | plus: 1 %}
                 {% assign currentimageindex = currentimageindex | plus: 1 %}
-
             {% endfor %}
-
         {% endfor %}
-    </table>
 </div>
 
 {% if total_pages > 1 %}
