@@ -62,7 +62,7 @@ layout: page
             </li>
             {% for i in (1..total_pages) %}
                 <li class="page-item">
-                    <a href="#" class="page-link" data-page="{{ i }}" onclick="scrollToTop()">{{ i }}</a>
+                    <a href="#" class="page-link" data-page="{{ i }}" onclick="scrollToTop()">{{- i -}}</a>
                 </li>
             {% endfor %}
             <li class="page-index align-middle">
