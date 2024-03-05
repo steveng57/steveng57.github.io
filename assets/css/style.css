@@ -22,17 +22,13 @@ img {
 
 .image-container-left {
     margin: 5px 5px 5px 0px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
+    flex:auto;
     align-self: center;
 }
 
 .image-container-right {
     margin: 5px 0px 5px 5px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
+    flex: auto;
     align-self: center;
 }
 
@@ -54,10 +50,9 @@ img {
 }
 
 .image-container-center img {
-    width: 75%;
+    width: 60%;
 }
 
 .image-layout {
     display: flex !important;
-
-  }
+}
