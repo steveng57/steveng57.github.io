@@ -22,13 +22,26 @@ img {
 
 .image-container-left {
     margin: 5px 5px 5px 0px;
-    flex: 1 0 200px; /* Grow and shrink, with a base size of 200px */
-
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: center;
 }
 
 .image-container-right {
     margin: 5px 0px 5px 5px;
-    flex: 1 0 200px; /* Grow and shrink, with a base size of 200px */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: center;
+}
+
+.image-container-left img {
+    width: 100%;
+}
+
+.image-container-right img {
+    width: 100%;
 }
 
 .image-container-center {
@@ -46,6 +59,5 @@ img {
 
 .image-layout {
     display: flex !important;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
   }
