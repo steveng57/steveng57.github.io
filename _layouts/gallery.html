@@ -53,6 +53,7 @@ layout: page
 {% assign last_post_name = '' %}
 
 {% if total_pages > 1 %}
+<!-- Note that in the top and bottom pagination links, the img-link is a bit of a hack that stops the 'content' class from being applied to the page-link which causes hovering color issues -->
 <!-- Pagination links (top)-->
 <div id="pagination-top" data-total-pages="{{ total_pages }}">
     <nav aria-label="Page Navigation">
