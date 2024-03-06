@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
     showPage(currentPage);
 });
 function scrollToTop() {
-    window.scrollTo({
+    document.documentElement.scrollTo({
         top: 0,
         behavior: 'smooth'
     });

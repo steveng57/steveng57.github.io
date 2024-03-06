@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function scrollToTop() {
-    window.scrollTo({
+    document.documentElement.scrollTo({
         top: 0,
         behavior: 'smooth'
     });
