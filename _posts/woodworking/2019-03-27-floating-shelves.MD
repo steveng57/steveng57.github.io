@@ -10,8 +10,10 @@ image:
   alt: A smooch from a pooch is definitely good for the soul
 img_path: "/assets/img/posts/floating-shelves"
 ---
-{% include head-mypost.html %}
+
 Sometimes I can't wait to start a project where I get to try something new, especially if its something that you just know that you are going to use a lot in the future.
+
+{% include head-mypost.html %}
 
 In this case it was a technique called _Template Routing_.  As the name implies, you fashion template to your workpiece, usually with double-sided tape or hot-glue, and then use the edge of the template to register against a bearing in a template routing bit on your router.  This makes a great edge, exactly matching the template.
 

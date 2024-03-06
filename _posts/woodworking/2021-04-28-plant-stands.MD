@@ -8,9 +8,10 @@ tags: [Wood, Woodworking, Taper, Stand, Red Oak, Home Decor]
 image: /thumbnails/20210428_181207.jpeg
 img_path: "/assets/img/posts/plant-stands"
 ---
-{% include head-mypost.html %}
+
 Its always nice when you work on a piece that is going to be on display.  I also like mixing materials into my projects, and these ceramic pots were just the ticket to go along with the espresso stained oak stands.
-{% include clear-float.html %}
+
+{% include head-mypost.html %}
 
 ## Details
 

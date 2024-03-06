@@ -8,8 +8,10 @@ tags: [Wood, Woodworking, Walnut, Trays, Epoxy, Inlay, Home Decor]
 image: /thumbnails/IMG_0079.jpeg
 img_path: "/assets/img/posts/munchies-tray"
 ---
+
+When I set out to do this, I hadn't really thought of the complications that are involved in doing angled cuts like this. I mean, I knew there would be some, but I had to really dig deep and resurrect some old trigonometry skills. Nah, not really, I used an online calculator, but still it was a lot of weird angles. It's a 15&deg; angle to the sides, but when you are doing the cuts, its a double mitre angle cut at 13.1&deg; tilt, and 34&deg; mitre. Yikes.
+
 {% include head-mypost.html %}
-When I set out to do this, I hadn't really thought of the complications that are involved in doing angled cuts like this. I mean, I knew there would be some, but I had to really dig deep and resurrect some old trigonometry skills. Nah, not really, I used an online calculator, but still it was a lot of weird angles. It's a 15 degree angle to the sides, but when you are doing the cuts, its a double mitre angle cut at 13.1 degrees tilt, and 34 degrees mitre. Yikes.
 
 > **Mitre Calculator**: For those who are interested in a really good online mitre cut calculator, here is the one I used: [Compound Angle Calculator]{:target="_blank"}
 {: .prompt-tip }
@@ -39,7 +41,7 @@ A tray full of munchies in its new home, which is normally resting upon the [ext
 ## Materials
 
 - Walnut from {{ site.data.links.kjp }}
-- Grey epoxy
+- Grey epoxy by {{ site.data.links.chillepoxy }}
 - {{ site.data.links.shaper }} for the lettering
 - {{ site.data.links.domino }} for mitre joinery
 

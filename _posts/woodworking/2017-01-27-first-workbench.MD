@@ -9,8 +9,10 @@ pin: false
 image: /thumbnails/20170127_010801.jpeg
 img_path: /assets/img/posts/first-workbench
 ---
-{% include head-mypost.html %}
+
 Every shop needs a workbench, and there is a first for everything.  This is the first workbench I built in this shop.
+
+{% include head-mypost.html %}
 
 ## Some Background
 

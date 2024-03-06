@@ -8,8 +8,10 @@ tags: [Wood, Woodworking, Ash, Furniture]
 image: /thumbnails/IMG_0221.jpeg
 img_path: "/assets/img/posts/extension-table"
 ---
-{% include head-mypost.html %}
+
 This was my first project using Ash. Its a very nice hardwood, similar to Red Oak but with a little less grain, but not totally closed pores.
+
+{% include head-mypost.html %}
 
 That texture made it a nice fit for this project, which was to exactly match an existing dining table that we had in the theatre room.
 

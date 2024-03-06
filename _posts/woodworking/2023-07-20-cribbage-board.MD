@@ -8,8 +8,10 @@ tags: [Wood, Woodworking, Router, Cribbage Board, Sharper Origin, Walnut, Games]
 image: /thumbnails/IMG_0626.jpeg
 img_path: "/assets/img/posts/cribbage-board"
 ---
-{% include head-mypost.html %}
+
 For my father's birthday, I made him this cribbage board from a nice piece of marbled walnut. He says it is working well and that it keeps very good score.
+
+{% include head-mypost.html %}
 
 Almost half the work on this one was at the computer making sure the design was right. I didn't do the entire layout, I spent about $20 for a design off of Etsy, then made a bunch of modifications using the online tools from {{ site.data.links.shaperhub }}.
 

@@ -8,8 +8,10 @@ tags: [Wood, Woodworking, Poplar, Bench, Pets]
 image: /thumbnails/20220225_091904.jpeg
 img_path: "/assets/img/posts/puppy-steps"
 ---
-{% include head-mypost.html %}
+
 This one was really simple, but a much needed project. Just a box really, but a couple of steps to make life easier for Riley and Ozzie, jumping up on the daybed, or on the mudroom desk to get ready to go for a walk.  We have two of these, one for the yoga room, and another for the mud room.
+
+{% include head-mypost.html %}
 
 ## Under Construction
 

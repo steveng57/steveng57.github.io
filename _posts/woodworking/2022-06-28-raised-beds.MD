@@ -8,8 +8,10 @@ tags: [Wood, Woodworking, Raised Bed, Garden, Cedar, Outdoors, Furniture]
 image: /thumbnails/20220628_125950.jpeg
 img_path: "/assets/img/posts/raised-beds"
 ---
-{% include head-mypost.html %}
+
 These were a big first. Cedar Raised Beds for outback. These two were placed outside, for growing tomatoes and things. I made three more (not pictured here) that were eventually placed in our small greenhouse out back.
+
+{% include head-mypost.html %}
 
 When the weather gets warmer, I will head out back and take some pics of the finished product and post here.
 

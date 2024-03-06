@@ -8,8 +8,10 @@ tags: [Wood, Woodworking, Maple, Towel Rack, Furniture]
 image: /thumbnails/IMG_0681.jpeg
 img_path: "/assets/img/posts/towel-rack"
 ---
-{% include head-mypost.html %}
+
 At the request of the customer, I made a custom towel rack to fit precisely in a bathroom space. Working with round things is always a bit of a nifty challenge, as it was here. There were some funky angles to work with and some odd shaped pieces.
+
+{% include head-mypost.html %}
 
 > **Cool Tool**: The {{ site.data.links.shaper }} was used here. The angled pieces could have been cut by hand I guess, but the accuracy of the Origin is far superior to that.
 {: .prompt-tip }

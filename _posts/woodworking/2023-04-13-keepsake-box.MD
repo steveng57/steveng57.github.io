@@ -8,8 +8,10 @@ tags: [Wood, Woodworking, Keepsake Box, Walnut, Maple, Epoxy, Jewelry Boxes]
 image: /thumbnails/IMG_0639.jpeg
 img_path: "/assets/img/posts/keepsake-box"
 ---
-{% include head-mypost.html %}
+
 Only had a couple of days after finishing the previous project before Debbie's birthday, but I decided to try something new and get in done in time for her special day.
+
+{% include head-mypost.html %}
 
 ## Under Construction
 

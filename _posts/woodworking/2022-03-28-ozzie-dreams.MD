@@ -9,7 +9,7 @@ image: /thumbnails/20220328_071254.jpeg
 img_path: "/assets/img/posts/ozzie-dreams"
 ---
 {% include head-mypost.html %}
-A true labour of love. Our boy Ozzie needed a new place to sleep. It seems he was never very content to stay in one place at night, so we thought we would make him a nice new comfy spot to be in.
+This was true labour of love. Our boy Ozzie needed a new place to sleep. It seems he was never very content to stay in one place at night, so we thought we would make him a nice new comfy spot to be in.
 
 ## Under Construction
 

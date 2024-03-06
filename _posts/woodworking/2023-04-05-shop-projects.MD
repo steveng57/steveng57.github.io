@@ -8,8 +8,10 @@ tags: [Wood, Woodworking, Workshop, Router, Mitre Stand, Table, Plywood]
 image: /thumbnails/20230405_141755.jpeg
 img_path: "/assets/img/posts/shop-projects"
 ---
-{% include head-mypost.html %}
+
 In late winter of 2023, I decided a workshop upgrade was due.  You can never have enough shop storage, and shop projects are always a fun way to get better at all kinds of things.  You can experiment, and if it fails, no one will know.
+
+{% include head-mypost.html %}
 
 ## Under Construction
 

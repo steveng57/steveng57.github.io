@@ -8,8 +8,10 @@ tags: [Wood, Woodworking, Charcuterie Board, Kitchen]
 image: /thumbnails/20220227_191616.jpeg
 img_path: "/assets/img/posts/charcuterie-boards"
 ---
-{% include head-mypost.html %}
+
 Ok, so the difference between a charcuterie board and a cutting board, is that a charcuterie board is meant for serving things, not cutting things. Now that we have that out of the way...these are super fun to make. Not too hard to make but they do require **a lot** of sanding.
+
+{% include head-mypost.html %}
 
 ## Under Construction
 

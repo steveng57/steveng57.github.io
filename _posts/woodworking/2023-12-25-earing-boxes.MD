@@ -10,8 +10,10 @@ image:
   alt: Earings
 img_path: "/assets/img/posts/earing-boxes"
 ---
-{% include head-mypost.html %}
+
 I really like making special things for other people. This is a fun example of that. Debbie thought it would be cool to make a set of earing boxes for her sister for Christmas. I could not agree more. This was a first of its kind for me. While I have made a great many boxes in the past, the insert was a whole new kind of thing.
+
+{% include head-mypost.html %}
 
 > **Cool Tool**: The {{ site.data.links.shaper }} was critical here, no way I could make this with just tools. It is truly an amazing machine.
 {: .prompt-tip }

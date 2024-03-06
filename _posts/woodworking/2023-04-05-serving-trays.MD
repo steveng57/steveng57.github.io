@@ -10,8 +10,10 @@ image:
     alt: These are FIVE colour epoxy inlays
 img_path: /assets/img/posts/serving-trays
 ---
-{% include head-mypost.html %}
+
 I went for a bit of the artsy, rustic look on these.  They were a bit tricky, in the sense that with the epoxy inlay in the tray bottom, suddenly decisions about which part to do first become important.  How do you assemble it, before or after the epoxy?  How do you finish it, before or after the epoxy?  Answers!  I demand answers.
+
+{% include head-mypost.html %}
 
 ## The Design
 
