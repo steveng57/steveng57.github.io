@@ -19,7 +19,7 @@ So your template had better be good.  I have since discovered that sometimes doi
 
 These floating shelves (sometimes called a _blind shelf_) have a 4 inch radius cut with such a template.  The radius was done on these so that people would not get stabbed in the hip when walking by.
 
-## The Workshop Shelf
+## The Workout Room Shelf
 
 {% include html-sxs.html img1="IMG_0743.jpeg" img2="IMG_0744.jpeg" %}
 These shelves are make from red oak, which is a very dense hardwood, meaning they are heavy.  A special [floating shelf support](https://www.leevalley.com/en-ca/shop/hardware/storage-and-organization/shelf-supports/51933-blind-shelf-supports){: target="_blank"} is used to make sure the shelf is properly supported.  
