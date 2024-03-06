@@ -60,6 +60,9 @@ analytics:
 pageviews:
   provider: 'goatcounter'
 
+goatcounter:
+  id: '9830369'
+
 # Prefer color scheme setting.
 #
 # Note: Keep empty will follow the system prefer color by default,
