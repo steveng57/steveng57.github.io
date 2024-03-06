@@ -35,14 +35,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function showPage(page: number) {
         pages.forEach(function(pageDiv: Element) {
-            pageDiv.style.display = pageDiv.getAttribute('data-page') == page.toString() ? 'block' : 'none';
+            (pageDiv as HTMLElement).style.display = pageDiv.getAttribute('data-page') == page.toString() ? 'block' : 'none';
         });
         currentPage = page;
         prevPageLinks.forEach(function(link: Element) {
-            link.style.visibility = currentPage == 1 ? 'hidden' : 'visible';
+            (link as HTMLElement).style.visibility = currentPage == 1 ? 'hidden' : 'visible';
         });
         nextPageLinks.forEach(function(link: Element) {
-            link.style.visibility = currentPage == total_pages ? 'hidden' : 'visible';
+            (link as HTMLElement).style.visibility = currentPage == total_pages ? 'hidden' : 'visible';
         });
 
         // Remove the current-page class from all links
