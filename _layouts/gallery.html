@@ -116,7 +116,7 @@ layout: page
                     {% endif %}
                 {% endif %}
 
-                <div class={{ mymargin }}>
+                <figure class={{ mymargin }}>
                     {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
                     {% assign caption = site.data.img-info[image.name].title %}
                     <a href="{{ redirect }}">
@@ -125,7 +125,7 @@ layout: page
                     {% if show_captions  %}
                     <figcaption class="text-center">{{ caption }}</figcaption>
                     {% endif %}
-                </div>            
+                </figure>            
                  
                 {% if currentcolumn == maxcolumns or forloop.last %}
                     </div>
