@@ -2,7 +2,7 @@
 layout: post
 title: Walnut Picture Frame
 date: 2021-07-30 18:32:00 -0500
-last_modified_at: 2024-02-17 18:32:00 -0500
+last_modified_at: 2024-03-07 18:33:34 -0500
 categories: [Woodworking, Home Decor]
 tags: [Wood, Woodworking, Picture Frame, Walnut, Home Decor]
 image: 
@@ -28,7 +28,13 @@ Pretty simple, only tricky part was mounting and positioning the individual piec
 
 ## In the Gazebo
 
-This is where I will place a pic of the frame in the Gazebo.  But its winter and I don't want to trek out there just for this.  Here is a place holder.
+Here they are in there new home, getting all chatty and hanging out.  
+
+{% include html-side.html img="IMG_0757.jpeg" align="center-wide" %}
+
+## Placeholder
+
+When I first wrote this blog entry, I had not yet take the above picture, so instead I put a placeholder just for giggles.  The thing is though, I have now grown attached to this placeholder so I am going to leave it right here.
 
 {% include embed/youtube.html id='dQw4w9WgXcQ' %}
 {% include clear-float.html %}
