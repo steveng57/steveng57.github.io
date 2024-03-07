@@ -4,7 +4,7 @@ title: Punkin's Playground
 date: 2023-02-04 18:32:00 -0500
 last_modified_at: 2024-03-04 10:26:32 -0500
 categories: [Woodworking, Furniture]
-tags: [Wood, Woodworking, Table, Craft, Inlay, Plywood, Maple, Furniture]
+tags: [Wood, Woodworking, Table, Craft, Epoxy, Inlay, Plywood, Maple, Furniture]
 image: 
     path: /thumbnails/20230405_134555.jpeg
     alt: Let the Crafting Begin

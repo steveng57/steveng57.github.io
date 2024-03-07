@@ -4,7 +4,7 @@ title: Bill's Christmas Gifts
 date: 2021-12-25 18:32:00 -0500
 last_modified_at: 2024-03-03 14:56:34 -0500
 categories: [Woodworking, Signs]
-tags: [Wood, Woodworking, Signs, Epoxy, Walnut, Red Oak ]
+tags: [Wood, Woodworking, Signs, Epoxy, Inlay, Walnut, Red Oak ]
 image:
   path: /thumbnails/golf-sign.jpeg
   alt: Golf is a good sign
