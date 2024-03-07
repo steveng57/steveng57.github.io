@@ -34,7 +34,7 @@ One the positive side, you could drive a tank on it, and I think it would hold.
 There are a couple of cool things about this bench though, some stuff where I was completely winging it:  
 
 - The bottom left drawer is actually a step, so that when it is pulled out the boys (our dogs) actually have a way to jump up on the bench so that when they need cleaning coming in from the outside.
-- The rightmost bottom two drawers are actually a single double-depth drawer for storing boats.  I am kinda happy at how you cannot tell that this is the case.
+- The rightmost bottom two drawers are actually a single double-depth drawer for storing boots.  I am kinda happy at how you cannot tell that this is the case.
 - The top right thing is a plant box.  It was waterproofed with about 56 layers of a paintable rubber compound, which is one of the messiest things I have ever done.  It is still holding watertight a couple of years later...we'll see.
 
 {% include html-side.html img="IMG_0537.jpeg" %}
