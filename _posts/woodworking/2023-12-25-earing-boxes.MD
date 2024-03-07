@@ -7,7 +7,7 @@ categories: [Woodworking, Jewelry Boxes]
 tags: [Wood, Woodworking, Walnut, Box, Earing, Jewelry Boxes]
 image:
   path: /thumbnails/IMG_0461.jpeg
-  alt: Earings
+  alt: Earings Trays - a gift for a wonderful human
 img_path: "/assets/img/posts/earing-boxes"
 ---
 

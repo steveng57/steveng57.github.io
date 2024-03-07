@@ -6,7 +6,9 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Workshop]
 tags: [Wood, Woodworking, Workbench, Assembly Table, Workshop]
 pin: false
-image: /thumbnails/20170127_010801.jpeg
+image: 
+    path: /thumbnails/20170127_010801.jpeg
+    alt: MDF and 2x4's - pretty simple
 img_path: /assets/img/posts/first-workbench
 ---
 

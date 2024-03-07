@@ -5,7 +5,9 @@ date: 2021-08-27 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Workshop]
 tags: [Wood, Woodworking, Workshop, Plywood]
-image: /thumbnails/20210827_212517.jpeg
+image: 
+    path: /thumbnails/20210827_212517.jpeg
+    alt: Nature abhors a vacuum
 img_path: "/assets/img/posts/vacuum-dolly"
 ---
 

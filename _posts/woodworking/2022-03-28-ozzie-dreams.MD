@@ -5,7 +5,9 @@ date: 2022-03-28 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Pets]
 tags: [Wood, Woodworking, Ozzie, Epoxy, Inlay, Red Oak, Pets]
-image: /thumbnails/20220328_071254.jpeg
+image: 
+    path: /thumbnails/20220328_071254.jpeg
+    alt: Sweet Dreams Ozman
 img_path: "/assets/img/posts/ozzie-dreams"
 ---
 {% include head-mypost.html %}

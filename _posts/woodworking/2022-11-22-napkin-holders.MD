@@ -4,8 +4,10 @@ title: Napkin Holders
 date: 2022-11-22 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Kitchen]
-tags: [Wood, Woodworking, Napkin Holder, Kitchen, Walnut]
-image: /thumbnails/20221122_113942.jpeg
+tags: [Wood, Woodworking, Napkin Holder, Kitchen, Walnut, Epoxy, Inlay]
+image: 
+    path: /thumbnails/20221122_113942.jpeg
+    alt: Walnut Napkin Holder with White Epoxy Inlay
 img_path: "/assets/img/posts/napkin-holders"
 ---
 

@@ -5,7 +5,9 @@ date: 2023-08-22 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Home Decor]
 tags: [Wood, Woodworking, Picture Frame, Poplar, Home Decor]
-image: /thumbnails/20230822_191820.jpeg
+image: 
+    path: /thumbnails/20230822_191820.jpeg
+    alt: The first of many to be sure
 img_path: "/assets/img/posts/picture-frames"
 ---
 

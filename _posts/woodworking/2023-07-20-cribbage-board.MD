@@ -5,7 +5,9 @@ date: 2023-07-20 18:32:00 -0500
 last_modified_at: 2024-03-01 18:32:00 -0500
 categories: [Woodworking, Games]
 tags: [Wood, Woodworking, Router, Cribbage Board, Sharper Origin, Walnut, Games]
-image: /thumbnails/IMG_0626.jpeg
+image: 
+    path: /thumbnails/IMG_0626.jpeg
+    alt: A very special gift for a very special person
 img_path: "/assets/img/posts/cribbage-board"
 ---
 

@@ -5,7 +5,9 @@ date: 2023-11-26 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Furniture]
 tags: [Wood, Woodworking, Ash, Furniture]
-image: /thumbnails/IMG_0221.jpeg
+image: 
+    path: /thumbnails/IMG_0221.jpeg
+    alt: Its a desert topping and a floor wax
 img_path: "/assets/img/posts/extension-table"
 ---
 
