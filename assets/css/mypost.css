@@ -26,7 +26,8 @@ img {
 }
 
 figcaption {
-    font-size: 0.8em; /* Adjust as needed */
+    font-size: 0.875rem; /* Adjust as needed */
+    color: var(--text-color);
 }
 
 .sjg-left {
