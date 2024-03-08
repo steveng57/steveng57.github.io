@@ -21,3 +21,12 @@
     <figcaption class="text-center">{{ caption }}</figcaption>
 </div>
 
+{% if include.acontent %}
+<p>
+  {% if include.atitle %}
+    <h3 style="margin-top: 0;">{{- include.atitle -}}</h3>
+  {% endif %}
+  {{ include.acontent | markdownify }}
+</p>
+{% endif %}
+
