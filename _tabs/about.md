@@ -12,7 +12,8 @@ last_modified_at: 2024-03-03 10:59:55 -0500
 {% include head-mypost.html %}
 {% include mydatetime.html date=page.last_modified_at prefix="Last Updated: " %}
 
-![Steves Workshop]_The most precious thing in my shop.  A gift from the family._
+{% include html-side.html img="IMG_0697.jpeg" align="center-full" caption="The most precious thing in my shop.  A gift from the family." %}
+{% include clear-float.html break = 1 %}
 
 Welcome to my photo blog of various "maker" things I am up to, mostly woodworking.  The above picture is a sign hanging in my workshop, given to me by the family.  It's pretty cool.
 
@@ -38,8 +39,7 @@ Sometime in late 2016, I started to setup a workshop in the basement.  Retiremen
 
 I live in a rural suburb of Ottawa called Manotick with my wife Debbie and two boys, Riley and Ozzie.
 
-![Boys Pic]{: .w-75}
-_Debbie took this great shot of the boys_
+{% include html-side.html img="20150131_134612.jpeg" align="center" caption="Debbie took this great shot of the boys" %}
 
 {% include clear-float.html break = 2 %}
 
@@ -50,6 +50,4 @@ Enjoy the blog!
 
 {% include clear-float.html%}
 
-[Boys Pic]: 20150131_134612.jpg
-[Steves Workshop]: IMG_0697.jpeg
 [sticker]: steven-sticker.png
