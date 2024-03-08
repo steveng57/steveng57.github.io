@@ -43,7 +43,8 @@ _Debbie took this great shot of the boys_
 
 {% include clear-float.html break = 2 %}
 
-![sticker]{:.left .w-33 }I am also a Pisces, which is silly because there is no science behind that stuff at all.  The other thing you should know about me is that I am all about science.  So if you believe in astrology, then I have some magic pixie dust to sell you, but that's about all you are going to get about me.
+![sticker]{:.left .w-33 }
+I am also a Pisces, which is silly because there is no science behind that stuff at all.  The other thing you should know about me is that I am all about science.  So if you believe in astrology, then I have some magic pixie dust to sell you, but that's about all you are going to get about me.
 
 Enjoy the blog!
 
