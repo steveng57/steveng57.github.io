@@ -4,7 +4,7 @@ title: Walnut Table and Benches
 date: 2024-02-22 18:32:00 -0500
 last_modified_at: 2024-02-25 18:59:24 -0500
 categories: [Woodworking, Furniture]
-tags: [Wood, Woodworking, Walnut, Table, Craft, Bench]
+tags: [Wood, Woodworking, Walnut, Table, Crafts, Bench, Dominos]
 image:
   path: /thumbnails/IMG_0693.jpeg
   alt: Walnut Table and Benches

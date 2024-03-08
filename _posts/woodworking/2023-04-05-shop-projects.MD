@@ -4,7 +4,7 @@ title: Shop Projects
 date: 2023-04-05 18:32:00 -0500
 last_modified_at: 2024-02-25 19:12:11 -0500
 categories: [Woodworking, Workshop]
-tags: [Wood, Woodworking, Workshop, Router, Mitre Stand, Table, Plywood]
+tags: [Wood, Woodworking, Workshop, Router, Mitre Stand, Table, Plywood, Dominos]
 image: 
     path: /thumbnails/20230405_141755.jpeg
     alt: Spiffy new router table

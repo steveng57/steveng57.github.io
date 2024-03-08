@@ -58,7 +58,7 @@ This gets used on a daily basis as a cleaning station for the boys when they com
 
 ## Materials
 
-- Red Oak
-- Festool Dominoes for joinery
-- Rubio Monocoat finish
+- Red Oak from {{ site.data.links.kjp }}
+- {{ site.data.links.domino }} for joinery
+- {{ site.data.links.rubio }} finish
 - [Buddy Rhodes](https://www.buddyrhodes.com){:target="_blank"} concrete products

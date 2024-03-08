@@ -4,7 +4,7 @@ title: Plant Stands
 date: 2021-04-28 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Home Decor]
-tags: [Wood, Woodworking, Taper, Stand, Red Oak, Home Decor]
+tags: [Wood, Woodworking, Taper, Stands, Red Oak, Home Decor, Dominos]
 image: 
     path: /thumbnails/20210428_181207.jpeg
     alt: Greenery and Redery

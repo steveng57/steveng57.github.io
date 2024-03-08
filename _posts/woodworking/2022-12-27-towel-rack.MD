@@ -4,7 +4,7 @@ title: Towel Rack
 date: 2022-12-27 18:32:00 -0500
 last_modified_at: 2024-02-23 11:45:18 -0500
 categories: [Woodworking, Furniture]
-tags: [Wood, Woodworking, Maple, Towel Rack, Furniture]
+tags: [Wood, Woodworking, Maple, Towel Rack, Furniture, Dominos, Shaper Origin]
 image: 
     path: /thumbnails/IMG_0681.jpeg
     alt: A great place to hang

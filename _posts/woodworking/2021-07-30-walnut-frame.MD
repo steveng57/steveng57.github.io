@@ -4,7 +4,7 @@ title: Walnut Picture Frame
 date: 2021-07-30 18:32:00 -0500
 last_modified_at: 2024-03-07 18:33:34 -0500
 categories: [Woodworking, Home Decor]
-tags: [Wood, Woodworking, Picture Frame, Walnut, Home Decor]
+tags: [Wood, Woodworking, Picture Frame, Walnut, Home Decor, Dominos]
 image: 
     path: /thumbnails/20210730_234747896_iOS.jpeg
     alt: For the Birds

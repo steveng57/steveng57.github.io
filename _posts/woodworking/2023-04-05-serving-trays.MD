@@ -4,7 +4,7 @@ title: Serving Trays
 date: 2023-04-05 18:33:00 -0500
 last_modified_at: 2024-02-25 19:11:41 -0500
 categories: [Woodworking, Home Decor]
-tags: [Wood, Woodworking, Serving Tray, Trays, Epoxy, Poplar, Home Decor]
+tags: [Wood, Woodworking, Serving Tray, Trays, Epoxy, Poplar, Home Decor, Shaper Origin]
 image: 
     path: /thumbnails/20230405_141951.jpeg
     alt: These are FIVE colour epoxy inlays

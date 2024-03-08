@@ -33,5 +33,5 @@ The second set of prints was done with my new {{ site.data.links.shaper }}. Much
 
 ## Materials
 
-- Poplar
-- Domino joinery
+- Poplar from {{ site.data.links.kjp }}
+- {{ site.data.links.domino }} joinery

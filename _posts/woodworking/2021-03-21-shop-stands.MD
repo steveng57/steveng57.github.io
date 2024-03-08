@@ -4,7 +4,7 @@ title: Shop Stands
 date: 2021-03-21 17:58:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Workshop]
-tags: [Wood, Woodworking, Drawers, Stand, Plywood, Workshop]
+tags: [Wood, Woodworking, Drawers, Stands, Plywood, Workshop]
 image: 
     path: /thumbnails/20210321_210903.jpeg
     alt: Waiting for Work

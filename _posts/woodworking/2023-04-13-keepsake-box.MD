@@ -4,7 +4,7 @@ title: Keepsake Box
 date: 2023-04-13 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Jewelry Boxes]
-tags: [Wood, Woodworking, Keepsake Box, Walnut, Maple, Epoxy, Jewelry Boxes]
+tags: [Wood, Woodworking, Keepsake Box, Walnut, Maple, Epoxy, Jewelry Boxes, Shaper Origin]
 image: 
     path: /thumbnails/IMG_0639.jpeg
     alt: Its a keeper

@@ -4,7 +4,7 @@ title: Picture Frames
 date: 2023-08-22 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Home Decor]
-tags: [Wood, Woodworking, Picture Frame, Poplar, Home Decor]
+tags: [Wood, Woodworking, Picture Frame, Poplar, Home Decor, Dominos]
 image: 
     path: /thumbnails/20230822_191820.jpeg
     alt: The first of many to be sure
@@ -17,7 +17,7 @@ These picture frames are sometimes called "Shadow Boxes" or "Shadow Frames". The
 
 ## Under Construction
 
-Nothing too fancy here, but there is a bit of finesse in making them strong, since the frame thickness is only a little over a cm. Festool dominoes are strategically placed at the mitres to give added strength, and while they are a bit of extra work, they make alignment during the glue-up much easier.
+Nothing too fancy here, but there is a bit of finesse in making them strong, since the frame thickness is only a little over a cm. {{ site.data.link.domino }} are strategically placed at the mitres to give added strength, and while they are a bit of extra work, they make alignment during the glue-up much easier.
 
 {% include html-side.html img="20230822_184956.jpeg" align="left" %}
 I used a new kind of paint on this one, mixing a couple of colours together to get just the right shade. The interior of the frame is painted black to accentuate the shadow effect.
