@@ -34,7 +34,7 @@ Here they are in there new home, getting all chatty and hanging out.
 
 ## Placeholder
 
-When I first wrote this blog entry, I had not yet take the above picture, so instead I put a placeholder just for giggles.  The thing is though, I have now grown attached to this placeholder so I am going to leave it right here.
+When I first wrote this blog entry, I had not yet taken the above picture, so instead I put a placeholder just for giggles.  The thing is though, I have now grown attached to this placeholder so I am going to leave it right where it is.
 
 {% include embed/youtube.html id='dQw4w9WgXcQ' %}
 {% include clear-float.html %}

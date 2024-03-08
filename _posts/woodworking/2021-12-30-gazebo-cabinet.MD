@@ -6,7 +6,7 @@ last_modified_at: 2024-03-07 18:00:14 -0500
 categories: [Woodworking, Furniture]
 tags: [Wood, Woodworking, Red Oak, Cabinet, Shelves]
 image:
-  path: /thumbnails/IMG_0763.jpeg
+  path: /thumbnails/IMG_0758C.jpeg
   alt: Cabinet for Gazebo
 img_path: /assets/img/posts/gazebo-cabinet
 ---
@@ -25,11 +25,11 @@ As big as it is, and with red oak being a relatively heavy hardwood, well it is 
 You need to get it done right in Sketchup and there is a bit of extra work to do in labelling your parts, but once you do, you hit a button, and your cut-list is auto-generated for you.  Print it off and take it down to the shop, and you are off to the races.
 
 Yeah, I am a geek, I know it.
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ## The Cabinet
 
-{% include html-sxs.html img1="IMG_0760.jpeg" img2="IMG_0763.jpeg" %}
+{% include html-sxs.html img1="IMG_0760.jpeg" img2="IMG_0758C.jpeg" %}
 
 We built this to fit under the tv in the gazebo.  The gazebo is the name for a small building we have in the back that is setup as a little getaway room.  Its a pretty cool little spot.
 
