@@ -23,18 +23,14 @@ Its always nice when you work on a piece that is going to be on display.  I also
 This seems a bit silly looking back on it now, to have gone to this length in the design.  But it was a great way to learn {{ site.data.links.sketchup }}, which has been super valuable in many projects.
 {% include clear-float.html %}
 
-### The Stands
-
-{% include html-side.html img="20210427_190041.jpeg" align="left" %}
+{% include html-side.html img="20210427_190041.jpeg" align="left" sidebar = "The Stands"%}
 
 The stands were cool to make, truly a 3d glue-up.  A small taper on the legs gives it a nice look.  I used General Finishes stain and polyurethane for the finish.  Its nice stuff, very durable and looks good.  Only problem I have with it is that it gives the workpiece a slightly plastic feel, and if you put too many coats, it can start to look a little like plastic.  Which is fine if you want to make something shiny.  Polyurethane does this because, well, it is plastic.
 
 I've made three of these of varying sizes.
 {% include clear-float.html %}
 
-### The Pots
-
-{% include html-side.html img="20210421_212015.jpeg" align="right" %}
+{% include html-side.html img="20210421_212015.jpeg" align="right" sidebar = "The Pots" %}
 
 After a couple weeks of letting the ceramic cure, I put nice white glaze on them.  Then I fired up the kiln and baked the pots at around 700 degrees F for about 4 hours, and they came out nice.  Nah, not really. I bought them on Amazon for about $70 each.  I would tell you the brand name, but they are not selling them anymore.
 {% include clear-float.html %}

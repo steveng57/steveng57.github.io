@@ -16,10 +16,15 @@
     {% assign class = "sjg-center-full" %}
 {% endcase %}
 
+<div style="height: 0.001rem;" ></div>
 <div class="{{ class }}">
     <img src="{{ include.img }}" alt="{{ include.img }}" title="{{ caption }}">
     <figcaption class="text-center">{{ caption }}</figcaption>
 </div>
+
+{% if include.sidebar %}
+  <h3 class="sjg-sidebar"> {{ include.sidebar }} </h3>
+{% endif %}
 
 {% if include.acontent %}
 <p>
@@ -29,4 +34,5 @@
   {{ include.acontent | markdownify }}
 </p>
 {% endif %}
+
 

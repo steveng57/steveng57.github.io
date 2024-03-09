@@ -57,6 +57,7 @@ figcaption {
     margin: auto;
 }
 
-h3 {
-    margin-top: 0.5rem !important; /* or 2px, 2%, etc., depending on the units you want to use */
+.sjg-sidebar {
+    margin-top: 0.25rem;
+    font-size: 1.33rem;
 }

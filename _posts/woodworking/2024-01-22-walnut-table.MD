@@ -17,9 +17,7 @@ This is perhaps my most complicated project to date, with the possible exception
 
 ## The Table
 
-{% include html-side.html img="IMG_0490.jpeg" align="left" %}
-
-### Start with Legs
+{% include html-side.html img="IMG_0490.jpeg" align="left" sidebar="The Legs" %}
 
 So the legs were fun and different.  We set out to mimic the design of our dining room table upstairs, I went back and forth a lot on the best way to do that.  
 
@@ -28,25 +26,19 @@ Do I cut a bunch of similar parts, but have many more parts, then glue them all 
 I decided on the latter approach and I think it was for the best.  The glue-ups were pretty complicated as it was, so I wouldn't want to make them any more difficult.
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_0499.jpeg" align="right" %}
-
-### Now the Top
+{% include html-side.html img="IMG_0499.jpeg" align="right" sidebar="The Top"%}
 
 When it comes to the table top, you start with a bunch of boards.  Here they are, laid out and ready for initial milling.  
 
 This was a pretty good batch of lumber from {{ site.data.links.kjp }} but there were a few really curved boards, so I had to go back for a couple more.
 {% include clear-float.html  break=1 %}
 
-{% include html-side.html img="IMG_0512.jpeg" align="left" %}
-
-### Glue-up time
+{% include html-side.html img="IMG_0512.jpeg" align="left" sidebar = "The Glue-up" %}
 
 The table top shown here, glued together and finished with {{ site.data.links.rubio }} walnut oil 2C.  Great stuff.  
 {% include clear-float.html break=1%}
 
-{% include html-side.html img="IMG_0516.jpeg" align="right" %}
-
-### Leg Assembly
+{% include html-side.html img="IMG_0516.jpeg" align="right" sidebar = "The Legs Fin" %}
 
 The assembly of the legs is a surprising amount of work.  Next time you are at a dining table, take a look under.  Not that I want to encourage this habit at your finer dining establishments, but there is likely to be a whole lot going on under there.  
 
@@ -55,27 +47,21 @@ The metal brackets in the corners was probably overkill, as the {{ site.data.lin
 
 ## The Benches
 
-{% include html-side.html img="IMG_0634.jpeg" align="left" %}
-
-### Bench Legs
+{% include html-side.html img="IMG_0634.jpeg" align="left" sidebar = "Bench Legs" %}
 
 The bench legs followed the same general design pattern as the table legs, just scaled down to 2/3 the size of the table.  This scaling was a general rule for the benches, which I intentionally broke in a few places.
 
 The other difference is that there were twice as many legs on the benches.
 {% include clear-float.html break=1%}
 
-{% include html-side.html img="IMG_0656.jpeg" align="right" %}
-
-### Bench Tops
+{% include html-side.html img="IMG_0656.jpeg" align="right" sidebar = "Bench Tops" %}
 
 The bench tops were a lot easier than the table top.  Each of them is a little less than half that of the table top, so there is much less worry about warps and twists.
 
 The photo here makes the tops look a little blotchy.  I don't know why.  In real life they are much smoother and look way better than this photo.  I gotta work on my photography skills.
 {% include clear-float.html break=1%}
 
-{% include html-side.html img="IMG_0659.jpeg" align="left" %}
-
-### Legs Assembly
+{% include html-side.html img="IMG_0659.jpeg" align="left" sidebar = "Bench Legs Fin" %}
 
 These are the bench table legs.  The inside stretchers in the middle are really just for alignment of the outside stretchers, keeping them parallel.
 
