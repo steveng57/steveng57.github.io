@@ -20,11 +20,15 @@ As big as it is, and with red oak being a relatively heavy hardwood, well it is 
 ## The Design
 
 {% include html-side.html img="gazebo-cabinet-sketchup.jpeg" align="left" %}
-{{ site.data.links.sketchup }} drawing to get things going again.  It was around this time that I started using some of the advanced layout tools to generate cut-lists automatically.  
+
+### Sketchup
+
+I created a {{ site.data.links.sketchup }} drawing to get things going again.  It was around this time that I started using some of the advanced layout tools to generate cut-lists automatically.  
 
 You need to get it done right in Sketchup and there is a bit of extra work to do in labelling your parts, but once you do, you hit a button, and your cut-list is auto-generated for you.  Print it off and take it down to the shop, and you are off to the races.
 
-Yeah, I am a geek, I know it.
+Yeah, I am a geek, I know it.  I have embraced it.
+
 {% include clear-float.html %}
 
 ## The Cabinet

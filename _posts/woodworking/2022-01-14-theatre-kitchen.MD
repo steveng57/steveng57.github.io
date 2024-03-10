@@ -21,33 +21,42 @@ This was a long one.  It took a bit over a month in the shop to make this one co
 
 It was all good up until this point.
 
+{% include html-side.html img="20220114_114921.jpeg" align="left" %}
+
 ### Big Oops
 
-{% include html-side.html img="20220114_114921.jpeg" align="left" %}
 It was at this point I went to put on the drawer faces, pictured below.  To my shock and horror, I made them **the wrong size!** Instead of being the required 762mm in width, they were made 726mm in width.  My mild dyslexia had bitten me once more.  
+
 {% include clear-float.html break = 1 %}
 
 {% include html-side.html img="IMG_0542.jpeg" align="right" %}
+
+### Spare Parts
+
 These are still in my shop, awaiting the next project that requires four drawer faces of exactly 726mm width.  Or I could sell them.  Anyone need a good deal on some 726mm drawer fronts?  We can haggle.
-{% include clear-float.html %}
+
+{% include clear-float.html break = 1%}
+
+{% include html-side.html img="20220123_191254.jpeg" align="left" %}
 
 ### The Floor
 
-{% include html-side.html img="20220123_191254.jpeg" align="left" %}
 Installing this on the basement floor was quite a challenge.  The floor is not level, not even close.  There is about a 40mm (1.5in) drop from one end to the other that I had to shim on the toe-kick.  Thankfully, there were quite a few YouTube videos on dealing with this exact problem.
-{% include clear-float.html %}
+{% include clear-float.html break = 1 %}
+
+{% include html-side.html img="20220131_222101.jpeg" align="right" %}
 
 ### The Fridge
 
-{% include html-side.html img="20220131_222101.jpeg" align="right" %}
 The new fridge in place.  Cool blue lights.
 
 The floor is so crooked, that I even had to shim a few things for the fridge to look right.  Actually at this point I don't know if its the floors that are crooked or the walls are out of whack.
-{% include clear-float.html %}
+{% include clear-float.html break = 1 %}
+
+{% include html-side.html img="IMG_0154.jpeg" align="left" %}
 
 ### Lighting
 
-{% include html-side.html img="IMG_0154.jpeg" align="left" %}
 Since the theatre room is sometimes very dark, I added a lot of in-cabinet lighting throughout.  I hooked up micro-switches to all the doors and drawers to control them.  There is a storage area behind this wall, so it was easy to wire the lights to the power from the back.
 {% include clear-float.html %}
 
@@ -55,9 +64,9 @@ Since the theatre room is sometimes very dark, I added a lot of in-cabinet light
 
 We scavenged the granite top from our upstairs kitchen remodel and repurposed it down here.  It fit almost perfectly, just had to carve off a bit off the end.
 
-{% include html-side.html img="IMG_0541.jpeg" align="center" %}
+{% include html-side.html img="IMG_0541.jpeg" align="center-wide" %}
 {% include clear-float.html break = 1 %}
-{% include html-side.html img="IMG_0540.jpeg" align="center" %}
+{% include html-side.html img="IMG_0540.jpeg" align="center-wide" %}
 
 ## Materials
 

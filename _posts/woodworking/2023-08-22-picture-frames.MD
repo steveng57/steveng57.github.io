@@ -20,6 +20,9 @@ These picture frames are sometimes called "Shadow Boxes" or "Shadow Frames". The
 Nothing too fancy here, but there is a bit of finesse in making them strong, since the frame thickness is only a little over a cm. {{ site.data.link.domino }} are strategically placed at the mitres to give added strength, and while they are a bit of extra work, they make alignment during the glue-up much easier.
 
 {% include html-side.html img="20230822_184956.jpeg" align="left" %}
+
+### New Paint
+
 I used a new kind of paint on this one, mixing a couple of colours together to get just the right shade. The interior of the frame is painted black to accentuate the shadow effect.
 
 Its an acrylic paint I picked up at {{ site.data.links.michaels }}.
@@ -27,6 +30,9 @@ Its an acrylic paint I picked up at {{ site.data.links.michaels }}.
 {% include clear-float.html break = 1 %}
 
 {% include html-side.html img="20230822_184948.jpeg" align="right" %}
+
+### Poplar is Poplar
+
 I made these out of poplar.  It's a lighter wood, but still strong enough. Not as sappy as pine, and paints very well. Less pricey than other woods, and if you are going to paint it anyway, might as well spend more on the paint and less on the wood.
 
 {% include clear-float.html %}

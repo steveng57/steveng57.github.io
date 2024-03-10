@@ -17,20 +17,25 @@ In late winter of 2023, I decided a workshop upgrade was due.  You can never hav
 
 ## Under Construction
 
-### Router Stand
-
 {% include html-side.html img="Sketchup%20of%20Router%20Table.jpeg" align="left" %}
+
+### Router Stand
 
 I bought a couple or three pieces of plywood from {{ site.data.links.balticbirch }}, and fashioned up a {{ site.data.links.sketchup }} drawing of the router table I was going to make, along with one for the mitre stand.
 {% include clear-float.html break=1 %}
 
 {% include html-side.html img="20230405_141755.jpeg" align="right" %}
+
+### Steely
+
 The steel top on the new router table is awesome.  Nice level even cuts each and every time.
+
 {% include clear-float.html %}
+
+{% include html-side.html img="Sketchup%20of%20Mitre%20Stand.jpeg" align="left" %}
 
 ### Mitre Stand
 
-{% include html-side.html img="Sketchup%20of%20Mitre%20Stand.jpeg" align="left" %}
 Each unit in the mitre stand is basically built as a big cabinet box with a drawer.  You build three of those and string them together using about 10 beefy cabinet screws, and there you have a mitre stand.  Here you see it modelled in {{ site.data.links.sketchup }} before the construction began.
 {% include clear-float.html %}
 

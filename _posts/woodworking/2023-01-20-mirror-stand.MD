@@ -23,10 +23,16 @@ It starts with the design, which in this case was done on the web via {{ site.da
 {% include clear-float.html break=1 %}
 
 {% include html-side.html img="IMG_0736.jpeg" align="right" %}
+
+### Rings and Things
+
 Once the design imported to the Origin, you carve, and before the assembly, you pour some epoxy.  In this case the epoxy was sprinkled with copious amounts of glitter, which was very fitting for this kind of piece.  The photo doesn't show it very well, but it sparkles.  Trust me.
 {% include clear-float.html break=1 %}
 
 {% include html-side.html img="IMG_0740.jpeg" align="left" %}
+
+### Bling
+
 The process was similar for the _Bling_ side of the box, but I used a single-line-font specially selected from [Single Line Fonts](https://www.singlelinefonts.com){: target="_blank"}.  This site has a bunch of cool fonts that work well with these kinds of projects, all at reasonable price.
 {% include clear-float.html %}
 

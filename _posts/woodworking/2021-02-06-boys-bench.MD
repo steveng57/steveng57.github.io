@@ -19,6 +19,8 @@ This is a strange one, and looking back on it, not one that I am all that proud 
 
 {% include html-side.html img="IMG_0536.jpeg" align = "left" %}
 
+### Firsts
+
 There were a couple of firsts for me on this one, including under-mount drawer slides and rubber paint (more on this below), which made it fun.
 
 But its heavy.  Really heavy, I would not make it like this again if I had a do over.  There is way to much wood used here, 3/4 thick ply where 1/4 inch would have done just fine.  Double layers where one would have been plenty. and the solid red oak for most of the exterior doesn't help keep it light.  

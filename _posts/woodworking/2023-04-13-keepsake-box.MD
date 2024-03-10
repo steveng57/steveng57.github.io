@@ -18,13 +18,19 @@ Only had a couple of days after finishing the previous project before Debbie's b
 ## Under Construction
 
 {% include html-side.html img="IMG_0637.jpeg" align="left" %}
+
+### Flowing Grain
+
 On this box, the grain flows all the way around, and is sometimes called a "continuous grain" or "matching grain" design. When done on a piece with a horizontal surface that flows onto a vertical one, it is often called a "waterfall".
 
 This is actually a pretty complicated thing to do. And if you make a mistake on a board, you need to fix it or else throw out all the boards, since the grain won't match if you try to substitute a new board.
 
-{% include clear-float.html %}
+{% include clear-float.html break = 1 %}
 
 {% include html-side.html img="IMG_0640.jpeg" align="right" %}
+
+### Tough Cut
+
 So what you do is make a board long enough to make a side plus one end of the box. You need to make it thick enough so that it is double the thickness of your final boards.
 
 In my case, I did the above, but also put a maple strip in there, fashioned at an angle, to give the piece a little contrast.

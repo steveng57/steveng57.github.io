@@ -19,9 +19,12 @@ Ok, so the difference between a charcuterie board and a cutting board, is that a
 
 {% include html-side.html img="20220227_191600.jpeg" align="left" %}
 
+### In the Sticks
+
 Take a bunch of sticks, glue them together in just the right order, then run them thru the planer to get a start on the smoothing process, then start sanding at 80 grit. I wanted a smooth glossy look, so I sanded all the way to 600 grit.
 
 The thing that makes these look cool is the different woods, and the contrast between them. It has walnut, maple, Sapele, Mahogany, and Padauk. If you are really into the wood types, I have included a way too detailed description of each of them below.
+
 {% include clear-float.html break = 1%}
 
 It was finished with a food safe product called Honeybees Natural Wood Cream, mostly beeswax. Doesn't that sound just yummy? The rubber feet and stainless-steel connecting screws were procured from local artisans (Lee Valley and Home Depot respectively).

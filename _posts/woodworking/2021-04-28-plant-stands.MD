@@ -41,9 +41,10 @@ After a couple weeks of letting the ceramic cure, I put nice white glaze on them
 Nah, not really. I bought them on Amazon for about $70 each.  I would tell you the brand name, but they are not selling them anymore.
 {% include clear-float.html %}
 
+{% include html-side.html img="20210418_000920000_iOS.jpeg" align="left" %}
+
 ### Assembled
 
-{% include html-side.html img="20210418_000920000_iOS.jpeg" align="left" %}
 It was important to get the sizes just right.  You don't want too large or small a gap between the pot and the stand.  Too big and it will look silly, too small and well... good luck with that.  Sometimes I am actually amazed that my measurements work out at all, but thankfully they did here.
 {% include clear-float.html %}
 

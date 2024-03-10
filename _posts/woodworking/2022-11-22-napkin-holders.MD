@@ -21,11 +21,19 @@ The napkin holder projects are among my favorites. Making these is a small chall
 ## Under Construction
 
 {% include html-side.html img="20221122_113946.jpeg" align="left" %}
+
+### Epoxy Inlay
+
 White epoxy inlay finished with {{ site.data.links.rubio }} Pure.
+
 {% include clear-float.html break = 1 %}
 
 {% include html-side.html img="20221122_113942.jpeg" align="right" %}
+
+### Natural Walnut
+
 A slightly rotated angle for your viewing pleasure.
+
 {% include clear-float.html %}
 
 ## One for Friends
@@ -37,13 +45,20 @@ After getting confident with the epoxy outline, I decided to try some lettering 
 ## At Home in the Kitchen
 
 {% include html-side.html img="IMG_DT2.jpeg" align="right" %}
+
+### Theresa and Doug
+
 Looking sweet with some good company.
-{% include clear-float.html break = 1%}
+
+{% include clear-float.html break = 1 %}
 
 {% include html-side.html img="IMG_0555.jpeg" align="left" %}
+
+### At Our Place
+
 Its getting crowded in here.  
 
-If you are so inclined, you can check out the [charcuterie board](/posts/charcuterie-boards) here.  Look, I can even spell _charcuterie_ now.
+If you are so inclined, you can check out the [charcuterie board]({% post_url woodworking/2022-02-27-charcuterie-boards %}) here.  Look, I can even spell _charcuterie_ now.
 {% include clear-float.html %}
 
 ## Materials

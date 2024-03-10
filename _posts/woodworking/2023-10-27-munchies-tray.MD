@@ -31,7 +31,11 @@ As seems to be my usual for mitres these days, I used the {{ site.data.links.dom
 
 {% include clear-float.html %}
 
-{% include html-side.html img="IMG_0079.jpeg" align="left" %}A fun build, while the angles were indeed odd, it was a lot of fun to see it come together.
+{% include html-side.html img="IMG_0079.jpeg" align="left" %}
+
+### Crazy Angles
+
+A fun build, while the angles were indeed odd, it was a lot of fun to see it come together.
 {% include clear-float.html %}
 
 ## In Production

@@ -23,6 +23,8 @@ Lots of pictures on this one. **Hey, it was a lot of work.**
 
 {% include html-side.html img="CribbageBoard02.jpeg" align="left" %}
 
+### Layout
+
 The sheer madness of trying to do 391 individual holes with the router, even a computerized one, is...well...madness.
 
 First you need to be sure that the computerized layout has no flaws. If you discover one in the middle of the cut, well good luck with that.
@@ -35,9 +37,10 @@ _391 holes. Go ahead...count 'em._
 
 {% include clear-float.html %}
 
-## Finish
-
 {% include html-side.html img="20230720_163338.jpeg" align="right" %}
+
+### Finish
+
 Finishing this one was a little tricky too. I use a hard-wax oil called {{ site.data.links.rubio }} for most of my projects theses days. It makes for a great, durable, and repairable finish. It is also way less finicky that other finishes: you apply it, wait a bit, and wipe off the excess. Dust does not really stick to it, so shop dust is not so much of a problem.
 
 But then there was the problem of the wax and the holes. The wax loved to get in there, but the look was not good, and I am sure the functionality would have been even worse. But a 1/8 inch drill bit came to my rescue ,

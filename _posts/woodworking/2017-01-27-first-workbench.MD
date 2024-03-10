@@ -23,13 +23,19 @@ In setting up my workshop, I had the DeWalt mitre saw from a while back, bought 
 ## The First Workbench
 
 {% include html-side.html img="20170127_010801.jpeg" align = "left" %}
+
+### Unpainted and Raw
+
 Then, I decided to make my first workbench / assembly table.  I have become quite enamored with assembly tables as future posts will tell.
 
 This one was fairly straightforward.  A whole lot of 2x4s from the big box store, pocket screws holding it all together.  I put some Kreg track on the top, the blue aluminum extrusion shown here, which one can use to clamp things down with.  Finished it off with some enamel orange paint and coated the 2x4s in a couple of coats of Tung oil.
 {% include clear-float.html break = 1 %}
 
 {% include html-side.html img="20170202_151701.jpeg" align = "right" %}
-A couple of thick coats of orange acrylic paint to help make the top more durable.  
+
+### Acrylic Paint
+
+A couple of thick coats of orange acrylic paint to help make the top more durable.  Cause I smash a lot of thing on it, like my thumbs.
 
 Added a bottom shelf for more shop storage, because...you know...storage.  I also added a vice to the side because...you know...vice.
 {% include clear-float.html %}
