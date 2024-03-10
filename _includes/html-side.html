@@ -21,18 +21,3 @@
     <img src="{{ include.img }}" alt="{{ include.img }}" title="{{ caption }}">
     <figcaption class="text-center">{{ caption }}</figcaption>
 </div>
-
-{% if include.sidebar %}
-  <h3 class="sjg-sidebar"> {{ include.sidebar }} </h3>
-{% endif %}
-
-{% if include.acontent %}
-<p>
-  {% if include.atitle %}
-    <h3 style="margin-top: 0;">{{- include.atitle -}}</h3>
-  {% endif %}
-  {{ include.acontent | markdownify }}
-</p>
-{% endif %}
-
-

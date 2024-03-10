@@ -1,0 +1,17 @@
+Article:
+  Introduction: "Introduction text"
+  Sections:
+    - Title: "Section 1"
+      Cards:
+        - Title: "Card 1"
+          Content: "Card content"
+          Image: "image.jpg"
+    - Title: "Section 2"
+      Cards:
+        - Title: "Card 2"
+          Content: "Card content"
+          Image: "image.jpg"
+  Summary: "Summary text"
+  Materials:
+    - "Material 1"
+    - "Material 2"

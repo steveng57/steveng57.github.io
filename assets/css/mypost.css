@@ -57,8 +57,8 @@ figcaption {
     margin: auto;
 }
 
-.sjg-sidebar {
-    margin-top: 0.25rem;
-    margin-bottom: 0.5em;
-    font-size: 1.33rem;
+h3 {
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.5em !important;
+    font-size: 1.33rem !important;
 }

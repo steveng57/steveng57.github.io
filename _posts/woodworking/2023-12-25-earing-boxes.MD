@@ -22,17 +22,22 @@ I really like making special things for other people. This is a fun example of t
 
 Doing the finishing on this one was pretty messy, partly due to the number of pieces, and also all the nooks and crannies to get into.
 
-{% include html-side.html img="IMG_0455.jpeg" align="center-full" %}
-
 Nice to have a big work surface to spread out.  Especially when you are a messy, messy woodworker.
 
-{% include html-side.html img="IMG_0466.jpeg" align="right" sidebar = "Squares" %}
+{% include html-side.html img="IMG_0455.jpeg" align="center-full" %}
+{% include clear-float.html break = 1 %}
+
+{% include html-side.html img="IMG_0466.jpeg" align="right" %}
+
+### Squares
 
 The insert with all the squares was cut as a separate piece from the main box. It was carved using the {{ site.data.links.origin }} from a single block of walnut.  This left me with about 72 little cubes of walnut that I still haven't figured out what to do with.
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img = "IMG_0467.jpeg" align = "left" sidebar  = "Velvet" %}
+{% include html-side.html img = "IMG_0467.jpeg" align = "left" %}
+
+### Velvet
 
 The green velvet was placed on the bottom of the box and the insert placed over it.
 
