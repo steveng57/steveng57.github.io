@@ -31,18 +31,30 @@ Mmmm...{{ site.data.links.rubio }} **Chocolate** was the colour used here.  Mmmm
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="IMG_0218.jpeg" align="left" %}Normally an apron, seen in the foreground here, is situated between the legs of the table, helping to keep them sturdy.  In this case, the apron is purely decorative, as the legs will attach to the underside of the table and be inset a fair amount.
+{% include html-side.html img="IMG_0218.jpeg" align="left" %}
+
+### Apron
+
+Normally an apron, seen in the foreground here, is situated between the legs of the table, helping to keep them sturdy.  In this case, the apron is purely decorative, as the legs will attach to the underside of the table and be inset a fair amount.
 
 {% include clear-float.html break  = 1%}
 
 {% include html-side.html img="IMG_0221.jpeg" align="right" %}
+
+### Metal Legs
+
 The metal legs look a little spindly here, but that is for a reason. When the table is used in "extension mode" it is moved next to the dining table. When seated at it, the legs had to be inset to give diners ample legroom and not to bang their knees.
 
 With the legs inset as such, I was a bit worried the table would be top-heavy, but it is surprisingly stable.  You would have to take a pretty good run at it to knock it over.
 
+I bought these from {{ site.data.links.rustydesign }}, an Ontario based company outside Toronto.  Great quality, great selection, and good prices.  Check them out.
+
 {% include clear-float.html break = 1 %}
 
 {% include html-side.html img="IMG_0226.jpeg" align="left" %}
+
+### Edging
+
 The tricky part was getting the edging to look the same as on the original table. The blocks on the end and the groove on the edge are part of that.
 
 {% include clear-float.html %}
@@ -55,6 +67,6 @@ This is where overflow stuff will go when we have family dinners.  More importan
 
 ## Materials
 
-- Ash
+- Ash, both 2&Prime; thick and 1&Prime; from {{ site.data.links.kjp }}
 - Metal legs purchased from {{ site.data.links.rustydesign }}. The irony (see what I did there) is not lost on me.
 - Rubio Monocoat and Chocolate Precolour Easy.
