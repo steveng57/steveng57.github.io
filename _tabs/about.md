@@ -19,15 +19,17 @@ Welcome to my photo blog of various "maker" things I am up to, mostly woodworkin
 
 ## About this site
 
-The [Home Page](/) is an inverse chronological listing of the various projects I have taken on.  As you go further back in time, the projects get a little more primitive...not that my more recent things are perfect, but you learn a lot over time in this craft.  Some of that learning I have actually managed to apply in my more recent efforts.
+The [Home Page]({% link index.html %}) is an inverse chronological listing of the various projects I have taken on.  As you go further back in time, the projects get a little more primitive...not that my more recent things are perfect, but you learn a lot over time in this craft.  Some of that learning I have actually managed to apply in my more recent efforts.
 
 In the early days, I did not take many pictures of the shop or the projects as they were in progress, so a lot of the pics will be of the finished product.  I will be taking more "under construction" photos as time progresses, hopefully that will make the posts more interesting to those of you who like a bit of the "behind-the-scenes" thing.
 
-The [Image Gallery](/gallery) is an alphabetical listing of all the images in all the posts on the site.  This is meant to be a purely visual experience, and if you want more details on something of interest, you can clip on the image to drill down into the original post.
+The [Image Gallery]({% link _tabs/gallery.md %}) is an alphabetical listing of all the images in all the posts on the site.  This is meant to be a purely visual experience, and if you want more details on something of interest, you can clip on the image to drill down into the original post.
 
-The [Categories](/categories) link shows the posts group by their categories and sub-categories.  I am just getting these categories sorted as of this writing.
+For an interesting layout of the posts in chronological order, be sure to check out the [Timeline View.]({% link _tabs/timeline.md %})  The "Posted" date at the top of each blog post is actually the rough date of when the project took place, and this view is sorted by that timestamp.
 
-The [Tags](/tags) links will display a tag wall splattered with all tags from all posts.  Click on a random one to see what fun that brings.
+The [Categories]({% link _tabs/categories.md %}) link shows the posts group by their categories and sub-categories.  I am just getting these categories sorted as of this writing.
+
+The [Tags]({% link _tabs/tags.md %}) links will display a tag wall splattered with all tags from all posts.  Click on a random one to see what fun that brings.
 
 To all the fans of this website, pictured below, please be [let me know](mailto:steveng57@outlook.com) if you find any bugs or other inaccuracies.  This is very much a work in progress.
 
