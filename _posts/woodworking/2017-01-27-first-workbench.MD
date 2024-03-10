@@ -52,4 +52,4 @@ While it is no longer my primary workbench / assembly table, it still gets a lot
 - MDF from Home Depot
 - Kreg Clamp Track
 - {{ site.data.links.leevalley}} Mobile Wheels
-- Tung oil
+- Tung oil (not tongue oil, that would be gross)
