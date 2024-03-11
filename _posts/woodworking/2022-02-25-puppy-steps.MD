@@ -29,7 +29,7 @@ This was the first time I attempted any engraving or detail work like this, note
 
 ### The Carve
 
-The second set of prints was done with my new {{ site.data.links.shaper }}. Much more on this tool in coming posts, its one of my favorite things ever. In both cases, the prints were carved about 6mm deep.
+The second set of prints was done with my new {{ site.data.links.shaper }}. Much more on this tool in coming posts, it is one of my favorite things ever. In both cases, the prints were carved about 6mm deep.
 {% include clear-float.html %}
 
 ## In Production
@@ -40,7 +40,7 @@ The second set of prints was done with my new {{ site.data.links.shaper }}. Much
 
 This step must get used about 20 times a day.  
 
-Its in the mudroom and serves as a way to get the boys up to the desk for cleaning, grooming, or putting on winter gear.  They are quite used to it now, they bounce right up without hesitation.
+It's in the mudroom and serves as a way to get the boys up to the desk for cleaning, grooming, or putting on winter gear.  They are quite used to it now, they bounce right up without hesitation.
 
 {% include clear-float.html %}
 

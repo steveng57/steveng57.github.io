@@ -41,7 +41,7 @@ The insert with all the squares was cut as a separate piece from the main box. I
 
 The green velvet was placed on the bottom of the box and the insert placed over it.
 
-The top engraving was a little nerve wracking. Make a mistake here and its hard to patch nicely.
+The top engraving was a little nerve wracking. Make a mistake here and it's hard to patch nicely.
 
 {% include clear-float.html %}
 

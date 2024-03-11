@@ -7,11 +7,11 @@ categories: [Woodworking, Furniture]
 tags: [Wood, Woodworking, Ash, Furniture]
 image: 
     path: /thumbnails/IMG_0221.jpeg
-    alt: Its a desert topping and a floor wax
+    alt: It's a desert topping and a floor wax
 img_path: "/assets/img/posts/extension-table"
 ---
 
-This was my first project using Ash. Its a very nice hardwood, similar to Red Oak but with a little less grain, but not totally closed pores.
+This was my first project using Ash. It's a very nice hardwood, similar to Red Oak but with a little less grain, but not totally closed pores.
 
 {% include head-mypost.html %}
 

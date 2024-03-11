@@ -7,7 +7,7 @@ categories: [Woodworking, Jewelry Boxes]
 tags: [Wood, Woodworking, Keepsake Box, Walnut, Maple, Epoxy, Jewelry Boxes, Shaper Origin]
 image: 
     path: /thumbnails/IMG_0639.jpeg
-    alt: Its a keeper
+    alt: It's a keeper
 img_path: "/assets/img/posts/keepsake-box"
 ---
 

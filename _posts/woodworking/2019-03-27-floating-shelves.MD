@@ -11,7 +11,7 @@ image:
 img_path: "/assets/img/posts/floating-shelves"
 ---
 
-Sometimes I can't wait to start a project where I get to try something new, especially if its something that you just know that you are going to use a lot in the future.
+Sometimes I can't wait to start a project where I get to try something new, especially if it's something that you just know that you are going to use a lot in the future.
 
 {% include head-mypost.html %}
 

@@ -23,9 +23,9 @@ This is a strange one, and looking back on it, not one that I am all that proud 
 
 There were a couple of firsts for me on this one, including under-mount drawer slides and rubber paint (more on this below), which made it fun.
 
-But its heavy.  Really heavy, I would not make it like this again if I had a do over.  There is way to much wood used here, 3/4 thick ply where 1/4 inch would have done just fine.  Double layers where one would have been plenty. and the solid red oak for most of the exterior doesn't help keep it light.  
+But it's heavy.  Really heavy, I would not make it like this again if I had a do over.  There is way to much wood used here, 3/4 thick ply where 1/4 inch would have done just fine.  Double layers where one would have been plenty. and the solid red oak for most of the exterior doesn't help keep it light.  
 
-There are so many pocket holes holding this thing together, its just silly.  Half that amount would do.
+There are so many pocket holes holding this thing together, it's just silly.  Half that amount would do.
 
 I built it low to the ground so that the boys could jump on it easy enough, so I left off the trim on the bottom, but I think that looks odd, unfinished.
 The solid Red Oak for the exterior helps make this a heavy beast.

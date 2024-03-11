@@ -45,7 +45,7 @@ The rods are solid maple, picked up at {{ site.data.links.leevalley }}.  Pretty 
 
 ## In Position
 
-Its been in use for over a year at this point and no issues with warping or bending so far.  Fingers crossed.
+It's been in use for over a year at this point and no issues with warping or bending so far.  Fingers crossed.
 {% include html-side.html img="IMG_0681.jpeg" %}
 
 ## Materials

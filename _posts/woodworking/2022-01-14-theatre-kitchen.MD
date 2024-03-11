@@ -50,7 +50,7 @@ Installing this on the basement floor was quite a challenge.  The floor is not l
 
 The new fridge in place.  Cool blue lights.
 
-The floor is so crooked, that I even had to shim a few things for the fridge to look right.  Actually at this point I don't know if its the floors that are crooked or the walls are out of whack.
+The floor is so crooked, that I even had to shim a few things for the fridge to look right.  Actually at this point I don't know if it's the floors that are crooked or the walls are out of whack.
 {% include clear-float.html break = 1 %}
 
 {% include html-side.html img="IMG_0154.jpeg" align="left" %}

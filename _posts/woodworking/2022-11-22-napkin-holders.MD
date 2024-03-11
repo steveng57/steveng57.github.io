@@ -56,7 +56,7 @@ Looking sweet with some good company.
 
 ### At Our Place
 
-Its getting crowded in here.  
+It's getting crowded in here.  
 
 If you are so inclined, you can check out the [charcuterie board]({% post_url /woodworking/2022-02-27-charcuterie-boards %}) here.  Look, I can even spell _charcuterie_ now.
 {% include clear-float.html %}

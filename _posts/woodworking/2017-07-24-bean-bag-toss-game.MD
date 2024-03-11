@@ -41,7 +41,7 @@ The two Bag Toss Boards were later painted candy-apple red.
 
 ### Playtime
 
-These are taken out many times every summer and its pretty cool to see people having fun with them.  It never gets old.
+These are taken out many times every summer and it's pretty cool to see people having fun with them.  It never gets old.
 
 Debbie stamped some dog paw prints on the final version which made it look really cool.  I will add a pic of that when the spring thaw comes and the back yard is a little more accessible.
 {% include clear-float.html %}

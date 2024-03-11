@@ -35,7 +35,7 @@ Yeah, I am a geek, I know it.  I have embraced it.
 
 {% include html-sxs.html img1="IMG_0760.jpeg" img2="IMG_0758C.jpeg" %}
 
-We built this to fit under the tv in the gazebo.  The gazebo is the name for a small building we have in the back that is setup as a little getaway room.  Its a pretty cool little spot.
+We built this to fit under the tv in the gazebo.  The gazebo is the name for a small building we have in the back that is setup as a little getaway room.  It's a pretty cool little spot.
 
 We were going to put a little fridge and microwave in there, but current thinking is that I will add a drawer and a door to the right side instead.  Then we can hide more messy things in there.
 

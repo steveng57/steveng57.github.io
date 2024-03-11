@@ -11,7 +11,7 @@ image:
 img_path: "/assets/img/posts/punkins-playground"
 ---
 
-This table was specially made to fit into Debbie's craft area setup. It of my own design, and turned out to be very sturdy even though its a 4ft by 8ft span.
+This table was specially made to fit into Debbie's craft area setup. It of my own design, and turned out to be very sturdy even though it is a 4&#39; by 8&#39; span.
 
 {% include head-mypost.html %}
 
@@ -21,7 +21,7 @@ This table was specially made to fit into Debbie's craft area setup. It of my ow
 
 As usual with most projects, the design starts in {{ site.data.links.sketchup }}.  It is a super-cool tool that, once you get the hang of it, lets you draw up things like this pretty quick.  It lets you really visualize the work.  
 
-There is even a plug-in for Sketchup, called [Open Cut List](https://docs.opencutlist.org/){: target="_blank" }, that will take your drawing and generate a parts list for you, complete with all the cuts that need to made on either the plywood or the solid wood.  Its really quite amazing.
+There is even a plug-in for Sketchup, called [Open Cut List](https://docs.opencutlist.org/){: target="_blank" }, that will take your drawing and generate a parts list for you, complete with all the cuts that need to made on either the plywood or the solid wood.  It's really quite amazing.
 
 I really shouldn't be telling everyone all my secrets.
 

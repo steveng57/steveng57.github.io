@@ -11,7 +11,7 @@ image:
 img_path: "/assets/img/posts/plant-stands"
 ---
 
-Its always nice when you work on a piece that is going to be on display.  I also like mixing materials into my projects, and these ceramic pots were just the ticket to go along with the espresso stained oak stands.
+It is always nice when you work on a piece that is going to be on display.  I also like mixing materials into my projects, and these ceramic pots were just the ticket to go along with the espresso stained oak stands.
 
 {% include head-mypost.html %}
 
@@ -27,7 +27,7 @@ This seems a bit silly looking back on it now, to have gone to this length in th
 
 ### The Stands
 
-The stands were cool to make, truly a 3d glue-up.  A small taper on the legs gives it a nice look.  I used General Finishes stain and polyurethane for the finish.  Its nice stuff, very durable and looks good.  Only problem I have with it is that it gives the workpiece a slightly plastic feel, and if you put too many coats, it can start to look a little like plastic.  Which is fine if you want to make something shiny.  Polyurethane does this because, well, it is plastic.
+The stands were cool to make, truly a 3d glue-up.  A small taper on the legs gives it a nice look.  I used General Finishes stain and polyurethane for the finish.  It is very nice stuff, very durable and looks good.  Only problem I have with it is that it gives the workpiece a slightly plastic feel, and if you put too many coats, it can start to look a little like plastic.  Which is fine if you want to make something shiny.  Polyurethane does this because, well, it is plastic.
 
 I've made three of these of varying sizes.
 {% include clear-float.html break = 1 %}

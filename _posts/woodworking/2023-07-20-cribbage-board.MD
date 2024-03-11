@@ -45,7 +45,7 @@ Finishing this one was a little tricky too. I use a hard-wax oil called {{ site.
 
 But then there was the problem of the wax and the holes. The wax loved to get in there, but the look was not good, and I am sure the functionality would have been even worse. A 1/8&Prime; drill bit came to my rescue, but like I said, _391 holes. Go ahead...count 'em!_
 
-Sanding was also a little...special. Sand too little and its rough obviously, but sand too much and there are any number of unrepairable things that could go wrong.
+Sanding was also a little...special. Sand too little and it's rough obviously, but sand too much and there are any number of unrepairable things that could go wrong.
 
 {% include clear-float.html %}
 
