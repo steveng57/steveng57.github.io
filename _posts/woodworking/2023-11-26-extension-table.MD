@@ -20,7 +20,7 @@ That texture made it a nice fit for this project, which was to exactly match an 
 The thinking is that when not in use, it sits against the wall and acts as a serving table. When in use and we have a larger group of people, we slide it over and up against the existing dining table.
 
 > **Chocolate stain**: Chocolate is a wonderful thing to eat, and it makes for a nice stain colour too.
-> {: .prompt-tip }
+{: .prompt-tip }
 
 ## Under Construction
 

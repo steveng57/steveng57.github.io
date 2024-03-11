@@ -16,7 +16,7 @@ I really like making special things for other people. This is a fun example of t
 {% include head-mypost.html %}
 
 > **Cool Tool**: The {{ site.data.links.shaper }} was critical here, no way I could make this with just tools. It is truly an amazing machine.
-> {: .prompt-tip }
+{: .prompt-tip }
 
 ## Under Construction
 

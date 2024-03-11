@@ -16,7 +16,7 @@ The napkin holder projects are among my favorites. Making these is a small chall
 {% include head-mypost.html %}
 
 > When doing a project like this, do **not** cut the outside first and attempt to get the inlay groove magically aligned with it. Instead, use the router and your templates to cut the outline of the piece and the groove at the same time. That way they will automagically align. Otherwise things will be a mess. Ask me how I know.
-> {: .prompt-tip }
+{: .prompt-tip }
 
 ## Under Construction
 

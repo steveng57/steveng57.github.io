@@ -16,7 +16,7 @@ At the request of the customer, I made a custom towel rack to fit precisely in a
 {% include head-mypost.html %}
 
 > **Cool Tool**: The {{ site.data.links.shaper }} was used here. The angled pieces could have been cut by hand I guess, but the accuracy of the Origin is far superior to that.
-> {: .prompt-tip }
+{: .prompt-tip }
 
 ## Under Construction
 

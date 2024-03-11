@@ -24,7 +24,7 @@ The inner circles were just done with a router circle jig I crafted. Drilled som
 ## Mistakes Were Made
 
 > **Pro tip**: Cedar is a squishy wood. Use it wisely.
-> {: .prompt-tip }
+{: .prompt-tip }
 
 Copious amounts of waterproof glue helped fix the situation.
 
