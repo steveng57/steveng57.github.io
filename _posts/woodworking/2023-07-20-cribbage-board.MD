@@ -43,7 +43,7 @@ _391 holes. Go ahead...count 'em._
 
 Finishing this one was a little tricky too. I use a hard-wax oil called {{ site.data.links.rubio }} for most of my projects theses days. It makes for a great, durable, and repairable finish. It is also way less finicky that other finishes: you apply it, wait a bit, and wipe off the excess. Dust does not really stick to it, so shop dust is not so much of a problem.
 
-But then there was the problem of the wax and the holes. The wax loved to get in there, but the look was not good, and I am sure the functionality would have been even worse. A 1/8&Prime; drill bit came to my rescue, but like I said, _391 holes. Go ahead...count 'em._
+But then there was the problem of the wax and the holes. The wax loved to get in there, but the look was not good, and I am sure the functionality would have been even worse. A 1/8&Prime; drill bit came to my rescue, but like I said, _391 holes. Go ahead...count 'em!_
 
 Sanding was also a little...special. Sand too little and its rough obviously, but sand too much and there are any number of unrepairable things that could go wrong.
 
@@ -59,7 +59,7 @@ On the back, I did a little signature thing. I eventually fixed the half-finishe
 
 The pic below is of the board at my dad's place on a nice teak dining table that has been in the family for over 50 years. It's nice to mix the old and the new. Here he is beating me 112 to 11. I need to practice a bit...a lot.
 
-{% include html-side.html img="IMG_0626.jpeg" %}
+{% include html-side.html img="IMG_0626.jpeg" align="center-wide" %}
 
 ## Materials
 
