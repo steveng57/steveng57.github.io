@@ -35,9 +35,9 @@ So what you do is make a board long enough to make a side plus one end of the bo
 
 In my case, I did the above, but also put a maple strip in there, fashioned at an angle, to give the piece a little contrast.
 
-Then you cut the board in two, slicing it down the middle, yielding two long boards that are each in turn cut to produce an end and a side piece. If you do it right, the grain looks like it is flowing all around.
+Then you cut the board in two, slicing it down the middle, yielding two long boards that are each in turn cut to produce an end and a side piece. If you do it right, the grain looks like it is flowing all around all four sides.
 
-I am not sure I am making myself clear here, no do I think I can in this post.  But if you really want some of the finer details on this stuff, check out the YouTube video from [The Wood Whisperer](https://www.youtube.com/@woodwhisperer){:target='_blank'} on the [Four Corner Grain Match](https://youtu.be/SUd3I6Kx1Z0?si=ZVx0jnFtcppiO9HG){:target='_blank'}.  Marc is one of my YouTube woodworking heroes,
+I am not sure I am making myself clear here, nor do I think I can in this post.  But if you really want some of the finer details on this stuff, check out the YouTube video from [The Wood Whisperer](https://www.youtube.com/@woodwhisperer){:target='_blank'} on the [Four Corner Grain Match](https://youtu.be/SUd3I6Kx1Z0?si=ZVx0jnFtcppiO9HG){:target='_blank'}.  Marc is one of my YouTube woodworking heroes, he always produces good, helpful stuff in a fun and entertaining way.
 
 Orange {{ site.data.links.chillepoxy }} inlay, carved with the {{ site.data.links.shaper }}
 
