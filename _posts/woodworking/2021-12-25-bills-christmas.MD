@@ -23,7 +23,9 @@ Over tha past few years, the east coast side of the family has decided to have e
 
 ### Computer Support
 
-I designed the stand in Sketchup, with a number of people sneeking into Bill's office to take measurements of his notebook and computer setup so that I could get the dimensions right. It took a bit of skullduggery but we made it work.  
+I designed the stand in Sketchup, with a number of people sneaking into Bill's office to take measurements of his notebook and computer setup so that I could get the dimensions right.
+
+It took a bit of skullduggery but we made it work.  
 {% include clear-float.html break = 1 %}
 
 {% include html-side.html img="computer-stand-3.jpeg" align="right" %}

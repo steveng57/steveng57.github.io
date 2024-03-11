@@ -25,7 +25,9 @@ It was all good up until this point.
 
 ### Big Oops
 
-It was at this point I went to put on the drawer faces, pictured below. To my shock and horror, I made them **the wrong size!** Instead of being the required 762mm in width, they were made 726mm in width. My mild dyslexia had bitten me once more.
+It was at this point I went to put on the drawer faces, pictured below.
+
+To my shock and horror, I made them **the wrong size!** Instead of being the required 762mm in width, they were made 726mm in width. My mild dyslexia had bitten me once more.
 
 {% include clear-float.html break = 1 %}
 
@@ -57,7 +59,9 @@ The floor is so crooked, that I even had to shim a few things for the fridge to 
 
 ### Lighting
 
-Since the theatre room is sometimes very dark, I added a lot of in-cabinet lighting throughout. I hooked up micro-switches to all the doors and drawers to control them. There is a storage area behind this wall, so it was easy to wire the lights to the power from the back.
+Since the theatre room is sometimes very dark, I added a lot of in-cabinet lighting throughout. 
+
+I hooked up micro-switches to all the doors and drawers to control them. There is a storage area behind this wall, so it was easy to wire the lights to the power from the back.
 {% include clear-float.html %}
 
 ## In Production

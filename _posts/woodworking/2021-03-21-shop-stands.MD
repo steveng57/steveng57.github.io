@@ -26,6 +26,7 @@ These were a lot of fun to make, and they turned out great for the most part. Th
 The thing I remember most about this one is that there were 15 drawers here. Yes, 15. Not only do things get very tedious at that count, but also a little scary. Scary because if you have made a mistake on one of them, then there is a good chance that you have made the same goof on all 15. Not a pleasant thought. Thankfully that didn't happen here, but that doesn't mean that I didn't sweat it.
 
 _Did I mention that there were **15** drawers!!!_
+
 {% include clear-float.html break = 1 %}
 
 {% include html-side.html img="20210323_161917.jpeg" align = "right" %}
@@ -40,7 +41,7 @@ Still waiting on the spindle sander.
 ## All Dressed Up
 
 {% include html-side.html img="20210323_161917.jpeg" %}
-Ok, I really like this pic show showing it again in higher resolution. Not really, this is just a placeholder waiting on a pic showing what it looks like today.
+Ok, I really like this pic, so showing it again in higher resolution. Not really, this is just a placeholder waiting on a pic showing what it looks like today.
 
 ## Materials
 

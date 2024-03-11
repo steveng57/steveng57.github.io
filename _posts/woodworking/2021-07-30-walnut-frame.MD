@@ -15,7 +15,7 @@ img_path: "/assets/img/posts/walnut-frame"
 
 {% include head-mypost.html %}
 
-## Details
+## The Details
 
 {% include html-side.html img="20210730_234747896_iOS.jpeg" align="left" %}
 

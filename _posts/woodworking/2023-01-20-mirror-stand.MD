@@ -18,7 +18,9 @@ A cool part of woodworking is that you can do custom designed stuff. In this cas
 ## The Box
 
 {% include html-side.html img="mirror-stand-shaperhub.jpeg" align="left" %}
-It starts with the design, which in this case was done on the web via {{ site.data.links.shaperhub }}. I took a bunch of clip-art that suited the box and put them together on this drawing, then transferred that to the {{ site.data.links.origin }}.
+It starts with the design, which in this case was done on the web via {{ site.data.links.shaperhub }}. 
+
+I took a bunch of clip-art that suited the box and put them together on this drawing, then transferred that to the {{ site.data.links.origin }}.
 
 {% include clear-float.html break=1 %}
 
@@ -26,7 +28,9 @@ It starts with the design, which in this case was done on the web via {{ site.da
 
 ### Rings and Things
 
-Once the design imported to the Origin, you carve, and before the assembly, you pour some epoxy. In this case the epoxy was sprinkled with copious amounts of glitter, which was very fitting for this kind of piece. The photo doesn't show it very well, but it sparkles. Trust me.
+Once the design imported to the Origin, you carve, and before the assembly, you pour some epoxy. In this case the epoxy was sprinkled with copious amounts of glitter, which was very fitting for this kind of piece. 
+
+The photo doesn't show it very well, but it sparkles. Trust me.
 {% include clear-float.html break=1 %}
 
 {% include html-side.html img="IMG_0740.jpeg" align="left" %}

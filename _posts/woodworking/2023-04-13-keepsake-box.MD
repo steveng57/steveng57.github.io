@@ -20,7 +20,7 @@ image:
 img_path: "/assets/img/posts/keepsake-box"
 ---
 
-Only had a couple of days after finishing the previous project before Debbie's birthday, but I decided to try something new and get in done in time for her special day.
+I only had a couple of days after finishing the previous project before Debbie's birthday, but I decided to try something new and get it done in time for her special day.
 
 {% include head-mypost.html %}
 
@@ -40,7 +40,7 @@ This is actually a pretty complicated thing to do. And if you make a mistake on 
 
 ### Tough Cut
 
-So what you do is make a board long enough to make a side plus one end of the box. You need to make it thick enough so that it is double the thickness of your final boards.
+So what you do is make a board long enough to make one side plus one end of the box. You need to make it thick enough so that it is double the thickness of your final boards.
 
 In my case, I did the above, but also put a maple strip in there, fashioned at an angle, to give the piece a little contrast.
 
@@ -48,7 +48,7 @@ Then you cut the board in two, slicing it down the middle, yielding two long boa
 
 I am not sure I am making myself clear here, nor do I think I can in this post. But if you really want some of the finer details on this stuff, check out the YouTube video from [The Wood Whisperer](https://www.youtube.com/@woodwhisperer){:target='\_blank'} on the [Four Corner Grain Match](https://youtu.be/SUd3I6Kx1Z0?si=ZVx0jnFtcppiO9HG){:target='\_blank'}. Marc is one of my YouTube woodworking heroes, he always produces good, helpful stuff in a fun and entertaining way.
 
-Orange {{ site.data.links.chillepoxy }} inlay, carved with the {{ site.data.links.shaper }}
+Orange {{ site.data.links.chillepoxy }} for the inlay, which was carved with the {{ site.data.links.shaper }}
 
 ## All done
 

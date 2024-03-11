@@ -65,5 +65,5 @@ If you are so inclined, you can check out the [charcuterie board]({% post_url /w
 
 - Walnut from {{ site.data.links.kjp }}
 - {{ site.data.links.domino }}
-- White epoxy for the inlay
+- White {{ site.data.links.chillepoxy }} epoxy for the inlay
 {: .sjg-list }

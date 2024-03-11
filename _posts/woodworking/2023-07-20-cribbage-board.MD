@@ -11,7 +11,7 @@ image:
 img_path: "/assets/img/posts/cribbage-board"
 ---
 
-For my father's birthday, I made him this cribbage board from a nice piece of marbled walnut. He says it is working well and that it keeps very good score.
+For my father's birthday, I made him this cribbage board from a nice piece of marbled walnut. He says it is working well and that it keeps very good score.  That's the main thing.
 
 {% include head-mypost.html %}
 

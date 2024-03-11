@@ -20,7 +20,9 @@ This was true labour of love. Our boy Ozzie needed a new place to sleep. It seem
 
 ### Slats
 
-Lots and lots of slats on this one. About 30+ of them all up. Using the {{ site.data.links.domino }} for the loose-tenon joinery made things a bit easier. By this point in my wood working career, I had figured out how to make things a little bit lighter. The bottom is a much thinner plywood, but has a support in the centre to keep it strong.
+Lots and lots of slats on this one. About 30+ of them all up. Using the {{ site.data.links.domino }} for the loose-tenon joinery made things a bit easier.
+
+By this point in my wood working career, I had figured out how to make things a little bit lighter. The bottom is a much thinner plywood, but has a support in the centre to keep it strong.
 {% include clear-float.html break = 1 %}
 
 {% include html-side.html img="20220316_201504.jpeg" align="right" %}

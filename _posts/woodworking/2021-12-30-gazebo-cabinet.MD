@@ -11,9 +11,9 @@ image:
 img_path: /assets/img/posts/gazebo-cabinet
 ---
 
-This is actually a pretty beefy piece, the pictures don't seem to capture the scale of it. I think that is because it is actually pretty deep. We had originally planned for this to hold a small fridge and microwave, so we had to make it big enough to hold the largest item.
+This is actually a pretty beefy piece, the pictures don't seem to capture the scale of it. I think that is because the unit is actually pretty deep. We had originally planned for this to hold a small fridge and microwave, so we had to make it big enough to hold the largest item.
 
-As big as it is, and with red oak being a relatively heavy hardwood, well it is another one of my classic, "Geez is this thing heavy" pieces. Yep, this thing is 100% solid oak, no plywood at all here.
+As big as it is, and with red oak being a relatively heavy hardwood, well it is another one of my classic, _"Geez is this thing heavy"_ pieces. Yep, this thing is 100% solid oak, no plywood at all here.
 
 {% include head-mypost.html %}
 

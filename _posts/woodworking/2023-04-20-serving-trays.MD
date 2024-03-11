@@ -12,7 +12,7 @@ image:
 img_path: /assets/img/posts/serving-trays
 ---
 
-I went for a bit of the artsy, rustic look on these. They were a bit tricky, in the sense that with the epoxy inlay in the tray bottom, suddenly decisions about which part to do first become important. How do you assemble it, before or after the epoxy? How do you finish it, before or after the epoxy? Answers! I demand answers.
+I went for a bit of the artsy, rustic look on these. They were a bit tricky, in the sense that with the epoxy inlay in the tray bottom, suddenly decisions about which part to do first become much more important. How do you assemble it, before or after the epoxy? How do you finish it, before or after the epoxy? Answers! I demand answers!
 
 {% include head-mypost.html %}
 
@@ -22,18 +22,20 @@ There was a fair amount of {{ site.data.links.sketchup }} work involved in desig
 
 {% include html-sxs.html img1="tray-handle-sketchup.jpeg" img2="tray-sketchup.jpeg" %}
 
-I also wanted to be sure to get the finger joints just right (that's what this style of corner joinery is called, also called box joints). There are more ways to do finger joints than there are finger joints. In this case, I did it on the {{ site.data.links.origin }} along with the companion setup jig call the Workstation.
+I also wanted to be sure to get the finger joints just right (that's what this style of corner joinery is called, also called box joints). There are more ways to do finger joints than there are finger joints. In this case, I did it on the {{ site.data.links.origin }} along with the companion setup jig called the Workstation.
 
 ## The Build
 
-{% include html-side.html img="20230405_141951.jpeg" align="left" %}
+{% include html-side.html img="20230405_141946.jpeg" align="left" %}
 
 ### Tree Tray
 
 The Tree Tray was done first, and so I learned how **not** do it here. Basically on something like this, you need to sand and finish before final assembly, otherwise it it too difficult to get into corners and things.
+
+While it is not quite as blotchy in real life as this photo would make it seem, it is still just a little too blotchy for my taste.  The Flower turned out better.
 {% include clear-float.html break = 1%}
 
-{% include html-side.html img="20230405_141946.jpeg" align="right" %}
+{% include html-side.html img="20230405_141951.jpeg" align="right" %}
 
 ### Flower Tray
 

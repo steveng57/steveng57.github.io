@@ -29,7 +29,9 @@ This was the first time I attempted any engraving or detail work like this, note
 
 ### The Carve
 
-The second set of prints was done with my new {{ site.data.links.shaper }}. Much more on this tool in coming posts, it is one of my favorite things ever. In both cases, the prints were carved about 6mm deep.
+The second set of prints was done with my new {{ site.data.links.shaper }}. Much more on this tool in coming posts, it is one of my favorite things ever.
+
+In both the yoga room and mudroom steps, the prints were carved about 6mm deep.
 {% include clear-float.html %}
 
 ## In Production

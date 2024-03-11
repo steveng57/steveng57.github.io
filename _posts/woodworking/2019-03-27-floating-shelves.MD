@@ -35,14 +35,14 @@ Both these shelves have 45&deg; bevel on the underside. It's a pretty big bevel 
 
 ## Sketchup
 
-The shelves are 8 inches deep by 32 inches wide by 1.5 inches thick.
+The shelves are 8 inches deep by 32 inches wide by 1.5 inches thick.  And pretty much everything I make requires a {{ site.data.links.sketchup }} drawing. So here it is.
 
 {% include html-side.html img="floating-shelves-sketchup.jpeg" align="center-wide" %}
-And pretty much everything I make requires a {{ site.data.links.sketchup }} drawing. Here it is.
+
 {% include clear-float.html break=0 %}
 
 ## Materials
 
-- Red Oak from {{ site.data.links.kjp }}
+- Red Oak from {{ site.data.links.robertbury }}
 - {{ site.data.links.generalfinishes }} black stain and polyurethane
 {: .sjg-list }

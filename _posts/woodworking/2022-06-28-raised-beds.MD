@@ -24,7 +24,7 @@ When the weather gets warmer, I will head out back and take some pics of the fin
 ### Cedar
 
 The Western Red Cedar was purchased just down the way from where I live at a place called {{ site.data.links.woodsource }}. They have a great selection of hardwood and supplies to choose from. It's nice to have a place like this just a few minutes away.
-'
+
 Cedar is one of the best smelling woods when you cut into it. It releases a wonderful aroma that sticks around for days. If only all woods smelled as good.
 {% include clear-float.html break = 1 %}
 
@@ -32,7 +32,9 @@ Cedar is one of the best smelling woods when you cut into it. It releases a wond
 
 ### It's Extreme
 
-These were eventually finished with another product from The Wood Source called [Cutek Extreme]{:target="\_blank"}, which is an outdoor wood protection oil. The neat thing about this stuff is that they have a pretty broad spectrum of colouring called "Colourtone" that you can add to the base product so that you can get exactly the colour you want.
+These were eventually finished with another product from {{ site.data.links.woodsource }} called [Cutek Extreme]{:target="\_blank"}, which is an outdoor wood protection oil.
+
+The neat thing about this stuff is that they have a pretty broad spectrum of colouring called "Colourtone" that you can add to the base product so that you can get exactly the colour you want.
 {% include clear-float.html %}
 
 ## Ready For Stain

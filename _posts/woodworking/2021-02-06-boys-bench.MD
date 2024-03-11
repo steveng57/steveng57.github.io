@@ -23,7 +23,7 @@ This is a strange one, and looking back on it, not one that I am all that proud 
 
 There were a couple of firsts for me on this one, including under-mount drawer slides and rubber paint (more on this below), which made it fun.
 
-But it's heavy. Really heavy, I would not make it like this again if I had a do over. There is way to much wood used here, 3/4 thick ply where 1/4 inch would have done just fine. Double layers where one would have been plenty. and the solid red oak for most of the exterior doesn't help keep it light.
+But it's heavy. Really heavy, I would not make it like this again if I had a do over. There is way to much wood used here, &#xBE;&Prime; thick ply where &#xBC;&Prime; inch would have done just fine. Double layers where one would have been plenty. and the solid red oak for most of the exterior doesn't help keep it light.
 
 There are so many pocket holes holding this thing together, it's just silly. Half that amount would do.
 
@@ -51,6 +51,6 @@ This is one of my first pieces to be 'retired', where we will soon be taking it 
 
 - Plywood frame
 - Solid red oak trim from {{ site.data.links.kjp }}
-- Lots and lots of pocket screws
+- Lots and lots of pocket screws from {{ site.data.links.kreg }}
 - Rubber paint from Amazon
 {: .sjg-list }

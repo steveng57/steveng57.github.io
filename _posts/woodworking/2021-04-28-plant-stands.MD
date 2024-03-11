@@ -27,7 +27,9 @@ This seems a bit silly looking back on it now, to have gone to this length in th
 
 ### The Stands
 
-The stands were cool to make, truly a 3d glue-up. A small taper on the legs gives it a nice look. I used General Finishes stain and polyurethane for the finish. It is very nice stuff, very durable and looks good. Only problem I have with it is that it gives the workpiece a slightly plastic feel, and if you put too many coats, it can start to look a little like plastic. Which is fine if you want to make something shiny. Polyurethane does this because, well, it is plastic.
+The stands were cool to make, truly a 3d glue-up. A small taper on the legs gives it a nice look.
+
+I used General Finishes stain and polyurethane for the finish. It is very nice stuff, very durable and looks good. Only problem I have with it is that it gives the workpiece a slightly plastic feel, and if you put too many coats, it can start to look a little like plastic. Which is fine if you want to make something shiny. Polyurethane does this because, well, it is plastic.
 
 I've made three of these of varying sizes.
 {% include clear-float.html break = 1 %}
@@ -45,7 +47,7 @@ Nah, not really. I bought them on Amazon for about $70 each. I would tell you th
 
 ### Assembled
 
-It was important to get the sizes just right. You don't want too large or small a gap between the pot and the stand. Too big and it will look silly, too small and well... good luck with that. Sometimes I am actually amazed that my measurements work out at all, but thankfully they did here.
+It was important to get the width just right. You don't want too large or small a gap between the pot and the stand. Too big and it will look silly, too small and well... good luck with that. Sometimes I am actually amazed that my measurements work out at all, but thankfully they did here.
 {% include clear-float.html %}
 
 ### All Done

@@ -40,7 +40,9 @@ I made these out of poplar. It's a lighter wood, but still strong enough. Not as
 ## Being Framed
 
 {% include html-side.html img="20230822_191820.jpeg" align="left" %}
-I used shims to centre the picture vertically and horizontally in the frame. I have some of those woodworkers shims, which are made of plastic and they are of varying thicknesses. But my favorite shims for such a task is playing cards. Yep, good old fashioned playing cards. I keep a deck in the shop at all times for such a purpose. The trick to keeping it centred is that if you use 7 cards on the left, then you need to use 7 cards on the right.
+I used shims to centre the picture vertically and horizontally in the frame. I have some of those woodworkers shims, which are made of plastic and they are of varying thicknesses. But my favorite shims for such a task is playing cards. Yep, good old fashioned playing cards. I keep a deck in the shop at all times for such a purpose. 
+
+The trick to keeping it centred is that if you use 7 cards on the left, then you need to use 7 cards on the right.
 
 {% include clear-float.html %}
 
