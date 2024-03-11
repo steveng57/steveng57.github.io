@@ -4,14 +4,14 @@ title: Puppy Steps
 date: 2022-02-25 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Pets]
-tags: [Wood, Woodworking, Poplar, Bench, Pets, Epoxy, Inlay]
-image: 
-    path: /thumbnails/20220225_091904.jpeg
-    alt: Puppy paws are a woodworkers right of passage
+tags: [Woodworking, Poplar, Bench, Pets, Epoxy, Inlay]
+image:
+  path: /thumbnails/20220225_091904.jpeg
+  alt: Puppy paws are a woodworkers right of passage
 img_path: "/assets/img/posts/puppy-steps"
 ---
 
-This one was really simple, but a much needed project. Just a box really, but a couple of steps to make life easier for Riley and Ozzie, jumping up on the daybed, or on the mudroom desk to get ready to go for a walk.  We have two of these, one for the yoga room, and another for the mud room.
+This one was really simple, but a much needed project. Just a box really, but a couple of steps to make life easier for Riley and Ozzie, jumping up on the daybed, or on the mudroom desk to get ready to go for a walk. We have two of these, one for the yoga room, and another for the mud room.
 
 {% include head-mypost.html %}
 
@@ -38,9 +38,9 @@ The second set of prints was done with my new {{ site.data.links.shaper }}. Much
 
 ### Mudroom
 
-This step must get used about 20 times a day.  
+This step must get used about 20 times a day.
 
-It's in the mudroom and serves as a way to get the boys up to the desk for cleaning, grooming, or putting on winter gear.  They are quite used to it now, they bounce right up without hesitation.
+It's in the mudroom and serves as a way to get the boys up to the desk for cleaning, grooming, or putting on winter gear. They are quite used to it now, they bounce right up without hesitation.
 
 {% include clear-float.html %}
 

@@ -4,10 +4,19 @@ title: Keepsake Box
 date: 2023-04-13 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Jewelry Boxes]
-tags: [Wood, Woodworking, Keepsake Box, Walnut, Maple, Epoxy, Jewelry Boxes, Shaper Origin]
-image: 
-    path: /thumbnails/IMG_0639.jpeg
-    alt: It's a keeper
+tags:
+  [
+    Woodworking,
+    Keepsake Box,
+    Walnut,
+    Maple,
+    Epoxy,
+    Jewelry Boxes,
+    Shaper Origin,
+  ]
+image:
+  path: /thumbnails/IMG_0639.jpeg
+  alt: It's a keeper
 img_path: "/assets/img/posts/keepsake-box"
 ---
 
@@ -37,7 +46,7 @@ In my case, I did the above, but also put a maple strip in there, fashioned at a
 
 Then you cut the board in two, slicing it down the middle, yielding two long boards that are each in turn cut to produce an end and a side piece. If you do it right, the grain looks like it is flowing all around all four sides.
 
-I am not sure I am making myself clear here, nor do I think I can in this post.  But if you really want some of the finer details on this stuff, check out the YouTube video from [The Wood Whisperer](https://www.youtube.com/@woodwhisperer){:target='_blank'} on the [Four Corner Grain Match](https://youtu.be/SUd3I6Kx1Z0?si=ZVx0jnFtcppiO9HG){:target='_blank'}.  Marc is one of my YouTube woodworking heroes, he always produces good, helpful stuff in a fun and entertaining way.
+I am not sure I am making myself clear here, nor do I think I can in this post. But if you really want some of the finer details on this stuff, check out the YouTube video from [The Wood Whisperer](https://www.youtube.com/@woodwhisperer){:target='\_blank'} on the [Four Corner Grain Match](https://youtu.be/SUd3I6Kx1Z0?si=ZVx0jnFtcppiO9HG){:target='\_blank'}. Marc is one of my YouTube woodworking heroes, he always produces good, helpful stuff in a fun and entertaining way.
 
 Orange {{ site.data.links.chillepoxy }} inlay, carved with the {{ site.data.links.shaper }}
 

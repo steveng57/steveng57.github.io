@@ -4,10 +4,10 @@ title: Towel Rack
 date: 2022-12-27 18:32:00 -0500
 last_modified_at: 2024-02-23 11:45:18 -0500
 categories: [Woodworking, Furniture]
-tags: [Wood, Woodworking, Maple, Towel Rack, Furniture, Dominos, Shaper Origin]
-image: 
-    path: /thumbnails/IMG_0681.jpeg
-    alt: A great place to hang
+tags: [Woodworking, Maple, Towel Rack, Furniture, Dominos, Shaper Origin]
+image:
+  path: /thumbnails/IMG_0681.jpeg
+  alt: A great place to hang
 img_path: "/assets/img/posts/towel-rack"
 ---
 
@@ -16,7 +16,7 @@ At the request of the customer, I made a custom towel rack to fit precisely in a
 {% include head-mypost.html %}
 
 > **Cool Tool**: The {{ site.data.links.shaper }} was used here. The angled pieces could have been cut by hand I guess, but the accuracy of the Origin is far superior to that.
-{: .prompt-tip }
+> {: .prompt-tip }
 
 ## Under Construction
 
@@ -39,13 +39,13 @@ I was a little worried about moisture affective the piece, since it was going to
 
 ### Maple Rods
 
-The rods are solid maple, picked up at {{ site.data.links.leevalley }}.  Pretty strong and with all that poly, they should resist any moisture.
+The rods are solid maple, picked up at {{ site.data.links.leevalley }}. Pretty strong and with all that poly, they should resist any moisture.
 
 {% include clear-float.html %}
 
 ## In Position
 
-It's been in use for over a year at this point and no issues with warping or bending so far.  Fingers crossed.
+It's been in use for over a year at this point and no issues with warping or bending so far. Fingers crossed.
 {% include html-side.html img="IMG_0681.jpeg" %}
 
 ## Materials

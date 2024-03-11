@@ -4,10 +4,10 @@ title: Concrete Nested End Tables
 date: 2022-04-28 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Furniture]
-tags: [Wood, Woodworking, Concrete, Table, End Table, Red Oak, Furniture]
-image: 
-    path: /thumbnails/IMG_0553.jpeg
-    alt: Adding a new material to the shop
+tags: [Woodworking, Concrete, Table, End Table, Red Oak, Furniture]
+image:
+  path: /thumbnails/IMG_0553.jpeg
+  alt: Adding a new material to the shop
 img_path: "/assets/img/posts/concrete-end-tables"
 ---
 
@@ -17,7 +17,7 @@ I tried something very new with these concrete nested end tables. It ended up in
 
 I thought solid wood was heavy until I made this. Moving these requires a warm-up and a good stretch beforehand.
 
-The concrete I used was a special artisan blend from [Buddy Rhodes]{:target="_blank"}.
+The concrete I used was a special artisan blend from [Buddy Rhodes]{:target="\_blank"}.
 
 ## Under Construction
 
@@ -39,7 +39,7 @@ Standard leg with an apron. Only tricky part here is that I made the apron extra
 
 ### The Poor Pour
 
-OMG did these turn out **awful**.  When I initially poured the tops, I had such high hopes. My buddy Mike helped me blend the concrete in a bucket and make the pour. That was tough but it went well enough. In my dream, I had though this was going to be an eggshell white with a few flecks of gray. Boy was I wrong. I looked like some kind of bad Rorschach Inkblot test. Not a happy camper at this point.  I had no idea how to fix this.
+OMG did these turn out **awful**. When I initially poured the tops, I had such high hopes. My buddy Mike helped me blend the concrete in a bucket and make the pour. That was tough but it went well enough. In my dream, I had though this was going to be an eggshell white with a few flecks of gray. Boy was I wrong. I looked like some kind of bad Rorschach Inkblot test. Not a happy camper at this point. I had no idea how to fix this.
 {% include clear-float.html break = 1 %}
 
 {% include html-side.html img="20220623_123043.jpeg" align="right" %}
@@ -55,7 +55,7 @@ But it turned out great at the end. I can honestly say I am very happy with how 
 
 ### Call Me Hairy
 
-This one took a long time, so it gets another pic.  I like the hairy arm in the photo.  Is that mine?
+This one took a long time, so it gets another pic. I like the hairy arm in the photo. Is that mine?
 {% include clear-float.html %}
 
 ## In Production
@@ -68,4 +68,4 @@ This gets used on a daily basis as a cleaning station for the boys when they com
 - Red Oak from {{ site.data.links.kjp }}
 - {{ site.data.links.domino }} for joinery
 - {{ site.data.links.rubio }} finish
-- [Buddy Rhodes](https://www.buddyrhodes.com){:target="_blank"} concrete products
+- [Buddy Rhodes](https://www.buddyrhodes.com){:target="\_blank"} concrete products

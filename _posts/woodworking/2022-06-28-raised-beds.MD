@@ -4,7 +4,7 @@ title: Raised Beds
 date: 2022-06-28 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Furniture]
-tags: [Wood, Woodworking, Raised Bed, Garden, Cedar, Outdoors, Furniture]
+tags: [Woodworking, Raised Bed, Garden, Cedar, Outdoors, Furniture]
 image:
   path: /thumbnails/20220628_125950.jpeg
   alt: Cedar Plant Boxes
@@ -25,7 +25,7 @@ When the weather gets warmer, I will head out back and take some pics of the fin
 
 The Western Red Cedar was purchased just down the way from where I live at a place called {{ site.data.links.woodsource }}. They have a great selection of hardwood and supplies to choose from. It's nice to have a place like this just a few minutes away.
 '
-Cedar is one of the best smelling woods when you cut into it.  It releases a wonderful aroma that sticks around for days.  If only all woods smelled as good.
+Cedar is one of the best smelling woods when you cut into it. It releases a wonderful aroma that sticks around for days. If only all woods smelled as good.
 {% include clear-float.html break = 1 %}
 
 {% include html-side.html img="20220628_125916.jpeg" align="right" %}
