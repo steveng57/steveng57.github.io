@@ -57,7 +57,7 @@ On the back, I did a little signature thing. I eventually fixed the half-finishe
 
 ## In Production
 
-The pic below is of the board at my dad's place on a dining table that has been in the family for probably 50 year. Nice to mix the old and the new. Here he is beating me 112 to 11. I need to practice a bit...a lot.
+The pic below is of the board at my dad's place on a nice teak dining table that has been in the family for over 50 years. Its nice to mix the old and the new. Here he is beating me 112 to 11. I need to practice a bit...a lot.
 
 {% include html-side.html img="IMG_0626.jpeg" %}
 
