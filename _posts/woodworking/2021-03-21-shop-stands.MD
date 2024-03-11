@@ -44,7 +44,7 @@ Ok, I really like this pic show showing it again in higher resolution. Not reall
 
 ## Materials
 
-- {{ site.data.links.balticbirch }}
-- {{ site.data.links.domino}} for the drawers
-- Richelieu pulls
+- {{ site.data.links.balticbirch }} plywood
+- {{ site.data.links.domino }} for the drawers
+- {{ site.data.links.richelieu }} drawer pulls
 {: .sjg-list }

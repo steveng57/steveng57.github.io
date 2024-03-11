@@ -47,6 +47,8 @@ It is so nice to have a proper set of workshop stands for the router and the mit
 
 ## Materials
 
-- {{ site.data.links.balticbirch }}
-- Blum hardware for doors and drawers
+- {{ site.data.links.balticbirch }} plywood
+- {{ site.data.links.blum }} under-mount drawer slides
+- {{ site.data.links.richelieu }} drawer pulls
+- {{ site.data.links.domino }} for joinery
 {: .sjg-list }
