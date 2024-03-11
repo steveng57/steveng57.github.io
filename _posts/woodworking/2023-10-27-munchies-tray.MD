@@ -51,5 +51,6 @@ A tray full of munchies in its new home, which is normally resting upon the [ext
 - Grey epoxy by {{ site.data.links.chillepoxy }}
 - {{ site.data.links.shaper }} for the lettering
 - {{ site.data.links.domino }} for mitre joinery
+{: .sjg-list }
 
 [Compound Angle Calculator]: https://jansson.us/jcompound.html

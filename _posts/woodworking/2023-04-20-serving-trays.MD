@@ -45,3 +45,4 @@ The Flower Tray is where the learnings were applied and turned out better than t
 - Poplar from {{ site.data.links.kjp }}
 - Various coloured epoxies by {{ site.data.links.chillepoxy }}
 - {{ site.data.links.shaper }} to carve the inlays
+{: .sjg-list }

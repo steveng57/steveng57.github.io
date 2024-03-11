@@ -69,3 +69,4 @@ This gets used on a daily basis as a cleaning station for the boys when they com
 - {{ site.data.links.domino }} for joinery
 - {{ site.data.links.rubio }} finish
 - [Buddy Rhodes](https://www.buddyrhodes.com){:target="\_blank"} concrete products
+{: .sjg-list }

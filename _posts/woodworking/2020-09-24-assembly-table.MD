@@ -57,4 +57,5 @@ Anyway, there is a special jig you can get from {{ site.data.links.leevalley }} 
 ## Materials
 
 - Aluminum - Lots and lots of it from {{ site.data.links.vention }} in Montreal
-- MDF for the top
+- MDF for the top from the big box store
+{: .sjg-list }

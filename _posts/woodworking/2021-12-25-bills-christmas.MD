@@ -51,3 +51,4 @@ This was a gift to Bill for Christmas 2022.
 - {{ site.data.links.domino }} for the mitre joinery
 - {{ site.data.links.origin }} for the carve
 - {{ site.data.links.rubio }} for both finishes
+{: .sjg-list }

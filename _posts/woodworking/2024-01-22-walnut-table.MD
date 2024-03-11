@@ -102,3 +102,4 @@ Here is a mini photo gallery of the table and benches setup in our theatre room.
 - {{ site.data.links.rubio }} Walnut Oil 2C for finish
 - Hardware from {{ site.data.links.leevalley }}
 - Lots of {{ site.data.links.domino }} usage, both the standard and the XL, for the joinery
+{: .sjg-list }

@@ -46,3 +46,4 @@ We were going to put a little fridge and microwave in there, but current thinkin
 - Red Oak {{ site.data.links.kjp }}
 - {{ site.data.links.rubio }} Intense Black Precolour Easy, Black Oil 2C for finish
 - {{ site.data.links.domino }} for pretty much all joinery, except pocket holes for the back stretchers
+{: .sjg-list }

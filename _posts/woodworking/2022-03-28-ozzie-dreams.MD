@@ -43,3 +43,4 @@ Epoxy inlay complete, pillows installed and Ozzie giving it a trial run.
 - Red Oak from {{ site.data.links.kjp }}
 - {{ site.data.links.domino }} for joinery
 - {{ site.data.links.rubio }} Intense Black and Black 2C for the finish
+{: .sjg-list }

@@ -67,3 +67,4 @@ All filled with all kinds of earings. Looks like I might have to make more!
 - {{ site.data.links.rubio }} Walnut for finish
 - Hardware from {{ site.data.links.leevalley }}
 - Green Velvet from Amazon
+{: .sjg-list }

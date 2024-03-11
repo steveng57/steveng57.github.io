@@ -45,3 +45,4 @@ And pretty much everything I make requires a {{ site.data.links.sketchup }} draw
 
 - Red Oak from {{ site.data.links.kjp }}
 - {{ site.data.links.generalfinishes }} black stain and polyurethane
+{: .sjg-list }

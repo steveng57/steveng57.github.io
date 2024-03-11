@@ -74,3 +74,4 @@ We scavenged the granite top from our upstairs kitchen remodel and repurposed it
 - Solid red oak
 - {{ site.data.links.domino }} joinery
 - {{ site.data.links.leevalley }} LED strip lighting
+{: .sjg-list }

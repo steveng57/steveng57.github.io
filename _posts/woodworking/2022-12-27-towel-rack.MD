@@ -53,3 +53,4 @@ It's been in use for over a year at this point and no issues with warping or ben
 - Maple from {{ site.data.links.kjp }}
 - Polyeurethane finish
 - {{ site.data.links.domino }} for joinery
+{: .sjg-list }

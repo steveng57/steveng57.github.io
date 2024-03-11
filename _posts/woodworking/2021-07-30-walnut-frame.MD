@@ -51,3 +51,4 @@ When I first wrote this blog entry, I had not yet taken the above picture, so in
 - Walnut from {{ site.data.links.kjp }}
 - {{ site.data.links.domino }} (to strengthen the miters)
 - "Infinity" clips to mount the backing to the outside frame from {{ site.data.links.leevalley }}
+{: .sjg-list }

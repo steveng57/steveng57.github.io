@@ -70,3 +70,4 @@ This is where overflow stuff will go when we have family dinners. More important
 - Ash, both 2&Prime; thick and 1&Prime; from {{ site.data.links.kjp }}
 - Metal legs purchased from {{ site.data.links.rustydesign }}. The irony (see what I did there) is not lost on me.
 - Rubio Monocoat and Chocolate Precolour Easy.
+{: .sjg-list }

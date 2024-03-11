@@ -53,3 +53,4 @@ I used shims to centre the picture vertically and horizontally in the frame. I h
 - Poplar from {{ site.data.links.kjp }}
 - Acrylic Paint from {{ site.data.links.michaels }}
 - {{ site.data.links.domino }} for mitre joinery
+{: .sjg-list }

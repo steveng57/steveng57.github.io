@@ -73,3 +73,4 @@ The legs are removable in case we ever want to move it. That's never going to ha
 - {{ site.data.links.shaper }} to carve the inlay
 - Gray {{ site.data.links.chillepoxy }} for the inlay
 - Latex paint from Benjamin Moore
+{: .sjg-list }

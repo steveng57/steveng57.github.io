@@ -60,3 +60,4 @@ Orange {{ site.data.links.chillepoxy }} inlay, carved with the {{ site.data.link
 - {{ site.data.links.chillepoxy }} with orange colouring
 - {{ site.data.links.domino }} for mitre joinery
 - {{ site.data.links.rubio }} Pure finish
+{: .sjg-list }

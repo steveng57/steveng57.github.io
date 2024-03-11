@@ -53,3 +53,4 @@ While it is no longer my primary workbench / assembly table, it still gets a lot
 - {{ site.data.links.kreg }} Clamp Track
 - {{ site.data.links.leevalley}} Mobile Wheels
 - Tung oil (not tongue oil, that would be gross)
+{: .sjg-list }

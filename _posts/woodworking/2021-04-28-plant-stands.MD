@@ -60,3 +60,4 @@ Ta da! All dressed up with freshly potted plants and in their new home, though w
 - {{ site.data.links.domino }} to join the bits together
 - Tapering Jig
 - Amazon procured white pots
+{: .sjg-list }

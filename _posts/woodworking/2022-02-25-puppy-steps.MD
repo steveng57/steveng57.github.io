@@ -48,3 +48,4 @@ It's in the mudroom and serves as a way to get the boys up to the desk for clean
 
 - Poplar from {{ site.data.links.kjp }}
 - {{ site.data.links.domino }} joinery
+{: .sjg-list }

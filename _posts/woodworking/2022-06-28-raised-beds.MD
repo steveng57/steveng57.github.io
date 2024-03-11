@@ -45,5 +45,6 @@ These were eventually finished with another product from The Wood Source called 
 - {{ site.data.links.kreg }} pocket screws
 - Titebond III waterproof glue
 - [Cutek Extreme]{:target="\_blank"}
+{: .sjg-list }
 
 [Cutek Extreme]: https://wood-source.com/product/cutek-extreme

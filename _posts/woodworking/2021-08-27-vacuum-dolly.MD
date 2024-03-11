@@ -44,3 +44,4 @@ This gets a **lot** of use in the shop. It hasn't fallen over on me yet, but the
 - Plywood from {{ site.data.links.kjp }}
 - Big maple dowels
 - {{ site.data.links.leevalley }} casters
+{: .sjg-list }

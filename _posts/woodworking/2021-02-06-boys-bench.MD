@@ -53,3 +53,4 @@ This is one of my first pieces to be 'retired', where we will soon be taking it 
 - Solid red oak trim from {{ site.data.links.kjp }}
 - Lots and lots of pocket screws
 - Rubber paint from Amazon
+{: .sjg-list }

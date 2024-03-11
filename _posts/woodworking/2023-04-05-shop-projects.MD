@@ -49,3 +49,4 @@ It is so nice to have a proper set of workshop stands for the router and the mit
 
 - {{ site.data.links.balticbirch }}
 - Blum hardware for doors and drawers
+{: .sjg-list }

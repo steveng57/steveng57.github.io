@@ -47,3 +47,4 @@ Ok, I really like this pic show showing it again in higher resolution. Not reall
 - {{ site.data.links.balticbirch }}
 - {{ site.data.links.domino}} for the drawers
 - Richelieu pulls
+{: .sjg-list }

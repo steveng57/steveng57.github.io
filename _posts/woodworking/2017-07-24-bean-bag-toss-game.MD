@@ -52,3 +52,4 @@ Debbie stamped some dog paw prints on the final version which made it look reall
 - Cedar 2x4s
 - {{ site.data.links.kreg }} pocket hole jig and screws
 - Custom built router large radius jig
+{: .sjg-list }

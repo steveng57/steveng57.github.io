@@ -48,3 +48,4 @@ Here it is with the mirror installed. The top has a couple of trays carved in it
 - Poplar from {{ site.data.links.kjp }}
 - {{ site.data.links.domino }} for the mitre joinery
 - {{ site.data.links.origin }} for the carve
+{: .sjg-list }
