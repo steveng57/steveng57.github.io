@@ -50,5 +50,5 @@ Debbie stamped some dog paw prints on the final version which made it look reall
 
 - Oak veneer plywood from Home Depot
 - Cedar 2x4s
-- Kreg pocket hole jig and screws
+- {{ site.data.links.kreg }} pocket hole jig and screws
 - Custom built router large radius jig

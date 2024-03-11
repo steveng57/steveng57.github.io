@@ -42,7 +42,7 @@ These were eventually finished with another product from The Wood Source called 
 ## Materials
 
 - Western Red Cedar from {{ site.data.links.woodsource }}
-- Kreg pocket screws
+- {{ site.data.links.kreg }} pocket screws
 - Titebond III waterproof glue
 - [Cutek Extreme]{:target="\_blank"}
 

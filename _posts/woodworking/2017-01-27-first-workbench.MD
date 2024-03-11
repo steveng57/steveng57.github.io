@@ -28,7 +28,7 @@ In setting up my workshop, I had the DeWalt mitre saw from a while back, bought 
 
 Then, I decided to make my first workbench / assembly table.  I have become quite enamored with assembly tables as future posts will tell.
 
-This one was fairly straightforward.  A whole lot of 2x4s from the big box store, pocket screws holding it all together.  I put some Kreg track on the top, the blue aluminum extrusion shown here, which one can use to clamp things down with.  Finished it off with some enamel orange paint and coated the 2x4s in a couple of coats of Tung oil.
+This one was fairly straightforward.  A whole lot of 2x4s from the big box store, pocket screws holding it all together.  I put some {{ site.data.links.kreg }} track on the top, the blue aluminum extrusion shown here, which one can use to clamp things down with.  Finished it off with some enamel orange paint and coated the 2x4s in a couple of coats of Tung oil.
 {% include clear-float.html break = 1 %}
 
 {% include html-side.html img="20170202_151701.jpeg" align = "right" %}
@@ -50,6 +50,6 @@ While it is no longer my primary workbench / assembly table, it still gets a lot
 
 - Standard Home Depot 2x4s
 - MDF from Home Depot
-- Kreg Clamp Track
+- {{ site.data.links.kreg }} Clamp Track
 - {{ site.data.links.leevalley}} Mobile Wheels
 - Tung oil (not tongue oil, that would be gross)
