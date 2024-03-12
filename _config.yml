@@ -201,6 +201,7 @@ exclude:
   - "*.ps1"
   - "*.cmd"
   - "*.afphoto"
+  - tsconfig.json
 
 jekyll-archives:
   enabled: [categories, tags]
