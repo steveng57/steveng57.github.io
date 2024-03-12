@@ -30,7 +30,8 @@ Then, I decided to make my first workbench / assembly table. I have become quite
 
 This one was fairly straightforward. A whole lot of 2x4s from the big box store, pocket screws holding it all together. 
 
-I put some {{ site.data.links.kreg }} track on the top, the blue aluminum extrusion shown here, which one can use to clamp things down with. Finished it off with some enamel orange paint and coated the 2x4s in a couple of coats of Tung oil.
+I put some {{ site.data.links.kreg }} track on the top, the blue aluminum extrusion shown here, which one can use to clamp things down. I finished it off with some enamel orange paint and coated the 2x4s in a couple of coats of Tung oil.
+
 {% include clear-float.html break = 1 %}
 
 {% include html-side.html img="20170202_151701.jpeg" align = "right" %}
