@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 ---
 Here we go!
 {% assign filename = "IMG_0626.jpeg" %}
