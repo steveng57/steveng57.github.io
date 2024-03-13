@@ -11,7 +11,9 @@ image:
 img_path: /assets/img/posts/kitchen-things
 ---
 
-After our kitchen remodel, the client (Debbie) asked me to fashion a couple of custom pieces for her use at the new kitchen island.  The footstool and the computer stand get used every day, very cool.  Made from poplar and painted to match the cabinetry, I added a few carvings to them to spice them up a bit and filled them with epoxy inlay.
+After our kitchen remodel, the client (Debbie) asked me to fashion a couple of custom pieces for use at the new kitchen island.
+
+The footstool and the computer stand get used every day, very cool.  Made from poplar to keep them light and painted to match the cabinetry, I added a few carvings to them to spice them up a bit and filled them with epoxy inlay.
 
 {% include head-mypost.html %}
 
