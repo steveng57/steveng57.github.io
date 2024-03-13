@@ -20,10 +20,12 @@ At the request of the customer (aka Debbie), I made a custom towel rack to fit p
 
 ## Under Construction
 
-### Sketchup
 
 {% include html-side.html img="towel-rack-sketchup.jpeg" align="left" %}
-I designed the rack in {{ site.data.links.sketchup }} to make sure it was all the right dimensions. Sketchup is a cool tool for modelling 3d things digitally. It takes a bit of getting used to, but there are a lot of Youtube videos out there on how to get started, and if you have worked with any CAD type software before, it will come more easy to you.
+
+### Sketchup
+
+I designed the rack in {{ site.data.links.sketchup }} to make sure it had all the right dimensions. Sketchup is a cool tool for modelling 3d things digitally. It takes a bit of getting used to, but there are a lot of Youtube videos out there on how to get started, and if you have worked with any CAD type software before, it will come more easy to you.
 
 Once you have your 3d model, export the parts to the {{ site.data.links.origin }} and you are off to the races.
 
