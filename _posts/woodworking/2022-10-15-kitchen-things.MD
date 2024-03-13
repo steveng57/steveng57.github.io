@@ -40,7 +40,9 @@ This stand was custom made to the exact height.  Storage underneath for the keyb
 
 {% include clear-float.html break  = 1 %}
 
-Not much to the design here, it's really just a box after all.  I did the font layout in Shaper Studio, an online design tool that goes with the {{ site.data.links.origin }}.  I used Microsoft Word to layout the text with a comic-sans font, uploaded it to Shaper Studio for the final prep, then downloaded to the Origin for the carve.  _Easy peasy lemon squeezy._  I have no idea what that saying means, but it's fun to say.
+Not much to the design here, it's really just a box after all.  I used Microsoft Word to layout the text with a comic-sans font, uploaded it to Shaper Studio for the final prep, then downloaded to the Origin for the carve.  Shaper Studio is an online design tool that goes with the {{ site.data.links.origin }}, making it super simple to move your drawings onto the tool. 
+
+_Easy peasy lemon squeezy._  I have no idea what that saying means, but it's fun to say.
 
 {% include clear-float.html break  = 0 %}
 
