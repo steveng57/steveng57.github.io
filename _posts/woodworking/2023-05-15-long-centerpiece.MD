@@ -24,7 +24,7 @@ One turned out great, the other...not so much.  Read on for details!
 
 {% include html-side.html img="IMG_0821.jpeg" align="left" %}
 
-### Long Centerpiece
+### Long Center&#x200B;piece
 
 This centerpiece was made to fit on our outdoor table near the pool.  As of this writing, it's still winter, so the piece is indoors for protection.  
 
@@ -40,7 +40,7 @@ Pretty straightforward stuff on this one.  By now, I have the epoxy thing down p
 
 {% include html-side.html img="IMG_0825.jpeg" align="right" %}
 
-### The Round Centerpieces
+### The Round Center&#x200B;pieces
 
 These were made out of solid red oak boards, glued up to make a small panel.  I then used a router with a circle jig to make the final shape.
 
