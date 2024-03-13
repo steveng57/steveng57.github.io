@@ -63,7 +63,7 @@ This is where overflow stuff will go when we have family dinners. More important
 
 ## In Position
 
-In situ as an extension to the existing table.  Levelled it to the exact height of the other table so that people are less likely to spill things, which sounds easy but our theatre room floor is not very level.
+In situ as an extension to the existing table.  I levelled it to the exact height of the other table so that people are less likely to spill things, which sounds easy but our theatre room floor is not very level.  Not an exact colour match, but close enough I think.
 
 This makes for a nice big dining area that can comfortably seat eight, with lots of room in the middle for serving plates.  Makes me hungry. 
 
