@@ -57,13 +57,17 @@ I bought these from {{ site.data.links.rustydesign }}, an Ontario based company 
 
 The tricky part was getting the edging to look the same as on the original table. The blocks on the end and the groove on the edge are part of that.
 
+This is where overflow stuff will go when we have family dinners. More importantly, this is where the munchies will go when we watch movies in the theatre.
+
 {% include clear-float.html %}
 
 ## In Position
 
-This is where overflow stuff will go when we have family dinners. More importantly, this is where the munchies will go when we watch movies in the theatre.
+In situ as an extension to the existing table.  Levelled it to the exact height of the other table so that people are less likely to spill things, which sounds easy but our theatre room floor is not very level.
 
-{% include html-side.html img="IMG_0219.jpeg" align="center-wide" %}
+This makes for a nice big dining area that can comfortably seat eight, with lots of room in the middle for serving plates.  Makes me hungry. 
+
+{% include html-side.html img="IMG_0818.jpeg" align="center-wide" %}
 
 ## Materials
 
