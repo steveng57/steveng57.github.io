@@ -10,6 +10,7 @@ image:
 img_path: /assets/img/about
 date: 2024-01-28 10:59:55 -0500
 last_modified_at: 2024-03-13 23:17:02 -0500
+hide_post_nav: true
 ---
 {% include head-mypost.html %}
 
