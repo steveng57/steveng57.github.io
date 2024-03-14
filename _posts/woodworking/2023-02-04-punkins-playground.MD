@@ -17,7 +17,9 @@ This table was specially made to fit into Debbie's craft area. It of my own desi
 
 ## The Design
 
-{% include html-side.html img="punkins-playground-sketchup.jpeg" align="right" %}
+{% include html-side.html img="punkins-playground-sketchup.jpeg" align="left" %}
+
+### Sketchup
 
 As usual with most projects, the design starts in {{ site.data.links.sketchup }}. It is a super-cool tool that, once you get the hang of it, lets you draw up things like this pretty quick. It lets you really visualize the work.
 

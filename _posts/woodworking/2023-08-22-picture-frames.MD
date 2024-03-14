@@ -35,11 +35,12 @@ It's an acrylic paint I picked up at {{ site.data.links.michaels }}.
 
 I made these out of poplar. It's a lighter wood, but still strong enough. Not as sappy as pine, and paints very well. Less pricey than other woods, and if you are going to paint it anyway, might as well spend more on the paint and less on the wood.
 
-{% include clear-float.html %}
-
-## Being Framed
+{% include clear-float.html break = 1 %}
 
 {% include html-side.html img="20230822_191820.jpeg" align="left" %}
+
+### Being Framed
+
 I used shims to centre the picture vertically and horizontally in the frame. I have some of those woodworkers shims, which are made of plastic and they are of varying thicknesses. But my favorite shims for such a task is playing cards. Yep, good old fashioned playing cards. I keep a deck in the shop at all times for such a purpose. 
 
 The trick to keeping it centred is that if you use 7 cards on the left, then you need to use 7 cards on the right.
