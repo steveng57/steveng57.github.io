@@ -4,7 +4,7 @@ title: Extension Table
 date: 2023-11-26 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Furniture]
-tags: [Woodworking, Ash, Furniture]
+tags: [Woodworking, Ash, Furniture, Table]
 image:
   path: /thumbnails/IMG_0221.jpeg
   alt: It's a desert topping and a floor wax

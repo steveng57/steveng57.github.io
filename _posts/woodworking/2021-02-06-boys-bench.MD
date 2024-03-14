@@ -4,7 +4,7 @@ title: Boys Bench
 date: 2021-02-06 17:58:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Pets]
-tags: [Woodworking, Bench, Drawers, Poplar, Pets]
+tags: [Woodworking, Bench, Drawers, Red Oak, Pets]
 image:
   path: /thumbnails/IMG_0536.jpeg
   alt: Beast of a bench
