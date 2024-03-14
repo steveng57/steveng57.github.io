@@ -60,9 +60,8 @@ The metal brackets in the corners was probably overkill, as the {{ site.data.lin
 
 ### Bench Legs
 
-The bench legs followed the same general design pattern as the table legs, just scaled down to 2/3 the size of the table. This scaling was a general rule for the benches, which I intentionally broke in a few places.
+The bench legs followed the same general design pattern as the table legs, just scaled down to 2/3 the size of the table. This scaling was a general rule for the benches, which I intentionally broke in a few places, like in the support stretchers for the bench-tops, which I made as thick as I reasonably could to make sure it was strong enough.
 
-The other difference is that there were twice as many legs on the benches.
 {% include clear-float.html break=1%}
 
 {% include html-side.html img="IMG_0656.jpeg" align="right" %}
