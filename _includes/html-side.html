@@ -4,8 +4,16 @@
 {% case include.align %}
   {% when "left" %}
     {% assign class = "sjg-left" %}
+  {% when "left-33" %}
+    {% assign class = "sjg-left-33" %}
+  {% when "left-50" %}
+    {% assign class = "sjg-left-50" %}
   {% when "right" %}
     {% assign class = "sjg-right" %}
+  {% when "right-33" %}
+    {% assign class = "sjg-right-33" %}
+  {% when "right-50" %}
+    {% assign class = "sjg-right-50" %}
   {% when "center" %}
     {% assign class = "sjg-center" %}
   {% when "center-wide" %}

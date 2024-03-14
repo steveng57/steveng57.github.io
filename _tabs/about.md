@@ -1,5 +1,6 @@
 ---
 # the default layout is 'page'
+author: sjg
 icon: fas fa-user
 order: 5
 image: 
@@ -7,13 +8,17 @@ image:
     alt: The most precious thing in my shop.  A gift from the family.
 img_path: /assets/img/about
 date: 2024-01-28 10:59:55 -0500
-last_modified_at: 2024-03-03 10:59:55 -0500
+last_modified_at: 2024-03-13 23:17:02 -0500
 ---
 {% include head-mypost.html %}
 {% include mydatetime.html date=page.last_modified_at prefix="Last Updated: " %}
 
 {% include html-side.html img="IMG_0697.jpeg" align="center-full" caption="The most precious thing in my shop.  A gift from the family." %}
+
 {% include clear-float.html break = 1 %}
+
+By **Steven Goulet**
+{: .post-meta .text-muted }
 
 Welcome to my photo blog of various "maker" things I am up to, mostly woodworking.  The above picture is a sign hanging in my workshop, given to me by the family.  It's pretty cool.
 
@@ -45,11 +50,12 @@ I live in a rural suburb of Ottawa called Manotick with my wife Debbie and two b
 
 {% include clear-float.html break = 2 %}
 
-![sticker]{:.left .w-33 }
-I am also a Pisces, which is silly because there is no science behind that stuff at all.  The other thing you should know about me is that I am all about science.  So if you believe in astrology, then I have some magic pixie dust to sell you, but that's about all you are going to get about me.
+{% include html-side.html img="steven-sticker.png" caption="Enjoy the Blog!" align="left-33"%}
 
-Enjoy the blog!
+I am also a Pisces, which is silly because there is no science behind that stuff at all.  The other thing you should know about me is that I am all about science.  Actually, that one fact probably tells you a lot about me, from my political leanings, to my thoughts on religion, and more. 
+
+So if you believe in astrology, then I have some magic pixie dust to sell you, but that's about all you are going to get about me.
+
+But if you must know, politics wise, I am fiscally conservative (you can't spend money you don't have), and socially liberal (the only thing I am truly intolerant of, is intolerance). Wait, way too much information!
 
 {% include clear-float.html%}
-
-[sticker]: steven-sticker.png

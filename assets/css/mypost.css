@@ -36,11 +36,37 @@ figcaption {
     margin: 0rem 1rem 1rem 0rem;
 }
 
+.sjg-left-33 {
+    float: left;
+    width: 33% !important;
+    margin: 0rem 1rem 1rem 0rem;
+}
+
+.sjg-left-50 {
+    float: left;
+    width: 50% !important;
+    margin: 0rem 1rem 1rem 0rem;
+}
+
 .sjg-right {
     float: right;
     width: 66% !important;
     margin: 0rem 0rem 1rem 1rem;
 }
+
+
+.sjg-right-33 {
+    float: right;
+    width: 33% !important;
+    margin: 0rem 0rem 1rem 1rem;
+}
+
+.sjg-right-50 {
+    float: right;
+    width: 50% !important;
+    margin: 0rem 0rem 1rem 1rem;
+}
+
 
 .sjg-center {
     width: 75% !important;
