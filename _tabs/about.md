@@ -1,5 +1,6 @@
 ---
 # the default layout is 'page'
+layout: page
 author: sjg
 icon: fas fa-user
 order: 5
@@ -8,7 +9,7 @@ image:
     alt: The most precious thing in my shop.  A gift from the family.
 img_path: /assets/img/about
 date: 2024-01-28 10:59:55 -0500
-last_modified_at: 2024-03-13 23:17:02 -0500
+last_modified_at: 2024-03-14 19:00:51 -0500
 ---
 {% include head-mypost.html %}
 {% include mydatetime.html date=page.last_modified_at prefix="Last Updated: " %}
