@@ -11,15 +11,8 @@ img_path: /assets/img/about
 date: 2024-01-28 10:59:55 -0500
 last_modified_at: 2024-03-14 19:00:51 -0500
 ---
-{% include head-mypost.html %}
-{% include mydatetime.html date=page.last_modified_at prefix="Last Updated: " %}
 
-{% include html-side.html img="IMG_0697.jpeg" align="center-full" caption="The most precious thing in my shop.  A gift from the family." %}
-
-{% include clear-float.html break = 1 %}
-
-By **Steven Goulet**
-{: .post-meta .text-muted }
+{% include header.html %}
 
 Welcome to my photo blog of various "maker" things I am up to, mostly woodworking.  The above picture is a sign hanging in my workshop, given to me by the family.  It's pretty cool.
 
@@ -39,7 +32,7 @@ The [Tags]({% link _tabs/tags.md %}) links will display a tag wall splattered wi
 
 To all the fans of this website, pictured below, please be [let me know](mailto:steveng57@outlook.com) if you find any bugs or other inaccuracies.  This is very much a work in progress.
 
-# About the author
+## About the author
 
 I have been focussing more and more on "maker" type things, including woodworking for the last decade or so. While woodworking is my primary focus, but I like to include other things...anything high tech or gadgety will do nicely. Also, life-hacks, yard and house projects and other maker things, will do nicely but mostly woodworking.
 
