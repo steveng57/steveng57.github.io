@@ -66,6 +66,7 @@
 
         <div>
           <!-- pageviews -->
+          {% comment %} waiting on version 7.0.0 of jekyll-theme-chirpy to be released
           {% if site.pageviews.provider and site.analytics[site.pageviews.provider].id %}
             <span>
               <em id="pageviews">
@@ -74,7 +75,7 @@
               {{ site.data.locales[lang].post.pageview_measure }}
             </span>
           {% endif %}
-
+          {% endcomment %}
           <!-- read time -->
           {% include read-time.html content=content prompt=true lang=lang %}
         </div>
