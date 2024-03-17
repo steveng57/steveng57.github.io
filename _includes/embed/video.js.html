@@ -1,0 +1,57 @@
+{% assign video_url = include.src %}
+{% assign poster_url = include.poster %}
+
+{% unless video_url contains '://' %}
+  {%- capture video_url -%}
+    {% include img-url.html src=video_url img_path=page.img_path %}
+  {%- endcapture -%}
+{% endunless %}
+
+{% if poster_url %}
+  {% unless poster_url contains '://' %}
+    {%- capture poster_url -%}
+      {% include img-url.html src=poster_url img_path=page.img_path %}
+    {%- endcapture -%}
+  {% endunless %}
+  {% assign poster = 'poster="' | append: poster_url | append: '"' %}
+{% endif %}
+
+{% assign attributes = 'controls' %}
+
+{% if include.autoplay %}
+  {% assign attributes = attributes | append: ' ' | append: 'autoplay' %}
+{% endif %}
+
+{% if include.loop %}
+  {% assign attributes = attributes | append: ' ' | append: 'loop' %}
+{% endif %}
+
+{% if include.muted %}
+  {% assign attributes = attributes | append: ' ' | append: 'muted' %}
+{% endif %}
+
+<head>
+  <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+</head>
+
+<p>
+
+<video
+id="my-video"
+class="video-js"
+controls
+preload="auto"
+{{ poster }}
+data-setup="{}"
+>
+<source src="{{ video_url }}" type="video/mp4" />
+<p class="vjs-no-js">
+  To view this video please enable JavaScript, and consider upgrading to a
+  web browser that
+  <a href="https://videojs.com/html5-video-support/" target="_blank"
+    >supports HTML5 video</a
+  >
+</p>
+</video>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+</p>
