@@ -95,6 +95,7 @@ Here is a mini photo gallery of the table and benches setup in our theatre room.
 ## The Video
 
 {% include html-video.html src="/assets/img/posts/walnut-table/IMG_0695.mp4" %}
+{% include embed/video.html src="IMG_0695.mp4" poster = IMG_0693.jpeg %}
 
 ## Materials
 
