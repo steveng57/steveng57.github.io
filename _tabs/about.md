@@ -35,7 +35,7 @@ To all the fans of this website, pictured below, please be [let me know](mailto:
 
 ## About the author
 
-I have been focussing more and more on "maker" type things, including woodworking for the last decade or so. While woodworking is my primary focus, but I like to include other things...anything high tech or gadgety will do nicely. Also, life-hacks, yard and house projects and other maker things, will do nicely but mostly woodworking.
+I have been focussing more and more on "maker" type things, including woodworking for the last decade or so. While woodworking is my primary focus, I also like to include other things...anything high tech or gadgety will do nicely. Also, life-hacks, yard / garden / house projects and other maker things will do nicely...but mostly woodworking.
 
 Sometime in late 2016, I started to setup a workshop in the basement.  Retirement was around the corner, and my one of my father's favorite wisdoms was to _"retire to something, don't retire from something"_.  I could not agree more.
 
