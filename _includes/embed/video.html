@@ -31,8 +31,8 @@
 {% endif %}
 
 <p>
-  <video class="embed-video file" src="{{ video_url }}" {{ poster }} {{ attributes }}>
+  <video class="embed-video file sjg-video" src="{{ video_url }}" {{ poster }} {{ attributes }}>
     Your browser doesn't support HTML video. Here is a <a href="{{ video_url }}">link to the video</a> instead.
   </video>
-  <em>{{ include.title }}</em>
+  <figcaption>{{ include.title }}</figcaption>
 </p>
