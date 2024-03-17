@@ -65,7 +65,7 @@ This is where overflow stuff will go when we have family dinners. More important
 
 In situ as an extension to the existing table.  I levelled it to the exact height of the other table so that people are less likely to spill things, which sounds easy but our theatre room floor is not very level.  Not an exact colour match, but close enough I think.
 
-This makes for a nice big dining area that can comfortably seat eight, with lots of room in the middle for serving plates.  Makes me hungry. 
+This makes for a nice big dining area that can comfortably seat ten people, with lots of room in the middle for serving plates.  Makes me hungry. 
 
 {% include html-side.html img="IMG_0818.jpeg" align="center-wide" %}
 
