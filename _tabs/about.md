@@ -19,7 +19,7 @@ Welcome to my photo blog of various "maker" things I am up to, mostly woodworkin
 
 ## About this site
 
-The [Home Page]({% link index.html %}) is an inverse chronological listing of the various projects I have taken on.  As you go further back in time, the projects get a little more primitive...not that my more recent things are perfect, but you learn a lot over time in this craft.  Some of that learning I have actually managed to apply in my more recent efforts.
+The [Home Page]({% link index.html %}) is an inverse chronological listing of the various projects I have taken on.  As you go further back in time, the projects get a little more primitive...not that my more recent things are perfect, but you learn a lot over time in this craft.  Some of those learnings I have actually managed to apply in my more recent efforts.
 
 In the early days, I did not take many pictures of the shop or the projects as they were in progress, so a lot of the pics will be of the finished product.  I will be taking more "under construction" photos as time progresses, hopefully that will make the posts more interesting to those of you who like a bit of the "behind-the-scenes" thing.
 
