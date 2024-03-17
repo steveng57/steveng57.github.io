@@ -37,5 +37,7 @@
   <video class="embed-video file sjg-video" src="{{ new_video_url }}" {{ poster }} {{ attributes }}>
     Your browser doesn't support HTML video. Here is a <a href="{{ video_url }}">link to the video</a> instead.
   </video>
-  <figcaption>{{ include.title }}</figcaption>
+  {{% if include.title %}}
+    <figcaption>{{ include.title }}</figcaption>
+  {{% endif %}}
 </p>
