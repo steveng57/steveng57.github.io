@@ -4,8 +4,8 @@ layout: post
 title: Lilly's Creations
 date: 2024-03-22 18:32:00 -0500
 last_modified_at: 2024-03-22 22:16:09 -0500
-categories: [Woodworking, Furniture]
-tags: [Woodworking, Walnut, Pencil Holder, Tray]
+categories: [Woodworking, Home Decor]
+tags: [Woodworking, Walnut, Pencil Holder, Tray, Epxoy, Inlay]
 image:
   path: /thumbnails/IMG_0693.jpeg
   alt: Lilly's Creations Pencil Holder
@@ -100,6 +100,6 @@ Here is a mini photo gallery of the table and benches setup in our theatre room.
 
 - Walnut from {{ site.data.links.kjp }}
 - {{ site.data.links.rubio }} Walnut Oil 2C for finish
-- Hardware from {{ site.data.links.leevalley }}
-- Lots of {{ site.data.links.domino }} usage, both the standard and the XL, for the joinery
+- {{ site.data.links.chillepoxy }} for the inlay
+
 {: .sjg-list }
