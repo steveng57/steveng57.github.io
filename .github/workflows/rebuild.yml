@@ -2,7 +2,7 @@ name: Trigger Rebuild
 
 on:
   schedule:
-    - cron:  '1 4 * * *'
+    - cron:  '1 6 * * *'
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
