@@ -19,15 +19,15 @@
 {% assign attributes = 'controls' %}
 
 {% if include.autoplay %}
-  {% assign attributes = attributes | append: ' ' | append: 'autoplay' %}
+  {% assign attributes = attributes | append: ' autoplay' %}
 {% endif %}
 
 {% if include.loop %}
-  {% assign attributes = attributes | append: ' ' | append: 'loop' %}
+  {% assign attributes = attributes | append: ' loop' %}
 {% endif %}
 
 {% if include.muted %}
-  {% assign attributes = attributes | append: ' ' | append: 'muted' %}
+  {% assign attributes = attributes | append: ' muted' %}
 {% endif %}
 
 {% assign attributes = attributes |  append: ' preload = "metadata"' %}
