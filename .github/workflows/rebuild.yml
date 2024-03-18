@@ -14,5 +14,7 @@ jobs:
 
     - name: Trigger GitHub Pages rebuild
       run: |
+        git config user.name "Steven Goulet"
+        git config user.email "steven.goulet@live.com"
         git commit --allow-empty -m "Trigger rebuild"
         git push

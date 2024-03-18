@@ -57,7 +57,7 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
          if (-not (Test-Path -Path $thumbnailPath)) {
             Write-Output "Source:" $mp4File.FullName
             Write-Output "Destination:" $thumbnailPath
-            # Generate a new thumbnail using FFMPEG
+            # Generate a new thumbnail using FFMPEG.
             Write-Output "FFMPEG command: " "ffmpeg -i `"$($mp4File.FullName)`" - update 1 -frames:v 1 -q:v 10 `"$thumbnailPath`" -loglevel quiet"
             Start-Process -FilePath "ffmpeg" -ArgumentList "-i `"$($mp4File.FullName)`" -update 1 -frames:v 1 -q:v 10 `"$thumbnailPath`" -loglevel quiet" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName
          }
