@@ -10,6 +10,7 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
+  # Runs on 1 minute after midnight EDT
   schedule:
     - cron:  '1 4 * * *'
   # Allows you to run this workflow manually from the Actions tab
