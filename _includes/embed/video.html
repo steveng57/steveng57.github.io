@@ -30,7 +30,7 @@
   {% assign attributes = attributes | append: ' muted' %}
 {% endif %}
 
-{% assign attributes = attributes |  append: ' preload = "none"' %}
+{% assign attributes = attributes |  append: ' preload = "metadata"' %}
 
 <p>
   <video class="embed-video file sjg-video" src="{{ video_url }}" {{ poster }} {{ attributes }}>

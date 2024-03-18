@@ -51,6 +51,17 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
             Start-Process -FilePath "magick" -ArgumentList "convert `"$($imageFile.FullName)`" -resize 50% `"$thumbnailPath`"" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName
          }   
       }
+      $mp4Files = Get-ChildItem -Path $subfolder.FullName -Filter "*.mp4" -File
+      foreach ($mp4File in $mp4Files) {
+         $thumbnailPath = Join-Path -Path $thumbnailsPath -ChildPath ($mp4File.BaseName + ".jpeg")
+         if (-not (Test-Path -Path $thumbnailPath)) {
+            Write-Output "Source:" $mp4File.FullName
+            Write-Output "Destination:" $thumbnailPath
+            # Generate a new thumbnail using FFMPEG
+            Write-Output "FFMPEG command: " "ffmpeg -i `"$($mp4File.FullName)`" -frames:v 1 -q:v 10 `"$thumbnailPath`""
+            Start-Process -FilePath "ffmpeg" -ArgumentList "-i `"$($mp4File.FullName)`" -frames:v 1 -q:v 10 `"$thumbnailPath`"" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName
+         }
+      }
    }
 
 }
