@@ -3,6 +3,7 @@ name: Trigger Rebuild
 on:
   schedule:
     - cron:  '1 4 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
