@@ -51,4 +51,6 @@ I am also a Pisces, which is silly because there is no science behind that stuff
 
 But if you must know, politics wise, I am fiscally conservative (you can't spend money you don't have), and socially liberal (the only thing I am truly intolerant of, is intolerance).  Wait, TMI alert! Way too much information already!
 
-{% include clear-float.html%}
+{% include clear-float.html break = 2 %}
+
+{% include mydatetime.html date = site.time lang = lang prefix= "This site was last generated on: "%}
