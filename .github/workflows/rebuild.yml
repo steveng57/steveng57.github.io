@@ -1,0 +1,18 @@
+name: Trigger Rebuild
+
+on:
+  schedule:
+    - cron:  '1 4 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Trigger GitHub Pages rebuild
+      run: |
+        git commit --allow-empty -m "Trigger rebuild"
+        git push
