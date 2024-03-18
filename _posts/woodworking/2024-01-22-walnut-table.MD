@@ -94,7 +94,7 @@ Here is a mini photo gallery of the table and benches setup in our theatre room.
 
 ## The Video
 
-{% include embed/video.html src="IMG_0695.mp4" muted title = "Walnut Table - 180&deg; View" %}
+{% include embed/video.html src="IMG_0695.mp4" muted = true title = "Walnut Table - 180&deg; View" %}
 
 ## Materials
 
