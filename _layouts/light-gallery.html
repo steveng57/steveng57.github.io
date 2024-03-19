@@ -14,8 +14,12 @@ layout: page
     <div id="lightgallery">
         {% for image in imageFiles %}
             {% assign originalFile = image.path |  replace: "/tinyfiles", "" %}
-        <a href="{{ originalFile }}" data-lg-size="1200-800" data-sub-html="{% if show_captions %}{{ image.name }}{% endif %}">
-            <img src="{{ image.path }}" alt="{{ image.name }}" >
+            {% assign caption = site.data.img-info[image.name].title %}
+
+            <a href="{{ originalFile }}" data-lg-size="1200-800" data-sub-html="{{ caption }}">
+                <img src="{{ image.path }}" alt="{{ image.name }}" loading="lazy" >
+                        <!-- This will appear as caption -->
+
             </a>
         {% endfor %}
      </div>
@@ -25,7 +29,8 @@ layout: page
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
             lightGallery(document.getElementById('lightgallery'), {
-                plugins: [window.lgZoom, window.lgThumbnail],
+                plugins: [lgZoom, lgThumbnail],
+                thumbnail: true,    
                 speed: 500
                 // ... other settings
             });
