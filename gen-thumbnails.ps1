@@ -30,9 +30,14 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
       $thumbnailsPath = "$($subfolder.FullName)\thumbnails"
       $null = New-Item -Path $thumbnailsPath -ItemType Directory -Force
 
+      # Create a directory called Thumbnails in the subfolder
+      $tinyfilesPath = "$($subfolder.FullName)\tinyfiles"
+      $null = New-Item -Path $tinyfilesPath -ItemType Directory -Force
+
       # If the user chose to delete existing thumbnails, delete them
       if ($deleteExisting) {
          $null = Get-ChildItem -Path $thumbnailsPath -File | Remove-Item -Force
+         $null = Get-ChildItem -Path $tinyfilesPath -File | Remove-Item -Force
       }
 
       # Get all the image files in the subfolder
@@ -50,7 +55,19 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
             Write-Output "Convert command: " "convert $($imageFile.FullName) -resize 50% $thumbnailPath"
             Start-Process -FilePath "magick" -ArgumentList "convert `"$($imageFile.FullName)`" -resize 50% `"$thumbnailPath`"" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName
          }   
+         # Check if a tinyfile already exists
+         $tinyfilePath = Join-Path -Path $tinyfilesPath -ChildPath $imageFile.Name
+         if (-not (Test-Path -Path $tinyfilePath)) {
+            Write-Output "Source:" $imageFile.FullName
+            Write-Output "Destination:" $tinyfilePath
+            # Generate a new thumbnail using Magick
+            Write-Output "Convert command: " "convert $($imageFile.FullName) -resize 25% $tinyfilePath"
+            Start-Process -FilePath "magick" -ArgumentList "convert `"$($imageFile.FullName)`" -resize 25% `"$tinyfilePath`"" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName
+         }   
       }
+
+      # generate poster file for mp4 files.
+
       $mp4Files = Get-ChildItem -Path $subfolder.FullName -Filter "*.mp4" -File
       foreach ($mp4File in $mp4Files) {
          $thumbnailPath = Join-Path -Path $thumbnailsPath -ChildPath ($mp4File.BaseName + ".jpeg")
@@ -68,5 +85,5 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
 
 # Call the function with the specified folder path
 $folderPath = ".\assets\img\posts"
-GenerateThumbnails $folderPath $false
+GenerateThumbnails $folderPath $true
 

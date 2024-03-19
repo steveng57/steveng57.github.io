@@ -1,0 +1,34 @@
+---
+layout: page
+---
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css" integrity="sha512-nUqPe0+ak577sKSMThGcKJauRI7ENhKC2FQAOOmdyCYSrUh0GnwLsZNYqwilpMmplN+3nO3zso8CWUgu33BDag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    {% assign albumfolder = page.albumfolder %}
+    {{ page.description }}
+    {% assign show_captions = page.captions %}
+    {% assign templateImageFiles = site.static_files | where_exp: "item", "item.path contains 'tinyfiles'" %}
+    {% assign imageFiles = templateImageFiles | where_exp: "item", "item.path contains albumfolder" %}
+    
+    <div id="lightgallery">
+        {% for image in imageFiles %}
+            {% assign originalFile = image.path |  replace: "/tinyfiles", "" %}
+        <a href="{{ originalFile }}" data-lg-size="1200-800" data-sub-html="{% if show_captions %}{{ image.name }}{% endif %}">
+            <img src="{{ image.path }}" alt="{{ image.name }}" >
+            </a>
+        {% endfor %}
+     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js" integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js" integrity="sha512-BLW2Jrofiqm6m7JhkQDIh2olT0EBI58+hIL/AXWvo8gOXKmsNlU6myJyEkTy6rOAAZjn0032FRk8sl9RgXPYIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js" integrity="sha512-VBbe8aA3uiK90EUKJnZ4iEs0lKXRhzaAXL8CIHWYReUwULzxkOSxlNixn41OLdX0R1KNP23/s76YPyeRhE6P+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            lightGallery(document.getElementById('lightgallery'), {
+                plugins: [window.lgZoom, window.lgThumbnail],
+                speed: 500
+                // ... other settings
+            });
+        });
+    </script>
+</body>
