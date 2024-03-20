@@ -61,8 +61,8 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
             Write-Output "Source:" $imageFile.FullName
             Write-Output "Destination:" $tinyfilePath
             # Generate a new thumbnail using Magick
-            Write-Output "Convert command: " "convert $($imageFile.FullName) -resize 25% $tinyfilePath"
-            Start-Process -FilePath "magick" -ArgumentList "convert `"$($imageFile.FullName)`" -resize 25% `"$tinyfilePath`"" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName
+            Write-Output "Convert command: " "convert $($imageFile.FullName) -resize 10% $tinyfilePath"
+            Start-Process -FilePath "magick" -ArgumentList "convert `"$($imageFile.FullName)`" -resize 10% `"$tinyfilePath`"" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName
          }   
       }
 
