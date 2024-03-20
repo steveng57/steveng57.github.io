@@ -17,9 +17,7 @@ layout: page
             {% assign caption = site.data.img-info[image.name].title %}
 
             <a href="{{ originalFile }}" data-lg-size="1200-800" data-sub-html="{{ caption }}">
-                <img src="{{ image.path }}" alt="{{ image.name }}" loading="lazy" >
-                        <!-- This will appear as caption -->
-
+                <img src="{{ image.path }}" alt="{{ image.name }}" loading="lazy" />
             </a>
         {% endfor %}
      </div>
@@ -33,5 +31,5 @@ layout: page
             speed: 500,
             // ... other settings
         });
-</script>
+    </script>
 </body>
