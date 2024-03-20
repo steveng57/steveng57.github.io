@@ -22,7 +22,7 @@ var dynamicImages = [
     {
         'src': '{{ image.path | replace: "/tinyfiles", "" }}',
         'thumb': '{{ image.path }}',
-        'subHtml': "<p>{{ site.data.img-info[image.name].title }}</p><p>{{ site.data.img-info[image.name].datetaken }}</p>"
+        'subHtml': "<div class='inline-gallery-captions lightGallery-captions'><h4>{{ site.data.img-info[image.name].title }}</h4><p>{{ site.data.img-info[image.name].datetaken }}</p></div>"
     },
     {% endfor %}
 ];
