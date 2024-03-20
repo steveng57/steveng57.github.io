@@ -7,7 +7,7 @@ layout: page
 {% include head-mypost.html %}
 <div id="inline-gallery-container" class="inline-gallery-container"></div>
 {% assign albumfolder = page.albumfolder %}
-{{ page.description }}
+
 {% assign show_captions = page.captions %}
 {% assign templateImageFiles = site.static_files | where_exp: "item", "item.path contains 'tinyfiles'" %}
 {% assign imageFiles = templateImageFiles | where_exp: "item", "item.path contains albumfolder" %}
@@ -22,7 +22,7 @@ var dynamicImages = [
     {
         'src': '{{ image.path | replace: "/tinyfiles", "" }}',
         'thumb': '{{ image.path }}',
-        'subHtml': "{{ site.data.img-info[image.name].title }}"
+        'subHtml': "<p>{{ site.data.img-info[image.name].title }}</p><p>{{ site.data.img-info[image.name].datetaken }}</p>"
     },
     {% endfor %}
 ];
