@@ -1,8 +1,13 @@
 ---
-layout: default
+layout: nil
 ---
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css" integrity="sha512-nUqPe0+ak577sKSMThGcKJauRI7ENhKC2FQAOOmdyCYSrUh0GnwLsZNYqwilpMmplN+3nO3zso8CWUgu33BDag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
 
 </head>
 {% include head-mypost.html %}
@@ -39,12 +44,18 @@ var dynamicImages = [
 ];
 
 const lgContainer = document.getElementById('inline-gallery-container');
+
+lgContainer.addEventListener('lgBeforeClose', function(event) {
+    window.location.href = '/index.html';
+});
+
 inlineGallery = lightGallery(lgContainer, {
     container: lgContainer,
     dynamic: true,
     hash: true,
-    closable: false,
-    showMaximizeIcon: true,
+    closable: true,
+    showMaximizeIcon: false,
+    showCloseIcon: true,
     dynamicEl: dynamicImages,
     appendSubHtmlTo: '.lg-item',
     plugins: [lgZoom, lgThumbnail, lgHash],
@@ -64,6 +75,7 @@ if (matches) {
     slideIndex = index >= 0 ? index : 0;
 }
 
-
 inlineGallery.openGallery(slideIndex);
+
+
 </script>

@@ -1,5 +1,5 @@
 ---
-layout: gallery
+layout: light-gallery
 icon: fas fa-image
 order: 1
 title: Image Gallery
