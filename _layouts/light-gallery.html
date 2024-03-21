@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: default
 ---
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css" integrity="sha512-nUqPe0+ak577sKSMThGcKJauRI7ENhKC2FQAOOmdyCYSrUh0GnwLsZNYqwilpMmplN+3nO3zso8CWUgu33BDag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 {% include head-mypost.html %}
 <div id="inline-gallery-container" class="inline-gallery-container"></div>
@@ -16,30 +17,53 @@ layout: page
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js" integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js" integrity="sha512-BLW2Jrofiqm6m7JhkQDIh2olT0EBI58+hIL/AXWvo8gOXKmsNlU6myJyEkTy6rOAAZjn0032FRk8sl9RgXPYIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js" integrity="sha512-VBbe8aA3uiK90EUKJnZ4iEs0lKXRhzaAXL8CIHWYReUwULzxkOSxlNixn41OLdX0R1KNP23/s76YPyeRhE6P+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/hash/lg-hash.min.js" integrity="sha512-7c9ZgozFwxmWalyapzhmzAChRvi0p7vhxWdrE3OjvFHnxuw6h6DBSOvtO1XytEj8MQI2Jp0Tm2BJwLUU7zAMvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script type="text/javascript">
+
 var dynamicImages = [
     {% for image in imageFiles %}
+        {% assign postname = image.path | replace: '/tinyfiles', '' | replace: albumfolder, '' | replace: image.name, '' | replace: '/', '' | replace: '-', ' ' %}
+        {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
+
     {
         'src': '{{ image.path | replace: "/tinyfiles", "" }}',
         'thumb': '{{ image.path }}',
-        'subHtml': "<div class='inline-gallery-captions lightGallery-captions'><h4>{{ site.data.img-info[image.name].title }}</h4><p>{{ site.data.img-info[image.name].datetaken }}</p></div>"
+        'href': '{{ redirect }}',
+        'width': '{{ site.data.img-info[image.name].width }}',
+        'height': '{{ site.data.img-info[image.name].height }}',
+        'slideName': '{{ image.name }}',
+        'subHtml': "<div class='inline-gallery-captions lightGallery-captions'><a href='{{ redirect }}'><h4>{{ site.data.img-info[image.name].title }}</h4><p>{{ site.data.img-info[image.name].datetaken }}</p></a></div>"
     },
     {% endfor %}
 ];
+
 const lgContainer = document.getElementById('inline-gallery-container');
 inlineGallery = lightGallery(lgContainer, {
     container: lgContainer,
     dynamic: true,
-    hash: false,
+    hash: true,
     closable: false,
     showMaximizeIcon: true,
     dynamicEl: dynamicImages,
     appendSubHtmlTo: '.lg-item',
-    plugins: [lgZoom, lgThumbnail],
+    plugins: [lgZoom, lgThumbnail, lgHash],
     thumbnail: true,
     licenseKey: 'your_license_key',
     slideDelay: 400,
+    customSlideName: true,
     speed: 500
 });
-inlineGallery.openGallery();
+
+let slideIndex = 0;
+const hash = window.location.hash;
+const matches = hash.match(/slide=([^&]+)/);
+if (matches) {
+    const slideParam = matches[1];
+    const index = dynamicImages.findIndex(image => image.slideName === slideParam);
+    slideIndex = index >= 0 ? index : 0;
+}
+
+
+inlineGallery.openGallery(slideIndex);
 </script>

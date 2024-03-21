@@ -31,6 +31,7 @@ function GenerateImageCaptions($folderPath) {
    $dateTakenIndex = 12
    $dimensionsIndex = 31
 
+
    # Get all the subfolders
    $subfolders = Get-ChildItem -Path $folderPath -Directory
 
@@ -56,6 +57,12 @@ function GenerateImageCaptions($folderPath) {
          $subject = $shellFolder.GetDetailsOf($shellFile, $subjectIndex)
          $dateTaken = $shellFolder.GetDetailsOf($shellFile, $dateTakenIndex)
          $dimensions = $shellFolder.GetDetailsOf($shellFile, $dimensionsIndex)
+         $temp = $dimensions.Split('x')[0]
+         $temp = $temp -replace "[^0-9]", ""
+         $width = [int]$temp
+         $temp = $dimensions.Split('x')[1]
+         $temp = $temp -replace "[^0-9]", ""
+         $height = [int]$temp
 
          # Generate LQIP using ImageMagick
          # Generate LQIP using ImageMagick and output to stdout
@@ -68,7 +75,8 @@ function GenerateImageCaptions($folderPath) {
             'title' = $title
             'subject' = $subject
             'datetaken' = $dateTaken
-            'dimensions' = $dimensions
+            'width' = $width
+            'height' = $height
             #'lqip' = $base64
          }
       }
