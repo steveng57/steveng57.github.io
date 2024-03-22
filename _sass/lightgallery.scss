@@ -4,6 +4,10 @@
     background: var(--main-bg);
 }
 
+.lg-thumb-item img {
+    border-radius: 0px;
+}
+
 .inline-gallery-captions {
     position: absolute;
     bottom: 0;
