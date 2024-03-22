@@ -52,7 +52,7 @@ lgContainer.addEventListener('lgBeforeClose', function(event) {
     let currentSlideName = dynamicImages[currentSlideIndex].slideName;
     localStorage.setItem('lastSlideName', currentSlideName);
 
-    if (referrerUrl && !referrerUrl.includes('/gallery')) {
+    if (referrerUrl && !referrerUrl.includes('/gallery'))  {
         window.location.href = referrerUrl;
     } else {
         window.location.href = '/index.html';
