@@ -26,6 +26,13 @@
         font-size: 0.85em;
         color: white !important;
     }
+    a {
+        text-decoration: none; // remove underline
+
+        &:hover {
+            text-decoration: underline; // add underline on hover
+        }
+    }
 }
 
 
