@@ -10,6 +10,7 @@ layout: nil
     </style>
 
 </head>
+{% include lang.html %}
 {% include head-mypost.html %}
 <div id="inline-gallery-container" class="inline-gallery-container"></div>
 {% assign albumfolder = page.albumfolder %}
@@ -31,7 +32,7 @@ var dynamicImages = [
     {% for image in imageFiles %}
         {% assign postname = image.path | replace: '/tinyfiles', '' | replace: albumfolder, '' | replace: image.name, '' | replace: '/', '' | replace: '-', ' ' %}
         {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
-
+        {% assign datetaken =  site.data.img-info[image.name].datetaken  | date: "%B %d, %Y" %}
     {
         'src': '{{ image.path | replace: "/tinyfiles", "" }}',
         'thumb': '{{ image.path }}',
@@ -39,7 +40,7 @@ var dynamicImages = [
         'width': '{{ site.data.img-info[image.name].width }}',
         'height': '{{ site.data.img-info[image.name].height }}',
         'slideName': '{{ image.name }}',
-        'subHtml': "<div class='inline-gallery-captions lightGallery-captions'><a href='{{ redirect }}'><h4>{{ site.data.img-info[image.name].title }}</h4><p>{{ site.data.img-info[image.name].datetaken }}</p></a></div>"
+        'subHtml': "<div class='inline-gallery-captions lightGallery-captions'><a href='{{ redirect }}'><h4>{{ site.data.img-info[image.name].title }}</h4><p>{{ datetaken }}</p></a></div>"
     },
     {% endfor %}
 ];

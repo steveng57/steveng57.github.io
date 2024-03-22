@@ -56,6 +56,8 @@ function GenerateImageCaptions($folderPath) {
          $title = $shellFolder.GetDetailsOf($shellFile, $titleIndex)
          $subject = $shellFolder.GetDetailsOf($shellFile, $subjectIndex)
          $dateTaken = $shellFolder.GetDetailsOf($shellFile, $dateTakenIndex)
+         $dateTaken = $dateTaken -replace "[^a-zA-Z0-9 -:]", ""
+         $dateTaken = [datetime]$dateTaken
          $dimensions = $shellFolder.GetDetailsOf($shellFile, $dimensionsIndex)
          $temp = $dimensions.Split('x')[0]
          $temp = $temp -replace "[^0-9]", ""
