@@ -6,7 +6,7 @@ last_modified_at: 2024-03-07 18:33:34 -0500
 categories: [Woodworking, Home Decor]
 tags: [Woodworking, Picture Frame, Walnut, Home Decor, Dominos]
 image:
-  path: /thumbnails/20210730_234747896_iOS.jpeg
+  path: /thumbnails/20210730_234800423_iOS.jpeg
   alt: For the Birds
 img_path: "/assets/img/posts/walnut-frame"
 ---
@@ -16,8 +16,6 @@ img_path: "/assets/img/posts/walnut-frame"
 {% include head-mypost.html %}
 
 ## The Details
-
-{% include html-side.html img="20210730_234747896_iOS.jpeg" align="left" %}
 
 ### Local Artist
 
