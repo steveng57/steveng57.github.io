@@ -32,7 +32,7 @@ var dynamicImages = [
     {% for image in imageFiles %}
         {% assign postname = image.path | replace: '/tinyfiles', '' | replace: albumfolder, '' | replace: image.name, '' | replace: '/', '' | replace: '-', ' ' %}
         {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
-        {% assign datetaken =  site.data.img-info[image.name].datetaken  | date: "%b %d, %Y" %}
+        {% assign datetaken =  site.data.img-info[image.name].datetaken  | date: "%b %-d, %Y" %}
     {
         'src': '{{ image.path | replace: "/tinyfiles", "" }}',
         'thumb': '{{ image.path }}',
