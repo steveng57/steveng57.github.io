@@ -25,7 +25,7 @@ layout: nil
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js" integrity="sha512-VBbe8aA3uiK90EUKJnZ4iEs0lKXRhzaAXL8CIHWYReUwULzxkOSxlNixn41OLdX0R1KNP23/s76YPyeRhE6P+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/hash/lg-hash.min.js" integrity="sha512-7c9ZgozFwxmWalyapzhmzAChRvi0p7vhxWdrE3OjvFHnxuw6h6DBSOvtO1XytEj8MQI2Jp0Tm2BJwLUU7zAMvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/fullscreen/lg-fullscreen.min.js" integrity="sha512-11B0rPDzvnSOYzAT37QdnYgt0z9Xg+wX5tckB1QKl5Znl8RPvrB5npo38K2jCt+Ad44udCfBiKt9D4jRdkSE1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/autoplay/lg-autoplay.min.js" integrity="sha512-1YRlp9jO1ermVx9E3UzfBwoo88ODK0i9l2C2lNoZwCZAzvRdA+O0Lm00bUfkIf/A1esj4OK9yZ3yfgfa+FcYwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript">
 
 var dynamicImages = [
@@ -48,7 +48,11 @@ var dynamicImages = [
 const lgContainer = document.getElementById('inline-gallery-container');
 
 lgContainer.addEventListener('lgBeforeClose', function(event) {
-    if (referrerUrl) {
+    let currentSlideIndex = inlineGallery.index;
+    let currentSlideName = dynamicImages[currentSlideIndex].slideName;
+    localStorage.setItem('lastSlideName', currentSlideName);
+
+    if (referrerUrl && !referrerUrl.includes('/gallery')) {
         window.location.href = referrerUrl;
     } else {
         window.location.href = '/index.html';
@@ -65,7 +69,7 @@ inlineGallery = lightGallery(lgContainer, {
     toggleThumb: true,
     dynamicEl: dynamicImages,
     appendSubHtmlTo: '.lg-item',
-    plugins: [lgZoom, lgThumbnail, lgHash, lgFullscreen],
+    plugins: [lgZoom, lgThumbnail, lgHash, lgFullscreen, lgAutoplay],
     thumbnail: true,
     licenseKey: 'your_license_key',
     slideDelay: 400,
@@ -84,6 +88,12 @@ if (matches) {
     const slideParam = matches[1];
     const index = dynamicImages.findIndex(image => image.slideName === slideParam);
     slideIndex = index >= 0 ? index : 0;
+} else {
+    const lastSlideName = localStorage.getItem('lastSlideName');
+    if (lastSlideName) {
+        const index = dynamicImages.findIndex(image => image.slideName === lastSlideName);
+        slideIndex = index >= 0 ? index : 0;
+    }
 }
 
 inlineGallery.openGallery(slideIndex);
