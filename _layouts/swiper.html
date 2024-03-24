@@ -62,22 +62,29 @@ layout: nil
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- Initialize Swiper -->
 <script>
-var swiper = new Swiper(".myThumbs", {
+var myswiper = new Swiper(".myThumbs", {
     loop: true,
     spaceBetween: 10,
     slidesPerView: 5,
     freeMode: true,
+    centeredSlides: true,
     watchSlidesProgress: true,
+    slideToClickedSlide: true,
 });
-var swiper2 = new Swiper(".mySwiper", {
+var mythumb = new Swiper(".mySwiper", {
     loop: true,
     spaceBetween: 10,
     navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
     },
+    keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    },
     thumbs: {
-    swiper: swiper,
+    swiper: myswiper,
     },
 });
+
   </script>
