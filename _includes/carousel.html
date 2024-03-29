@@ -1,0 +1,57 @@
+
+{% assign images = include.images %}
+{% assign images = images | split: ',' %}
+
+<div id="bootstrap-gallery-carousel" class="carousel slide">
+    <div class="carousel-inner">
+        {% for image in images %}
+        {% assign imagef = image | strip %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+            <img src="{{ imagef }}" class="lg-item" alt="{{ imagef }}" loading="lazy"/>
+        </div>
+        {% endfor %}
+    </div>
+    <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#bootstrap-gallery-carousel"
+        data-bs-slide="prev"
+    >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#bootstrap-gallery-carousel"
+        data-bs-slide="next"
+    >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<script>
+// Get the carousel element by its ID
+let carouselEl = document.getElementById('bootstrap-gallery-carousel');
+
+// Create a new Bootstrap 5 Carousel instance with specified options
+//const carousel = new bootstrap.Carousel(carouselEl, {
+//    interval: 2000,
+//    wrap: false,
+//});
+
+// Add an event listener for the 'slide.bs.carousel' event, fires immediately when the slide instance method is invoked.
+carouselEl.addEventListener('slide.bs.carousel', (event) => {
+    const container = document.querySelector('.carousel-inner');
+    window.lightGallery(container, {
+        thumbnail: true,
+        pager: false,
+        plugins: [lgThumbnail],
+        hash: false,
+        zoomFromOrigin: false,
+        preload: 3,
+        selector: '.lg-item',
+    });
+});
+</script>
