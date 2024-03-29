@@ -2,12 +2,9 @@
     .lg-item img {
         max-width: 100%; /* Ensure image doesn't exceed the width of its container */
         max-height: 100%; /* Ensure image doesn't exceed the height of its container */
-        height: auto; /* Maintain aspect ratio */
-        width: auto;
         position: absolute; /* Position the image absolutely within its container */
-        top: 50%; /* Position the image vertically centered */
-        left: 50%; /* Position the image horizontally centered */
-        transform: translate(-50%, -50%); /* Center the image within its container */
+        inset: 0; /* Shorthand for top, right, bottom, left all set to 0 */
+        margin: auto; /* Center the image horizontally and vertically */
     }
     height: 700px;
     text-align: center; /* Center the image horizontally */
