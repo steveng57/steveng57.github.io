@@ -10,6 +10,7 @@ image:
   path: /thumbnails/IMG_0693.jpeg
   alt: Walnut Table and Benches
 img_path: /assets/img/posts/walnut-table
+swiper: true
 ---
 
 This is perhaps my most complicated project to date, with the possible exception of [The Daybed]({% post_url /woodworking/2019-12-17-daybed %}). It took about six or seven weeks. The design called for the table to fit in a certain area in our theatre room. We watch movies there, but it's a big room and we also use it for other things. This table is to serve as a craft table for my niece Lilly and any other folk who want to make stuff here. You can make whatever you want at this table.
@@ -90,13 +91,17 @@ Here is a mini photo gallery of the table and benches setup in our theatre room.
 {% include html-sxs.html img2="IMG_0693.jpeg" img1="IMG_0691.jpeg" %}
 
 {% include clear-float.html %}
-
 ## The Video
 
 {% include embed/video.html src="IMG_0695.mp4" muted = true title = "Walnut Table - 180&deg; View" poster = "thumbnails/IMG_0695.jpeg"%}
 
+{% comment %}
 ## Carousel
 {% include carousel.html images="IMG_0693.jpeg, IMG_0659.jpeg, IMG_0656.jpeg, IMG_0634.jpeg, IMG_0516.jpeg, thumbnails/IMG_0695.jpeg" %}
+
+## Swiper
+{% include swiper.html images="IMG_0693.jpeg, IMG_0659.jpeg, IMG_0656.jpeg, IMG_0634.jpeg, IMG_0516.jpeg, thumbnails/IMG_0695.jpeg" %}
+{% endcomment %}
 
 ## Materials
 
