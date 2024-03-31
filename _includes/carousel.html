@@ -1,14 +1,25 @@
 
 {% assign images = include.images %}
 {% assign images = images | split: ',' %}
-
+{% assign captions = include.captions %}
 <div id="bootstrap-gallery-carousel" class="carousel slide">
+    <ol class="carousel-indicators" style="margin-bottom: -2rem;">
+        {% for image in images %}
+            <button type="button" data-bs-target="#bootstrap-gallery-carousel" data-bs-slide-to="{{ forloop.index0 }}" class{% if forloop.first %}="active"{% endif %}></button>
+        {% endfor %}
+    </ol>
     <div class="carousel-inner">
         {% for image in images %}
-        {% assign imagef = image | strip %}
-        <div class="carousel-item {% if forloop.first %}active{% endif %}">
-            <img src="{{ imagef }}" class="lg-item" alt="{{ imagef }}" loading="lazy"/>
-        </div>
+            {% assign imageFile = image | strip %}
+            {% assign datetaken =  site.data.img-info[imageFile].datetaken  | date: "%b %-d, %Y" %}
+            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                <img src="{{ imageFile }}" class="d-block lg-item" alt="{{ imageFile }}" loading="lazy"/>
+                {% if captions %}
+                    <div class="carousel-caption d-none d-md-block inline-gallery-captions">
+                        <h4>{{ site.data.img-info[imageFile].title }}</h4><p>{{ datetaken }}</p>
+                    </div>
+                {% endif %}
+            </div>
         {% endfor %}
     </div>
     <button
