@@ -3,19 +3,19 @@
 {% assign images = images | split: ',' %}
 {% assign captions = include.captions %}
 <div id="bootstrap-gallery-carousel" class="carousel slide">
-    <ol class="carousel-indicators" style="margin-bottom: -2rem;">
+    <div class="carousel-indicators" style="margin-bottom: -2rem;">
         {% for image in images %}
             <button type="button" data-bs-target="#bootstrap-gallery-carousel" data-bs-slide-to="{{ forloop.index0 }}" class{% if forloop.first %}="active"{% endif %}></button>
         {% endfor %}
-    </ol>
+    </div>
     <div class="carousel-inner">
         {% for image in images %}
             {% assign imageFile = image | strip %}
             {% assign datetaken =  site.data.img-info[imageFile].datetaken  | date: "%b %-d, %Y" %}
             <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                <img src="{{ imageFile }}" class="d-block lg-item" alt="{{ imageFile }}" loading="lazy"/>
+                <img src="{{ imageFile }}" class="d-block sjg-item" alt="{{ imageFile }}" loading="lazy"/>
                 {% if captions %}
-                    <div class="carousel-caption d-none d-md-block inline-gallery-captions">
+                    <div class="carousel-caption d-none d-md-block">
                         <h4>{{ site.data.img-info[imageFile].title }}</h4><p>{{ datetaken }}</p>
                     </div>
                 {% endif %}
@@ -27,6 +27,7 @@
         type="button"
         data-bs-target="#bootstrap-gallery-carousel"
         data-bs-slide="prev"
+        style="color: var(--text-color);"
     >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -36,6 +37,7 @@
         type="button"
         data-bs-target="#bootstrap-gallery-carousel"
         data-bs-slide="next"
+        style="color: var(--text-color);"
     >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
