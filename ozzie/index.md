@@ -1,5 +1,5 @@
 ---
-layout: nil
+layout: null
 title: Ozzie
 redirect_from: 
   - /Ozzie
@@ -16,7 +16,7 @@ redirect_from:
         overflow: hidden;
         padding-top: 56.25%; /* for 16:9 aspect ratio change this to whatever aspect ratio you want */
     }
-    
+
     .responsive-iframe-container iframe {
         position: absolute;
         top: 0;
