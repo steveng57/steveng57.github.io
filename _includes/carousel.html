@@ -3,7 +3,7 @@
 {% assign images = images | split: ',' %}
 {% assign captions = include.captions %}
 <div id="bootstrap-gallery-carousel" class="carousel slide">
-    <div class="carousel-indicators" style="margin-bottom: -2rem;">
+    <div class="carousel-indicators">
         {% for image in images %}
             <button type="button" data-bs-target="#bootstrap-gallery-carousel" data-bs-slide-to="{{ forloop.index0 }}" class{% if forloop.first %}="active"{% endif %}></button>
         {% endfor %}
@@ -43,4 +43,4 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
-
+<br>

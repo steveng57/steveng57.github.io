@@ -95,10 +95,12 @@ Here is a mini photo gallery of the table and benches setup in our theatre room.
 
 {% include embed/video.html src="IMG_0695.mp4" muted = true title = "Walnut Table - 180&deg; View" poster = "thumbnails/IMG_0695.jpeg"%}
 
+{% if jekyll.environment == "development" %}
+
 ## Carousel
 {% include carousel.html images="IMG_0693.jpeg, IMG_0659.jpeg, IMG_0656.jpeg, IMG_0634.jpeg, IMG_0516.jpeg, thumbnails/IMG_0695.jpeg" captions=true %}
 
-
+{% endif %}
 {% comment %}
 
 ## Swiper
