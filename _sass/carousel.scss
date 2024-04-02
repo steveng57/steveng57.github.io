@@ -43,6 +43,32 @@
     }
 }
 
+// Carousel controls
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: var(--sidebar-active-color) !important;
+    width: 50px; /* your desired width */
+    opacity: 0.8; /* your desired opacity */
+    font-size: 2rem;
+    
+    &:hover {
+        opacity: 1;
+        color: var(--sidebar-active-color);
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+}
+
 .carousel-indicators {
     margin-bottom: -2rem;
+    [data-bs-target] {
+            background-color: var(--site-title-color);
+    }         
+    .active {
+        background-color: var(--sidebar-active-color); /* your desired color */
+    }
 }
