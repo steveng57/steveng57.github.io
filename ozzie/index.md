@@ -29,3 +29,5 @@ redirect_from:
 <div class="responsive-iframe-container">
     <iframe src="https://www.youtube.com/embed/dFEUcog2Des" title="0zzie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
 </div>
+
+{% include goatcounter.html %}
