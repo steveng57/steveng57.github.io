@@ -1,6 +1,5 @@
 
-{% assign images = include.images %}
-{% assign images = images | split: ',' %}
+{% assign images = include.images | split: ',' %}
 {% assign captions = include.captions %}
 <div id="bootstrap-gallery-carousel" class="carousel slide">
     <div class="carousel-indicators">
