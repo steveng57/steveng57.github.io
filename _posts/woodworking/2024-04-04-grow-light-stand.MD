@@ -37,6 +37,8 @@ It better be.
 
 It's also bolted to the studs in the back, cause I am super paranoid now.  It was quite the mess.
 
+Each of the four outer support posts had to be individually cut and fit to length.  I think I mentioned the horrible unevenness of basement floors in a previous post.  Yes...yes I did.  [Theatre Kitchen]({% post_url /woodworking/2022-01-14-theatre-kitchen %})
+
 {% include clear-float.html break=0 %}
 
 ## In Production
