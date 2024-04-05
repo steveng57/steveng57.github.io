@@ -1,7 +1,12 @@
 ---
 layout: nil
 ---
+{% include lang.html %}
+<html lang="{{ lang }}">
+
 <head>
+    <title>{{ page.title }}</title>
+    <meta name='description' content="Steven Goulet's Image Gallery from his photo blog.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css" integrity="sha512-nUqPe0+ak577sKSMThGcKJauRI7ENhKC2FQAOOmdyCYSrUh0GnwLsZNYqwilpMmplN+3nO3zso8CWUgu33BDag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
@@ -100,3 +105,4 @@ inlineGallery.openGallery(slideIndex);
 
 
 </script>
+</html>

@@ -1,7 +1,11 @@
 ---
 layout: page
 ---
+{% include lang.html %}
+<html lang="{{ lang }}">
 <head>
+    <title>{{ page.title }}</title>
+    <meta name='description' content="Steven Goulet's Original Image Gallery from his photo blog.">
     <script type="text/javascript" src="/assets/js/gallery.js"></script>
 </head>
 {% include head-mypost.html %}
@@ -169,3 +173,4 @@ layout: page
 </div>
 {% endif %}
 </body>
+</html>
