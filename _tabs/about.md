@@ -9,7 +9,7 @@ image:
     alt: The most precious thing in my shop.  A gift from the family.
 img_path: /assets/img/about
 date: 2024-01-28 10:59:55 -0500
-last_modified_at: 2024-03-14 19:00:51 -0500
+last_modified_at: 2024-04-04 23:56:30 -0500
 ---
 
 {% include header.html %}
@@ -19,20 +19,29 @@ Welcome to my photo blog of various "maker" things I am up to, mostly woodworkin
 
 ## About this site
 
+### Home Page
 The [Home Page]({% link index.html %}) is an inverse chronological listing of the various projects I have taken on.  As you go further back in time, the projects get a little more primitive...not that my more recent things are perfect, but you learn a lot over time in this craft.  Some of those learnings I have actually managed to apply in my more recent efforts.
 
 In the early days, I did not take many pictures of the shop or the projects as they were in progress, so a lot of the pics will be of the finished product.  I will be taking more "under construction" photos as time progresses, hopefully that will make the posts more interesting to those who like a bit of the "behind-the-scenes" thing.
+
+### Image Gallery
 
 The [Image Gallery]({% link _tabs/gallery.md %}) is an alphabetical listing of all the images in all the posts on the site.  This is meant to be a purely visual experience, and it's a fun way to go throught things. 
 
 > **Note:** If you see something of interest in the image gallery, you can click on the **image caption** to drill down into the original post.
 {: .prompt-info}
 
+### Timeline
+
 For an interesting layout of the posts in chronological order, be sure to check out the [Timeline View.]({% link _tabs/timeline.md %})  The "Posted" date at the top of each blog post is actually the rough date of when the project took place, and this view is sorted by that timestamp.
+
+### Categories
 
 The [Categories]({% link _tabs/categories.md %}) link shows the posts group by their categories and sub-categories.  I am just getting these categories sorted as of this writing.  For now, there are two major categories: [Woodworking](/categories/woodworking), which is where the vast majority of posts exist, and [Home & Garden](/categories/home-garden), which only has a single post right now, but I expect more to go there as things progress.
 
-The [Tags]({% link _tabs/tags.md %}) links will display a tag wall splattered with all tags from all posts.  Click on a random one to see what fun that brings.
+### Tags
+
+The [Tags]({% link _tabs/tags.md %}) link will display a _tag wall_ splattered with every tag from every post.  Click on a random one to see what fun that brings.
 
 To all the fans of this website, pictured below, please be [let me know](mailto:steveng57@outlook.com) if you find any bugs or other inaccuracies.  This is very much a work in progress.
 
