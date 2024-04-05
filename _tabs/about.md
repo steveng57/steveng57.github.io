@@ -23,21 +23,24 @@ Welcome to my photo blog of various "maker" things I am up to, mostly woodworkin
 The [Home Page]({% link index.html %}) is an inverse chronological listing of the various projects I have taken on.  As you go further back in time, the projects get a little more primitive...not that my more recent things are perfect, but you learn a lot over time in this craft.  Some of those learnings I have actually managed to apply in my more recent efforts.
 
 In the early days, I did not take many pictures of the shop or the projects as they were in progress, so a lot of the pics will be of the finished product.  I will be taking more "under construction" photos as time progresses, hopefully that will make the posts more interesting to those who like a bit of the "behind-the-scenes" thing.
+{: .sjg-br}
 
 ### Image Gallery
 
 The [Image Gallery]({% link _tabs/gallery.md %}) is an alphabetical listing of all the images in all the posts on the site.  This is meant to be a purely visual experience, and it's a fun way to go throught things. 
 
 > **Note:** If you see something of interest in the image gallery, you can click on the **image caption** to drill down into the original post.
-{: .prompt-info}
+{: .prompt-info .sjg-br}
 
 ### Timeline
 
 For an interesting layout of the posts in chronological order, be sure to check out the [Timeline View.]({% link _tabs/timeline.md %})  The "Posted" date at the top of each blog post is actually the rough date of when the project took place, and this view is sorted by that timestamp.
+{: .sjg-br}
 
 ### Categories
 
 The [Categories]({% link _tabs/categories.md %}) link shows the posts group by their categories and sub-categories.  I am just getting these categories sorted as of this writing.  For now, there are two major categories: [Woodworking](/categories/woodworking), which is where the vast majority of posts exist, and [Home & Garden](/categories/home-garden), which only has a single post right now, but I expect more to go there as things progress.
+{: .sjg-br}
 
 ### Tags
 
