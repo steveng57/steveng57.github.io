@@ -27,7 +27,7 @@ The [Image Gallery]({% link _tabs/gallery.md %}) is an alphabetical listing of a
 
 For an interesting layout of the posts in chronological order, be sure to check out the [Timeline View.]({% link _tabs/timeline.md %})  The "Posted" date at the top of each blog post is actually the rough date of when the project took place, and this view is sorted by that timestamp.
 
-The [Categories]({% link _tabs/categories.md %}) link shows the posts group by their categories and sub-categories.  I am just getting these categories sorted as of this writing.
+The [Categories]({% link _tabs/categories.md %}) link shows the posts group by their categories and sub-categories.  I am just getting these categories sorted as of this writing.  For now, there are two major categories: [Woodworking](/categories/woodworking), which is where the vast majority of posts exist, and [Home & Garden](/categories/home-garden), which only has a couple of posts right now, but I expect more to go there as things progress.
 
 The [Tags]({% link _tabs/tags.md %}) links will display a tag wall splattered with all tags from all posts.  Click on a random one to see what fun that brings.
 

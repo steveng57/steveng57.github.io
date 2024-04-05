@@ -26,18 +26,21 @@ layout: nil
 
 var dynamicImages = [
     {% for image in imageFiles %}
-        {% assign postname = image.path | replace: '/tinyfiles', '' | replace: albumfolder, '' | replace: image.name, '' | replace: '/', '' | replace: '-', ' ' %}
-        {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
-        {% assign datetaken =  site.data.img-info[image.name].datetaken  | date: "%b %-d, %Y" %}
-    {
-        'src': '{{ image.path | replace: "/tinyfiles", "" }}',
-        'thumb': '{{ image.path }}',
-        'href': '{{ redirect }}',
-        'width': '{{ site.data.img-info[image.name].width }}',
-        'height': '{{ site.data.img-info[image.name].height }}',
-        'slideName': '{{ image.name }}',
-        'subHtml': "<div class='inline-gallery-captions lightGallery-captions'><a href='{{ redirect }}'><h4>{{ site.data.img-info[image.name].title }}</h4><p>{{ datetaken }}</p></a></div>"
-    },
+        {% assign first_char = image.name | slice: 0 %}
+        {% if first_char != 'x' %}
+            {% assign postname = image.path | replace: '/tinyfiles', '' | replace: albumfolder, '' | replace: image.name, '' | replace: '/', '' | replace: '-', ' ' %}
+            {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
+            {% assign datetaken =  site.data.img-info[image.name].datetaken  | date: "%b %-d, %Y" %}
+            {
+                'src': '{{ image.path | replace: "/tinyfiles", "" }}',
+                'thumb': '{{ image.path }}',
+                'href': '{{ redirect }}',
+                'width': '{{ site.data.img-info[image.name].width }}',
+                'height': '{{ site.data.img-info[image.name].height }}',
+                'slideName': '{{ image.name }}',
+                'subHtml': "<div class='inline-gallery-captions lightGallery-captions'><a href='{{ redirect }}'><h4>{{ site.data.img-info[image.name].title }}</h4><p>{{ datetaken }}</p></a></div>"
+            },
+        {% endif %}
     {% endfor %}
 ];
 
