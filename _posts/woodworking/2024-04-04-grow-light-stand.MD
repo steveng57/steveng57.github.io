@@ -4,7 +4,7 @@ title: Grow Light Stand
 date: 2024-04-04 21:53:37 -0500
 last_modified_at: 2024-04-04 21:53:53 -0500
 categories: [Home & Garden, Greenhouse]
-tags: [Grow Light, Stand]
+tags: [Grow Light, Stands]
 image:
   path: /thumbnails/IMG_0866.jpeg
   alt: Nature abhors a vacuum
