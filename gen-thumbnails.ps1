@@ -85,5 +85,5 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
 
 # Call the function with the specified folder path
 $folderPath = ".\assets\img\posts"
-GenerateThumbnails $folderPath $true
+GenerateThumbnails $folderPath $false
 
