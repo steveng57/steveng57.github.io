@@ -25,7 +25,7 @@ In the early days, I did not take many pictures of the shop or the projects as t
 
 The [Image Gallery]({% link _tabs/gallery.md %}) is an alphabetical listing of all the images in all the posts on the site.  This is meant to be a purely visual experience, and it's a fun way to go throught things. 
 
-> **Note:** If you want more details on something of interest in the image gallery, you can click on the **image caption** to drill down into the original post.
+> **Note:** If you see something of interest in the image gallery, you can click on the **image caption** to drill down into the original post.
 {: .prompt-info}
 
 For an interesting layout of the posts in chronological order, be sure to check out the [Timeline View.]({% link _tabs/timeline.md %})  The "Posted" date at the top of each blog post is actually the rough date of when the project took place, and this view is sorted by that timestamp.
