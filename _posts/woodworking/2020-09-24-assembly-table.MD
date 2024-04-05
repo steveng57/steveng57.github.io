@@ -55,7 +55,7 @@ The pull-out shelves were another project unto themselves. There is a lot of ext
 
 The MDF top was yet another whole project. The 4x8 sheet of MDF was used to create an MFT (Multi-Function Table) table, in the style of Festool MFT/3, with 20mm diameter holes spaced 96mm apart. There are 288 of these holes. Let me say that again, **there are 288 of them!** I know this because I drilled each and every one of them. A smarter person would have gotten them drilled on someone's CNC machine, but I don't know anyone that has one of those, and I haven't added it to my shop yet. Yet.
 
-Anyway, there is a special jig you can get from {{ site.data.links.leevalley }} called the [Mk.II Parf Guide Drilling System](https://www.leevalley.com/en-ca/shop/tools/jigs-guides-and-fixtures/110468-mk-ii-parf-guide-drilling-system?item=58B3996){: target='\_blank'} which lets you drill the holes with perfect spacing and squareness. It is very cool.
+Anyway, there is a special jig you can get from {{ site.data.links.leevalley }} called the [Mk.II Parf Guide Drilling System](https://www.leevalley.com/en-ca/shop/tools/jigs-guides-and-fixtures/110468-mk-ii-parf-guide-drilling-system?item=58B3996){{ site.tb }} which lets you drill the holes with perfect spacing and squareness. It is very cool.
 
 {% include html-side.html img="20201001_194851.jpeg" %}
 

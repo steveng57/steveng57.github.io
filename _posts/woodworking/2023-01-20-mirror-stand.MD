@@ -37,7 +37,7 @@ The photo doesn't show it very well, but it sparkles. Trust me.
 
 ### Bling
 
-The process was similar for the _Bling_ side of the box, but I used a single-line-font specially selected from [Single Line Fonts](https://www.singlelinefonts.com){: target="\_blank"}. This site has a bunch of cool fonts that work well with these kinds of projects, all at reasonable price.
+The process was similar for the _Bling_ side of the box, but I used a single-line-font specially selected from [Single Line Fonts](https://www.singlelinefonts.com){{ site.tb }}. This site has a bunch of cool fonts that work well with these kinds of projects, all at reasonable price.
 {% include clear-float.html %}
 
 ## Badda Boom Badda Bling
