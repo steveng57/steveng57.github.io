@@ -52,7 +52,7 @@ To all the fans of this website, pictured below, please be [let me know](mailto:
 
 I have been focussing more and more on _maker_ type things, including woodworking for the last decade or so. While woodworking is my primary focus, I also like to include other things...anything high tech or gadgety will do quite nicely.  Also fair game are life-hacks, yard / garden / house projects and other _maker_ things...but mostly woodworking.
 
-Sometime in late 2016, I started to setup a workshop in the basement.  Retirement was around the corner, and my one of my father's favorite wisdoms was to _"retire to something, don't retire from something"_.  I could not agree more.
+Sometime in late 2016, I started to setup a workshop in the basement.  Retirement was around the corner, and one of my father's favorite wisdoms was to _"retire to something, don't retire from something"_.  My father is very wise.
 
 I live in a rural suburb of Ottawa called Manotick with my wife Debbie and two boys, Riley and Ozzie.
 
