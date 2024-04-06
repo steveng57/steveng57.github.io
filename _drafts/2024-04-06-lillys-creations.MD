@@ -2,10 +2,10 @@
 author: sjg
 layout: post
 title: Lilly's Creations
-date: 2024-03-22 18:32:00 -0500
-last_modified_at: 2024-03-22 22:16:09 -0500
+date: 2024-04-06 11:08:52 -0400
+last_modified_at: 2024-04-06 11:08:52 -0400
 categories: [Woodworking, Home Decor]
-tags: [Woodworking, Walnut, Pencil Holder, Tray, Epxoy, Inlay]
+tags: [Woodworking, Walnut, Pencil Holder, Tray, Epoxy, Inlay]
 image:
   path: /thumbnails/IMG_0693.jpeg
   alt: Lilly's Creations Pencil Holder
