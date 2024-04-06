@@ -3,7 +3,7 @@ layout: post
 title: Raised Beds
 date: 2022-06-28 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
-categories: [Woodworking, Furniture]
+categories: [Home & Garden, Greenhouse]
 tags: [Woodworking, Raised Bed, Garden, Cedar, Outdoors, Furniture]
 image:
   path: /thumbnails/20220628_125950.jpeg
@@ -11,7 +11,7 @@ image:
 img_path: "/assets/img/posts/raised-beds"
 ---
 
-These were a big first. Cedar Raised Beds for outback. These two were placed outside, for growing tomatoes and things. I made three more (not pictured here) that were eventually placed in our small greenhouse out back.
+These were a big first. Cedar Raised Beds for out back. These two were placed outside by the greenhouse, for growing tomatoes and things. I made three more (not pictured here) that were eventually placed in our small greenhouse out back.
 
 {% include head-mypost.html %}
 
@@ -47,6 +47,6 @@ The neat thing about this stuff is that they have a pretty broad spectrum of col
 - {{ site.data.links.kreg }} pocket screws
 - Titebond III waterproof glue
 - [Cutek Extreme]{:target="\_blank"}
-{: .sjg-list }
+  {: .sjg-list }
 
 [Cutek Extreme]: https://wood-source.com/product/cutek-extreme

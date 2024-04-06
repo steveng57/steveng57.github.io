@@ -27,9 +27,9 @@ In the early days, I did not take many pictures of the shop or the projects as t
 
 ### Image Gallery
 
-The [Image Gallery]({% link _tabs/gallery.md %}) is an alphabetical listing of all the images in all the posts on the site.  This is meant to be a purely visual experience, and it's a fun way to go throught things. 
+The [Image Gallery]({% link _tabs/gallery.md %}) is an alphabetical listing of all the images in all the posts on the site.  This is meant to be a purely visual experience, and it's a fun way to go through things. 
 
-> **Note:** If you see something of interest in the image gallery, you can click on the **image caption** to drill down into the original post.
+> **Note:** If you see something of interest in the image gallery, you can click on the **image caption** to drill down into the original post.  Also note that if you are viewing on a mobile device, an up or down swipe can close the gallery.  That way you don't have to hunt for the tiny "close" button.
 {: .prompt-info .sjg-br}
 
 ### Timeline
@@ -39,12 +39,13 @@ For an interesting layout of the posts in chronological order, be sure to check 
 
 ### Categories
 
-The [Categories]({% link _tabs/categories.md %}) link shows the posts group by their categories and sub-categories.  I am just getting these categories sorted as of this writing.  For now, there are two major categories: [Woodworking](/categories/woodworking), which is where the vast majority of posts exist, and [Home & Garden](/categories/home-garden), which only has a single post right now, but I expect more to go there as things progress.
+The [Categories]({% link _tabs/categories.md %}) link shows the posts group by their categories and sub-categories.  I am just getting these categories sorted as of this writing.  For now, there are two major categories: [Woodworking](/categories/woodworking), which is where the vast majority of posts exist, and [Home & Garden](/categories/home-garden), which only has a couple of posts right now, but I expect more to go there as things progress.
 {: .sjg-br}
 
 ### Tags
 
 The [Tags]({% link _tabs/tags.md %}) link will display a _tag wall_ splattered with every tag from every post.  Click on a random one to see what fun that brings.
+{: .sjg-br}
 
 To all the fans of this website, pictured below, please be [let me know](mailto:steveng57@outlook.com) if you find any bugs or other inaccuracies.  This is very much a work in progress.
 
