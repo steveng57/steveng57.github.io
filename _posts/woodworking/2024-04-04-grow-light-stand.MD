@@ -43,7 +43,7 @@ Each of the four outer support posts had to be individually cut and fit to lengt
 
 ## In Production
 
-All seeded and seated.  The grow light stays on for about 16 hours a day, giving them a good head start.  
+All seeded and seated.  The grow light stays on for about 16 hours a day, giving them a good head start.  It uses low power LEDs, so power consumptions isn't too bad.
 
 Dwarf Curled Scotch Kale on the bottom, and Grand Rapids Lettuce on the top.  Look, I don't make the names.
 
