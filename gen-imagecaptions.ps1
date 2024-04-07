@@ -72,14 +72,13 @@ function GenerateImageCaptions($folderPath) {
          #$bytes = [System.Text.Encoding]::UTF8.GetBytes($lqip)
          #$base64 = [System.Convert]::ToBase64String($bytes)
 
-         # Add the properties to the hashtable
          $metadata[$file] = @{
             'title' = $title
             'subject' = $subject
             'datetaken' = $dateTaken
             'width' = $width
             'height' = $height
-            #'lqip' = $base64
+            'gallery' = $file[0] -ne "x"
          }
       }
    }

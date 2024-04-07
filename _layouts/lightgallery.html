@@ -31,8 +31,7 @@ layout: nil
 
 var dynamicImages = [
     {% for image in imageFiles %}
-        {% assign first_char = image.name | slice: 0 %}
-        {% if first_char != 'x' %}
+        {% if site.data.img-info[image.name].gallery %}
             {% assign postname = image.path | replace: '/tinyfiles', '' | replace: albumfolder, '' | replace: image.name, '' | replace: '/', '' | replace: '-', ' ' %}
             {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
             {% assign datetaken =  site.data.img-info[image.name].datetaken  | date: "%b %-d, %Y" %}
