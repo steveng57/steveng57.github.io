@@ -16,7 +16,6 @@ layout: page
 {% assign show_captions = page.captions %}
 {% assign templateImageFiles = site.static_files | where_exp: "item", "item.path contains 'thumbnails'" %}
 {% assign imageFiles = templateImageFiles | where_exp: "item", "item.path contains albumfolder" %}
-{% assign imageFiles = imageFiles | where_exp: "item", "item.name[0] != 'x'" %}
 {% assign gallery_images_per_page = 15 %}
 
 {% assign last_post_name = '' %}
