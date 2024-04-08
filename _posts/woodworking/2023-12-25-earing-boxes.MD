@@ -55,7 +55,7 @@ Here they are, ready and waiting for the big day.
 ## In Position
 
 All filled with all kinds of earings. Looks like I might have to make more!
-{% include html-side.html img="earing-box-01.jpeg" align="center-wide" %}
+{% include html-side.html img="xearing-box-01.jpeg" align="center-wide" %}
 {% include clear-float.html break = 1 %}
 
 {% include html-side.html img="earings-from-top.jpeg" align="center-wide" %}

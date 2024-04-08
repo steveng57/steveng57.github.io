@@ -527,14 +527,6 @@
     "subject": "The Flowers",
     "title": "The Flowers"
   },
-  "earing-box-01.jpeg": {
-    "gallery": true,
-    "height": 1536,
-    "datetaken": "2023-12-22T01:14:00",
-    "width": 2048,
-    "subject": "Cozy Earings All Tucked In",
-    "title": "Cozy Earings All Tucked In"
-  },
   "20191006_210910.jpeg": {
     "gallery": true,
     "height": 2048,
@@ -1286,6 +1278,14 @@
     "width": 2048,
     "subject": "Complete with plants installed",
     "title": "Complete with plants installed"
+  },
+  "xearing-box-01.jpeg": {
+    "gallery": false,
+    "height": 1536,
+    "datetaken": "2023-12-22T01:14:00",
+    "width": 2048,
+    "subject": "Cozy Earings All Tucked In",
+    "title": "Cozy Earings All Tucked In"
   },
   "20220328_071254.jpeg": {
     "gallery": true,
