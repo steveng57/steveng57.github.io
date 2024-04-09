@@ -16,6 +16,11 @@ GenerateThumbnails -folderPath "C:\Images" -deleteExisting $true
 Generates thumbnails for images in the "C:\Images" folder and deletes any existing thumbnails.
 
 #>
+param(
+    [string]$folderPath = ".\assets\img\posts",
+    [bool]$deleteExisting = $false
+)
+
 function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
 
    # Get all the subfolders
@@ -83,7 +88,6 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
 
 }
 
-# Call the function with the specified folder path
-$folderPath = ".\assets\img\posts"
-GenerateThumbnails $folderPath $false
+# Call the function with the specified folder path$folderPath = ".\assets\img\posts"
+GenerateThumbnails $folderPath $deleteExisting
 

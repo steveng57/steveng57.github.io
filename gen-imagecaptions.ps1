@@ -16,6 +16,11 @@ GenerateThumbnails -folderPath "C:\Images" -deleteExisting $true
 Generates thumbnails for images in the "C:\Images" folder and deletes any existing thumbnails.
 
 #>
+
+param(
+    [string]$folderPath = ".\assets\img\posts"
+)
+
 function GenerateImageCaptions($folderPath) {
 
    # Create a Shell.Application object
@@ -95,6 +100,5 @@ function GenerateImageCaptions($folderPath) {
 }
 
 # Call the function with the specified folder path
-$folderPath = ".\assets\img\posts"
 GenerateImageCaptions $folderPath
 
