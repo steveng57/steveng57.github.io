@@ -72,7 +72,7 @@ Band clamps are great for mitred boxes as the put the force on the corner joints
 
 ### Lilly's Creations
 
-A subtle epoxy inlay done here, and coated with {{ site.data.links.rubio }}.
+A subtle epoxy inlay done here, and coated with {{ site.data.links.rubio }} to bring out the richness of the walnut.
 
 {% include clear-float.html break=1%}
 
