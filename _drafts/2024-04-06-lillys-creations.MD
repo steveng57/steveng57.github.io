@@ -12,9 +12,9 @@ image:
 img_path: /assets/img/posts/lillys-creations
 ---
 
-In this project, I created a companion piece for the [walnut table]({% post_url /woodworking/2024-01-22-walnut-table %}) that I built in early 2024.  It's not a big piece, but there is some detail of interest, like the engraving and the dividers.
+In this project, I created a companion piece for the [Walnut Table]({% post_url /woodworking/2024-01-22-walnut-table %}) that I built in early 2024.  It's not a big piece, but there is some detail of interest, like the engraving and the dividers.
 
-It is also another _follow the grain_ or _grain matching_ project, where you cut the pieces from the original timber in such a way that the grain flows all the way around the box.  It kinda worked here, but not totally.  Unfortunately the grain on this piece was pretty crazy, going in all different kinds of directions, and this technique only works with relatively straight grained boards.  Still, it made the box look better than it otherwise would have, so not a total waste of time.
+It is also another _follow the grain_ or _grain matching_ project, where you cut the pieces from the original timber in such a way that the grain flows all the way around the box, like the [Keepsake Box]({% post_url /woodworking/2023-04-13-keepsake-box %}) that I made for Debbie's birthday.  It kinda worked here, but not totally.  Unfortunately the grain on this piece was pretty crazy, going in all different kinds of directions, and this technique only works with relatively straight grained boards.  Still, it made the box look better than it otherwise would have, so not a total waste of time.
 
 {% include head-mypost.html %}
 
@@ -34,7 +34,9 @@ I chose this piece because it was wide enough to slice in half and still have so
 
 ### The Cut
 
-So I made all the cuts, and put it back together with each piece in its original location.  As you can see, you have to plan and position the cuts well in advance, and make sure you do the mitres right, else it's all for naught.
+So I made all the cuts, and put it back together with each piece in its original location.
+
+As you can see, you have to plan and position the cuts well in advance, and make sure you do the mitres right, else it's all for naught.
 
 {% include clear-float.html  break=1 %}
 
@@ -44,6 +46,8 @@ So I made all the cuts, and put it back together with each piece in its original
 The carve was done with the {{ site.data.links.origin }}, and it turned out pretty well.
 
 Only complication was that I had to make sure that didn't damage the fine point on the mitred edges when locking the board down for the cut.
+
+The font is called _Satisfy_, which is oddly satisfying.
 
 {% include clear-float.html break=1%}
 
@@ -78,5 +82,4 @@ A subtle epoxy inlay done here, and coated with {{ site.data.links.rubio }}.
 - Walnut from {{ site.data.links.kjp }}
 - {{ site.data.links.rubio }} Walnut Oil 2C for finish
 - {{ site.data.links.chillepoxy }} for the inlay
-
 {: .sjg-list }
