@@ -11,7 +11,7 @@ image:
 img_path: "/assets/img/posts/extension-table"
 ---
 
-This was my first project using Ash. It's a very nice hardwood, similar to Red Oak but with a little less grain, but not totally closed pores.
+This was my first project using Ash. It's a very nice hardwood, similar to Red Oak but with a little less grain, though not totally closed pores.
 
 {% include head-mypost.html %}
 
