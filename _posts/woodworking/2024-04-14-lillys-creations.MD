@@ -16,7 +16,7 @@ In this project, I created a companion piece for the [Walnut Table]({% post_url 
 
 It is also another _follow-the-grain_ or _grain-matching_ project, where you cut the pieces from the original timber in such a way that the grain flows all the way around the box, like the [Keepsake Box]({% post_url /woodworking/2023-04-13-keepsake-box %}) that I made for Debbie's birthday.  It kinda worked here, but not totally.  Unfortunately the grain on this piece was pretty crazy, going in all different kinds of directions, and this technique only works with relatively straight grained boards.  
 
-Still, it made the box look better than it otherwise would have, so not a total waste of time.  You can see the effect in the front-left corner of the box, dark and light grain stripes aligning somewhat, with the dark swirl at the bottom.
+Still, it made the box look better than it otherwise would have, so not a total waste of time.  You can see the effect in the above image at the front-left corner of the box, dark and light grain stripes aligning somewhat, with the dark swirl at the bottom.
 
 {% include head-mypost.html %}
 
