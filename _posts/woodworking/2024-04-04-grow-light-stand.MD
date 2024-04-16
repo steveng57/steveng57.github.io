@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grow Light Stand
+title: Grow-light Stand
 date: 2024-04-04 21:53:37 -0400
 last_modified_at: 2024-04-04 21:53:53 -0400
 categories: [Home & Garden, Greenhouse]
