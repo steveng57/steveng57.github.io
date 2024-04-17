@@ -27,7 +27,7 @@ Nice to have a big work surface to spread out. Especially when you are a messy, 
 {% include html-side.html img="IMG_0455.jpeg" align="center-full" %}
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="IMG_0466.jpeg" align="right" %}
+{% include html-side.html img="xIMG_0466.jpeg" align="right" %}
 
 ### Squares
 
