@@ -4,7 +4,7 @@ title: Grow-light Stand
 date: 2024-04-04 21:53:37 -0400
 last_modified_at: 2024-04-04 21:53:53 -0400
 categories: [Home & Garden, Greenhouse]
-tags: [Grow Light, Stands, Greenhouse, Garden]
+tags: [Grow-light, Stands, Greenhouse, Garden]
 image:
   path: /thumbnails/IMG_0866.jpeg
   alt: No, not that kind of grow op!
