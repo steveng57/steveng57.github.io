@@ -31,7 +31,7 @@ To my shock and horror, I made them **the wrong size!** Instead of being the req
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="IMG_0542.jpeg" align="right" %}
+{% include html-side.html img="xIMG_0542.jpeg" align="right" %}
 
 ### Spare Parts
 
@@ -46,7 +46,7 @@ These are still in my shop, awaiting the next project that requires four drawer 
 Installing this on the basement floor was quite a challenge. The floor is not level, not even close. There is about a 40mm (1.5in) drop from one end to the other that I had to shim on the toe-kick. Thankfully, there were quite a few YouTube videos on dealing with this exact problem.
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20220131_222101.jpeg" align="right" %}
+{% include html-side.html img="x20220131_222101.jpeg" align="right" %}
 
 ### The Fridge
 
@@ -68,7 +68,7 @@ I hooked up micro-switches to all the doors and drawers to control them. There i
 
 We scavenged the granite top from our upstairs kitchen remodel and repurposed it down here. It fit almost perfectly, just had to carve off a bit off the end.
 
-{% include html-side.html img="IMG_0541.jpeg" align="center-wide" %}
+{% include html-side.html img="xIMG_0541.jpeg" align="center-wide" %}
 {% include clear-float.html break = 1 %}
 {% include html-side.html img="IMG_0540.jpeg" align="center-wide" %}
 
