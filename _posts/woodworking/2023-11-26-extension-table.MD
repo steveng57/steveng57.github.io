@@ -31,7 +31,7 @@ Mmmm...{{ site.data.links.rubio }} **Chocolate** was the colour used here. Mmmm.
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="IMG_0218.jpeg" align="left" %}
+{% include html-side.html img="xIMG_0218.jpeg" align="left" %}
 
 ### Apron
 
