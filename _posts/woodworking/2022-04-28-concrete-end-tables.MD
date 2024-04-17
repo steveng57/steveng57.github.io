@@ -21,7 +21,7 @@ The concrete I used was a special artisan blend from [Buddy Rhodes]{:target="\_b
 
 ## Under Construction
 
-{% include html-side.html img="20220420_174227.jpeg" align="left" %}
+{% include html-side.html img="x20220420_174227.jpeg" align="left" %}
 
 ### In Fine Form
 
@@ -32,7 +32,7 @@ A neat trick I found on YouTube was to use a bead of black silicone around the s
 The black colouring makes it easier to remove when you are done. Made from spare melamine I had from some old shelving.
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20220420_174306.jpeg" align="right" %}
+{% include html-side.html img="x20220420_174306.jpeg" align="right" %}
 
 ### The Legs
 
@@ -48,7 +48,7 @@ OMG did these turn out **awful**. When I initially poured the tops, I had such h
 In my dream, I had though this was going to be an eggshell white with a few flecks of gray. Boy was I wrong. I looked like some kind of bad Rorschach Inkblot test. Not a happy camper at this point. I had no idea how to fix this.
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20220623_123043.jpeg" align="right" %}
+{% include html-side.html img="x20220623_123043.jpeg" align="right" %}
 
 ### The Fix Is In
 
