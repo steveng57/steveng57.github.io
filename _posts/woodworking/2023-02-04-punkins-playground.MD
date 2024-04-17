@@ -35,7 +35,7 @@ A big piece of 4&#39;x8&#39; Baltic Birch plywood was used as the main surface. 
 
 ## Under Construction - Literally
 
-{% include html-side.html img="IMG_0559.jpeg" align="left" %}
+{% include html-side.html img="xIMG_0559.jpeg" align="left" %}
 
 ### Torsion Box
 
@@ -45,7 +45,7 @@ It basically means that you put 3 to 4 inch strips running down the length and w
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_0558.jpeg" align="right" %}
+{% include html-side.html img="xIMG_0558.jpeg" align="right" %}
 
 ### Funky Legs
 

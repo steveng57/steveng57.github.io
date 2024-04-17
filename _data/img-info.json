@@ -23,14 +23,6 @@
     "title": "Hallway Shelf #2",
     "datetaken": "2024-03-06T14:22:00"
   },
-  "IMG_0558.jpeg": {
-    "width": 1536,
-    "subject": "More Pocket Screws",
-    "gallery": true,
-    "height": 2048,
-    "title": "More Pocket Screws",
-    "datetaken": "2024-02-04T12:41:00"
-  },
   "plant-stands-sketchup.jpeg": {
     "width": 1685,
     "subject": "Plant Stands in Sketchup",
@@ -551,6 +543,14 @@
     "title": "It's got legs!",
     "datetaken": "2024-01-27T21:09:00"
   },
+  "xIMG_0559.jpeg": {
+    "width": 2048,
+    "subject": "Torsion Box Construction",
+    "gallery": false,
+    "height": 1536,
+    "title": "Torsion Box Construction",
+    "datetaken": "2024-02-04T12:43:00"
+  },
   "IMG_0216.jpeg": {
     "width": 1536,
     "subject": "Au Chocolat",
@@ -678,14 +678,6 @@
     "height": 2017,
     "title": "The Paws Classic",
     "datetaken": "2022-02-25T09:19:00"
-  },
-  "IMG_0461.jpeg": {
-    "width": 2048,
-    "subject": "Engravings",
-    "gallery": true,
-    "height": 1067,
-    "title": "Engravings",
-    "datetaken": "2023-12-24T13:15:00"
   },
   "xIMG_0864.jpeg": {
     "width": 2048,
@@ -959,6 +951,14 @@
     "title": "One for Friends",
     "datetaken": "2022-11-22T01:22:00"
   },
+  "xIMG_0558.jpeg": {
+    "width": 1536,
+    "subject": "More Pocket Screws",
+    "gallery": false,
+    "height": 2048,
+    "title": "More Pocket Screws",
+    "datetaken": "2024-02-04T12:41:00"
+  },
   "IMG_0531.jpeg": {
     "width": 1536,
     "subject": "Heater Dolly",
@@ -1127,13 +1127,13 @@
     "title": "Where's my dirt?",
     "datetaken": "2022-06-28T12:59:00"
   },
-  "IMG_0559.jpeg": {
+  "IMG_0461.jpeg": {
     "width": 2048,
-    "subject": "Torsion Box Construction",
+    "subject": "Engravings",
     "gallery": true,
-    "height": 1536,
-    "title": "Torsion Box Construction",
-    "datetaken": "2024-02-04T12:43:00"
+    "height": 1067,
+    "title": "Engravings",
+    "datetaken": "2023-12-24T13:15:00"
   },
   "20221122_113942.jpeg": {
     "width": 2048,
