@@ -191,14 +191,6 @@
     "datetaken": "2024-01-31T12:37:00",
     "subject": "A Strange Piece"
   },
-  "tile-tray.jpeg": {
-    "title": "Tray with Tile Inlay",
-    "gallery": true,
-    "width": 2048,
-    "height": 1536,
-    "datetaken": "2024-01-27T01:27:00",
-    "subject": "Tray with Tile Inlay"
-  },
   "xIMG_0870.jpeg": {
     "title": "Cut the board a certain way",
     "gallery": false,
@@ -254,6 +246,14 @@
     "height": 1917,
     "datetaken": "2023-12-22T01:14:00",
     "subject": "Blingy Bling"
+  },
+  "20210827_212517.jpeg": {
+    "title": "More holes and circles",
+    "gallery": true,
+    "width": 2048,
+    "height": 1536,
+    "datetaken": "2021-08-27T21:25:00",
+    "subject": "More holes and circles"
   },
   "20230720_163408.jpeg": {
     "title": "Engraving",
@@ -383,6 +383,14 @@
     "datetaken": "2023-11-26T12:59:00",
     "subject": "Extension Table"
   },
+  "xIMG_0518.jpeg": {
+    "title": "Dining Decorations",
+    "gallery": false,
+    "width": 2048,
+    "height": 1536,
+    "datetaken": "2024-01-27T21:31:00",
+    "subject": "Dining Decorations"
+  },
   "IMG_0517.jpeg": {
     "title": "Debbie dressed it up nice",
     "gallery": true,
@@ -479,13 +487,13 @@
     "datetaken": "2023-04-05T01:24:00",
     "subject": "Tray Handle Design for Shaper Origin"
   },
-  "20210827_212517.jpeg": {
-    "title": "More holes and circles",
-    "gallery": true,
+  "x-tile-tray.jpeg": {
+    "title": "Tray with Tile Inlay",
+    "gallery": false,
     "width": 2048,
     "height": 1536,
-    "datetaken": "2021-08-27T21:25:00",
-    "subject": "More holes and circles"
+    "datetaken": "2024-01-27T01:27:00",
+    "subject": "Tray with Tile Inlay"
   },
   "20230822_184948.jpeg": {
     "title": "Poplar frames are popular",
@@ -1022,14 +1030,6 @@
     "height": 1536,
     "datetaken": "2023-04-05T14:17:00",
     "subject": "Mitre Stand"
-  },
-  "IMG_0518.jpeg": {
-    "title": "Dining Decorations",
-    "gallery": true,
-    "width": 2048,
-    "height": 1536,
-    "datetaken": "2024-01-27T21:31:00",
-    "subject": "Dining Decorations"
   },
   "20200808_184834.jpeg": {
     "title": "Bad Bad Handle",

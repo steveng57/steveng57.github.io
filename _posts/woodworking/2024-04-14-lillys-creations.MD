@@ -53,6 +53,8 @@ The font is called _Satisfy_, which is oddly satisfying.
 
 {% include clear-float.html break=1%}
 
+## Join and Finish
+
 {% include html-side.html img="xIMG_0901.jpeg" align="right" %}
 ### Glue-up Prep
 
