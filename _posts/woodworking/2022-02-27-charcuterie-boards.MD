@@ -6,7 +6,7 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Kitchen]
 tags: [Woodworking, Charcuterie Board, Kitchen]
 image:
-  path: /thumbnails/20220227_191616.jpeg
+  path: /thumbnails/x20220227_191616.jpeg
   alt: One for Theresa
 img_path: "/assets/img/posts/charcuterie-boards"
 ---

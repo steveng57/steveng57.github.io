@@ -439,6 +439,14 @@
     "datetaken": "2021-04-17T20:09:00",
     "subject": "Needing Vegetation"
   },
+  "x20220227_191616.jpeg": {
+    "title": "One for Theresa",
+    "gallery": false,
+    "width": 2048,
+    "height": 1536,
+    "datetaken": "2022-02-27T19:16:00",
+    "subject": "One for Theresa"
+  },
   "plant-stands-sketchup.jpeg": {
     "title": "Plant Stands in Sketchup",
     "gallery": true,
@@ -798,14 +806,6 @@
     "height": 1536,
     "datetaken": "2021-04-21T21:20:00",
     "subject": "Kiln Dried Pots"
-  },
-  "20200808_184843.jpeg": {
-    "title": "Naughty Handle",
-    "gallery": true,
-    "width": 2048,
-    "height": 1536,
-    "datetaken": "2020-08-08T18:48:00",
-    "subject": ""
   },
   "20201001_193728.jpeg": {
     "title": "Pretty (not for long)",
@@ -1167,14 +1167,6 @@
     "datetaken": "2023-04-05T13:45:00",
     "subject": "In Play"
   },
-  "20220227_191616.jpeg": {
-    "title": "One for Theresa",
-    "gallery": true,
-    "width": 2048,
-    "height": 1536,
-    "datetaken": "2022-02-27T19:16:00",
-    "subject": "One for Theresa"
-  },
   "xIMG_0541.jpeg": {
     "title": "All Done",
     "gallery": false,
@@ -1310,6 +1302,14 @@
     "height": 904,
     "datetaken": "2024-02-14T12:24:00",
     "subject": "Subject"
+  },
+  "x20200808_184843.jpeg": {
+    "title": "Naughty Handle",
+    "gallery": false,
+    "width": 2048,
+    "height": 1536,
+    "datetaken": "2020-08-08T18:48:00",
+    "subject": ""
   },
   "xIMG_0634.jpeg": {
     "title": "Legs.  Lot and lots of legs",
