@@ -4,7 +4,7 @@ title: Theatre Kitchen
 date: 2022-01-14 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Kitchen]
-tags: [Woodworking, Plywood, Cabinets, Red Oak, Kitchen, Dominos, Drawers]
+tags: [Woodworking, Plywood, Cabinets, Red Oak, Kitchen, Dominos, Drawers, LED Lighting]
 image:
   path: /thumbnails/20220114_114921.jpeg
   alt: Where are the drawer fronts?
