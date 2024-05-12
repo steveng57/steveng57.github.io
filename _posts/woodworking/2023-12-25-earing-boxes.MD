@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Earing Boxes
+description: >-
+  In this episode, we see how to make really complicated boxes.  In this case a Christmas gift for someone special.
 date: 2023-12-25 18:32:00 -0500
 last_modified_at: 2024-02-20 11:44:45 -0500
 categories: [Woodworking, Jewelry Boxes]
@@ -8,15 +10,14 @@ tags: [Woodworking, Walnut, Jewelry Boxes, Shaper Origin, Dominos]
 image:
   path: /thumbnails/IMG_0461.jpeg
   alt: Earings Trays - a gift for a wonderful human
-media_subpath: "/assets/img/posts/earing-boxes"
+media_subpath: /assets/img/posts/earing-boxes
 ---
+{% include head-mypost.html %}
 
 I really like making special things for other people. This is a fun example of that. Debbie thought it would be cool to make a set of earing boxes for her sister for Christmas. I could not agree more. This was a first of its kind for me. While I have made a great many boxes in the past, the insert was a whole new kind of thing.
 
-{% include head-mypost.html %}
-
 > **Cool Tool**: The {{ site.data.links.shaper }} was critical here, no way I could make this with just tools. It is truly an amazing machine.
-> {: .prompt-tip }
+{: .prompt-tip }
 
 ## Under Construction
 

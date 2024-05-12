@@ -31,7 +31,7 @@ In the early days, I did not take many pictures of the shop or the projects as t
 The [Image Gallery]({% link _tabs/gallery.md %}) is an alphabetical listing of the best images from all the posts on the site, the top three or four per post. This is meant to be a purely visual experience, and it's a fun way to go through things.
 
 > **Note:** If you see something of interest in the image gallery, you can click on the **image caption** to drill down into the original post. Also note that if you are viewing on a mobile device, an _up or down swipe_ can close the gallery. That way you don't have to hunt for the tiny "close" button.
-> {: .prompt-info .sjg-br}
+{: .prompt-info .sjg-br}
 
 ### Timeline
 

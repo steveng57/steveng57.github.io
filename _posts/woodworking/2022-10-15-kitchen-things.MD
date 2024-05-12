@@ -18,7 +18,7 @@ The footstool and the computer stand get used every day, very cool. Made from po
 {% include head-mypost.html %}
 
 > **Pro tip**: Even when making simple, everyday items, it is cool to add something to give it a little more bling.
-> {: .prompt-tip }
+{: .prompt-tip }
 
 ## Footstool
 

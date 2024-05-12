@@ -17,7 +17,7 @@ When I set out to do this, I hadn't really thought of the complications that are
 {% include head-mypost.html %}
 
 > **Mitre Calculator**: For those who are interested in a really good online mitre cut calculator, here is the one I used: [Compound Angle Calculator]{:target="\_blank"}
-> {: .prompt-tip }
+{: .prompt-tip }
 
 ## Under Construction
 

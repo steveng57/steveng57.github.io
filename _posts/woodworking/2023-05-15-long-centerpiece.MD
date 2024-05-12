@@ -18,7 +18,7 @@ One turned out great, the other...not so much. Read on for details!
 {% include head-mypost.html %}
 
 > **Pro tip**: Wood moves. Sometimes a lot. It bends, twists, warps, cups. It has a mind of its own really, and sometimes just feels uncomfortable in its own skin.
-> {: .prompt-warning }
+{: .prompt-warning }
 
 ## Table Decorations
 
