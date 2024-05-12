@@ -2,7 +2,7 @@
 author: sjg
 layout: post
 title: Walnut Table and Benches
-description: A big project with a lot of walnut.
+description: A big project with a whole lot of walnut.
 date: 2024-02-22 18:32:00 -0500
 last_modified_at: 2024-02-25 18:59:24 -0500
 categories: [Woodworking, Furniture]
