@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Picture Frames
+description: In this episode, I make some shadow frames for some artwork we have in guest bedroom.
 date: 2023-08-22 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Home Decor]
@@ -8,12 +9,11 @@ tags: [Woodworking, Picture Frame, Poplar, Home Decor, Dominos]
 image:
   path: /thumbnails/20230822_191820.jpeg
   alt: The first of many to be sure
-media_subpath: "/assets/img/posts/picture-frames"
+media_subpath: /assets/img/posts/picture-frames
 ---
+{% include head-mypost.html %}
 
 These picture frames are sometimes called "Shadow Boxes" or "Shadow Frames". They really add a lot to the artwork that they frame. I have a bunch more to do, but these are a good start.
-
-{% include head-mypost.html %}
 
 ## Under Construction
 
@@ -56,4 +56,4 @@ The trick to keeping it centred is that if you use 7 cards on the left, then you
 - Poplar from {{ site.data.links.kjp }}
 - Acrylic Paint from {{ site.data.links.michaels }}
 - {{ site.data.links.domino }} for mitre joinery
-  {: .sjg-list }
+{: .sjg-list }

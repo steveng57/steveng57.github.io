@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Serving Trays
+description: In this episode, we experiment with epoxy inlays in difficult spaces. Getting artsy in this one.
 date: 2023-04-20 18:33:00 -0500
 last_modified_at: 2024-02-25 19:11:41 -0500
 categories: [Woodworking, Home Decor]
@@ -11,12 +12,11 @@ image:
   alt: These are FIVE colour epoxy inlays
 media_subpath: /assets/img/posts/serving-trays
 ---
+{% include head-mypost.html %}
 
 I went for a bit of the artsy, rustic look on these. They were a bit tricky, in the sense that with the epoxy inlay in the tray bottom, suddenly decisions about which part to do first become much more important. How do you assemble it, before or after the epoxy? How do you finish it, before or after the epoxy? Answers! I demand answers!
 
 These were created to go with with the [long centerpiece]({% post_url /woodworking/2023-05-15-long-centerpiece %}) that was built about a month later.
-
-{% include head-mypost.html %}
 
 ## The Design
 
@@ -49,4 +49,4 @@ The Flower Tray is where the learnings were applied and turned out better than t
 - Poplar from {{ site.data.links.kjp }}
 - Various coloured epoxies by {{ site.data.links.chillepoxy }}
 - {{ site.data.links.shaper }} to carve the inlays
-  {: .sjg-list }
+{: .sjg-list }

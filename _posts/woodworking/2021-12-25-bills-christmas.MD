@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bill's Christmas Gifts
+description: A notebook computer stand, and a tee-time sign.
 date: 2021-12-25 18:32:00 -0500
 last_modified_at: 2024-03-03 14:56:34 -0500
 categories: [Woodworking, Signs]
@@ -10,10 +11,9 @@ image:
   alt: Golf is a good sign
 media_subpath: /assets/img/posts/bills-christmas
 ---
+{% include head-mypost.html %}
 
 Christmas is a great time to be a maker. Making stuff with your own hands to give to friends and family is the most rewarding thing about the woodworking craft.
-
-{% include head-mypost.html %}
 
 Over tha past few years, the east coast side of the family has decided to have everybody draw the name of another family member to gift to. I drew Bill's name two years in a row, in 2021 and 2022. It was super fun to make these for Bill, because he is an all-round great guy and a wonderful human being. He's the best.
 
@@ -53,4 +53,4 @@ This was a gift to Bill for Christmas 2022.
 - {{ site.data.links.domino }} for the mitre joinery
 - {{ site.data.links.origin }} for the carve
 - {{ site.data.links.rubio }} for both finishes
-  {: .sjg-list }
+{: .sjg-list }

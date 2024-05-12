@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Long Centerpiece
+description: A piece to brighten up our outdoor living spaces.
 date: 2023-05-15 18:32:00 -0500
 last_modified_at: 2024-03-13 12:06:37 -0500
 categories: [Woodworking, Home Decor]
@@ -10,12 +11,11 @@ image:
   alt: Stuff by the Pool
 media_subpath: /assets/img/posts/long-centerpiece
 ---
+{% include head-mypost.html %}
 
 I made a few things for the outdoor area by the pool, just to add some decoration. One was a long centerpiece with some engravings, the other was a couple of small round trays for candles or other decorations. It's probably obvious that they were built to resemble the [serving trays]({% post_url /woodworking/2023-04-20-serving-trays %}) that were made around the same time.
 
 One turned out great, the other...not so much. Read on for details!
-
-{% include head-mypost.html %}
 
 > **Pro tip**: Wood moves. Sometimes a lot. It bends, twists, warps, cups. It has a mind of its own really, and sometimes just feels uncomfortable in its own skin.
 {: .prompt-warning }
@@ -54,4 +54,4 @@ Even though they are sold oak, they still warped quite a bit in the elements. I 
 - {{ site.data.links.rubio }} for the finish
 - The carve was done with the {{ site.data.links.origin }}
 - {{ site.data.links.chillepoxy }} for the inlay
-  {: .sjg-list }
+{: .sjg-list }

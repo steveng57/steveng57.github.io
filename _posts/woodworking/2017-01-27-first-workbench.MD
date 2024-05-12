@@ -1,6 +1,7 @@
 ---
 layout: post
 title: First Workbench
+description:  A small getting-started assembly table.
 date: 2017-01-27 17:56:00 -0500
 last_modified_at: 2024-03-12 10:59:37 -0500
 categories: [Woodworking, Workshop]
@@ -11,10 +12,9 @@ image:
   alt: MDF and 2x4's - pretty simple
 media_subpath: /assets/img/posts/first-workbench
 ---
+{% include head-mypost.html %}
 
 Every shop needs a workbench, and there is a first for everything. This is the first workbench I built in this shop.
-
-{% include head-mypost.html %}
 
 ## Some Background
 
@@ -56,4 +56,4 @@ While it is no longer my primary workbench / assembly table, it still gets a lot
 - {{ site.data.links.kreg }} Clamp Track
 - {{ site.data.links.leevalley}} Mobile Wheels
 - Tung oil (not tongue oil, that would be gross)
-  {: .sjg-list }
+{: .sjg-list }

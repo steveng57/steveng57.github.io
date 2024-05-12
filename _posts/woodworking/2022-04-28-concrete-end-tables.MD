@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Concrete Nested End Tables
+description: >-
+  Introducing a new material to the mix: concrete.
 date: 2022-04-28 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Furniture]
@@ -8,12 +10,11 @@ tags: [Woodworking, Concrete, Table, End Table, Red Oak, Furniture]
 image:
   path: /thumbnails/IMG_0553.jpeg
   alt: Adding a new material to the shop
-media_subpath: "/assets/img/posts/concrete-end-tables"
+media_subpath: /assets/img/posts/concrete-end-tables
 ---
+{% include head-mypost.html %}
 
 I tried something very new with these concrete nested end tables. It ended up in the right place, but it was a bit of a bear to get it there. Working with concrete is _very_ different than working with wood. That might sound obvious but it needs to be said. And my artistic skill with the materials were novice at best. Details below.
-
-{% include head-mypost.html %}
 
 I thought solid wood was heavy until I made this. Moving these requires a warm-up and a good stretch beforehand.
 
@@ -80,4 +81,4 @@ This gets used on a daily basis as a cleaning station for the boys when they com
 - {{ site.data.links.domino }} for joinery
 - {{ site.data.links.rubio }} finish
 - [Buddy Rhodes](https://www.buddyrhodes.com){:target="\_blank"} concrete products
-  {: .sjg-list }
+{: .sjg-list }

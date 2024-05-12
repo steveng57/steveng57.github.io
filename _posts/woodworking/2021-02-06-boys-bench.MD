@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Boys Bench
+description: A crazy custom bench, an experiment really.
 date: 2021-02-06 17:58:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Pets]
@@ -8,12 +9,11 @@ tags: [Woodworking, Bench, Drawers, Red Oak, Pets]
 image:
   path: /thumbnails/IMG_0536.jpeg
   alt: Beast of a bench
-media_subpath: "/assets/img/posts/boys-bench"
+media_subpath: /assets/img/posts/boys-bench
 ---
+{% include head-mypost.html %}
 
 This is a strange one, and looking back on it, not one that I am all that proud of. It was designed to be a general purpose bench to be placed near the dog-run door to attend to many things pup-related. That, and throw in a plant stand for good measure. Lots of learning what NOT to do on this one.
-
-{% include head-mypost.html %}
 
 ## Details
 
@@ -53,4 +53,4 @@ This is one of my first pieces to be 'retired', where we will soon be taking it 
 - Solid red oak trim from {{ site.data.links.kjp }}
 - Lots and lots of pocket screws from {{ site.data.links.kreg }}
 - Rubber paint from Amazon
-  {: .sjg-list }
+{: .sjg-list }

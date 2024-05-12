@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Charcuterie Boards
+description: Serving trays made from walnut, maple, and a number exotic African woods.
 date: 2022-02-25 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Kitchen]
-tags: [Woodworking, Charcuterie Board, Kitchen]
+tags: [Woodworking, Charcuterie Board, Kitchen, Maple, Walnut]
 image:
   path: /thumbnails/x20220227_191616.jpeg
   alt: One for Theresa
-media_subpath: "/assets/img/posts/charcuterie-boards"
+media_subpath: /assets/img/posts/charcuterie-boards
 ---
+{% include head-mypost.html %}
 
 Ok, so the difference between a charcuterie board and a cutting board, is that a charcuterie board is meant for serving things, not cutting things. Now that we have that out of the way...these are super fun to make. Not too hard to make but they do require **a lot** of sanding.
-
-{% include head-mypost.html %}
 
 ## Under Construction
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Plant Stands
+description: White ceramic pots with black-stained oak stands.
 date: 2021-04-28 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Home Decor]
@@ -8,12 +9,11 @@ tags: [Woodworking, Taper, Stands, Red Oak, Home Decor, Dominos]
 image:
   path: /thumbnails/20210428_181207.jpeg
   alt: Greenery and Redery
-media_subpath: "/assets/img/posts/plant-stands"
+media_subpath: /assets/img/posts/plant-stands
 ---
+{% include head-mypost.html %}
 
 It is always nice when you work on a piece that is going to be on display. I also like mixing materials into my projects, and these ceramic pots were just the ticket to go along with the espresso stained oak stands.
-
-{% include head-mypost.html %}
 
 ## Details
 
@@ -62,4 +62,4 @@ Ta da! All dressed up with freshly potted plants and in their new home, though w
 - {{ site.data.links.domino }} to join the bits together
 - Tapering Jig
 - Amazon procured white pots
-  {: .sjg-list }
+{: .sjg-list }

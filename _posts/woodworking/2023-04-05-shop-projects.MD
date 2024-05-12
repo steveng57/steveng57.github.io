@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Shop Projects
+description: A new mitre station and router table for the shop.
 date: 2023-04-05 18:32:00 -0500
 last_modified_at: 2024-02-25 19:12:11 -0500
 categories: [Woodworking, Workshop]
@@ -8,12 +9,11 @@ tags: [Woodworking, Workshop, Router, Mitre Stand, Table, Plywood, Dominos]
 image:
   path: /thumbnails/20230405_141755.jpeg
   alt: Spiffy new router table
-media_subpath: "/assets/img/posts/shop-projects"
+media_subpath: /assets/img/posts/shop-projects
 ---
+{% include head-mypost.html %}
 
 In late winter of 2023, I decided a workshop upgrade was due. You can never have enough shop storage, and shop projects are always a fun way to get better at all kinds of things. You can experiment, and if it fails, no one will know. I generally try to reserve between &#x00BC; and &#x2153; of my shop time for shop projects.
-
-{% include head-mypost.html %}
 
 ## Under Construction
 
@@ -22,6 +22,7 @@ In late winter of 2023, I decided a workshop upgrade was due. You can never have
 ### Router Stand
 
 I bought a couple or three pieces of plywood from {{ site.data.links.balticbirch }}, and fashioned up a {{ site.data.links.sketchup }} drawing of the router table I was going to make, along with one for the mitre stand.
+
 {% include clear-float.html break=1 %}
 
 {% include html-side.html img="20230405_141755.jpeg" align="right" %}
@@ -30,7 +31,7 @@ I bought a couple or three pieces of plywood from {{ site.data.links.balticbirch
 
 The steel top on the new router table is awesome. Nice level even cuts each and every time.
 
-{% include clear-float.html %}
+{% include clear-float.html break=1%}
 
 {% include html-side.html img="Sketchup%20of%20Mitre%20Stand.jpeg" align="left" %}
 
@@ -53,4 +54,4 @@ It is so nice to have a proper set of workshop stands for the router and the mit
 - {{ site.data.links.blum }} under-mount drawer slides
 - {{ site.data.links.richelieu }} drawer pulls
 - {{ site.data.links.domino }} for joinery
-  {: .sjg-list }
+{: .sjg-list }

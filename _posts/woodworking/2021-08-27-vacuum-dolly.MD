@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Vacuum Dolly
+description: A custom cart for holding my shop vac.
 date: 2021-08-27 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Workshop]
@@ -8,12 +9,11 @@ tags: [Woodworking, Workshop, Plywood, Dowels, Dominos]
 image:
   path: /thumbnails/20210827_212517.jpeg
   alt: Nature abhors a vacuum
-media_subpath: "/assets/img/posts/vacuum-dolly"
+media_subpath: /assets/img/posts/vacuum-dolly
 ---
+{% include head-mypost.html %}
 
 Shop furniture is the best place to practice. In this case it was practice with dowels, rods, and other round things.
-
-{% include head-mypost.html %}
 
 ## Under Construction
 
@@ -47,4 +47,4 @@ This gets a **lot** of use in the shop. It hasn't fallen over on me yet, but the
 - Plywood from {{ site.data.links.kjp }}
 - Big maple dowels
 - {{ site.data.links.leevalley }} casters
-  {: .sjg-list }
+{: .sjg-list }

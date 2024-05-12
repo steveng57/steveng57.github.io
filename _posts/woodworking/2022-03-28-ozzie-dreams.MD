@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ozzie Dreams
+description: A special place for a special boy.
 date: 2022-03-28 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Pets]
@@ -10,8 +11,8 @@ image:
   alt: Sweet Dreams Ozman
 media_subpath: "/assets/img/posts/ozzie-dreams"
 ---
-
 {% include head-mypost.html %}
+
 This was true labour of love. Our boy Ozzie needed a new place to sleep. It seems he was never very content to stay in one place at night, so we thought we would make him a nice new comfy spot to be in.
 
 ## Under Construction
@@ -45,4 +46,4 @@ Epoxy inlay complete, pillows installed and Ozzie giving it a trial run.
 - Red Oak from {{ site.data.links.kjp }}
 - {{ site.data.links.domino }} for joinery
 - {{ site.data.links.rubio }} Intense Black and Black 2C for the finish
-  {: .sjg-list }
+{: .sjg-list }

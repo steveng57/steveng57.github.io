@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Punkin's Playground
+description: A big craft table for an open area in the basement.
 date: 2023-02-04 18:32:00 -0500
 last_modified_at: 2024-03-04 10:26:32 -0500
 categories: [Woodworking, Furniture]
@@ -19,12 +20,11 @@ tags:
 image:
   path: /thumbnails/20230405_134555.jpeg
   alt: Let the Crafting Begin
-media_subpath: "/assets/img/posts/punkins-playground"
+media_subpath: /assets/img/posts/punkins-playground
 ---
+{% include head-mypost.html %}
 
 This table was specially made to fit into Debbie's craft area. It of my own design, and turned out to be very sturdy even though it is a 4&#39; by 8&#39; span.
-
-{% include head-mypost.html %}
 
 ## The Design
 
@@ -77,4 +77,4 @@ The legs are removable in case we ever want to move it. That's never going to ha
 - {{ site.data.links.shaper }} to carve the inlay
 - Gray {{ site.data.links.chillepoxy }} for the inlay
 - Latex paint from Benjamin Moore
-  {: .sjg-list }
+{: .sjg-list }

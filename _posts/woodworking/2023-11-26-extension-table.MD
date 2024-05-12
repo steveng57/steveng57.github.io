@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Extension Table
+description: A table add-on for our existing table in the Theatre Room.
 date: 2023-11-26 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Furniture]
@@ -8,12 +9,11 @@ tags: [Woodworking, Ash, Furniture, Table]
 image:
   path: /thumbnails/IMG_0221.jpeg
   alt: It's a desert topping and a floor wax
-media_subpath: "/assets/img/posts/extension-table"
+media_subpath: /assets/img/posts/extension-table
 ---
+{% include head-mypost.html %}
 
 This was my first project using Ash. It's a very nice hardwood, similar to Red Oak but with a little less grain, though not totally closed pores.
-
-{% include head-mypost.html %}
 
 That texture made it a nice fit for this project, which was to exactly match an existing dining table that we had in the theatre room.
 
@@ -74,4 +74,4 @@ This makes for a nice big dining area that can comfortably seat ten people, with
 - Ash, both 2&Prime; thick and 1&Prime; from {{ site.data.links.kjp }}
 - Metal legs purchased from {{ site.data.links.rustydesign }}. The irony (see what I did there) is not lost on me.
 - Rubio Monocoat and Chocolate Precolour Easy.
-  {: .sjg-list }
+{: .sjg-list }

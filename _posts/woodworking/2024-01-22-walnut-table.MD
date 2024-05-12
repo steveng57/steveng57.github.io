@@ -2,6 +2,7 @@
 author: sjg
 layout: post
 title: Walnut Table and Benches
+description: A big project with a lot of walnut.
 date: 2024-02-22 18:32:00 -0500
 last_modified_at: 2024-02-25 18:59:24 -0500
 categories: [Woodworking, Furniture]
@@ -10,12 +11,10 @@ image:
   path: /thumbnails/IMG_0693.jpeg
   alt: Walnut Table and Benches
 media_subpath: /assets/img/posts/walnut-table
-swiper: true
 ---
+{% include head-mypost.html %}
 
 This is perhaps my most complicated project to date, with the possible exception of [The Daybed]({% post_url /woodworking/2019-12-17-daybed %}). It took about six or seven weeks. The design called for the table to fit in a certain area in our theatre room. We watch movies there, but it's a big room and we also use it for other things. This table is to serve as a craft table for my niece Lilly and any other folk who want to make stuff here. You can make whatever you want at this table.
-
-{% include head-mypost.html %}
 
 ## The Table
 
@@ -96,24 +95,10 @@ Here is a mini photo gallery of the table and benches setup in our theatre room.
 
 {% include embed/video.html src="IMG_0695.mp4" muted = true title = "Walnut Table - 180&deg; View" poster = "thumbnails/IMG_0695.jpeg"%}
 
-{% if jekyll.environment == "development" %}
-
-## Carousel
-
-{% include carousel.html images="IMG_0693.jpeg, IMG_0659.jpeg, IMG_0656.jpeg, xIMG_0634.jpeg, IMG_0516.jpeg, thumbnails/IMG_0695.jpeg" captions=true %}
-
-{% endif %}
-{% comment %}
-
-## Swiper
-
-{% include swiper.html images="IMG_0693.jpeg, IMG_0659.jpeg, IMG_0656.jpeg, xIMG_0634.jpeg, IMG_0516.jpeg, thumbnails/IMG_0695.jpeg" %}
-{% endcomment %}
-
 ## Materials
 
 - Walnut from {{ site.data.links.kjp }}
 - {{ site.data.links.rubio }} Walnut Oil 2C for finish
 - Hardware from {{ site.data.links.leevalley }}
 - Lots of {{ site.data.links.domino }} usage, both the standard and the XL, for the joinery
-  {: .sjg-list }
+{: .sjg-list }

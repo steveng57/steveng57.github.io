@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Kitchen Things
+description: In this episode, I tackle a few small projects that make it more comfortable sitting at our kitchen island.  
 date: 2022-10-15 18:32:00 -0500
 last_modified_at: 2024-03-12 11:23:36 -0500
 categories: [Woodworking, Kitchen]
@@ -10,12 +11,11 @@ image:
   alt: Odds and Ends in the Kitchen
 media_subpath: /assets/img/posts/kitchen-things
 ---
+{% include head-mypost.html %}
 
 After our kitchen remodel, the client (Debbie) asked me to fashion a couple of custom pieces for use at the new kitchen island.
 
 The footstool and the computer stand get used every day, very cool. Made from poplar to keep them light and painted to match the cabinetry, I added a few carvings to them to spice them up a bit and filled them with epoxy inlay.
-
-{% include head-mypost.html %}
 
 > **Pro tip**: Even when making simple, everyday items, it is cool to add something to give it a little more bling.
 {: .prompt-tip }
@@ -54,4 +54,4 @@ _Easy peasy lemon squeezy._ I have no idea what that saying means, but it's fun 
 - Latex paint to match the kitchen
 - The carve was done with the {{ site.data.links.origin }}
 - {{ site.data.links.chillepoxy }} for the inlay
-  {: .sjg-list }
+{: .sjg-list }

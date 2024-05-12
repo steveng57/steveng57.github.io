@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Grow-light Stand
+description: A proper place for the grow-lights in our basement.
 date: 2024-04-04 21:53:37 -0400
 last_modified_at: 2024-04-04 21:53:53 -0400
 categories: [Home & Garden, Greenhouse]
@@ -8,14 +9,13 @@ tags: [Grow-light, Stands, Greenhouse, Garden]
 image:
   path: /thumbnails/IMG_0866.jpeg
   alt: No, not that kind of grow op!
-media_subpath: "/assets/img/posts/grow-light-stand"
+media_subpath: /assets/img/posts/grow-light-stand
 ---
+{% include head-mypost.html %}
 
 We've had these grow-light stands for a couple years now. They let us get a jump on the greenhouse growing season by a couple of months by starting the seedlings indoors. In the middle of the season, before the batch in the greenhouse is totally spent, I can get a new bunch to the ready.
 
 They are meant to be put on a table, but they take up a lot of room that way. Last year I tried to get clever and I stacked them on top of each other, which was a great space-saver. And it worked great... until it didn't. The structure collapsed and left a muddy mess all over the basement floor, and took me over three hours to clean up.
-
-{% include head-mypost.html %}
 
 ## Under Construction
 

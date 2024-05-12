@@ -33,7 +33,11 @@ figcaption {
 
 
 .sjg-video {
-    margin-bottom: 0rem;
+    font-size: 0.875rem !important; /* Adjust as needed */
+    color: var(--text-color) !important;
+    text-align: center !important;
+    margin-top: 1rem !important;
+    margin-bottom: 0rem !important;
 }
 
 .sjg-left {

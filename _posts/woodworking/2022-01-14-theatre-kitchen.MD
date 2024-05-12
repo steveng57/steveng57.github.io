@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Theatre Kitchen
+description: Kitchen style cabinets and drawers for our theatre room, with a spot for a mini-fridge.
 date: 2022-01-14 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Kitchen]
@@ -18,12 +19,11 @@ tags:
 image:
   path: /thumbnails/20220114_114921.jpeg
   alt: Where are the drawer fronts?
-media_subpath: "/assets/img/posts/theatre-kitchen"
+media_subpath: /assets/img/posts/theatre-kitchen
 ---
+{% include head-mypost.html %}
 
 This was a long project and my first shot at doing kitchen-style cabinetry. We had some space at the back of our theatre room, and it seemed like a good use of the space to make this happen.
-
-{% include head-mypost.html %}
 
 ## Under Construction
 
@@ -38,6 +38,11 @@ It was all good up until this point.
 It was at this point I went to put on the drawer faces, pictured below.
 
 To my shock and horror, I made them **the wrong size!** Instead of being the required 762mm in width, they were made 726mm in width. My mild dyslexia had bitten me once more.
+
+{% include clear-float.html break = 1 %}
+
+> **Measure Twice and Cut Once!**  Hey&hellip; it's a woodworking blog, you know that particular cliche is gonna appear at least a couple of times.
+{: .prompt-danger}
 
 {% include clear-float.html break = 1 %}
 
@@ -88,4 +93,4 @@ We scavenged the granite top from our upstairs kitchen remodel and repurposed it
 - Solid red oak
 - {{ site.data.links.domino }} joinery
 - {{ site.data.links.leevalley }} LED strip lighting
-  {: .sjg-list }
+{: .sjg-list }

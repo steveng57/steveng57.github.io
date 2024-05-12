@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Makeup and Mirror Stand
+description: A multi-purpose stand for the bathroom vanity.
 date: 2023-01-20 18:32:00 -0500
 last_modified_at: 2024-03-03 14:56:34 -0500
 categories: [Woodworking, Jewelry Boxes]
@@ -10,10 +11,9 @@ image:
   alt: Combo Jewelry Box Thing and Mirror Stand
 media_subpath: /assets/img/posts/mirror-stand
 ---
+{% include head-mypost.html %}
 
 A cool part of woodworking is that you can do custom designed stuff. In this case, very custom. This is a combination mirror stand, makeup tray, and jewelry box holder all-in-one. Made from poplar to keep it light, with lots of engraving done with the {{ site.data.links.origin}}.
-
-{% include head-mypost.html %}
 
 ## The Box
 
@@ -52,4 +52,4 @@ Here it is with the mirror installed. The top has a couple of trays carved in it
 - Poplar from {{ site.data.links.kjp }}
 - {{ site.data.links.domino }} for the mitre joinery
 - {{ site.data.links.origin }} for the carve
-  {: .sjg-list }
+{: .sjg-list }

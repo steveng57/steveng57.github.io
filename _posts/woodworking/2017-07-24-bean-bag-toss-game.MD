@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bean Bag Toss Game
+description: A summer classic.
 date: 2017-07-24 17:56:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Games]
@@ -10,10 +11,9 @@ image:
   alt: Lots of practice carving holes on this one
 media_subpath: /assets/img/posts/bean-bag-toss-game
 ---
+{% include head-mypost.html %}
 
 One of my first tricky projects was a bean bag toss game. Fun and games around the pool in the back yard.
-
-{% include head-mypost.html %}
 
 ## Getting to Work
 
@@ -52,4 +52,4 @@ Debbie stamped some dog paw prints on the final version which made it look reall
 - Cedar 2x4s
 - {{ site.data.links.kreg }} pocket hole jig and screws
 - Custom built router large radius jig
-  {: .sjg-list }
+{: .sjg-list }

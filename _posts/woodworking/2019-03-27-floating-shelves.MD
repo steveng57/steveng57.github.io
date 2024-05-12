@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Floating Shelves
+description: Made-to-fit shelving for a couple of spots around the house.
 date: 2019-03-17 18:32:00 -0500
 last_modified_at: 2024-03-06 15:20:58 -0500
 categories: [Woodworking, Home Decor]
@@ -8,12 +9,11 @@ tags: [Woodworking, Red Oak, Shelves, Floating Shelves]
 image:
   path: /thumbnails/IMG_0752.jpeg
   alt: A smooch from a pooch is definitely good for the soul
-media_subpath: "/assets/img/posts/floating-shelves"
+media_subpath: /assets/img/posts/floating-shelves
 ---
+{% include head-mypost.html %}
 
 Sometimes I can't wait to start a project where I get to try something new, especially if it's something that you just know that you are going to use a lot in the future.
-
-{% include head-mypost.html %}
 
 In this case it was a technique called _Template Routing_. As the name implies, you fashion template to your workpiece, usually with double-sided tape or hot-glue, and then use the edge of the template to register against a bearing in a template routing bit on your router. This makes a great edge, exactly matching the template.
 
@@ -45,4 +45,4 @@ The shelves are 8 inches deep by 32 inches wide by 1.5 inches thick. And pretty 
 
 - Red Oak from {{ site.data.links.robertbury }}
 - {{ site.data.links.generalfinishes }} black stain and polyurethane
-  {: .sjg-list }
+{: .sjg-list }

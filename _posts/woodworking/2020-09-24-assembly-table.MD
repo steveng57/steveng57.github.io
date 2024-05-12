@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Assembly Table
+description: A bigger, more functional assembly table for the workshop.
 date: 2020-09-24 17:58:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Workshop]
@@ -8,14 +9,13 @@ tags: [Woodworking, Assembly Table, Workbench, Workshop]
 image:
   path: /thumbnails/20201001_193728.jpeg
   alt: About 2 weeks to assemble
-media_subpath: "/assets/img/posts/assembly-table"
+media_subpath: /assets/img/posts/assembly-table
 ---
+{% include head-mypost.html %}
 
 I've always wanted a **monster** sized assembly table. They are great to spread your project out and do all kinds of things from cuts, to glue-ups, to finishing.
 
 While I love me previous assembly table, it was kinda small, only about 2.5 feet by 3.5 feet. Projects just wouldn't fit on it, and it was always a worry that something, either a workpiece or my favorite tool, was going to fall off the end. There is nothing like being able to spread yourself out and visualize your work, and do it with confidence.
-
-{% include head-mypost.html %}
 
 ## Design
 
@@ -63,4 +63,4 @@ Anyway, there is a special jig you can get from {{ site.data.links.leevalley }} 
 
 - Aluminum - Lots and lots of it from {{ site.data.links.vention }} in Montreal
 - MDF for the top from the big box store
-  {: .sjg-list }
+{: .sjg-list }

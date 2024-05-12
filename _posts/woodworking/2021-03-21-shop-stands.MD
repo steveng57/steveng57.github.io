@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Shop Stands
+description:  Three baltic-birch machine stands with 15 drawers.
 date: 2021-03-21 17:58:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Workshop]
@@ -8,12 +9,11 @@ tags: [Woodworking, Drawers, Stands, Plywood, Workshop]
 image:
   path: /thumbnails/20210321_210903.jpeg
   alt: Waiting for Work
-media_subpath: "/assets/img/posts/shop-stands"
+media_subpath: /assets/img/posts/shop-stands
 ---
+{% include head-mypost.html %}
 
 There really is no more fun a project than a shop project. Doing shop stuff is perfect for practicing your craft, honing your skills. And best of all, if you make a mistake, no-one will ever ever notice. Except you of course, where the mistake will be staring at you from across the room, taunting you, snickering, slowly driving you crazy until you are forced to fix it. Ask me how I know.
-
-{% include head-mypost.html %}
 
 ## Details
 
@@ -48,4 +48,4 @@ Ok, I really like this pic, so showing it again in higher resolution. Not really
 - {{ site.data.links.balticbirch }} plywood
 - {{ site.data.links.domino }} for the drawers
 - {{ site.data.links.richelieu }} drawer pulls
-  {: .sjg-list }
+{: .sjg-list }

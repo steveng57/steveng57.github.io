@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Gazebo Cabinet
+description: A custom-fit solid-oak cabinet for the gazebo.
 date: 2021-12-31 18:32:00 -0500
 last_modified_at: 2024-03-07 18:00:14 -0500
 categories: [Woodworking, Furniture]
@@ -10,12 +11,11 @@ image:
   alt: Cabinet for Gazebo
 media_subpath: /assets/img/posts/gazebo-cabinet
 ---
+{% include head-mypost.html %}
 
 This is actually a pretty beefy piece, the pictures don't seem to capture the scale of it. I think that is because the unit is actually pretty deep. We had originally planned for this to hold a small fridge and microwave, so we had to make it big enough to hold the largest item.
 
 As big as it is, and with red oak being a relatively heavy hardwood, well it is another one of my classic, _"Geez is this thing heavy"_ pieces. Yep, this thing is 100% solid oak, no plywood at all here.
-
-{% include head-mypost.html %}
 
 ## The Design
 
@@ -46,4 +46,4 @@ We were going to put a little fridge and microwave in there, but current thinkin
 - Red Oak {{ site.data.links.kjp }}
 - {{ site.data.links.rubio }} Intense Black Precolour Easy, Black Oil 2C for finish
 - {{ site.data.links.domino }} for pretty much all joinery, except pocket holes for the back stretchers
-  {: .sjg-list }
+{: .sjg-list }

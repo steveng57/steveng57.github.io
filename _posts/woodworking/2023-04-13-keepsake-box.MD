@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Keepsake Box
+description: A walnut box with maple pin-striping, and a pumpkin logo on the top.
 date: 2023-04-13 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Jewelry Boxes]
@@ -17,12 +18,11 @@ tags:
 image:
   path: /thumbnails/IMG_0639.jpeg
   alt: It's a keeper
-media_subpath: "/assets/img/posts/keepsake-box"
+media_subpath: /assets/img/posts/keepsake-box
 ---
+{% include head-mypost.html %}
 
 I only had a couple of days after finishing the previous project before Debbie's birthday, but I decided to try something new and get it done in time for her special day.
-
-{% include head-mypost.html %}
 
 ## Under Construction
 
@@ -60,4 +60,4 @@ Orange {{ site.data.links.chillepoxy }} for the inlay, which was carved with the
 - {{ site.data.links.chillepoxy }} with orange colouring
 - {{ site.data.links.domino }} for mitre joinery
 - {{ site.data.links.rubio }} Pure finish
-  {: .sjg-list }
+{: .sjg-list }

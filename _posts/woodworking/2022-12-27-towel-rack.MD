@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Towel Rack
+description: A custom fit towel rack for the master bathroom.
 date: 2022-12-27 18:32:00 -0500
 last_modified_at: 2024-02-23 11:45:18 -0500
 categories: [Woodworking, Furniture]
@@ -10,10 +11,9 @@ image:
   alt: A great place to hang
 media_subpath: "/assets/img/posts/towel-rack"
 ---
+{% include head-mypost.html %}
 
 At the request of the customer (aka Debbie), I made a custom towel rack to fit precisely in a bathroom space. Working with round things is always a bit of a nifty challenge, as it was here. There were some funky angles to work with and some odd shaped pieces.
-
-{% include head-mypost.html %}
 
 > **Cool Tool**: The {{ site.data.links.shaper }} was used here. The angled pieces could have been cut by hand I guess, but the accuracy of the Origin is far superior to that.
 {: .prompt-tip }
@@ -58,4 +58,4 @@ It's been in use for over a year at this point and no issues with warping or ben
 - Maple from {{ site.data.links.kjp }}
 - Polyeurethane finish
 - {{ site.data.links.domino }} for joinery
-  {: .sjg-list }
+{: .sjg-list }
