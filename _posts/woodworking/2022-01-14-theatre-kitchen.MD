@@ -4,11 +4,21 @@ title: Theatre Kitchen
 date: 2022-01-14 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Kitchen]
-tags: [Woodworking, Plywood, Cabinets, Red Oak, Kitchen, Dominos, Drawers, LED Lighting]
+tags:
+  [
+    Woodworking,
+    Plywood,
+    Cabinets,
+    Red Oak,
+    Kitchen,
+    Dominos,
+    Drawers,
+    LED Lighting,
+  ]
 image:
   path: /thumbnails/20220114_114921.jpeg
   alt: Where are the drawer fronts?
-img_path: "/assets/img/posts/theatre-kitchen"
+media_subpath: "/assets/img/posts/theatre-kitchen"
 ---
 
 This was a long project and my first shot at doing kitchen-style cabinetry. We had some space at the back of our theatre room, and it seemed like a good use of the space to make this happen.
@@ -59,7 +69,7 @@ The floor is so crooked, that I even had to shim a few things for the fridge to 
 
 ### Lighting
 
-Since the theatre room is sometimes very dark, I added a lot of in-cabinet lighting throughout. 
+Since the theatre room is sometimes very dark, I added a lot of in-cabinet lighting throughout.
 
 I hooked up micro-switches to all the doors and drawers to control them. There is a storage area behind this wall, so it was easy to wire the lights to the power from the back.
 {% include clear-float.html %}
@@ -78,4 +88,4 @@ We scavenged the granite top from our upstairs kitchen remodel and repurposed it
 - Solid red oak
 - {{ site.data.links.domino }} joinery
 - {{ site.data.links.leevalley }} LED strip lighting
-{: .sjg-list }
+  {: .sjg-list }

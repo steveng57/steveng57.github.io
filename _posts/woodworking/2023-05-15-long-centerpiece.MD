@@ -8,17 +8,17 @@ tags: [Woodworking, Red Oak, Epoxy, Inlay, Kitchen]
 image:
   path: /thumbnails/IMG_0822.jpeg
   alt: Stuff by the Pool
-img_path: /assets/img/posts/long-centerpiece
+media_subpath: /assets/img/posts/long-centerpiece
 ---
 
-I made a few things for the outdoor area by the pool, just to add some decoration.  One was a long centerpiece with some engravings, the other was a couple of small round trays for candles or other decorations.  It's probably obvious that they were built to resemble the [serving trays]({% post_url /woodworking/2023-04-20-serving-trays %}) that were made around the same time.
+I made a few things for the outdoor area by the pool, just to add some decoration. One was a long centerpiece with some engravings, the other was a couple of small round trays for candles or other decorations. It's probably obvious that they were built to resemble the [serving trays]({% post_url /woodworking/2023-04-20-serving-trays %}) that were made around the same time.
 
-One turned out great, the other...not so much.  Read on for details!
+One turned out great, the other...not so much. Read on for details!
 
 {% include head-mypost.html %}
 
-> **Pro tip**: Wood moves.  Sometimes a lot.  It bends, twists, warps, cups.  It has a mind of its own really, and sometimes just feels uncomfortable in its own skin. 
-{: .prompt-warning }
+> **Pro tip**: Wood moves. Sometimes a lot. It bends, twists, warps, cups. It has a mind of its own really, and sometimes just feels uncomfortable in its own skin.
+> {: .prompt-warning }
 
 ## Table Decorations
 
@@ -26,11 +26,11 @@ One turned out great, the other...not so much.  Read on for details!
 
 ### Long Center&#x200B;piece
 
-This centerpiece was made to fit on our outdoor table near the pool.  As of this writing, it's still winter, so the piece is indoors for protection.  
+This centerpiece was made to fit on our outdoor table near the pool. As of this writing, it's still winter, so the piece is indoors for protection.
 
-I tried practising finger joints (aka box joints) on this one.  They turned out nice and flush.
+I tried practising finger joints (aka box joints) on this one. They turned out nice and flush.
 
-Pretty straightforward stuff on this one.  By now, I have the epoxy thing down pretty well.  Stained it espresso to match the rest of the outdoor furniture.  _Espresso_ sounds so much more pretentious than _black_, don't you think?
+Pretty straightforward stuff on this one. By now, I have the epoxy thing down pretty well. Stained it espresso to match the rest of the outdoor furniture. _Espresso_ sounds so much more pretentious than _black_, don't you think?
 
 {% include clear-float.html break = 1 %}
 
@@ -42,12 +42,11 @@ Pretty straightforward stuff on this one.  By now, I have the epoxy thing down p
 
 ### The Round Center&#x200B;pieces
 
-These were made out of solid red oak boards, glued up to make a small panel.  I then used a router with a circle jig to make the final shape.
+These were made out of solid red oak boards, glued up to make a small panel. I then used a router with a circle jig to make the final shape.
 
-Even though they are sold oak, they still warped quite a bit in the elements.  I am not sure if they are even salvageable at this point, but I'll see what I can do. 
+Even though they are sold oak, they still warped quite a bit in the elements. I am not sure if they are even salvageable at this point, but I'll see what I can do.
 
 {% include clear-float.html break  = 0 %}
-
 
 ## Materials
 
@@ -55,4 +54,4 @@ Even though they are sold oak, they still warped quite a bit in the elements.  I
 - {{ site.data.links.rubio }} for the finish
 - The carve was done with the {{ site.data.links.origin }}
 - {{ site.data.links.chillepoxy }} for the inlay
-{: .sjg-list }
+  {: .sjg-list }

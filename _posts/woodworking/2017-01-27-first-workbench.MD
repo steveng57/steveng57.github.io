@@ -9,7 +9,7 @@ pin: false
 image:
   path: /thumbnails/20170127_010801.jpeg
   alt: MDF and 2x4's - pretty simple
-img_path: /assets/img/posts/first-workbench
+media_subpath: /assets/img/posts/first-workbench
 ---
 
 Every shop needs a workbench, and there is a first for everything. This is the first workbench I built in this shop.
@@ -28,7 +28,7 @@ In setting up my workshop, I had the DeWalt mitre saw from a while back, bought 
 
 Then, I decided to make my first workbench / assembly table. I have become quite enamored with assembly tables as future posts will tell.
 
-This one was fairly straightforward. A whole lot of 2x4s from the big box store, pocket screws holding it all together. 
+This one was fairly straightforward. A whole lot of 2x4s from the big box store, pocket screws holding it all together.
 
 I put some {{ site.data.links.kreg }} track on the top, the blue aluminum extrusion shown here, which one can use to clamp things down. I finished it off with some enamel orange paint and coated the 2x4s in a couple of coats of Tung oil.
 
@@ -56,5 +56,4 @@ While it is no longer my primary workbench / assembly table, it still gets a lot
 - {{ site.data.links.kreg }} Clamp Track
 - {{ site.data.links.leevalley}} Mobile Wheels
 - Tung oil (not tongue oil, that would be gross)
-{: .sjg-list }
-
+  {: .sjg-list }

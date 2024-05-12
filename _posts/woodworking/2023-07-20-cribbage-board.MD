@@ -4,14 +4,23 @@ title: Cribbage Board
 date: 2023-07-20 18:32:00 -0500
 last_modified_at: 2024-03-01 18:32:00 -0500
 categories: [Woodworking, Games]
-tags: [Woodworking, Router, Cribbage Board, Shaper Origin, Walnut, Games, Shaper Origin]
-image: 
-    path: /thumbnails/IMG_0626.jpeg
-    alt: A very special gift for a very special person
-img_path: "/assets/img/posts/cribbage-board"
+tags:
+  [
+    Woodworking,
+    Router,
+    Cribbage Board,
+    Shaper Origin,
+    Walnut,
+    Games,
+    Shaper Origin,
+  ]
+image:
+  path: /thumbnails/IMG_0626.jpeg
+  alt: A very special gift for a very special person
+media_subpath: "/assets/img/posts/cribbage-board"
 ---
 
-For my father's birthday, I made him this cribbage board from a nice piece of marbled walnut. He says it is working well and that it keeps very good score.  That's the main thing.
+For my father's birthday, I made him this cribbage board from a nice piece of marbled walnut. He says it is working well and that it keeps very good score. That's the main thing.
 
 {% include head-mypost.html %}
 
@@ -66,4 +75,4 @@ The pic below is of the board at my dad's place on a nice teak dining table that
 - Walnut from {{ site.data.links.kjp }}
 - Black {{ site.data.links.chillepoxy }} inlay
 - {{ site.data.links.shaper }} for carving
-{: .sjg-list }
+  {: .sjg-list }

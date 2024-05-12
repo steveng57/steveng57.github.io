@@ -8,23 +8,23 @@ tags: [Woodworking, Poplar, Epoxy, Inlay, Kitchen]
 image:
   path: /thumbnails/IMG_0810.jpeg
   alt: Odds and Ends in the Kitchen
-img_path: /assets/img/posts/kitchen-things
+media_subpath: /assets/img/posts/kitchen-things
 ---
 
 After our kitchen remodel, the client (Debbie) asked me to fashion a couple of custom pieces for use at the new kitchen island.
 
-The footstool and the computer stand get used every day, very cool.  Made from poplar to keep them light and painted to match the cabinetry, I added a few carvings to them to spice them up a bit and filled them with epoxy inlay.
+The footstool and the computer stand get used every day, very cool. Made from poplar to keep them light and painted to match the cabinetry, I added a few carvings to them to spice them up a bit and filled them with epoxy inlay.
 
 {% include head-mypost.html %}
 
 > **Pro tip**: Even when making simple, everyday items, it is cool to add something to give it a little more bling.
-{: .prompt-tip }
+> {: .prompt-tip }
 
 ## Footstool
 
 {% include html-sxs.html img1="IMG_0812.jpeg" img2="IMG_0813.jpeg" %}
 
-I've made many a footstool since taking up the craft.  Deb likes to use this one when sitting on the barstools are the new island.  Everyone seems to love the heart carved into the sides.  Me too.
+I've made many a footstool since taking up the craft. Deb likes to use this one when sitting on the barstools are the new island. Everyone seems to love the heart carved into the sides. Me too.
 
 {% include clear-float.html break = 1 %}
 
@@ -32,7 +32,7 @@ I've made many a footstool since taking up the craft.  Deb likes to use this one
 
 {% include html-sxs.html img1="IMG_0811.jpeg" img2="IMG_0810.jpeg" %}
 
-This stand was custom made to the exact height.  Storage underneath for the keyboard when not in use.  Of course I had to do something on the engraving just to keep it lively.
+This stand was custom made to the exact height. Storage underneath for the keyboard when not in use. Of course I had to do something on the engraving just to keep it lively.
 
 {% include clear-float.html break  = 0 %}
 
@@ -42,9 +42,9 @@ This stand was custom made to the exact height.  Storage underneath for the keyb
 
 {% include clear-float.html break  = 1 %}
 
-Not much to the design here, it's really just a box after all.  I used Microsoft Word to layout the text with a comic-sans font, uploaded it to Shaper Studio for the final prep, then downloaded to the Origin for the carve.  Shaper Studio is an online design tool that goes with the {{ site.data.links.origin }}, making it super simple to move your drawings onto the tool. 
+Not much to the design here, it's really just a box after all. I used Microsoft Word to layout the text with a comic-sans font, uploaded it to Shaper Studio for the final prep, then downloaded to the Origin for the carve. Shaper Studio is an online design tool that goes with the {{ site.data.links.origin }}, making it super simple to move your drawings onto the tool.
 
-_Easy peasy lemon squeezy._  I have no idea what that saying means, but it's fun to say.
+_Easy peasy lemon squeezy._ I have no idea what that saying means, but it's fun to say.
 
 {% include clear-float.html break  = 0 %}
 
@@ -54,4 +54,4 @@ _Easy peasy lemon squeezy._  I have no idea what that saying means, but it's fun
 - Latex paint to match the kitchen
 - The carve was done with the {{ site.data.links.origin }}
 - {{ site.data.links.chillepoxy }} for the inlay
-{: .sjg-list }
+  {: .sjg-list }

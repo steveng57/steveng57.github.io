@@ -9,7 +9,7 @@ tags: [Woodworking, Walnut, Table, Crafts, Bench, Dominos]
 image:
   path: /thumbnails/IMG_0693.jpeg
   alt: Walnut Table and Benches
-img_path: /assets/img/posts/walnut-table
+media_subpath: /assets/img/posts/walnut-table
 swiper: true
 ---
 
@@ -91,6 +91,7 @@ Here is a mini photo gallery of the table and benches setup in our theatre room.
 {% include html-sxs.html img2="IMG_0693.jpeg" img1="IMG_0691.jpeg" %}
 
 {% include clear-float.html %}
+
 ## The Video
 
 {% include embed/video.html src="IMG_0695.mp4" muted = true title = "Walnut Table - 180&deg; View" poster = "thumbnails/IMG_0695.jpeg"%}
@@ -98,12 +99,14 @@ Here is a mini photo gallery of the table and benches setup in our theatre room.
 {% if jekyll.environment == "development" %}
 
 ## Carousel
+
 {% include carousel.html images="IMG_0693.jpeg, IMG_0659.jpeg, IMG_0656.jpeg, xIMG_0634.jpeg, IMG_0516.jpeg, thumbnails/IMG_0695.jpeg" captions=true %}
 
 {% endif %}
 {% comment %}
 
 ## Swiper
+
 {% include swiper.html images="IMG_0693.jpeg, IMG_0659.jpeg, IMG_0656.jpeg, xIMG_0634.jpeg, IMG_0516.jpeg, thumbnails/IMG_0695.jpeg" %}
 {% endcomment %}
 
@@ -113,4 +116,4 @@ Here is a mini photo gallery of the table and benches setup in our theatre room.
 - {{ site.data.links.rubio }} Walnut Oil 2C for finish
 - Hardware from {{ site.data.links.leevalley }}
 - Lots of {{ site.data.links.domino }} usage, both the standard and the XL, for the joinery
-{: .sjg-list }
+  {: .sjg-list }

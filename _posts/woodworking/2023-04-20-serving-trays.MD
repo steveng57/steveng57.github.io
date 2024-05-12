@@ -9,7 +9,7 @@ tags:
 image:
   path: /thumbnails/20230405_141951.jpeg
   alt: These are FIVE colour epoxy inlays
-img_path: /assets/img/posts/serving-trays
+media_subpath: /assets/img/posts/serving-trays
 ---
 
 I went for a bit of the artsy, rustic look on these. They were a bit tricky, in the sense that with the epoxy inlay in the tray bottom, suddenly decisions about which part to do first become much more important. How do you assemble it, before or after the epoxy? How do you finish it, before or after the epoxy? Answers! I demand answers!
@@ -34,7 +34,7 @@ I also wanted to be sure to get the finger joints just right (that's what this s
 
 The Tree Tray was done first, and so I learned how **not** do it here. Basically on something like this, you need to sand and finish before final assembly, otherwise it it too difficult to get into corners and things.
 
-While it is not quite as blotchy in real life as this photo would make it seem, it is still just a little too blotchy for my taste.  The Flower turned out better.
+While it is not quite as blotchy in real life as this photo would make it seem, it is still just a little too blotchy for my taste. The Flower turned out better.
 {% include clear-float.html break = 1%}
 
 {% include html-side.html img="20230405_141951.jpeg" align="right" %}
@@ -49,4 +49,4 @@ The Flower Tray is where the learnings were applied and turned out better than t
 - Poplar from {{ site.data.links.kjp }}
 - Various coloured epoxies by {{ site.data.links.chillepoxy }}
 - {{ site.data.links.shaper }} to carve the inlays
-{: .sjg-list }
+  {: .sjg-list }

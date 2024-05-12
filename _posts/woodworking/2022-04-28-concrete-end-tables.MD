@@ -8,7 +8,7 @@ tags: [Woodworking, Concrete, Table, End Table, Red Oak, Furniture]
 image:
   path: /thumbnails/IMG_0553.jpeg
   alt: Adding a new material to the shop
-img_path: "/assets/img/posts/concrete-end-tables"
+media_subpath: "/assets/img/posts/concrete-end-tables"
 ---
 
 I tried something very new with these concrete nested end tables. It ended up in the right place, but it was a bit of a bear to get it there. Working with concrete is _very_ different than working with wood. That might sound obvious but it needs to be said. And my artistic skill with the materials were novice at best. Details below.
@@ -25,9 +25,9 @@ The concrete I used was a special artisan blend from [Buddy Rhodes]{:target="\_b
 
 ### In Fine Form
 
-The first thing you need to do for a concrete top is make a form mold for the pieces. 
+The first thing you need to do for a concrete top is make a form mold for the pieces.
 
-A neat trick I found on YouTube was to use a bead of black silicone around the seem to seal the edges, and also give you an nice quarter-round soft edge on the table top when you flip it over. 
+A neat trick I found on YouTube was to use a bead of black silicone around the seem to seal the edges, and also give you an nice quarter-round soft edge on the table top when you flip it over.
 
 The black colouring makes it easier to remove when you are done. Made from spare melamine I had from some old shelving.
 {% include clear-float.html break = 1 %}
@@ -43,7 +43,7 @@ Standard leg with an apron. Only tricky part here is that I made the apron extra
 
 ### The Poor Pour
 
-OMG did these turn out **awful**. When I initially poured the tops, I had such high hopes. My buddy Mike helped me blend the concrete in a bucket and make the pour. That was tough but it went well enough. 
+OMG did these turn out **awful**. When I initially poured the tops, I had such high hopes. My buddy Mike helped me blend the concrete in a bucket and make the pour. That was tough but it went well enough.
 
 In my dream, I had though this was going to be an eggshell white with a few flecks of gray. Boy was I wrong. I looked like some kind of bad Rorschach Inkblot test. Not a happy camper at this point. I had no idea how to fix this.
 {% include clear-float.html break = 1 %}
@@ -52,7 +52,7 @@ In my dream, I had though this was going to be an eggshell white with a few flec
 
 ### The Fix Is In
 
-Six weeks pass. During that time I tried various things. Many, many various things, including just walking away in disgust for a week. 
+Six weeks pass. During that time I tried various things. Many, many various things, including just walking away in disgust for a week.
 
 Eventually I applied a thin layer of a beigy concrete topcoat, and sanded and smooth it down until I got the finish I wanted.
 
@@ -80,4 +80,4 @@ This gets used on a daily basis as a cleaning station for the boys when they com
 - {{ site.data.links.domino }} for joinery
 - {{ site.data.links.rubio }} finish
 - [Buddy Rhodes](https://www.buddyrhodes.com){:target="\_blank"} concrete products
-{: .sjg-list }
+  {: .sjg-list }

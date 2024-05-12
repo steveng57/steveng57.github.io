@@ -8,7 +8,7 @@ tags: [Woodworking, Walnut, Jewelry Boxes, Shaper Origin, Dominos]
 image:
   path: /thumbnails/IMG_0461.jpeg
   alt: Earings Trays - a gift for a wonderful human
-img_path: "/assets/img/posts/earing-boxes"
+media_subpath: "/assets/img/posts/earing-boxes"
 ---
 
 I really like making special things for other people. This is a fun example of that. Debbie thought it would be cool to make a set of earing boxes for her sister for Christmas. I could not agree more. This was a first of its kind for me. While I have made a great many boxes in the past, the insert was a whole new kind of thing.
@@ -16,7 +16,7 @@ I really like making special things for other people. This is a fun example of t
 {% include head-mypost.html %}
 
 > **Cool Tool**: The {{ site.data.links.shaper }} was critical here, no way I could make this with just tools. It is truly an amazing machine.
-{: .prompt-tip }
+> {: .prompt-tip }
 
 ## Under Construction
 
@@ -67,4 +67,4 @@ All filled with all kinds of earings. Looks like I might have to make more!
 - {{ site.data.links.rubio }} Walnut for finish
 - Hardware from {{ site.data.links.leevalley }}
 - Green Velvet from Amazon
-{: .sjg-list }
+  {: .sjg-list }

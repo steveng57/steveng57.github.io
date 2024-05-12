@@ -8,10 +8,10 @@ tags: [Woodworking, Workshop, Router, Mitre Stand, Table, Plywood, Dominos]
 image:
   path: /thumbnails/20230405_141755.jpeg
   alt: Spiffy new router table
-img_path: "/assets/img/posts/shop-projects"
+media_subpath: "/assets/img/posts/shop-projects"
 ---
 
-In late winter of 2023, I decided a workshop upgrade was due. You can never have enough shop storage, and shop projects are always a fun way to get better at all kinds of things. You can experiment, and if it fails, no one will know.  I generally try to reserve between &#x00BC; and &#x2153; of my shop time for shop projects.  
+In late winter of 2023, I decided a workshop upgrade was due. You can never have enough shop storage, and shop projects are always a fun way to get better at all kinds of things. You can experiment, and if it fails, no one will know. I generally try to reserve between &#x00BC; and &#x2153; of my shop time for shop projects.
 
 {% include head-mypost.html %}
 
@@ -36,7 +36,7 @@ The steel top on the new router table is awesome. Nice level even cuts each and 
 
 ### Mitre Stand
 
-Each unit in the mitre stand is basically built as a big cabinet box with a drawer. 
+Each unit in the mitre stand is basically built as a big cabinet box with a drawer.
 
 You build three of those and string them together using about 10 beefy cabinet screws, and there you have a mitre stand. Here you see it modelled in {{ site.data.links.sketchup }} before the construction began.
 {% include clear-float.html %}
@@ -53,4 +53,4 @@ It is so nice to have a proper set of workshop stands for the router and the mit
 - {{ site.data.links.blum }} under-mount drawer slides
 - {{ site.data.links.richelieu }} drawer pulls
 - {{ site.data.links.domino }} for joinery
-{: .sjg-list }
+  {: .sjg-list }

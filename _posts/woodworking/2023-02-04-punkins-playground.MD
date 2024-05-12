@@ -4,11 +4,22 @@ title: Punkin's Playground
 date: 2023-02-04 18:32:00 -0500
 last_modified_at: 2024-03-04 10:26:32 -0500
 categories: [Woodworking, Furniture]
-tags: [Woodworking, Table, Crafts, Epoxy, Inlay, Plywood, Maple, Furniture, Shaper Origin]
+tags:
+  [
+    Woodworking,
+    Table,
+    Crafts,
+    Epoxy,
+    Inlay,
+    Plywood,
+    Maple,
+    Furniture,
+    Shaper Origin,
+  ]
 image:
   path: /thumbnails/20230405_134555.jpeg
   alt: Let the Crafting Begin
-img_path: "/assets/img/posts/punkins-playground"
+media_subpath: "/assets/img/posts/punkins-playground"
 ---
 
 This table was specially made to fit into Debbie's craft area. It of my own design, and turned out to be very sturdy even though it is a 4&#39; by 8&#39; span.
@@ -39,7 +50,7 @@ A big piece of 4&#39;x8&#39; Baltic Birch plywood was used as the main surface. 
 
 ### Torsion Box
 
-To make it strong enough over that 4&#39;x8&#39; span, it created a 'Torsion Box' using various scraps of other plywood that I had lying around from other projects. 
+To make it strong enough over that 4&#39;x8&#39; span, it created a 'Torsion Box' using various scraps of other plywood that I had lying around from other projects.
 
 It basically means that you put 3 to 4 inch strips running down the length and width of the plywood, which makes it incredibly strong. The maple trim around the outside also helped with the structural integrity.
 
@@ -66,4 +77,4 @@ The legs are removable in case we ever want to move it. That's never going to ha
 - {{ site.data.links.shaper }} to carve the inlay
 - Gray {{ site.data.links.chillepoxy }} for the inlay
 - Latex paint from Benjamin Moore
-{: .sjg-list }
+  {: .sjg-list }

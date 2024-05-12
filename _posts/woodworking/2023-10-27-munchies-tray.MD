@@ -9,7 +9,7 @@ tags:
 image:
   path: /thumbnails/IMG_0079.jpeg
   alt: Hey hey it's the munchies
-img_path: "/assets/img/posts/munchies-tray"
+media_subpath: "/assets/img/posts/munchies-tray"
 ---
 
 When I set out to do this, I hadn't really thought of the complications that are involved in doing angled cuts like this. I mean, I knew there would be some, but I had to really dig deep and resurrect some old trigonometry skills. Nah, not really, I used an online calculator, but still it was a lot of weird angles. It's a 15&deg; angle to the sides, but when you are doing the cuts, it's a double mitre angle cut at 13.1&deg; tilt, and 34&deg; mitre. Yikes.
@@ -17,7 +17,7 @@ When I set out to do this, I hadn't really thought of the complications that are
 {% include head-mypost.html %}
 
 > **Mitre Calculator**: For those who are interested in a really good online mitre cut calculator, here is the one I used: [Compound Angle Calculator]{:target="\_blank"}
-{: .prompt-tip }
+> {: .prompt-tip }
 
 ## Under Construction
 
@@ -51,6 +51,6 @@ A tray full of munchies in its new home, which is normally resting upon the [ext
 - Grey epoxy by {{ site.data.links.chillepoxy }}
 - {{ site.data.links.shaper }} for the lettering
 - {{ site.data.links.domino }} for mitre joinery
-{: .sjg-list }
+  {: .sjg-list }
 
 [Compound Angle Calculator]: https://jansson.us/jcompound.html

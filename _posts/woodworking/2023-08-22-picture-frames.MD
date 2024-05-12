@@ -8,7 +8,7 @@ tags: [Woodworking, Picture Frame, Poplar, Home Decor, Dominos]
 image:
   path: /thumbnails/20230822_191820.jpeg
   alt: The first of many to be sure
-img_path: "/assets/img/posts/picture-frames"
+media_subpath: "/assets/img/posts/picture-frames"
 ---
 
 These picture frames are sometimes called "Shadow Boxes" or "Shadow Frames". They really add a lot to the artwork that they frame. I have a bunch more to do, but these are a good start.
@@ -41,7 +41,7 @@ I made these out of poplar. It's a lighter wood, but still strong enough. Not as
 
 ### Being Framed
 
-I used shims to centre the picture vertically and horizontally in the frame. I have some of those woodworkers shims, which are made of plastic and they are of varying thicknesses. But my favorite shims for such a task is playing cards. Yep, good old fashioned playing cards. I keep a deck in the shop at all times for such a purpose. 
+I used shims to centre the picture vertically and horizontally in the frame. I have some of those woodworkers shims, which are made of plastic and they are of varying thicknesses. But my favorite shims for such a task is playing cards. Yep, good old fashioned playing cards. I keep a deck in the shop at all times for such a purpose.
 
 The trick to keeping it centred is that if you use 7 cards on the left, then you need to use 7 cards on the right.
 
@@ -56,4 +56,4 @@ The trick to keeping it centred is that if you use 7 cards on the left, then you
 - Poplar from {{ site.data.links.kjp }}
 - Acrylic Paint from {{ site.data.links.michaels }}
 - {{ site.data.links.domino }} for mitre joinery
-{: .sjg-list }
+  {: .sjg-list }

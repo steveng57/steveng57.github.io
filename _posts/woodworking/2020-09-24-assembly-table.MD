@@ -8,7 +8,7 @@ tags: [Woodworking, Assembly Table, Workbench, Workshop]
 image:
   path: /thumbnails/20201001_193728.jpeg
   alt: About 2 weeks to assemble
-img_path: "/assets/img/posts/assembly-table"
+media_subpath: "/assets/img/posts/assembly-table"
 ---
 
 I've always wanted a **monster** sized assembly table. They are great to spread your project out and do all kinds of things from cuts, to glue-ups, to finishing.
@@ -38,7 +38,7 @@ Since this was a pretty big undertaking, and my aluminum skills are near zero, I
 
 The basic frame took a couple of weekends to assemble.
 
-Having not done this kind of thing, there were a fair amount of assembly, oops, disassembly, assembly cycles throughout. One has to make sure everything is square in all three dimensions, otherwise you are setting yourself up for trouble down the road.  Which there was plenty of.
+Having not done this kind of thing, there were a fair amount of assembly, oops, disassembly, assembly cycles throughout. One has to make sure everything is square in all three dimensions, otherwise you are setting yourself up for trouble down the road. Which there was plenty of.
 
 {% include clear-float.html %}
 
@@ -63,4 +63,4 @@ Anyway, there is a special jig you can get from {{ site.data.links.leevalley }} 
 
 - Aluminum - Lots and lots of it from {{ site.data.links.vention }} in Montreal
 - MDF for the top from the big box store
-{: .sjg-list }
+  {: .sjg-list }

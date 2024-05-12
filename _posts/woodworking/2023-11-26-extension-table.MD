@@ -8,7 +8,7 @@ tags: [Woodworking, Ash, Furniture, Table]
 image:
   path: /thumbnails/IMG_0221.jpeg
   alt: It's a desert topping and a floor wax
-img_path: "/assets/img/posts/extension-table"
+media_subpath: "/assets/img/posts/extension-table"
 ---
 
 This was my first project using Ash. It's a very nice hardwood, similar to Red Oak but with a little less grain, though not totally closed pores.
@@ -20,7 +20,7 @@ That texture made it a nice fit for this project, which was to exactly match an 
 The thinking is that when not in use, it sits against the wall and acts as a serving table. When in use and we have a larger group of people, we slide it over and up against the existing dining table.
 
 > **Chocolate stain**: Chocolate is a wonderful thing to eat, and it makes for a nice stain colour too.
-{: .prompt-tip }
+> {: .prompt-tip }
 
 ## Under Construction
 
@@ -63,9 +63,9 @@ This is where overflow stuff will go when we have family dinners. More important
 
 ## In Position
 
-In situ as an extension to the existing table.  I levelled it to the exact height of the other table so that people are less likely to spill things, which sounds easy but our theatre room floor is not very level.  Not an exact colour match, but close enough I think.
+In situ as an extension to the existing table. I levelled it to the exact height of the other table so that people are less likely to spill things, which sounds easy but our theatre room floor is not very level. Not an exact colour match, but close enough I think.
 
-This makes for a nice big dining area that can comfortably seat ten people, with lots of room in the middle for serving plates.  Makes me hungry. 
+This makes for a nice big dining area that can comfortably seat ten people, with lots of room in the middle for serving plates. Makes me hungry.
 
 {% include html-side.html img="IMG_0818.jpeg" align="center-wide" %}
 
@@ -74,4 +74,4 @@ This makes for a nice big dining area that can comfortably seat ten people, with
 - Ash, both 2&Prime; thick and 1&Prime; from {{ site.data.links.kjp }}
 - Metal legs purchased from {{ site.data.links.rustydesign }}. The irony (see what I did there) is not lost on me.
 - Rubio Monocoat and Chocolate Precolour Easy.
-{: .sjg-list }
+  {: .sjg-list }

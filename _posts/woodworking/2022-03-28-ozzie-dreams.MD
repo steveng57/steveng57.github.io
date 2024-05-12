@@ -8,7 +8,7 @@ tags: [Woodworking, Ozzie, Epoxy, Inlay, Red Oak, Pets, Dominos, Shaper Origin]
 image:
   path: /thumbnails/20220328_071254.jpeg
   alt: Sweet Dreams Ozman
-img_path: "/assets/img/posts/ozzie-dreams"
+media_subpath: "/assets/img/posts/ozzie-dreams"
 ---
 
 {% include head-mypost.html %}
@@ -45,4 +45,4 @@ Epoxy inlay complete, pillows installed and Ozzie giving it a trial run.
 - Red Oak from {{ site.data.links.kjp }}
 - {{ site.data.links.domino }} for joinery
 - {{ site.data.links.rubio }} Intense Black and Black 2C for the finish
-{: .sjg-list }
+  {: .sjg-list }

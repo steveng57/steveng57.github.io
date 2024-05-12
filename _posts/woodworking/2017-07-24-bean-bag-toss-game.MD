@@ -8,7 +8,7 @@ tags: [Woodworking, Games, Outdoors, Plywood, Red Oak, Cedar]
 image:
   path: /thumbnails/20170724_234953.jpeg
   alt: Lots of practice carving holes on this one
-img_path: /assets/img/posts/bean-bag-toss-game
+media_subpath: /assets/img/posts/bean-bag-toss-game
 ---
 
 One of my first tricky projects was a bean bag toss game. Fun and games around the pool in the back yard.
@@ -24,7 +24,7 @@ The inner circles were just done with a router circle jig I crafted. Drilled som
 ## Mistakes Were Made
 
 > **Pro tip**: Cedar is a squishy wood. Use it wisely.
-{: .prompt-tip }
+> {: .prompt-tip }
 
 Copious amounts of waterproof glue helped fix the situation.
 
@@ -52,4 +52,4 @@ Debbie stamped some dog paw prints on the final version which made it look reall
 - Cedar 2x4s
 - {{ site.data.links.kreg }} pocket hole jig and screws
 - Custom built router large radius jig
-{: .sjg-list }
+  {: .sjg-list }

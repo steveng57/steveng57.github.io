@@ -8,7 +8,7 @@ tags: [Woodworking, Red Oak, Shelves, Floating Shelves]
 image:
   path: /thumbnails/IMG_0752.jpeg
   alt: A smooch from a pooch is definitely good for the soul
-img_path: "/assets/img/posts/floating-shelves"
+media_subpath: "/assets/img/posts/floating-shelves"
 ---
 
 Sometimes I can't wait to start a project where I get to try something new, especially if it's something that you just know that you are going to use a lot in the future.
@@ -35,7 +35,7 @@ Both these shelves have 45&deg; bevel on the underside. It's a pretty big bevel 
 
 ## Sketchup
 
-The shelves are 8 inches deep by 32 inches wide by 1.5 inches thick.  And pretty much everything I make requires a {{ site.data.links.sketchup }} drawing. So here it is.
+The shelves are 8 inches deep by 32 inches wide by 1.5 inches thick. And pretty much everything I make requires a {{ site.data.links.sketchup }} drawing. So here it is.
 
 {% include html-side.html img="floating-shelves-sketchup.jpeg" align="center-wide" %}
 
@@ -45,4 +45,4 @@ The shelves are 8 inches deep by 32 inches wide by 1.5 inches thick.  And pretty
 
 - Red Oak from {{ site.data.links.robertbury }}
 - {{ site.data.links.generalfinishes }} black stain and polyurethane
-{: .sjg-list }
+  {: .sjg-list }

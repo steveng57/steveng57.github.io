@@ -8,7 +8,7 @@ tags: [Woodworking, Red Oak, Cabinets, Shelves, Dominos]
 image:
   path: /thumbnails/IMG_0758C.jpeg
   alt: Cabinet for Gazebo
-img_path: /assets/img/posts/gazebo-cabinet
+media_subpath: /assets/img/posts/gazebo-cabinet
 ---
 
 This is actually a pretty beefy piece, the pictures don't seem to capture the scale of it. I think that is because the unit is actually pretty deep. We had originally planned for this to hold a small fridge and microwave, so we had to make it big enough to hold the largest item.
@@ -46,4 +46,4 @@ We were going to put a little fridge and microwave in there, but current thinkin
 - Red Oak {{ site.data.links.kjp }}
 - {{ site.data.links.rubio }} Intense Black Precolour Easy, Black Oil 2C for finish
 - {{ site.data.links.domino }} for pretty much all joinery, except pocket holes for the back stretchers
-{: .sjg-list }
+  {: .sjg-list }

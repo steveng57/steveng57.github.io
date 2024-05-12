@@ -8,7 +8,7 @@ tags: [Woodworking, Raised Bed, Garden, Cedar, Outdoors, Furniture]
 image:
   path: /thumbnails/20220628_125950.jpeg
   alt: Cedar Plant Boxes
-img_path: "/assets/img/posts/raised-beds"
+media_subpath: "/assets/img/posts/raised-beds"
 ---
 
 These were a big first. Cedar Raised Beds for out back. These two were placed outside by the greenhouse, for growing tomatoes and things. I made three more (not pictured here) that were eventually placed in our small greenhouse out back.

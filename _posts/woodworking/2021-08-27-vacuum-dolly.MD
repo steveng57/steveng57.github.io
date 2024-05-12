@@ -4,11 +4,11 @@ title: Vacuum Dolly
 date: 2021-08-27 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Workshop]
-tags: [Woodworking, Workshop, Plywood,  Dowels, Dominos]
+tags: [Woodworking, Workshop, Plywood, Dowels, Dominos]
 image:
   path: /thumbnails/20210827_212517.jpeg
   alt: Nature abhors a vacuum
-img_path: "/assets/img/posts/vacuum-dolly"
+media_subpath: "/assets/img/posts/vacuum-dolly"
 ---
 
 Shop furniture is the best place to practice. In this case it was practice with dowels, rods, and other round things.
@@ -47,4 +47,4 @@ This gets a **lot** of use in the shop. It hasn't fallen over on me yet, but the
 - Plywood from {{ site.data.links.kjp }}
 - Big maple dowels
 - {{ site.data.links.leevalley }} casters
-{: .sjg-list }
+  {: .sjg-list }

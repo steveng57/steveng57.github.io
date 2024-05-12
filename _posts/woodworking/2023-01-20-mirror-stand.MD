@@ -8,7 +8,7 @@ tags: [Woodworking, Jewelry Boxes, Epoxy, Inlay, Poplar]
 image:
   path: /thumbnails/xIMG_0734.jpeg
   alt: Combo Jewelry Box Thing and Mirror Stand
-img_path: /assets/img/posts/mirror-stand
+media_subpath: /assets/img/posts/mirror-stand
 ---
 
 A cool part of woodworking is that you can do custom designed stuff. In this case, very custom. This is a combination mirror stand, makeup tray, and jewelry box holder all-in-one. Made from poplar to keep it light, with lots of engraving done with the {{ site.data.links.origin}}.
@@ -18,7 +18,7 @@ A cool part of woodworking is that you can do custom designed stuff. In this cas
 ## The Box
 
 {% include html-side.html img="mirror-stand-shaperhub.jpeg" align="left" %}
-It starts with the design, which in this case was done on the web via {{ site.data.links.shaperhub }}. 
+It starts with the design, which in this case was done on the web via {{ site.data.links.shaperhub }}.
 
 I took a bunch of clip-art that suited the box and put them together on this drawing, then transferred that to the {{ site.data.links.origin }}.
 
@@ -28,7 +28,7 @@ I took a bunch of clip-art that suited the box and put them together on this dra
 
 ### Rings and Things
 
-Once the design imported to the Origin, you carve, and before the assembly, you pour some epoxy. In this case the epoxy was sprinkled with copious amounts of glitter, which was very fitting for this kind of piece. 
+Once the design imported to the Origin, you carve, and before the assembly, you pour some epoxy. In this case the epoxy was sprinkled with copious amounts of glitter, which was very fitting for this kind of piece.
 
 The photo doesn't show it very well, but it sparkles. Trust me.
 {% include clear-float.html break=1 %}
@@ -52,4 +52,4 @@ Here it is with the mirror installed. The top has a couple of trays carved in it
 - Poplar from {{ site.data.links.kjp }}
 - {{ site.data.links.domino }} for the mitre joinery
 - {{ site.data.links.origin }} for the carve
-{: .sjg-list }
+  {: .sjg-list }

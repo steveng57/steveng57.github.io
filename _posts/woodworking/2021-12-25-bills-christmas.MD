@@ -8,7 +8,7 @@ tags: [Woodworking, Signs, Epoxy, Inlay, Walnut, Red Oak, Shaper Origin]
 image:
   path: /thumbnails/golf-sign.jpeg
   alt: Golf is a good sign
-img_path: /assets/img/posts/bills-christmas
+media_subpath: /assets/img/posts/bills-christmas
 ---
 
 Christmas is a great time to be a maker. Making stuff with your own hands to give to friends and family is the most rewarding thing about the woodworking craft.
@@ -53,4 +53,4 @@ This was a gift to Bill for Christmas 2022.
 - {{ site.data.links.domino }} for the mitre joinery
 - {{ site.data.links.origin }} for the carve
 - {{ site.data.links.rubio }} for both finishes
-{: .sjg-list }
+  {: .sjg-list }

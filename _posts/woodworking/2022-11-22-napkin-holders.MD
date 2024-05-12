@@ -8,7 +8,7 @@ tags: [Woodworking, Napkin Holder, Kitchen, Walnut, Epoxy, Inlay, Shaper Origin]
 image:
   path: /thumbnails/20221122_113942.jpeg
   alt: Walnut Napkin Holder with White Epoxy Inlay
-img_path: "/assets/img/posts/napkin-holders"
+media_subpath: "/assets/img/posts/napkin-holders"
 ---
 
 The napkin holder projects are among my favorites. Making these is a small challenge, it makes you work at it, but not too hard. I made one for our kitchen, then another for our friends Theresa and Doug. Hence the Theresa and Doug engraving. It would be silly to put Patty and Dave on it, and then give it to Theresa and Doug.
@@ -16,7 +16,7 @@ The napkin holder projects are among my favorites. Making these is a small chall
 {% include head-mypost.html %}
 
 > When doing a project like this, do **not** cut the outside first and attempt to get the inlay groove magically aligned with it. Instead, use the router and your templates to cut the outline of the piece and the groove at the same time. That way they will automagically align. Otherwise things will be a mess. Ask me how I know.
-{: .prompt-tip }
+> {: .prompt-tip }
 
 ## Under Construction
 
@@ -66,4 +66,4 @@ If you are so inclined, you can check out the [charcuterie board]({% post_url /w
 - Walnut from {{ site.data.links.kjp }}
 - {{ site.data.links.domino }}
 - White {{ site.data.links.chillepoxy }} epoxy for the inlay
-{: .sjg-list }
+  {: .sjg-list }

@@ -8,7 +8,7 @@ tags: [Woodworking, Maple, Towel Rack, Furniture, Dominos, Shaper Origin]
 image:
   path: /thumbnails/IMG_0681.jpeg
   alt: A great place to hang
-img_path: "/assets/img/posts/towel-rack"
+media_subpath: "/assets/img/posts/towel-rack"
 ---
 
 At the request of the customer (aka Debbie), I made a custom towel rack to fit precisely in a bathroom space. Working with round things is always a bit of a nifty challenge, as it was here. There were some funky angles to work with and some odd shaped pieces.
@@ -16,10 +16,9 @@ At the request of the customer (aka Debbie), I made a custom towel rack to fit p
 {% include head-mypost.html %}
 
 > **Cool Tool**: The {{ site.data.links.shaper }} was used here. The angled pieces could have been cut by hand I guess, but the accuracy of the Origin is far superior to that.
-{: .prompt-tip }
+> {: .prompt-tip }
 
 ## Under Construction
-
 
 {% include html-side.html img="towel-rack-sketchup.jpeg" align="left" %}
 
@@ -35,7 +34,7 @@ Once you have your 3d model, export the parts to the {{ site.data.links.origin }
 
 ### Poly Poly Poly
 
-I was a little worried about moisture affective the piece, since it was going to be installed in a bathroom and subject to lots of humidity, and also damp towels directly on the rods. 
+I was a little worried about moisture affective the piece, since it was going to be installed in a bathroom and subject to lots of humidity, and also damp towels directly on the rods.
 
 So...I heavily lathered everything with 6 or 7 coats of poly, making sure the rods got an extra dose.
 
@@ -59,4 +58,4 @@ It's been in use for over a year at this point and no issues with warping or ben
 - Maple from {{ site.data.links.kjp }}
 - Polyeurethane finish
 - {{ site.data.links.domino }} for joinery
-{: .sjg-list }
+  {: .sjg-list }

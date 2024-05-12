@@ -17,7 +17,7 @@ tags:
 image:
   path: /thumbnails/IMG_0639.jpeg
   alt: It's a keeper
-img_path: "/assets/img/posts/keepsake-box"
+media_subpath: "/assets/img/posts/keepsake-box"
 ---
 
 I only had a couple of days after finishing the previous project before Debbie's birthday, but I decided to try something new and get it done in time for her special day.
@@ -60,4 +60,4 @@ Orange {{ site.data.links.chillepoxy }} for the inlay, which was carved with the
 - {{ site.data.links.chillepoxy }} with orange colouring
 - {{ site.data.links.domino }} for mitre joinery
 - {{ site.data.links.rubio }} Pure finish
-{: .sjg-list }
+  {: .sjg-list }

@@ -8,7 +8,7 @@ tags: [Woodworking, Taper, Stands, Red Oak, Home Decor, Dominos]
 image:
   path: /thumbnails/20210428_181207.jpeg
   alt: Greenery and Redery
-img_path: "/assets/img/posts/plant-stands"
+media_subpath: "/assets/img/posts/plant-stands"
 ---
 
 It is always nice when you work on a piece that is going to be on display. I also like mixing materials into my projects, and these ceramic pots were just the ticket to go along with the espresso stained oak stands.
@@ -62,4 +62,4 @@ Ta da! All dressed up with freshly potted plants and in their new home, though w
 - {{ site.data.links.domino }} to join the bits together
 - Tapering Jig
 - Amazon procured white pots
-{: .sjg-list }
+  {: .sjg-list }
