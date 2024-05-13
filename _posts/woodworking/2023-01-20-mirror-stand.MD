@@ -11,8 +11,6 @@ image:
   alt: Combo Jewelry Box Thing and Mirror Stand
 media_subpath: /assets/img/posts/mirror-stand
 ---
-{% include head-mypost.html %}
-
 A cool part of woodworking is that you can do custom designed stuff. In this case, very custom. This is a combination mirror stand, makeup tray, and jewelry box holder all-in-one. Made from poplar to keep it light, with lots of engraving done with the {{ site.data.links.origin}}.
 
 ## The Box

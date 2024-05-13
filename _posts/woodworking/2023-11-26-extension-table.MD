@@ -11,8 +11,6 @@ image:
   alt: It's a desert topping and a floor wax
 media_subpath: /assets/img/posts/extension-table
 ---
-{% include head-mypost.html %}
-
 This was my first project using Ash. It's a very nice hardwood, similar to Red Oak but with a little less grain, though not totally closed pores.
 
 That texture made it a nice fit for this project, which was to exactly match an existing dining table that we had in the theatre room.

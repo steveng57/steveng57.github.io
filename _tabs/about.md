@@ -11,9 +11,7 @@ media_subpath: /assets/img/about
 date: 2024-01-28 10:59:55 -0500
 last_modified_at: 2024-04-08 10:41:32 -0400
 ---
-
 {% include header.html %}
-{% include head-mypost.html %}
 
 Welcome to my photo blog of various "maker" things I am up to, mostly woodworking. The above picture is a sign hanging in my workshop, given to me by the family. It's pretty cool.
 

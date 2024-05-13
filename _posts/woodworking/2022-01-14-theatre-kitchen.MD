@@ -21,8 +21,6 @@ image:
   alt: Where are the drawer fronts?
 media_subpath: /assets/img/posts/theatre-kitchen
 ---
-{% include head-mypost.html %}
-
 This was a long project and my first shot at doing kitchen-style cabinetry. We had some space at the back of our theatre room, and it seemed like a good use of the space to make this happen.
 
 ## Under Construction

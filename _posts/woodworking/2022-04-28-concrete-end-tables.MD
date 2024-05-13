@@ -12,8 +12,6 @@ image:
   alt: Adding a new material to the shop
 media_subpath: /assets/img/posts/concrete-end-tables
 ---
-{% include head-mypost.html %}
-
 I tried something very new with these concrete nested end tables. It ended up in the right place, but it was a bit of a bear to get it there. Working with concrete is _very_ different than working with wood. That might sound obvious but it needs to be said. And my artistic skill with the materials were novice at best. Details below.
 
 I thought solid wood was heavy until I made this. Moving these requires a warm-up and a good stretch beforehand.

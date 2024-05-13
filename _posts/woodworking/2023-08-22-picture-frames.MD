@@ -11,8 +11,6 @@ image:
   alt: The first of many to be sure
 media_subpath: /assets/img/posts/picture-frames
 ---
-{% include head-mypost.html %}
-
 These picture frames are sometimes called "Shadow Boxes" or "Shadow Frames". They really add a lot to the artwork that they frame. I have a bunch more to do, but these are a good start.
 
 ## Under Construction

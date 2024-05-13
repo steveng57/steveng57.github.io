@@ -11,8 +11,6 @@ image:
   alt: Spiffy new router table
 media_subpath: /assets/img/posts/shop-projects
 ---
-{% include head-mypost.html %}
-
 In late winter of 2023, I decided a workshop upgrade was due. You can never have enough shop storage, and shop projects are always a fun way to get better at all kinds of things. You can experiment, and if it fails, no one will know. I generally try to reserve between &#x00BC; and &#x2153; of my shop time for shop projects.
 
 ## Under Construction

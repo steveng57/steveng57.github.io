@@ -12,8 +12,6 @@ image:
   alt: MDF and 2x4's - pretty simple
 media_subpath: /assets/img/posts/first-workbench
 ---
-{% include head-mypost.html %}
-
 Every shop needs a workbench, and there is a first for everything. This is the first workbench I built in this shop.
 
 ## Some Background

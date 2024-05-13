@@ -12,8 +12,6 @@ image:
   alt: Lilly's Creations Pencil Holder
 media_subpath: /assets/img/posts/lillys-creations
 ---
-{% include head-mypost.html %}
-
 In this project I created a companion piece for the [Walnut Table]({% post_url /woodworking/2024-01-22-walnut-table %}) that I built in early 2024. It's not a big piece, but there is some detail of interest, like the engraving and the dividers.
 
 It is also another _follow-the-grain_ or _grain-matching_ project, where you cut the pieces from the original timber in such a way that the grain flows all the way around the box, like the [Keepsake Box]({% post_url /woodworking/2023-04-13-keepsake-box %}) that I made for Debbie's birthday. It kinda worked here, but not totally. Unfortunately the grain on this piece was pretty crazy, going in all different kinds of directions, and this technique only works with relatively straight grained boards.

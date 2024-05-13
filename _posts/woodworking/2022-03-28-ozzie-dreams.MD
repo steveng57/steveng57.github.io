@@ -11,8 +11,6 @@ image:
   alt: Sweet Dreams Ozman
 media_subpath: "/assets/img/posts/ozzie-dreams"
 ---
-{% include head-mypost.html %}
-
 This was true labour of love. Our boy Ozzie needed a new place to sleep. It seems he was never very content to stay in one place at night, so we thought we would make him a nice new comfy spot to be in.
 
 ## Under Construction

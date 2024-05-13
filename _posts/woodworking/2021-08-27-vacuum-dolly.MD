@@ -11,8 +11,6 @@ image:
   alt: Nature abhors a vacuum
 media_subpath: /assets/img/posts/vacuum-dolly
 ---
-{% include head-mypost.html %}
-
 Shop furniture is the best place to practice. In this case it was practice with dowels, rods, and other round things.
 
 ## Under Construction
