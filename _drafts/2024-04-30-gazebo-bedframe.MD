@@ -70,7 +70,7 @@ White Oak is a beautiful hardwood, and the Nordic White stain just brought it to
 
 I added an LED lighting strip to the bottom, pointing downwards to light up the floor around the bed.  Since this was a pretty plain piece it needed something to jazz it up a bit.
 
-On the wall above the bed, you'll see the walnut picture frame I made to host four small paintings we picked up a a local artist's coven.  Details can be found here - [Walnut Frame]({% post_url /woodworking/2021-07-30-walnut-frame %}).
+On the wall above the bed, you'll see the walnut picture frame I made to host four small paintings we picked up at a local artist's gallery.  Details can be found here - [Walnut Frame]({% post_url /woodworking/2021-07-30-walnut-frame %}).
 
 {% include clear-float.html break=1%}
 
