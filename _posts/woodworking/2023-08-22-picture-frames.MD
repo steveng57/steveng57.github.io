@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Picture Frames
-description: In this episode, I make some shadow frames for some artwork we have in guest bedroom.
+description: In this episode, I make some shadow frames for some artwork we have in guest bedroom
 date: 2023-08-22 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Home Decor]

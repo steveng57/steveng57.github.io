@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serving Trays
-description: In this episode, we experiment with epoxy inlays in difficult spaces.
+description: In this episode, we experiment with epoxy inlays in difficult spaces
 date: 2023-04-20 18:33:00 -0500
 last_modified_at: 2024-02-25 19:11:41 -0500
 categories: [Woodworking, Home Decor]

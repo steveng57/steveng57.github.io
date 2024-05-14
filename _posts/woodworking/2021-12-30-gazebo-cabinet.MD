@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gazebo Cabinet
-description: A custom-fit solid-oak cabinet for the gazebo.
+description: A custom-fit solid-oak cabinet for the gazebo
 date: 2021-12-31 18:32:00 -0500
 last_modified_at: 2024-03-07 18:00:14 -0500
 categories: [Woodworking, Furniture]

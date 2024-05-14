@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vacuum Dolly
-description: A custom cart for holding my shop vac.
+description: A custom cart for holding my shop vac
 date: 2021-08-27 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Workshop]

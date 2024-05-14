@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Extension Table
-description: A table add-on for our existing table in the Theatre Room.
+description: A table add-on for our existing table in the Theatre Room
 date: 2023-11-26 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Furniture]

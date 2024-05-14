@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Assembly Table
-description: A bigger, more functional assembly table for the workshop.
+description: A bigger, more functional assembly table for the workshop
 date: 2020-09-24 17:58:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Workshop]

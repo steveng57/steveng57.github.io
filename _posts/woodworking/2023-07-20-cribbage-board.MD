@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cribbage Board
-description: A birthday gift for Dad.
+description: A birthday gift for Dad
 date: 2023-07-20 18:32:00 -0500
 last_modified_at: 2024-03-01 18:32:00 -0500
 categories: [Woodworking, Games]
