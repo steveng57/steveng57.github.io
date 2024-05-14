@@ -31,8 +31,8 @@ figcaption {
     text-align: center;
 }
 
-
-.sjg-video {
+/* used to be sjg-video */
+video.embed-video + em {
     font-size: 0.875rem !important; /* Adjust as needed */
     color: var(--text-color) !important;
     text-align: center !important;
