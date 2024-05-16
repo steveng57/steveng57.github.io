@@ -39,7 +39,7 @@ To my shock and horror, I made them **the wrong size!** Instead of being the req
 
 {% include clear-float.html break = 1 %}
 
-> **Measure Twice and Cut Once!**  Hey&hellip; it's a woodworking blog, you know that particular cliche is gonna appear at least a couple of times.
+> **Measure Twice and Cut Once!**  Hey&hellip; it's a woodworking blog, you know that particular clich&eacute; is gonna appear at least a couple of times.
 {: .prompt-danger}
 
 {% include clear-float.html break = 1 %}
