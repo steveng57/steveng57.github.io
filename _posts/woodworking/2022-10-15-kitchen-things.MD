@@ -11,6 +11,8 @@ image:
   alt: Odds and Ends in the Kitchen
 media_subpath: /assets/img/posts/kitchen-things
 ---
+## Background
+
 After our kitchen remodel, the client (Debbie) asked me to fashion a couple of custom pieces for use at the new kitchen island.
 
 The footstool and the computer stand get used every day, very cool. Made from poplar to keep them light and painted to match the cabinetry, I added a few carvings to them to spice them up a bit and filled them with epoxy inlay.

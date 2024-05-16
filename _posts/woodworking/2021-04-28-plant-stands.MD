@@ -11,6 +11,8 @@ image:
   alt: Greenery and Redery
 media_subpath: /assets/img/posts/plant-stands
 ---
+## Origins
+
 It is always nice when you work on a piece that is going to be on display. I also like mixing materials into my projects, and these ceramic pots were just the ticket to go along with the espresso stained oak stands.
 
 ## Details

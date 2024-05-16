@@ -11,6 +11,8 @@ image:
   alt: Cedar Plant Boxes
 media_subpath: /assets/img/posts/raised-beds
 ---
+## Origins
+
 These were a big first: Cedar Raised Beds for out back. These two were placed outside by the greenhouse, for growing tomatoes and things. I made three more (not pictured here) that were eventually placed in our small greenhouse out back.
 
 When the weather gets warmer, I will head out back and take some pics of the finished product and post here.

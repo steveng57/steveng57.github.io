@@ -22,6 +22,8 @@ image:
   alt: Let the Crafting Begin
 media_subpath: /assets/img/posts/punkins-playground
 ---
+## Introduction
+
 This table was specially made to fit into Debbie's craft area. It of my own design, and turned out to be very sturdy even though it is a 4&#39; by 8&#39; span.
 
 ## The Design

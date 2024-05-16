@@ -11,6 +11,8 @@ image:
   alt: No, not that kind of grow op!
 media_subpath: /assets/img/posts/grow-light-stand
 ---
+## Origins
+
 We've had these grow-light stands for a couple years now. They let us get a jump on the greenhouse growing season by a couple of months by starting the seedlings indoors. In the middle of the season, before the batch in the greenhouse is totally spent, I can get a new bunch to the ready.
 
 They are meant to be put on a table, but they take up a lot of room that way. Last year I tried to get clever and I stacked them on top of each other, which was a great space-saver. And it worked great... until it didn't. The structure collapsed and left a muddy mess all over the basement floor, and took me over three hours to clean up.

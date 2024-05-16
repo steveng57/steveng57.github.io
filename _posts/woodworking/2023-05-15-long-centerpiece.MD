@@ -11,6 +11,8 @@ image:
   alt: Stuff by the Pool
 media_subpath: /assets/img/posts/long-centerpiece
 ---
+## Background
+
 I made a few things for the outdoor area by the pool, just to add some decoration. One was a long centerpiece with some engravings, the other was a couple of small round trays for candles or other decorations. It's probably obvious that they were built to resemble the [serving trays]({% post_url /woodworking/2023-04-20-serving-trays %}) that were made around the same time.
 
 One turned out great, the other...not so much. Read on for details!

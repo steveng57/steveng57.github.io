@@ -11,6 +11,8 @@ image:
   alt: A great place to hang
 media_subpath: "/assets/img/posts/towel-rack"
 ---
+## Origins
+
 At the request of the customer (aka Debbie), I made a custom towel rack to fit precisely in a bathroom space. Working with round things is always a bit of a nifty challenge, as it was here. There were some funky angles to work with and some odd shaped pieces.
 
 > **Cool Tool**: The {{ site.data.links.shaper }} was used here. The angled pieces could have been cut by hand I guess, but the accuracy of the Origin is far superior to that.

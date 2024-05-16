@@ -11,6 +11,8 @@ image:
   alt: Lots of practice carving holes on this one
 media_subpath: /assets/img/posts/bean-bag-toss-game
 ---
+## Background
+
 One of my first tricky projects was a bean bag toss game. Fun and games around the pool in the back yard.
 
 ## Getting to Work

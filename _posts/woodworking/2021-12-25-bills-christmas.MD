@@ -11,6 +11,8 @@ image:
   alt: Golf is a good sign
 media_subpath: /assets/img/posts/bills-christmas
 ---
+## Some Background
+
 Christmas is a great time to be a maker. Making stuff with your own hands to give to friends and family is the most rewarding thing about the woodworking craft.
 
 Over tha past few years, the east coast side of the family has decided to have everybody draw the name of another family member to gift to. I drew Bill's name two years in a row, in 2021 and 2022. It was super fun to make these for Bill, because he is an all-round great guy and a wonderful human being. He's the best.

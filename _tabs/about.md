@@ -29,7 +29,7 @@ Each entry has a summary of the project, along with a thumbnail pick that will d
 ### The Posts
 
 The posts are usually, but not always, broken up into the following sections:
-- **Background.**  Reasons why this project was done in the first place, along with cheesy stories to back up the rationale.
+- **Background.**  Reasons why this project was done in the first place, along with cheesy stories to back up the rationale.  Also known as **Origins**, or **Introduction**.
 - **Design.**  The planning behind the projects, sometimes include screenshots from whatever design software and processes I may have used.
 - **Construction.**  The actual build.  Yeah, this section is kind of important, and also self-explanatory. 
 - **In-use.**  I try to wrap up each post with a pic or two showing the piece in actual use, in its native habitat.

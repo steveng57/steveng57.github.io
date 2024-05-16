@@ -20,6 +20,8 @@ image:
   alt: A very special gift for a very special person
 media_subpath: /assets/img/posts/cribbage-board
 ---
+## Origins
+
 For my father's birthday, I made him this cribbage board from a nice piece of marbled walnut. He says it is working well and that it keeps very good score. That's the main thing.
 
 Almost half the work on this one was at the computer making sure the design was right. I didn't do the entire layout, I spent about $20 for a design off of Etsy, then made a bunch of modifications using the online tools from {{ site.data.links.shaperhub }}.
