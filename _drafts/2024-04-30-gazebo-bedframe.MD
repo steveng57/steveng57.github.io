@@ -12,6 +12,7 @@ image:
   alt: Gazebo Bedframe
 media_subpath: /assets/img/posts/gazebo-bedframe
 ---
+## Background
 We have a small building out in the back, about 12&prime;x16&prime;. It was originally intended to be a furniture storage shed for keeping our outdoor stuff protected from Ottawa winters. Well, the builders were doing such a nice job, and the place turned out way better than expected, so we turned it into a little "Gazebo", a little place to escape to when the world is a bit too crazy, or you just want some quiet on a nice spring day.
 
 So we did it up a little nicer than your typical storage shed, putting in some nice flooring and drywall etc. A TV an a bed were also added, but the bed was a bit too big, so I made this custom bedframe. Its a low riding frame to keep the size down, made of white oak sides, with fir for the lats and plywood for the pedestal.
@@ -19,6 +20,16 @@ So we did it up a little nicer than your typical storage shed, putting in some n
 It was a pretty simple standard project, and we can't have that, so I added some LED lighting to the outside rim of the frame to give it some pizzaz. Details below.
 
 ## The Bedframe
+
+{% include html-side.html img="x-gazebo-bedframe-sketchup.jpeg" align="right" %}
+
+### The Design
+
+Per my usual process, I drew this up in {{ site.data.links.sketchup}}, which helps you visualize everything up front, the theory being it will minimized mistakes later.
+
+This is often true, but not always.
+
+{% include clear-float.html break=1 %}
 
 {% include html-side.html img="xIMG_0947.jpeg" align="left" %}
 
