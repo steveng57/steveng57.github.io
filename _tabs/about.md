@@ -19,10 +19,26 @@ Welcome to my photo blog of various "maker" things I am up to, mostly woodworkin
 
 ### Home Page
 
-The [Home Page]({% link index.html %}) is an inverse chronological listing of the various projects I have taken on. As you go further back in time, the projects get a little more primitive...not that my more recent things are perfect, but you learn a lot over time in this craft. Some of those learnings I have actually managed to apply in my more recent efforts.
+The [Home Page]({% link index.html %}) is an reverse chronological listing (also known as "newest first" in non-geek speak) of the various projects I have taken on. As you go further back in time, the projects get a little more primitive...not that my more recent things are perfect, but you learn a lot over time in this craft. Some of those learnings I have actually managed to apply in my more recent efforts.
+
+The home page, or home pages, are paginated into about eight to ten posts per page. As of this writing, there are about 40 posts in all, so that makes for four pages.  See, I can do math!
+
+Each entry has a summary of the project, along with a thumbnail pick that will drive everyone wild with anticipation of the upcoming experience.
+{: .sjg-br}
+
+### The Posts
+
+The posts are usually, but not always, broken up into the following sections:
+- **Background.**  Reasons why this project was done in the first place, along with cheesy stories to back up the rationale.
+- **Design.**  The planning behind the projects, sometimes include screenshots from whatever design software and processes I may have used.
+- **Construction.**  The actual build.  Yeah, this section is kind of important, and also self-explanatory. 
+- **In-use.**  I try to wrap up each post with a pic or two showing the piece in actual use, in its native habitat.
+- **Materials.** A listing of tools and materials, and their suppliers, used in the project.  This section for the nerdy amongst us.
 
 In the early days, I did not take many pictures of the shop or the projects as they were in progress, so a lot of the pics will be of the finished product. I will be taking more "under construction" photos as time progresses, hopefully that will make the posts more interesting to those who like a bit of the "behind-the-scenes" thing.
-{: .sjg-br}
+
+> **Note:** In a post, you can click on any pick and it will launch you into a mini-gallery where you can full-screen scroll thru all the pics in that post.  This is not to be confused with the [Image Gallery](#image-gallery).
+{: .prompt-info .sjg-br}
 
 ### Image Gallery
 
