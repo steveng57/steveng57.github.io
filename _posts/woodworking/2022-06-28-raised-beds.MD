@@ -3,7 +3,7 @@ layout: post
 title: Raised Beds
 description: Cedar raised garden beds, lots of them, for the back yard
 date: 2022-06-28 18:32:00 -0500
-last_modified_at: 2024-02-17 18:32:00 -0500
+last_modified_at: 2024-05-29 17:58:45 -0400
 categories: [Home & Garden, Greenhouse]
 tags: [Woodworking, Raised Bed, Garden, Cedar, Outdoors, Furniture]
 image:
@@ -39,7 +39,20 @@ The neat thing about this stuff is that they have a pretty broad spectrum of col
 
 ## Ready For Stain
 
-{% include html-side.html img="20220628_125950.jpeg" align="center-wide" %}
+{% include html-side.html img="20220628_125950.jpeg" align="left" %}
+
+It's a pretty messy oil stain, but it's not too thick.  It's a little thicker than water so you can easily slop it on.
+
+{% include clear-float.html break = 0 %}
+
+## In Production
+
+{% include html-side.html img="IMG_1012.jpeg" align="center-wide" %}
+
+{% include clear-float.html break = 1 %}
+
+Three of the smaller beds are in our greenhouse in the back.  Not sure I would have gone thru all that work just to put something in a greenhouse, but hey, I have squandered time and energy on many more useless things than this.
+
 
 ## Materials
 
