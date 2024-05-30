@@ -40,7 +40,7 @@ So...I heavily lathered everything with 6 or 7 coats of poly, making sure the ro
 
 {% include clear-float.html break =1 %}
 
-{% include html-side.html img="IMG_0678.jpeg" align="left" %}
+{% include html-side.html img="x-IMG_0678.jpeg" align="left" %}
 
 ### Maple Rods
 
