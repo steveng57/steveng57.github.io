@@ -22,13 +22,13 @@ These were created to go with with the [long centerpiece]({% post_url /woodworki
 
 There was a fair amount of {{ site.data.links.sketchup }} work involved in designing these trays. Most of it had to do with getting the handle just right. I spent a lot of time on it largely because I did not want to relive the nightmare that was the handle on the [yoga room heater disaster](/posts/yoga-room). Yeah...never again.
 
-{% include html-sxs.html img1="tray-handle-sketchup.jpeg" img2="tray-sketchup.jpeg" %}
+{% include html-sxs.html img1="x-tray-handle-sketchup.jpeg" img2="tray-sketchup.jpeg" %}
 
 I also wanted to be sure to get the finger joints just right (that's what this style of corner joinery is called, also called box joints). There are more ways to do finger joints than there are finger joints. In this case, I did it on the {{ site.data.links.origin }} along with the companion setup jig called the Workstation.
 
 ## The Build
 
-{% include html-side.html img="20230405_141946.jpeg" align="left" %}
+{% include html-side.html img="x20230405_141946.jpeg" align="left" %}
 
 ### Tree Tray
 
