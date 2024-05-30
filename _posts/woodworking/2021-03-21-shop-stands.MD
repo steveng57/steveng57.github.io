@@ -23,7 +23,7 @@ I modelled everything up in {{ site.data.links.sketchup}}, to get all the dimens
 
 ## Details
 
-{% include html-side.html img="20210321_210850.jpeg" align = "left" %}
+{% include html-side.html img="x-20210321_210850.jpeg" align = "left" %}
 
 ### 15 Drawers
 

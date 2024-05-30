@@ -33,13 +33,15 @@ The steel top on the new router table is awesome. Nice level even cuts each and 
 
 {% include clear-float.html break=1%}
 
-{% include html-side.html img="Sketchup%20of%20Mitre%20Stand.jpeg" align="left" %}
+{% include html-side.html img="x-Sketchup%20of%20Mitre%20Stand.jpeg" align="left" %}
 
-### Mitre Stand
+### Mitre Saw Stand
 
-Each unit in the mitre stand is basically built as a big cabinet box with a drawer.
+Each unit in the mitre saw stand is basically built as a big cabinet box with a drawer.
 
 You build three of those and string them together using about 10 beefy cabinet screws, and there you have a mitre stand. Here you see it modelled in {{ site.data.links.sketchup }} before the construction began.
+
+I made three of them and bolted them together with cabinet screws.
 {% include clear-float.html %}
 
 ## In the Shop
