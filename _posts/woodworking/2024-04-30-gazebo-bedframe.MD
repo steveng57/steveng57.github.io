@@ -4,11 +4,11 @@ layout: post
 title: Gazebo Bedframe
 description: A slimmed down, low riding bedframe, made from white oak for our Gazebo out back
 date: 2024-05-01 13:51:51 -0400
-last_modified_at: 2024-05-12 13:51:59 -0400
+last_modified_at: 2024-06-22 19:07:27 -0500
 categories: [Woodworking, Home Decor]
 tags: [Woodworking, White Oak, Bedframe, LED Lighting]
 image:
-  path: /thumbnails/IMG_0960.jpeg
+  path: /thumbnails/x-gazebo-bedframe-sketchup.jpeg
   alt: Gazebo Bedframe
 media_subpath: /assets/img/posts/gazebo-bedframe
 ---
@@ -21,13 +21,9 @@ It was a pretty simple standard project, and we can't have that, so I added some
 
 ## The Bedframe
 
-{% include html-side.html img="x-gazebo-bedframe-sketchup.jpeg" align="right" %}
-
 ### The Design
 
-Per my usual process, I drew this up in {{ site.data.links.sketchup}}, which helps you visualize everything up front, the theory being it will minimized mistakes later.
-
-This is often true, but not always.
+Per my usual process, I drew this up in {{ site.data.links.sketchup}}, shown in the pic above, which helps you visualize everything up front, the theory being it will minimized mistakes later.  This is often true, but not always.
 
 {% include clear-float.html break=1 %}
 
@@ -73,9 +69,11 @@ White Oak is a beautiful hardwood, and the Nordic White stain just brought it to
 
 {% include clear-float.html break=1%}
 
-{% include html-side.html img="IMG_0960.jpeg" align="left" %}
+{% include html-side.html img="IMG_1092.jpeg" align="left" %}
 
 ### Lights, Camera, Action
+
+Get your minds out of the gutter people!  
 
 I added an LED lighting strip to the bottom, pointing downwards to light up the floor around the bed.  Since this was a pretty plain piece it needed something to jazz it up a bit.
 
