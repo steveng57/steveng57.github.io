@@ -9,7 +9,7 @@ image:
   alt: The most precious thing in my shop.  A gift from the family.
 media_subpath: /assets/img/about
 date: 2024-01-28 10:59:55 -0500
-last_modified_at: 2024-04-08 10:41:32 -0400
+last_modified_at: 2024-08-15 17:46:53 -0400
 ---
 {% include header.html %}
 
