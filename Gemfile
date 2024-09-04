@@ -5,7 +5,7 @@ gem 'csv', '~> 3.3'
 gem 'base64', '~> 0.2.0'
 gem 'bigdecimal', '~> 3.1', '>= 3.1.8'
 
-gem 'jekyll-theme-chirpy', '~> 7.0'
+gem 'jekyll-theme-chirpy', '~> 7.1'
 
 group :test do
   gem "html-proofer", "~> 4.4"
