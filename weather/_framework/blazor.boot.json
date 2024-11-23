@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "WeatherBlazor",
   "resources": {
-    "hash": "sha256-JRnZAvdg94cdypcaItyXtTbQ0G6dHXYRj9wl/qQOmu0=",
+    "hash": "sha256-uqph2bkEq1CZhqBvy4HQxDmtTjP1bxaC9TSVLnyX62E=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Components.ip5k48ynn3.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.7yvofxhswa.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -36,12 +36,12 @@
       "System.Private.CoreLib.smtpzbzabb.wasm": "System.Private.CoreLib.wasm",
       "System.Private.Uri.ayl9suouln.wasm": "System.Private.Uri.wasm",
       "System.Runtime.InteropServices.JavaScript.3uvku0ibnu.wasm": "System.Runtime.InteropServices.JavaScript.wasm",
-      "System.Runtime.5awt5hkjgs.wasm": "System.Runtime.wasm",
+      "System.Runtime.dtatlibsey.wasm": "System.Runtime.wasm",
       "System.Text.Encodings.Web.wp0aonjvxd.wasm": "System.Text.Encodings.Web.wasm",
       "System.Text.Json.zo34lu7vj3.wasm": "System.Text.Json.wasm",
       "System.Text.RegularExpressions.gl65p7jdfx.wasm": "System.Text.RegularExpressions.wasm",
       "System.Web.HttpUtility.072zm64hke.wasm": "System.Web.HttpUtility.wasm",
-      "WeatherBlazor.t3h2jd6bvy.wasm": "WeatherBlazor.wasm",
+      "WeatherBlazor.hn55s4mrjn.wasm": "WeatherBlazor.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.hmanx9razn.js": "dotnet.native.js",
       "dotnet.native.p4lwlf2bu1.wasm": "dotnet.native.wasm",
@@ -100,12 +100,12 @@
       "System.Net.Http.es47cisgx5.wasm": "sha256-/ueWq0Fqywt9GiFY3tb1auYdii+ZAl/e+StiGLq1pss=",
       "System.Net.Primitives.6jn9jrgskj.wasm": "sha256-Yh4N06ilhT9Mj/d3jR6tq3pjvycW/fDED3qtkG8s9VY=",
       "System.Private.Uri.ayl9suouln.wasm": "sha256-nlRW+yj/qtXnenlJbOBghJPirUWqFr5WXMsMjUieZlg=",
-      "System.Runtime.5awt5hkjgs.wasm": "sha256-rVE22kKu/SNbdwZSdj2vc//pMCjzmDbkvVXZGtfPiG8=",
+      "System.Runtime.dtatlibsey.wasm": "sha256-AUkZJ18XI0J/+GffxIzZHDgRSENc8B6kWhxVGGrj2AE=",
       "System.Text.Encodings.Web.wp0aonjvxd.wasm": "sha256-3Bkwa9mSjO7xOdlVLl0/qnjjZiS82EjQaxuCRyCUaC0=",
       "System.Text.Json.zo34lu7vj3.wasm": "sha256-TXeBI8M8ZOyP3UbKxZPoUoRkIhK2+2cZ9QYu7mqR+b8=",
       "System.Text.RegularExpressions.gl65p7jdfx.wasm": "sha256-XKqW+TrmS4TjaNifmwb+yfc9w2BWkr3dUjq0xmJYmEw=",
       "System.Web.HttpUtility.072zm64hke.wasm": "sha256-JNwY9ymWcfzQOoEPDizXA2d7Uik3Ehq57OVHW6mg4ww=",
-      "WeatherBlazor.t3h2jd6bvy.wasm": "sha256-59X+z4UzeAGFtCGvdD1SB1cAZcXdx2jFdD6/jUvGOIw="
+      "WeatherBlazor.hn55s4mrjn.wasm": "sha256-3feG4cK0CTM9U7gkUtziC/qbReUBHEUqlwx5k0mUUlo="
     }
   },
   "cacheBootResources": true,
