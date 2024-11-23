@@ -206,6 +206,10 @@ exclude:
   - gen-imagecaptions.ps1
   - gen-thumbnails.ps1
 
+# Include additional directories
+include:
+  - _framework
+
 jekyll-archives:
   enabled: [categories, tags]
   layouts:
