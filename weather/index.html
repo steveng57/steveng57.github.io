@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/site.css" />
     <!-- If you add any scoped CSS files, uncomment the following to load them
     <link href="weatherblazor.styles.css" rel="stylesheet" /> -->
+    <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
@@ -37,6 +38,16 @@
         <span class="dismiss">🗙</span>
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/weather/service-worker.js')
+                .then(function (registration) {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                }).catch(function (error) {
+                    console.log('Service Worker registration failed:', error);
+                });
+        }
+    </script>
 </body>
 
 </html>
