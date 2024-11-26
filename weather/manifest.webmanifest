@@ -1,10 +1,12 @@
 {
   "name": "WeatherBlazor",
   "short_name": "WeatherBlazor",
+  "id": "./",
   "start_url": "/weather",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "/assets/img/favicons/android-chrome-192x192.png",
