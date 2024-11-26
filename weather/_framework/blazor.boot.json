@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "WeatherBlazor",
   "resources": {
-    "hash": "sha256-cEWK7hjK9/51gVLZhLhvxWn0rCuQFrQ7lje0tC8Kez8=",
+    "hash": "sha256-2jdqQlXFVzyYM1l6KKSr5KO2p2qbgyl/3MjD3ER2snk=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Components.xt5g49a62m.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.7yvofxhswa.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -23,7 +23,7 @@
       "System.Collections.Concurrent.g0ny4l55tq.wasm": "System.Collections.Concurrent.wasm",
       "System.Collections.Immutable.hv6feksvqr.wasm": "System.Collections.Immutable.wasm",
       "System.Collections.Specialized.xc7f8cyze0.wasm": "System.Collections.Specialized.wasm",
-      "System.Collections.bv7o5h5b0k.wasm": "System.Collections.wasm",
+      "System.Collections.y48doex0by.wasm": "System.Collections.wasm",
       "System.ComponentModel.28u698euyz.wasm": "System.ComponentModel.wasm",
       "System.Console.v1q4vye659.wasm": "System.Console.wasm",
       "System.Diagnostics.DiagnosticSource.ym95e3qklo.wasm": "System.Diagnostics.DiagnosticSource.wasm",
@@ -36,12 +36,12 @@
       "System.Private.CoreLib.dbyqmeh4ph.wasm": "System.Private.CoreLib.wasm",
       "System.Private.Uri.ayl9suouln.wasm": "System.Private.Uri.wasm",
       "System.Runtime.InteropServices.JavaScript.3uvku0ibnu.wasm": "System.Runtime.InteropServices.JavaScript.wasm",
-      "System.Runtime.vwwk09ui4l.wasm": "System.Runtime.wasm",
+      "System.Runtime.vuwp0ylzx1.wasm": "System.Runtime.wasm",
       "System.Text.Encodings.Web.wp0aonjvxd.wasm": "System.Text.Encodings.Web.wasm",
       "System.Text.Json.zo34lu7vj3.wasm": "System.Text.Json.wasm",
       "System.Text.RegularExpressions.gl65p7jdfx.wasm": "System.Text.RegularExpressions.wasm",
       "System.Web.HttpUtility.072zm64hke.wasm": "System.Web.HttpUtility.wasm",
-      "WeatherBlazor.nsfjfo24b9.wasm": "WeatherBlazor.wasm",
+      "WeatherBlazor.xiz5cbu2d8.wasm": "WeatherBlazor.wasm",
       "dotnet.native.1a2i3gjns9.js": "dotnet.native.js",
       "dotnet.native.lflfyzcpwn.wasm": "dotnet.native.wasm",
       "dotnet.js": "dotnet.js",
@@ -89,7 +89,7 @@
       "System.Collections.Concurrent.g0ny4l55tq.wasm": "sha256-ADGWx8rPfs5ftD/wCG/cFqw585w1zgvqniZJtb7Jc2Q=",
       "System.Collections.Immutable.hv6feksvqr.wasm": "sha256-je5LY1Tt/t9n7zJE6nXDzcYJKSiGoSn5k3VxX1kr+Us=",
       "System.Collections.Specialized.xc7f8cyze0.wasm": "sha256-AWsY+YRx8csoebni0qa206TDUzAigSJNPWEskd5BauA=",
-      "System.Collections.bv7o5h5b0k.wasm": "sha256-KakRAg6rSoi5MpKisiCBVeORslPr2Pc1AMMdrZpSMSE=",
+      "System.Collections.y48doex0by.wasm": "sha256-copZk3psA8MberKLAunn8o9gtyW1ORkL62yJUNsSmG0=",
       "System.ComponentModel.28u698euyz.wasm": "sha256-ggftgc5cU4VTXzEcEGBVl+OtnGRGmlZ9ZZHkKMVLxYw=",
       "System.Console.v1q4vye659.wasm": "sha256-HfzWFVy/IP6a169xtLFvSDmcX0xbNo9Gayccv/s3FXE=",
       "System.Diagnostics.DiagnosticSource.ym95e3qklo.wasm": "sha256-Chp0xLapNSJbMVXyy+O8XPkPIKd3Ch7lJk7qb/V/iVQ=",
@@ -100,12 +100,12 @@
       "System.Net.Http.spjmqvny9m.wasm": "sha256-sMzruUUCkA2XTE0wIrLcNa+0/QdiYXGc3TAava3aK1I=",
       "System.Net.Primitives.6jn9jrgskj.wasm": "sha256-Yh4N06ilhT9Mj/d3jR6tq3pjvycW/fDED3qtkG8s9VY=",
       "System.Private.Uri.ayl9suouln.wasm": "sha256-nlRW+yj/qtXnenlJbOBghJPirUWqFr5WXMsMjUieZlg=",
-      "System.Runtime.vwwk09ui4l.wasm": "sha256-Yfg0GqJjZjyKN5zdZfRQn0IUj2PdkNQJ+N8DX7fYMDY=",
+      "System.Runtime.vuwp0ylzx1.wasm": "sha256-abXfq97mTrfsS2HFlV9qQqyPwSk2BttIWGwb7CZoaSQ=",
       "System.Text.Encodings.Web.wp0aonjvxd.wasm": "sha256-3Bkwa9mSjO7xOdlVLl0/qnjjZiS82EjQaxuCRyCUaC0=",
       "System.Text.Json.zo34lu7vj3.wasm": "sha256-TXeBI8M8ZOyP3UbKxZPoUoRkIhK2+2cZ9QYu7mqR+b8=",
       "System.Text.RegularExpressions.gl65p7jdfx.wasm": "sha256-XKqW+TrmS4TjaNifmwb+yfc9w2BWkr3dUjq0xmJYmEw=",
       "System.Web.HttpUtility.072zm64hke.wasm": "sha256-JNwY9ymWcfzQOoEPDizXA2d7Uik3Ehq57OVHW6mg4ww=",
-      "WeatherBlazor.nsfjfo24b9.wasm": "sha256-t8Uzs+xC5VIJUqkuImpiTqGbHBGHYIlxU8OQjM7V8IA="
+      "WeatherBlazor.xiz5cbu2d8.wasm": "sha256-GTuqIvmJRLxmFIEYmdc4hB+JsKscbFFm7zhcHfSjpkk="
     }
   },
   "cacheBootResources": true,
