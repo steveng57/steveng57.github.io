@@ -30,3 +30,32 @@ h3 {
 .weather-info td:last-child {
     text-align: right;
 }
+
+
+.custom-button {
+    background-color: mediumblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    display: block; /* Make the button a block element */
+    margin: 20px auto; /* Add margin and center horizontally */
+    text-align: center; /* Center the text */
+}
+
+.custom-button:hover {
+    background-color: darkblue;
+}
+
+.custom-button:active {
+    background-color: navy; /* Change background color when button is pressed */
+    transform: scale(0.98); /* Slightly scale down the button */
+}
+
+.highlighted-row {
+    background-color: darkred;
+    color: white;
+}
