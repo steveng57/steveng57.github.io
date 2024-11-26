@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "YuNmk5l3",
+  "version": "dEkJ/iO8",
   "assets": [
     {
       "hash": "sha256-QaU3MCJZXUPpTg3z+sdNujuTSOqUW4O70/Rc6aQj1xU=",
@@ -122,8 +122,8 @@ self.assetsManifest = {
       "url": "_framework/System.Net.Primitives.6jn9jrgskj.wasm"
     },
     {
-      "hash": "sha256-W9mS3LdfK4s/PFajUkZqVzAVYKKPTfVi1fdRqyvyAHo=",
-      "url": "_framework/System.Private.CoreLib.32hkuya4md.wasm"
+      "hash": "sha256-OQ5S4VTQIqkNzlD5Wy7ZNQoL6MF5CYYmPlpXjftn+Cc=",
+      "url": "_framework/System.Private.CoreLib.dbyqmeh4ph.wasm"
     },
     {
       "hash": "sha256-nlRW+yj/qtXnenlJbOBghJPirUWqFr5WXMsMjUieZlg=",
@@ -154,11 +154,11 @@ self.assetsManifest = {
       "url": "_framework/System.Web.HttpUtility.072zm64hke.wasm"
     },
     {
-      "hash": "sha256-la7SDzNOXw1IN5GlVBYW6XGYry7rCJTh5GS0K9GDkoE=",
-      "url": "_framework/WeatherBlazor.5g93ck0wsl.wasm"
+      "hash": "sha256-wuzlgTEhwbAYinlUX0R6MQWnB61m45ETzyh9145PvII=",
+      "url": "_framework/WeatherBlazor.6jxo9p8ccx.wasm"
     },
     {
-      "hash": "sha256-a/opnqA6vchDq7BB0EQGZucA2uT0dW+4MD9dYYFoiMc=",
+      "hash": "sha256-n5/nIjI9/L5cgTwoDOiADXJT6pqw6GRrkt0/oBH3BMM=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -174,8 +174,8 @@ self.assetsManifest = {
       "url": "_framework/dotnet.native.1a2i3gjns9.js"
     },
     {
-      "hash": "sha256-9PT+0A4bZna6St9sJLS3X5RxXKNa2cb4gGxqQf49Fak=",
-      "url": "_framework/dotnet.native.kucsb8lu2t.wasm"
+      "hash": "sha256-QehrSN1H6i5x2O2n4n6FNcdsnz05UmLmfKr3qnbHrdQ=",
+      "url": "_framework/dotnet.native.lflfyzcpwn.wasm"
     },
     {
       "hash": "sha256-uD1t4tsPtmIHsx30SC4OztehGGaHVDksFD38rL2e3P4=",
