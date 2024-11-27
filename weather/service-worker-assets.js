@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "7g9DrdhG",
+  "version": "cCDN0yGf",
   "assets": [
     {
       "hash": "sha256-QaU3MCJZXUPpTg3z+sdNujuTSOqUW4O70/Rc6aQj1xU=",
@@ -122,8 +122,8 @@ self.assetsManifest = {
       "url": "_framework/System.Net.Primitives.6jn9jrgskj.wasm"
     },
     {
-      "hash": "sha256-OQ5S4VTQIqkNzlD5Wy7ZNQoL6MF5CYYmPlpXjftn+Cc=",
-      "url": "_framework/System.Private.CoreLib.dbyqmeh4ph.wasm"
+      "hash": "sha256-C5bK1oJX3Gy0hXsrERjHtsnxtJPbWR207JMVMkLf0gE=",
+      "url": "_framework/System.Private.CoreLib.dmleh95xm4.wasm"
     },
     {
       "hash": "sha256-nlRW+yj/qtXnenlJbOBghJPirUWqFr5WXMsMjUieZlg=",
@@ -158,7 +158,7 @@ self.assetsManifest = {
       "url": "_framework/WeatherBlazor.m6juvdnj51.wasm"
     },
     {
-      "hash": "sha256-YHGdKwTCM1sHwQfKHqBjMc6SII3xky2qYDHp5g8SeZI=",
+      "hash": "sha256-FdFPSzTmr/7RoaoJ/8GKR+23UgcMNe5JnPfAYLQ+8oY=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -170,28 +170,16 @@ self.assetsManifest = {
       "url": "_framework/dotnet.js"
     },
     {
-      "hash": "sha256-9xCWQUqTIQOKDgM5QIn+f3iy1ZtwRHy7GbUB+m9Fgt4=",
-      "url": "_framework/dotnet.native.1a2i3gjns9.js"
+      "hash": "sha256-W1OCxyolY8h0YEU2JpEzDlRFxwECHvE0epKMPrl4tLA=",
+      "url": "_framework/dotnet.native.7p5iylxmoj.js"
     },
     {
-      "hash": "sha256-QehrSN1H6i5x2O2n4n6FNcdsnz05UmLmfKr3qnbHrdQ=",
-      "url": "_framework/dotnet.native.lflfyzcpwn.wasm"
+      "hash": "sha256-uDT/2MiZo6vzCQRCaurQ5C6nEg5JMCibZWBhZky59eE=",
+      "url": "_framework/dotnet.native.kt6j63ve3b.wasm"
     },
     {
       "hash": "sha256-uD1t4tsPtmIHsx30SC4OztehGGaHVDksFD38rL2e3P4=",
       "url": "_framework/dotnet.runtime.o8gq1i8bk6.js"
-    },
-    {
-      "hash": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
-      "url": "_framework/icudt_CJK.tjcz0u77k5.dat"
-    },
-    {
-      "hash": "sha256-8fItetYY8kQ0ww6oxwTLiT3oXlBwHKumbeP2pRF4yTc=",
-      "url": "_framework/icudt_EFIGS.tptq2av103.dat"
-    },
-    {
-      "hash": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs=",
-      "url": "_framework/icudt_no_CJK.lfu7j35m59.dat"
     },
     {
       "hash": "sha256-fBH0QU39oNPV/Ag4rxZoGXqTkZsYh0PMHRTZqCS4O1Y=",
