@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "1kK+Afev",
+  "version": "Hewebpp1",
   "assets": [
     {
       "hash": "sha256-QaU3MCJZXUPpTg3z+sdNujuTSOqUW4O70/Rc6aQj1xU=",
@@ -122,8 +122,8 @@ self.assetsManifest = {
       "url": "_framework/System.Net.Primitives.6jn9jrgskj.wasm"
     },
     {
-      "hash": "sha256-C5bK1oJX3Gy0hXsrERjHtsnxtJPbWR207JMVMkLf0gE=",
-      "url": "_framework/System.Private.CoreLib.dmleh95xm4.wasm"
+      "hash": "sha256-XlXt2tXb8LF/ySWTqbJlg+DEoDdppeSlpCcLmQPIovM=",
+      "url": "_framework/System.Private.CoreLib.qhmm2yzs2g.wasm"
     },
     {
       "hash": "sha256-nlRW+yj/qtXnenlJbOBghJPirUWqFr5WXMsMjUieZlg=",
@@ -134,8 +134,8 @@ self.assetsManifest = {
       "url": "_framework/System.Runtime.InteropServices.JavaScript.3uvku0ibnu.wasm"
     },
     {
-      "hash": "sha256-abXfq97mTrfsS2HFlV9qQqyPwSk2BttIWGwb7CZoaSQ=",
-      "url": "_framework/System.Runtime.vuwp0ylzx1.wasm"
+      "hash": "sha256-EkFaOJwZYir/g1nIg0izUJT/ps4kQrNAkX2zAwYy2mo=",
+      "url": "_framework/System.Runtime.ukkbu1s5t2.wasm"
     },
     {
       "hash": "sha256-3Bkwa9mSjO7xOdlVLl0/qnjjZiS82EjQaxuCRyCUaC0=",
@@ -154,11 +154,11 @@ self.assetsManifest = {
       "url": "_framework/System.Web.HttpUtility.072zm64hke.wasm"
     },
     {
-      "hash": "sha256-nr+s7qBtRSZ433TSZ6yVTwHkl95syjQerqybohPKgNw=",
-      "url": "_framework/WeatherBlazor.m6juvdnj51.wasm"
+      "hash": "sha256-CBa/2USlm4Sba75i3Ygsg+V1GcQ7/XT4fF/1/sT5WYk=",
+      "url": "_framework/WeatherBlazor.gya2uimugu.wasm"
     },
     {
-      "hash": "sha256-FdFPSzTmr/7RoaoJ/8GKR+23UgcMNe5JnPfAYLQ+8oY=",
+      "hash": "sha256-E1a7fBMZSzise86w8VSH1gtEZJ4PHNouwFB4L0XUXL0=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -174,8 +174,8 @@ self.assetsManifest = {
       "url": "_framework/dotnet.native.7p5iylxmoj.js"
     },
     {
-      "hash": "sha256-uDT/2MiZo6vzCQRCaurQ5C6nEg5JMCibZWBhZky59eE=",
-      "url": "_framework/dotnet.native.kt6j63ve3b.wasm"
+      "hash": "sha256-WUcIDXXquovWEm172lJWQ4t4sP5xgjEReJWmu6t0bm0=",
+      "url": "_framework/dotnet.native.j1vush05kh.wasm"
     },
     {
       "hash": "sha256-uD1t4tsPtmIHsx30SC4OztehGGaHVDksFD38rL2e3P4=",
@@ -198,7 +198,7 @@ self.assetsManifest = {
       "url": "icon-192.png"
     },
     {
-      "hash": "sha256-ad1ENGoniQ5GOvIWmWap6DETv29TJBGNJuZG5KxRxms=",
+      "hash": "sha256-qkLjVKtpYWPFZoAfAFzh9jzNLCxLsxlOhrGte/upeJk=",
       "url": "index.html"
     },
     {
