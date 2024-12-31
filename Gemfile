@@ -6,7 +6,7 @@ gem 'base64', '~> 0.2.0'
 gem 'bigdecimal', '~> 3.1', '>= 3.1.8'
 gem 'logger', '~> 1.6', '>= 1.6.1'
 
-gem 'jekyll-theme-chirpy', '~> 7.1'
+gem 'jekyll-theme-chirpy', '~> 7.2', '>= 7.2.4'
 
 group :test do
   gem 'html-proofer', '~> 5.0', '>= 5.0.9'
