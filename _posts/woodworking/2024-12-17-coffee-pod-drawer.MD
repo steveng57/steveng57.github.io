@@ -3,10 +3,10 @@ author: sjg
 layout: post
 title: Coffee Pod Drawer
 description: A Christmas gift for Matt, a walnut storage drawer for coffee pods
-date: 2024-12-17 12:00:00 -0500
+date: 2024-12-24 12:00:00 -0500
 last_modified_at: 2024-12-30 12:26:05 -0500
 categories: [Woodworking, Home Decor]
-tags: [Woodworking, Walnut, Inlay, Drawer]
+tags: [Woodworking, Walnut, Inlay, Drawers]
 image:
   path: /thumbnails/IMG_1509.jpeg
   alt: Coffee Pod Drawer
@@ -49,9 +49,11 @@ For the bottom, I carved seven rows of three circles as nestling places for the 
 
 {% include clear-float.html break=1 %}
 
+### The Drawer Front
+
 {% include html-side.html img="x-IMG_1503.jpeg" align="left" %}
 
-### The Inlay
+#### The Inlay
 
 The font is called "Satisfy", which is oddly satisfying.  Designed in Shaper Studio, and carved with the Shaper Origin.
 
@@ -59,7 +61,7 @@ The font is called "Satisfy", which is oddly satisfying.  Designed in Shaper Stu
 
 {% include html-side.html img="x-IMG_1507.jpeg" align="right" %}
 
-### Chillin'
+#### Chillin'
 
 The epoxy is {{ site.data.links.chillepoxy }}, a light gray made by combining white with a drop or two of gray.
 
