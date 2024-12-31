@@ -78,8 +78,8 @@ The {{ site.data.links.rubio }} was a bit different this time: instead of the no
 ## Odds and Ends
 
 So a couple of interesting things about this project, they are small things, but as this was my first real project of the season and I am kind of rusty, I am very happy with how they turned out.
-- Home made drawer slide. Well not a drawer slide as much as it is a drawer track, a couple of strips of wood inset on the sides of the box to make sure that the drawer is snug and in the center.  The hard-wax oil that is used to finish it should let it all slide in and out quite nicely.
-- I made my own walnut edge banding to cover the end-grain on the front of the drawer box.  I got a new drum sander about a year ago and they are perfect for things like this.  I don't think I could have made this without it.
+- Home made **drawer slide**. Well it is not a drawer slide as much as it is a drawer track, a couple of strips of wood inset on the sides of the box to make sure that the drawer is snug and centered.  The hard-wax oil that is used to finish it should let it all slide in and out quite nicely.
+- I made my own walnut **edge banding** to cover the end-grain on the front of the drawer box.  I got a new drum sander about a year ago and they are perfect for things like this.  I don't think I could have made this without it.
 
 {% include clear-float.html break=1%}
 
