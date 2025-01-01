@@ -43,9 +43,14 @@ The drawer itself consists of the sides and bottom, both of which involved the S
 
 The sides were thinner than a normal box, only about 10mm thick, so the corner joinery had to be stronger than just a butt joint and some glue.  I opted for finger joints (aka box joints) on this one.
 
+
+{% include html-side.html img="x-IMG_1498.jpeg" align="center" %}
+
+{% include clear-float.html break=1 %}
+
 For the bottom, I carved seven rows of three circles as nestling places for the pods.  I don't know how well that will work over time as it is a bit of a pain to place them all neatly in the circles.  I expect that eventually the pods will be tossed in the drawer a little ad-hoc.  I know that's what I would do.
 
-{% include html-sxs.html img1="x-IMG_1498.jpeg" img2="x-IMG_1499.jpeg" %}
+{% include html-sxs.html img1="x-IMG_1499.jpeg" img2="x-IMG_1488.jpeg" %}
 
 {% include clear-float.html break=1 %}
 
