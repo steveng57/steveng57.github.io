@@ -5,6 +5,7 @@ gem 'csv', '~> 3.3'
 gem 'base64', '~> 0.2.0'
 gem 'bigdecimal', '~> 3.1', '>= 3.1.8'
 gem 'logger', '~> 1.6', '>= 1.6.1'
+gem 'fiddle', '~> 1.1', '>= 1.1.6'
 
 gem 'jekyll-theme-chirpy', '~> 7.2', '>= 7.2.4'
 
