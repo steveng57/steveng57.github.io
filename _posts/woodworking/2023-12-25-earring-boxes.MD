@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Earing Boxes
+title: Earring Boxes
 description: In this episode, we see how to make really complicated boxes.  In this case a Christmas gift for someone special
 date: 2023-12-25 18:32:00 -0500
 last_modified_at: 2024-02-20 11:44:45 -0500
@@ -8,12 +8,12 @@ categories: [Woodworking, Jewelry Boxes]
 tags: [Woodworking, Walnut, Jewelry Boxes, Shaper Origin, Dominos]
 image:
   path: /thumbnails/IMG_0461.jpeg
-  alt: Earings Trays - a gift for a wonderful human
-media_subpath: /assets/img/posts/earing-boxes
+  alt: Earrings Trays - a gift for a wonderful human
+media_subpath: /assets/img/posts/earring-boxes
 ---
 ## Some Background
 
-I really like making special things for other people. This is a fun example of that. Debbie thought it would be cool to make a set of earing boxes for her sister for Christmas. I could not agree more. This was a first of its kind for me. While I have made a great many boxes in the past, the insert was a whole new kind of thing.
+I really like making special things for other people. This is a fun example of that. Debbie thought it would be cool to make a set of earring boxes for her sister for Christmas. I could not agree more. This was a first of its kind for me. While I have made a great many boxes in the past, the insert was a whole new kind of thing.
 
 > **Cool Tool**: The {{ site.data.links.shaper }} was critical here, no way I could make this with just tools. It is truly an amazing machine.
 {: .prompt-tip }
@@ -54,11 +54,11 @@ Here they are, ready and waiting for the big day.
 
 ## In Position
 
-All filled with all kinds of earings. Looks like I might have to make more!
-{% include html-side.html img="xearing-box-01.jpeg" align="center-wide" %}
+All filled with all kinds of earrings. Looks like I might have to make more!
+{% include html-side.html img="xearring-box-01.jpeg" align="center-wide" %}
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="earings-from-top.jpeg" align="center-wide" %}
+{% include html-side.html img="earrings-from-top.jpeg" align="center-wide" %}
 {% include clear-float.html %}
 
 ## Materials

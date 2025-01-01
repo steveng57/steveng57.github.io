@@ -42,7 +42,7 @@ The process was similar for the _Bling_ side of the box, but I used a single-lin
 
 ## Badda Boom Badda Bling
 
-Here it is with the mirror installed. The top has a couple of trays carved in it for holding earings or makeup.
+Here it is with the mirror installed. The top has a couple of trays carved in it for holding earrings or makeup.
 
 {% include html-side.html img="IMG_0737.jpeg" align="center" %}
 {% include clear-float.html break=1 %}
