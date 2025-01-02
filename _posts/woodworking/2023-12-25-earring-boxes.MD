@@ -3,7 +3,7 @@ layout: post
 title: Earring Boxes
 description: In this episode, we see how to make really complicated boxes.  In this case a Christmas gift for someone special
 date: 2023-12-25 18:32:00 -0500
-last_modified_at: 2024-02-20 11:44:45 -0500
+last_modified_at: 2025-01-02 11:00:00 -0500
 categories: [Woodworking, Jewelry Boxes]
 tags: [Woodworking, Walnut, Jewelry Boxes, Shaper Origin, Dominos]
 image:
@@ -20,6 +20,14 @@ I really like making special things for other people. This is a fun example of t
 
 ## Under Construction
 
+{% include html-side.html img="x-earring-box-sketchup.jpeg" align="left" %}
+### Design
+Here is an exploded view from {{ site.data.links.sketchup }}.
+
+The design on this changed a fair bit along the way.  I had originally planned on the holes and bottom being one piece with the holes stopping about six mm from the bottom.  But then getting the green velvet in each hole would have been very difficult, not to mention that they were 72 of them.  In the end I added a detached bottom, and routed the holes all the way through.  Then placed a sheet of green velvet between the two for final assembly, much easier.
+{% include clear-float.html break = 1 %}
+
+### Finishing
 Doing the finishing on this one was pretty messy, partly due to the number of pieces, and also all the nooks and crannies to get into.
 
 Nice to have a big work surface to spread out. Especially when you are a messy, messy woodworker.
