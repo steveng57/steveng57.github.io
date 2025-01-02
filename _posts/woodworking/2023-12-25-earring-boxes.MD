@@ -24,13 +24,13 @@ I really like making special things for other people. This is a fun example of t
 ### Design
 Here is an exploded view from {{ site.data.links.sketchup }}.
 
-The design on this changed a fair bit along the way.  I had originally planned on the holes and bottom being one piece with the holes stopping about six mm from the bottom.  But then getting the green velvet in each hole would have been very difficult, not to mention that they were 72 of them.  
+The design on this changed a fair bit along the way.  I had originally planned on the holes and bottom being one piece with the holes stopping about 6mm from the bottom.  But then getting the green velvet in each hole would have been very difficult, not to mention that they were 72 of them.  
 
 In the end I added a detached bottom, and routed the holes all the way through.  Then placed a sheet of green velvet between the two for final assembly, much easier.
 {% include clear-float.html break = 1 %}
 
 ### Finishing
-Doing the finishing on this one was pretty messy, partly due to the number of pieces, and also all the nooks and crannies to get into.
+Doing the finish on this one was pretty messy, partly due to the number of pieces, and also all the nooks and crannies to get into.
 
 Nice to have a big work surface to spread out. Especially when you are a messy, messy woodworker.
 
