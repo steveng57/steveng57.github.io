@@ -32,4 +32,4 @@ group :jekyll_plugins do
 end
 
 # Fixing the google-protobuf problem
-gem 'google-protobuf', '~> 4.29', '= 4.29.3'
+gem 'google-protobuf', '~> 4.29', '= 4.29.2'
