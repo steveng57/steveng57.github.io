@@ -30,3 +30,6 @@ gem 'http_parser.rb', '~> 0.8.0', :platforms => [:jruby]
 group :jekyll_plugins do
   gem "jekyll-redirect-from", "~> 0.16"
 end
+
+# Fixing the google-protobuf problem
+gem 'google-protobuf', '~> 4.29', '>= 4.29.3'
