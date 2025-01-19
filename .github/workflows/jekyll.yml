@@ -26,12 +26,23 @@ jobs:
       - name: Install dependencies
         run: sudo apt-get update && sudo apt-get install -y git curl
 
+      - name: Cache Ruby
+        id: cache-ruby
+        uses: actions/cache@v3
+        with:
+          path: /opt/hostedtoolcache/Ruby/3.3.0/x64
+          key: ${{ runner.os }}-ruby-3.3.0
+          restore-keys: |
+            ${{ runner.os }}-ruby-
+
       - name: Install ruby-build
+        if: steps.cache-ruby.outputs.cache-hit != 'true'
         run: |
           git clone https://github.com/rbenv/ruby-build.git
           sudo PREFIX=/usr/local ./ruby-build/install.sh
 
       - name: Install Ruby
+        if: steps.cache-ruby.outputs.cache-hit != 'true'
         run: |
           ruby-build 3.3.0 /opt/hostedtoolcache/Ruby/3.3.0/x64
           touch /opt/hostedtoolcache/Ruby/3.3.0/x64.complete
