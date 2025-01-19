@@ -30,8 +30,8 @@ jobs:
         id: cache-ruby
         uses: actions/cache@v3
         with:
-          path: /opt/hostedtoolcache/Ruby/3.3.0/x64
-          key: ${{ runner.os }}-ruby-3.3.0
+          path: /opt/hostedtoolcache/Ruby/3.4.1/x64
+          key: ${{ runner.os }}-ruby-3.4.1
           restore-keys: |
             ${{ runner.os }}-ruby-
 
@@ -44,15 +44,15 @@ jobs:
       - name: Install Ruby
         if: steps.cache-ruby.outputs.cache-hit != 'true'
         run: |
-          ruby-build 3.3.0 /opt/hostedtoolcache/Ruby/3.3.0/x64
-          touch /opt/hostedtoolcache/Ruby/3.3.0/x64.complete
+          ruby-build 3.4.1 /opt/hostedtoolcache/Ruby/3.4.1/x64
+          touch /opt/hostedtoolcache/Ruby/3.4.1/x64.complete
         env:
           RUBY_CONFIGURE_OPTS: "--disable-install-doc"
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3.0'
+          ruby-version: '3.4.1'
           bundler-cache: true
 
       - name: Setup Pages
