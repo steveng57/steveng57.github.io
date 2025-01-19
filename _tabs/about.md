@@ -84,4 +84,4 @@ But if you must know, politics wise, I am fiscally conservative (you can't spend
 
 {% include clear-float.html break = 2 %}
 
-{% include mydatetime.html date = site.time lang = lang prefix= "This site was last generated on:  "%}.
+{% include mydatetime.html date = site.time lang = lang prefix= "This site was last generated on:  "%}
