@@ -21,9 +21,9 @@ So I decided to do a network upgrade.  Of course, when upgrading a network, you 
 
 ## The Mess
 
-So when we built the place back in 2014, I asked my builder to put network cabling throughout the home, with at least one ethernet cable to a location in every room, sometimes two locations.  He had to look for somebody to do the work of course, so he found tapped his house-vac installer guy, Al, in the hopes that he could do it.  
+So when we built the place back in 2014, I asked my builder to put network cabling throughout the home, with at least one ethernet cable to a location in every room, sometimes two locations.  He had to look for somebody to do the work of course, so he tapped his in-house vac installer guy, Al, in the hopes that he could do it.  
 
-Now Al is a great guy, but this was indeed his first rodeo in putting something like this together.  So he did what any savvy installer would, he consulted the experts at a custom home AV shop here in town and asked them what he should install.  
+Now Al is a great guy, but this was indeed his first rodeo putting something like this together.  So he did what any savvy installer would, he consulted the experts at a custom home AV shop here in town and asked them what he should install.  
 
 Now this is a good shop too, but they gave him instructions on installing the most mondo beefy network cabling one could think of for a complete end-to-end home automation experience.  This meant five ethernet wires running to each and every location I specified.  This is all fine, I put having that much ethernet cabling in the 'good problem to have" category.  
 
@@ -41,7 +41,7 @@ A zoom-out of almost the entire rack, and a zoom-in of the mess.
 
 {% include html-side.html img="x-IMG_1608.jpeg" align="left" %}
 
-The first order of business was to get the new gear mounted on the front and run the wires to make sure that everything worked.
+The first order of business was to get the new gear mounted on the front and run the wires to make sure that everything worked.  Sometime things get worse before they get better.  This is one of those times.
 
 For those interested, I run [Unifi gear from Ubiquiti](https://www.ui.com/).  They make pro-sumer and enterprise networking gear.  It is really really good stuff if you ever want to upgrade from the stuff your ISP gives you.
 
@@ -66,5 +66,7 @@ Very happy with the results, both the cleanup and the speed.
 
 ## Materials and Tools
 
-- [Unifi gear from Ubiquiti](https://www.ui.com/)
+- [Router - Unifi Dream Machine Pro](https://ca.store.ui.com/ca/en/category/all-cloud-gateways/products/udm-pro/){:target='_blank'}
+- [Main Switch - Unifi Pro HD 24 PoE](https://ca.store.ui.com/ca/en/category/all-switching/products/usw-pro-hd-24-poe){:target='_blank'}
+- [Legacy Unifi gear from Ubiquiti](https://www.ui.com/){:target='_blank'}
 {: .sjg-list }
