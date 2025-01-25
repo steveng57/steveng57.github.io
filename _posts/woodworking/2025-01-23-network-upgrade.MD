@@ -41,7 +41,9 @@ A zoom-out of almost the entire rack, and a zoom-in of the mess.
 
 {% include html-side.html img="x-IMG_1608.jpeg" align="left" %}
 
-The first order of business was to get the new gear mounted on the front and run the wires to make sure that everything worked.  Sometime things get worse before they get better.  This is one of those times.
+The first order of business was to get the new gear mounted on the front and run the wires to make sure that everything worked.  
+
+Sometimes things get worse before they get better.  This is one of those times.
 
 For those interested, I run [Unifi gear from Ubiquiti](https://www.ui.com/).  They make pro-sumer and enterprise networking gear.  It is really really good stuff if you ever want to upgrade from the stuff your ISP gives you.
 
