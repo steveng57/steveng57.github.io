@@ -63,6 +63,9 @@ Very happy with the results, both the cleanup and the speed.
 
 {% include html-side.html img="x-SpeedTest.jpeg" align="center-wide" %}
 
+{% include clear-float.html break=1 %}
+
+Now all I need is for Rogers to increase their upload speed to a reasonable 1Gbps and we're golden.  Not holding my breath though.
 
 ## Materials and Tools
 
