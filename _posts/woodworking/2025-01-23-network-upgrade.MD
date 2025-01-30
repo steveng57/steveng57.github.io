@@ -33,8 +33,6 @@ But when you run all those wires back to the same location in the basement (it's
 
 My old gear was facing the back of the rack, to make plugging things from the rats nest easier.  You can see some of the mess dangling in the back.
 
-A zoom-out of almost the entire rack, and a zoom-in of the mess.
-
 {% include clear-float.html break=1 %}
 
 ## Phase 1 Complete
