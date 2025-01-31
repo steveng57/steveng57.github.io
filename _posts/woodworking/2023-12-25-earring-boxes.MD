@@ -10,6 +10,7 @@ image:
   path: /thumbnails/IMG_0461.jpeg
   alt: Earrings Trays - a gift for a wonderful human
 media_subpath: /assets/img/posts/earring-boxes
+favorite: true
 ---
 ## Some Background
 

@@ -10,6 +10,7 @@ image:
 media_subpath: /assets/img/about
 date: 2024-01-28 10:59:55 -0500
 last_modified_at: 2024-08-15 17:46:53 -0400
+toc: true
 ---
 {% include header.html %}
 
@@ -63,6 +64,18 @@ The [Tags]({% link _tabs/tags.md %}) link will display a _tag wall_ splattered w
 {: .sjg-br}
 
 To all the fans of this website, pictured below, please be [let me know](mailto:steveng57@outlook.com) if you find any bugs or other inaccuracies. This is very much a work in progress.
+
+## Favorite Posts
+
+Here are some of my favorite projects:
+
+<ul>
+  {% for post in site.posts %}
+    {% if post.favorite %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
 
 ## About the author
 

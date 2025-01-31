@@ -11,6 +11,7 @@ image:
   path: /thumbnails/IMG_0693.jpeg
   alt: Walnut Table and Benches
 media_subpath: /assets/img/posts/walnut-table
+favorite: true
 ---
 ## Background
 
