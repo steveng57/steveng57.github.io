@@ -29,8 +29,8 @@ url: "https://www.stevengoulet.com" # the base hostname & protocol for your site
 github:
   username: steveng57
 
-twitter:
-  username: twitter_username # change to your twitter username
+#twitter:
+#  username: twitter_username # change to your twitter username
 
 social:
   # Change to your full name.
