@@ -25,3 +25,7 @@
 
 - type: github
   icon: "fab fa-github"
+
+- type: bluesky
+  icon: 'fa-brands fa-bluesky'
+  url: 'https://bsky.app/profile/steveng57.bsky.social'        
