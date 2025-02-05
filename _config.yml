@@ -219,5 +219,8 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
+plugins:
+  - jekyll-include-cache
+
 # Global Variables
 tb: "{:target='_blank' rel='noopener noreferrer'}"
