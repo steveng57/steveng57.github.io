@@ -8,7 +8,7 @@ last_modified_at: 2025-01-23 21:48:08 -0500
 categories: [Home & Garden, House Tech]
 tags: [House Tech, Networking]
 image:
-  path: /thumbnails/IMG_1611.jpeg
+  path: /thumbnails/x-IMG_1640b.jpeg
   alt: Network Upgrade
 media_subpath: /assets/img/posts/network-upgrade
 ---
@@ -66,6 +66,15 @@ Very happy with the results, both the cleanup and the speed.
 {% include clear-float.html break=1 %}
 
 Now all I need is for Rogers to increase their upload speed to a reasonable 1Gbps and we're golden.  Not holding my breath though.
+
+## Update
+
+> Got the new UNAS Pro (Unifi Network Attached Storage) box and installed it alongside the other gear.  It is a bunch of storage drives used for backups and sharing files.  It is the new kit on the bottom.
+{: .prompt-tip}
+
+{% include html-side.html img="x-IMG_1641.jpeg" align="center" %}
+
+{% include clear-float.html break=1 %}
 
 ## Materials and Tools
 
