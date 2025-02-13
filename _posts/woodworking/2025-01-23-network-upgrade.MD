@@ -53,6 +53,8 @@ For those interested, I run [Unifi gear from Ubiquiti](https://www.ui.com/).  Th
 
 Phase 2 consisted of some patch cable management and general cleanup.  This phase only took a couple of hours but it was the cream in the coffee.
 
+The empty switch in the middle is a backup in case one of the other fails.  It is an older, slower model, but will do in a pinch.
+
 The lights are a bit of kit from Ubiquiti called "Etherlighting".  I never knew I needed that, but clearly I did.
 
 {% include clear-float.html break=1 %}
