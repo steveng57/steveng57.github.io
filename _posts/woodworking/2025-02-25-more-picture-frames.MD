@@ -25,7 +25,7 @@ Always good to get a _"before"_ shot, since the _"after"_ should look so much be
 
 Kinda blah right?  Definitely needs something to make them pop.
 
-## Poplar to the Rescue.
+## Poplar to the Rescue
 
 Poplar is very popular.  Sorry, that joke never gets old, although Deb would say it got old about a decade ago.  Still, I can't help it.  Hey, this is my blog and I will put whatever lame jokes I want to in here.  Look, I am not forcing you to stay, you can move on if you like, but the bad jokes stay.  They are my trademark, I am known for them.  Yeah, I know I used the same lame joke on the original picture frames post, just let it go already!
 
