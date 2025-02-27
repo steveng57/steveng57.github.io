@@ -11,7 +11,7 @@ image:
   path: /thumbnails/IMG_0912.jpeg
   alt: Lilly's Creations Pencil Holder
 media_subpath: /assets/img/posts/lillys-creations
-favorite: true
+favorite: false
 ---
 ## Some Background
 

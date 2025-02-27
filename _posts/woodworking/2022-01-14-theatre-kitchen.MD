@@ -20,6 +20,7 @@ image:
   path: /thumbnails/20220114_114921.jpeg
   alt: Where are the drawer fronts?
 media_subpath: /assets/img/posts/theatre-kitchen
+favorite: true
 ---
 ## Introduction
 
