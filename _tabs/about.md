@@ -72,7 +72,7 @@ Here are some of my favorite projects:
 <ul>
   {% for post in site.posts %}
     {% if post.favorite %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><a href="{{ post.url }}">{{ post.title }}:</a> {{ post.description }}.</li>
     {% endif %}
   {% endfor %}
 </ul>
