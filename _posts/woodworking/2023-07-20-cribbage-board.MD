@@ -51,7 +51,7 @@ _391 holes. Go ahead...count 'em._
 
 ### Finish
 
-Finishing this one was a little tricky too. I use a hard-wax oil called {{ site.data.links.rubio }} for most of my projects theses days. It makes for a great, durable, and repairable finish. It is also way less finicky that other finishes: you apply it, wait a bit, and wipe off the excess. Dust does not really stick to it, so shop dust is not so much of a problem.
+Finishing this one was a little tricky too. I use a hard-wax oil called {{ site.data.links.rubio }} for most of my projects theses days. It makes for a great, durable, and repairable finish. It is also way less finicky that other finishes: you apply it, wait a bit, and wipe off the excess. Nothing really sticks to it, so shop dust is not so much of a problem.
 
 But then there was the problem of the wax and the holes. The wax loved to get in there, but the look was not good, and I am sure the functionality would have been even worse. A 1/8&Prime; drill bit came to my rescue, but like I said, _391 holes. Go ahead...count 'em!_
 
