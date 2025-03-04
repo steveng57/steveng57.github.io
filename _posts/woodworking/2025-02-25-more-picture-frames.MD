@@ -107,7 +107,7 @@ That is one adorable, and well-fed bird.
 
 I used a new set of paints on this frame, a "glass acrylic" that claims to be good on woods, glass, and ceramics.  It worked pretty well. 
 
-Deb created an excellent good colour match.
+Deb created an excellent colour match, so the frame goes great with the branches in the artwork.
 
 {% include clear-float.html break=1 %}
 
