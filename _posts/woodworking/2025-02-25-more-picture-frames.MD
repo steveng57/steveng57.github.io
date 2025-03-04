@@ -4,7 +4,7 @@ layout: post
 title: More Picture Frames
 description: A second round of frames for various pieces of artwork around the house
 date: 2025-02-25 21:19:42 -0500
-last_modified_at: 2025-02-26 21:48:08 -0500
+last_modified_at: 2025-03-03 21:48:08 -0500
 categories: [Woodworking, Home Decor]
 tags: [Woodworking, Picture Frame, Poplar, Home Decor, Dominos]
 image:
@@ -70,6 +70,46 @@ In the back of this pic you can see snow piled up and covering the window.  We h
 {% include html-side.html img="IMG_1675.jpeg" align="center-wide" %}
 {% include html-side.html img="x-IMG_1674.jpeg" align="center-wide" %}
 
+## Update
+
+> So while I had the shop all setup for picture frames, I decided to do a couple more: one for the Gazebo and one for the new sauna room being built out back.
+{: .prompt-tip}
+
+{% include html-side.html img="x-IMG_1680.jpeg" align="left" %}
+### Gazebo Trees
+
+This frame is in a small building we have out back that we call the Gazebo.  It is totally enclosed, so not really a gazebo, but we called it that once and the name stuck.  It is a nice place to hang out in the summer, with cool breezes and cool colours.  Unfortunately, this painting is in the same cool place, and needs something to make it stick out against the pastel walls.
+{% include clear-float.html break=1 %}
+
+{% include html-side.html img="x-IMG_1689.jpeg" align="right" %}
+### Domino Dominance
+
+Since I talk a lot about using {{ site.data.links.domino }}, I figured I would finally add a pic that shows them being installed on the mitre joints for strength and alignment. 
+
+The frame isn't very thick, about 11.5 mm, so I have to use the smallest dominoes that I have, 4mmx20mm.  You can see one on top of the board on the right. 
+
+{% include clear-float.html break=1 %}
+
+{% include html-side.html img="x-IMG_1696.jpeg" align="left" %}
+### Framed Forest
+
+Mounting this one took a bit of finesse.  The internal frame of the painting had become skewed, and was sort-of trapezoidal.  I wasn't about to make my frame trapezoidal to match that mistake, so I had to bend it back into shape.  
+
+I clamped it square for a couple of days, then wedged it firmly in place while screwing it to the new frame.  I used a lot more screws than normal to keep is square, around 20 I think.
+
+{% include clear-float.html break=1 %}
+
+
+{% include html-side.html img="x-IMG_1697.jpeg" align="right" %}
+### Cutie Patootie
+
+That is one adorable, and well-fed bird.
+
+I used a new set of paints on this frame, a "glass acrylic" that claims to be good on woods, glass, and ceramics.  It worked pretty well. 
+
+Deb created an excellent good colour match.
+
+{% include clear-float.html break=1 %}
 
 ## Materials and Tools
 
