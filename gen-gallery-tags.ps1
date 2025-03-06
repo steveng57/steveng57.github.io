@@ -2,7 +2,7 @@
 $imagesPath = "d:/dev/Source/Repos/steveng57.github.io/assets/img/posts"
 
 # Get all JPEG files in the folder and subfolders
-$jpegFiles = Get-ChildItem -Path $imagesPath -Recurse -Filter *.jpeg
+$jpegFiles = Get-ChildItem -Path $imagesPath -Recurse -Filter *.jpeg -Depth 1
 $titleIndex = 21
 $tagIndex = 18
 # Create a Shell.Application object
