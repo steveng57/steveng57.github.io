@@ -35,7 +35,7 @@ function GenerateImageCaptions($folderPath) {
    $subjectIndex = 22
    $dateTakenIndex = 12
    $dimensionsIndex = 31
-
+   $tagIndex = 18
 
    # Get all the subfolders
    $subfolders = Get-ChildItem -Path $folderPath -Directory
@@ -71,6 +71,9 @@ function GenerateImageCaptions($folderPath) {
          $temp = $temp -replace "[^0-9]", ""
          $height = [int]$temp
 
+         $tag = $shellFolder.GetDetailsOf($shellFile, $tagIndex)
+         $tagsArray = $tag -split "; " # Split the tags into an array
+
          # Generate LQIP using ImageMagick
          # Generate LQIP using ImageMagick and output to stdout
          #$lqip = & magick convert $imageFile.FullName -resize 19x10 jpg:- 
@@ -83,7 +86,7 @@ function GenerateImageCaptions($folderPath) {
             'datetaken' = $dateTaken
             'width' = $width
             'height' = $height
-            'gallery' = $file[0] -ne "x"
+            'gallery' = $tagsArray -contains "gallery" # Check if "gallery" is in the tags array
          }
       }
    }

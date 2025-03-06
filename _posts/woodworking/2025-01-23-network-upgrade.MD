@@ -8,7 +8,7 @@ last_modified_at: 2025-01-23 21:48:08 -0500
 categories: [Home & Garden, House Tech]
 tags: [House Tech, Networking]
 image:
-  path: /thumbnails/x-IMG_1640b.jpeg
+  path: /thumbnails/IMG_1640b.jpeg
   alt: Network Upgrade
 media_subpath: /assets/img/posts/network-upgrade
 ---
@@ -29,7 +29,7 @@ Now this is a good shop too, but they gave him instructions on installing the mo
 
 But when you run all those wires back to the same location in the basement (it's called the _home run_ if you're interested), creates a really big cluster of wires coming together behind my equipment rack.  I had to sort thru them all to get the right ones to plug into the gear, which I thing took about two hours on its own.
 
-{% include html-sxs.html img1="x-IMG_1590.jpeg" img2="x-IMG_1591.jpeg" %}
+{% include html-sxs.html img1="IMG_1590.jpeg" img2="IMG_1591.jpeg" %}
 
 My old gear was facing the back of the rack, to make plugging things from the rats nest easier.  You can see some of the mess dangling in the back.
 
@@ -37,7 +37,7 @@ My old gear was facing the back of the rack, to make plugging things from the ra
 
 ## Phase 1 Complete
 
-{% include html-side.html img="x-IMG_1608.jpeg" align="left" %}
+{% include html-side.html img="IMG_1608.jpeg" align="left" %}
 
 The first order of business was to get the new gear mounted on the front and run the wires to make sure that everything worked.  
 
@@ -63,7 +63,7 @@ The lights are a bit of kit from Ubiquiti called "Etherlighting".  I never knew 
 
 Very happy with the results, both the cleanup and the speed.
 
-{% include html-side.html img="x-SpeedTest.jpeg" align="center-wide" %}
+{% include html-side.html img="SpeedTest.jpeg" align="center-wide" %}
 
 {% include clear-float.html break=1 %}
 
@@ -74,7 +74,7 @@ Now all I need is for Rogers to increase their upload speed to a reasonable 1Gbp
 > Got the new UNAS Pro (Unifi Network Attached Storage) box and installed it alongside the other gear.  It is a bunch of storage drives used for backups and sharing files.  It is the new kit on the bottom.
 {: .prompt-tip}
 
-{% include html-side.html img="x-IMG_1641.jpeg" align="center" %}
+{% include html-side.html img="IMG_1641.jpeg" align="center" %}
 
 {% include clear-float.html break=1 %}
 

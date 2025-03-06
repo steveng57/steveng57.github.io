@@ -19,7 +19,7 @@ This is perhaps my most complicated project to date, with the possible exception
 
 ## The Table
 
-{% include html-side.html img="xIMG_0490.jpeg" align="left" %}
+{% include html-side.html img="IMG_0490.jpeg" align="left" %}
 
 ### The Legs
 
@@ -30,7 +30,7 @@ Do I cut a bunch of similar parts, but have many more parts, then glue them all 
 I decided on the latter approach and I think it was for the best. The glue-ups were pretty complicated as it was, so I wouldn't want to make them any more difficult.
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="xIMG_0499.jpeg" align="right" %}
+{% include html-side.html img="IMG_0499.jpeg" align="right" %}
 
 ### The Top
 
@@ -57,7 +57,7 @@ The metal brackets in the corners was probably overkill, as the {{ site.data.lin
 
 ## The Benches
 
-{% include html-side.html img="xIMG_0634.jpeg" align="left" %}
+{% include html-side.html img="IMG_0634.jpeg" align="left" %}
 
 ### Bench Legs
 

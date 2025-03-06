@@ -33,7 +33,7 @@ The steel top on the new router table is awesome. Nice level even cuts each and 
 
 {% include clear-float.html break=1%}
 
-{% include html-side.html img="x-Sketchup%20of%20Mitre%20Stand.jpeg" align="left" %}
+{% include html-side.html img="Sketchup%20of%20Mitre%20Stand.jpeg" align="left" %}
 
 ### Mitre Saw Stand
 

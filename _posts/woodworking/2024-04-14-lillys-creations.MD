@@ -23,7 +23,7 @@ Still, it made the box look better than it otherwise would have, so not a total 
 
 ## The Box
 
-{% include html-side.html img="xIMG_0868.jpeg" align="left" %}
+{% include html-side.html img="IMG_0868.jpeg" align="left" %}
 
 ### The Board
 
@@ -33,7 +33,7 @@ I chose this piece because it was wide enough to slice in half and still have so
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="xIMG_0870.jpeg" align="right" %}
+{% include html-side.html img="IMG_0870.jpeg" align="right" %}
 
 ### The Cut
 
@@ -57,7 +57,7 @@ The font is called _Satisfy_, which is oddly satisfying.
 
 ## Join and Finish
 
-{% include html-side.html img="xIMG_0901.jpeg" align="right" %}
+{% include html-side.html img="IMG_0901.jpeg" align="right" %}
 
 ### Glue-up Prep
 
@@ -67,7 +67,7 @@ It was those dividers that were being kind of finicky. They didn't want to stay 
 
 {% include clear-float.html break=1%}
 
-{% include html-side.html img="xIMG_0882.jpeg" align="left" %}
+{% include html-side.html img="IMG_0882.jpeg" align="left" %}
 
 ### The Glue-up
 

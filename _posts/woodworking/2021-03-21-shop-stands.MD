@@ -17,13 +17,13 @@ There really is no more fun a project than a shop project. Doing shop stuff is p
 
 ## Design
 
-{% include html-sxs.html img1="x-workshop-cabinets.jpeg" img2 = "x-workshop-cabinets-layout.jpeg" %}
+{% include html-sxs.html img1="workshop-cabinets.jpeg" img2 = "workshop-cabinets-layout.jpeg" %}
 
 I modelled everything up in {{ site.data.links.sketchup}}, to get all the dimensions right.  This time though I also did a layout of all the parts on the various thicknesses of plywood.  The outer carcass and drawer fronts are 18mm, the drawers are 15mm, and the carcass backs and drawer bottoms are 6mm.  This was about a year into the pandemic, when plywood prices had gone thru the roof, and I didn't want to make any silly mistakes.  Baltic Birch Plywood was going for 250% of its pre-pandemic prices, which was already kind of high.
 
 ## Details
 
-{% include html-side.html img="x-20210321_210850.jpeg" align = "left" %}
+{% include html-side.html img="20210321_210850.jpeg" align = "left" %}
 
 ### 15 Drawers
 

@@ -23,7 +23,7 @@ It is always nice when you work on a piece that is going to be on display. I als
 This seems a bit silly looking back on it now, to have gone to this length in the design. But it was a great way to learn {{ site.data.links.sketchup }}, which has been super valuable in many projects.
 {% include clear-float.html break = 1%}
 
-{% include html-side.html img="x-20210427_190041.jpeg" align="left" %}
+{% include html-side.html img="20210427_190041.jpeg" align="left" %}
 
 ### The Stands
 

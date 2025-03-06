@@ -8,7 +8,7 @@ last_modified_at: 2024-06-22 19:07:27 -0500
 categories: [Woodworking, Home Decor]
 tags: [Woodworking, White Oak, Bedframe, LED Lighting]
 image:
-  path: /thumbnails/x-gazebo-bedframe-sketchup.jpeg
+  path: /thumbnails/gazebo-bedframe-sketchup.jpeg
   alt: Gazebo Bedframe
 media_subpath: /assets/img/posts/gazebo-bedframe
 ---
@@ -27,7 +27,7 @@ Per my usual process, I drew this up in {{ site.data.links.sketchup}}, shown in 
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="xIMG_0947.jpeg" align="left" %}
+{% include html-side.html img="IMG_0947.jpeg" align="left" %}
 
 ### The Pedestal
 
@@ -35,7 +35,7 @@ The pedestal for the bed is a bunch of plywood strips each about cut about 10cm 
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="xIMG_0948.jpeg" align="right" %}
+{% include html-side.html img="IMG_0948.jpeg" align="right" %}
 
 ### Pedestal Glue-up
 
@@ -45,7 +45,7 @@ I made the edge banding myself, from offcuts of the sides of the bedframe itself
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="xIMG_0959.jpeg" align="left" %}
+{% include html-side.html img="IMG_0959.jpeg" align="left" %}
 
 ### Assembly Time
 

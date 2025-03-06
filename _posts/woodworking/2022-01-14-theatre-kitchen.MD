@@ -47,7 +47,7 @@ To my shock and horror, I made them **the wrong size!** Instead of being the req
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="xIMG_0542.jpeg" align="right" %}
+{% include html-side.html img="IMG_0542.jpeg" align="right" %}
 
 ### Spare Parts
 
@@ -84,7 +84,7 @@ I hooked up micro-switches to all the doors and drawers to control them. There i
 
 We scavenged the granite top from our upstairs kitchen remodel and repurposed it down here. It fit almost perfectly, just had to carve off a bit off the end.
 
-{% include html-side.html img="xIMG_0541.jpeg" align="center-wide" %}
+{% include html-side.html img="IMG_0541.jpeg" align="center-wide" %}
 {% include clear-float.html break = 1 %}
 {% include html-side.html img="IMG_0540.jpeg" align="center-wide" %}
 

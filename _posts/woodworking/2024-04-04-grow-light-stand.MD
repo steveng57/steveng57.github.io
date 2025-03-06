@@ -19,7 +19,7 @@ They are meant to be put on a table, but they take up a lot of room that way. La
 
 ## Under Construction
 
-{% include html-side.html img="xIMG_0864.jpeg" align="left" %}
+{% include html-side.html img="IMG_0864.jpeg" align="left" %}
 
 ### Open Spaces
 
@@ -27,7 +27,7 @@ So rather than tempt fate and risk it happening again, this year I decided to do
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="xIMG_0865.jpeg" align="right" %}
+{% include html-side.html img="IMG_0865.jpeg" align="right" %}
 
 ### Sturdy Stacks
 

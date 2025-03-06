@@ -23,7 +23,7 @@ These floating shelves (sometimes called a _blind shelf_) have a 4 inch radius c
 
 ## The Workout Room Shelf
 
-{% include html-sxs.html img1="xIMG_0743.jpeg" img2="xIMG_0744.jpeg" %}
+{% include html-sxs.html img1="IMG_0743.jpeg" img2="IMG_0744.jpeg" %}
 These shelves are make from red oak, which is a very dense hardwood, meaning they are heavy. A special [floating shelf support](https://www.leevalley.com/en-ca/shop/hardware/storage-and-organization/shelf-supports/51933-blind-shelf-supports){{ site.tb }} is used to make sure the shelf is properly supported.  
 {% include clear-float.html break=0 %}
 

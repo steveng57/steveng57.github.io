@@ -24,7 +24,7 @@ The thinking is that when not in use, it sits against the wall and acts as a ser
 
 ## Under Construction
 
-{% include html-side.html img="x-IMG_0216.jpeg" align="center" %}
+{% include html-side.html img="IMG_0216.jpeg" align="center" %}
 {% include clear-float.html break = 1 %}
 
 There was a deep gouge in the top of this that took a fair amount of epoxy and sanding to make disappear. If you know where to look...actually no, you can't see it at all.
@@ -33,7 +33,7 @@ Mmmm...{{ site.data.links.rubio }} **Chocolate** was the colour used here. Mmmm.
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="xIMG_0218.jpeg" align="left" %}
+{% include html-side.html img="IMG_0218.jpeg" align="left" %}
 
 ### Apron
 

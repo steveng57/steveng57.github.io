@@ -39,7 +39,7 @@ We built this to fit under the tv in the gazebo. The gazebo is the name for a sm
 
 We were going to put a little fridge and microwave in there, but current thinking is that I will add a drawer and a door to the right side instead. Then we can hide more messy things in there.
 
-{% include html-side.html img="x-IMG_0759.jpeg" align="center" %}
+{% include html-side.html img="IMG_0759.jpeg" align="center" %}
 
 ## Materials
 
