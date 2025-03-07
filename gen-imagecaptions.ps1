@@ -18,7 +18,7 @@ Generates thumbnails for images in the "C:\Images" folder and deletes any existi
 #>
 
 param(
-    [string]$folderPath = ".\assets\img\posts"
+   [string]$folderPath = ".\assets\img\posts"
 )
 
 function GenerateImageCaptions($folderPath) {
@@ -57,7 +57,7 @@ function GenerateImageCaptions($folderPath) {
          $shellFolder = $shell.Namespace($folder)
          $shellFile = $shellFolder.ParseName($file)
 
-               # Get the properties
+         # Get the properties
          $title = $shellFolder.GetDetailsOf($shellFile, $titleIndex)
          $subject = $shellFolder.GetDetailsOf($shellFile, $subjectIndex)
          $dateTaken = $shellFolder.GetDetailsOf($shellFile, $dateTakenIndex)
@@ -72,7 +72,7 @@ function GenerateImageCaptions($folderPath) {
          $height = [int]$temp
 
          $tag = $shellFolder.GetDetailsOf($shellFile, $tagIndex)
-         $tagsArray = $tag -split "; " # Split the tags into an array
+         $tagsArray = $tag -split "\s*;\s*" # Split the tags into an array
 
          # Generate LQIP using ImageMagick
          # Generate LQIP using ImageMagick and output to stdout
@@ -81,12 +81,12 @@ function GenerateImageCaptions($folderPath) {
          #$base64 = [System.Convert]::ToBase64String($bytes)
 
          $metadata[$file] = @{
-            'title' = $title
-            'subject' = $subject
+            'title'     = $title
+            'subject'   = $subject
             'datetaken' = $dateTaken
-            'width' = $width
-            'height' = $height
-            'gallery' = $tagsArray -contains "gallery" # Check if "gallery" is in the tags array
+            'width'     = $width
+            'height'    = $height
+            'gallery'   = $tagsArray -contains "gallery" # Check if "gallery" is in the tags array
          }
       }
    }
