@@ -62,7 +62,7 @@ These are still in my shop, awaiting the next project that requires four drawer 
 Installing this on the basement floor was quite a challenge. The floor is not level, not even close. There is about a 40mm (1.5in) drop from one end to the other that I had to shim on the toe-kick. Thankfully, there were quite a few YouTube videos on dealing with this exact problem.
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="x20220131_222101.jpeg" align="right" %}
+{% include html-side.html img="20220131_222101.jpeg" align="right" %}
 
 ### The Fridge
 

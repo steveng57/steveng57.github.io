@@ -20,7 +20,7 @@ The napkin holder projects are among my favorites. Making these is a small chall
 
 ## Under Construction
 
-{% include html-side.html img="x20221122_113946.jpeg" align="left" %}
+{% include html-side.html img="20221122_113946.jpeg" align="left" %}
 
 ### Epoxy Inlay
 

@@ -47,7 +47,7 @@ _391 holes. Go ahead...count 'em._
 
 {% include clear-float.html %}
 
-{% include html-side.html img="x20230720_163338.jpeg" align="right" %}
+{% include html-side.html img="20230720_163338.jpeg" align="right" %}
 
 ### Finish
 

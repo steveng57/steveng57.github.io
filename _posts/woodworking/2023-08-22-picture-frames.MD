@@ -19,7 +19,7 @@ These picture frames are sometimes called "Shadow Boxes" or "Shadow Frames". The
 
 Nothing too fancy here, but there is a bit of finesse in making them strong, since the frame thickness is just a little over one centimeter. {{ site.data.links.domino }}s are strategically placed at the mitres to give added strength, and while they are a bit of extra work, they make alignment during the glue-up much easier.
 
-{% include html-side.html img="x20230822_184956.jpeg" align="left" %}
+{% include html-side.html img="20230822_184956.jpeg" align="left" %}
 
 ### New Paint
 

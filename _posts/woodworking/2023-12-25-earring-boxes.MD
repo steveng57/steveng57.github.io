@@ -66,7 +66,7 @@ Here they are, ready and waiting for the big day.
 ## In Position
 
 All filled with all kinds of earrings. Looks like I might have to make more!
-{% include html-side.html img="xearring-box-01.jpeg" align="center-wide" %}
+{% include html-side.html img="earring-box-01.jpeg" align="center-wide" %}
 {% include clear-float.html break = 1 %}
 
 {% include html-side.html img="earrings-from-top.jpeg" align="center-wide" %}

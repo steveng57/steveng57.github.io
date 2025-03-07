@@ -34,7 +34,7 @@ I used General Finishes stain and polyurethane for the finish. It is very nice s
 I've made three of these of varying sizes.
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="x20210421_212015.jpeg" align="right" %}
+{% include html-side.html img="20210421_212015.jpeg" align="right" %}
 
 ### The Pots
 

@@ -28,7 +28,7 @@ I also wanted to be sure to get the finger joints just right (that's what this s
 
 ## The Build
 
-{% include html-side.html img="x20230405_141946.jpeg" align="left" %}
+{% include html-side.html img="20230405_141946.jpeg" align="left" %}
 
 ### Tree Tray
 

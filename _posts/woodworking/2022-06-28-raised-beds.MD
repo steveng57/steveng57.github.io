@@ -28,7 +28,7 @@ The Western Red Cedar was purchased just down the way from where I live at a pla
 Cedar is one of the best smelling woods when you cut into it. It releases a wonderful aroma that sticks around for days. If only all woods smelled as good.
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="x20220628_125916.jpeg" align="right" %}
+{% include html-side.html img="20220628_125916.jpeg" align="right" %}
 
 ### It's Extreme
 
