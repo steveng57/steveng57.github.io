@@ -17,12 +17,13 @@ Generates thumbnails for images in the "C:\Images" folder and deletes any existi
 
 #>
 param(
-    [string]$folderPath = ".\assets\img\posts",
-    [bool]$deleteExisting = $false
+   [string]$folderPath = ".\assets\img\posts",
+   [bool]$deleteExisting = $false
 )
 
 function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
-
+   $tagIndex = 18
+   $shell = New-Object -ComObject Shell.Application
    # Get all the subfolders
    $subfolders = Get-ChildItem -Path $folderPath -Directory
 
@@ -51,24 +52,39 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
       
       # Loop through each image file in the subfolder
       foreach ($imageFile in $imageFiles) {
-         # Check if a thumbnail already exists
-         $thumbnailPath = Join-Path -Path $thumbnailsPath -ChildPath $imageFile.Name
-         if (-not (Test-Path -Path $thumbnailPath)) {
-            Write-Output "Source:" $imageFile.FullName
-            Write-Output "Destination:" $thumbnailPath
-            # Generate a new thumbnail using Magick
-            Write-Output "Convert command: " "convert $($imageFile.FullName) -resize 50% $thumbnailPath"
-            Start-Process -FilePath "magick" -ArgumentList "convert `"$($imageFile.FullName)`" -resize 50% `"$thumbnailPath`"" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName
-         }   
-         # Check if a tinyfile already exists
-         $tinyfilePath = Join-Path -Path $tinyfilesPath -ChildPath $imageFile.Name
-         if (-not (Test-Path -Path $tinyfilePath)) {
-            Write-Output "Source:" $imageFile.FullName
-            Write-Output "Destination:" $tinyfilePath
-            # Generate a new thumbnail using Magick
-            Write-Output "Convert command: " "convert $($imageFile.FullName) -resize 10% $tinyfilePath"
-            Start-Process -FilePath "magick" -ArgumentList "convert `"$($imageFile.FullName)`" -resize 10% `"$tinyfilePath`"" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName
-         }   
+         # Get the folder and file objects
+         $folder = Split-Path $imageFile
+         $file = Split-Path $imageFile -Leaf
+         $shellFolder = $shell.Namespace($folder)
+         $shellFile = $shellFolder.ParseName($file)
+         $tag = $shellFolder.GetDetailsOf($shellFile, $tagIndex)
+         $tagsArray = $tag -split "\s*;\s*" # Split the tags into an array
+         $bGallery = $tagsArray -contains "gallery" # Check if "gallery" is in the tags array
+         $bThumbNail = $tagsArray -contains "thumbnail" # Check if "thumbnail" is in the tags array
+
+         if ($bThumbNail) {
+            # Check if a thumbnail already exists
+            $thumbnailPath = Join-Path -Path $thumbnailsPath -ChildPath $imageFile.Name
+            if (-not (Test-Path -Path $thumbnailPath)) {
+               Write-Output "Source:" $imageFile.FullName
+               Write-Output "Destination:" $thumbnailPath
+               # Generate a new thumbnail using Magick
+               Write-Output "Convert command: " "convert $($imageFile.FullName) -resize 50% $thumbnailPath"
+               Start-Process -FilePath "magick" -ArgumentList "convert `"$($imageFile.FullName)`" -resize 50% `"$thumbnailPath`"" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName
+            }   
+         }
+         
+         if ($bGallery) {
+            # Check if a tinyfile already exists
+            $tinyfilePath = Join-Path -Path $tinyfilesPath -ChildPath $imageFile.Name
+            if (-not (Test-Path -Path $tinyfilePath)) {
+               Write-Output "Source:" $imageFile.FullName
+               Write-Output "Destination:" $tinyfilePath
+               # Generate a new thumbnail using Magick
+               Write-Output "Convert command: " "convert $($imageFile.FullName) -resize 10% $tinyfilePath"
+               Start-Process -FilePath "magick" -ArgumentList "convert `"$($imageFile.FullName)`" -resize 10% `"$tinyfilePath`"" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName
+            }   
+         }
       }
 
       # generate poster file for mp4 files.
