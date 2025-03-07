@@ -38,7 +38,7 @@ The posts are usually, but not always, broken up into the following sections:
 
 In the early days, I did not take many pictures of the shop or the projects as they were in progress, so a lot of the pics will be of the finished product. I will be taking more "under construction" photos as time progresses, hopefully that will make the posts more interesting to those who like a bit of the "behind-the-scenes" thing.
 
-> **Note:** In any post, you can click on any pick and it will launch you into a mini-gallery where you can full-screen scroll thru all the pics in that post.  This is not to be confused with the [Image Gallery](#image-gallery).
+> **Note:** In any post, you can click on any pic and it will launch you into a mini-gallery where you can full-screen scroll thru all the pics in that post.  This is not to be confused with the [Image Gallery](#image-gallery).
 {: .prompt-info .sjg-br}
 
 ### Image Gallery
