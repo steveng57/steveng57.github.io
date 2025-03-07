@@ -24,7 +24,7 @@ The [Home Page]({% link index.html %}) is an reverse chronological listing (also
 
 The home page, or home pages, are paginated into about eight to ten posts per page. As of this writing, there are about 40 posts in all, so that makes for four pages.  See, I can do math!
 
-Each entry has a summary of the project, along with a thumbnail pick that will drive everyone wild with anticipation of the upcoming experience.
+Each entry has a summary of the project, along with a thumbnail pic that will drive everyone wild with anticipation of the upcoming experience.
 {: .sjg-br}
 
 ### The Posts
