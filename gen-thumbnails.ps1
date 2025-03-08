@@ -62,9 +62,9 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
          $bGallery = $tagsArray -contains "gallery" # Check if "gallery" is in the tags array
          $bThumbNail = $tagsArray -contains "thumbnail" # Check if "thumbnail" is in the tags array
 
+         $thumbnailPath = Join-Path -Path $thumbnailsPath -ChildPath $imageFile.Name
          if ($bThumbNail) {
             # Check if a thumbnail already exists
-            $thumbnailPath = Join-Path -Path $thumbnailsPath -ChildPath $imageFile.Name
             if (-not (Test-Path -Path $thumbnailPath)) {
                Write-Output "Source:" $imageFile.FullName
                Write-Output "Destination:" $thumbnailPath
@@ -73,10 +73,16 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
                Start-Process -FilePath "magick" -ArgumentList "convert `"$($imageFile.FullName)`" -resize 50% `"$thumbnailPath`"" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName
             }   
          }
+         else {
+            # Delete the existing thumbnail if it exists
+            if (Test-Path -Path $thumbnailPath) {
+               Remove-Item -Path $thumbnailPath -Force
+            }
+         }
          
+         $tinyfilePath = Join-Path -Path $tinyfilesPath -ChildPath $imageFile.Name
          if ($bGallery) {
             # Check if a tinyfile already exists
-            $tinyfilePath = Join-Path -Path $tinyfilesPath -ChildPath $imageFile.Name
             if (-not (Test-Path -Path $tinyfilePath)) {
                Write-Output "Source:" $imageFile.FullName
                Write-Output "Destination:" $tinyfilePath
@@ -84,6 +90,12 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
                Write-Output "Convert command: " "convert $($imageFile.FullName) -resize 10% $tinyfilePath"
                Start-Process -FilePath "magick" -ArgumentList "convert `"$($imageFile.FullName)`" -resize 10% `"$tinyfilePath`"" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName
             }   
+         }
+         else {
+            # Delete the existing tinyfile if it exists
+            if (Test-Path -Path $tinyfilePath) {
+               Remove-Item -Path $tinyfilePath -Force
+            }
          }
       }
 
