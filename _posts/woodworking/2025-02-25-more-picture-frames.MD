@@ -111,6 +111,9 @@ Deb created an excellent colour match, so the frame goes great with the branches
 
 {% include clear-float.html break=1 %}
 
+> Don't forget to check out the walnut frame for the birds [right here.]({% post_url woodworking/2021-07-30-walnut-frame %})  It was the first of the bunch.
+{: .prompt-tip}
+
 ## Materials and Tools
 
 - Poplar from {{ site.data.links.kjp }}
