@@ -11,6 +11,7 @@ image:
   path: /thumbnails/IMG_1674.jpeg
   alt: More Picture Frames
 media_subpath: /assets/img/posts/more-picture-frames
+favorite: false
 ---
 ## Background
 We've got some artwork around the place that needed some sprucing up.  Some of it is good stuff, some of it is the kind that you buy at Home Sense.  Either way, a nice frame can go a long way to making it look a notch or two better.
