@@ -18,6 +18,12 @@ This project was done a while ago actually, May of 2022.  I had to do a tune-up 
 
 I decided to some experimenting with solar, to get a better feel for how it works and how efficient it is etc.  Lots of online videos later, I took the plunge.
 
+## The Design
+Did the usual design work in Sketchup to make sure the plans were workable.  Didn't want to get it put together and not have enough room to tilt it towards the sun.  That would be a bad thing.
+
+{% include html-side.html img="solar-panel-sketchup.jpeg" align="center" %}
+
+
 ## The Insides
 The internals of this device are kept on the platform under the panel and water coil.  I still need to find a better way to hold these things in place and organize them better, but they seem to do okay this way for now.
 
