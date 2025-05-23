@@ -5,8 +5,8 @@ title: Solar Pool Heater
 description: A solar powered pool heater and solar powered pump
 date: 2025-05-01 21:19:42 -0500
 last_modified_at: 2025-05-22 21:48:08 -0500
-categories: [Woodworking, Home Decor]
-tags: [Woodworking, Solar]
+categories: [Home & Garden, House Tech]
+tags: [House Tech, Woodworking, Solar]
 image:
   path: /thumbnails/IMG_1811.jpeg
   alt: Solar Pool Heater
