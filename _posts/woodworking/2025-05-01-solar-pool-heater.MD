@@ -48,7 +48,7 @@ From left to right:
 ### The Solar Panel
 A modest solar panel.  It's 100 Watt solar panel from Renogy.  Meaning that, on a bright day, it can run a 100W light bulb.  
 
-15 of these panels could power a blow-dryer.  Yes that's why you need so many panels to do anything useful.  In my case the panel just needs to keep the batter charged, which it does not have any problem doing, even on cloudy days.
+15 of these panels could power a blow-dryer.  Yes that's why you need so many panels to do anything useful.  In my case the panel just needs to keep the battery charged, which it does not have any problem doing, even on cloudy days.
 
 ### The Water Coil
 This is where the magic happens.  The coils are made from a variety of Pex tubing used for heating floors and things, and it is held in place by four long wooden rods.  The Pex tubing is orange originally, but painted black with a heat tolerant black spray paint made for painting BBQs. 
