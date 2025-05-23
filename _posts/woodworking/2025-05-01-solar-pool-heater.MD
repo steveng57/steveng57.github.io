@@ -13,6 +13,7 @@ image:
 media_subpath: /assets/img/posts/solar-pool-heater
 favorite: false
 ---
+{% assign pex_pipe = "[PEX pipe](https://www.familyhandyman.com/article/pex-connections/){:target='_blank'}" %}
 ## Background
 This project was done a while ago actually, May of 2022.  I had to do a tune-up on it, so I figured while I was at that, I would take some pics an write a post.
 
@@ -35,7 +36,8 @@ From left to right:
 The battery is definitely over-capacity for this application, but hey, that's how I roll.  It's a lithium 12v battery, the same standard kind that would power a small tractor, but not as big as a car battery.  The battery directly powers the water pump (far right).
 
 ### The Controller
-THe controller is a gizmo that takes power from the solar panel and regulates the current in charging the battery.  So the solar panel actually charges the battery, and doesn't feed power to the pump directly.
+THe controller is a gizmo that takes power from the solar panel and regulates the current in charging the battery.  
+So the solar panel actually charges the battery, and doesn't feed power to the pump directly.
 
 ### The Water Pump
 
@@ -56,7 +58,7 @@ A modest solar panel.  It's 100 Watt solar panel from Renogy.  Meaning that, on 
 15 of these panels could power a blow-dryer.  Yes that's why you need so many panels to do anything useful.  In my case the panel just needs to keep the battery charged, which it does not have any problem doing, even on cloudy days.
 
 ### The Water Coil
-This is where the magic happens.  The coils are made from a variety of Pex tubing used for heating floors and things, and it is held in place by four long wooden rods.  The Pex tubing is orange originally, but painted black with a heat tolerant black spray paint made for painting BBQs. 
+This is where the magic happens.  The coils are made from a variety of {{ pex_pipe }} used for heating floors and things, and it is held in place by four long wooden rods.  The {{ pex_pipe }} is orange originally, but painted black with a heat tolerant black spray paint made for painting BBQs. 
 
 Sunlight hits the coils, heats the coils and thusly the water inside.  Heat is trapped inside the coil housing by insulation on the sides and the back, and by plexiglass on the front.
 
@@ -67,14 +69,15 @@ Sunlight hits the coils, heats the coils and thusly the water inside.  Heat is t
 In terms of power savings, I would say that on a good sunny day, it can cut the natural gas used to heat the pool by about 1/3.  Not too bad.
 
 Having lived with this device for three pool seasons at the time of this writing, I can easily say I would do a few things differently if I were to do the project today.
-- I have often said that I overbuild things, I use more glue than necessary, thicker boards than necessary etc.  This thing is pretty beefy and somewhat difficult to maneuver because of that.  I should have made it lighter weight, using 2x3's instead of 2x4's for example, and using 1/2 plywood on the back instead of 3/4 inch.
+- I have often said that I overbuild things, I use more glue than necessary, thicker boards than necessary etc.  This thing is pretty beefy and somewhat difficult to maneuver because of that.  I should have made it lighter weight, using 2x3's instead of 2x4's for example, and using 1/2 plywood on the back instead of 3/4 inch
 - The side supports need to hold up a lot of weight (see previous bullet) and because of that the legs need to be really solid.  My design was ok in that regard, but not great.  By the third season, the legs were getting a little wobbly, so I had to beef them up by adding metal supports where the legs come over the bottom platform, and adding a cross support.  This latter fix added even more weight (see previous bullet)
-- I would have figured out a way to make the whole thing waterproof.  By definition, this has to be in the sun to work, and when a sudden storm comes along, it is a panic to get it covered up.  
+- I should have figured out a way to make the whole thing waterproof.  By definition, this has to be in the sun to work, and when a sudden storm comes along, it is a panic to get it covered up
 
 ## Materials and Tools
 
 - Standard pressure treated 2x4's and plywood from Home Depot
-- 100W Solar Panel Kit from Renogy via Amazon
-- Dakota lithium battery from Total Battery
+- {{ pex_pipe }}, also from Home Depot
+- 100W Solar Panel Kit from [Renogy](https://www.renogy.com){:target='_blank'} via Amazon
+- Dakota lithium battery from [Total Battery](https://www.totalbattery.com){:target='_blank'}
 - 6 inch casters (with brakes) from {{ site.data.links.leevalley }}
-{: .sjg-list }
+{:.sjg-list }
