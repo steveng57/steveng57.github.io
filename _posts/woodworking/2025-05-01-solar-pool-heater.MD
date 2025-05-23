@@ -18,7 +18,6 @@ This project was done a while ago actually, May of 2022.  I had to do a tune-up 
 
 I decided to some experimenting with solar, to get a better feel for how it works and how efficient it is etc.  Lots of online videos later, I took the plunge.
 
-
 ## The Insides
 The internals of this device are kept on the platform under the panel and water coil.  I still need to find a better way to hold these things in place and organize them better, but they seem to do okay this way for now.
 
