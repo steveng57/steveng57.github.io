@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-gem 'csv', '~> 3.3', '>= 3.3.2'
+gem 'csv', '~> 3.3', '>= 3.3.4'
 gem 'base64', '~> 0.2.0'
 gem 'bigdecimal', '~> 3.1', '>= 3.1.9'
-gem 'logger', '~> 1.6', '>= 1.6.6'
-gem 'fiddle', '~> 1.1', '>= 1.1.6'
+gem 'logger', '~> 1.7'
+gem 'fiddle', '~> 1.1', '>= 1.1.8'
 
 gem 'jekyll-theme-chirpy', '~> 7.3'
 
@@ -16,7 +16,7 @@ end
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do
-  gem "tzinfo", ">= 1", "< 3"
+  gem 'tzinfo', '~> 2.0', '>= 2.0.6'
   gem "tzinfo-data"
 end
 
@@ -35,4 +35,4 @@ gem 'jekyll-include-cache', '~> 0.2.1'
 
 # Fixing the google-protobuf problem
 #gem 'google-protobuf', '~> 4.29', '= 4.29.2'
-gem 'google-protobuf', '~> 4.30'
+gem 'google-protobuf', '~> 4.31'
