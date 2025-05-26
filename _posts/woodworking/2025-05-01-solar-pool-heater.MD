@@ -33,11 +33,11 @@ From left to right:
 {% include html-side.html img="IMG_1810.jpeg" align="left" %}
 
 ### The Battery
-The battery is definitely over-capacity for this application, but hey, that's how I roll.  It's a lithium 12v battery, the same standard kind that would power a small tractor, but not as big as a car battery.  The battery directly powers the water pump (far right).
+The battery is definitely over-capacity for this application, but hey, that's how I roll.  It's a lithium 12V battery, the same standard kind that would power a small tractor, but not as big as a car battery.  The battery directly powers the water pump (far right).
 
 ### The Controller
-THe controller is a gizmo that takes power from the solar panel and regulates the current in charging the battery.  
-So the solar panel actually charges the battery, and doesn't feed power to the pump directly.
+THe controller is a gizmo that takes power from the solar panel and regulates the current for charging the battery.  
+So the solar panel actually charges the battery, but it doesn't feed power to the pump directly.
 
 ### The Water Pump
 
@@ -66,7 +66,7 @@ Sunlight hits the coils, heats the coils and thusly the water inside.  Heat is t
 
 ## The Results
 
-In terms of power savings, I would say that on a good sunny day, it can cut the natural gas used to heat the pool by about 1/3.  Not too bad.
+In terms of power savings, I would say that on a good sunny day, it can cut the natural gas used to heat the pool by about 1/3.  Not too bad.  Now, in practice, it's never perfect sunshine all day, and sometimes I forget to move it into a position to get maximum sunshine on the coil, so our savings are a bit less than that.  Overall, it works well enough and I am happy with it.
 
 Having lived with this device for three pool seasons at the time of this writing, I can easily say I would do a few things differently if I were to do the project today.
 - I have often said that I overbuild things, I use more glue than necessary, thicker boards than necessary etc.  This thing is pretty beefy and somewhat difficult to maneuver because of that.  I should have made it lighter weight, using 2x3's instead of 2x4's for example, and using 1/2 plywood on the back instead of 3/4 inch
