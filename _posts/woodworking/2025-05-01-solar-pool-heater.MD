@@ -36,7 +36,7 @@ From left to right:
 The battery is definitely over-capacity for this application, but hey, that's how I roll.  It's a lithium 12V battery, the same standard kind that would power a small tractor, but not as big as a car battery.  The battery directly powers the water pump (far right).
 
 ### The Controller
-THe controller is a gizmo that takes power from the solar panel and regulates the current for charging the battery.  
+The controller is a gizmo that takes power from the solar panel and regulates the current for charging the battery.  
 So the solar panel actually charges the battery, but it doesn't feed power to the pump directly.
 
 ### The Water Pump

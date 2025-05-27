@@ -1,0 +1,99 @@
+---
+author: sjg
+layout: post
+title: Pool Mat Shelf
+description: A better way to store pool mats in the pool shed
+date: 2025-05-23 21:19:42 -0500
+last_modified_at: 2025-05-26 21:48:08 -0500
+categories: [Woodworking, HomeDecor]
+tags: [Woodworking, Plywood, Shelves, Baltic Birch]
+image:
+  path: /thumbnails/IMG_1835.jpeg
+  alt: Pool Mat Shelf
+media_subpath: /assets/img/posts/pool-mat-shelf
+favorite: false
+pin: false
+---
+## Background
+With the new buildings out back (more on this in an upcoming post) we decided it was time to organize the pool shed a bit better.  I had rigged up a flimsy shelf with big-box-store brackets, but stuff kept falling off, so it was time for something better.
+
+## The Design
+Sketchup was surpisingly helpful here.  It usually is, but in this case the design helped to flesh out a few things I that were a concern.  More on that below.
+{% include html-side.html img="pool-mat-shelf-sketchup.jpeg" align="center" %}
+
+It is basically all plywood held together with dominos.  Lots of polyurethane to keep the water out, it is holding pools things after all.
+
+## Plywood
+There really is something special about working with nice Baltic Birch plywood.  It feels like a quality material, because it is.  Pricy, yes, but 
+
+{% include html-side.html img="IMG_1818.jpeg" align="left" %}
+
+### The Basics
+The back, bottom, and front were pretty straightforward.  Cut them all to the same length,put the domino holes in the right places, and glue them together. 
+
+Not much to see here. 
+
+{% include clear-float.html break=1 %}
+
+{% include html-side.html img="IMG_1819.jpeg" align="right" %}
+
+### Advanced Dominos
+
+The hard part in this one comes the moment you try to multi-level joinery with the domino.  As you can see from the picture here, there are two vertical rows of dominos on the sides, and one horizontal row at the bottom.
+
+When you do this, it becomes very tricky because your measurements now have to be almost spot on.  The pieces going into these domino holes have already been cut to length and glued up, so you have to cut the domino holes in this piece in exactly the right spot, both horizontally and vertically.
+
+The thing is, you are referencing off of three different surfaces, when one always prefers to reference off the same surface if you can.  I couldn't do that here.
+
+Cutting the angled sides was fun, and was done with a track saw.  Nothing fancy, just marked a line where the cut was to go, dropped the track on top and made the slice.
+
+{% include clear-float.html break=1 %}
+
+## Assembly
+
+{% include html-side.html img="IMG_1820.jpeg" align="left" %}
+
+### Dry Fit
+
+To make sure that everything lined up properly I did a full dry-fit (dry-fit just means to put it all together without gluing anything first) and low and behold it all lined up.
+
+I think the thing that made it work is that I glued up all the "basic" parts first, then took measurements of that subassembly before cutting the sides.  That way the sides were cut to the exact size of the completed front/back/bottom.
+
+{% include clear-float.html break=1 %}
+
+### Clamps
+
+{% include html-sxs.html img1="IMG_1830.jpeg" img2="IMG_1831.jpeg"%}
+
+Clamping the front/back/bottom was pretty standard stuff.  
+
+Clamping the sides however was a bit more complicated.  First, there was the whole multi-dimensional rows of the dominos in the sides thing going on, and second there was the fact that this shelf is almost 2 meters long (6ft 6in).  I do not have any clamps that long so I had to use a nifty extender thing that will join two shorter clamps together to make one long one.  They are a bit of a pain to setup, but super handy to have in this kind of situation.
+
+## In Production
+
+{% include html-side.html img="IMG_1832.jpeg" align="left" %}
+
+### French Cleat
+
+I used a french cleat to mount the shelf to the side wall of the pool shed.  
+
+Cleats are a great way to mount things like this, since all you do is mount and level a small cleat to the wall, then throw the shelf up onto the cleat. 
+
+{% include clear-float.html break=1 %}
+
+{% include html-side.html img="IMG_1835.jpeg" align="right" %}
+
+### Mats Installed
+
+Room for several pool mats and even some toys.  
+
+Lathered in five coats of polyurethane to keep the water out.
+
+{% include clear-float.html break=1 %}
+
+## Materials and Tools
+
+- Baltic Birch plywood from {{ site.data.links.kjp }}
+- Joinery was all done with the {{ site.data.links.domino }}
+- Waterproof glue was {{ site.data.links.titebond }}
+{:.sjg-list }
