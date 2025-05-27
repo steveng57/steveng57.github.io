@@ -71,7 +71,9 @@ I think the thing that made it work is that I glued up all the "basic" parts fir
 
 Clamping the front/back/bottom was pretty standard stuff.  
 
-Clamping the sides however was a bit more complicated.  First, there was the whole multi-dimensional rows of the dominos in the sides thing going on, and second there was the fact that this shelf is almost 2 meters long (6ft 6in).  I do not have any clamps that long so I had to use a nifty extender thing that will join two shorter clamps together to make one long one.  They are a bit of a pain to setup, but super handy to have in this kind of situation.
+Clamping the sides however was a bit more complicated:  First, there was the whole multi-dimensional rows of the dominos in the sides thing going on, which induced mild panic when trying to fit things in.  Even though the dry fit was successful, putting glue on things changes everything.  Things don't quite fit as nice and easy as they did when dry, and now you are on a ten minute timer to get everything together and clamped up.
+
+Second was the fact that this shelf is almost 2 meters long (6ft 6in).  I do not have any clamps that long so I had to use a nifty extender thing that will join two shorter clamps together to make one long one.  They are a bit of a pain to setup, but super handy to have in this kind of situation.
 
 ## In Production
 
