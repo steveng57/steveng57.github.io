@@ -24,7 +24,7 @@ Sketchup was surpisingly helpful here.  It usually is, but in this case the desi
 It is basically all plywood held together with dominos.  Lots of polyurethane to keep the water out, it is holding pools things after all.
 
 ## Plywood
-There really is something special about working with nice Baltic Birch plywood.  It feels like a quality material, because it is.  Pricy, yes, but 
+There really is something special about working with nice Baltic Birch plywood.  It feels like a quality material, because it is.  Pricy, yes, but worth it in my opinion: strong, workable, stable, straight.  The cheeps stuff always disappoints and frustrates, often in the middle of the project.  Grrrr.
 
 {% include html-side.html img="IMG_1818.jpeg" align="left" %}
 
