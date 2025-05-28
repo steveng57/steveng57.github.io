@@ -3,7 +3,7 @@ layout: post
 title: Theatre Kitchen
 description: Kitchen style cabinets and drawers for our theatre room, with a spot for a mini-fridge
 date: 2022-01-14 18:32:00 -0500
-last_modified_at: 2024-02-17 18:32:00 -0500
+last_modified_at: 2025-05-28 18:32:00 -0500
 categories: [Woodworking, Kitchen]
 tags:
   [
