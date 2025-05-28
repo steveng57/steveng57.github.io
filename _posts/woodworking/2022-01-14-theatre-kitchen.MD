@@ -98,10 +98,10 @@ We scavenged the granite top from our upstairs kitchen remodel and repurposed it
 {% include clear-float.html break = 1 %}
 {% include html-side.html img="IMG_0540.jpeg" align="center-wide" %}
 
-## Materials
+## Tools and Materials
 
 - Plywood, red oak veneer from {{ site.data.links.kjp }}
-- Solid red oak
+- Solid red oak, also from KJP
 - {{ site.data.links.domino }} joinery
 - {{ site.data.links.leevalley }} LED strip lighting
 {: .sjg-list }
