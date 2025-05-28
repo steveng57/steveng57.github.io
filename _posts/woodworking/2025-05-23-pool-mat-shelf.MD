@@ -18,7 +18,7 @@ pin: false
 With the new buildings out back (more on this in an upcoming post) we decided it was time to organize the pool shed a bit better.  I had rigged up a flimsy shelf with big-box-store brackets, but stuff kept falling off, so it was time for something better.
 
 ## The Design
-Sketchup was surpisingly helpful here.  It usually is, but in this case the design helped to flesh out a few things that might be a concern.  More on that below.
+Sketchup was surprisingly helpful here.  It usually is, but in this case the design helped to flesh out a few things that might be a concern.  More on that below.
 {% include html-side.html img="pool-mat-shelf-sketchup.jpeg" align="center" %}
 
 It is basically all plywood held together with dominos.  Lots of polyurethane to keep the water out, it is holding pools things after all.
