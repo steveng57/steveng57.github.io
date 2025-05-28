@@ -30,13 +30,23 @@ This was a long project and my first shot at doing kitchen-style cabinetry. We h
 
 This was a long one. It took a bit over a month in the shop to make this one come together. The install was not quick either. The one saving grace with the installation was that it was not far from my shop, so going back and forth was easy.
 
+### The Design
+
+There are times when design software is a _"nice to have"_ and it can make your life a little easier.  This was not one of those times, it was a definite necessity here, and I would not even have attempted this without it.
+
+Not only did I do the main cabinet layout, but I also did the drawers, drawer fronts and all.  I even did a few spacing and layout _helper_ drawings, as shown on the right of this picture. 
+
+{% include html-side.html img="theatre-kitchen-sketchup.jpeg" align="center-full" %}
+
+{% include clear-float.html break = 1 %}
+
 It was all good up until this point.
 
 {% include html-side.html img="20220114_114921.jpeg" align="left" %}
 
 ### Big Oops
 
-It was at this point I went to put on the drawer faces, pictured below.
+It was then that I went to put on the drawer faces, pictured below.
 
 To my shock and horror, I made them **the wrong size!** Instead of being the required 762mm in width, they were made 726mm in width. My mild dyslexia had bitten me once more.
 
