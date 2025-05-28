@@ -60,9 +60,9 @@ The dominos add a lot of strength in this particular configuration, something th
 
 ### Dry Fit
 
-To make sure that everything lined up properly I did a full dry-fit (dry-fit just means to put it all together without gluing anything first) and low and behold it all lined up.
+To make sure that everything lined up properly I did a full dry-fit.  Dry-fit just means to put it all together without gluing anything first.  Low and behold it all lined up.
 
-I think the thing that made it work is that I glued up all the "basic" parts first, then took measurements of that subassembly before cutting the sides.  That way the sides were cut to the exact size of the completed front/back/bottom.
+I think the thing that made it work is that I glued up all the "basic" parts first, then took measurements of that subassembly before cutting the sides.  That way the sides were cut to the exact size of the completed front/back/bottom, and they fit perfectly.
 
 {% include clear-float.html break=1 %}
 
