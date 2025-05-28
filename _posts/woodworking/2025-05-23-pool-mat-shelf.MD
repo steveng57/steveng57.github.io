@@ -49,8 +49,9 @@ Cutting the angled sides was fun, and was done with a track saw.  Nothing fancy,
 
 {% include clear-float.html break=1 %}
 
-> **To domino or not to domino**: Now the woodworking types out there might be saying, _"Why use dominos when some pockets holes and screws would do just fine."_  
-And you might be right.  It would probably do fine, but would it be as good, the dominos add a lot of strength in this particular configuration, something that screws or pocket holes cannot match.  And I like to practice these kinds of things anyway, so you do you, and I'll do me.
+> **To domino or not to domino**: Now the woodworking types out there might be saying, _"Why use dominos when some pockets holes and screws would do just fine?"_  
+And you might be right.  It would probably do fine, but would it be as good?  
+The dominos add a lot of strength in this particular configuration, something that screws or pocket holes cannot match.  And I like to practice these kinds of things anyway, so you do you, and I'll do me.
 {: .prompt-info .sjg-br }
 
 ## Assembly
