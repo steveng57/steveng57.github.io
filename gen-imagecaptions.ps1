@@ -80,7 +80,7 @@ function GenerateImageCaptions($folderPath) {
          #$bytes = [System.Text.Encoding]::UTF8.GetBytes($lqip)
          #$base64 = [System.Convert]::ToBase64String($bytes)
 
-         $metadata[$file] = @{
+         $metadata[$file] = [ordered]@{
             'title'     = $title
             'subject'   = $subject
             'datetaken' = $dateTaken
