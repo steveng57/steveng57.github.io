@@ -13,4 +13,7 @@
 # Denote all files that are truly binary and should not be modified.
 *.png binary
 *.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
 *.ico binary

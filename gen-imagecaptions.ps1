@@ -91,8 +91,14 @@ function GenerateImageCaptions($folderPath) {
       }
    }
 
+   # Sort the $metadata by filename (key)
+   $sortedMetadata = [ordered]@{}
+   foreach ($key in ($metadata.Keys | Sort-Object)) {
+      $sortedMetadata[$key] = $metadata[$key]
+   }
+
    # Convert the $metadata object to JSON format
-   $jsonContent = $metadata | ConvertTo-Json
+   $jsonContent = $sortedMetadata | ConvertTo-Json
    #$badChar = [char]0x200E
    #$yamlContent = $yamlContent.Replace($badChar, "")
    # Define the file path for the YAML file
