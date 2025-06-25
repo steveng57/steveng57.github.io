@@ -18,7 +18,7 @@ pin: false
 
 So around the beginning of the month, my desktop PC began to give up the ghost.  I have my operating system (OS) on one drive and my data on another physical disk.  At first it just looked like the data drive was going, meaning one of the disks in the [RAID](https://en.wikipedia.org/wiki/RAID){:target='_blank'} array was snafu'd. 
 
-However, things progressed rather rapidly from there, and all of a sudden the data drive was not reachable, and not long after that the OS disappeared.  I just got a flashing cursor on the screen, and eventually that stopped happening too.  No signs of life at all.  Admittedly, this was a strange failure that I had not seen before, but sometimes tech fails in odd ways.  I am pretty sure it was the motherboard that went south, though I guess it could have been the CPU too. It was 12 years old and had served me very, very well.  
+However, things deteriorated rather rapidly from there, and all of a sudden the data drive was not reachable, and not long after that the OS itself disappeared.  I just got a flashing cursor on the screen, and eventually that stopped happening too.  No signs of life at all.  Admittedly, this was a strange failure that I had not seen before, but sometimes tech fails in odd ways.  I am pretty sure it was the motherboard that went south, though I guess it could have been the CPU too. It was 12 years old and had served me very, very well.  
 
 Given that it was built in 2013, it did not make a lot of sense to try and salvage anything, I just went straight to a new build, started doing research etc.  I have built about a half dozen machines in my time, but there was a bit to learn here, since the last time I did a full build was over a decade ago.  Things have changed a lot in some places, not so much in others.  Details below.
 
@@ -183,5 +183,4 @@ I could do a bar chart or something to drive the point home, but I hope you get 
 
 - Most parts were bought at [Newegg.ca](https://www.newegg.ca){:target='_blank'}
 - A Philips #2 head screwdriver, supplied from you local toolbox 
-
 {:.sjg-list }
