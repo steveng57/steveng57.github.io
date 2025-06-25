@@ -163,8 +163,6 @@ It is always a great moment after a build when you power things up and they all 
 
 If there are problems, there are usually a series of angry beeps produced by the motherboard or the offending components, or in a worst case scenario...crickets.  In this case, everything worked great the first time, and I started configuring things in the BIOS and installing the operating system, Windows 11.
 
-{% include clear-float.html break=1 %}
-
 ## The Results!
 
 So let's get to it then.  How did all this turn out? 
@@ -174,9 +172,10 @@ I must confess to being a little giddy at the results, they far exceeded my expe
 Here is a key benchmark: when I build this website from scratch, that is I fire up the mechanisms that turn my raw pages into functioning HTML, it normally used to take around 90 seconds.  Now, on the new machine, it takes...less than 6 seconds.  I will save you from doing the math.  
 
 That is...
-<div style="font-size:4em; font-weight:bold; text-align:center; margin: 1em 0;">
-  15x Faster
-</div>
+
+15x Faster
+{: .sjg-bigtext}
+
 I could do a bar chart or something to drive the point home, but I hope you get it.  Yes, that's right, it is 15 times faster than my old machine at doing the standard stuff I do all the time.  Wow!  I attribute most of this speed increase to the NVME 2.0 SSD used for the OS and data drives.  They are speedy.
 
 ## Materials and Tools
