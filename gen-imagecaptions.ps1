@@ -48,6 +48,7 @@ function GenerateImageCaptions($folderPath) {
       # Get all the image files in the subfolder
       $imageFiles = Get-ChildItem -Path $subfolder.FullName -Filter "*.jpeg" -File
       $imageFiles += Get-ChildItem -Path $subfolder.FullName -Filter "*.jpg" -File
+      $imageFiles += Get-ChildItem -Path $subfolder.FullName -Filter "*.png" -File
       
       # Loop through each image file in the subfolder
       foreach ($imageFile in $imageFiles) {

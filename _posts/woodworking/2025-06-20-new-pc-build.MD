@@ -177,8 +177,7 @@ That is...
 <div style="font-size:4em; font-weight:bold; text-align:center; margin: 1em 0;">
   15x Faster
 </div>
-I could do a bar chart or something to drive the point home, but I hope you get it.
-
+I could do a bar chart or something to drive the point home, but I hope you get it.  Yes, that's right, it is 15 times faster than my old machine at doing the standard stuff I do all the time.  Wow!  I attribute most of this speed increase to the NVME 2.0 SSD used for the OS and data drives.  They are speedy.
 
 ## Materials and Tools
 
