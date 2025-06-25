@@ -32,7 +32,7 @@ Everyone wants the fasted speed possible in their PC, but how you get then and t
 
 I am not a gamer (nor am I a crypto minor), so GPU speed was not a big thing.  I do a lot of 3d modelling and the like though, so something CAD capable was needed.  
 
-CPU and disk speed were paramount though, so I did splurge a bit on the latest gen i9 Intel chips and a good motherboard.  I also went pure [NVME M.2 SSD](https://en.wikipedia.org/wiki/M.2){:target='_blank'} throughout, which for those not in the business means **fast**.  Instead of spinning disks fetching your data over a slow connection, these drives have not moving parts and are all on chips connected to the CPU via a super fast bus.  This proved to be a great call, and I am super happy with the speed of the build.  But I will leave you in suspense for now, see the results section at the bottom for details!
+CPU and disk speed were paramount though, so I did splurge a bit on the latest gen i9 Intel chips and a good motherboard.  I also went pure [NVME M.2 SSD](https://en.wikipedia.org/wiki/M.2){:target='_blank'} throughout, which for those not in the business means **fast**.  These products started appearing on the market in 2014/2015, just after my last full PC build.  Instead of spinning disks fetching your data over a slow connection, these drives have not moving parts and are all on chips connected to the CPU via a super fast bus.  This proved to be a great call, and I am super happy with the speed of the build.  But I will leave you in suspense for now, see the results section at the bottom for details!
 
 ### Silence
 
