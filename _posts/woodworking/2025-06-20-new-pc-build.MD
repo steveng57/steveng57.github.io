@@ -98,6 +98,20 @@ This is what a modern "hard drive" looks like.  All chips, no disks.
 
 {% include clear-float.html break=1 %}
 
+{% include html-side.html img="T1000_3QTR-Front-Right.png" align="right" %}
+
+### The Video Card
+
+Now the hardcore gamers and the crypto kids are going to go for something like the Nvidia RTX 5090 or the like.  
+
+For me though, that would be a waste of money and energy.  Those beasts require a lot of power, and power produces heat, and heat turns the fans on high.  Fans on high make noise: see requirement #2 above.
+
+So I went with the Nvidia T1000.  Not sure why they felt the need to steal the model number from [The Terminator](https://en.wikipedia.org/wiki/T-1000){:target='_blank'}, but there you are.  It is a more "workstation" oriented video card, meaning that it is geared for 3d modeling, multiple monitors etc.  
+
+And unlike its beefier counterparts, it is smaller only has one fan, which translates into less noise.  In summary, it seems perfect for my needs. 
+
+{% include clear-float.html break=1 %}
+
 ## The Assembly
 
 I took over the dining table for the assembly phase.  Lot of moving parts in any new PC build.  You even get a bunch of extra parts that you don't need, for example they send parts for Intel chips and for AMD chips, but you are only every going to use one of those.  Keeping tracking of the parts is super important.
@@ -123,10 +137,52 @@ Got some sorting trays (the yellow trays here) from Lee Valley for keeping the s
 
 {% include clear-float.html break=1 %}
 
+{% include html-side.html img="IMG_1928.jpeg" align="left" %}
+
+### The Water Cooler
+
+This was new for me.  
+
+The standard mechanism for cooling a CPU is to hook up a big fan to the back of the CPU.  And that works, but those fans can be noisy (see requirement #2 above) so I figured I would give CPU water cooling a try.
+
+It turns out to be easier than I thought, you hook up the cooling block to the CPU the same way you would a CPU fan, but there are hoses coming out of the block that run to a series of fans (quiet ones) across the top.  You can see two of them in the pic up high.
+
+{% include clear-float.html break=1 %}
+
+{% include html-side.html img="IMG_1926.jpeg" align="right" %}
+### Power Supply
+
+Last but not least was hooking up the power supply.  Nothing at all different here, this one had the same connections as the one I installed 12 years ago.
+{% include clear-float.html break=1 %}
+
+## Power On
+
+{% include html-side.html img="IMG_1927.jpeg" align="center" %}
+
+It is always a great moment after a build when you power things up and they all work properly.  
+
+If there are problems, there are usually a series of angry beeps produced by the motherboard or the offending components, or in a worst case scenario...crickets.  In this case, everything worked great the first time, and I started configuring things in the BIOS and installing the operating system, Windows 11.
+
+{% include clear-float.html break=1 %}
+
+## The Results!
+
+So let's get to it then.  How did all this turn out? 
+
+I must confess to being a little giddy at the results, they far exceeded my expectations...I figured at best the average performance would be 2x or 3x my old setup, but this blew me away.  
+
+Here is a key benchmark: when I build this website from scratch, that is I fire up the mechanisms that turn my raw pages into functioning HTML, it normally used to take around 90 seconds.  Now, on the new machine, it takes...less than 6 seconds.  I will save you from doing the math.  
+
+That is...
+<div style="font-size:4em; font-weight:bold; text-align:center; margin: 1em 0;">
+  15x Faster
+</div>
+I could do a bar chart or something to drive the point home, but I hope you get it.
 
 
 ## Materials and Tools
 
-- Most parts were bought at [Newegg.ca](https://www.newegg.ca){:target='_blank'}.
+- Most parts were bought at [Newegg.ca](https://www.newegg.ca){:target='_blank'}
+- A Philips #2 head screwdriver, supplied from you local toolbox 
 
 {:.sjg-list }
