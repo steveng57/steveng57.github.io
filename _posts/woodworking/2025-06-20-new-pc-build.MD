@@ -157,11 +157,19 @@ Last but not least was hooking up the power supply.  Nothing at all different he
 
 ## Power On
 
-{% include html-side.html img="IMG_1927.jpeg" align="center" %}
+### BIOS Boot
 
 It is always a great moment after a build when you power things up and they all work properly.  
 
+{% include html-side.html img="Gigabyte-BIOS.jpeg" align="center-full" %}
+
 If there are problems, there are usually a series of angry beeps produced by the motherboard or the offending components, or in a worst case scenario...crickets.  In this case, everything worked great the first time, and I started configuring things in the BIOS and installing the operating system, Windows 11.
+
+### OS Boot
+
+{% include html-side.html img="IMG_1927.jpeg" align="center-full" %}
+
+Installing the OS went pretty well, at least until Windows tried to do its whole _activation dance_.  That wasn't very well thought out, but that is a topic for another post.
 
 ## The Results!
 
