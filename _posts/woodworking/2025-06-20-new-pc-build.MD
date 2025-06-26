@@ -9,7 +9,7 @@ categories: [Home & Garden, House Tech]
 tags: [Computer, PC, House Tech]
 image:
   path: /thumbnails/IMG_1927.jpeg
-  alt: Pool Mat Shelf
+  alt: Booting the OS
 media_subpath: /assets/img/posts/new-pc-build
 favorite: false
 pin: false
