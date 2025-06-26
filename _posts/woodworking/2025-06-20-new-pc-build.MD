@@ -159,7 +159,7 @@ Last but not least was hooking up the power supply.  Nothing at all different he
 
 ### BIOS Boot
 
-It is always a great moment after a build when you power things up and they all work properly.  
+It is always a great moment after a build when you power things up and they all work properly.  Don't ask me what a _CPU Biscuit_ is, I have no idea (see pic), but apparently I have 87 of them.
 
 {% include html-side.html img="Gigabyte-BIOS.jpeg" align="center-full" %}
 
