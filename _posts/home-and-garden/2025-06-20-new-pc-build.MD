@@ -108,7 +108,10 @@ For me though, that would be a waste of money and energy.  Those beasts require 
 
 So I went with the Nvidia T1000.  Not sure why they felt the need to steal the model number from [The Terminator](https://en.wikipedia.org/wiki/T-1000){:target='_blank'}, but there you are.  It is a more "workstation" oriented video card, meaning that it is geared for 3d modeling, multiple monitors etc.  
 
-And unlike its beefier counterparts, it is smaller only has one fan, which translates into less noise.  In summary, it seems perfect for my needs. 
+> **Multiple monitors:**  For those that do any kind of computer work, if you haven't done it already, go for a multiple monitor setup.  It is truly a game-changer.  I've been using them for decades, before Windows had any formal support for it even.  It feels like I am working with handcuffs when I have to go back to a single monitor.  There is great support in Windows now for lots of monitors.
+{: .prompt-tip .sjg-br}
+
+Unlike its beefier counterparts, this video card it is smaller only has one fan, which translates into less noise.  In summary, it seems perfect for my needs. 
 
 {% include clear-float.html break=1 %}
 
@@ -116,7 +119,7 @@ And unlike its beefier counterparts, it is smaller only has one fan, which trans
 
 I took over the dining table for the assembly phase.  Lot of moving parts in any new PC build.  You even get a bunch of extra parts that you don't need, for example they send parts for Intel chips and for AMD chips, but you are only every going to use one of those.  Keeping tracking of the parts is super important.
 
-> The Instructions are terrible.  It doesn't matter which part we are talking about, they are all atrocious. If you every want to try a PC build yourself, be prepared for that.  The manufacturers websites are sometime helpful, and YouTube is your friend here.
+> The instructions are terrible.  It doesn't matter which part we are talking about, they are all atrocious. If you every want to try a PC build yourself, be prepared for that.  The manufacturers websites are sometime helpful, and YouTube is your friend here.
 {: .prompt-warning .sjg-br}
 
 {% include clear-float.html break=1 %}
