@@ -28,7 +28,7 @@ Just as in my previous builds, I had two main criteria:
 
 ### Speed
 
-Everyone wants the fasted speed possible in their PC, but how you get there and the tech you choose can make the difference.  
+Everyone wants the fastest speed possible in their PC, but how you get there and the tech you choose can make the difference.  
 
 I am not a gamer (nor am I a crypto miner), so GPU speed was not a big thing.  I do a lot of 3d modelling and the like though, so something CAD capable was needed.  
 
