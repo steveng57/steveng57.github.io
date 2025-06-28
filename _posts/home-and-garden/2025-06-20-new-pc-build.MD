@@ -119,7 +119,7 @@ Unlike its beefier counterparts, this video card it is smaller only has one fan,
 
 I took over the dining table for the assembly phase.  Lot of moving parts in any new PC build.  You even get a bunch of extra parts that you don't need, for example they send parts for Intel chips and for AMD chips, but you are only every going to use one of those.  Keeping tracking of the parts is super important.
 
-> The instructions are terrible.  It doesn't matter which part we are talking about, they are all atrocious. If you every want to try a PC build yourself, be prepared for that.  The manufacturers websites are sometime helpful, and YouTube is your friend here.
+> The instructions are terrible.  It doesn't matter which part we are talking about, they are all atrocious. If you every want to try a PC build yourself, be prepared for that.  The manufacturers websites are sometimes helpful, though not always, and YouTube is your friend here.
 {: .prompt-warning .sjg-br}
 
 {% include clear-float.html break=1 %}
