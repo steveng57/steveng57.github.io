@@ -108,7 +108,7 @@ For me though, that would be a waste of money and energy.  Those beasts require 
 
 So I went with the Nvidia T1000.  Not sure why they felt the need to steal the model number from [The Terminator](https://en.wikipedia.org/wiki/T-1000){:target='_blank'}, but there you are.  It is a more "workstation" oriented video card, meaning that it is geared for 3d modeling, multiple monitors etc.  
 
-> **Multiple monitors:**  For those that do any kind of computer work, if you haven't done it already, go for a multiple monitor setup.  It is truly a game-changer.  I've been using them for decades, before Windows had any formal support for it even.  It feels like I am working with handcuffs when I have to go back to a single monitor.  There is great support in Windows now for lots of monitors.
+> **Multiple monitors:**  For those that do any kind of computer work, if you haven't done so already, go for a multiple monitor setup.  It is truly a game-changer.  I've been using them for decades, long before Windows had any formal support for it even.  It feels like I am working with handcuffs when I have to go back to a single monitor.  There is great support in Windows now for lots of monitors.
 {: .prompt-tip .sjg-br}
 
 Unlike its beefier counterparts, this video card it is smaller only has one fan, which translates into less noise.  In summary, it seems perfect for my needs. 
