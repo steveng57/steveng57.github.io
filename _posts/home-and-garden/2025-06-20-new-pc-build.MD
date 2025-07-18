@@ -202,6 +202,14 @@ It has 4k, a 120Hz refresh rate, and good HDR.  It checks all the boxes except O
 
 It all adds up to double the pixels on the screens.  Images and video are definitely better, but what I find the best for my aging eyes is the text: it is way easier to read, and scrolling is super smooth.  A big improvement!
 
+{% include html-side.html img="IMG_1959.jpeg" align="center-full" %}
+
+While I was at it, I added some monitor extension to allow more movement in the screens.  Now I can pull them out further and align them the way I want.
+
+{% include html-side.html img="IMG_1958.jpeg" align="center-full" %}
+
+Here is a good background to show off the 4K.  I know you can't see it in the pic above but you'll have to take my word for it, it's awesome.
+
 ## Materials and Tools
 
 - Most parts were bought at [Newegg.ca](https://www.newegg.ca){:target='_blank'}
