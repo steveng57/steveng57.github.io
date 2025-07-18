@@ -4,7 +4,7 @@ layout: post
 title: Building a New PC
 description: The old one went kaput, so time for a new computer
 date: 2025-06-20 21:19:42 -0500
-last_modified_at: 2025-06-26 21:48:08 -0500
+last_modified_at: 2025-07-17 21:48:08 -0500
 categories: [Home & Garden, House Tech] 
 tags: [Computer, PC, House Tech]
 image:
@@ -188,6 +188,17 @@ That is...
 {: .sjg-bigtext}
 
 I could do a bar chart or something to drive the point home, but I hope you get it.  Yes, that's right, it is 15 times faster than my old machine at doing the standard stuff I do all the time.  Wow!  I attribute most of this speed increase to the NVME 2.0 SSD used for the OS and data drives.  They are speedy.
+
+## Update
+
+> Since the new graphics card was so much more powerful than the previous one, and my monitors were the better part of a decade old, I decided to upgrade my monitors.
+{: .prompt-tip}
+
+{% include html-sxs.html img1="monitor-s2725qs-gray-gallery-1.avif" img2="monitor-s2725qs-gray-gallery-3.avif" %}
+
+I went with the [DELL 27 Plus 4K Model S27255QS](https://www.dell.com/en-ca/shop/dell-27-plus-4k-monitor-s2725qs/apd/210-brnd/monitors-monitor-accessories?msockid=2341291a1f756914244b3f0b1eb468a7){:target='_blank'}, which was released in December of 2024.  
+
+It has 4k, a 120Hz refresh rate, and good HDR.  It checks all the boxes except OLED, which I can live without since it quadruples the cost.  Speaking of cost, they were on sale from $420 down to $350, and still free shipping.
 
 ## Materials and Tools
 
