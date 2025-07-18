@@ -22,7 +22,6 @@ param(
 )
 
 function GenerateImageCaptions($folderPath) {
-
    # Create a Shell.Application object
    $shell = New-Object -ComObject Shell.Application
 
@@ -37,63 +36,52 @@ function GenerateImageCaptions($folderPath) {
    $dimensionsIndex = 31
    $tagIndex = 18
 
-   # Get all the subfolders
-   $subfolders = Get-ChildItem -Path $folderPath -Directory
+   $imageFiles = Get-ChildItem -Path $folderPath -File -Recurse -Depth 1 | Where-Object { $_.Extension -in @('.jpeg', '.jpg', '.png', '.avif') }
 
-   # Loop through each subfolder
-   foreach ($subfolder in $subfolders) {
-      # Print the name of the subfolder
-      Write-Output $subfolder.Name
+   # Group files by directory for efficient shell operations
+   $filesByFolder = $imageFiles | Group-Object { $_.DirectoryName }
 
-      # Get all the image files in the subfolder
-      $imageFiles = Get-ChildItem -Path $subfolder.FullName -Filter "*.jpeg" -File
-      $imageFiles += Get-ChildItem -Path $subfolder.FullName -Filter "*.jpg" -File
-      $imageFiles += Get-ChildItem -Path $subfolder.FullName -Filter "*.png" -File
-      $imageFiles += Get-ChildItem -Path $subfolder.FullName -Filter "*.avif" -File
+   foreach ($folderGroup in $filesByFolder) {
+      Write-Output "Processing folder: $(Split-Path $folderGroup.Name -Leaf)"
       
-      # Loop through each image file in the subfolder
-      foreach ($imageFile in $imageFiles) {
-         # Get the folder and file objects
-         $folder = Split-Path $imageFile
-         $file = Split-Path $imageFile -Leaf
-         $shellFolder = $shell.Namespace($folder)
+      # Create shell folder once per directory
+      $shellFolder = $shell.Namespace($folderGroup.Name)
+      
+      foreach ($imageFile in $folderGroup.Group) {
+         $file = $imageFile.Name
          $shellFile = $shellFolder.ParseName($file)
 
-         # Get the properties
+         # Get properties
          $title = $shellFolder.GetDetailsOf($shellFile, $titleIndex)
          $subject = $shellFolder.GetDetailsOf($shellFile, $subjectIndex)
          $dateTaken = $shellFolder.GetDetailsOf($shellFile, $dateTakenIndex)
+         
+         # Parse date taken
          $dateTaken = $dateTaken -replace "[^a-zA-Z0-9 -:]", ""
          $dateTaken = [datetime]$dateTaken
+         
+         # Parse dimensions more efficiently
          $dimensions = $shellFolder.GetDetailsOf($shellFile, $dimensionsIndex)
-         $temp = $dimensions.Split('x')[0]
-         $temp = $temp -replace "[^0-9]", ""
-         $width = [int]$temp
-         $temp = $dimensions.Split('x')[1]
-         $temp = $temp -replace "[^0-9]", ""
-         $height = [int]$temp
+         $dimArray = $dimensions -split 'x'
+         $width = [int]($dimArray[0] -replace "[^0-9]", "")
+         $height = [int]($dimArray[1] -replace "[^0-9]", "")
 
          $tag = $shellFolder.GetDetailsOf($shellFile, $tagIndex)
-         $tagsArray = $tag -split "\s*;\s*" # Split the tags into an array
+         $tagsArray = if ($tag) { $tag -split "\s*;\s*" } else { @() }
 
-         # Generate LQIP using ImageMagick
-         # Generate LQIP using ImageMagick and output to stdout
-         #$lqip = & magick convert $imageFile.FullName -resize 19x10 jpg:- 
-         #$bytes = [System.Text.Encoding]::UTF8.GetBytes($lqip)
-         #$base64 = [System.Convert]::ToBase64String($bytes)
-
+         # Store metadata with ordered fields (alphabetically sorted)
          $metadata[$file] = [ordered]@{
             'title'     = $title
             'subject'   = $subject
             'datetaken' = $dateTaken
             'width'     = $width
             'height'    = $height
-            'gallery'   = $tagsArray -contains "gallery" # Check if "gallery" is in the tags array
+            'gallery'   = $tagsArray -contains "gallery"
          }
       }
    }
 
-   # Sort the $metadata by filename (key)
+   # Sort the $metadata by filename (key) - maintain existing sorting behavior
    $sortedMetadata = [ordered]@{}
    foreach ($key in ($metadata.Keys | Sort-Object)) {
       $sortedMetadata[$key] = $metadata[$key]
@@ -101,9 +89,8 @@ function GenerateImageCaptions($folderPath) {
 
    # Convert the $metadata object to JSON format
    $jsonContent = $sortedMetadata | ConvertTo-Json
-   #$badChar = [char]0x200E
-   #$yamlContent = $yamlContent.Replace($badChar, "")
-   # Define the file path for the YAML file
+   
+   # Define the file path for the JSON file
    $jsonFilePath = Join-Path -Path "_data" -ChildPath "img-info.json"
 
    # Write the JSON content to the file
@@ -112,4 +99,3 @@ function GenerateImageCaptions($folderPath) {
 
 # Call the function with the specified folder path
 GenerateImageCaptions $folderPath
-
