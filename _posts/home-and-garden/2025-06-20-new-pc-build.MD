@@ -200,6 +200,8 @@ I went with the [DELL 27 Plus 4K Model S27255QS](https://www.dell.com/en-ca/shop
 
 It has 4k, a 120Hz refresh rate, and good HDR.  It checks all the boxes except OLED, which I can live without since it quadruples the cost.  Speaking of cost, they were on sale from $420 down to $350, and still free shipping.
 
+It all adds up to double the pixels on the screens.  Images and video are definitely better, but what I find the best for my aging eyes is the text: it is way easier to read, and scrolling is super smooth.  A big improvement!
+
 ## Materials and Tools
 
 - Most parts were bought at [Newegg.ca](https://www.newegg.ca){:target='_blank'}
