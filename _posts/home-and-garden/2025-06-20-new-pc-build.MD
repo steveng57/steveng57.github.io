@@ -208,7 +208,7 @@ While I was at it, I added some monitor extension to allow more movement in the 
 
 {% include html-side.html img="IMG_1958.jpeg" align="center-full" %}
 
-Here is a good background to show off the 4K.  I know you can't see it in the pic above but you'll have to take my word for it, it's awesome.
+Here is a good background to show off the 4K.  I know you can't see it in the pic above so you'll have to take my word for it, it's awesome.
 
 ## Materials and Tools
 
