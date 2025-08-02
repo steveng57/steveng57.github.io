@@ -3,4 +3,4 @@
 	url = https://github.com/cotes2020/chirpy-static-assets.git
 [submodule "_includes_shared"]
 	path = _includes_shared
-	url = https://github.com/steveng57/jekyll-shared-includes.git
+	url = https://github.com/steveng57/jekyll-shared.git
