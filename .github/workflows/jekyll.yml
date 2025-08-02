@@ -22,6 +22,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: recursive  # This is the key line for submodules
 
       - name: Install dependencies
         run: sudo apt-get update && sudo apt-get install -y git curl
