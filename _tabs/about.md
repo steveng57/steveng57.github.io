@@ -22,9 +22,7 @@ Welcome to my photo blog of various "maker" things I am up to, mostly woodworkin
 
 The [Home Page]({% link index.html %}) is an reverse chronological listing (also known as "newest first" in non-geek speak) of the various projects I have taken on. As you go further back in time, the projects get a little more primitive...not that my more recent things are perfect, but you learn a lot over time in this craft. Some of those learnings I have actually managed to apply in my more recent efforts.
 
-The home page, or home pages, are paginated into about eight to ten posts per page. As of this writing, there are about 40 posts in all, so that makes for four pages.  See, I can do math!
-
-Each entry has a summary of the project, along with a thumbnail pic that will drive everyone wild with anticipation of the upcoming experience.
+The home page, or home pages, are paginated into about eight to ten posts per page.  Each entry has a summary of the project, along with a thumbnail pic that will drive everyone wild with anticipation of the upcoming experience.
 {: .sjg-br}
 
 ### The Posts
