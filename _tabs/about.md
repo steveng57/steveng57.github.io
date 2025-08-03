@@ -12,6 +12,7 @@ date: 2024-01-28 10:59:55 -0500
 last_modified_at: 2024-08-15 17:46:53 -0400
 toc: true
 ---
+
 {% include header.html %}
 
 Welcome to my photo blog of various "maker" things I am up to, mostly woodworking. The above picture is a sign hanging in my workshop, given to me by the family. It's pretty cool.
@@ -95,4 +96,4 @@ But if you must know, politics wise, I am fiscally conservative (you can't spend
 
 {% include clear-float.html break = 2 %}
 
-{% include mydatetime.html date = site.time lang = lang prefix=  "This site was last generated on: "%}
+{% include mydatetime.html date = site.time lang = lang prefix=  "This site was last generated on: "%}{: .post-meta .text-muted}
