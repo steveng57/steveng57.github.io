@@ -226,6 +226,7 @@ jekyll-archives:
 
 plugins:
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 # Global Variables
 tb: "{:target='_blank' rel='noopener noreferrer'}"

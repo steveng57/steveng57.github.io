@@ -41,11 +41,6 @@ This is a Jekyll-based GitHub Pages site using the Chirpy theme, enhanced with c
 - **Ruby gems**: Chirpy theme, jekyll-redirect-from, html-proofer
 - **CDN resources**: LightGallery.js for photo galleries
 
-### Blazor Integration
-- **Weather app**: Self-contained PWA in `/weather/` directory
-- **Service workers**: Includes offline capabilities and caching
-- **Deployment**: Static files generated separately, hosted alongside Jekyll
-
 ## Content Patterns
 
 ### Blog Posts
