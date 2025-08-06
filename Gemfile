@@ -7,7 +7,7 @@ gem 'bigdecimal', '~> 3.1', '>= 3.1.9'
 gem 'logger', '~> 1.7'
 gem 'fiddle', '~> 1.1', '>= 1.1.8'
 
-gem 'jekyll-theme-chirpy', '~> 7.3'
+gem 'jekyll-theme-chirpy', '~> 7.3', '>= 7.3.1'
 
 group :test do
   gem 'html-proofer', '~> 5.0', '>= 5.0.10'
