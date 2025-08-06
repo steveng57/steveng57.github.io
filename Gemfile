@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-gem 'csv', '~> 3.3', '>= 3.3.4'
-gem 'base64', '~> 0.2.0'
-gem 'bigdecimal', '~> 3.1', '>= 3.1.9'
+gem 'csv', '~> 3.3', '>= 3.3.5'
+gem 'base64', '~> 0.3.0'
+gem 'bigdecimal', '~> 3.2', '>= 3.2.2'
 gem 'logger', '~> 1.7'
 gem 'fiddle', '~> 1.1', '>= 1.1.8'
 
@@ -35,4 +35,4 @@ gem 'jekyll-include-cache', '~> 0.2.1'
 
 # Fixing the google-protobuf problem
 #gem 'google-protobuf', '~> 4.29', '= 4.29.2'
-gem 'google-protobuf', '~> 4.31'
+gem 'google-protobuf', '~> 4.31', '>= 4.31.1'
