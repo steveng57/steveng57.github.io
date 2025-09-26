@@ -3,7 +3,7 @@ layout: post
 title: Walnut Picture Frame
 description: A frame tailored for four birds
 date: 2021-07-30 18:32:00 -0500
-last_modified_at: 2024-03-07 18:33:34 -0500
+last_modified_at: 2025-09-25 18:33:34 -0500
 categories: [Woodworking, Home Decor]
 tags: [Woodworking, Picture Frame, Walnut, Home Decor, Dominos]
 image:
@@ -14,6 +14,8 @@ media_subpath: /assets/img/posts/walnut-frame
 ## Origins
 
 "I've been framed!!!", said the yellow bird to the blue bird. This one was pretty simple but it's one of the first things I did in walnut. Beautiful wood to work with. A little smelly, but I try not to inhale.
+
+100% solid walnut, throughout.
 
 ## The Details
 
