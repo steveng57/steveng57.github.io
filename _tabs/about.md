@@ -76,6 +76,11 @@ Here are some of my favorite projects:
   {% endfor %}
 </ul>
 
+## Odds and Ends
+
+I've started a subsite called **'pages'**, just a place to put various thoughts and sometimes rants on things.  It started as a place for me talk about the goings-on in the world, without disrupting the flow of this site, and seems to be evolving into a random mishmash of things coming out of my brain.  You can find it here at:  
+[https://pages.stevengoulet.com](https://pages.stevengoulet.com){:target='_blank' rel='www.stevengoulet.com'}
+
 ## About the author
 
 I have been focussing more and more on _maker_ type things, including woodworking for the last decade or so. While woodworking is my primary focus, I also like to include other things...anything high tech or gadgety will do quite nicely. Also fair game are life-hacks, yard / garden / house projects and other _maker_ things...but mostly woodworking.
