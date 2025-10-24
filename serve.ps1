@@ -35,6 +35,9 @@
 .PARAMETER CheckOnly
     Only check if dependencies are available, don't serve
 
+.PARAMETER Help
+    Display this help message
+
 .EXAMPLE
     .\serve.ps1
     Serves the site with default options (drafts, future posts, live reload)
@@ -62,7 +65,9 @@ param(
     [string]$HostAddress = "localhost",
     [switch]$Clean,
     [switch]$Production,
-    [switch]$CheckOnly
+    [switch]$CheckOnly,
+    [Alias("h")]
+    [switch]$Help
 )
 
 # Set error action preference
@@ -239,8 +244,66 @@ function Show-StartupInfo {
     Write-Host ""
 }
 
+# Display custom help message
+function Show-CustomHelp {
+    Write-Host ""
+    Write-Host "🌟 Jekyll Site Server - steveng57.github.io" -ForegroundColor Blue
+    Write-Host "=============================================" -ForegroundColor Blue
+    Write-Host ""
+    Write-Host "USAGE:" -ForegroundColor Yellow
+    Write-Host "  .\serve.ps1 [OPTIONS]" -ForegroundColor White
+    Write-Host ""
+    Write-Host "BASIC EXAMPLES:" -ForegroundColor Yellow
+    Write-Host "  .\serve.ps1                    # Start development server with defaults" -ForegroundColor Gray
+    Write-Host "  .\serve.ps1 -Production        # Start in production mode" -ForegroundColor Gray
+    Write-Host "  .\serve.ps1 -RegenerateImages  # Regenerate image assets before serving" -ForegroundColor Gray
+    Write-Host ""
+    Write-Host "OPTIONS:" -ForegroundColor Yellow
+    Write-Host ""
+    Write-Host "  Development Control:" -ForegroundColor Cyan
+    Write-Host "    -Production          Production mode (disables drafts, future posts, live reload)" -ForegroundColor White
+    Write-Host "    -NoDrafts            Exclude draft posts from build" -ForegroundColor White
+    Write-Host "    -NoFuture            Exclude future-dated posts from build" -ForegroundColor White
+    Write-Host "    -NoLiveReload        Disable live reload functionality" -ForegroundColor White
+    Write-Host ""
+    Write-Host "  Server Configuration:" -ForegroundColor Cyan
+    Write-Host "    -Port <number>       Specify port to serve on (default: 4000)" -ForegroundColor White
+    Write-Host "    -HostAddress <addr>  Specify host address (default: localhost)" -ForegroundColor White
+    Write-Host ""
+    Write-Host "  Build Options:" -ForegroundColor Cyan
+    Write-Host "    -Clean               Clean _site directory before building" -ForegroundColor White
+    Write-Host "    -RegenerateImages    Run image processing scripts before serving" -ForegroundColor White
+    Write-Host ""
+    Write-Host "  Utility:" -ForegroundColor Cyan
+    Write-Host "    -CheckOnly           Only check dependencies, don't serve" -ForegroundColor White
+    Write-Host "    -Help, -h            Show this help message" -ForegroundColor White
+    Write-Host ""
+    Write-Host "ADVANCED EXAMPLES:" -ForegroundColor Yellow
+    Write-Host "  .\serve.ps1 -Port 3000 -HostAddress 0.0.0.0" -ForegroundColor Gray
+    Write-Host "    # Serve on port 3000, accessible from other machines" -ForegroundColor DarkGray
+    Write-Host ""
+    Write-Host "  .\serve.ps1 -Clean -RegenerateImages -Production" -ForegroundColor Gray
+    Write-Host "    # Clean build, regenerate images, serve in production mode" -ForegroundColor DarkGray
+    Write-Host ""
+    Write-Host "  .\serve.ps1 -NoDrafts -NoFuture -Port 8080" -ForegroundColor Gray
+    Write-Host "    # Custom development setup without drafts/future posts" -ForegroundColor DarkGray
+    Write-Host ""
+    Write-Host "DEPENDENCIES:" -ForegroundColor Yellow
+    Write-Host "  Required: Ruby Bundler, Jekyll" -ForegroundColor White
+    Write-Host "  Optional: FFMPEG, ImageMagick (for image regeneration)" -ForegroundColor White
+    Write-Host ""
+    Write-Host "For detailed help: Get-Help .\serve.ps1 -Full" -ForegroundColor Green
+    Write-Host ""
+}
+
 # Main execution
 try {
+    # Show help if requested
+    if ($Help) {
+        Show-CustomHelp
+        exit 0
+    }
+    
     Write-Host "🌟 Jekyll Site Server - steveng57.github.io" -ForegroundColor Blue
     Write-Host "=============================================" -ForegroundColor Blue
     Write-Host ""
