@@ -97,7 +97,7 @@ I live in a rural suburb of Ottawa called Manotick with my wife Debbie and two b
 
 I am also a Pisces, which is silly because there is no science behind that stuff at all. The other thing you should know about me is that I am all about science. Actually, that one fact probably tells you a lot about me, from my political leanings, to my thoughts on religion, climate change, and more.
 
-But if you must know, politics wise, I am fiscally conservative (you can't spend money you don't have), and socially liberal (the only thing I am truly intolerant of, is intolerance). Wait, TMI alert! Way too much information already!
+But if you must know, politics wise, I am fiscally conservative (you can't spend money you don't have), and socially liberal (the only thing I am truly intolerant of, is intolerance). Wait, TMI alert! Way too much information already!!!
 
 {% include clear-float.html break = 2 %}
 
