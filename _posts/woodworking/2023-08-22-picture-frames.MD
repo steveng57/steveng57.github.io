@@ -5,7 +5,7 @@ description: In this episode, I make some shadow frames for some artwork we have
 date: 2023-08-22 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Home Decor]
-tags: [Woodworking, Picture Frame, Poplar, Home Decor, Dominos]
+tags: [Woodworking, Picture Frame, Frames, Poplar, Home Decor, Dominos]
 image:
   path: /thumbnails/20230822_191820.jpeg
   alt: The first of many to be sure
