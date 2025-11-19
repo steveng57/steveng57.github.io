@@ -4,7 +4,7 @@ title: Punkin's Playground
 description: A big craft table for an open area in the basement
 date: 2023-02-04 18:32:00 -0500
 last_modified_at: 2024-03-04 10:26:32 -0500
-categories: [Woodworking, Furniture]
+categories: [Woodworking, Furniture, Maple, Plywood, Baltic Birch]
 tags:
   [
     Woodworking,
