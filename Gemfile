@@ -9,11 +9,8 @@ gem 'fiddle', '~> 1.1', '>= 1.1.8'
 
 gem 'jekyll-theme-chirpy', '~> 7.4'
 
-# Only include html-proofer in development, not in production builds
-unless ENV['JEKYLL_ENV'] == 'production'
-  group :test do
-    gem 'html-proofer', '~> 5.0', '>= 5.0.10'
-  end
+group :test do
+  gem 'html-proofer', '~> 5.0', '>= 5.0.10'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
