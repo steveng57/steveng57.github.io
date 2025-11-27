@@ -17,16 +17,36 @@ permalink: /contact/
     if (submitBtn) submitBtn.disabled = false;
   };
 
-  // Disable submit until Turnstile completes successfully
+  window.onTurnstileError = function() {
+    alert('Security verification failed to load. Please refresh the page and try again.');
+  };
+
   document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contact-form');
     const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
+
     if (submitBtn) submitBtn.disabled = true;
+
+    if (!form) {
+      return;
+    }
+
+    form.addEventListener('submit', function(event) {
+      const turnstileResponse = form.querySelector('input[name="cf-turnstile-response"]');
+
+      if (!turnstileResponse || !turnstileResponse.value) {
+        event.preventDefault();
+        alert('Please complete the security verification.');
+        return;
+      }
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+      }
+    });
   });
 </script>
-
-<!-- Contact form handling script -->
-<script src="/assets/js/contact-form.js" defer></script>
 
 <div class="contact-wrapper">
   <h2>Get in touch</h2>

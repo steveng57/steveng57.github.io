@@ -107,13 +107,18 @@ ${message}`
     method: "POST",
     headers: {
       "Content-Type": "application/json"
-      // DO NOT include X-AuthUser — Cloudflare already authenticates you
     },
     body: JSON.stringify(payload)
   });
 
   if (!resp.ok) {
     let errorText = await resp.text();
+
+    if (resp.status === 401) {
+      errorText =
+        "MailChannels returned 401. Ensure this function executes from Cloudflare Pages/Workers.";
+    }
+
     console.error("MailChannels error:", resp.status, errorText);
     return new Response(
       `Error sending email: ${resp.status} ${errorText}`,
