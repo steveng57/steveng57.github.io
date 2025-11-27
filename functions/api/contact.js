@@ -16,6 +16,14 @@ export async function onRequestPost({ request, env }) {
   }
 
   // Validate Turnstile
+  if (!turnstileToken) {
+    return new Response("Turnstile token missing", { status: 400 });
+  }
+
+  if (!env.TURNSTILE_SECRET_KEY) {
+    return new Response("Turnstile secret key not configured", { status: 500 });
+  }
+
   const turnstileResp = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
     method: "POST",
     body: new URLSearchParams({
@@ -27,7 +35,8 @@ export async function onRequestPost({ request, env }) {
   const turnstileResult = await turnstileResp.json();
 
   if (!turnstileResult.success) {
-    return new Response("Turnstile validation failed", { status: 400 });
+    console.error("Turnstile validation failed:", turnstileResult);
+    return new Response(`Turnstile validation failed: ${turnstileResult['error-codes']?.join(', ') || 'Unknown error'}`, { status: 400 });
   }
 
   // Save submission to KV (optional)

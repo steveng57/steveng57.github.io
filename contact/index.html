@@ -5,6 +5,12 @@ title: Contact
 
 <link rel="stylesheet" href="/assets/css/chirpy-contact-form.css">
 
+<!-- Load Cloudflare Turnstile script -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+<!-- Contact form handling script -->
+<script src="/assets/js/contact-form.js" defer></script>
+
 <div class="contact-wrapper">
   <h2>Get in touch</h2>
   <p>Have a question, suggestion, or message? Send it below.</p>
@@ -26,7 +32,7 @@ title: Contact
     >
 
     <!-- Cloudflare Turnstile -->
-    <div class="cf-turnstile" data-sitekey="{{ site.env.TURNSTILE_SITE_KEY }}"></div>
+    <div class="cf-turnstile" data-sitekey=" {{ site.env.TURNSTILE_SITE_KEY }}"></div>
 
     <button type="submit">Send Message</button>
   </form>
