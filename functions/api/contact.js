@@ -59,69 +59,53 @@ export async function onRequestPost({ request, env }) {
     );
   }
 
+  if (!env.RESEND_API_KEY) {
+    return new Response("Resend API key not configured", { status: 500 });
+  }
+
   // Outbound email payload
   const payload = {
-    personalizations: [
-      {
-        to: [
-          {
-            email: "steveng57@outlook.com",
-            name: "Steven Goulet"
-          }
-        ]
-      }
-    ],
-    from: {
-      email: "noreply@stevengoulet.com",
-      name: "Steven Goulet Website"
-    },
-    reply_to: {
-      email: email,
-      name: "Website Visitor"
-    },
+    from: "Steven Goulet Website <noreply@stevengoulet.com>",
+    to: ["steveng57@outlook.com"],
+    reply_to: email,
     subject: "New Contact Form Submission",
-    content: [
-      {
-        type: "text/plain",
-        value: `New message from stevengoulet.com
+    text: `New message from stevengoulet.com
 
 From: ${email}
 
 Message:
-${message}`
-      },
-      {
-        type: "text/html",
-        value: `
-          <h2>New message from stevengoulet.com</h2>
-          <p><strong>From:</strong> ${email}</p>
-          <p><strong>Message:</strong></p>
-          <p>${escapeHtml(message).replace(/\n/g, "<br>")}</p>
-        `
-      }
-    ]
+${message}`,
+    html: `
+      <h2>New message from stevengoulet.com</h2>
+      <p><strong>From:</strong> ${escapeHtml(email)}</p>
+      <p><strong>Message:</strong></p>
+      <p>${escapeHtml(message).replace(/\n/g, "<br>")}</p>
+    `.trim()
   };
 
-  // Send through MailChannels
-  const resp = await fetch("https://api.mailchannels.net/tx/v1/send", {
+  // Send through Resend
+  const resp = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${env.RESEND_API_KEY}`
     },
     body: JSON.stringify(payload)
   });
 
   if (!resp.ok) {
-    let errorText = await resp.text();
+    let errorDetail = "";
 
-    if (resp.status === 401) {
-      errorText =
-        "MailChannels returned 401. Ensure this function executes from Cloudflare Pages/Workers.";
+    try {
+      const errorJson = await resp.json();
+      errorDetail = errorJson?.message || JSON.stringify(errorJson);
+    } catch (_) {
+      errorDetail = await resp.text();
     }
 
-    console.error("MailChannels error:", resp.status, errorText);
+    console.error("Resend error:", resp.status, errorDetail);
     return new Response(
-      `Error sending email: ${resp.status} ${errorText}`,
+      `Error sending email: ${resp.status} ${errorDetail}`,
       { status: 500 }
     );
   }
