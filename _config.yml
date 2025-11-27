@@ -52,7 +52,7 @@ google_site_verification: 5IhkIIuL1MraUQQs3bMejAi6fZYn20p3r7oR9gPdlkc
 
 # Environment-specific configuration
 env:
-  turnstile_site_key: '1x00000000000000000000AA' # fallback for local dev
+  turnstile_site_key: '0x4AAAAAACDJGG8YoVocKgq2' # fallback for local dev
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
