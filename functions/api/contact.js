@@ -72,7 +72,9 @@ export async function onRequestPost({ request, env }) {
   });
 
   if (!resp.ok) {
-    return new Response("Error sending email.", { status: 500 });
+    const errorText = await resp.text();
+    console.error("MailChannels error:", errorText);
+    return new Response(`Error sending email: ${resp.status} ${errorText}`, { status: 500 });
   }
 
   // Redirect to confirmation page
