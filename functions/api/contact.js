@@ -78,7 +78,7 @@ export async function onRequestPost({ request, env }) {
     method: "POST",
     headers: { 
       "Content-Type": "application/json",
-      "X-AuthUser": "no-reply", // Special Cloudflare requirement
+      "X-AuthUser": "noreply@stevengoulet.com", // Special Cloudflare requirement
     },
     body: JSON.stringify(payload)
   });
