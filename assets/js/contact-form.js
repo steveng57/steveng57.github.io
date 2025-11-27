@@ -27,17 +27,34 @@ document.addEventListener('DOMContentLoaded', function() {
                 method: 'POST',
                 body: formData
             })
-            .then(response => {
+            .then(async response => {
                 if (response.ok) {
                     // Redirect to success page
                     window.location.href = '/contact/sent';
                 } else {
-                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    // Try to get error message from response
+                    let errorMsg = `HTTP ${response.status}: ${response.statusText}`;
+                    try {
+                        const text = await response.text();
+                        if (text) {
+                            // If it's HTML (like a 404 page), don't show the whole thing
+                            if (text.trim().startsWith('<')) {
+                                if (response.status === 404) {
+                                    errorMsg = "Backend function not found (404).";
+                                }
+                            } else {
+                                errorMsg = text;
+                            }
+                        }
+                    } catch (e) {
+                        console.error("Error reading response text:", e);
+                    }
+                    throw new Error(errorMsg);
                 }
             })
             .catch(error => {
                 console.error('Form submission error:', error);
-                alert('There was an error sending your message. Please try again.');
+                alert(`Error sending message: ${error.message}`);
                 
                 // Reset button state
                 submitButton.textContent = originalText;
