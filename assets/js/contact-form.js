@@ -1,1 +1,0 @@
-// Deprecated: the contact form now posts directly to /api/contact without client-side fetch interception.
