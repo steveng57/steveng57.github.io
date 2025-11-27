@@ -53,7 +53,9 @@ export async function onRequestPost({ request, env }) {
   // Build MailChannels message
   const payload = {
     personalizations: [
-      { to: [{ email: "steveng57@outlook.com" }] }
+      { 
+        to: [{ email: "steveng57@outlook.com", name: "Steven Goulet" }]
+      }
     ],
     from: { 
       email: "noreply@stevengoulet.com",
@@ -74,7 +76,9 @@ export async function onRequestPost({ request, env }) {
 
   const resp = await fetch("https://api.mailchannels.net/tx/v1/send", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: { 
+      "Content-Type": "application/json"
+    },
     body: JSON.stringify(payload)
   });
 
