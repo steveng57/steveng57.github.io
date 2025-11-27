@@ -8,7 +8,10 @@ export async function onRequestPost({ request, env }) {
 
   // Honeypot spam filter
   if (nickname) {
-    return Response.redirect("/contact/sent", 301);
+    return new Response(null, {
+      status: 302,
+      headers: { Location: "/contact/sent" }
+    });
   }
 
   if (!email || !message) {
@@ -110,7 +113,10 @@ ${message}`,
     );
   }
 
-  return Response.redirect("/contact/sent", 302);
+  return new Response(null, {
+    status: 303,
+    headers: { Location: "/contact/sent" }
+  });
 }
 
 // Prevent HTML injection in emails
