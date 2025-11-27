@@ -55,7 +55,14 @@ export async function onRequestPost({ request, env }) {
     personalizations: [
       { to: [{ email: "steveng57@outlook.com" }] }
     ],
-    from: { email: "noreply@stevengoulet.com" },
+    from: { 
+      email: "noreply@stevengoulet.com",
+      name: "Steven Goulet Website"
+    },
+    reply_to: {
+      email: email,
+      name: "Website Visitor"
+    },
     subject: "New Contact Form Message",
     content: [
       {
@@ -72,8 +79,16 @@ export async function onRequestPost({ request, env }) {
   });
 
   if (!resp.ok) {
-    const errorText = await resp.text();
-    console.error("MailChannels error:", errorText);
+    let errorText = await resp.text();
+    try {
+        const json = JSON.parse(errorText);
+        if (json.errors) {
+            errorText = json.errors.map(e => e.message).join(", ");
+        }
+    } catch (e) {
+        // ignore JSON parse error
+    }
+    console.error("MailChannels error:", resp.status, errorText);
     return new Response(`Error sending email: ${resp.status} ${errorText}`, { status: 500 });
   }
 
