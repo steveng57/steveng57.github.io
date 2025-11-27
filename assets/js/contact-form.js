@@ -54,6 +54,17 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .catch(error => {
                 console.error('Form submission error:', error);
+                
+                // Check if we are in a local development environment
+                const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+                
+                if (isLocal) {
+                    console.warn('Local Development: Backend function not available. Simulating success.');
+                    alert('Local Development: The backend function is not available locally. Simulating successful submission.');
+                    window.location.href = '/contact/sent';
+                    return;
+                }
+
                 alert(`Error sending message: ${error.message}`);
                 
                 // Reset button state
