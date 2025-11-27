@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: default
 title: Contact
+permalink: /contact/
 ---
 
 <link rel="stylesheet" href="/assets/css/chirpy-contact-form.css">
@@ -32,7 +33,7 @@ title: Contact
     >
 
     <!-- Cloudflare Turnstile -->
-    <div class="cf-turnstile" data-sitekey=" {{ site.env.TURNSTILE_SITE_KEY }}"></div>
+    <div class="cf-turnstile" data-sitekey="{{ site.env.turnstile_site_key }}"></div>
 
     <button type="submit">Send Message</button>
   </form>
