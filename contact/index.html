@@ -68,15 +68,15 @@ permalink: /contact/
         <!-- Honeypot -->
         <input type="text" name="nickname" autocomplete="off" class="d-none">
 
+        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+
         <!-- Cloudflare Turnstile -->
         {% assign sitekey = site.turnstile_site_key | default: site.env.TURNSTILE_SITE_KEY | default: site.env.turnstile_site_key %}
         {% if sitekey and sitekey != '' %}
-        <div class="cf-turnstile mb-3" data-sitekey="{{ sitekey }}" data-theme="auto" data-callback="onTurnstileSuccess" data-error-callback="onTurnstileError"></div>
+        <div class="cf-turnstile mt-3" data-sitekey="{{ sitekey }}" data-theme="auto" data-callback="onTurnstileSuccess" data-error-callback="onTurnstileError"></div>
         {% else %}
-        <p class="text-danger small mb-3">Security check unavailable: TURNSTILE_SITE_KEY not configured.</p>
+        <p class="text-danger small mt-3">Security check unavailable: TURNSTILE_SITE_KEY not configured.</p>
         {% endif %}
-
-        <button type="submit" class="btn btn-primary w-100">Send Message</button>
       </form>
     </div>
   </div>
