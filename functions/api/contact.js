@@ -77,7 +77,8 @@ export async function onRequestPost({ request, env }) {
   const resp = await fetch("https://api.mailchannels.net/tx/v1/send", {
     method: "POST",
     headers: { 
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
+      "X-AuthUser": "no-reply", // Special Cloudflare requirement
     },
     body: JSON.stringify(payload)
   });
