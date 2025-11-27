@@ -10,16 +10,18 @@ permalink: /contact/
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
 <script>
+  // Turnstile success callback (referenced via data-callback)
+  window.onTurnstileSuccess = function() {
+    const form = document.getElementById('contact-form');
+    const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
+    if (submitBtn) submitBtn.disabled = false;
+  };
+
   // Disable submit until Turnstile completes successfully
   document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contact-form');
     const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
     if (submitBtn) submitBtn.disabled = true;
-
-    // Turnstile success callback (referenced via data-callback)
-    window.onTurnstileSuccess = function() {
-      if (submitBtn) submitBtn.disabled = false;
-    };
   });
 </script>
 
@@ -49,7 +51,7 @@ permalink: /contact/
     <!-- Cloudflare Turnstile -->
     {% assign sitekey = site.turnstile_site_key | default: site.env.TURNSTILE_SITE_KEY | default: site.env.turnstile_site_key %}
     {% if sitekey and sitekey != '' %}
-    <div class="cf-turnstile" data-sitekey="{{ sitekey }}" data-theme="auto" data-callback="onTurnstileSuccess"></div>
+    <div class="cf-turnstile" data-sitekey="{{ sitekey }}" data-theme="auto" data-callback="onTurnstileSuccess" data-error-callback="onTurnstileError"></div>
     {% else %}
     <p class="notice" style="color:#b00;">Security check unavailable: TURNSTILE_SITE_KEY not configured.</p>
     {% endif %}
