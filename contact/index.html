@@ -22,6 +22,9 @@ permalink: /contact/
   document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contact-form');
     const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
+    const emailInput = document.getElementById('contact-email');
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const subjectInput = document.getElementById('contact-subject');
 
     if (submitBtn) submitBtn.disabled = true;
 
@@ -29,8 +32,40 @@ permalink: /contact/
       return;
     }
 
+    if (emailInput) {
+      emailInput.addEventListener('input', function() {
+        if (!emailInput.value || !emailPattern.test(emailInput.value) || emailInput.value.length > 320) {
+          emailInput.setCustomValidity('Enter a valid email address.');
+        } else {
+          emailInput.setCustomValidity('');
+        }
+      });
+    }
+
+    if (subjectInput) {
+      subjectInput.addEventListener('input', function() {
+        if (!subjectInput.value.trim()) {
+          subjectInput.setCustomValidity('Subject is required.');
+        } else {
+          subjectInput.setCustomValidity('');
+        }
+      });
+    }
+
     form.addEventListener('submit', function(event) {
       const turnstileResponse = form.querySelector('input[name="cf-turnstile-response"]');
+
+      if (emailInput && (!emailInput.value || !emailPattern.test(emailInput.value) || emailInput.value.length > 320)) {
+        event.preventDefault();
+        emailInput.reportValidity();
+        return;
+      }
+
+      if (subjectInput && !subjectInput.value.trim()) {
+        event.preventDefault();
+        subjectInput.reportValidity();
+        return;
+      }
 
       if (!turnstileResponse || !turnstileResponse.value) {
         event.preventDefault();
@@ -58,6 +93,11 @@ permalink: /contact/
         <div class="mb-3">
           <label for="contact-email">Your Email</label>
           <input id="contact-email" name="email" type="email" required placeholder="your@email.com" class="form-control" autocomplete="email">
+        </div>
+
+        <div class="mb-3">
+          <label for="contact-subject">Subject</label>
+          <input id="contact-subject" name="subject" type="text" required placeholder="What can I help with?" class="form-control" autocomplete="off" maxlength="120">
         </div>
 
         <div class="mb-3">

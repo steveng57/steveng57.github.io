@@ -2,6 +2,8 @@ export async function onRequestPost({ request, env }) {
   const form = await request.formData();
 
   const email = form.get("email");
+  const subjectRaw = form.get("subject");
+  const subject = typeof subjectRaw === "string" ? subjectRaw.trim() : "";
   const message = form.get("message");
   const nickname = form.get("nickname");
   const turnstileToken = form.get("cf-turnstile-response");
@@ -14,8 +16,16 @@ export async function onRequestPost({ request, env }) {
     });
   }
 
-  if (!email || !message) {
+  if (!email || !subject || !message) {
     return new Response("Missing fields", { status: 400 });
+  }
+
+  if (!isValidEmail(email)) {
+    return new Response("Invalid email address", { status: 400 });
+  }
+
+  if (!isValidSubject(subject)) {
+    return new Response("Invalid subject", { status: 400 });
   }
 
   // Validate Turnstile
@@ -57,6 +67,7 @@ export async function onRequestPost({ request, env }) {
       JSON.stringify({
         ts: Date.now(),
         email,
+        subject,
         message
       })
     );
@@ -66,21 +77,26 @@ export async function onRequestPost({ request, env }) {
     return new Response("Resend API key not configured", { status: 500 });
   }
 
+  const normalizedSubject = subject.replace(/\s+/g, " ");
+
   // Outbound email payload
   const payload = {
     from: "Steven Goulet Website <noreply@stevengoulet.com>",
     to: ["steveng57@outlook.com"],
     reply_to: email,
-    subject: "New Contact Form Submission",
+    subject: `Website Message: ${normalizedSubject.slice(0, 90)}`,
     text: `New message from stevengoulet.com
 
 From: ${email}
+
+Subject: ${normalizedSubject}
 
 Message:
 ${message}`,
     html: `
       <h2>New message from stevengoulet.com</h2>
       <p><strong>From:</strong> ${escapeHtml(email)}</p>
+      <p><strong>Subject:</strong> ${escapeHtml(normalizedSubject)}</p>
       <p><strong>Message:</strong></p>
       <p>${escapeHtml(message).replace(/\n/g, "<br>")}</p>
     `.trim()
@@ -125,4 +141,27 @@ function escapeHtml(str) {
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
+}
+
+function isValidEmail(address) {
+  if (!address || address.length > 320) {
+    return false;
+  }
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(address);
+}
+
+function isValidSubject(subj) {
+  if (!subj) {
+    return false;
+  }
+
+  const trimmed = subj.trim();
+
+  if (!trimmed || trimmed.length > 120) {
+    return false;
+  }
+
+  return !/[<>]/.test(trimmed);
 }
