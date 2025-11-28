@@ -25,6 +25,40 @@ permalink: /contact/
     const emailInput = document.getElementById('contact-email');
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const subjectInput = document.getElementById('contact-subject');
+    const emailCacheKey = 'sjg-contact-email';
+    const emailStorageTestKey = `${emailCacheKey}-check`;
+
+    const canUseLocalStorage = (() => {
+      try {
+        window.localStorage.setItem(emailStorageTestKey, '1');
+        window.localStorage.removeItem(emailStorageTestKey);
+        return true;
+      } catch (err) {
+        return false;
+      }
+    })();
+
+    const readCachedEmail = () => {
+      if (!canUseLocalStorage) return '';
+      try {
+        return window.localStorage.getItem(emailCacheKey) || '';
+      } catch (err) {
+        return '';
+      }
+    };
+
+    const writeCachedEmail = value => {
+      if (!canUseLocalStorage) return;
+      try {
+        if (value) {
+          window.localStorage.setItem(emailCacheKey, value);
+        } else {
+          window.localStorage.removeItem(emailCacheKey);
+        }
+      } catch (err) {
+        /* ignore storage failures */
+      }
+    };
 
     if (submitBtn) submitBtn.disabled = true;
 
@@ -33,11 +67,32 @@ permalink: /contact/
     }
 
     if (emailInput) {
+      const cachedEmail = readCachedEmail();
+      if (cachedEmail && !emailInput.value) {
+        emailInput.value = cachedEmail;
+        emailInput.dispatchEvent(new Event('input', { bubbles: true }));
+      }
+
       emailInput.addEventListener('input', function() {
-        if (!emailInput.value || !emailPattern.test(emailInput.value) || emailInput.value.length > 320) {
+        const emailValue = emailInput.value;
+        const normalizedEmail = emailValue.trim();
+        const isValidEmail =
+          normalizedEmail === emailValue &&
+          !!normalizedEmail &&
+          emailPattern.test(normalizedEmail) &&
+          normalizedEmail.length <= 320;
+
+        if (!isValidEmail) {
           emailInput.setCustomValidity('Enter a valid email address.');
+          if (!normalizedEmail) {
+            writeCachedEmail('');
+          }
         } else {
           emailInput.setCustomValidity('');
+          if (normalizedEmail !== emailValue) {
+            emailInput.value = normalizedEmail;
+          }
+          writeCachedEmail(normalizedEmail);
         }
       });
     }
