@@ -3,7 +3,7 @@ author: sjg
 layout: post
 title: Network Upgrade
 description: A tech post, upgrading my home network from 1Gbps to 10Gbps
-date: 2025-01-23 21:47:56 -0500
+date: 2025-11-28 21:47:56 -0500
 last_modified_at: 2025-01-23 21:48:08 -0500
 categories: [Home & Garden, House Tech]
 tags: [House Tech, Networking]
@@ -77,6 +77,10 @@ Now all I need is for Rogers to increase their upload speed to a reasonable 1Gbp
 {% include html-side.html img="IMG_1641.jpeg" align="center" %}
 
 {% include clear-float.html break=1 %}
+
+## What's Next
+
+The Unifi line has just come out with a few more goodies to add to the home network.  Not available in Canada just yet, but stay tune, they will be here soon.,,
 
 ## Materials and Tools
 
