@@ -144,20 +144,53 @@ permalink: /contact/
         <p class="text-muted mb-0">Have a question, suggestion, or message? Send it below.</p>
       </div>
 
-      <form action="/api/contact" method="POST" id="contact-form" class="bg-light border rounded shadow-sm p-4 p-md-5">
+      <form action="/api/contact" method="POST" id="contact-form" class="shadow-sm p-4 p-md-5" style="border:1px solid var(--search-border-color); border-radius:1rem; background:var(--main-bg);">
         <div class="mb-3">
-          <label for="contact-email">Your Email</label>
-          <input id="contact-email" name="email" type="email" required placeholder="your@email.com" class="form-control" autocomplete="email">
+          <label for="contact-email" class="form-label">Your Email</label>
+          <div class="input-group" style="border:1px solid var(--search-border-color); border-radius:1rem; background:var(--main-bg); padding:0 .5rem;">
+            <span class="input-group-text border-0 bg-transparent"><i class="fas fa-envelope" style="color: var(--search-icon-color);"></i></span>
+            <input
+              id="contact-email"
+              name="email"
+              type="email"
+              required
+              placeholder="your@email.com"
+              class="form-control bg-transparent text-body border-0 shadow-sm"
+              autocomplete="off"
+              aria-label="email">
+          </div>
         </div>
 
         <div class="mb-3">
-          <label for="contact-subject">Subject</label>
-          <input id="contact-subject" name="subject" type="text" required placeholder="What can I help with?" class="form-control" autocomplete="off" maxlength="120">
+          <label for="contact-subject" class="form-label">Subject</label>
+          <div class="input-group" style="border:1px solid var(--search-border-color); border-radius:1rem; background:var(--main-bg); padding:0 .5rem;">
+            <span class="input-group-text border-0 bg-transparent"><i class="fas fa-bookmark" style="color: var(--search-icon-color);"></i></span>
+            <input
+              id="contact-subject"
+              name="subject"
+              type="text"
+              required
+              placeholder="What can I help with?"
+              class="form-control bg-transparent text-body border-0 shadow-sm"
+              autocomplete="off"
+              maxlength="120">
+          </div>
         </div>
 
         <div class="mb-3">
-          <label for="contact-message">Your Message</label>
-          <textarea id="contact-message" name="message" required placeholder="Write your message..." class="form-control" rows="5"></textarea>
+          <label for="contact-message" class="form-label">Your Message</label>
+          <div class="input-group align-items-start" style="border:1px solid var(--search-border-color); border-radius:1rem; background:var(--main-bg); padding:0 .5rem;">
+            <span class="input-group-text border-0 bg-transparent"><i class="fas fa-comment-dots" style="color: var(--search-icon-color);"></i></span>
+            <textarea
+              id="contact-message"
+              name="message"
+              required
+              placeholder="Write your message..."
+              class="form-control bg-transparent text-body rounded-4 border-0 shadow-sm"
+              rows="5"
+              aria-label="message"
+            ></textarea>
+          </div>
         </div>
 
         <!-- Honeypot -->
