@@ -7,7 +7,7 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Home Decor]
 tags: [Woodworking, Picture Frame, Frames, Poplar, Home Decor, Dominos]
 image:
-  path: /thumbnails/20230822_191820.jpeg
+  path: /thumbnails/20230822_191820.avif
   alt: The first of many to be sure
 media_subpath: /assets/img/posts/picture-frames
 ---
@@ -19,7 +19,7 @@ These picture frames are sometimes called "Shadow Boxes" or "Shadow Frames". The
 
 Nothing too fancy here, but there is a bit of finesse in making them strong, since the frame thickness is just a little over one centimeter. {{ site.data.links.domino }}s are strategically placed at the mitres to give added strength, and while they are a bit of extra work, they make alignment during the glue-up much easier.
 
-{% include html-side.html img="20230822_184956.jpeg" align="left" %}
+{% include html-side.html img="20230822_184956.avif" align="left" %}
 
 ### New Paint
 
@@ -29,7 +29,7 @@ It's an acrylic paint I picked up at {{ site.data.links.michaels }}.
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20230822_184948.jpeg" align="right" %}
+{% include html-side.html img="20230822_184948.avif" align="right" %}
 
 ### Poplar is Poplar
 
@@ -37,7 +37,7 @@ I made these out of poplar. It's a lighter wood, but still strong enough. Not as
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20230822_191820.jpeg" align="left" %}
+{% include html-side.html img="20230822_191820.avif" align="left" %}
 
 ### Being Framed
 
@@ -49,7 +49,7 @@ The trick to keeping it centred is that if you use 7 cards on the left, then you
 
 ## In Production
 
-{% include html-side.html img="IMG_0636.jpeg" align="center-wide" %}
+{% include html-side.html img="IMG_0636.avif" align="center-wide" %}
 
 ## Materials
 

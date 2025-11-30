@@ -7,7 +7,7 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Furniture]
 tags: [Woodworking, Concrete, Table, End Table, Red Oak, Furniture]
 image:
-  path: /thumbnails/IMG_0553.jpeg
+  path: /thumbnails/IMG_0553.avif
   alt: Adding a new material to the shop
 media_subpath: /assets/img/posts/concrete-end-tables
 ---
@@ -21,7 +21,7 @@ The concrete I used was a special artisan blend from [Buddy Rhodes]{:target="\_b
 
 ## Under Construction
 
-{% include html-side.html img="20220420_174227.jpeg" align="left" %}
+{% include html-side.html img="20220420_174227.avif" align="left" %}
 
 ### In Fine Form
 
@@ -32,14 +32,14 @@ A neat trick I found on YouTube was to use a bead of black silicone around the s
 The black colouring makes it easier to remove when you are done. Made from spare melamine I had from some old shelving.
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20220420_174306.jpeg" align="right" %}
+{% include html-side.html img="20220420_174306.avif" align="right" %}
 
 ### The Legs
 
 Standard leg with an apron. Only tricky part here is that I made the apron extra beefy, and put brackets in there for added strength. The extra strength is needed at the top, as these are nested tables, you cannot put any stretchers further down on the legs for extra support.
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20220503_133849.jpeg" align="left" %}
+{% include html-side.html img="20220503_133849.avif" align="left" %}
 
 ### The Poor Pour
 
@@ -48,7 +48,7 @@ OMG did these turn out **awful**. When I initially poured the tops, I had such h
 In my dream, I had though this was going to be an eggshell white with a few flecks of gray. Boy was I wrong. I looked like some kind of bad Rorschach Inkblot test. Not a happy camper at this point. I had no idea how to fix this.
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20220623_123043.jpeg" align="right" %}
+{% include html-side.html img="20220623_123043.avif" align="right" %}
 
 ### The Fix Is In
 
@@ -62,7 +62,7 @@ But it worked out well in the end. I can honestly say I am very happy with how i
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20220623_123128.jpeg" align="left" %}
+{% include html-side.html img="20220623_123128.avif" align="left" %}
 
 ### Call Me Hairy
 
@@ -72,7 +72,7 @@ This one took a long time, so it gets another pic. I like the hairy arm in the p
 ## In Production
 
 This gets used on a daily basis as a cleaning station for the boys when they come in from the outside.
-{% include html-side.html img="IMG_0553.jpeg" align="center-wide" %}
+{% include html-side.html img="IMG_0553.avif" align="center-wide" %}
 
 ## Materials
 

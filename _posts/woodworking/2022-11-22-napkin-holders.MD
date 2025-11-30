@@ -7,7 +7,7 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Kitchen]
 tags: [Woodworking, Napkin Holder, Kitchen, Walnut, Epoxy, Inlay, Shaper Origin]
 image:
-  path: /thumbnails/20221122_113942.jpeg
+  path: /thumbnails/20221122_113942.avif
   alt: Walnut Napkin Holder with White Epoxy Inlay
 media_subpath: /assets/img/posts/napkin-holders
 ---
@@ -20,7 +20,7 @@ The napkin holder projects are among my favorites. Making these is a small chall
 
 ## Under Construction
 
-{% include html-side.html img="20221122_113946.jpeg" align="left" %}
+{% include html-side.html img="20221122_113946.avif" align="left" %}
 
 ### Epoxy Inlay
 
@@ -28,7 +28,7 @@ White epoxy inlay finished with {{ site.data.links.rubio }} Pure.
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20221122_113942.jpeg" align="right" %}
+{% include html-side.html img="20221122_113942.avif" align="right" %}
 
 ### Natural Walnut
 
@@ -40,11 +40,11 @@ A slightly rotated angle for your viewing pleasure.
 
 After getting confident with the epoxy outline, I decided to try some lettering for the one for our friends.
 
-{% include html-side.html img="IMG_DT1.jpeg" align="center-wide"%}
+{% include html-side.html img="IMG_DT1.avif" align="center-wide"%}
 
 ## At Home in the Kitchen
 
-{% include html-side.html img="IMG_DT2.jpeg" align="right" %}
+{% include html-side.html img="IMG_DT2.avif" align="right" %}
 
 ### Theresa and Doug
 
@@ -52,7 +52,7 @@ Looking sweet with some good company.
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="IMG_0555.jpeg" align="left" %}
+{% include html-side.html img="IMG_0555.avif" align="left" %}
 
 ### At Our Place
 

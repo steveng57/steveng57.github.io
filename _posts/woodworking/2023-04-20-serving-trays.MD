@@ -8,7 +8,7 @@ categories: [Woodworking, Home Decor]
 tags:
   [Woodworking, Serving Tray, Trays, Epoxy, Poplar, Home Decor, Shaper Origin]
 image:
-  path: /thumbnails/20230405_141951.jpeg
+  path: /thumbnails/20230405_141951.avif
   alt: These are FIVE colour epoxy inlays
 media_subpath: /assets/img/posts/serving-trays
 ---
@@ -22,13 +22,13 @@ These were created to go with with the [long centerpiece]({% post_url /woodworki
 
 There was a fair amount of {{ site.data.links.sketchup }} work involved in designing these trays. Most of it had to do with getting the handle just right. I spent a lot of time on it largely because I did not want to relive the nightmare that was the handle on the [yoga room heater disaster](/posts/yoga-room). Yeah...never again.
 
-{% include html-sxs.html img1="tray-handle-sketchup.jpeg" img2="tray-sketchup.jpeg" %}
+{% include html-sxs.html img1="tray-handle-sketchup.avif" img2="tray-sketchup.avif" %}
 
 I also wanted to be sure to get the finger joints just right (that's what this style of corner joinery is called, also called box joints). There are more ways to do finger joints than there are finger joints. In this case, I did it on the {{ site.data.links.origin }} along with the companion setup jig called the Workstation.
 
 ## The Build
 
-{% include html-side.html img="20230405_141946.jpeg" align="left" %}
+{% include html-side.html img="20230405_141946.avif" align="left" %}
 
 ### Tree Tray
 
@@ -37,7 +37,7 @@ The Tree Tray was done first, and so I learned how **not** do it here. Basically
 While it is not quite as blotchy in real life as this photo would make it seem, it is still just a little too blotchy for my taste. The Flower turned out better.
 {% include clear-float.html break = 1%}
 
-{% include html-side.html img="20230405_141951.jpeg" align="right" %}
+{% include html-side.html img="20230405_141951.avif" align="right" %}
 
 ### Flower Tray
 

@@ -7,7 +7,7 @@ last_modified_at: 2025-01-02 11:00:00 -0500
 categories: [Woodworking, Jewelry Boxes]
 tags: [Woodworking, Walnut, Jewelry Boxes, Shaper Origin, Dominos]
 image:
-  path: /thumbnails/IMG_0461.jpeg
+  path: /thumbnails/IMG_0461.avif
   alt: Earrings Trays - a gift for a wonderful human
 media_subpath: /assets/img/posts/earring-boxes
 favorite: true
@@ -21,7 +21,7 @@ I really like making special things for other people. This is a fun example of t
 
 ## Under Construction
 
-{% include html-side.html img="earring-box-sketchup.jpeg" align="left" %}
+{% include html-side.html img="earring-box-sketchup.avif" align="left" %}
 ### Design
 Here is an exploded view from {{ site.data.links.sketchup }}.
 
@@ -35,10 +35,10 @@ Doing the finish on this one was pretty messy, partly due to the number of piece
 
 Nice to have a big work surface to spread out. Especially when you are a messy, messy woodworker.
 
-{% include html-side.html img="IMG_0455.jpeg" align="center-full" %}
+{% include html-side.html img="IMG_0455.avif" align="center-full" %}
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="IMG_0466.jpeg" align="right" %}
+{% include html-side.html img="IMG_0466.avif" align="right" %}
 
 ### Squares
 
@@ -46,7 +46,7 @@ The insert with all the squares was cut as a separate piece from the main box. I
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img = "IMG_0467.jpeg" align = "left" %}
+{% include html-side.html img = "IMG_0467.avif" align = "left" %}
 
 ### Velvet
 
@@ -60,16 +60,16 @@ The top engraving was a little nerve wracking. Make a mistake here and it's hard
 
 Here they are, ready and waiting for the big day.
 
-{% include html-side.html img="IMG_0461.jpeg" align="center-full" %}
+{% include html-side.html img="IMG_0461.avif" align="center-full" %}
 {% include clear-float.html %}
 
 ## In Position
 
 All filled with all kinds of earrings. Looks like I might have to make more!
-{% include html-side.html img="earring-box-01.jpeg" align="center-wide" %}
+{% include html-side.html img="earring-box-01.avif" align="center-wide" %}
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="earrings-from-top.jpeg" align="center-wide" %}
+{% include html-side.html img="earrings-from-top.avif" align="center-wide" %}
 {% include clear-float.html %}
 
 ## Materials

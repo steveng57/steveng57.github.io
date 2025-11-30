@@ -8,7 +8,7 @@ categories: [Woodworking, Workshop]
 tags: [Woodworking, Workbench, Assembly Table, Workshop]
 pin: false
 image:
-  path: /thumbnails/20170127_010801.jpeg
+  path: /thumbnails/20170127_010801.avif
   alt: MDF and 2x4's - pretty simple
 media_subpath: /assets/img/posts/first-workbench
 ---
@@ -20,7 +20,7 @@ In setting up my workshop, I had the DeWalt mitre saw from a while back, bought 
 
 ## The First Workbench
 
-{% include html-side.html img="20170127_010801.jpeg" align = "left" %}
+{% include html-side.html img="20170127_010801.avif" align = "left" %}
 
 ### Unpainted and Raw
 
@@ -32,7 +32,7 @@ I put some {{ site.data.links.kreg }} track on the top, the blue aluminum extrus
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20170202_151701.jpeg" align = "right" %}
+{% include html-side.html img="20170202_151701.avif" align = "right" %}
 
 ### Acrylic Paint
 
@@ -45,7 +45,7 @@ Added a bottom shelf for more shop storage, because...you know...storage. I also
 
 While it is no longer my primary workbench / assembly table, it still gets a lot of use in the shop. It serves as an out-feed table for the table saw, as a staging area for other tools, and it still gets some exercise as a secondary assembly table.
 
-{% include html-side.html img="IMG_0699.jpeg" align="center-wide" %}
+{% include html-side.html img="IMG_0699.avif" align="center-wide" %}
 
 ## Materials
 

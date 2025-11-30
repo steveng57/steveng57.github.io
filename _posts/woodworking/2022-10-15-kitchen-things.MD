@@ -7,7 +7,7 @@ last_modified_at: 2024-03-12 11:23:36 -0500
 categories: [Woodworking, Kitchen]
 tags: [Woodworking, Poplar, Epoxy, Inlay, Kitchen]
 image:
-  path: /thumbnails/IMG_0810.jpeg
+  path: /thumbnails/IMG_0810.avif
   alt: Odds and Ends in the Kitchen
 media_subpath: /assets/img/posts/kitchen-things
 ---
@@ -22,7 +22,7 @@ The footstool and the computer stand get used every day, very cool. Made from po
 
 ## Footstool
 
-{% include html-sxs.html img1="IMG_0812.jpeg" img2="IMG_0813.jpeg" %}
+{% include html-sxs.html img1="IMG_0812.avif" img2="IMG_0813.avif" %}
 
 I've made many a footstool since taking up the craft. Deb likes to use this one when sitting on the barstools are the new island. Everyone seems to love the heart carved into the sides. Me too.
 
@@ -30,7 +30,7 @@ I've made many a footstool since taking up the craft. Deb likes to use this one 
 
 ## The Computer Stand
 
-{% include html-sxs.html img1="IMG_0811.jpeg" img2="IMG_0810.jpeg" %}
+{% include html-sxs.html img1="IMG_0811.avif" img2="IMG_0810.avif" %}
 
 This stand was custom made to the exact height. Storage underneath for the keyboard when not in use. Of course I had to do something on the engraving just to keep it lively.
 
@@ -38,7 +38,7 @@ This stand was custom made to the exact height. Storage underneath for the keybo
 
 ## The Design
 
-{% include html-side.html img="punkins-puter-studio.jpeg" align="center-wide" %}
+{% include html-side.html img="punkins-puter-studio.avif" align="center-wide" %}
 
 {% include clear-float.html break  = 1 %}
 

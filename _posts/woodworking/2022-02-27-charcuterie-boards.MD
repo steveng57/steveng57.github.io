@@ -7,7 +7,7 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Kitchen]
 tags: [Woodworking, Charcuterie Board, Kitchen, Maple, Walnut]
 image:
-  path: /thumbnails/20220227_191616.jpeg
+  path: /thumbnails/20220227_191616.avif
   alt: One for Theresa
 media_subpath: /assets/img/posts/charcuterie-boards
 ---
@@ -17,7 +17,7 @@ Ok, so the difference between a charcuterie board and a cutting board, is that a
 
 ## Under Construction
 
-{% include html-side.html img="20220227_191600.jpeg" align="left" %}
+{% include html-side.html img="20220227_191600.avif" align="left" %}
 
 ### In the Sticks
 
@@ -31,7 +31,7 @@ It was finished with a food safe product called Honeybees Natural Wood Cream, mo
 
 ## In Production
 
-{% include html-side.html img="IMG_0547.jpeg" %}
+{% include html-side.html img="IMG_0547.avif" %}
 
 ## Materials
 

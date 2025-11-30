@@ -8,7 +8,7 @@ last_modified_at: 2025-07-17 21:48:08 -0500
 categories: [Home & Garden, House Tech] 
 tags: [Computer, PC, House Tech]
 image:
-  path: /thumbnails/IMG_1927.jpeg
+  path: /thumbnails/IMG_1927.avif
   alt: Booting the OS
 media_subpath: /assets/img/posts/new-pc-build
 favorite: false
@@ -44,7 +44,7 @@ In this build I made a number of decisions that were based on noise level, and I
 
 One thing that has gotten a lot better since the last time I did this is the _'configurators'_ available on sites like Newegg.  These help make sure you buy compatible parts that all work together nicely.  It's no fun when you go to plug something in and realize it's the wrong pin configuration or something.  Ask me how I know!
 
-{% include html-side.html img="IMG_1915.jpeg" align="center" %}
+{% include html-side.html img="IMG_1915.avif" align="center" %}
 
 I give Newegg a **B-** rating overall.  The parts configurator was great, prices seemed competitive with Amazon etc.  My main complaint was that I paid for expedited shipping for the whole purchase (hey I am a geek, I cannot live without a PC for long), and while most of the order arrived pretty quick, the motherboard took almost a week longer than everything else to get here.  And you really can't do anything without a motherboard: literally everything plugs into it.  
 
@@ -59,7 +59,7 @@ I went with the Fractal Design case, similar to the one pictured here.
 It's a great case and boasts a truly silent design, with sound dampening padding on all available interior surfaces.
 
 {% include clear-float.html break=1 %}
-{% include html-side.html img="intel_core_i9_14900k_3.jpeg" align="left-50" %}
+{% include html-side.html img="intel_core_i9_14900k_3.avif" align="left-50" %}
 ### The CPU
 
 For the CPU, I chose the latest from the Intel line, the i9 14th generation.  I like AMD too though, but I feel bad for Intel these days, so let's call it supporting an old partner.
@@ -124,14 +124,14 @@ I took over the dining table for the assembly phase.  Lot of moving parts in any
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_1917.jpeg" align="left" %}
+{% include html-side.html img="IMG_1917.avif" align="left" %}
 ### The Layout
 
 I started by getting all the parts together and laying them out on the table.  Opening boxes and pulling out the limited (very limited) instructions came next.
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_1920.jpeg" align="right" %}
+{% include html-side.html img="IMG_1920.avif" align="right" %}
 ### Diving In
 
 Opened up the case, pulled out the parts that I wouldn't be using (no need for any old fashioned hard drives in this build!)
@@ -140,7 +140,7 @@ Got some sorting trays (the yellow trays here) from Lee Valley for keeping the s
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_1928.jpeg" align="left" %}
+{% include html-side.html img="IMG_1928.avif" align="left" %}
 
 ### The Water Cooler
 
@@ -152,7 +152,7 @@ It turns out to be easier than I thought, you hook up the cooling block to the C
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_1926.jpeg" align="right" %}
+{% include html-side.html img="IMG_1926.avif" align="right" %}
 ### Power Supply
 
 Last but not least was hooking up the power supply.  Nothing at all different here, this one had the same connections as the one I installed 12 years ago.
@@ -164,13 +164,13 @@ Last but not least was hooking up the power supply.  Nothing at all different he
 
 It is always a great moment after a build when you power things up and they all work properly.  Don't ask me what a _CPU Biscuit_ is, I have no idea, but apparently I have 87 of them. (see pic)
 
-{% include html-side.html img="Gigabyte-BIOS.jpeg" align="center-full" %}
+{% include html-side.html img="Gigabyte-BIOS.avif" align="center-full" %}
 
 If there are problems, there are usually a series of angry beeps produced by the motherboard or the offending components, or in a worst case scenario...crickets.  In this case, everything worked great the first time, and I started configuring things in the BIOS and installing the operating system, Windows 11.
 
 ### OS Boot
 
-{% include html-side.html img="IMG_1927.jpeg" align="center-full" %}
+{% include html-side.html img="IMG_1927.avif" align="center-full" %}
 
 Installing the OS went pretty well, at least until Windows tried to do its whole _activation dance_.  That wasn't very well thought out, but that is a topic for another post.
 
@@ -202,11 +202,11 @@ It has 4k, a 120Hz refresh rate, and good HDR.  It checks all the boxes except O
 
 It all adds up to double the pixels on the screens.  Images and video are definitely better, but what I find the best for my aging eyes is the text: it is way easier to read, and scrolling is super smooth.  A big improvement!
 
-{% include html-side.html img="IMG_1959.jpeg" align="center-full" %}
+{% include html-side.html img="IMG_1959.avif" align="center-full" %}
 
 While I was at it, I added some monitor extension to allow more movement in the screens.  Now I can pull them out further and align them the way I want.
 
-{% include html-side.html img="IMG_1958.jpeg" align="center-full" %}
+{% include html-side.html img="IMG_1958.avif" align="center-full" %}
 
 Here is a good background to show off the 4K.  I know you can't see it in the pic above so you'll have to take my word for it, it's awesome.
 

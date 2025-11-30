@@ -7,7 +7,7 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Workshop]
 tags: [Woodworking, Assembly Table, Workbench, Workshop]
 image:
-  path: /thumbnails/20201001_193728.jpeg
+  path: /thumbnails/20201001_193728.avif
   alt: About 2 weeks to assemble
 media_subpath: /assets/img/posts/assembly-table
 ---
@@ -21,7 +21,7 @@ While I love me previous assembly table, it was kinda small, only about 2.5 feet
 
 It was a long project, and a detailed one. It was about two months thru the design process, and another month in actual construction.
 
-{% include html-side.html img="20200908_213627.jpeg" align = "left" %}
+{% include html-side.html img="20200908_213627.avif" align = "left" %}
 
 ### The Frame
 
@@ -32,7 +32,7 @@ Since this was a pretty big undertaking, and my aluminum skills are near zero, I
 **They are totally awesome and fantastic.** They did all the detailed design work in their CAD tooling, with lots of back and forth until we got all the bits right. Then they made all the parts and shipped them to me on a couple of large pallettes. I cannot recommend them any more highly, so if you are in the market for anything of the aluminum extrusion variety, you need to give them try.
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20200908_213651.jpeg" align = "right" %}
+{% include html-side.html img="20200908_213651.avif" align = "right" %}
 
 ### Weekend Warrior
 
@@ -44,7 +44,7 @@ Having not done this kind of thing, there were a fair amount of assembly, oops, 
 
 ## The Shelves and the Top
 
-{% include html-side.html img="20201001_193728.jpeg" align = "left" %}
+{% include html-side.html img="20201001_193728.avif" align = "left" %}
 
 ### Pull-Outs
 
@@ -57,7 +57,7 @@ The MDF top was yet another whole project. The 4x8 sheet of MDF was used to crea
 
 Anyway, there is a special jig you can get from {{ site.data.links.leevalley }} called the [Mk.II Parf Guide Drilling System](https://www.leevalley.com/en-ca/shop/tools/jigs-guides-and-fixtures/110468-mk-ii-parf-guide-drilling-system?item=58B3996){{ site.tb }} which lets you drill the holes with perfect spacing and squareness. It is very cool.
 
-{% include html-side.html img="20201001_194851.jpeg" %}
+{% include html-side.html img="20201001_194851.avif" %}
 
 ## Materials
 

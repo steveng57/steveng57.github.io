@@ -8,7 +8,7 @@ last_modified_at: 2024-04-14 11:08:52 -0400
 categories: [Woodworking, Home Decor]
 tags: [Woodworking, Walnut, Pencil Holder, Trays, Epoxy, Inlay]
 image:
-  path: /thumbnails/IMG_0912.jpeg
+  path: /thumbnails/IMG_0912.avif
   alt: Lilly's Creations Pencil Holder
 media_subpath: /assets/img/posts/lillys-creations
 favorite: false
@@ -23,7 +23,7 @@ Still, it made the box look better than it otherwise would have, so not a total 
 
 ## The Box
 
-{% include html-side.html img="IMG_0868.jpeg" align="left" %}
+{% include html-side.html img="IMG_0868.avif" align="left" %}
 
 ### The Board
 
@@ -33,7 +33,7 @@ I chose this piece because it was wide enough to slice in half and still have so
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_0870.jpeg" align="right" %}
+{% include html-side.html img="IMG_0870.avif" align="right" %}
 
 ### The Cut
 
@@ -43,7 +43,7 @@ As you can see, you have to plan and position the cuts well in advance, and make
 
 {% include clear-float.html  break=1 %}
 
-{% include html-side.html img="IMG_0871.jpeg" align="left" %}
+{% include html-side.html img="IMG_0871.avif" align="left" %}
 
 ### The Carve
 
@@ -57,7 +57,7 @@ The font is called _Satisfy_, which is oddly satisfying.
 
 ## Join and Finish
 
-{% include html-side.html img="IMG_0901.jpeg" align="right" %}
+{% include html-side.html img="IMG_0901.avif" align="right" %}
 
 ### Glue-up Prep
 
@@ -67,7 +67,7 @@ It was those dividers that were being kind of finicky. They didn't want to stay 
 
 {% include clear-float.html break=1%}
 
-{% include html-side.html img="IMG_0882.jpeg" align="left" %}
+{% include html-side.html img="IMG_0882.avif" align="left" %}
 
 ### The Glue-up
 
@@ -75,7 +75,7 @@ Band clamps are great for mitred boxes as the put the force on the corner joints
 
 {% include clear-float.html break=1%}
 
-{% include html-side.html img="IMG_0912.jpeg" align="right" %}
+{% include html-side.html img="IMG_0912.avif" align="right" %}
 
 ### Lilly's Creations
 

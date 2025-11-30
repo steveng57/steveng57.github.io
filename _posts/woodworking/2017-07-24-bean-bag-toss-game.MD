@@ -7,7 +7,7 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Games]
 tags: [Woodworking, Games, Outdoors, Plywood, Red Oak, Cedar]
 image:
-  path: /thumbnails/20170724_234953.jpeg
+  path: /thumbnails/20170724_234953.avif
   alt: Lots of practice carving holes on this one
 media_subpath: /assets/img/posts/bean-bag-toss-game
 ---
@@ -28,7 +28,7 @@ The inner circles were just done with a router circle jig I crafted. Drilled som
 
 Copious amounts of waterproof glue helped fix the situation.
 
-{% include html-side.html img="20170724_234944.jpeg" align = "left" %}
+{% include html-side.html img="20170724_234944.avif" align = "left" %}
 
 ### Cedar and Ply
 
@@ -37,7 +37,7 @@ While the face board was just your vanilla big-box-store plywood, the back board
 The two Bag Toss Boards were later painted candy-apple red.
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20170724_234953.jpeg" align = "right" %}
+{% include html-side.html img="20170724_234953.avif" align = "right" %}
 
 ### Playtime
 

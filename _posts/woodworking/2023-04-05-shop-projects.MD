@@ -7,7 +7,7 @@ last_modified_at: 2024-02-25 19:12:11 -0500
 categories: [Woodworking, Workshop]
 tags: [Woodworking, Workshop, Router, Mitre Stand, Table, Plywood, Baltic Birch, Dominos]
 image:
-  path: /thumbnails/20230405_141755.jpeg
+  path: /thumbnails/20230405_141755.avif
   alt: Spiffy new router table
 media_subpath: /assets/img/posts/shop-projects
 ---
@@ -17,7 +17,7 @@ In late winter of 2023, I decided a workshop upgrade was due. You can never have
 
 ## Under Construction
 
-{% include html-side.html img="Sketchup%20of%20Router%20Table.jpeg" align="left" %}
+{% include html-side.html img="Sketchup%20of%20Router%20Table.avif" align="left" %}
 
 ### Router Stand
 
@@ -25,7 +25,7 @@ I bought a couple or three pieces of plywood from {{ site.data.links.balticbirch
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="20230405_141755.jpeg" align="right" %}
+{% include html-side.html img="20230405_141755.avif" align="right" %}
 
 ### Steely
 
@@ -33,7 +33,7 @@ The steel top on the new router table is awesome. Nice level even cuts each and 
 
 {% include clear-float.html break=1%}
 
-{% include html-side.html img="Sketchup%20of%20Mitre%20Stand.jpeg" align="left" %}
+{% include html-side.html img="Sketchup%20of%20Mitre%20Stand.avif" align="left" %}
 
 ### Mitre Saw Stand
 
@@ -48,7 +48,7 @@ I made three of them and bolted them together with cabinet screws.
 
 It is so nice to have a proper set of workshop stands for the router and the mitre saw along this wall. I would show you a _"before"_ drawing so that you could see the difference, but that would be embarrassing.
 
-{% include html-side.html img="20230405_141747.jpeg" %}
+{% include html-side.html img="20230405_141747.avif" %}
 
 ## Materials
 
