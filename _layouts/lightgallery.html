@@ -29,7 +29,7 @@ layout: nil
 {% assign show_captions = page.captions %}
 {% assign imageFiles = site.static_files | where_exp: "item", "item.path contains 'tinyfiles'" %}
 {% assign imageFiles = imageFiles | where_exp: "item", "item.path contains albumfolder" %}
-{% assign imageFiles = imageFiles | where_exp: "item", "item.extname == '.jpeg'" %}
+{% assign imageFiles = imageFiles | where_exp: "item", "item.extname == '.avif'" %}
 
 
 <script type="text/javascript">

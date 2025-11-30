@@ -1,8 +1,24 @@
 {
+  "20170127_010801.avif": {
+    "title": "Not bad for 2x4's and plywood",
+    "subject": "Not bad for 2x4's and plywood",
+    "datetaken": "2017-01-27T01:08:00",
+    "width": 2048,
+    "height": 1152,
+    "gallery": true
+  },
   "20170127_010801.jpeg": {
     "title": "Not bad for 2x4's and plywood",
     "subject": "Not bad for 2x4's and plywood",
     "datetaken": "2017-01-27T01:08:00",
+    "width": 2048,
+    "height": 1152,
+    "gallery": true
+  },
+  "20170202_151701.avif": {
+    "title": "Let's make something!",
+    "subject": "Let's make something!",
+    "datetaken": "2017-02-02T15:17:00",
     "width": 2048,
     "height": 1152,
     "gallery": true
@@ -15,6 +31,14 @@
     "height": 1152,
     "gallery": true
   },
+  "20170724_234944.avif": {
+    "title": "Want to play a game?",
+    "subject": "Want to play a game?",
+    "datetaken": "2017-07-24T23:49:00",
+    "width": 2048,
+    "height": 1152,
+    "gallery": true
+  },
   "20170724_234944.jpeg": {
     "title": "Want to play a game?",
     "subject": "Want to play a game?",
@@ -23,11 +47,27 @@
     "height": 1152,
     "gallery": true
   },
+  "20170724_234953.avif": {
+    "title": "Needs some bright red paint",
+    "subject": "Needs some bright red paint",
+    "datetaken": "2017-07-24T23:49:00",
+    "width": 1152,
+    "height": 2048,
+    "gallery": true
+  },
   "20170724_234953.jpeg": {
     "title": "Needs some bright red paint",
     "subject": "Needs some bright red paint",
     "datetaken": "2017-07-24T23:49:00",
     "width": 1152,
+    "height": 2048,
+    "gallery": true
+  },
+  "20191006_210910.avif": {
+    "title": "Monster Glue-up",
+    "subject": "Monster Glue-up",
+    "datetaken": "2019-10-06T21:07:00",
+    "width": 1942,
     "height": 2048,
     "gallery": true
   },
@@ -39,6 +79,14 @@
     "height": 2048,
     "gallery": true
   },
+  "20191101_212037.avif": {
+    "title": "Assembled",
+    "subject": "Assembled",
+    "datetaken": "2019-11-01T21:20:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "20191101_212037.jpeg": {
     "title": "Assembled",
     "subject": "Assembled",
@@ -46,6 +94,14 @@
     "width": 2048,
     "height": 1536,
     "gallery": false
+  },
+  "20191217_214541.avif": {
+    "title": "Painted - Nice Front View",
+    "subject": "Painted - Nice Front View",
+    "datetaken": "2019-12-17T21:45:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
   },
   "20191217_214541.jpeg": {
     "title": "Painted - Nice Front View",
@@ -55,6 +111,14 @@
     "height": 1536,
     "gallery": true
   },
+  "20191217_214555.avif": {
+    "title": "Painted - Also a Nice View",
+    "subject": "Painted - Also a Nice View",
+    "datetaken": "2019-12-17T21:45:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "20191217_214555.jpeg": {
     "title": "Painted - Also a Nice View",
     "subject": "Painted - Also a Nice View",
@@ -62,6 +126,14 @@
     "width": 2048,
     "height": 1536,
     "gallery": false
+  },
+  "20191225_174206.avif": {
+    "title": "In Place",
+    "subject": "In Place",
+    "datetaken": "2019-12-25T17:42:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
   },
   "20191225_174206.jpeg": {
     "title": "In Place",
@@ -71,6 +143,14 @@
     "height": 1536,
     "gallery": true
   },
+  "20200714_161022.avif": {
+    "title": "Someone left the cake out in the rain",
+    "subject": "Someone left the cake out in the rain",
+    "datetaken": "2020-07-14T16:10:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "20200714_161022.jpeg": {
     "title": "Someone left the cake out in the rain",
     "subject": "Someone left the cake out in the rain",
@@ -79,12 +159,28 @@
     "height": 1536,
     "gallery": false
   },
+  "20200714_161152.avif": {
+    "title": "I'm melting...",
+    "subject": "I'm melting...",
+    "datetaken": "2020-07-14T16:10:00",
+    "width": 2048,
+    "height": 1346,
+    "gallery": true
+  },
   "20200714_161152.jpeg": {
     "title": "I'm melting...",
     "subject": "I'm melting...",
     "datetaken": "2020-07-14T16:10:00",
     "width": 2048,
     "height": 1346,
+    "gallery": true
+  },
+  "20200714_172147328_iOS.avif": {
+    "title": "Yoga Room Table",
+    "subject": "Yoga Room Table",
+    "datetaken": "2020-07-14T13:21:00",
+    "width": 2048,
+    "height": 1536,
     "gallery": true
   },
   "20200714_172147328_iOS.jpeg": {
@@ -95,6 +191,14 @@
     "height": 1536,
     "gallery": true
   },
+  "20200808_184834.avif": {
+    "title": "Bad Bad Handle",
+    "subject": "",
+    "datetaken": "2020-08-08T18:48:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
   "20200808_184834.jpeg": {
     "title": "Bad Bad Handle",
     "subject": "",
@@ -102,6 +206,14 @@
     "width": 1536,
     "height": 2048,
     "gallery": true
+  },
+  "20200808_184843.avif": {
+    "title": "Naughty Handle",
+    "subject": "",
+    "datetaken": "2020-08-08T18:48:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
   },
   "20200808_184843.jpeg": {
     "title": "Naughty Handle",
@@ -111,9 +223,25 @@
     "height": 1536,
     "gallery": false
   },
+  "20200908_213627.avif": {
+    "title": "Framing was only half the battle",
+    "subject": "Framing was only half the battle",
+    "datetaken": "2020-09-08T21:36:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "20200908_213627.jpeg": {
     "title": "Framing was only half the battle",
     "subject": "Framing was only half the battle",
+    "datetaken": "2020-09-08T21:36:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
+  "20200908_213651.avif": {
+    "title": "It was still a battle though",
+    "subject": "It was still a battle though",
     "datetaken": "2020-09-08T21:36:00",
     "width": 2048,
     "height": 1536,
@@ -127,10 +255,26 @@
     "height": 1536,
     "gallery": true
   },
+  "20201001_193728.avif": {
+    "title": "Pretty (not for long)",
+    "subject": "Pretty (not for long)",
+    "datetaken": "2020-10-01T19:37:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "20201001_193728.jpeg": {
     "title": "Pretty (not for long)",
     "subject": "Pretty (not for long)",
     "datetaken": "2020-10-01T19:37:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
+  "20201001_194851.avif": {
+    "title": "In place and at the ready",
+    "subject": "In place and at the ready",
+    "datetaken": "2020-10-01T19:48:00",
     "width": 2048,
     "height": 1536,
     "gallery": true
@@ -143,6 +287,14 @@
     "height": 1536,
     "gallery": true
   },
+  "20210321_210850.avif": {
+    "title": "15 drawers total",
+    "subject": "15 drawers total",
+    "datetaken": "2021-03-21T21:08:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "20210321_210850.jpeg": {
     "title": "15 drawers total",
     "subject": "15 drawers total",
@@ -151,10 +303,26 @@
     "height": 1536,
     "gallery": false
   },
+  "20210321_210903.avif": {
+    "title": "I did say 15 drawers right?",
+    "subject": "I did say 15 drawers right?",
+    "datetaken": "2021-03-21T21:09:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "20210321_210903.jpeg": {
     "title": "I did say 15 drawers right?",
     "subject": "I did say 15 drawers right?",
     "datetaken": "2021-03-21T21:09:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
+  "20210323_161917.avif": {
+    "title": "Installed.  Waiting on new tools",
+    "subject": "Installed.  Waiting on new tools",
+    "datetaken": "2021-03-23T16:19:00",
     "width": 2048,
     "height": 1536,
     "gallery": true
@@ -167,6 +335,14 @@
     "height": 1536,
     "gallery": true
   },
+  "20210418_000920000_iOS.avif": {
+    "title": "Needing Vegetation",
+    "subject": "Needing Vegetation",
+    "datetaken": "2021-04-17T20:09:00",
+    "width": 1627,
+    "height": 2048,
+    "gallery": true
+  },
   "20210418_000920000_iOS.jpeg": {
     "title": "Needing Vegetation",
     "subject": "Needing Vegetation",
@@ -175,12 +351,28 @@
     "height": 2048,
     "gallery": true
   },
+  "20210421_212015.avif": {
+    "title": "Kiln Dried Pots",
+    "subject": "Kiln Dried Pots",
+    "datetaken": "2021-04-21T21:20:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "20210421_212015.jpeg": {
     "title": "Kiln Dried Pots",
     "subject": "Kiln Dried Pots",
     "datetaken": "2021-04-21T21:20:00",
     "width": 2048,
     "height": 1536,
+    "gallery": false
+  },
+  "20210427_190041.avif": {
+    "title": "Mmmm... Taper",
+    "subject": "Mmmm... Taper",
+    "datetaken": "2021-04-27T19:00:00",
+    "width": 1536,
+    "height": 2048,
     "gallery": false
   },
   "20210427_190041.jpeg": {
@@ -191,10 +383,26 @@
     "height": 2048,
     "gallery": false
   },
+  "20210428_181207.avif": {
+    "title": "Complete with plants installed",
+    "subject": "Complete with plants installed",
+    "datetaken": "2021-04-28T18:12:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "20210428_181207.jpeg": {
     "title": "Complete with plants installed",
     "subject": "Complete with plants installed",
     "datetaken": "2021-04-28T18:12:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
+  "20210709_192749.avif": {
+    "title": "Right Side",
+    "subject": "Right Side",
+    "datetaken": "2021-07-09T19:27:00",
     "width": 2048,
     "height": 1536,
     "gallery": true
@@ -207,6 +415,14 @@
     "height": 1536,
     "gallery": true
   },
+  "20210709_192803.avif": {
+    "title": "They fit!  Just barely.",
+    "subject": "They fit!  Just barely.",
+    "datetaken": "2021-07-09T19:28:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "20210709_192803.jpeg": {
     "title": "They fit!  Just barely.",
     "subject": "They fit!  Just barely.",
@@ -215,12 +431,28 @@
     "height": 1536,
     "gallery": false
   },
+  "20210709_192858.avif": {
+    "title": "Left Side",
+    "subject": "Left Side",
+    "datetaken": "2021-07-09T19:28:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "20210709_192858.jpeg": {
     "title": "Left Side",
     "subject": "Left Side",
     "datetaken": "2021-07-09T19:28:00",
     "width": 2048,
     "height": 1536,
+    "gallery": true
+  },
+  "20210730_234800423_iOS.avif": {
+    "title": "Sharing secrets",
+    "subject": "",
+    "datetaken": "2021-07-30T19:48:00",
+    "width": 1536,
+    "height": 2048,
     "gallery": true
   },
   "20210730_234800423_iOS.jpeg": {
@@ -231,6 +463,14 @@
     "height": 2048,
     "gallery": true
   },
+  "20210827_212427.avif": {
+    "title": "Lots of holes and circles",
+    "subject": "Lots of holes and circles",
+    "datetaken": "2021-08-27T21:24:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "20210827_212427.jpeg": {
     "title": "Lots of holes and circles",
     "subject": "Lots of holes and circles",
@@ -239,10 +479,26 @@
     "height": 1536,
     "gallery": false
   },
+  "20210827_212517.avif": {
+    "title": "More holes and circles",
+    "subject": "More holes and circles",
+    "datetaken": "2021-08-27T21:25:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "20210827_212517.jpeg": {
     "title": "More holes and circles",
     "subject": "More holes and circles",
     "datetaken": "2021-08-27T21:25:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
+  "20220114_114921.avif": {
+    "title": "Arrrg, the drawer faces were too small",
+    "subject": "Arrrg, the drawer faces were too small",
+    "datetaken": "2022-01-14T11:49:00",
     "width": 2048,
     "height": 1536,
     "gallery": true
@@ -255,6 +511,14 @@
     "height": 1536,
     "gallery": true
   },
+  "20220123_191254.avif": {
+    "title": "Awaiting granite",
+    "subject": "Awaiting granite",
+    "datetaken": "2022-01-23T19:12:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "20220123_191254.jpeg": {
     "title": "Awaiting granite",
     "subject": "Awaiting granite",
@@ -262,6 +526,14 @@
     "width": 2048,
     "height": 1536,
     "gallery": true
+  },
+  "20220131_222101.avif": {
+    "title": "Cool blue lights on fridge",
+    "subject": "Cool blue lights on fridge",
+    "datetaken": "2022-01-31T22:21:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
   },
   "20220131_222101.jpeg": {
     "title": "Cool blue lights on fridge",
@@ -271,12 +543,28 @@
     "height": 2048,
     "gallery": false
   },
+  "20220225_091904.avif": {
+    "title": "The Paws Classic",
+    "subject": "The Paws Classic",
+    "datetaken": "2022-02-25T09:19:00",
+    "width": 2048,
+    "height": 2017,
+    "gallery": true
+  },
   "20220225_091904.jpeg": {
     "title": "The Paws Classic",
     "subject": "The Paws Classic",
     "datetaken": "2022-02-25T09:19:00",
     "width": 2048,
     "height": 2017,
+    "gallery": true
+  },
+  "20220227_191600.avif": {
+    "title": "One for Debbie",
+    "subject": "One for Debbie",
+    "datetaken": "2022-02-27T19:16:00",
+    "width": 1536,
+    "height": 2048,
     "gallery": true
   },
   "20220227_191600.jpeg": {
@@ -287,6 +575,14 @@
     "height": 2048,
     "gallery": true
   },
+  "20220227_191616.avif": {
+    "title": "One for Theresa",
+    "subject": "One for Theresa",
+    "datetaken": "2022-02-27T19:16:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "20220227_191616.jpeg": {
     "title": "One for Theresa",
     "subject": "One for Theresa",
@@ -295,10 +591,26 @@
     "height": 1536,
     "gallery": true
   },
+  "20220310_084545.avif": {
+    "title": "You take a bunch of sticks...",
+    "subject": "You take a bunch of sticks...",
+    "datetaken": "2022-03-10T08:45:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
   "20220310_084545.jpeg": {
     "title": "You take a bunch of sticks...",
     "subject": "You take a bunch of sticks...",
     "datetaken": "2022-03-10T08:45:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
+  "20220316_201504.avif": {
+    "title": "Awaiting Epoxy",
+    "subject": "Awaiting Epoxy",
+    "datetaken": "2022-03-16T20:15:00",
     "width": 1536,
     "height": 2048,
     "gallery": true
@@ -311,6 +623,14 @@
     "height": 2048,
     "gallery": true
   },
+  "20220328_071254.avif": {
+    "title": "Sweet Dreams My Boy",
+    "subject": "Sweet Dreams My Boy",
+    "datetaken": "2022-03-28T07:12:00",
+    "width": 1813,
+    "height": 2048,
+    "gallery": false
+  },
   "20220328_071254.jpeg": {
     "title": "Sweet Dreams My Boy",
     "subject": "Sweet Dreams My Boy",
@@ -319,10 +639,26 @@
     "height": 2048,
     "gallery": false
   },
+  "20220420_174227.avif": {
+    "title": "In Fine Form",
+    "subject": "In Fine Form",
+    "datetaken": "2022-04-20T17:42:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
   "20220420_174227.jpeg": {
     "title": "In Fine Form",
     "subject": "In Fine Form",
     "datetaken": "2022-04-20T17:42:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "20220420_174306.avif": {
+    "title": "Table legs need to be sturdy",
+    "subject": "Table legs need to be sturdy",
+    "datetaken": "2022-04-20T17:43:00",
     "width": 1536,
     "height": 2048,
     "gallery": false
@@ -335,6 +671,14 @@
     "height": 2048,
     "gallery": false
   },
+  "20220503_133849.avif": {
+    "title": "Blotchy Awful Mess",
+    "subject": "Blotchy Awful Mess",
+    "datetaken": "2022-05-03T13:38:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "20220503_133849.jpeg": {
     "title": "Blotchy Awful Mess",
     "subject": "Blotchy Awful Mess",
@@ -342,6 +686,14 @@
     "width": 2048,
     "height": 1536,
     "gallery": true
+  },
+  "20220623_123043.avif": {
+    "title": "Saved",
+    "subject": "Saved",
+    "datetaken": "2022-06-23T12:30:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
   },
   "20220623_123043.jpeg": {
     "title": "Saved",
@@ -351,12 +703,28 @@
     "height": 1536,
     "gallery": false
   },
+  "20220623_123128.avif": {
+    "title": "Unnested Nesting Tables",
+    "subject": "Unnested Nesting Tables",
+    "datetaken": "2022-06-23T12:31:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
   "20220623_123128.jpeg": {
     "title": "Unnested Nesting Tables",
     "subject": "Unnested Nesting Tables",
     "datetaken": "2022-06-23T12:31:00",
     "width": 1536,
     "height": 2048,
+    "gallery": true
+  },
+  "20220628_125859.avif": {
+    "title": "Under Construction in Garage",
+    "subject": "Under Construction in Garage",
+    "datetaken": "2022-06-28T12:58:00",
+    "width": 2048,
+    "height": 1536,
     "gallery": true
   },
   "20220628_125859.jpeg": {
@@ -367,6 +735,14 @@
     "height": 1536,
     "gallery": true
   },
+  "20220628_125916.avif": {
+    "title": "End Shot",
+    "subject": "End Shot",
+    "datetaken": "2022-06-28T12:59:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "20220628_125916.jpeg": {
     "title": "End Shot",
     "subject": "End Shot",
@@ -375,10 +751,26 @@
     "height": 1536,
     "gallery": false
   },
+  "20220628_125950.avif": {
+    "title": "Where's my dirt?",
+    "subject": "Where's my dirt?",
+    "datetaken": "2022-06-28T12:59:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "20220628_125950.jpeg": {
     "title": "Where's my dirt?",
     "subject": "Where's my dirt?",
     "datetaken": "2022-06-28T12:59:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
+  "20221122_113942.avif": {
+    "title": "Deluxe Napkin Holder",
+    "subject": "Deluxe Napkin Holder",
+    "datetaken": "2022-11-22T11:39:00",
     "width": 2048,
     "height": 1536,
     "gallery": true
@@ -391,6 +783,14 @@
     "height": 1536,
     "gallery": true
   },
+  "20221122_113946.avif": {
+    "title": "Different Angle",
+    "subject": "Different Angle",
+    "datetaken": "2022-11-22T11:39:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "20221122_113946.jpeg": {
     "title": "Different Angle",
     "subject": "Different Angle",
@@ -398,6 +798,14 @@
     "width": 2048,
     "height": 1536,
     "gallery": false
+  },
+  "20230405_134555.avif": {
+    "title": "In Play",
+    "subject": "In Play",
+    "datetaken": "2023-04-05T13:45:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
   },
   "20230405_134555.jpeg": {
     "title": "In Play",
@@ -407,9 +815,25 @@
     "height": 2048,
     "gallery": true
   },
+  "20230405_141747.avif": {
+    "title": "New Shop Furniture",
+    "subject": "New Shop Furniture",
+    "datetaken": "2023-04-05T14:17:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "20230405_141747.jpeg": {
     "title": "New Shop Furniture",
     "subject": "New Shop Furniture",
+    "datetaken": "2023-04-05T14:17:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
+  "20230405_141755.avif": {
+    "title": "Mitre Stand",
+    "subject": "Mitre Stand",
     "datetaken": "2023-04-05T14:17:00",
     "width": 2048,
     "height": 1536,
@@ -423,6 +847,14 @@
     "height": 1536,
     "gallery": true
   },
+  "20230405_141946.avif": {
+    "title": "The Tree",
+    "subject": "The Tree",
+    "datetaken": "2023-04-05T14:19:00",
+    "width": 2016,
+    "height": 1512,
+    "gallery": false
+  },
   "20230405_141946.jpeg": {
     "title": "The Tree",
     "subject": "The Tree",
@@ -430,6 +862,14 @@
     "width": 2016,
     "height": 1512,
     "gallery": false
+  },
+  "20230405_141951.avif": {
+    "title": "The Flowers",
+    "subject": "The Flowers",
+    "datetaken": "2023-04-05T14:19:00",
+    "width": 2016,
+    "height": 1512,
+    "gallery": true
   },
   "20230405_141951.jpeg": {
     "title": "The Flowers",
@@ -439,12 +879,28 @@
     "height": 1512,
     "gallery": true
   },
+  "20230720_163338.avif": {
+    "title": "Just finished",
+    "subject": "Just finished",
+    "datetaken": "2023-07-20T16:33:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
   "20230720_163338.jpeg": {
     "title": "Just finished",
     "subject": "Just finished",
     "datetaken": "2023-07-20T16:33:00",
     "width": 1536,
     "height": 2048,
+    "gallery": false
+  },
+  "20230720_163408.avif": {
+    "title": "Engraving",
+    "subject": "Engraving",
+    "datetaken": "2023-07-20T16:34:00",
+    "width": 2048,
+    "height": 1536,
     "gallery": false
   },
   "20230720_163408.jpeg": {
@@ -455,12 +911,28 @@
     "height": 1536,
     "gallery": false
   },
+  "20230720_200245-1.avif": {
+    "title": "Finish Cured and Ready",
+    "subject": "Finish Cured and Ready",
+    "datetaken": "2023-07-20T20:02:00",
+    "width": 1545,
+    "height": 2048,
+    "gallery": true
+  },
   "20230720_200245-1.jpeg": {
     "title": "Finish Cured and Ready",
     "subject": "Finish Cured and Ready",
     "datetaken": "2023-07-20T20:02:00",
     "width": 1545,
     "height": 2048,
+    "gallery": true
+  },
+  "20230822_184948.avif": {
+    "title": "Poplar frames are popular",
+    "subject": "Poplar frames are popular",
+    "datetaken": "2023-08-22T18:49:00",
+    "width": 2048,
+    "height": 1536,
     "gallery": true
   },
   "20230822_184948.jpeg": {
@@ -471,6 +943,14 @@
     "height": 1536,
     "gallery": true
   },
+  "20230822_184956.avif": {
+    "title": "Black for the Shadow Effect",
+    "subject": "Black for the Shadow Effect",
+    "datetaken": "2023-08-22T18:49:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "20230822_184956.jpeg": {
     "title": "Black for the Shadow Effect",
     "subject": "Black for the Shadow Effect",
@@ -479,12 +959,28 @@
     "height": 1536,
     "gallery": false
   },
+  "20230822_191820.avif": {
+    "title": "Aligned with a Deck of Cards",
+    "subject": "Aligned with a Deck of Cards",
+    "datetaken": "2023-08-22T19:18:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
   "20230822_191820.jpeg": {
     "title": "Aligned with a Deck of Cards",
     "subject": "Aligned with a Deck of Cards",
     "datetaken": "2023-08-22T19:18:00",
     "width": 1536,
     "height": 2048,
+    "gallery": true
+  },
+  "20240120_222026808_iOS.avif": {
+    "title": "The Daybed as it is today",
+    "subject": "The Daybed as it is today",
+    "datetaken": "2024-01-20T17:20:00",
+    "width": 2048,
+    "height": 1536,
     "gallery": true
   },
   "20240120_222026808_iOS.jpeg": {
@@ -495,10 +991,26 @@
     "height": 1536,
     "gallery": true
   },
+  "computer-stand-1.avif": {
+    "title": "Bill's First Christmas",
+    "subject": "Bill's First Christmas",
+    "datetaken": "2021-12-25T23:53:00",
+    "width": 2048,
+    "height": 2048,
+    "gallery": true
+  },
   "computer-stand-1.jpeg": {
     "title": "Bill's First Christmas",
     "subject": "Bill's First Christmas",
     "datetaken": "2021-12-25T23:53:00",
+    "width": 2048,
+    "height": 2048,
+    "gallery": true
+  },
+  "computer-stand-3.avif": {
+    "title": "The drawer actually functions!",
+    "subject": "The drawer actually functions!",
+    "datetaken": "2021-12-25T23:54:00",
     "width": 2048,
     "height": 2048,
     "gallery": true
@@ -511,6 +1023,14 @@
     "height": 2048,
     "gallery": true
   },
+  "corsair-ssd.avif": {
+    "title": "A Modern Drive",
+    "subject": "",
+    "datetaken": "2025-06-25T14:57:00",
+    "width": 1280,
+    "height": 543,
+    "gallery": false
+  },
   "corsair-ssd.png": {
     "title": "A Modern Drive",
     "subject": "",
@@ -518,6 +1038,14 @@
     "width": 1280,
     "height": 543,
     "gallery": false
+  },
+  "CribbageBoard02.avif": {
+    "title": "Cribbage Board on Shaper Hub",
+    "subject": "Subject",
+    "datetaken": "2024-02-14T12:24:00",
+    "width": 1628,
+    "height": 904,
+    "gallery": true
   },
   "CribbageBoard02.jpeg": {
     "title": "Cribbage Board on Shaper Hub",
@@ -527,12 +1055,28 @@
     "height": 904,
     "gallery": true
   },
+  "earring-box-01.avif": {
+    "title": "Cozy Earrings All Tucked In",
+    "subject": "Cozy Earrings All Tucked In",
+    "datetaken": "2023-12-22T01:14:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "earring-box-01.jpeg": {
     "title": "Cozy Earrings All Tucked In",
     "subject": "Cozy Earrings All Tucked In",
     "datetaken": "2023-12-22T01:14:00",
     "width": 2048,
     "height": 1536,
+    "gallery": false
+  },
+  "earring-box-sketchup.avif": {
+    "title": "Earring Box - Exploded View",
+    "subject": "Earring Box - Exploded View",
+    "datetaken": "2024-12-01T11:23:00",
+    "width": 1159,
+    "height": 1110,
     "gallery": false
   },
   "earring-box-sketchup.jpeg": {
@@ -543,12 +1087,28 @@
     "height": 1110,
     "gallery": false
   },
+  "earrings-from-top.avif": {
+    "title": "Blingy Bling",
+    "subject": "Blingy Bling",
+    "datetaken": "2023-12-22T01:14:00",
+    "width": 1821,
+    "height": 1917,
+    "gallery": true
+  },
   "earrings-from-top.jpeg": {
     "title": "Blingy Bling",
     "subject": "Blingy Bling",
     "datetaken": "2023-12-22T01:14:00",
     "width": 1821,
     "height": 1917,
+    "gallery": true
+  },
+  "end-table-sketchup.avif": {
+    "title": "End Table Sketchup Drawing",
+    "subject": "End Table Sketchup Drawing",
+    "datetaken": "2021-07-09T01:28:00",
+    "width": 1418,
+    "height": 942,
     "gallery": true
   },
   "end-table-sketchup.jpeg": {
@@ -559,6 +1119,14 @@
     "height": 942,
     "gallery": true
   },
+  "floating-shelves-sketchup.avif": {
+    "title": "Floating Shelf in Sketchup",
+    "subject": "Floating Shelf in Sketchup",
+    "datetaken": "2019-03-27T01:15:00",
+    "width": 1263,
+    "height": 611,
+    "gallery": true
+  },
   "floating-shelves-sketchup.jpeg": {
     "title": "Floating Shelf in Sketchup",
     "subject": "Floating Shelf in Sketchup",
@@ -567,12 +1135,28 @@
     "height": 611,
     "gallery": true
   },
+  "Fractal-Case.avif": {
+    "title": "Sleek and Stylish",
+    "subject": "",
+    "datetaken": "2025-06-25T14:55:00",
+    "width": 679,
+    "height": 919,
+    "gallery": false
+  },
   "Fractal-Case.png": {
     "title": "Sleek and Stylish",
     "subject": "",
     "datetaken": "2025-06-25T14:55:00",
     "width": 679,
     "height": 919,
+    "gallery": false
+  },
+  "gazebo-bedframe-sketchup.avif": {
+    "title": "Bedframe sides, slats, and pedestal",
+    "subject": "Bedframe sides, slats, and pedestal",
+    "datetaken": "2024-05-16T11:44:00",
+    "width": 1916,
+    "height": 1279,
     "gallery": false
   },
   "gazebo-bedframe-sketchup.jpeg": {
@@ -583,12 +1167,28 @@
     "height": 1279,
     "gallery": false
   },
+  "gazebo-cabinet-sketchup.avif": {
+    "title": "Gazebo Cabinet Sketchup",
+    "subject": "Gazebo Cabinet Sketchup",
+    "datetaken": "2024-03-15T01:17:00",
+    "width": 829,
+    "height": 961,
+    "gallery": false
+  },
   "gazebo-cabinet-sketchup.jpeg": {
     "title": "Gazebo Cabinet Sketchup",
     "subject": "Gazebo Cabinet Sketchup",
     "datetaken": "2024-03-15T01:17:00",
     "width": 829,
     "height": 961,
+    "gallery": false
+  },
+  "Gigabyte-BIOS.avif": {
+    "title": "It Boots!",
+    "subject": "It Boots!",
+    "datetaken": "2025-06-20T20:10:00",
+    "width": 2048,
+    "height": 1280,
     "gallery": false
   },
   "Gigabyte-BIOS.jpeg": {
@@ -599,6 +1199,14 @@
     "height": 1280,
     "gallery": false
   },
+  "gigabyte-motherboard.avif": {
+    "title": "Gigabyte Motherboard",
+    "subject": "",
+    "datetaken": "2025-06-25T14:55:00",
+    "width": 600,
+    "height": 600,
+    "gallery": false
+  },
   "gigabyte-motherboard.png": {
     "title": "Gigabyte Motherboard",
     "subject": "",
@@ -606,6 +1214,14 @@
     "width": 600,
     "height": 600,
     "gallery": false
+  },
+  "golf-sign.avif": {
+    "title": "Bill's Second Christmas",
+    "subject": "Bill's Second Christmas",
+    "datetaken": "2022-12-25T23:54:00",
+    "width": 2048,
+    "height": 2048,
+    "gallery": true
   },
   "golf-sign.jpeg": {
     "title": "Bill's Second Christmas",
@@ -615,10 +1231,26 @@
     "height": 2048,
     "gallery": true
   },
+  "IMG_0074.avif": {
+    "title": "This is my good side",
+    "subject": "This is my good side",
+    "datetaken": "2023-10-27T18:16:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0074.jpeg": {
     "title": "This is my good side",
     "subject": "This is my good side",
     "datetaken": "2023-10-27T18:16:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
+  "IMG_0079.avif": {
+    "title": "Wait. This is my good side.",
+    "subject": "Wait. This is my good side.",
+    "datetaken": "2023-10-27T18:46:00",
     "width": 2048,
     "height": 1536,
     "gallery": true
@@ -631,6 +1263,14 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_0154.avif": {
+    "title": "One needs cool lighting",
+    "subject": "One needs cool lighting",
+    "datetaken": "2022-02-10T21:42:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0154.jpeg": {
     "title": "One needs cool lighting",
     "subject": "One needs cool lighting",
@@ -639,9 +1279,25 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_0216.avif": {
+    "title": "Au Chocolat",
+    "subject": "Au Chocolat",
+    "datetaken": "2023-11-26T12:02:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
   "IMG_0216.jpeg": {
     "title": "Au Chocolat",
     "subject": "Au Chocolat",
+    "datetaken": "2023-11-26T12:02:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_0218.avif": {
+    "title": "Work in Progress",
+    "subject": "Work in Progress",
     "datetaken": "2023-11-26T12:02:00",
     "width": 1536,
     "height": 2048,
@@ -655,12 +1311,28 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_0221.avif": {
+    "title": "Extension Table",
+    "subject": "Extension Table",
+    "datetaken": "2023-11-26T12:59:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
   "IMG_0221.jpeg": {
     "title": "Extension Table",
     "subject": "Extension Table",
     "datetaken": "2023-11-26T12:59:00",
     "width": 1536,
     "height": 2048,
+    "gallery": true
+  },
+  "IMG_0226.avif": {
+    "title": "Profile View",
+    "subject": "Profile View",
+    "datetaken": "2023-11-26T23:21:00",
+    "width": 2048,
+    "height": 1536,
     "gallery": true
   },
   "IMG_0226.jpeg": {
@@ -671,12 +1343,28 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_0455.avif": {
+    "title": "It's a Mess",
+    "subject": "It's a Mess",
+    "datetaken": "2023-12-22T19:59:00",
+    "width": 2048,
+    "height": 1032,
+    "gallery": true
+  },
   "IMG_0455.jpeg": {
     "title": "It's a Mess",
     "subject": "It's a Mess",
     "datetaken": "2023-12-22T19:59:00",
     "width": 2048,
     "height": 1032,
+    "gallery": true
+  },
+  "IMG_0461.avif": {
+    "title": "Engravings",
+    "subject": "Engravings",
+    "datetaken": "2023-12-24T13:15:00",
+    "width": 2048,
+    "height": 1067,
     "gallery": true
   },
   "IMG_0461.jpeg": {
@@ -687,6 +1375,14 @@
     "height": 1067,
     "gallery": true
   },
+  "IMG_0466.avif": {
+    "title": "36 Holes per Box",
+    "subject": "36 Holes per Box",
+    "datetaken": "2023-12-24T13:15:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "IMG_0466.jpeg": {
     "title": "36 Holes per Box",
     "subject": "36 Holes per Box",
@@ -694,6 +1390,14 @@
     "width": 2048,
     "height": 1536,
     "gallery": false
+  },
+  "IMG_0467.avif": {
+    "title": "Mmmm Green Velvet",
+    "subject": "Mmmm Green Velvet",
+    "datetaken": "2023-12-24T13:15:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
   },
   "IMG_0467.jpeg": {
     "title": "Mmmm Green Velvet",
@@ -703,10 +1407,26 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_0490.avif": {
+    "title": "Table Legs",
+    "subject": "Table Legs",
+    "datetaken": "2024-01-14T11:51:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
   "IMG_0490.jpeg": {
     "title": "Table Legs",
     "subject": "Table Legs",
     "datetaken": "2024-01-14T11:51:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_0499.avif": {
+    "title": "I'm Not Bored",
+    "subject": "I'm Not Bored",
+    "datetaken": "2024-01-19T18:08:00",
     "width": 1536,
     "height": 2048,
     "gallery": false
@@ -719,12 +1439,28 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_0512.avif": {
+    "title": "Tables Are Tops",
+    "subject": "Tables Are Tops",
+    "datetaken": "2024-01-25T23:15:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
   "IMG_0512.jpeg": {
     "title": "Tables Are Tops",
     "subject": "Tables Are Tops",
     "datetaken": "2024-01-25T23:15:00",
     "width": 1536,
     "height": 2048,
+    "gallery": true
+  },
+  "IMG_0516.avif": {
+    "title": "It's got legs!",
+    "subject": "It's got legs!",
+    "datetaken": "2024-01-27T21:09:00",
+    "width": 2048,
+    "height": 1536,
     "gallery": true
   },
   "IMG_0516.jpeg": {
@@ -735,6 +1471,14 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_0517.avif": {
+    "title": "Debbie dressed it up nice",
+    "subject": "Debbie dressed it up nice",
+    "datetaken": "2024-01-27T21:31:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
   "IMG_0517.jpeg": {
     "title": "Debbie dressed it up nice",
     "subject": "Debbie dressed it up nice",
@@ -742,6 +1486,14 @@
     "width": 1536,
     "height": 2048,
     "gallery": true
+  },
+  "IMG_0518.avif": {
+    "title": "Dining Decorations",
+    "subject": "Dining Decorations",
+    "datetaken": "2024-01-27T21:31:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
   },
   "IMG_0518.jpeg": {
     "title": "Dining Decorations",
@@ -751,12 +1503,28 @@
     "height": 1536,
     "gallery": false
   },
+  "IMG_0530.avif": {
+    "title": "Table all dressed up",
+    "subject": "Table all dressed up",
+    "datetaken": "2024-01-29T12:28:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0530.jpeg": {
     "title": "Table all dressed up",
     "subject": "Table all dressed up",
     "datetaken": "2024-01-29T12:28:00",
     "width": 2048,
     "height": 1536,
+    "gallery": true
+  },
+  "IMG_0531.avif": {
+    "title": "Heater Dolly",
+    "subject": "Heater Dolly",
+    "datetaken": "2024-01-29T12:29:00",
+    "width": 1536,
+    "height": 2048,
     "gallery": true
   },
   "IMG_0531.jpeg": {
@@ -767,9 +1535,25 @@
     "height": 2048,
     "gallery": true
   },
+  "IMG_0536.avif": {
+    "title": "A Strange Piece",
+    "subject": "A Strange Piece",
+    "datetaken": "2024-01-31T12:37:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0536.jpeg": {
     "title": "A Strange Piece",
     "subject": "A Strange Piece",
+    "datetaken": "2024-01-31T12:37:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
+  "IMG_0537.avif": {
+    "title": "Magic Drawer doubles as a step for the boys",
+    "subject": "Magic Drawer doubles as a step for the boys",
     "datetaken": "2024-01-31T12:37:00",
     "width": 2048,
     "height": 1536,
@@ -783,12 +1567,28 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_0539.avif": {
+    "title": "Loaded up and put to work",
+    "subject": "Loaded up and put to work",
+    "datetaken": "2024-02-02T12:27:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
   "IMG_0539.jpeg": {
     "title": "Loaded up and put to work",
     "subject": "Loaded up and put to work",
     "datetaken": "2024-02-02T12:27:00",
     "width": 1536,
     "height": 2048,
+    "gallery": true
+  },
+  "IMG_0540.avif": {
+    "title": "Popcorn machine at the ready",
+    "subject": "Popcorn machine at the ready",
+    "datetaken": "2024-02-02T12:50:00",
+    "width": 2048,
+    "height": 1536,
     "gallery": true
   },
   "IMG_0540.jpeg": {
@@ -799,12 +1599,28 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_0541.avif": {
+    "title": "All Done",
+    "subject": "All Done",
+    "datetaken": "2024-02-02T12:50:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "IMG_0541.jpeg": {
     "title": "All Done",
     "subject": "All Done",
     "datetaken": "2024-02-02T12:50:00",
     "width": 2048,
     "height": 1536,
+    "gallery": false
+  },
+  "IMG_0542.avif": {
+    "title": "Mistakes Were Made",
+    "subject": "Mistakes Were Made",
+    "datetaken": "2024-02-02T12:54:00",
+    "width": 1536,
+    "height": 2048,
     "gallery": false
   },
   "IMG_0542.jpeg": {
@@ -815,10 +1631,26 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_0543.avif": {
+    "title": "Yoga Room Version",
+    "subject": "Yoga Room Version",
+    "datetaken": "2024-02-02T15:42:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
   "IMG_0543.jpeg": {
     "title": "Yoga Room Version",
     "subject": "Yoga Room Version",
     "datetaken": "2024-02-02T15:42:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
+  "IMG_0545.avif": {
+    "title": "Mudroom Version",
+    "subject": "Mudroom Version",
+    "datetaken": "2024-02-02T15:43:00",
     "width": 1536,
     "height": 2048,
     "gallery": true
@@ -831,12 +1663,28 @@
     "height": 2048,
     "gallery": true
   },
+  "IMG_0547.avif": {
+    "title": "At Home in the Kitchen",
+    "subject": "At Home in the Kitchen",
+    "datetaken": "2024-02-02T22:13:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0547.jpeg": {
     "title": "At Home in the Kitchen",
     "subject": "At Home in the Kitchen",
     "datetaken": "2024-02-02T22:13:00",
     "width": 2048,
     "height": 1536,
+    "gallery": true
+  },
+  "IMG_0553.avif": {
+    "title": "In Place at Home",
+    "subject": "In Place at Home",
+    "datetaken": "2024-02-03T21:21:00",
+    "width": 1536,
+    "height": 2048,
     "gallery": true
   },
   "IMG_0553.jpeg": {
@@ -847,6 +1695,14 @@
     "height": 2048,
     "gallery": true
   },
+  "IMG_0555.avif": {
+    "title": "Looking Pretty",
+    "subject": "Looking Pretty",
+    "datetaken": "2022-11-22T23:03:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0555.jpeg": {
     "title": "Looking Pretty",
     "subject": "Looking Pretty",
@@ -855,12 +1711,28 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_0558.avif": {
+    "title": "More Pocket Screws",
+    "subject": "More Pocket Screws",
+    "datetaken": "2024-02-04T12:41:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
   "IMG_0558.jpeg": {
     "title": "More Pocket Screws",
     "subject": "More Pocket Screws",
     "datetaken": "2024-02-04T12:41:00",
     "width": 1536,
     "height": 2048,
+    "gallery": false
+  },
+  "IMG_0559.avif": {
+    "title": "Torsion Box Construction",
+    "subject": "Torsion Box Construction",
+    "datetaken": "2024-02-04T12:43:00",
+    "width": 2048,
+    "height": 1536,
     "gallery": false
   },
   "IMG_0559.jpeg": {
@@ -871,12 +1743,28 @@
     "height": 1536,
     "gallery": false
   },
+  "IMG_0560.avif": {
+    "title": "This is a big table",
+    "subject": "This is a big table",
+    "datetaken": "2024-02-04T12:46:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0560.jpeg": {
     "title": "This is a big table",
     "subject": "This is a big table",
     "datetaken": "2024-02-04T12:46:00",
     "width": 2048,
     "height": 1536,
+    "gallery": true
+  },
+  "IMG_0626.avif": {
+    "title": "At home and in use",
+    "subject": "At home and in use",
+    "datetaken": "2024-02-12T00:16:00",
+    "width": 1536,
+    "height": 2048,
     "gallery": true
   },
   "IMG_0626.jpeg": {
@@ -887,6 +1775,14 @@
     "height": 2048,
     "gallery": true
   },
+  "IMG_0634.avif": {
+    "title": "Legs.  Lot and lots of legs",
+    "subject": "Legs.  Lot and lots of legs",
+    "datetaken": "2024-02-14T13:02:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
   "IMG_0634.jpeg": {
     "title": "Legs.  Lot and lots of legs",
     "subject": "Legs.  Lot and lots of legs",
@@ -895,10 +1791,26 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_0636.avif": {
+    "title": "Proudly on display in our guest bedroom",
+    "subject": "Proudly on display in our guest bedroom",
+    "datetaken": "2024-02-14T21:53:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0636.jpeg": {
     "title": "Proudly on display in our guest bedroom",
     "subject": "Proudly on display in our guest bedroom",
     "datetaken": "2024-02-14T21:53:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
+  "IMG_0637.avif": {
+    "title": "Maple Pinstripes",
+    "subject": "Maple Pinstripes",
+    "datetaken": "2024-02-15T11:15:00",
     "width": 2048,
     "height": 1536,
     "gallery": true
@@ -911,6 +1823,14 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_0639.avif": {
+    "title": "Wrap Around Grain",
+    "subject": "Wrap Around Grain",
+    "datetaken": "2024-02-15T11:15:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "IMG_0639.jpeg": {
     "title": "Wrap Around Grain",
     "subject": "Wrap Around Grain",
@@ -919,10 +1839,26 @@
     "height": 1536,
     "gallery": false
   },
+  "IMG_0640.avif": {
+    "title": "Epoxy Inlay on Lid",
+    "subject": "Epoxy Inlay on Lid",
+    "datetaken": "2024-02-15T11:16:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0640.jpeg": {
     "title": "Epoxy Inlay on Lid",
     "subject": "Epoxy Inlay on Lid",
     "datetaken": "2024-02-15T11:16:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
+  "IMG_0643.avif": {
+    "title": "All Loaded Up With Munchies",
+    "subject": "All Loaded Up With Munchies",
+    "datetaken": "2024-02-16T22:30:00",
     "width": 2048,
     "height": 1536,
     "gallery": true
@@ -935,10 +1871,26 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_0656.avif": {
+    "title": "Two bench tops are better than one",
+    "subject": "Two bench tops are better than one",
+    "datetaken": "2024-02-21T19:04:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
   "IMG_0656.jpeg": {
     "title": "Two bench tops are better than one",
     "subject": "Two bench tops are better than one",
     "datetaken": "2024-02-21T19:04:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
+  "IMG_0659.avif": {
+    "title": "Legs assembled",
+    "subject": "Legs assembled",
+    "datetaken": "2024-02-21T19:05:00",
     "width": 1536,
     "height": 2048,
     "gallery": true
@@ -951,6 +1903,14 @@
     "height": 2048,
     "gallery": true
   },
+  "IMG_0677.avif": {
+    "title": "My Good Side",
+    "subject": "My Good Side",
+    "datetaken": "2024-02-23T11:38:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
   "IMG_0677.jpeg": {
     "title": "My Good Side",
     "subject": "My Good Side",
@@ -958,6 +1918,14 @@
     "width": 1536,
     "height": 2048,
     "gallery": true
+  },
+  "IMG_0678.avif": {
+    "title": "Up Front",
+    "subject": "Up Front",
+    "datetaken": "2024-02-23T11:38:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
   },
   "IMG_0678.jpeg": {
     "title": "Up Front",
@@ -967,12 +1935,28 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_0681.avif": {
+    "title": "In the Bath",
+    "subject": "In the Bath",
+    "datetaken": "2024-02-24T00:41:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0681.jpeg": {
     "title": "In the Bath",
     "subject": "In the Bath",
     "datetaken": "2024-02-24T00:41:00",
     "width": 2048,
     "height": 1536,
+    "gallery": true
+  },
+  "IMG_0691.avif": {
+    "title": "From on High",
+    "subject": "From on High",
+    "datetaken": "2024-02-26T14:09:00",
+    "width": 1536,
+    "height": 2048,
     "gallery": true
   },
   "IMG_0691.jpeg": {
@@ -983,10 +1967,26 @@
     "height": 2048,
     "gallery": true
   },
+  "IMG_0693.avif": {
+    "title": "Even Better",
+    "subject": "Even Better",
+    "datetaken": "2024-02-26T14:10:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0693.jpeg": {
     "title": "Even Better",
     "subject": "Even Better",
     "datetaken": "2024-02-26T14:10:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
+  "IMG_0699.avif": {
+    "title": "Still getting lots of good use!",
+    "subject": "",
+    "datetaken": "2024-02-27T19:28:00",
     "width": 2048,
     "height": 1536,
     "gallery": true
@@ -999,12 +1999,28 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_0701.avif": {
+    "title": "Top Walnut, Bottom Maple",
+    "subject": "Top Walnut, Bottom Maple",
+    "datetaken": "2024-02-28T12:50:00",
+    "width": 1805,
+    "height": 1316,
+    "gallery": true
+  },
   "IMG_0701.jpeg": {
     "title": "Top Walnut, Bottom Maple",
     "subject": "Top Walnut, Bottom Maple",
     "datetaken": "2024-02-28T12:50:00",
     "width": 1805,
     "height": 1316,
+    "gallery": true
+  },
+  "IMG_0703.avif": {
+    "title": "Happy Puppy",
+    "subject": "Happy Puppy",
+    "datetaken": "2024-02-28T12:50:00",
+    "width": 2048,
+    "height": 1536,
     "gallery": true
   },
   "IMG_0703.jpeg": {
@@ -1015,6 +2031,14 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_0706.avif": {
+    "title": "Ignore the one on the right.",
+    "subject": "Ignore the one on the right.",
+    "datetaken": "2024-02-28T13:00:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "IMG_0706.jpeg": {
     "title": "Ignore the one on the right.",
     "subject": "Ignore the one on the right.",
@@ -1022,6 +2046,14 @@
     "width": 2048,
     "height": 1536,
     "gallery": false
+  },
+  "IMG_0708.avif": {
+    "title": "The Classic Paw",
+    "subject": "The Classic Paw",
+    "datetaken": "2024-02-28T13:01:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
   },
   "IMG_0708.jpeg": {
     "title": "The Classic Paw",
@@ -1031,6 +2063,14 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_0734.avif": {
+    "title": "Poplar Box",
+    "subject": "Poplar Box",
+    "datetaken": "2024-03-03T13:01:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "IMG_0734.jpeg": {
     "title": "Poplar Box",
     "subject": "Poplar Box",
@@ -1039,12 +2079,28 @@
     "height": 1536,
     "gallery": false
   },
+  "IMG_0736.avif": {
+    "title": "Fun Side",
+    "subject": "Fun Side",
+    "datetaken": "2024-03-03T13:01:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0736.jpeg": {
     "title": "Fun Side",
     "subject": "Fun Side",
     "datetaken": "2024-03-03T13:01:00",
     "width": 2048,
     "height": 1536,
+    "gallery": true
+  },
+  "IMG_0737.avif": {
+    "title": "With Mirror",
+    "subject": "With Mirror",
+    "datetaken": "2024-03-03T13:02:00",
+    "width": 1536,
+    "height": 2048,
     "gallery": true
   },
   "IMG_0737.jpeg": {
@@ -1055,10 +2111,26 @@
     "height": 2048,
     "gallery": true
   },
+  "IMG_0740.avif": {
+    "title": "Bling - Enough said",
+    "subject": "Bling - Enough said",
+    "datetaken": "2024-03-03T13:02:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "IMG_0740.jpeg": {
     "title": "Bling - Enough said",
     "subject": "Bling - Enough said",
     "datetaken": "2024-03-03T13:02:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
+  "IMG_0743.avif": {
+    "title": "Workout Room Shelf #1",
+    "subject": "Workout Room Shelf #1",
+    "datetaken": "2024-03-06T14:10:00",
     "width": 2048,
     "height": 1536,
     "gallery": false
@@ -1071,6 +2143,14 @@
     "height": 1536,
     "gallery": false
   },
+  "IMG_0744.avif": {
+    "title": "Workout Room Shelf #2",
+    "subject": "Workout Room Shelf #2",
+    "datetaken": "2024-03-06T14:10:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
   "IMG_0744.jpeg": {
     "title": "Workout Room Shelf #2",
     "subject": "Workout Room Shelf #2",
@@ -1079,12 +2159,28 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_0746.avif": {
+    "title": "First Bookcase",
+    "subject": "First Bookcase",
+    "datetaken": "2024-03-06T14:13:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
   "IMG_0746.jpeg": {
     "title": "First Bookcase",
     "subject": "First Bookcase",
     "datetaken": "2024-03-06T14:13:00",
     "width": 1536,
     "height": 2048,
+    "gallery": true
+  },
+  "IMG_0748.avif": {
+    "title": "Simple Custom Desk",
+    "subject": "Simple Custom Desk",
+    "datetaken": "2024-03-06T14:14:00",
+    "width": 2048,
+    "height": 1536,
     "gallery": true
   },
   "IMG_0748.jpeg": {
@@ -1095,6 +2191,14 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_0749.avif": {
+    "title": "Unintentional Keepsake Box",
+    "subject": "Unintentional Keepsake Box",
+    "datetaken": "2024-03-06T14:14:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "IMG_0749.jpeg": {
     "title": "Unintentional Keepsake Box",
     "subject": "Unintentional Keepsake Box",
@@ -1103,12 +2207,28 @@
     "height": 1536,
     "gallery": false
   },
+  "IMG_0750.avif": {
+    "title": "Unplanned Box",
+    "subject": "Unplanned Box",
+    "datetaken": "2024-03-06T14:15:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0750.jpeg": {
     "title": "Unplanned Box",
     "subject": "Unplanned Box",
     "datetaken": "2024-03-06T14:15:00",
     "width": 2048,
     "height": 1536,
+    "gallery": true
+  },
+  "IMG_0751.avif": {
+    "title": "Hallway Shelf #1",
+    "subject": "Hallway Shelf #1",
+    "datetaken": "2024-03-06T14:22:00",
+    "width": 1536,
+    "height": 2048,
     "gallery": true
   },
   "IMG_0751.jpeg": {
@@ -1119,12 +2239,28 @@
     "height": 2048,
     "gallery": true
   },
+  "IMG_0752.avif": {
+    "title": "Hallway Shelf #2",
+    "subject": "Hallway Shelf #2",
+    "datetaken": "2024-03-06T14:22:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0752.jpeg": {
     "title": "Hallway Shelf #2",
     "subject": "Hallway Shelf #2",
     "datetaken": "2024-03-06T14:22:00",
     "width": 2048,
     "height": 1536,
+    "gallery": true
+  },
+  "IMG_0757.avif": {
+    "title": "Birds Hanging Out",
+    "subject": "Birds Hanging Out",
+    "datetaken": "2024-03-07T16:54:00",
+    "width": 2048,
+    "height": 1646,
     "gallery": true
   },
   "IMG_0757.jpeg": {
@@ -1135,6 +2271,14 @@
     "height": 1646,
     "gallery": true
   },
+  "IMG_0758C.avif": {
+    "title": "A Basket Case",
+    "subject": "A Basket Case",
+    "datetaken": "2024-03-07T17:34:00",
+    "width": 1536,
+    "height": 1093,
+    "gallery": true
+  },
   "IMG_0758C.jpeg": {
     "title": "A Basket Case",
     "subject": "A Basket Case",
@@ -1142,6 +2286,14 @@
     "width": 1536,
     "height": 1093,
     "gallery": true
+  },
+  "IMG_0759.avif": {
+    "title": "Full Height Shot",
+    "subject": "Full Height Shot",
+    "datetaken": "2024-03-07T17:34:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
   },
   "IMG_0759.jpeg": {
     "title": "Full Height Shot",
@@ -1151,6 +2303,14 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_0760.avif": {
+    "title": "Cool Blue Baskets",
+    "subject": "Cool Blue Baskets",
+    "datetaken": "2024-03-07T17:34:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
   "IMG_0760.jpeg": {
     "title": "Cool Blue Baskets",
     "subject": "Cool Blue Baskets",
@@ -1159,9 +2319,25 @@
     "height": 2048,
     "gallery": true
   },
+  "IMG_0810.avif": {
+    "title": "Computer Stand",
+    "subject": "Computer Stand",
+    "datetaken": "2024-03-12T18:08:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0810.jpeg": {
     "title": "Computer Stand",
     "subject": "Computer Stand",
+    "datetaken": "2024-03-12T18:08:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
+  "IMG_0811.avif": {
+    "title": "Customized",
+    "subject": "Customized",
     "datetaken": "2024-03-12T18:08:00",
     "width": 2048,
     "height": 1536,
@@ -1175,12 +2351,28 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_0812.avif": {
+    "title": "Footstool",
+    "subject": "Footstool",
+    "datetaken": "2024-03-12T18:09:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "IMG_0812.jpeg": {
     "title": "Footstool",
     "subject": "Footstool",
     "datetaken": "2024-03-12T18:09:00",
     "width": 2048,
     "height": 1536,
+    "gallery": false
+  },
+  "IMG_0813.avif": {
+    "title": "Footstool with Love",
+    "subject": "Footstool with Love",
+    "datetaken": "2024-03-12T18:09:00",
+    "width": 1536,
+    "height": 2048,
     "gallery": false
   },
   "IMG_0813.jpeg": {
@@ -1191,10 +2383,26 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_0818.avif": {
+    "title": "Extension Mode",
+    "subject": "Extension Mode",
+    "datetaken": "2024-03-12T23:08:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0818.jpeg": {
     "title": "Extension Mode",
     "subject": "Extension Mode",
     "datetaken": "2024-03-12T23:08:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
+  "IMG_0821.avif": {
+    "title": "North in Summer",
+    "subject": "North in Summer",
+    "datetaken": "2024-03-13T11:54:00",
     "width": 2048,
     "height": 1536,
     "gallery": true
@@ -1207,6 +2415,14 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_0822.avif": {
+    "title": "South in Winter",
+    "subject": "South in Winter",
+    "datetaken": "2024-03-13T11:54:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "IMG_0822.jpeg": {
     "title": "South in Winter",
     "subject": "South in Winter",
@@ -1214,6 +2430,14 @@
     "width": 2048,
     "height": 1536,
     "gallery": false
+  },
+  "IMG_0825.avif": {
+    "title": "Warped Beyond Repair?",
+    "subject": "Warped Beyond Repair?",
+    "datetaken": "2024-03-13T11:56:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
   },
   "IMG_0825.jpeg": {
     "title": "Warped Beyond Repair?",
@@ -1223,12 +2447,28 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_0864.avif": {
+    "title": "A Blank Canvas",
+    "subject": "A Blank Canvas",
+    "datetaken": "2024-04-04T15:35:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "IMG_0864.jpeg": {
     "title": "A Blank Canvas",
     "subject": "A Blank Canvas",
     "datetaken": "2024-04-04T15:35:00",
     "width": 2048,
     "height": 1536,
+    "gallery": false
+  },
+  "IMG_0865.avif": {
+    "title": "Just Needs Seeds",
+    "subject": "Just Needs Seeds",
+    "datetaken": "2024-04-04T18:53:00",
+    "width": 1536,
+    "height": 2048,
     "gallery": false
   },
   "IMG_0865.jpeg": {
@@ -1239,6 +2479,14 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_0866.avif": {
+    "title": "Grow now",
+    "subject": "Grow now",
+    "datetaken": "2024-04-04T21:05:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
   "IMG_0866.jpeg": {
     "title": "Grow now",
     "subject": "Grow now",
@@ -1247,12 +2495,28 @@
     "height": 2048,
     "gallery": true
   },
+  "IMG_0868.avif": {
+    "title": "You start with a board",
+    "subject": "You start with a board",
+    "datetaken": "2024-04-06T16:46:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "IMG_0868.jpeg": {
     "title": "You start with a board",
     "subject": "You start with a board",
     "datetaken": "2024-04-06T16:46:00",
     "width": 2048,
     "height": 1536,
+    "gallery": false
+  },
+  "IMG_0870.avif": {
+    "title": "Cut the board a certain way",
+    "subject": "Cut the board a certain way",
+    "datetaken": "2024-04-07T16:54:00",
+    "width": 1536,
+    "height": 2048,
     "gallery": false
   },
   "IMG_0870.jpeg": {
@@ -1263,6 +2527,14 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_0871.avif": {
+    "title": "Carve with the Origin",
+    "subject": "Carve with the Origin",
+    "datetaken": "2024-04-07T18:52:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0871.jpeg": {
     "title": "Carve with the Origin",
     "subject": "Carve with the Origin",
@@ -1271,11 +2543,27 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_0882.avif": {
+    "title": "Band Clamps",
+    "subject": "Band Clamps",
+    "datetaken": "2024-04-10T16:11:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
   "IMG_0882.jpeg": {
     "title": "Band Clamps",
     "subject": "Band Clamps",
     "datetaken": "2024-04-10T16:11:00",
     "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_0901.avif": {
+    "title": "Dry Fit",
+    "subject": "Dry Fit",
+    "datetaken": "2024-04-11T17:48:00",
+    "width": 1965,
     "height": 2048,
     "gallery": false
   },
@@ -1287,6 +2575,14 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_0912.avif": {
+    "title": "Lilly's Creations",
+    "subject": "Lilly's Creations",
+    "datetaken": "2024-04-12T22:46:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0912.jpeg": {
     "title": "Lilly's Creations",
     "subject": "Lilly's Creations",
@@ -1294,6 +2590,14 @@
     "width": 2048,
     "height": 1536,
     "gallery": true
+  },
+  "IMG_0947.avif": {
+    "title": "Pedestal Plywood",
+    "subject": "Pedestal Plywood",
+    "datetaken": "2024-04-21T13:14:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
   },
   "IMG_0947.jpeg": {
     "title": "Pedestal Plywood",
@@ -1303,10 +2607,26 @@
     "height": 1536,
     "gallery": false
   },
+  "IMG_0948.avif": {
+    "title": "Pedestal Glue-up",
+    "subject": "Pedestal Glue-up",
+    "datetaken": "2024-04-21T19:47:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
   "IMG_0948.jpeg": {
     "title": "Pedestal Glue-up",
     "subject": "Pedestal Glue-up",
     "datetaken": "2024-04-21T19:47:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_0959.avif": {
+    "title": "All Assembled - Upside Down",
+    "subject": "All Assembled - Upside Down",
+    "datetaken": "2024-04-30T12:30:00",
     "width": 1536,
     "height": 2048,
     "gallery": false
@@ -1319,10 +2639,26 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_0962.avif": {
+    "title": "White Oak Sides",
+    "subject": "White Oak Sides",
+    "datetaken": "2024-05-01T13:36:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_0962.jpeg": {
     "title": "White Oak Sides",
     "subject": "White Oak Sides",
     "datetaken": "2024-05-01T13:36:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
+  "IMG_1012.avif": {
+    "title": "Greenhouse Garden Beds",
+    "subject": "Greenhouse Garden Beds",
+    "datetaken": "2024-05-29T16:25:00",
     "width": 2048,
     "height": 1536,
     "gallery": true
@@ -1335,6 +2671,14 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_1092.avif": {
+    "title": "All Dressed Up",
+    "subject": "All Dressed Up",
+    "datetaken": "2024-06-22T18:16:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
   "IMG_1092.jpeg": {
     "title": "All Dressed Up",
     "subject": "All Dressed Up",
@@ -1343,10 +2687,26 @@
     "height": 2048,
     "gallery": true
   },
+  "IMG_1487.avif": {
+    "title": "Starting with Offcuts",
+    "subject": "Starting with Offcuts",
+    "datetaken": "2024-12-16T18:05:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
   "IMG_1487.jpeg": {
     "title": "Starting with Offcuts",
     "subject": "Starting with Offcuts",
     "datetaken": "2024-12-16T18:05:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_1488.avif": {
+    "title": "Drawer Assembly",
+    "subject": "Drawer Assembly",
+    "datetaken": "2024-12-17T11:07:00",
     "width": 1536,
     "height": 2048,
     "gallery": false
@@ -1359,6 +2719,14 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_1498.avif": {
+    "title": "Box Joints for Strength",
+    "subject": "Box Joints for Strength",
+    "datetaken": "2024-12-18T20:02:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "IMG_1498.jpeg": {
     "title": "Box Joints for Strength",
     "subject": "Box Joints for Strength",
@@ -1367,10 +2735,26 @@
     "height": 1536,
     "gallery": false
   },
+  "IMG_1499.avif": {
+    "title": "Pod Holder",
+    "subject": "Pod Holder",
+    "datetaken": "2024-12-18T20:02:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
   "IMG_1499.jpeg": {
     "title": "Pod Holder",
     "subject": "Pod Holder",
     "datetaken": "2024-12-18T20:02:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_1503.avif": {
+    "title": "Engraving with Origin",
+    "subject": "Engraving with Origin",
+    "datetaken": "2024-12-18T21:31:00",
     "width": 1536,
     "height": 2048,
     "gallery": false
@@ -1383,12 +2767,28 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_1507.avif": {
+    "title": "Epoxy Inlay",
+    "subject": "Epoxy Inlay",
+    "datetaken": "2024-12-21T16:42:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "IMG_1507.jpeg": {
     "title": "Epoxy Inlay",
     "subject": "Epoxy Inlay",
     "datetaken": "2024-12-21T16:42:00",
     "width": 2048,
     "height": 1536,
+    "gallery": false
+  },
+  "IMG_1508.avif": {
+    "title": "First Coat",
+    "subject": "First Coat",
+    "datetaken": "2024-12-23T11:45:00",
+    "width": 1536,
+    "height": 2048,
     "gallery": false
   },
   "IMG_1508.jpeg": {
@@ -1399,6 +2799,14 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_1509.avif": {
+    "title": "Curing",
+    "subject": "Curing",
+    "datetaken": "2024-12-23T11:45:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_1509.jpeg": {
     "title": "Curing",
     "subject": "Curing",
@@ -1407,9 +2815,25 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_1590.avif": {
+    "title": "A Tangled Web",
+    "subject": "A Tangled Web",
+    "datetaken": "2025-01-17T13:28:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
   "IMG_1590.jpeg": {
     "title": "A Tangled Web",
     "subject": "A Tangled Web",
+    "datetaken": "2025-01-17T13:28:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_1591.avif": {
+    "title": "A Fine Mess",
+    "subject": "A Fine Mess",
     "datetaken": "2025-01-17T13:28:00",
     "width": 1536,
     "height": 2048,
@@ -1423,9 +2847,25 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_1608.avif": {
+    "title": "Part One Up Close",
+    "subject": "Part One Up Close",
+    "datetaken": "2025-01-23T18:25:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
   "IMG_1608.jpeg": {
     "title": "Part One Up Close",
     "subject": "Part One Up Close",
+    "datetaken": "2025-01-23T18:25:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_1609.avif": {
+    "title": "Part One - Wide Angle",
+    "subject": "Part One - Wide Angle",
     "datetaken": "2025-01-23T18:25:00",
     "width": 1536,
     "height": 2048,
@@ -1439,6 +2879,14 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_1611.avif": {
+    "title": "Finished Product",
+    "subject": "Finished Product",
+    "datetaken": "2025-01-23T20:08:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": true
+  },
   "IMG_1611.jpeg": {
     "title": "Finished Product",
     "subject": "Finished Product",
@@ -1447,11 +2895,27 @@
     "height": 2048,
     "gallery": true
   },
+  "IMG_1640b.avif": {
+    "title": "UNAS Storage",
+    "subject": "UNAS Storage",
+    "datetaken": "2025-02-08T18:31:00",
+    "width": 1987,
+    "height": 2048,
+    "gallery": false
+  },
   "IMG_1640b.jpeg": {
     "title": "UNAS Storage",
     "subject": "UNAS Storage",
     "datetaken": "2025-02-08T18:31:00",
     "width": 1987,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_1641.avif": {
+    "title": "Pretty Much Done",
+    "subject": "Pretty Much Done",
+    "datetaken": "2025-02-08T18:31:00",
+    "width": 1536,
     "height": 2048,
     "gallery": false
   },
@@ -1463,6 +2927,14 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_1652.avif": {
+    "title": "Frameless Tulips",
+    "subject": "Frameless Tulips",
+    "datetaken": "2025-02-20T13:19:00",
+    "width": 1536,
+    "height": 1608,
+    "gallery": false
+  },
   "IMG_1652.jpeg": {
     "title": "Frameless Tulips",
     "subject": "Frameless Tulips",
@@ -1471,10 +2943,26 @@
     "height": 1608,
     "gallery": false
   },
+  "IMG_1653.avif": {
+    "title": "Frameless Something-or-Other",
+    "subject": "Frameless Something-or-Other",
+    "datetaken": "2025-02-20T13:20:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "IMG_1653.jpeg": {
     "title": "Frameless Something-or-Other",
     "subject": "Frameless Something-or-Other",
     "datetaken": "2025-02-20T13:20:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
+  "IMG_1655.avif": {
+    "title": "Strap Clamps Rule!!!",
+    "subject": "Strap Clamps Rule!!!",
+    "datetaken": "2025-02-20T19:41:00",
     "width": 2048,
     "height": 1536,
     "gallery": false
@@ -1487,12 +2975,28 @@
     "height": 1536,
     "gallery": false
   },
+  "IMG_1658.avif": {
+    "title": "Glue-up Done",
+    "subject": "Glue-up Done",
+    "datetaken": "2025-02-21T23:12:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "IMG_1658.jpeg": {
     "title": "Glue-up Done",
     "subject": "Glue-up Done",
     "datetaken": "2025-02-21T23:12:00",
     "width": 2048,
     "height": 1536,
+    "gallery": false
+  },
+  "IMG_1667.avif": {
+    "title": "Primed and Ready for Paint",
+    "subject": "Primed and Ready for Paint",
+    "datetaken": "2025-02-23T17:49:00",
+    "width": 1536,
+    "height": 2048,
     "gallery": false
   },
   "IMG_1667.jpeg": {
@@ -1503,6 +3007,14 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_1674.avif": {
+    "title": "Framed Something-or-Other",
+    "subject": "Framed Something-or-Other",
+    "datetaken": "2025-02-25T16:10:00",
+    "width": 1536,
+    "height": 1179,
+    "gallery": false
+  },
   "IMG_1674.jpeg": {
     "title": "Framed Something-or-Other",
     "subject": "Framed Something-or-Other",
@@ -1510,6 +3022,14 @@
     "width": 1536,
     "height": 1179,
     "gallery": false
+  },
+  "IMG_1675.avif": {
+    "title": "Framed Tulips",
+    "subject": "Framed Tulips",
+    "datetaken": "2025-02-25T16:12:00",
+    "width": 1408,
+    "height": 1546,
+    "gallery": true
   },
   "IMG_1675.jpeg": {
     "title": "Framed Tulips",
@@ -1519,12 +3039,28 @@
     "height": 1546,
     "gallery": true
   },
+  "IMG_1680.avif": {
+    "title": "Needs Some Pop",
+    "subject": "Needs Some Pop",
+    "datetaken": "2025-02-26T18:08:00",
+    "width": 2048,
+    "height": 1511,
+    "gallery": false
+  },
   "IMG_1680.jpeg": {
     "title": "Needs Some Pop",
     "subject": "Needs Some Pop",
     "datetaken": "2025-02-26T18:08:00",
     "width": 2048,
     "height": 1511,
+    "gallery": false
+  },
+  "IMG_1689.avif": {
+    "title": "Domino Detailing",
+    "subject": "Domino Detailing",
+    "datetaken": "2025-02-27T16:08:00",
+    "width": 1613,
+    "height": 2048,
     "gallery": false
   },
   "IMG_1689.jpeg": {
@@ -1535,6 +3071,14 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_1695.avif": {
+    "title": "Mounted and Ready to Hang",
+    "subject": "Mounted and Ready to Hang",
+    "datetaken": "2025-03-03T14:21:00",
+    "width": 2048,
+    "height": 1197,
+    "gallery": true
+  },
   "IMG_1695.jpeg": {
     "title": "Mounted and Ready to Hang",
     "subject": "Mounted and Ready to Hang",
@@ -1543,12 +3087,28 @@
     "height": 1197,
     "gallery": true
   },
+  "IMG_1696.avif": {
+    "title": "Headed for the Gazebo",
+    "subject": "Headed for the Gazebo",
+    "datetaken": "2025-03-03T14:21:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "IMG_1696.jpeg": {
     "title": "Headed for the Gazebo",
     "subject": "Headed for the Gazebo",
     "datetaken": "2025-03-03T14:21:00",
     "width": 2048,
     "height": 1536,
+    "gallery": false
+  },
+  "IMG_1697.avif": {
+    "title": "Destination: New Sauna",
+    "subject": "Destination: New Sauna",
+    "datetaken": "2025-03-03T14:21:00",
+    "width": 1753,
+    "height": 2048,
     "gallery": false
   },
   "IMG_1697.jpeg": {
@@ -1559,10 +3119,26 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_1809.avif": {
+    "title": "Sun heats the water, the water heats the pool",
+    "subject": "Sun heats the water, the water heats the pool",
+    "datetaken": "2025-05-12T15:41:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
   "IMG_1809.jpeg": {
     "title": "Sun heats the water, the water heats the pool",
     "subject": "Sun heats the water, the water heats the pool",
     "datetaken": "2025-05-12T15:41:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_1810.avif": {
+    "title": "The Inner Workings",
+    "subject": "The Inner Workings",
+    "datetaken": "2025-05-12T15:42:00",
     "width": 1536,
     "height": 2048,
     "gallery": false
@@ -1575,6 +3151,14 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_1811.avif": {
+    "title": "Powered by the Sun",
+    "subject": "Powered by the Sun",
+    "datetaken": "2025-05-12T20:04:00",
+    "width": 2048,
+    "height": 1297,
+    "gallery": true
+  },
   "IMG_1811.jpeg": {
     "title": "Powered by the Sun",
     "subject": "Powered by the Sun",
@@ -1583,10 +3167,26 @@
     "height": 1297,
     "gallery": true
   },
+  "IMG_1818.avif": {
+    "title": "The Easy Stuff",
+    "subject": "The Easy Stuff",
+    "datetaken": "2025-05-17T18:31:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
   "IMG_1818.jpeg": {
     "title": "The Easy Stuff",
     "subject": "The Easy Stuff",
     "datetaken": "2025-05-17T18:31:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_1819.avif": {
+    "title": "The Tough Stuff",
+    "subject": "The Tough Stuff",
+    "datetaken": "2025-05-18T15:46:00",
     "width": 1536,
     "height": 2048,
     "gallery": false
@@ -1599,6 +3199,14 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_1820.avif": {
+    "title": "More Clamps",
+    "subject": "More Clamps",
+    "datetaken": "2025-05-18T16:10:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
   "IMG_1820.jpeg": {
     "title": "More Clamps",
     "subject": "More Clamps",
@@ -1607,9 +3215,25 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_1830.avif": {
+    "title": "Clamps",
+    "subject": "Clamps",
+    "datetaken": "2025-05-18T19:58:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
   "IMG_1830.jpeg": {
     "title": "Clamps",
     "subject": "Clamps",
+    "datetaken": "2025-05-18T19:58:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_1831.avif": {
+    "title": "More Clamps",
+    "subject": "More Clamps",
     "datetaken": "2025-05-18T19:58:00",
     "width": 1536,
     "height": 2048,
@@ -1623,12 +3247,28 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_1832.avif": {
+    "title": "Pool Mat Shelf",
+    "subject": "Pool Mat Shelf",
+    "datetaken": "2025-05-22T14:09:00",
+    "width": 2048,
+    "height": 1553,
+    "gallery": true
+  },
   "IMG_1832.jpeg": {
     "title": "Pool Mat Shelf",
     "subject": "Pool Mat Shelf",
     "datetaken": "2025-05-22T14:09:00",
     "width": 2048,
     "height": 1553,
+    "gallery": true
+  },
+  "IMG_1835.avif": {
+    "title": "Mats Installed",
+    "subject": "Mats Installed",
+    "datetaken": "2025-05-22T14:18:00",
+    "width": 2048,
+    "height": 1603,
     "gallery": true
   },
   "IMG_1835.jpeg": {
@@ -1639,10 +3279,26 @@
     "height": 1603,
     "gallery": true
   },
+  "IMG_1915.avif": {
+    "title": "It has arrived!",
+    "subject": "It has arrived!",
+    "datetaken": "2025-06-16T13:27:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "IMG_1915.jpeg": {
     "title": "It has arrived!",
     "subject": "It has arrived!",
     "datetaken": "2025-06-16T13:27:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
+  "IMG_1917.avif": {
+    "title": "Commandearing the Dining Room Table",
+    "subject": "Commandearing the Dining Room Table",
+    "datetaken": "2025-06-16T18:41:00",
     "width": 2048,
     "height": 1536,
     "gallery": false
@@ -1655,12 +3311,28 @@
     "height": 1536,
     "gallery": false
   },
+  "IMG_1920.avif": {
+    "title": "Assembly Mode",
+    "subject": "Assembly Mode",
+    "datetaken": "2025-06-16T22:57:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "IMG_1920.jpeg": {
     "title": "Assembly Mode",
     "subject": "Assembly Mode",
     "datetaken": "2025-06-16T22:57:00",
     "width": 2048,
     "height": 1536,
+    "gallery": false
+  },
+  "IMG_1926.avif": {
+    "title": "On its side",
+    "subject": "On its side",
+    "datetaken": "2025-06-19T19:09:00",
+    "width": 1536,
+    "height": 2048,
     "gallery": false
   },
   "IMG_1926.jpeg": {
@@ -1671,6 +3343,14 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_1927.avif": {
+    "title": "It Works!",
+    "subject": "It Works!",
+    "datetaken": "2025-06-20T02:01:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
+  },
   "IMG_1927.jpeg": {
     "title": "It Works!",
     "subject": "It Works!",
@@ -1679,9 +3359,25 @@
     "height": 1536,
     "gallery": true
   },
+  "IMG_1928.avif": {
+    "title": "Water Cooling",
+    "subject": "Water Cooling",
+    "datetaken": "2025-06-20T10:32:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
   "IMG_1928.jpeg": {
     "title": "Water Cooling",
     "subject": "Water Cooling",
+    "datetaken": "2025-06-20T10:32:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_1929.avif": {
+    "title": "Wired, But Not Tested",
+    "subject": "Wired, But Not Tested",
     "datetaken": "2025-06-20T10:32:00",
     "width": 1536,
     "height": 2048,
@@ -1695,12 +3391,28 @@
     "height": 2048,
     "gallery": false
   },
+  "IMG_1958.avif": {
+    "title": "4K Fun",
+    "subject": "4K Fun",
+    "datetaken": "2025-07-18T11:55:00",
+    "width": 2048,
+    "height": 805,
+    "gallery": false
+  },
   "IMG_1958.jpeg": {
     "title": "4K Fun",
     "subject": "4K Fun",
     "datetaken": "2025-07-18T11:55:00",
     "width": 2048,
     "height": 805,
+    "gallery": false
+  },
+  "IMG_1959.avif": {
+    "title": "New Monitor Extensions",
+    "subject": "New Monitor Extensions",
+    "datetaken": "2025-07-18T11:56:00",
+    "width": 2048,
+    "height": 1245,
     "gallery": false
   },
   "IMG_1959.jpeg": {
@@ -1711,6 +3423,14 @@
     "height": 1245,
     "gallery": false
   },
+  "IMG_DT1.avif": {
+    "title": "New Home",
+    "subject": "New Home",
+    "datetaken": "2022-11-22T01:22:00",
+    "width": 1640,
+    "height": 2048,
+    "gallery": false
+  },
   "IMG_DT1.jpeg": {
     "title": "New Home",
     "subject": "New Home",
@@ -1718,6 +3438,14 @@
     "width": 1640,
     "height": 2048,
     "gallery": false
+  },
+  "IMG_DT2.avif": {
+    "title": "One for Friends",
+    "subject": "One for Friends",
+    "datetaken": "2022-11-22T01:22:00",
+    "width": 2048,
+    "height": 1365,
+    "gallery": true
   },
   "IMG_DT2.jpeg": {
     "title": "One for Friends",
@@ -1727,12 +3455,28 @@
     "height": 1365,
     "gallery": true
   },
+  "intel_core_i9_14900k_3.avif": {
+    "title": "A Modern CPU",
+    "subject": "A Modern CPU",
+    "datetaken": "2025-06-25T14:54:00",
+    "width": 672,
+    "height": 800,
+    "gallery": false
+  },
   "intel_core_i9_14900k_3.jpeg": {
     "title": "A Modern CPU",
     "subject": "A Modern CPU",
     "datetaken": "2025-06-25T14:54:00",
     "width": 672,
     "height": 800,
+    "gallery": false
+  },
+  "long-centerpiece-sketchup.avif": {
+    "title": "Centerpiece Sketchup",
+    "subject": "Centerpiece Sketchup",
+    "datetaken": "2023-03-22T01:18:00",
+    "width": 1642,
+    "height": 1080,
     "gallery": false
   },
   "long-centerpiece-sketchup.jpeg": {
@@ -1742,6 +3486,14 @@
     "width": 1642,
     "height": 1080,
     "gallery": false
+  },
+  "mirror-stand-shaperhub.avif": {
+    "title": "Shaper Hub Drawing",
+    "subject": "",
+    "datetaken": "2024-03-15T01:20:00",
+    "width": 1208,
+    "height": 666,
+    "gallery": true
   },
   "mirror-stand-shaperhub.jpeg": {
     "title": "Shaper Hub Drawing",
@@ -1767,6 +3519,14 @@
     "height": 804,
     "gallery": false
   },
+  "munchies-tray-sketchup.avif": {
+    "title": "Sketchup Drawing of Munchies Tray",
+    "subject": "Sketchup Drawing of Munchies Tray",
+    "datetaken": "2024-03-15T01:20:00",
+    "width": 1732,
+    "height": 958,
+    "gallery": false
+  },
   "munchies-tray-sketchup.jpeg": {
     "title": "Sketchup Drawing of Munchies Tray",
     "subject": "Sketchup Drawing of Munchies Tray",
@@ -1774,6 +3534,14 @@
     "width": 1732,
     "height": 958,
     "gallery": false
+  },
+  "plant-stands-sketchup.avif": {
+    "title": "Plant Stands in Sketchup",
+    "subject": "Plant Stands in Sketchup",
+    "datetaken": "2021-04-27T01:22:00",
+    "width": 1685,
+    "height": 909,
+    "gallery": true
   },
   "plant-stands-sketchup.jpeg": {
     "title": "Plant Stands in Sketchup",
@@ -1783,6 +3551,14 @@
     "height": 909,
     "gallery": true
   },
+  "pool-mat-shelf-sketchup.avif": {
+    "title": "Gotta have the Sketchup",
+    "subject": "Gotta have the Sketchup",
+    "datetaken": "2025-05-15T11:46:00",
+    "width": 1577,
+    "height": 1060,
+    "gallery": false
+  },
   "pool-mat-shelf-sketchup.jpeg": {
     "title": "Gotta have the Sketchup",
     "subject": "Gotta have the Sketchup",
@@ -1790,6 +3566,14 @@
     "width": 1577,
     "height": 1060,
     "gallery": false
+  },
+  "punkins-playground-sketchup.avif": {
+    "title": "Punkin's Playground in Sketchup",
+    "subject": "Punkin's Playground in Sketchup",
+    "datetaken": "2023-04-05T01:23:00",
+    "width": 1239,
+    "height": 817,
+    "gallery": true
   },
   "punkins-playground-sketchup.jpeg": {
     "title": "Punkin's Playground in Sketchup",
@@ -1799,6 +3583,14 @@
     "height": 817,
     "gallery": true
   },
+  "punkins-puter-studio.avif": {
+    "title": "Font Layout in Shaper Studio",
+    "subject": "Font Layout in Shaper Studio",
+    "datetaken": "2022-10-22T01:18:00",
+    "width": 1228,
+    "height": 606,
+    "gallery": false
+  },
   "punkins-puter-studio.jpeg": {
     "title": "Font Layout in Shaper Studio",
     "subject": "Font Layout in Shaper Studio",
@@ -1806,6 +3598,14 @@
     "width": 1228,
     "height": 606,
     "gallery": false
+  },
+  "Sketchup - Coffee Pod Drawer.avif": {
+    "title": "Coffee Pod Drawer Design",
+    "subject": "Coffee Pod Drawer Design",
+    "datetaken": "2024-12-17T15:13:00",
+    "width": 1606,
+    "height": 1060,
+    "gallery": true
   },
   "Sketchup - Coffee Pod Drawer.jpeg": {
     "title": "Coffee Pod Drawer Design",
@@ -1815,6 +3615,14 @@
     "height": 1060,
     "gallery": true
   },
+  "Sketchup of Mitre Stand.avif": {
+    "title": "Mitre Stand Sketchup",
+    "subject": "Mitre Stand Sketchup",
+    "datetaken": "2023-04-05T01:25:00",
+    "width": 1098,
+    "height": 945,
+    "gallery": false
+  },
   "Sketchup of Mitre Stand.jpeg": {
     "title": "Mitre Stand Sketchup",
     "subject": "Mitre Stand Sketchup",
@@ -1822,6 +3630,14 @@
     "width": 1098,
     "height": 945,
     "gallery": false
+  },
+  "Sketchup of Router Table.avif": {
+    "title": "Router Table Sketchup",
+    "subject": "Router Table Sketchup",
+    "datetaken": "2023-04-05T01:26:00",
+    "width": 1025,
+    "height": 1029,
+    "gallery": true
   },
   "Sketchup of Router Table.jpeg": {
     "title": "Router Table Sketchup",
@@ -1831,12 +3647,28 @@
     "height": 1029,
     "gallery": true
   },
+  "solar-panel-sketchup.avif": {
+    "title": "Designs in Sketchup",
+    "subject": "Designs in Sketchup",
+    "datetaken": "2025-05-22T22:42:00",
+    "width": 1150,
+    "height": 1095,
+    "gallery": false
+  },
   "solar-panel-sketchup.jpeg": {
     "title": "Designs in Sketchup",
     "subject": "Designs in Sketchup",
     "datetaken": "2025-05-22T22:42:00",
     "width": 1150,
     "height": 1095,
+    "gallery": false
+  },
+  "SpeedTest.avif": {
+    "title": "Zippy",
+    "subject": "Zippy",
+    "datetaken": "2025-01-23T22:32:00",
+    "width": 549,
+    "height": 294,
     "gallery": false
   },
   "SpeedTest.jpeg": {
@@ -1847,12 +3679,28 @@
     "height": 294,
     "gallery": false
   },
+  "T1000_3QTR-Front-Right.avif": {
+    "title": "A Perfect Match",
+    "subject": "",
+    "datetaken": "2025-06-25T14:54:00",
+    "width": 800,
+    "height": 800,
+    "gallery": false
+  },
   "T1000_3QTR-Front-Right.png": {
     "title": "A Perfect Match",
     "subject": "",
     "datetaken": "2025-06-25T14:54:00",
     "width": 800,
     "height": 800,
+    "gallery": false
+  },
+  "theatre-kitchen-sketchup.avif": {
+    "title": "A detailed design was needed",
+    "subject": "A detailed design was needed",
+    "datetaken": "2022-01-07T19:18:00",
+    "width": 1726,
+    "height": 955,
     "gallery": false
   },
   "theatre-kitchen-sketchup.jpeg": {
@@ -1863,6 +3711,14 @@
     "height": 955,
     "gallery": false
   },
+  "tile-tray.avif": {
+    "title": "Tray with Tile Inlay",
+    "subject": "Tray with Tile Inlay",
+    "datetaken": "2024-01-27T01:27:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
   "tile-tray.jpeg": {
     "title": "Tray with Tile Inlay",
     "subject": "Tray with Tile Inlay",
@@ -1870,6 +3726,14 @@
     "width": 2048,
     "height": 1536,
     "gallery": false
+  },
+  "towel-rack-sketchup.avif": {
+    "title": "Sketchup for Towel Rack",
+    "subject": "Sketchup for Towel Rack",
+    "datetaken": "2024-03-02T01:26:00",
+    "width": 1060,
+    "height": 1170,
+    "gallery": true
   },
   "towel-rack-sketchup.jpeg": {
     "title": "Sketchup for Towel Rack",
@@ -1879,6 +3743,14 @@
     "height": 1170,
     "gallery": true
   },
+  "tray-handle-sketchup.avif": {
+    "title": "Tray Handle Design for Shaper Origin",
+    "subject": "Tray Handle Design for Shaper Origin",
+    "datetaken": "2023-04-05T01:24:00",
+    "width": 1176,
+    "height": 539,
+    "gallery": false
+  },
   "tray-handle-sketchup.jpeg": {
     "title": "Tray Handle Design for Shaper Origin",
     "subject": "Tray Handle Design for Shaper Origin",
@@ -1886,6 +3758,14 @@
     "width": 1176,
     "height": 539,
     "gallery": false
+  },
+  "tray-sketchup.avif": {
+    "title": "Tray in Sketchup for fun",
+    "subject": "Tray in Sketchup for fun",
+    "datetaken": "2023-04-05T01:25:00",
+    "width": 1355,
+    "height": 831,
+    "gallery": true
   },
   "tray-sketchup.jpeg": {
     "title": "Tray in Sketchup for fun",
@@ -1895,11 +3775,27 @@
     "height": 831,
     "gallery": true
   },
+  "workshop-cabinets-layout.avif": {
+    "title": "Plywood Layout",
+    "subject": "Plywood Layout",
+    "datetaken": "2021-03-21T15:19:00",
+    "width": 2110,
+    "height": 1279,
+    "gallery": false
+  },
   "workshop-cabinets-layout.jpeg": {
     "title": "Plywood Layout",
     "subject": "Plywood Layout",
     "datetaken": "2021-03-21T15:19:00",
     "width": 2110,
+    "height": 1279,
+    "gallery": false
+  },
+  "workshop-cabinets.avif": {
+    "title": "Cabinets Drawing",
+    "subject": "Cabinets Drawing",
+    "datetaken": "2021-03-21T15:20:00",
+    "width": 1282,
     "height": 1279,
     "gallery": false
   },
