@@ -7,7 +7,7 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Pets]
 tags: [Woodworking, Bench, Drawers, Red Oak, Pets]
 image:
-  path: /thumbnails/IMG_0536.jpeg
+  path: /thumbnails/IMG_0536.avif
   alt: Beast of a bench
 media_subpath: /assets/img/posts/boys-bench
 ---
@@ -17,7 +17,7 @@ This is a strange one, and looking back on it, not one that I am all that proud 
 
 ## Details
 
-{% include html-side.html img="IMG_0536.jpeg" align = "left" %}
+{% include html-side.html img="IMG_0536.avif" align = "left" %}
 
 ### Firsts
 
@@ -41,7 +41,7 @@ There are a couple of cool things about this bench though, some stuff where I wa
 - The rightmost bottom two drawers are actually a single double-depth drawer for storing boots. I am kinda happy at how you cannot tell that this is the case.
 - The top right thing is a plant box. It was waterproofed with about 56 layers of a paintable rubber compound, which is one of the messiest things I have ever done. It is still holding watertight a couple of years later...we'll see.
 
-{% include html-side.html img="IMG_0537.jpeg" %}
+{% include html-side.html img="IMG_0537.avif" %}
 
 ## Retirement
 

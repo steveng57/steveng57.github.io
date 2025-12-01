@@ -8,7 +8,7 @@ last_modified_at: 2025-03-03 21:48:08 -0500
 categories: [Woodworking, Home Decor]
 tags: [Woodworking, Picture Frame, Frames, Poplar, Home Decor, Dominos]
 image:
-  path: /thumbnails/IMG_1674.jpeg
+  path: /thumbnails/IMG_1674.avif
   alt: More Picture Frames
 media_subpath: /assets/img/posts/more-picture-frames
 favorite: false
@@ -22,7 +22,7 @@ This is the second round of "Shadow Box" frames that I've done.  The first can b
 
 Always good to get a _"before"_ shot, since the _"after"_ should look so much better.  Here are pics of the original artworks without the frames.
 
-{% include html-sxs.html img1="IMG_1652.jpeg" img2="IMG_1653.jpeg" %}
+{% include html-sxs.html img1="IMG_1652.avif" img2="IMG_1653.avif" %}
 
 Kinda blah right?  Definitely needs something to make them pop.
 
@@ -32,7 +32,7 @@ Poplar is very popular.  Sorry, that joke never gets old, although Deb would say
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_1655.jpeg" align="left" %}
+{% include html-side.html img="IMG_1655.avif" align="left" %}
 
 ### Clamping
 
@@ -42,7 +42,7 @@ Strap clamps (the black ribbon around the sides here) are perfect for keeping a 
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_1658.jpeg" align="right" %}
+{% include html-side.html img="IMG_1658.avif" align="right" %}
 
 ### Glued and Nailed
 
@@ -54,7 +54,7 @@ I used 23 gauge pin nails on the backing pieces to hold it to the side pieces wh
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_1667.jpeg" align="left" %}
+{% include html-side.html img="IMG_1667.avif" align="left" %}
 
 ### Primed and Ready
 
@@ -68,21 +68,21 @@ In the back of this pic you can see snow piled up and covering the window.  We h
 
 ## The Final Product
 
-{% include html-side.html img="IMG_1675.jpeg" align="center-wide" %}
-{% include html-side.html img="IMG_1674.jpeg" align="center-wide" %}
+{% include html-side.html img="IMG_1675.avif" align="center-wide" %}
+{% include html-side.html img="IMG_1674.avif" align="center-wide" %}
 
 ## Update
 
 > So while I had the shop all setup for picture frames, I decided to do a couple more: one for the Gazebo and one for the new sauna room being built out back.
 {: .prompt-tip}
 
-{% include html-side.html img="IMG_1680.jpeg" align="left" %}
+{% include html-side.html img="IMG_1680.avif" align="left" %}
 ### Gazebo Trees
 
 This frame is in a small building we have out back that we call the Gazebo.  It is totally enclosed, so not really a gazebo, but we called it that once and the name stuck.  It is a nice place to hang out in the summer, with cool breezes and cool colours.  Unfortunately, this painting is in the same cool place, and needs something to make it stick out against the pastel walls.
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_1689.jpeg" align="right" %}
+{% include html-side.html img="IMG_1689.avif" align="right" %}
 ### Domino Dominance
 
 Since I talk a lot about using {{ site.data.links.domino }}, I figured I would finally add a pic that shows them being installed on the mitre joints for strength and alignment. 
@@ -91,7 +91,7 @@ The frame isn't very thick, about 11.5 mm, so I have to use the smallest dominoe
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_1696.jpeg" align="left" %}
+{% include html-side.html img="IMG_1696.avif" align="left" %}
 ### Framed Forest
 
 Mounting this one took a bit of finesse.  The internal frame of the painting had become skewed, and was sort-of trapezoidal.  I wasn't about to make my frame trapezoidal to match that mistake, so I had to bend it back into shape.  
@@ -101,7 +101,7 @@ I clamped it square for a couple of days, then wedged it firmly in place while s
 {% include clear-float.html break=1 %}
 
 
-{% include html-side.html img="IMG_1697.jpeg" align="right" %}
+{% include html-side.html img="IMG_1697.avif" align="right" %}
 ### Cutie Patootie
 
 That is one adorable, and well-fed bird.

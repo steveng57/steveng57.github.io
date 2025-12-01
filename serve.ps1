@@ -125,6 +125,7 @@ function Test-Dependencies {
         $imageTools = @{
             "ffmpeg" = "FFMPEG"
             "magick" = "ImageMagick"
+            "avifenc" = "AVIF Encoder"
         }
         
         foreach ($tool in $imageTools.GetEnumerator()) {
@@ -171,6 +172,20 @@ function Clear-SiteDirectory {
 function Update-ImageAssets {
     Write-Step "Regenerating image assets..."
     
+    # Convert primary assets to AVIF
+    if (Test-Path "convert-to-avif.ps1") {
+        Write-Info "Converting source images to AVIF..."
+        try {
+            & ".\convert-to-avif.ps1"
+            Write-Success "AVIF generation complete"
+        }
+        catch {
+            Write-Warning "AVIF conversion failed: $_"
+        }
+    } else {
+        Write-Warning "convert-to-avif.ps1 not found"
+    }
+
     # Generate thumbnails
     if (Test-Path "gen-thumbnails.ps1") {
         Write-Info "Generating thumbnails..."

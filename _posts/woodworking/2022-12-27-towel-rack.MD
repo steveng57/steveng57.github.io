@@ -7,7 +7,7 @@ last_modified_at: 2024-02-23 11:45:18 -0500
 categories: [Woodworking, Furniture]
 tags: [Woodworking, Maple, Towel Rack, Furniture, Dominos, Shaper Origin]
 image:
-  path: /thumbnails/IMG_0681.jpeg
+  path: /thumbnails/IMG_0681.avif
   alt: A great place to hang
 media_subpath: "/assets/img/posts/towel-rack"
 ---
@@ -20,7 +20,7 @@ At the request of the customer (aka Debbie), I made a custom towel rack to fit p
 
 ## Under Construction
 
-{% include html-side.html img="towel-rack-sketchup.jpeg" align="left" %}
+{% include html-side.html img="towel-rack-sketchup.avif" align="left" %}
 
 ### Sketchup
 
@@ -30,7 +30,7 @@ Once you have your 3d model, export the parts to the {{ site.data.links.origin }
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="IMG_0677.jpeg" align="right" %}
+{% include html-side.html img="IMG_0677.avif" align="right" %}
 
 ### Poly Poly Poly
 
@@ -40,7 +40,7 @@ So...I heavily lathered everything with 6 or 7 coats of poly, making sure the ro
 
 {% include clear-float.html break =1 %}
 
-{% include html-side.html img="IMG_0678.jpeg" align="left" %}
+{% include html-side.html img="IMG_0678.avif" align="left" %}
 
 ### Maple Rods
 
@@ -51,7 +51,7 @@ The rods are solid maple, picked up at {{ site.data.links.leevalley }}. Pretty s
 ## In Position
 
 It's been in use for over a year at this point and no issues with warping or bending so far. Fingers crossed.
-{% include html-side.html img="IMG_0681.jpeg" %}
+{% include html-side.html img="IMG_0681.avif" %}
 
 ## Materials
 

@@ -1,4 +1,8 @@
 <#
+WARNING: Deprecated script. Kept for historical reference only.
+Use `gen-derived-avif.ps1` in the repository root for thumbnail and tinyfile generation.
+#>
+<#
 .SYNOPSIS
 Generates thumbnails for images in a specified folder.
 
@@ -49,7 +53,7 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
       # Get all the image files in the subfolder
       $imageFiles = Get-ChildItem -Path $subfolder.FullName -Filter "*.jpeg" -File
       $imageFiles += Get-ChildItem -Path $subfolder.FullName -Filter "*.jpg" -File
-      
+
       # Loop through each image file in the subfolder
       foreach ($imageFile in $imageFiles) {
          # Get the folder and file objects
@@ -71,7 +75,7 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
                # Generate a new thumbnail using Magick
                Write-Output "Convert command: " "convert $($imageFile.FullName) -resize 50% $thumbnailPath"
                Start-Process -FilePath "magick" -ArgumentList "convert `"$($imageFile.FullName)`" -resize 50% `"$thumbnailPath`"" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName
-            }   
+            }
          }
          else {
             # Delete the existing thumbnail if it exists
@@ -79,7 +83,7 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
                Remove-Item -Path $thumbnailPath -Force
             }
          }
-         
+
          $tinyfilePath = Join-Path -Path $tinyfilesPath -ChildPath $imageFile.Name
          if ($bGallery) {
             # Check if a tinyfile already exists
@@ -89,7 +93,7 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
                # Generate a new thumbnail using Magick
                Write-Output "Convert command: " "convert $($imageFile.FullName) -resize 10% $tinyfilePath"
                Start-Process -FilePath "magick" -ArgumentList "convert `"$($imageFile.FullName)`" -resize 10% `"$tinyfilePath`"" -NoNewWindow -Wait -WorkingDirectory $subfolder.FullName
-            }   
+            }
          }
          else {
             # Delete the existing tinyfile if it exists
@@ -118,4 +122,3 @@ function GenerateThumbnails($folderPath, [bool]$deleteExisting = $false) {
 
 # Call the function with the specified folder path$folderPath = ".\assets\img\posts"
 GenerateThumbnails $folderPath $deleteExisting
-

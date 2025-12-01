@@ -16,7 +16,7 @@ tags:
     Shaper Origin,
   ]
 image:
-  path: /thumbnails/IMG_0639.jpeg
+  path: /thumbnails/IMG_0639.avif
   alt: It's a keeper
 media_subpath: /assets/img/posts/keepsake-box
 ---
@@ -26,7 +26,7 @@ I only had a couple of days after finishing the previous project before Debbie's
 
 ## Under Construction
 
-{% include html-side.html img="IMG_0637.jpeg" align="left" %}
+{% include html-side.html img="IMG_0637.avif" align="left" %}
 
 ### Flowing Grain
 
@@ -36,7 +36,7 @@ This is actually a pretty complicated thing to do. And if you make a mistake on 
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="IMG_0640.jpeg" align="right" %}
+{% include html-side.html img="IMG_0640.avif" align="right" %}
 
 ### Tough Cut
 
@@ -52,7 +52,7 @@ Orange {{ site.data.links.chillepoxy }} for the inlay, which was carved with the
 
 ## All done
 
-{% include html-side.html img="IMG_0639.jpeg"%}
+{% include html-side.html img="IMG_0639.avif"%}
 
 ## Materials
 

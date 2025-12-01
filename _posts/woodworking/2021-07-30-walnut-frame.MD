@@ -7,7 +7,7 @@ last_modified_at: 2025-09-25 18:33:34 -0500
 categories: [Woodworking, Home Decor]
 tags: [Woodworking, Picture Frame, Walnut, Home Decor, Dominos]
 image:
-  path: /thumbnails/20210730_234800423_iOS.jpeg
+  path: /thumbnails/20210730_234800423_iOS.avif
   alt: For the Birds
 media_subpath: /assets/img/posts/walnut-frame
 ---
@@ -25,7 +25,7 @@ Debbie found these cute little guys at a local art centre. We thought they would
 
 {% include clear-float.html break = 1%}
 
-{% include html-side.html img="20210730_234800423_iOS.jpeg" align="right" %}
+{% include html-side.html img="20210730_234800423_iOS.avif" align="right" %}
 
 ### Local Birds
 
@@ -37,7 +37,7 @@ Pretty simple, only tricky part was mounting and positioning the individual piec
 
 Here they are in there new home, getting all chatty and hanging out.
 
-{% include html-side.html img="IMG_0757.jpeg" align="center-wide" %}
+{% include html-side.html img="IMG_0757.avif" align="center-wide" %}
 
 ## Placeholder
 

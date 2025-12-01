@@ -7,7 +7,7 @@ last_modified_at: 2024-03-07 18:00:14 -0500
 categories: [Woodworking, Furniture]
 tags: [Woodworking, Red Oak, Cabinets, Shelves, Dominos]
 image:
-  path: /thumbnails/IMG_0758C.jpeg
+  path: /thumbnails/IMG_0758C.avif
   alt: Cabinet for Gazebo
 media_subpath: /assets/img/posts/gazebo-cabinet
 ---
@@ -19,7 +19,7 @@ As big as it is, and with red oak being a relatively heavy hardwood, well it is 
 
 ## The Design
 
-{% include html-side.html img="gazebo-cabinet-sketchup.jpeg" align="left" %}
+{% include html-side.html img="gazebo-cabinet-sketchup.avif" align="left" %}
 
 ### Sketchup
 
@@ -33,13 +33,13 @@ Yeah, I am a geek, I know it. I have embraced it.
 
 ## The Cabinet
 
-{% include html-sxs.html img1="IMG_0760.jpeg" img2="IMG_0758C.jpeg" %}
+{% include html-sxs.html img1="IMG_0760.avif" img2="IMG_0758C.avif" %}
 
 We built this to fit under the tv in the gazebo. The gazebo is the name for a small building we have in the back that is setup as a little getaway room. It's a pretty cool little spot.
 
 We were going to put a little fridge and microwave in there, but current thinking is that I will add a drawer and a door to the right side instead. Then we can hide more messy things in there.
 
-{% include html-side.html img="IMG_0759.jpeg" align="center" %}
+{% include html-side.html img="IMG_0759.avif" align="center" %}
 
 ## Materials
 

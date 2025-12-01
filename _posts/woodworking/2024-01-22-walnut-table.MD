@@ -8,7 +8,7 @@ last_modified_at: 2024-05-15 20:09:21 -0400
 categories: [Woodworking, Furniture]
 tags: [Woodworking, Walnut, Table, Crafts, Bench, Dominos]
 image:
-  path: /thumbnails/IMG_0693.jpeg
+  path: /thumbnails/IMG_0693.avif
   alt: Walnut Table and Benches
 media_subpath: /assets/img/posts/walnut-table
 favorite: true
@@ -19,7 +19,7 @@ This is perhaps my most complicated project to date, with the possible exception
 
 ## The Table
 
-{% include html-side.html img="IMG_0490.jpeg" align="left" %}
+{% include html-side.html img="IMG_0490.avif" align="left" %}
 
 ### The Legs
 
@@ -30,7 +30,7 @@ Do I cut a bunch of similar parts, but have many more parts, then glue them all 
 I decided on the latter approach and I think it was for the best. The glue-ups were pretty complicated as it was, so I wouldn't want to make them any more difficult.
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_0499.jpeg" align="right" %}
+{% include html-side.html img="IMG_0499.avif" align="right" %}
 
 ### The Top
 
@@ -39,14 +39,14 @@ When it comes to the table top, you start with a bunch of boards. Here they are,
 This was a pretty good batch of lumber from {{ site.data.links.kjp }} but there were a few really curved boards, so I had to go back for a couple more.
 {% include clear-float.html  break=1 %}
 
-{% include html-side.html img="IMG_0512.jpeg" align="left" %}
+{% include html-side.html img="IMG_0512.avif" align="left" %}
 
 ### The Glue-up
 
 The table top shown here, glued together and finished with {{ site.data.links.rubio }} walnut oil 2C. Great stuff.  
 {% include clear-float.html break=1%}
 
-{% include html-side.html img="IMG_0516.jpeg" align="right" %}
+{% include html-side.html img="IMG_0516.avif" align="right" %}
 
 ### The Legs Fin
 
@@ -57,7 +57,7 @@ The metal brackets in the corners was probably overkill, as the {{ site.data.lin
 
 ## The Benches
 
-{% include html-side.html img="IMG_0634.jpeg" align="left" %}
+{% include html-side.html img="IMG_0634.avif" align="left" %}
 
 ### Bench Legs
 
@@ -65,7 +65,7 @@ The bench legs followed the same general design pattern as the table legs, just 
 
 {% include clear-float.html break=1%}
 
-{% include html-side.html img="IMG_0656.jpeg" align="right" %}
+{% include html-side.html img="IMG_0656.avif" align="right" %}
 
 ### Bench Tops
 
@@ -74,7 +74,7 @@ The bench tops were a lot easier than the table top. Each of them is a little le
 The photo here makes the tops look a little blotchy. I don't know why. In real life they are much smoother and look way better than this photo. I gotta work on my photography skills.
 {% include clear-float.html break=1%}
 
-{% include html-side.html img="IMG_0659.jpeg" align="left" %}
+{% include html-side.html img="IMG_0659.avif" align="left" %}
 
 ### Bench Legs Fin
 
@@ -88,13 +88,13 @@ So you put the tops on the legs of both the tables and the two benches, assemble
 
 Here is a mini photo gallery of the table and benches setup in our theatre room. Click on a pic to zoom in for details if you are so inclined.
 
-{% include html-sxs.html img2="IMG_0693.jpeg" img1="IMG_0691.jpeg" %}
+{% include html-sxs.html img2="IMG_0693.avif" img1="IMG_0691.avif" %}
 
 {% include clear-float.html %}
 
 ## The Video
 
-{% include embed/video.html src="IMG_0695.mp4" muted = true title = "Walnut Table - 180&deg; View" poster = "thumbnails/IMG_0695.jpeg"%}
+{% include embed/video.html src="IMG_0695.mp4" muted = true title = "Walnut Table - 180&deg; View" poster = "thumbnails/IMG_0695.avif"%}
 
 ## Materials
 

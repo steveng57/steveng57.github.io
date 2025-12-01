@@ -7,7 +7,7 @@ last_modified_at: 2024-05-18 15:39:40 -0400
 categories: [Woodworking, Workshop]
 tags: [Woodworking, Drawers, Stands, Plywood, Baltic Birch, Workshop]
 image:
-  path: /thumbnails/20210321_210903.jpeg
+  path: /thumbnails/20210321_210903.avif
   alt: Waiting for Work
 media_subpath: /assets/img/posts/shop-stands
 ---
@@ -17,13 +17,13 @@ There really is no more fun a project than a shop project. Doing shop stuff is p
 
 ## Design
 
-{% include html-sxs.html img1="workshop-cabinets.jpeg" img2 = "workshop-cabinets-layout.jpeg" %}
+{% include html-sxs.html img1="workshop-cabinets.avif" img2 = "workshop-cabinets-layout.avif" %}
 
 I modelled everything up in {{ site.data.links.sketchup}}, to get all the dimensions right.  This time though I also did a layout of all the parts on the various thicknesses of plywood.  The outer carcass and drawer fronts are 18mm, the drawers are 15mm, and the carcass backs and drawer bottoms are 6mm.  This was about a year into the pandemic, when plywood prices had gone thru the roof, and I didn't want to make any silly mistakes.  Baltic Birch Plywood was going for 250% of its pre-pandemic prices, which was already kind of high.
 
 ## Details
 
-{% include html-side.html img="20210321_210850.jpeg" align = "left" %}
+{% include html-side.html img="20210321_210850.avif" align = "left" %}
 
 ### 15 Drawers
 
@@ -35,7 +35,7 @@ _Did I mention that there were **15** drawers!!!_
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20210323_161917.jpeg" align = "right" %}
+{% include html-side.html img="20210323_161917.avif" align = "right" %}
 
 ### Baltic Birch
 
@@ -46,7 +46,7 @@ Still waiting on the spindle sander.
 
 ## All Dressed Up
 
-{% include html-side.html img="20210323_161917.jpeg" %}
+{% include html-side.html img="20210323_161917.avif" %}
 Ok, I really like this pic, so showing it again in higher resolution. Not really, this is just a placeholder waiting on a pic showing what it looks like today.
 
 ## Materials

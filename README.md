@@ -24,8 +24,10 @@ This was built on a windows machine, and requires the following additional apps 
 Thats a bit long.  Start with searches on Jekyll and Github Pages.  Go from there.
 
 This was built on Windows and there are a couple of pre-jekyll-build steps to run via Windows Powershell
-  - To generate thumbnail images from your post images, you'll need to run gen-thumbnails.ps1.
-  - To generate the captions data file (_data.img-info.json) you'll need to run gen-imagecaptions.ps1
+  - To generate thumbnail/tinyfile derivatives and video posters run `./gen-derived-avif.ps1`.
+  - To generate the captions data file (`_data/img-info.json`) run `./gen-imagecaptions.ps1`.
+
+Deprecated helper scripts are archived under `deprecated/` for historical reference.
 
 ## Contributing
 

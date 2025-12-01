@@ -7,7 +7,7 @@ last_modified_at: 2024-03-13 12:06:37 -0500
 categories: [Woodworking, Home Decor]
 tags: [Woodworking, Red Oak, Epoxy, Inlay, Kitchen]
 image:
-  path: /thumbnails/IMG_0822.jpeg
+  path: /thumbnails/IMG_0822.avif
   alt: Stuff by the Pool
 media_subpath: /assets/img/posts/long-centerpiece
 ---
@@ -22,7 +22,7 @@ One turned out great, the other...not so much. Read on for details!
 
 ## Table Decorations
 
-{% include html-side.html img="IMG_0821.jpeg" align="left" %}
+{% include html-side.html img="IMG_0821.avif" align="left" %}
 
 ### Long Center&#x200B;piece
 
@@ -34,11 +34,11 @@ Pretty straightforward stuff on this one. By now, I have the epoxy thing down pr
 
 {% include clear-float.html break = 1 %}
 
-{% include html-sxs.html img1="long-centerpiece-sketchup.jpeg" img2="IMG_0822.jpeg" %}
+{% include html-sxs.html img1="long-centerpiece-sketchup.avif" img2="IMG_0822.avif" %}
 
 ## Next Up
 
-{% include html-side.html img="IMG_0825.jpeg" align="right" %}
+{% include html-side.html img="IMG_0825.avif" align="right" %}
 
 ### The Round Center&#x200B;pieces
 

@@ -8,7 +8,7 @@ last_modified_at: 2025-05-22 21:48:08 -0500
 categories: [Home & Garden, House Tech]
 tags: [House Tech, Woodworking, Solar, Pool]
 image:
-  path: /thumbnails/IMG_1811.jpeg
+  path: /thumbnails/IMG_1811.avif
   alt: Solar Pool Heater
 media_subpath: /assets/img/posts/solar-pool-heater
 favorite: false
@@ -22,7 +22,7 @@ I decided to some experimenting with solar, to get a better feel for how it work
 ## The Design
 Did the usual design work in Sketchup to make sure the plans were workable.  Didn't want to get it put together and not have enough room to tilt it towards the sun.  That would be a bad thing.
 
-{% include html-side.html img="solar-panel-sketchup.jpeg" align="center" %}
+{% include html-side.html img="solar-panel-sketchup.avif" align="center" %}
 
 
 ## The Insides
@@ -30,7 +30,7 @@ The internals of this device are kept on the platform under the panel and water 
 
 From left to right:
 
-{% include html-side.html img="IMG_1810.jpeg" align="left" %}
+{% include html-side.html img="IMG_1810.avif" align="left" %}
 
 ### The Battery
 The battery is definitely over-capacity for this application, but hey, that's how I roll.  It's a lithium 12V battery, the same standard kind that would power a small tractor, but not as big as a car battery.  The battery directly powers the water pump (far right).
@@ -50,7 +50,7 @@ The solar panel and water coil are kept in a housing made from 2x4's.  This hous
 
 From left to right:
 
-{% include html-side.html img="IMG_1809.jpeg" align="right" %}
+{% include html-side.html img="IMG_1809.avif" align="right" %}
 
 ### The Solar Panel
 A modest solar panel.  It's 100 Watt solar panel from Renogy.  Meaning that, on a bright day, it can run a 100W light bulb.  

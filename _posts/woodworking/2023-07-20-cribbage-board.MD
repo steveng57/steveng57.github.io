@@ -16,7 +16,7 @@ tags:
     Shaper Origin,
   ]
 image:
-  path: /thumbnails/IMG_0626.jpeg
+  path: /thumbnails/IMG_0626.avif
   alt: A very special gift for a very special person
 media_subpath: /assets/img/posts/cribbage-board
 favorite: true
@@ -31,7 +31,7 @@ Almost half the work on this one was at the computer making sure the design was 
 
 Lots of pictures on this one. **Hey, it was a lot of work.**
 
-{% include html-side.html img="CribbageBoard02.jpeg" align="left" %}
+{% include html-side.html img="CribbageBoard02.avif" align="left" %}
 
 ### Layout
 
@@ -47,7 +47,7 @@ _391 holes. Go ahead...count 'em._
 
 {% include clear-float.html %}
 
-{% include html-side.html img="20230720_163338.jpeg" align="right" %}
+{% include html-side.html img="20230720_163338.avif" align="right" %}
 
 ### Finish
 
@@ -63,13 +63,13 @@ Sanding was also a little...special. Sand too little and it's rough obviously, b
 
 On the back, I did a little signature thing. I eventually fixed the half-finished g in Au**g**ust. I also carved out a couple of storage holes for pegs with a magnetic seal.
 
-{% include html-side.html img="20230720_163408.jpeg" %}
+{% include html-side.html img="20230720_163408.avif" %}
 
 ## In Production
 
 The pic below is of the board at my dad's place on a nice teak dining table that has been in the family for over 50 years. It's nice to mix the old and the new. Here he is beating me 112 to 11. I need to practice a bit...a lot.
 
-{% include html-side.html img="IMG_0626.jpeg" align="center-wide" %}
+{% include html-side.html img="IMG_0626.avif" align="center-wide" %}
 
 ## Materials
 

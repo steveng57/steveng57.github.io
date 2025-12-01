@@ -7,7 +7,7 @@ last_modified_at: 2024-03-06 15:20:58 -0500
 categories: [Woodworking, Home Decor]
 tags: [Woodworking, Red Oak, Shelves, Floating Shelves]
 image:
-  path: /thumbnails/IMG_0752.jpeg
+  path: /thumbnails/IMG_0752.avif
   alt: A smooch from a pooch is definitely good for the soul
 media_subpath: /assets/img/posts/floating-shelves
 ---
@@ -23,13 +23,13 @@ These floating shelves (sometimes called a _blind shelf_) have a 4 inch radius c
 
 ## The Workout Room Shelf
 
-{% include html-sxs.html img1="IMG_0743.jpeg" img2="IMG_0744.jpeg" %}
+{% include html-sxs.html img1="IMG_0743.avif" img2="IMG_0744.avif" %}
 These shelves are make from red oak, which is a very dense hardwood, meaning they are heavy. A special [floating shelf support](https://www.leevalley.com/en-ca/shop/hardware/storage-and-organization/shelf-supports/51933-blind-shelf-supports){{ site.tb }} is used to make sure the shelf is properly supported.  
 {% include clear-float.html break=0 %}
 
 ## The Hallway Shelf
 
-{% include html-sxs.html img1="IMG_0751.jpeg" img2="IMG_0752.jpeg" %}
+{% include html-sxs.html img1="IMG_0751.avif" img2="IMG_0752.avif" %}
 Both these shelves have 45&deg; bevel on the underside. It's a pretty big bevel so a pretty big bit was used to hog it out. Multiple passes of course.
 {% include clear-float.html break=0 %}
 
@@ -37,7 +37,7 @@ Both these shelves have 45&deg; bevel on the underside. It's a pretty big bevel 
 
 The shelves are 8 inches deep by 32 inches wide by 1.5 inches thick. And pretty much everything I make requires a {{ site.data.links.sketchup }} drawing. So here it is.
 
-{% include html-side.html img="floating-shelves-sketchup.jpeg" align="center-wide" %}
+{% include html-side.html img="floating-shelves-sketchup.avif" align="center-wide" %}
 
 {% include clear-float.html break=0 %}
 

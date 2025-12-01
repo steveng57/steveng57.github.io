@@ -7,7 +7,7 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 categories: [Woodworking, Workshop]
 tags: [Woodworking, Workshop, Plywood, Baltic Birch, Dowels, Dominos]
 image:
-  path: /thumbnails/20210827_212517.jpeg
+  path: /thumbnails/20210827_212517.avif
   alt: Nature abhors a vacuum
 media_subpath: /assets/img/posts/vacuum-dolly
 ---
@@ -17,7 +17,7 @@ Shop furniture is the best place to practice. In this case it was practice with 
 
 ## Under Construction
 
-{% include html-side.html img="20210827_212427.jpeg" align="left" %}
+{% include html-side.html img="20210827_212427.avif" align="left" %}
 
 ### Cyclone Upgrade
 
@@ -27,7 +27,7 @@ I went with the low profile for this vacuum dolly, cause if you make the vertica
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20210827_212517.jpeg" align="right" %}
+{% include html-side.html img="20210827_212517.avif" align="right" %}
 
 ### Maple Rods
 
@@ -40,7 +40,7 @@ Yah know, I was going to insert some cute lyrics from the Louis Armstrong song, 
 
 This gets a **lot** of use in the shop. It hasn't fallen over on me yet, but there is still time.
 
-{% include html-side.html img="IMG_0539.jpeg" align="center-wide" %}
+{% include html-side.html img="IMG_0539.avif" align="center-wide" %}
 
 ## Materials
 

@@ -8,7 +8,7 @@ last_modified_at: 2025-05-26 21:48:08 -0500
 categories: [Woodworking, Home Decor]
 tags: [Woodworking, Plywood, Shelves, Baltic Birch, Pool]
 image:
-  path: /thumbnails/IMG_1835.jpeg
+  path: /thumbnails/IMG_1835.avif
   alt: Pool Mat Shelf
 media_subpath: /assets/img/posts/pool-mat-shelf
 favorite: false
@@ -19,14 +19,14 @@ With the new buildings out back (more on this in an upcoming post) we decided it
 
 ## The Design
 Sketchup was surprisingly helpful here.  It usually is, but in this case the design helped to flesh out a few things that might be a concern.  More on that below.
-{% include html-side.html img="pool-mat-shelf-sketchup.jpeg" align="center" %}
+{% include html-side.html img="pool-mat-shelf-sketchup.avif" align="center" %}
 
 It is basically all plywood held together with dominos.  Lots of polyurethane to keep the water out, it is holding pools things after all.
 
 ## Construction
 There really is something special about working with nice Baltic Birch plywood.  It feels like a quality material, because it is.  Pricy, yes, but worth it in my opinion: strong, stable, straight, but very workable with almost no voids.  The cheeps stuff always disappoints and frustrates, often in the middle of the project.  Grrrr.
 
-{% include html-side.html img="IMG_1818.jpeg" align="left" %}
+{% include html-side.html img="IMG_1818.avif" align="left" %}
 
 ### The Basics
 The back, bottom, and front were pretty straightforward.  Cut them all to the same length,put the domino holes in the right places, and glue them together. 
@@ -35,7 +35,7 @@ Not much to see here.
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_1819.jpeg" align="right" %}
+{% include html-side.html img="IMG_1819.avif" align="right" %}
 
 ### Advanced Dominos
 
@@ -56,7 +56,7 @@ The dominos add a lot of strength in this particular configuration, something th
 
 ## Assembly
 
-{% include html-side.html img="IMG_1820.jpeg" align="left" %}
+{% include html-side.html img="IMG_1820.avif" align="left" %}
 
 ### Dry-fit
 
@@ -68,7 +68,7 @@ I think the thing that made it work is that I glued up all the "basic" parts fir
 
 ### Clamps
 
-{% include html-sxs.html img1="IMG_1830.jpeg" img2="IMG_1831.jpeg"%}
+{% include html-sxs.html img1="IMG_1830.avif" img2="IMG_1831.avif"%}
 
 Clamping the front/back/bottom was pretty standard stuff.  
 
@@ -78,7 +78,7 @@ Second was the fact that this shelf is almost 2 meters long (6ft 6in).  I do not
 
 ## In Production
 
-{% include html-side.html img="IMG_1832.jpeg" align="left" %}
+{% include html-side.html img="IMG_1832.avif" align="left" %}
 
 ### French Cleat
 
@@ -88,7 +88,7 @@ Cleats are a great way to mount things like this, since all you do is mount and 
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_1835.jpeg" align="right" %}
+{% include html-side.html img="IMG_1835.avif" align="right" %}
 
 ### Mats Installed
 
