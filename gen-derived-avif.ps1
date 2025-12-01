@@ -9,6 +9,9 @@ respectively. Poster frames for MP4 clips are captured as AVIF as well. ImageMag
 `magick` tool performs every conversion so that derived assets stay synchronized with the
 primary media. Existing derivatives are refreshed only when the source is newer unless
 -Force is specified.
+
+.PARAMETER PosterScale
+Sets the resize percentage for video poster frames (default 100 to keep native dimensions).
 #>
 param(
     [string]$SourcePath = ".\assets\img\posts",
@@ -18,6 +21,8 @@ param(
     [int]$ThumbnailScale = 50,
     [ValidateRange(1,100)]
     [int]$TinyfileScale = 10,
+    [ValidateRange(1,200)]
+    [int]$PosterScale = 100,
     [ValidateRange(0,100)]
     [int]$Quality = 75
 )
@@ -189,7 +194,8 @@ foreach ($postFolder in $postFolders) {
     foreach ($video in $videoFiles) {
         $posterTarget = Join-Path -Path $thumbnailsPath -ChildPath ($video.BaseName + ".avif")
         if ($Force -or (ShouldRebuild -Source $video.FullName -Destination $posterTarget)) {
-            Invoke-MagickEncode -InputPath $video.FullName -DestinationPath $posterTarget -ResizePercent ("$ThumbnailScale%") -QualityValue $Quality -VideoFrame
+            $posterResize = if ($PosterScale -ne 100) { "$PosterScale%" } else { $null }
+            Invoke-MagickEncode -InputPath $video.FullName -DestinationPath $posterTarget -ResizePercent $posterResize -QualityValue $Quality -VideoFrame
         }
     }
 }
