@@ -1,4 +1,8 @@
 <#
+WARNING: Deprecated script. Kept for historical reference only.
+Use `gen-derived-avif.ps1` in the repository root for AVIF derivative generation.
+#>
+<#
 .SYNOPSIS
     Converts site images to AVIF while preserving original JPEG files and metadata.
 
