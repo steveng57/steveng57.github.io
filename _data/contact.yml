@@ -3,6 +3,7 @@
 - type: contact
   icon: "fas fa-envelope"
   url: "/contact"
+  noblank: true           # Fill with your contact page url, set to true to open in the same tab
 
 - type: facebook
   icon: "fab fa-facebook" 
