@@ -1,9 +1,8 @@
 #  The contact options.
 
-- type: email
+- type: contact
   icon: "fas fa-envelope"
-  noblank: true # open link in current tab
-
+  url: "/contact"
 
 - type: facebook
   icon: "fab fa-facebook" 
