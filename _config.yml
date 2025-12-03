@@ -212,6 +212,7 @@ exclude:
   - "*.afphoto"
   - tsconfig.json
   - "*.cmd"
+  - deprecated/
   - assets/img/**/*.jpeg
   - assets/img/**/*.jpg
 

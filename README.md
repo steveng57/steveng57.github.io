@@ -24,7 +24,7 @@ This was built on a windows machine, and requires the following additional apps 
 Thats a bit long.  Start with searches on Jekyll and Github Pages.  Go from there.
 
 This was built on Windows and there are a couple of pre-jekyll-build steps to run via Windows Powershell
-  - To generate thumbnail/tinyfile derivatives and video posters run `./gen-derived-avif.ps1`.
+  - To generate thumbnail/tinyfile derivatives and video posters run `./gen-derived-avif.ps1`.  Note that jpeg (and jpg) files are all converted to avif in this process.  The original jpeg's serve as a source file, but are not used directly in the site.  They are excluded (ignored) by the Jekyll compiler.
   - To generate the captions data file (`_data/img-info.json`) run `./gen-imagecaptions.ps1`.
 
 Deprecated helper scripts are archived under `deprecated/` for historical reference.
