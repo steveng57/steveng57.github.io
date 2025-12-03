@@ -211,9 +211,9 @@ exclude:
   - "*.cmd"
   - "*.afphoto"
   - tsconfig.json
-  - serve.cmd
-  - gen-imagecaptions.ps1
-  - gen-thumbnails.ps1
+  - "*.cmd"
+  - assets/img/**/*.jpeg
+  - assets/img/**/*.jpg
 
 # Include additional directories
 include:
