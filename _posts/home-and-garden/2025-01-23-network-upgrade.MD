@@ -80,7 +80,7 @@ Now all I need is for Rogers to increase their upload speed to a reasonable 1Gbp
 
 ## What's Next
 
-The Unifi line has just come out with a few more goodies to add to the home network.  Not available in Canada just yet, but stay tune, they will be here soon.,,
+The Unifi line has just come out with a few more goodies to add to the home network.  Not available in Canada just yet, but stay tuned, they will be here soon...
 
 ## Materials and Tools
 
