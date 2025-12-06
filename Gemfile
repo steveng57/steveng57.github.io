@@ -29,6 +29,7 @@ gem 'http_parser.rb', '~> 0.8.0', :platforms => [:jruby]
 
 group :jekyll_plugins do
   gem "jekyll-redirect-from", "~> 0.16"
+  gem "jekyll-paginate-v2", "~> 3.0"
 end
 
 gem 'jekyll-include-cache', '~> 0.2.1'
