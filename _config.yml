@@ -131,8 +131,6 @@ assets:
 pwa:
   enabled: true # the option for PWA feature
 
-paginate_path: "/page:num/"
-
 pagination:
   enabled: true
   per_page: 10
