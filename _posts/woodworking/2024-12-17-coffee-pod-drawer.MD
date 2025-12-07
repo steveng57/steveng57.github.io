@@ -88,7 +88,7 @@ So a couple of interesting things about this project, they are small things, but
 
 {% include clear-float.html break=1%}
 
-{% include html-side.html img="IMG_1509.avif" align="center" %}
+{% include html-side.html img="IMG_1509.avif" align="full" %}
 
 {% include clear-float.html break=1%}
 
