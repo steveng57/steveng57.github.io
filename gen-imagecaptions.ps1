@@ -36,8 +36,8 @@ function GenerateImageCaptions($folderPath) {
    $dimensionsIndex = 31
    $tagIndex = 18
 
-   $imageFiles = Get-ChildItem -Path $folderPath -File -Recurse -Depth 1 | Where-Object { $_.Extension -in @('.jpeg', '.jpg', '.png', '.avif') }
-
+   #$imageFiles = Get-ChildItem -Path $folderPath -File -Recurse -Depth 1 | Where-Object { $_.Extension -in @('.jpeg', '.jpg', '.png', '.avif') }
+   $imageFiles = Get-ChildItem -Path $folderPath -File -Recurse -Depth 1 | Where-Object { $_.Extension -in @('.png', '.avif') }
    # Group files by directory for efficient shell operations
    $filesByFolder = $imageFiles | Group-Object { $_.DirectoryName }
 
