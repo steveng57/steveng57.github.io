@@ -3,7 +3,7 @@
 layout: page
 author: sjg
 icon: fas fa-user
-order: 5
+order: 6
 image:
   path: IMG_0697.avif
   alt: The most precious thing in my shop.  A gift from the family.
