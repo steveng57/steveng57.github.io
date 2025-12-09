@@ -133,12 +133,7 @@ pwa:
 
 pagination:
   enabled: true
-  per_page: 10
-  permalink: /page:num/
-  title: ':title - page :num'
-  sort_field: 'date'
-  sort_reverse: true
-  indexpage: 'index'
+
   trail:
     before: 2
     after: 2
