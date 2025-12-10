@@ -4,7 +4,7 @@ title: Ozzie Dreams
 description: A special place for a special boy
 date: 2022-03-28 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
-categories: [Woodworking, Pets]
+category: [Woodworking, Pets]
 tags: [Woodworking, Ozzie, Epoxy, Inlay, Red Oak, Pets, Dominos, Shaper Origin]
 image:
   path: /thumbnails/20220328_071254.avif

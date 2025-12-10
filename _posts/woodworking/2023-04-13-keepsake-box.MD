@@ -4,7 +4,7 @@ title: Keepsake Box
 description: A walnut box with maple pin-striping, and a pumpkin logo on the top
 date: 2023-04-13 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
-categories: [Woodworking, Jewelry Boxes]
+category: [Woodworking, Jewelry Boxes]
 tags:
   [
     Woodworking,

@@ -4,7 +4,7 @@ title: Towel Rack
 description: A custom fit towel rack for the master bathroom
 date: 2022-12-27 18:32:00 -0500
 last_modified_at: 2024-02-23 11:45:18 -0500
-categories: [Woodworking, Furniture]
+category: [Woodworking, Furniture]
 tags: [Woodworking, Maple, Towel Rack, Furniture, Dominos, Shaper Origin]
 image:
   path: /thumbnails/IMG_0681.avif

@@ -4,7 +4,7 @@ title: Munchies Tray
 description: Hey hey, it's the munchies
 date: 2023-10-27 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
-categories: [Woodworking, Home Decor]
+category: [Woodworking, Home Decor]
 tags:
   [Woodworking, Walnut, Trays, Epoxy, Inlay, Home Decor, Shaper Origin, Dominos]
 image:

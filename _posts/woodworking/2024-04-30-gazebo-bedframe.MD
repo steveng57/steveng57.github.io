@@ -5,7 +5,7 @@ title: Gazebo Bedframe
 description: A slimmed down, low riding bedframe, made from white oak for our Gazebo out back
 date: 2024-05-01 13:51:51 -0400
 last_modified_at: 2024-06-22 19:07:27 -0500
-categories: [Woodworking, Home Decor]
+category: [Woodworking, Home Decor]
 tags: [Woodworking, White Oak, Bedframe, LED Lighting]
 image:
   path: /thumbnails/gazebo-bedframe-sketchup.avif

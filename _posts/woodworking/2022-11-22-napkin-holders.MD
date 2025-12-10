@@ -4,7 +4,7 @@ title: Napkin Holders
 description: Napkin holders with which to hold napkins
 date: 2022-11-22 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
-categories: [Woodworking, Kitchen]
+category: [Woodworking, Kitchen]
 tags: [Woodworking, Napkin Holder, Kitchen, Walnut, Epoxy, Inlay, Shaper Origin]
 image:
   path: /thumbnails/20221122_113942.avif

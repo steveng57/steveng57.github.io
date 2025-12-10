@@ -5,7 +5,7 @@ title: More Picture Frames
 description: A second round of frames for various pieces of artwork around the house
 date: 2025-02-25 21:19:42 -0500
 last_modified_at: 2025-03-03 21:48:08 -0500
-categories: [Woodworking, Home Decor]
+category: [Woodworking, Home Decor]
 tags: [Woodworking, Picture Frame, Frames, Poplar, Home Decor, Dominos]
 image:
   path: /thumbnails/IMG_1674.avif

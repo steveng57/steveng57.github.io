@@ -4,7 +4,7 @@ title: Shop Stands
 description:  Three baltic-birch machine stands with 15 drawers
 date: 2021-03-21 17:58:00 -0500
 last_modified_at: 2024-05-18 15:39:40 -0400
-categories: [Woodworking, Workshop]
+category: [Woodworking, Workshop]
 tags: [Woodworking, Drawers, Stands, Plywood, Baltic Birch, Workshop]
 image:
   path: /thumbnails/20210321_210903.avif

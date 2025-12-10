@@ -53,7 +53,7 @@ This is a Jekyll-based GitHub Pages site using the Chirpy theme with a sophistic
 ### Post Structure & Frontmatter
 ```yaml
 # Standard post frontmatter with automatic git timestamp
-categories: [Home & Garden, House Tech]  # Matches directory structure
+category: [Home & Garden, House Tech]  # Matches directory structure
 tags: [Computer, PC, House Tech]
 image:
   path: /thumbnails/IMG_1927.jpeg        # Auto-generated thumbnail path

@@ -4,7 +4,7 @@ title: Earring Boxes
 description: In this episode, we see how to make really complicated boxes.  In this case a Christmas gift for someone special
 date: 2023-12-25 18:32:00 -0500
 last_modified_at: 2025-01-02 11:00:00 -0500
-categories: [Woodworking, Jewelry Boxes]
+category: [Woodworking, Jewelry Boxes]
 tags: [Woodworking, Walnut, Jewelry Boxes, Shaper Origin, Dominos]
 image:
   path: /thumbnails/IMG_0461.avif

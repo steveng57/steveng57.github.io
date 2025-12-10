@@ -4,7 +4,7 @@ title: Puppy Steps
 description: Making it easier for the boys to get up and down on their own
 date: 2022-02-25 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
-categories: [Woodworking, Pets]
+category: [Woodworking, Pets]
 tags: [Woodworking, Poplar, Bench, Pets, Epoxy, Inlay]
 image:
   path: /thumbnails/20220225_091904.avif
