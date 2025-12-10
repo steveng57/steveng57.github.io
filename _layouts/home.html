@@ -6,7 +6,7 @@ pagination:
 
 {% include lang.html %}
 
-{% assign collection_key = page.collection | default: 'posts' %}
+{% assign collection_key = pagination.collection | default: 'posts' %}
 {% assign all_pinned = site[collection_key] | where: 'pin', 'true' %}
 {% assign all_normal = site[collection_key] | where_exp: 'item', 'item.pin != true and item.hidden != true' | sort: 'date' | reverse %}
 
