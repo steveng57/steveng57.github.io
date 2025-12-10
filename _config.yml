@@ -157,9 +157,6 @@ collections:
   tabs:
     output: true
     sort_by: order
-  workshop:
-    output: true
-    permalink: /workshop/:slug/
 
 defaults:
   - scope:
