@@ -49,7 +49,7 @@ The generator uses a shared template in `_data/category_page.yml` to control the
 
 The sidebar (`_shared/_includes/sidebar.html`) builds navigation dynamically:
 
-- Adds fixed top-level links for **Woodworking** and **Home & Garden**.
+- Adds fixed top-level links for **Woodworking** and **Home and Garden**.
 - Scans post categories to discover unique second-level subcategories under those two tops.
 - Renders one nav item per subcategory, linking to the corresponding generated index page.
 

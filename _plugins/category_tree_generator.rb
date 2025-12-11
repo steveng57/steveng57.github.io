@@ -16,7 +16,7 @@
 #   sort_field: 'date'
 #   sort_reverse: true
 #   indexpage: 'index'
-#   category: 'Home & Garden'
+#   category: 'Home and Garden'
 # ---
 
 module Jekyll

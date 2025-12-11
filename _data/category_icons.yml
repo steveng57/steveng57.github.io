@@ -6,7 +6,7 @@
 # fall back to 'fas fa-folder' if a key is missing.
 
 Woodworking: fas fa-hammer
-"Home & Garden": fas fa-leaf
+"Home and Garden": fas fa-leaf
 Furniture: fas fa-couch
 "Home Decor": fas fa-paint-roller
 "Jewelry Boxes": fas fa-gem

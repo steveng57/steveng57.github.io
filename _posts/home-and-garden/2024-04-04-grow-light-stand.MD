@@ -4,7 +4,7 @@ title: Grow-light Stand
 description: A proper place for the grow-lights in our basement
 date: 2024-04-04 21:53:37 -0400
 last_modified_at: 2024-04-04 21:53:53 -0400
-category: [Home & Garden, Greenhouse]
+category: [Home and Garden, Greenhouse]
 tags: [Grow-light, Stands, Greenhouse, Garden]
 image:
   path: /thumbnails/IMG_0866.avif

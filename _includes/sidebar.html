@@ -25,29 +25,43 @@
           <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
         </a>
       </li>
-      {% assign woodworking_subcats = '' | split: '' %}
-      {% assign homeandgarden_subcats = '' | split: '' %}
+      {% assign topcats = '' | split: '' %}
 
       {% for p in site.posts %}
         {% assign cats = p.category | default: p.categories %}
-        {% if cats and cats.size > 1 %}
+        {% if cats and cats.size > 0 %}
           {% assign top = cats[0] %}
-          {% assign sub = cats[1] %}
-
-          {% if top == 'Woodworking' %}
-            {% unless woodworking_subcats contains sub %}
-              {% assign woodworking_subcats = woodworking_subcats | push: sub %}
-            {% endunless %}
-          {% elsif top == 'Home & Garden' %}
-            {% unless homeandgarden_subcats contains sub %}
-              {% assign homeandgarden_subcats = homeandgarden_subcats | push: sub %}
-            {% endunless %}
-          {% endif %}
+          {% unless topcats contains top %}
+            {% assign topcats = topcats | push: top %}
+          {% endunless %}
         {% endif %}
       {% endfor %}
 
-      {% assign woodworking_subcats = woodworking_subcats | sort %}
-      {% assign homeandgarden_subcats = homeandgarden_subcats | sort %}
+      {% assign topcats = topcats | sort %}
+
+      {%- comment -%}
+        Optional explicit ordering for top-level categories.
+        If `_data/category_order.yml` exists, its list is used
+        as the primary ordering, with any remaining categories
+        appended afterward in their default sorted order.
+      {%- endcomment -%}
+      {% assign ordered_topcats = '' | split: '' %}
+      {% assign explicit_order = site.data.category_order %}
+      {% if explicit_order %}
+        {% for name in explicit_order %}
+          {% if topcats contains name %}
+            {% assign ordered_topcats = ordered_topcats | push: name %}
+          {% endif %}
+        {% endfor %}
+
+        {% for name in topcats %}
+          {% unless ordered_topcats contains name %}
+            {% assign ordered_topcats = ordered_topcats | push: name %}
+          {% endunless %}
+        {% endfor %}
+
+        {% assign topcats = ordered_topcats %}
+      {% endif %}
 
       {%- comment -%}
         Determine the current page's top-level and second-level categories.
@@ -67,47 +81,44 @@
           {% assign page_subcat = page_cats[1] %}
         {% endif %}
       {% endif %}
+      {% for top in topcats %}
+        {% assign topslug = top | slugify %}
+        {% assign topurl = '/' | append: topslug | append: '/' %}
+        {% assign topicon = site.data.category_icons[top] | default: 'fas fa-folder' %}
 
-      <!-- top-level category shortcuts -->
-      <li class="nav-item sjg-sidebar-top{% if page.url == '/woodworking/' or page_topcat == 'Woodworking' %}{{ " active" }}{% endif %}">
-        <a href="{{ '/woodworking/' | relative_url }}" class="nav-link">
-          <i class="fa-fw fas fa-hammer"></i>
-          <span>WOODWORKING</span>
-        </a>
-      </li>
-      {% if woodworking_subcats.size > 0 %}
-        {% for subcat in woodworking_subcats %}
-          {% assign subslug = subcat | slugify %}
-          {% assign suburl = '/woodworking/' | append: subslug | append: '/' %}
-          {% assign subicon = site.data.category_icons[subcat] | default: 'fas fa-folder' %}
-          <li class="nav-item{% if page.url == suburl or page_topcat == 'Woodworking' and page_subcat == subcat %} active{% endif %}">
-            <a href="{{ suburl | relative_url }}" class="nav-link">
-              <i class="fa-fw {{ subicon }} sjg-subcat-icon"></i>
-                <span class="ms-4">{{ subcat | upcase }}</span>
-            </a>
-          </li>
+        <!-- top-level category shortcut -->
+        <li class="nav-item sjg-sidebar-top{% if page.url == topurl or page_topcat == top %} active{% endif %}">
+          <a href="{{ topurl | relative_url }}" class="nav-link">
+            <i class="fa-fw {{ topicon }}"></i>
+            <span>{{ top | upcase }}</span>
+          </a>
+        </li>
+
+        {% assign subcats = '' | split: '' %}
+        {% for p in site.posts %}
+          {% assign cats = p.category | default: p.categories %}
+          {% if cats and cats.size > 1 and cats[0] == top %}
+            {% assign sub = cats[1] %}
+            {% unless subcats contains sub %}
+              {% assign subcats = subcats | push: sub %}
+            {% endunless %}
+          {% endif %}
         {% endfor %}
-      {% endif %}
 
-      <li class="nav-item sjg-sidebar-top{% if page.url == '/home-garden/' or page_topcat == 'Home & Garden' %}{{ " active" }}{% endif %}">
-        <a href="{{ '/home-garden/' | relative_url }}" class="nav-link">
-          <i class="fa-fw fas fa-leaf"></i>
-          <span>HOME &amp; GARDEN</span>
-        </a>
-      </li>
-      {% if homeandgarden_subcats.size > 0 %}
-        {% for subcat in homeandgarden_subcats %}
+        {% assign subcats = subcats | sort %}
+
+        {% for subcat in subcats %}
           {% assign subslug = subcat | slugify %}
-          {% assign suburl = '/home-garden/' | append: subslug | append: '/' %}
+          {% assign suburl = '/' | append: topslug | append: '/' | append: subslug | append: '/' %}
           {% assign subicon = site.data.category_icons[subcat] | default: 'fas fa-folder' %}
-          <li class="nav-item{% if page.url == suburl or page_topcat == 'Home & Garden' and page_subcat == subcat %} active{% endif %}">
+          <li class="nav-item{% if page.url == suburl or page_topcat == top and page_subcat == subcat %} active{% endif %}">
             <a href="{{ suburl | relative_url }}" class="nav-link">
               <i class="fa-fw {{ subicon }} sjg-subcat-icon"></i>
               <span class="ms-4">{{ subcat | upcase }}</span>
             </a>
           </li>
         {% endfor %}
-      {% endif %}
+      {% endfor %}
       <!-- the real tabs -->
       {% for tab in site.tabs %}
         {% if tab.link %}

@@ -1,0 +1,13 @@
+# Optional explicit ordering for top-level sidebar categories.
+#
+# The sidebar discovers all top-level categories dynamically from posts
+# (first element in the `categories` array), then:
+#   1. Applies this ordered list if present
+#   2. Appends any remaining categories after, in default sorted order
+#
+# To change the sidebar order, edit this list. To add a new
+# top-level category, just use it in post front matter; it will appear
+# automatically (here if listed, or after these if not).
+-
+- Woodworking
+- Home and Garden
