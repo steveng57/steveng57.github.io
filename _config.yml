@@ -198,8 +198,6 @@ defaults:
 
 sass:
   style: compressed
-  load_paths:
-    - _shared/_sass
 
 compress_html:
   clippings: all

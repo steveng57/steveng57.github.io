@@ -1,0 +1,105 @@
+.w-66 {
+    width: 66% !important;
+}
+
+.w-33 {
+    width: 33% !important;
+}
+
+img {
+    border-radius: 10px;
+}
+
+/* Search-like form utilities (match Chirpy search box look) */
+.sjg-search-like {
+    border: 1px solid var(--search-border-color);
+    border-radius: 1rem;
+    background: var(--main-bg);
+}
+
+.sjg-search-like-group {
+    border: 1px solid var(--search-border-color);
+    border-radius: 1rem;
+    background: var(--main-bg);
+    padding: 0 .5rem;
+}
+
+.sjg-search-like .form-control {
+    color: var(--text-color);
+}
+
+.sjg-search-like .form-control::placeholder {
+    color: var(--text-muted);
+    opacity: 0.8;
+}
+
+.sjg-search-like .input-group-text i {
+    color: var(--search-icon-color);
+}
+
+figcaption {
+    font-size: 0.875rem; /* Adjust as needed */
+    color: var(--text-color);
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+.figure-caption {
+    color: var(--text-color);
+}
+
+@media (max-width: 767.98px) {
+    .figure.float-start,
+    .figure.float-end {
+        float: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+/* used to be sjg-video */
+video.embed-video + em {
+    font-size: 0.875rem !important; /* Adjust as needed */
+    color: var(--text-color) !important;
+    text-align: center !important;
+    margin-top: 1rem !important;
+    margin-bottom: 0rem !important;
+}
+
+h3 {
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.5em !important;
+    font-size: 1.33rem !important;
+}
+
+h4 {
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.5em !important;
+    font-size: 1.17rem !important;
+}
+
+.sjg-list {
+    list-style: none;
+  }
+  
+.sjg-list li::before {
+    content: "\2713"; /* This is the Unicode for the Font Awesome check icon */
+    display: inline-block;
+    margin-right: 10px;
+    font-family: 'FontAwesome';
+}
+
+.sjg-br {
+    margin-bottom: 2.0em;
+}
+
+.sjg-bigtext {
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  margin: 1em 0;
+}
