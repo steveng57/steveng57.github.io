@@ -5,7 +5,7 @@ title: Walnut Table and Benches
 description: A big project with a whole lot of walnut
 date: 2024-02-22 18:32:00 -0500
 last_modified_at: 2024-05-15 20:09:21 -0400
-categories: [Woodworking, Furniture]
+category: [Woodworking, Furniture]
 tags: [Woodworking, Walnut, Table, Crafts, Bench, Dominos]
 image:
   path: /thumbnails/IMG_0693.avif

@@ -5,7 +5,7 @@ title: Pool Mat Shelf
 description: A better way to store pool mats in the pool shed
 date: 2025-05-23 21:19:42 -0500
 last_modified_at: 2025-05-26 21:48:08 -0500
-categories: [Woodworking, Home Decor]
+category: [Woodworking, Home Decor]
 tags: [Woodworking, Plywood, Shelves, Baltic Birch, Pool]
 image:
   path: /thumbnails/IMG_1835.avif

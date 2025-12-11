@@ -4,7 +4,7 @@ title: Walnut Picture Frame
 description: A frame tailored for four birds
 date: 2021-07-30 18:32:00 -0500
 last_modified_at: 2025-09-25 18:33:34 -0500
-categories: [Woodworking, Home Decor]
+category: [Woodworking, Home Decor]
 tags: [Woodworking, Picture Frame, Walnut, Home Decor, Dominos]
 image:
   path: /thumbnails/20210730_234800423_iOS.avif

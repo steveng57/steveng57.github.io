@@ -5,7 +5,7 @@ title: Building a New PC
 description: The old one went kaput, so time for a new computer
 date: 2025-06-20 21:19:42 -0500
 last_modified_at: 2025-07-17 21:48:08 -0500
-categories: [Home & Garden, House Tech] 
+category: [Home and Garden, House Tech] 
 tags: [Computer, PC, House Tech]
 image:
   path: /thumbnails/IMG_1927.avif

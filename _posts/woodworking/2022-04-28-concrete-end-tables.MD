@@ -4,7 +4,7 @@ title: Concrete Nested End Tables
 description: Introducing a new material to the mix - concrete
 date: 2022-04-28 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
-categories: [Woodworking, Furniture]
+category: [Woodworking, Furniture]
 tags: [Woodworking, Concrete, Table, End Table, Red Oak, Furniture]
 image:
   path: /thumbnails/IMG_0553.avif

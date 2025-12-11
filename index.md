@@ -2,8 +2,6 @@
 # the default layout is 'page'
 layout: page
 author: sjg
-icon: fas fa-user
-order: 5
 image:
   path: IMG_0697.avif
   alt: The most precious thing in my shop.  A gift from the family.
@@ -54,7 +52,7 @@ For an interesting layout of the posts in chronological order, be sure to check 
 
 ### Categories
 
-The [Categories]({% link _tabs/categories.md %}) link shows the posts group by their categories and sub-categories. I am just getting these categories sorted as of this writing. For now, there are two major categories: [Woodworking](/categories/woodworking), which is where the vast majority of posts exist, and [Home & Garden](/categories/home-garden), which only has a couple of posts right now, but I expect more to go there as things progress.
+The [Categories]({% link _tabs/categories.md %}) link shows the posts group by their categories and sub-categories. I am just getting these categories sorted as of this writing. For now, there are two major categories: [Woodworking](/woodworking), which is where the vast majority of posts exist, and [Home and Garden](/home-and-garden), which only has a couple of posts right now, but I expect more to go there as things progress.
 {: .sjg-br}
 
 ### Tags

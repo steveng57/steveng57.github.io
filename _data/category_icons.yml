@@ -1,0 +1,20 @@
+# Font Awesome icon classes for categories and subcategories.
+# Keys are the human-readable category names as used in front matter.
+# Values are Font Awesome classes *without* a leading dot.
+#
+# Subcategory loops in the sidebar will look these up by name and
+# fall back to 'fas fa-folder' if a key is missing.
+
+Woodworking: fas fa-hammer
+"Home and Garden": fas fa-leaf
+Furniture: fas fa-couch
+"Home Decor": fas fa-paint-roller
+"Jewelry Boxes": fas fa-gem
+Games: fas fa-chess
+Workshop: fas fa-tools
+Kitchen: fas fa-utensils
+Pets: fas fa-paw
+Signs: fas fa-sign
+Greenhouse: fas fa-seedling
+"House Tech": fas fa-microchip
+

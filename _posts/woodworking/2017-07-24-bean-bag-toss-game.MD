@@ -4,7 +4,7 @@ title: Bean Bag Toss Game
 description: A summer classic
 date: 2017-07-24 17:56:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
-categories: [Woodworking, Games]
+category: [Woodworking, Games]
 tags: [Woodworking, Games, Outdoors, Plywood, Red Oak, Cedar]
 image:
   path: /thumbnails/20170724_234953.avif

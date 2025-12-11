@@ -5,7 +5,8 @@ theme: jekyll-theme-chirpy
 incremental: false
 
 # Use shared includes from submodule
-includes_dir: _shared/_includes
+# includes_dir: _shared/_includes
+
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
@@ -133,12 +134,6 @@ pwa:
 
 pagination:
   enabled: true
-  per_page: 10
-  permalink: /page:num/
-  title: ':title - page :num'
-  sort_field: 'date'
-  sort_reverse: true
-  indexpage: 'index'
   trail:
     before: 2
     after: 2
@@ -186,6 +181,13 @@ defaults:
       layout: page
       permalink: /:title/
   - scope:
+      path: ""
+      type: workshop
+    values:
+      layout: page
+      comments: false
+      permalink: /workshop/:slug/
+  - scope:
       path: assets/img/favicons
     values:
       swcache: true
@@ -196,8 +198,6 @@ defaults:
 
 sass:
   style: compressed
-  load_paths:
-    - _shared/_sass
 
 compress_html:
   clippings: all

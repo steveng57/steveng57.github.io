@@ -1,0 +1,33 @@
+@use "post";
+@use "lightgallery";
+
+.sjg-subcat-icon {
+	transform: translateX(1.1rem);
+}
+
+/* Lighten sidebar items in dark mode */
+html[data-mode="dark"] {
+	--sidebar-muted-color: #b8b8b8;
+}
+
+@media (prefers-color-scheme: dark) {
+	html:not([data-mode]),
+	html[data-mode="dark"] {
+		--sidebar-muted-color: #b8b8b8;
+	}
+}
+
+/* Apply custom color to top-level (non-active) sidebar items */
+#sidebar ul li.sjg-sidebar-top:not(.active) a.nav-link {
+	color: var(--link-color);
+}
+
+/* Keep active top-level sidebar items the same color */
+#sidebar .nav li.sjg-sidebar-top.active > a.nav-link {
+	color: var(--link-color);
+}
+
+/* Make top-level sidebar labels slightly larger */
+#sidebar ul li.sjg-sidebar-top a.nav-link span {
+	font-size: 1.1rem;
+}

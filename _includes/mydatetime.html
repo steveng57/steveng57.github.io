@@ -1,0 +1,9 @@
+{% assign df_strftime = site.data.locales[include.lang].df.post.strftime | default: '%d/%m/%Y' %}
+{% assign df_dayjs = site.data.locales[include.lang].df.post.dayjs | default: 'DD/MM/YYYY' %}
+
+{{ include.prefix}}
+<strong>
+<time data-ts="{{ include.date | date: '%s' }}" data-df="{{ df_dayjs }}" data-bs-title = "{{ include.date | date: '%a, %b %d, %Y %I:%M %p' }}  " data-bs-toggle="tooltip" data-bs-placement="bottom">
+  {{ include.date | date: df_strftime }}
+</time>
+</strong>

@@ -1,0 +1,81 @@
+{%- comment -%}
+  Responsive figure helper used across posts. Accepts the following parameters:
+    - img: image path relative to the post's `media_subpath` (required)
+    - caption: optional manual caption; defaults to `_data/img-info.json` lookup
+    - align: layout keyword (left, left-33, left-50, right, right-33, right-50,
+              center, center-wide, center-full, none). Defaults to center-full
+    - alt: override the alt text (defaults to image filename)
+    - title: override the title attribute (defaults to caption)
+    - extra_classes / figure_classes: add extra classes to the `<figure>`
+    - img_classes: add extra classes to the `<img>`
+    - caption_classes: add extra classes to the `<figcaption>`
+    - style: append inline styles to the `<figure>`
+{%- endcomment -%}
+
+{% assign caption = include.caption | default: site.data.img-info[include.img].title %}
+{% assign align = include.align | default: "center-full" %}
+
+{% assign figure_classes = "figure d-block mb-3" %}
+{% assign figure_styles = "" %}
+{% assign img_classes = "figure-img img-fluid rounded" %}
+{% assign caption_classes = "figure-caption text-center" %}
+
+{% case align %}
+  {% when "left" %}
+    {% assign figure_classes = figure_classes | append: " float-start me-3" %}
+    {% capture figure_styles %}{{ figure_styles }}width: 66%; {% endcapture %}
+  {% when "left-33" %}
+    {% assign figure_classes = figure_classes | append: " float-start me-3" %}
+    {% capture figure_styles %}{{ figure_styles }}width: 33%; {% endcapture %}
+  {% when "left-50" %}
+    {% assign figure_classes = figure_classes | append: " float-start me-3" %}
+    {% capture figure_styles %}{{ figure_styles }}width: 50%; {% endcapture %}
+  {% when "right" %}
+    {% assign figure_classes = figure_classes | append: " float-end ms-3" %}
+    {% capture figure_styles %}{{ figure_styles }}width: 66%; {% endcapture %}
+  {% when "right-33" %}
+    {% assign figure_classes = figure_classes | append: " float-end ms-3" %}
+    {% capture figure_styles %}{{ figure_styles }}width: 33%; {% endcapture %}
+  {% when "right-50" %}
+    {% assign figure_classes = figure_classes | append: " float-end ms-3" %}
+    {% capture figure_styles %}{{ figure_styles }}width: 50%; {% endcapture %}
+  {% when "center" %}
+    {% assign figure_classes = figure_classes | append: " mx-auto w-75" %}
+  {% when "center-wide" %}
+    {% assign figure_classes = figure_classes | append: " mx-auto" %}
+    {% capture figure_styles %}{{ figure_styles }}width: 90%; {% endcapture %}
+  {% when "center-full" %}
+    {% assign figure_classes = figure_classes | append: " mx-auto w-100" %}
+  {% when "none" %}
+    {% assign figure_classes = figure_classes | append: "" %}
+  {% else %}
+    {% assign figure_classes = figure_classes | append: " mx-auto w-100" %}
+{% endcase %}
+
+{% if include.extra_classes %}
+  {% assign figure_classes = figure_classes | append: " " | append: include.extra_classes %}
+{% endif %}
+{% if include.figure_classes %}
+  {% assign figure_classes = figure_classes | append: " " | append: include.figure_classes %}
+{% endif %}
+
+{% if include.img_classes %}
+  {% assign img_classes = img_classes | append: " " | append: include.img_classes %}
+{% endif %}
+{% if include.caption_classes %}
+  {% assign caption_classes = caption_classes | append: " " | append: include.caption_classes %}
+{% endif %}
+
+{% if include.style %}
+  {% capture figure_styles %}{{ figure_styles }} {{ include.style }}{% endcapture %}
+{% endif %}
+{% assign figure_styles = figure_styles | strip %}
+
+{% assign alt_text = include.alt | default: include.img %}
+{% assign title_text = include.title | default: caption %}
+
+<div style="height: 0.001rem;"></div>
+<figure class="{{ figure_classes | strip }}"{% if figure_styles != "" %} style="{{ figure_styles }}"{% endif %}>
+  <img src="{{ include.img }}" alt="{{ alt_text }}" title="{{ title_text }}" class="{{ img_classes | strip }}">
+  <figcaption class="{{ caption_classes | strip }}">{{ caption }}</figcaption>
+</figure>
