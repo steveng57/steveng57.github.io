@@ -1,0 +1,193 @@
+<!-- The Side Bar -->
+
+<aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
+  <header class="profile-wrapper">
+    <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
+      {%- if site.avatar != empty and site.avatar -%}
+        {%- capture avatar_url -%}
+          {% include media-url.html src=site.avatar %}
+        {%- endcapture -%}
+        <img src="{{- avatar_url -}}" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
+      {%- endif -%}
+    </a>
+
+    <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
+  </header>
+  <!-- .profile-wrapper -->
+
+  <nav class="flex-column flex-grow-1 w-100 ps-0">
+    <ul class="nav">
+      <!-- home -->
+      <li class="nav-item sjg-sidebar-top{% if page.url == '/' %}{{ " active" }}{% endif %}">
+        <a href="{{ '/' | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-home"></i>
+          <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
+        </a>
+      </li>
+      {% assign woodworking_subcats = '' | split: '' %}
+      {% assign homeandgarden_subcats = '' | split: '' %}
+
+      {% for p in site.posts %}
+        {% assign cats = p.category | default: p.categories %}
+        {% if cats and cats.size > 1 %}
+          {% assign top = cats[0] %}
+          {% assign sub = cats[1] %}
+
+          {% if top == 'Woodworking' %}
+            {% unless woodworking_subcats contains sub %}
+              {% assign woodworking_subcats = woodworking_subcats | push: sub %}
+            {% endunless %}
+          {% elsif top == 'Home & Garden' %}
+            {% unless homeandgarden_subcats contains sub %}
+              {% assign homeandgarden_subcats = homeandgarden_subcats | push: sub %}
+            {% endunless %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign woodworking_subcats = woodworking_subcats | sort %}
+      {% assign homeandgarden_subcats = homeandgarden_subcats | sort %}
+
+      {%- comment -%}
+        Determine the current page's top-level and second-level categories.
+        Works for both posts (page.category / page.categories) and the
+        auto-generated category index pages (page.category_path).
+      {%- endcomment -%}
+      {% assign page_cats = page.category | default: page.categories %}
+      {% if page_cats == nil and page.category_path %}
+        {% assign page_cats = page.category_path %}
+      {% endif %}
+
+      {% assign page_topcat = nil %}
+      {% assign page_subcat = nil %}
+      {% if page_cats and page_cats.size > 0 %}
+        {% assign page_topcat = page_cats[0] %}
+        {% if page_cats.size > 1 %}
+          {% assign page_subcat = page_cats[1] %}
+        {% endif %}
+      {% endif %}
+
+      <!-- top-level category shortcuts -->
+      <li class="nav-item sjg-sidebar-top{% if page.url == '/woodworking/' or page_topcat == 'Woodworking' %}{{ " active" }}{% endif %}">
+        <a href="{{ '/woodworking/' | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-hammer"></i>
+          <span>WOODWORKING</span>
+        </a>
+      </li>
+      {% if woodworking_subcats.size > 0 %}
+        {% for subcat in woodworking_subcats %}
+          {% assign subslug = subcat | slugify %}
+          {% assign suburl = '/woodworking/' | append: subslug | append: '/' %}
+          {% assign subicon = site.data.category_icons[subcat] | default: 'fas fa-folder' %}
+          <li class="nav-item{% if page.url == suburl or page_topcat == 'Woodworking' and page_subcat == subcat %} active{% endif %}">
+            <a href="{{ suburl | relative_url }}" class="nav-link">
+              <i class="fa-fw {{ subicon }} sjg-subcat-icon"></i>
+                <span class="ms-4">{{ subcat | upcase }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      {% endif %}
+
+      <li class="nav-item sjg-sidebar-top{% if page.url == '/home-garden/' or page_topcat == 'Home & Garden' %}{{ " active" }}{% endif %}">
+        <a href="{{ '/home-garden/' | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-leaf"></i>
+          <span>HOME &amp; GARDEN</span>
+        </a>
+      </li>
+      {% if homeandgarden_subcats.size > 0 %}
+        {% for subcat in homeandgarden_subcats %}
+          {% assign subslug = subcat | slugify %}
+          {% assign suburl = '/home-garden/' | append: subslug | append: '/' %}
+          {% assign subicon = site.data.category_icons[subcat] | default: 'fas fa-folder' %}
+          <li class="nav-item{% if page.url == suburl or page_topcat == 'Home & Garden' and page_subcat == subcat %} active{% endif %}">
+            <a href="{{ suburl | relative_url }}" class="nav-link">
+              <i class="fa-fw {{ subicon }} sjg-subcat-icon"></i>
+              <span class="ms-4">{{ subcat | upcase }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      {% endif %}
+      <!-- the real tabs -->
+      {% for tab in site.tabs %}
+        {% if tab.link %}
+          {% assign tab_url = tab.link %}
+        {% else %}
+          {% assign tab_url = tab.url %}
+        {% endif %}
+        <li class="nav-item sjg-sidebar-top{% if tab_url == page.url %}{{ " active" }}{% endif %}">
+          <a href="{{ tab_url | relative_url }}" class="nav-link">
+            <i class="fa-fw {{ tab.icon }}"></i>
+            {% capture tab_name %}{{ tab_url | split: '/' }}{% endcapture %}
+
+            <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
+    {% unless site.theme_mode %}
+      <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
+        <i class="fas fa-adjust"></i>
+      </button>
+
+      {% if site.data.contact.size > 0 %}
+        <span class="icon-border"></span>
+      {% endif %}
+    {% endunless %}
+
+    {% for entry in site.data.contact %}
+      {%- assign url = null -%}
+
+      {% case entry.type %}
+        {% when 'github', 'twitter' %}
+          {%- unless site[entry.type].username -%}
+            {%- continue -%}
+          {%- endunless -%}
+          {%- capture url -%}
+            https://{{ entry.type }}.com/{{ site[entry.type].username }}
+          {%- endcapture -%}
+        {% when 'email' %}
+          {%- unless site.social.email -%}
+            {%- continue -%}
+          {%- endunless -%}
+          {%- assign email = site.social.email | split: '@' -%}
+          {%- capture url -%}
+            javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
+          {%- endcapture -%}
+        {% when 'rss' %}
+          {% assign url = '/feed.xml' | relative_url %}
+        {% else %}
+          {% assign url = entry.url %}
+      {% endcase %}
+
+      {% if url %}
+        <a
+          href="{{ url }}"
+          aria-label="{{ entry.type }}"
+          {% assign link_types = '' %}
+
+          {% unless entry.noblank %}
+            target="_blank"
+            {% assign link_types = 'noopener noreferrer' %}
+          {% endunless %}
+
+          {% if entry.type == 'mastodon' %}
+            {% assign link_types = link_types | append: ' me' | strip %}
+          {% endif %}
+
+          {% unless link_types == empty %}
+            rel="{{ link_types }}"
+          {% endunless %}
+        >
+          <i class="{{ entry.icon }}"></i>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <!-- .sidebar-bottom -->
+</aside>
+<!-- #sidebar -->

@@ -1,0 +1,65 @@
+{%- comment -%}
+  Side-by-side image helper. Parameters:
+    - img1 / img2: image paths relative to the post `media_subpath` (required)
+    - caption1 / caption2: optional captions; default to `_data/img-info.json`
+    - alt1 / alt2: override alt text for each image
+    - title1 / title2: override title attribute
+    - wrapper_classes: additional classes for the outer flex container
+    - figure_classes: base classes applied to both `<figure>` elements
+    - figure1_classes / figure2_classes: per-figure overrides
+    - img1_classes / img2_classes: extra classes on each `<img>`
+    - caption_classes: extra classes on both captions
+{%- endcomment -%}
+
+{% assign caption1 = include.caption1 | default: site.data.img-info[include.img1].title %}
+{% assign caption2 = include.caption2 | default: site.data.img-info[include.img2].title %}
+
+{% assign wrapper_classes = include.wrapper_classes | default: "d-flex flex-column flex-md-row justify-content-center align-items-center gap-2 mb-3" %}
+
+{% assign base_figure_classes = include.figure_classes | default: "figure d-inline-flex flex-column align-items-center text-center mb-0" %}
+
+{% if include.figure1_classes %}
+  {% assign figure1_classes = include.figure1_classes %}
+{% else %}
+  {% assign figure1_classes = base_figure_classes | append: " me-md-1" %}
+{% endif %}
+
+{% if include.figure2_classes %}
+  {% assign figure2_classes = include.figure2_classes %}
+{% else %}
+  {% assign figure2_classes = base_figure_classes | append: " ms-md-1" %}
+{% endif %}
+
+{% assign image_base_classes = "figure-img img-fluid rounded" %}
+
+{% assign img1_classes = image_base_classes %}
+{% if include.img1_classes %}
+  {% assign img1_classes = img1_classes | append: " " | append: include.img1_classes %}
+{% endif %}
+
+{% assign img2_classes = image_base_classes %}
+{% if include.img2_classes %}
+  {% assign img2_classes = img2_classes | append: " " | append: include.img2_classes %}
+{% endif %}
+
+{% assign caption_classes = "figure-caption text-center" %}
+{% if include.caption_classes %}
+  {% assign caption_classes = caption_classes | append: " " | append: include.caption_classes %}
+{% endif %}
+
+{% assign alt1 = include.alt1 | default: include.img1 %}
+{% assign alt2 = include.alt2 | default: include.img2 %}
+{% assign title1 = include.title1 | default: caption1 %}
+{% assign title2 = include.title2 | default: caption2 %}
+
+<div class="{{ wrapper_classes | strip }}">
+  <figure class="{{ figure1_classes | strip }}">
+    <img src="{{ include.img1 }}" alt="{{ alt1 }}" title="{{ title1 }}" class="{{ img1_classes | strip }}">
+    <figcaption class="{{ caption_classes | strip }}">{{ caption1 }}</figcaption>
+  </figure>
+  <figure class="{{ figure2_classes | strip }}">
+    <img src="{{ include.img2 }}" alt="{{ alt2 }}" title="{{ title2 }}" class="{{ img2_classes | strip }}">
+    <figcaption class="{{ caption_classes | strip }}">{{ caption2 }}</figcaption>
+  </figure>
+</div>
+
