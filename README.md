@@ -42,8 +42,8 @@ A custom generator plugin (`_plugins/category_tree_generator.rb`) reads all post
 
 - `/woodworking/`
 - `/woodworking/furniture/`
-- `/home-garden/`
-- `/home-garden/house-tech/`
+- `/home-and-garden/`
+- `/home-and-garden/house-tech/`
 
 The generator uses a shared template in `_data/category_page.yml` to control the layout and pagination front matter for these pages (defaults to `layout: home` with jekyll-paginate-v2 settings). Update that data file if you need to change how category pages look or paginate.
 
