@@ -7,21 +7,25 @@ image:
   alt: The most precious thing in my shop.  A gift from the family.
 media_subpath: /assets/img/about
 date: 2024-01-28 10:59:55 -0500
-last_modified_at: 2024-08-15 17:46:53 -0400
+last_modified_at: 2025-12-11 21:45:00 -0500
 toc: true
 ---
 
 {% include header.html %}
 
+## Welcome
+
 Welcome to my photo blog of various "maker" things I am up to, mostly woodworking. The above picture is a sign hanging in my workshop, given to me by the family. It's pretty cool.
 
-## About this site
+## Finding Your Way
 
 ### Home Page
 
-The [Home Page]({% link index.html %}) is an reverse chronological listing (also known as "newest first" in non-geek speak) of the various projects I have taken on. As you go further back in time, the projects get a little more primitive...not that my more recent things are perfect, but you learn a lot over time in this craft. Some of those learnings I have actually managed to apply in my more recent efforts.
+The site has undergone a bit of a transformation.  It used to be a very long _"reverse chronological listing"_ (also known as "newest first" in non-geek speak) of the various projects I have taken on.  But the list was getting long, too long to go thru it all, so I added a hierarchical view of all the categories (and their subcategories) on the sidebar to make navigation easier.
 
-The home page, or home pages, are paginated into about eight to ten posts per page. Each entry has a summary of the project, along with a thumbnail pic that will drive everyone wild with anticipation of the upcoming experience.
+Within each category view, the posts are still sorted in reverse chronological order, but in much more bite sized chunks.  As you go further back in time, the projects get a little more primitive...not that my more recent things are perfect, but you learn a lot over time in this craft. Some of those learnings I have actually managed to apply in my more recent efforts.
+
+The category view pages are paginated into about eight to ten posts per page at most. Each entry has a summary of the project, along with a thumbnail pic that will drive everyone wild with anticipation of the upcoming experience.
 {: .sjg-br}
 
 ### The Posts
@@ -85,7 +89,7 @@ I have been focussing more and more on _maker_ type things, including woodworkin
 
 Sometime in late 2016, I started to setup a workshop in the basement. Retirement was around the corner, and one of my father's favorite wisdoms was to _"retire to something, don't retire from something"_. My father is very wise.
 
-I live in a rural suburb of Ottawa called Manotick with my wife Debbie and two boys, Riley and Ozzie.
+I live in a rural suburb of Ottawa called Manotick with my wife Debbie and our little ones, Riley and Daisy.  The little avatar pic in the upper left is of Riley and Ozzie.  Ozzie took his journey over the rainbow bridge in spring 2024.  Boy do I miss that little guy.  There is a little tribute to him [here]({% link ozzie/index.md %}), and here is a great pic or Ozzie with Riley on the left.
 
 {% include html-side.html img="20150131_134612.avif" align="center" caption="Debbie took this great shot of the boys" %}
 
