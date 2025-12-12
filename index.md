@@ -21,7 +21,7 @@ Welcome to my photo blog of various "maker" things I am up to, mostly woodworkin
 
 ### Home Page
 
-The site has undergone a bit of a transformation.  It used to be a very long _"reverse chronological listing"_ (also known as "newest first" in non-geek speak) of the various projects I have taken on.  But the list was getting long, too long to go thru it all, so I added a hierarchical view of all the categories (and their subcategories) on the sidebar to make navigation easier.
+The site has undergone a bit of a transformation recently.  It used to be a very long _"reverse chronological listing"_ (also known as "newest first" in non-geek speak) of the various projects I have taken on.  But the list was getting long, too long to go thru it all, so I added a hierarchical view of all the categories (and their subcategories) on the sidebar to make navigation easier.
 
 Within each category view, the posts are still sorted in reverse chronological order, but in much more bite sized chunks.  As you go further back in time, the projects get a little more primitive...not that my more recent things are perfect, but you learn a lot over time in this craft. Some of those learnings I have actually managed to apply in my more recent efforts.
 
