@@ -12,6 +12,7 @@ image:
   alt: Walnut Table and Benches
 media_subpath: /assets/img/posts/walnut-table
 favorite: true
+pin: true
 ---
 ## Background
 

@@ -15,6 +15,6 @@ pagination:
   collection: posts
   per_page: 10
   permalink: /page:num/
-  sort_field: 'date'
+  sort_field: 'sort_key'
   sort_reverse: true
   indexpage: 'index'
