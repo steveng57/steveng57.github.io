@@ -9,24 +9,7 @@ require 'time'
 
 Jekyll::Hooks.register :site, :post_read do |site|
   site.posts.docs.each do |post|
-    raw_pin = post.data['pin']
-
-    pinned_flag =
-      case raw_pin
-      when true, 'true', 'True', 'TRUE', 1, '1'
-        '1'
-      else
-        '0'
-      end
-
-    # At :post_read time, post.date is already resolved from
-    # front matter (or filename), so we can rely on it
-    # directly for a stable per-post timestamp.
-    timestamp = post.date.to_i
-
-    # Single composite key so jekyll-paginate-v2 can sort by one field:
-    #   - pinned first ("1-" > "0-")
-    #   - within each group, newer posts first when sort_reverse: true
-    post.data['sort_key'] = format('%s-%010d', pinned_flag, timestamp)
+    pinned_flag = post.data['pin'] == true ? '1' : '0'
+    post.data['sort_key'] = format('%s-%010d', pinned_flag, post.date.to_i)
   end
 end
