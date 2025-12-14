@@ -93,7 +93,7 @@ I have been focussing more and more on _maker_ type things, including woodworkin
 
 Sometime in late 2016, I started to setup a workshop in the basement. Retirement was around the corner, and one of my father's favorite wisdoms was to _"retire to something, don't retire from something"_. My father is very wise.
 
-I live in a rural suburb of Ottawa called Manotick with my wife Debbie and our little ones, Riley and Daisy.  The little avatar pic in the upper left is of Riley and Ozzie.  Ozzie took his journey over the rainbow bridge in spring 2024.  Boy do I miss that little guy.  There is a little tribute to him [here]({% link ozzie/index.md %}), and here is a great pic or Ozzie with Riley on the left.
+I live in a rural suburb of Ottawa called Manotick with my wife Debbie and our little ones, Riley and Daisy.  The little avatar pic in the upper left is of Riley and Ozzie.  Ozzie took his journey over the rainbow bridge in spring 2024.  Boy do I miss that little guy.  There is a video tribute to him [here]({% link ozzie/index.md %}), and below is a great pic of Ozzie with Riley on the left.
 
 {% include html-side.html img="20150131_134612.avif" align="center" caption="Debbie took this great shot of the boys" %}
 
