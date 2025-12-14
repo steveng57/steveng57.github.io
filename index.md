@@ -60,7 +60,7 @@ For an interesting layout of the posts in chronological order, be sure to check 
 
 ### Categories
 
-The [Categories]({% link _tabs/categories.md %}) link shows the posts group by their categories and sub-categories, which is almost the same as the list of categories in the sidebar but a different view with a few more details.  There are two major categories: [Woodworking](/woodworking), which is where the vast majority of posts exist, and [Home and Garden](/home-and-garden), which only has a couple of posts right now, but I expect more to go there as things progress.
+The [Categories]({% link _tabs/categories.md %}) link shows the posts group by their categories and sub-categories, which is almost the same as the list of categories in the sidebar but a different view with a few more details.  There are two major categories: [Woodworking]({{ "/woodworking" | relative_url }}), which is where the vast majority of posts exist, and [Home and Garden]({{ "/home-and-garden" | relative_url }}), which only has a couple of posts right now, but I expect more to go there as things progress.
 {: .sjg-br}
 
 ### Tags
@@ -77,7 +77,7 @@ Here are some of my favorite projects:
 <ul>
   {% for post in site.posts %}
     {% if post.favorite %}
-      <li><a href="{{ post.url }}">{{ post.title }}:</a> {{ post.description }}.</li>
+      <li><a href=" {{ post.url | realtive_url }}">{{ post.title }}:</a> {{ post.description }}.</li>
     {% endif %}
   {% endfor %}
 </ul>
@@ -105,7 +105,7 @@ I am also a Pisces, which is silly because there is no science behind that stuff
 
 But if you must know, politics wise, I am fiscally conservative (you can't spend money you don't have), and socially liberal (the only thing I am truly intolerant of, is intolerance). Wait, TMI alert! Way too much information already!
 
-If you'd like to drop me a note with a comment or connect, please use the [contact form](/contact/) here.
+If you'd like to drop me a note with a comment or connect, please use the [contact form]({% link contact/index.html %}) here.
 
 {% include clear-float.html break = 2 %}
 
