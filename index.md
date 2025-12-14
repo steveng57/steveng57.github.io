@@ -60,7 +60,7 @@ For an interesting layout of the posts in chronological order, be sure to check 
 
 ### Categories
 
-The [Categories]({% link _tabs/categories.md %}) link shows the posts group by their categories and sub-categories. I am just getting these categories sorted as of this writing. For now, there are two major categories: [Woodworking](/woodworking), which is where the vast majority of posts exist, and [Home and Garden](/home-and-garden), which only has a couple of posts right now, but I expect more to go there as things progress.
+The [Categories]({% link _tabs/categories.md %}) link shows the posts group by their categories and sub-categories, which is almost the same as the list of categories in the sidebar but a different view with a few more details.  There are two major categories: [Woodworking](/woodworking), which is where the vast majority of posts exist, and [Home and Garden](/home-and-garden), which only has a couple of posts right now, but I expect more to go there as things progress.
 {: .sjg-br}
 
 ### Tags
