@@ -8,7 +8,7 @@ redirect_from:
   <head>
     <meta charset="utf-8">
     <title>Redirecting to latest post...</title>
-    <meta http-equiv="refresh" content="0; url={{ site.posts.first.url }}">
-    <link rel="canonical" href="{{ site.posts.first.url }}">
+    <meta http-equiv="refresh" content="0; url={{ site.posts.first.url | relative_url }}">
+    <link rel="canonical" href="{{ site.posts.first.url | relative_url }}">
   </head>
 </html>
