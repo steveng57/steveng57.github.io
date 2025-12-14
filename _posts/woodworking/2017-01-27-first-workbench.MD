@@ -16,7 +16,7 @@ media_subpath: /assets/img/posts/first-workbench
 
 Every shop needs a workbench, and there is a first for everything. This is the first workbench I built in this shop.
 
-In setting up my workshop, I had the DeWalt mitre saw from a while back, bought the Rigid table saw from the local Home Depot. With the help of my buddy, I threw some pegboard on the wall.
+In setting up my workshop, I had the DeWalt mitre saw from a while back, bought the Rigid table saw from the local Home Depot. With the help of my buddy, I threw some pegboard on the wall and I was in business.
 
 ## The First Workbench
 
