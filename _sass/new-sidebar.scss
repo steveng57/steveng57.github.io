@@ -29,3 +29,8 @@ html[data-mode="dark"] {
 #sidebar ul li.sjg-sidebar-top a.nav-link span {
 	font-size: 1.1rem;
 }
+
+/* Improve contrast for the non-linked (last) breadcrumb item */
+#topbar #breadcrumb span:last-child {
+	color: var(--topbar-text-color);
+}
