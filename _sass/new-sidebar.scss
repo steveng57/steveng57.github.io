@@ -3,15 +3,23 @@
 	transform: translateX(1.1rem);
 }
 
-/* Lighten sidebar items in dark mode */
+/* Stronger sidebar hover background (light + dark) */
+html {
+	/* Light mode: slightly darker, more solid hover */
+	--sidebar-hover-bg: rgb(209 228 244);
+}
+
+/* Lighten sidebar items and tune hover in dark mode */
 html[data-mode="dark"] {
 	--sidebar-muted-color: #b8b8b8;
+	--sidebar-hover-bg: #333333;
 }
 
 @media (prefers-color-scheme: dark) {
 	html:not([data-mode]),
 	html[data-mode="dark"] {
 		--sidebar-muted-color: #b8b8b8;
+		--sidebar-hover-bg: #333333;
 	}
 }
 
