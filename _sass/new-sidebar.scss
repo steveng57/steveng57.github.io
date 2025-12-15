@@ -7,12 +7,15 @@
 html {
 	/* Light mode: slightly darker, more solid hover */
 	--sidebar-hover-bg: rgb(209 228 244);
+	/* Active item: a touch stronger than hover */
+	--sidebar-active-bg: rgb(193 216 235);
 }
 
 /* Lighten sidebar items and tune hover in dark mode */
 html[data-mode="dark"] {
 	--sidebar-muted-color: #b8b8b8;
 	--sidebar-hover-bg: #333333;
+	--sidebar-active-bg: #3a3a3a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +23,13 @@ html[data-mode="dark"] {
 	html[data-mode="dark"] {
 		--sidebar-muted-color: #b8b8b8;
 		--sidebar-hover-bg: #333333;
+		--sidebar-active-bg: #3a3a3a;
 	}
+}
+
+/* Slightly stronger background for active sidebar items */
+#sidebar ul li.nav-item.active .nav-link {
+	background-color: var(--sidebar-active-bg);
 }
 
 /* Apply custom color to top-level (non-active) sidebar items */
