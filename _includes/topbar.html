@@ -68,7 +68,7 @@
           {%- endfor -%}
         {%- endif -%}
 
-        {%- if page.layout != 'home' -%}
+        {%- if page.layout != 'home' and page.url != '/' -%}
           <span>
             {% if page.collection == 'tabs' or page.layout == 'page' %}
               {%- capture tab_key -%}{{ page.url | split: '/' }}{%- endcapture -%}
