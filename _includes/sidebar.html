@@ -216,9 +216,7 @@
       if (saved !== null) {
         var y = parseInt(saved, 10);
         if (!isNaN(y)) {
-          window.requestAnimationFrame(function() {
-            sidebar.scrollTop = y;
-          });
+          sidebar.scrollTop = y;
         }
       }
     } catch (e) {
