@@ -26,8 +26,4 @@
 
   sidebar.addEventListener('scroll', saveScroll, { passive: true });
   window.addEventListener('beforeunload', saveScroll);
-
-  // Reveal the sidebar only after we have had a chance
-  // to restore (or intentionally reset) its scroll position.
-  sidebar.style.visibility = 'visible';
 })();
