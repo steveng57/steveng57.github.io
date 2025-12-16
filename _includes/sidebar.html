@@ -1,6 +1,6 @@
 <!-- The Side Bar -->
 
-<aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
+<aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end" style="visibility: hidden;">
   <header class="profile-wrapper">
     <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
       {%- if site.avatar != empty and site.avatar -%}
@@ -202,5 +202,10 @@
   <!-- .sidebar-bottom -->
 </aside>
 <!-- #sidebar -->
+<noscript>
+  <style>
+    #sidebar { visibility: visible !important; }
+  </style>
+</noscript>
 
 <script src="{{ '/assets/js/sidebar-scroll.js' | relative_url }}"></script>
