@@ -55,6 +55,10 @@ The sidebar (`_shared/_includes/sidebar.html`) builds navigation dynamically:
 
 Category and subcategory icons are configured in `_data/category_icons.yml`, which maps friendly names (e.g., `Furniture`, `House Tech`) to Font Awesome classes. If a name is missing from that file, the sidebar falls back to a generic folder icon.
 
+## Architectural Details
+
+For detailed architecture notes and coding patterns, see [`.github/copilot-instructions.md`](.github/copilot-instructions.md).
+
 ## Contributing
 
 No co-development at this time.  
