@@ -47,7 +47,7 @@ A custom generator plugin (`_plugins/category_tree_generator.rb`) reads all post
 
 The generator uses a shared template in `_data/category_page.yml` to control the layout and pagination front matter for these pages (defaults to `layout: home` with jekyll-paginate-v2 settings). Update that data file if you need to change how category pages look or paginate.
 
-The sidebar (`_shared/_includes/sidebar.html`) builds navigation dynamically:
+The sidebar (`_includes/sidebar.html`) builds navigation dynamically:
 
 - Adds fixed top-level links for **Woodworking** and **Home and Garden**.
 - Scans post categories to discover unique second-level subcategories under those two tops.
