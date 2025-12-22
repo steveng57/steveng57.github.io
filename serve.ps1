@@ -20,6 +20,9 @@
 .PARAMETER NoLiveReload
     Disable live reload functionality
 
+.PARAMETER LiveReloadPort
+    Specify the LiveReload port (default: 35729)
+
 .PARAMETER Port
     Specify the port to serve on (default: 4000)
 
@@ -61,6 +64,7 @@ param(
     [switch]$NoDrafts,
     [switch]$NoFuture,
     [switch]$NoLiveReload,
+    [int]$LiveReloadPort = 35729,
     [int]$Port = 4000,
     [string]$HostAddress = "localhost",
     [switch]$Clean,
@@ -226,6 +230,9 @@ function Build-JekyllCommand {
     # Add conditional flags
     if (-not $NoLiveReload -and -not $Production) {
         $cmd += "--livereload"
+        if ($LiveReloadPort) {
+            $cmd += "--livereload-port", $LiveReloadPort.ToString()
+        }
     }
     
     if (-not $NoDrafts -and -not $Production) {
@@ -251,7 +258,9 @@ function Show-StartupInfo {
         Write-Info "Features enabled:"
         if (-not $NoDrafts) { Write-Host "  • Draft posts" -ForegroundColor Gray }
         if (-not $NoFuture) { Write-Host "  • Future posts" -ForegroundColor Gray }
-        if (-not $NoLiveReload) { Write-Host "  • Live reload" -ForegroundColor Gray }
+        if (-not $NoLiveReload) {
+            Write-Host "  • Live reload (port $LiveReloadPort)" -ForegroundColor Gray
+        }
     }
     
     Write-Host ""
@@ -284,6 +293,7 @@ function Show-CustomHelp {
     Write-Host "  Server Configuration:" -ForegroundColor Cyan
     Write-Host "    -Port <number>       Specify port to serve on (default: 4000)" -ForegroundColor White
     Write-Host "    -HostAddress <addr>  Specify host address (default: localhost)" -ForegroundColor White
+    Write-Host "    -LiveReloadPort <n>  Specify LiveReload port (default: 35729)" -ForegroundColor White
     Write-Host ""
     Write-Host "  Build Options:" -ForegroundColor Cyan
     Write-Host "    -Clean               Clean _site directory before building" -ForegroundColor White
@@ -296,6 +306,9 @@ function Show-CustomHelp {
     Write-Host "ADVANCED EXAMPLES:" -ForegroundColor Yellow
     Write-Host "  .\serve.ps1 -Port 3000 -HostAddress 0.0.0.0" -ForegroundColor Gray
     Write-Host "    # Serve on port 3000, accessible from other machines" -ForegroundColor DarkGray
+    Write-Host ""
+    Write-Host "  .\serve.ps1 -Port 4000 -LiveReloadPort 35730" -ForegroundColor Gray
+    Write-Host "    # Serve on port 4000 with LiveReload on 35730" -ForegroundColor DarkGray
     Write-Host ""
     Write-Host "  .\serve.ps1 -Clean -RegenerateImages -Production" -ForegroundColor Gray
     Write-Host "    # Clean build, regenerate images, serve in production mode" -ForegroundColor DarkGray
