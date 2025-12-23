@@ -6,6 +6,15 @@
     width: 33% !important;
 }
 
+/* Ensure floated figures work even if Bootstrap utilities differ by environment */
+.figure.float-start {
+    float: left !important;
+}
+
+.figure.float-end {
+    float: right !important;
+}
+
 img {
     border-radius: 10px;
 }
