@@ -4,6 +4,46 @@ title: Contact
 permalink: /contact/
 ---
 
+<style>
+  #contact-form {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    #contact-form {
+      padding: 3rem;
+    }
+  }
+
+  #contact-form .sjg-search-like-group {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.9rem;
+  }
+
+  #contact-form .sjg-search-like-group .input-group-text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    margin: 0;
+    padding-right: 0.5rem;
+  }
+
+  #contact-form .sjg-search-like-group .form-control {
+    flex: 1 1 auto;
+    min-width: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+</style>
+
 <!-- Load Cloudflare Turnstile script -->
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
