@@ -6,6 +6,7 @@ date: 2023-08-22 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 category: [Woodworking, Home Decor]
 tags: [Woodworking, Picture Frame, Frames, Poplar, Home Decor, Dominos]
+series: Picture Frames
 image:
   path: /thumbnails/20230822_191820.avif
   alt: The first of many to be sure
@@ -57,3 +58,5 @@ The trick to keeping it centred is that if you use 7 cards on the left, then you
 - Acrylic Paint from {{ site.data.links.michaels }}
 - {{ site.data.links.domino }} for mitre joinery
 {: .sjg-list }
+
+{% include series-nav.html %}

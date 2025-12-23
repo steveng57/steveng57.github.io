@@ -7,6 +7,7 @@ date: 2025-02-25 21:19:42 -0500
 last_modified_at: 2025-03-03 21:48:08 -0500
 category: [Woodworking, Home Decor]
 tags: [Woodworking, Picture Frame, Frames, Poplar, Home Decor, Dominos]
+series: Picture Frames
 image:
   path: /thumbnails/IMG_1674.avif
   alt: More Picture Frames
@@ -121,3 +122,5 @@ Deb created an excellent colour match, so the frame goes great with the branches
 - Acrylic Paint from {{ site.data.links.michaels }}
 - {{ site.data.links.domino }} for mitre joinery
 {: .sjg-list }
+
+{% include series-nav.html %}
