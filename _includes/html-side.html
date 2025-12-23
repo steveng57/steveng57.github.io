@@ -3,7 +3,8 @@
     - img: image path relative to the post's `media_subpath` (required)
     - caption: optional manual caption; defaults to `_data/img-info.json` lookup
     - align: layout keyword (left, left-33, left-50, right, right-33, right-50,
-              center, center-wide, center-full, none). Defaults to center-full
+              center, center-wide, center-full, full, none).
+              Defaults to center-full; `full` is an alias of `center-full`.
     - alt: override the alt text (defaults to image filename)
     - title: override the title attribute (defaults to caption)
     - extra_classes / figure_classes: add extra classes to the `<figure>`
@@ -42,6 +43,8 @@
   {% when "center-wide" %}
     {% assign figure_classes = figure_classes | append: " sjg-figure-center sjg-figure-90" %}
   {% when "center-full" %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-center sjg-figure-100" %}
+  {% when "full" %}
     {% assign figure_classes = figure_classes | append: " sjg-figure-center sjg-figure-100" %}
   {% when "none" %}
     {# no additional layout classes #}

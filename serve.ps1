@@ -353,22 +353,22 @@ try {
     if ($RegenerateImages) {
         Update-ImageAssets
     }
+
+    # Configure JEKYLL_ENV based on mode
+    if ($Production) {
+        $env:JEKYLL_ENV = "production"
+        Write-Success "JEKYLL_ENV=production"
+    } else {
+        $env:JEKYLL_ENV = "development"
+        Write-Success "JEKYLL_ENV=development"
+    }
     
     # Build Jekyll command
     $jekyllCmd = Build-JekyllCommand
     
     # Show startup information
     Show-StartupInfo
-    
-    # Configure JEKYLL_ENV based on mode
-    if ($Production) {
-        Write-Info "Setting JEKYLL_ENV=production"
-        $env:JEKYLL_ENV = "production"
-    } else {
-        Write-Info "Setting JEKYLL_ENV=development"
-        $env:JEKYLL_ENV = "development"
-    }
-    
+
     # Start Jekyll server
     Write-Step "Starting Jekyll server..."
     Write-Info "Command: $($jekyllCmd -join ' ')"
