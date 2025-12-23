@@ -48,7 +48,17 @@ pagination:
           {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
 
           <div class="col-md-5">
-            <img src="{{ src }}" alt="{{ alt }}" {{ lqip_attr }}>
+            <img
+              src="{{ src }}"
+              alt="{{ alt }}"
+              {{ lqip_attr }}
+              decoding="async"
+              {% if forloop.first %}
+                loading="eager" fetchpriority="high"
+              {% else %}
+                loading="lazy"
+              {% endif %}
+            >
           </div>
 
           {% assign card_body_col = '7' %}
