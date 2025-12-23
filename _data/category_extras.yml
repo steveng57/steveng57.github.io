@@ -1,0 +1,32 @@
+# Optional per-category intros and featured posts for generated category pages.
+#
+# Keys are the category path segments joined with '/', matching `page.category_path`.
+# Examples:
+#   "Woodworking": top-level Woodworking landing page
+#   "Woodworking/Workshop": nested Workshop under Woodworking
+#
+# Each entry may define:
+#   intro_markdown: |-
+#     Short Markdown intro rendered above the post list.
+#   intro_html: |-
+#     Alternate raw HTML intro (used if intro_markdown is not present).
+#   featured_slugs:
+#     - post-slug-1   # matches `post.slug` (usually the filename without date)
+#     - post-slug-2
+#
+# All fields are optional; if a category has no entry here, the layout
+# behaves exactly as before.
+#
+# Example (uncomment and customize to use):
+#
+"Woodworking":
+  intro_markdown: |-
+    Woodworking projects from the workshop, from early builds to
+    more recent experiments with joinery, finishes, and design.
+"Home and Garden":
+  intro_markdown: |-
+    Projects and ideas for improving and beautifying living spaces,
+    indoors and out.
+#  featured_slugs:
+#    - walnut-table
+#    - daybed
