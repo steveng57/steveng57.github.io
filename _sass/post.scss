@@ -6,7 +6,7 @@
     width: 33% !important;
 }
 
-/* Ensure floated figures work even if Bootstrap utilities differ by environment */
+/* Explicitly float figure elements for side images */
 .figure.float-start {
     float: left !important;
 }
