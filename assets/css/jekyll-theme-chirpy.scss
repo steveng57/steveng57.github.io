@@ -1,8 +1,12 @@
 ---
 ---
 
+/* prettier-ignore */
 @use 'main';
 
 /* append your custom style below */
-@use 'sjg-main';
+
+@use "post";
+@use "lightgallery";
+@use "new-sidebar";
 
