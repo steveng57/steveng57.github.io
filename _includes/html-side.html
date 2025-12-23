@@ -17,7 +17,8 @@
   consistent in both development and production builds.
 {%- endcomment -%}
 
-{% assign caption = include.caption | default: site.data.img-info[include.img].title %}
+{% assign img_meta = site.data.img-info[include.img] %}
+{% assign caption = include.caption | default: img_meta.title %}
 {% assign align = include.align | default: "center-full" %}
 
 {% assign figure_classes = "figure sjg-figure" %}
@@ -76,6 +77,14 @@
 
 <div style="height: 0.001rem;"></div>
 <figure class="{{ figure_classes | strip }}"{% if figure_styles != "" %} style="{{ figure_styles }}"{% endif %}>
-  <img src="{{ include.img }}" alt="{{ alt_text }}" title="{{ title_text }}" class="{{ img_classes | strip }}">
+  <img
+    src="{{ include.img }}"
+    alt="{{ alt_text }}"
+    title="{{ title_text }}"
+    class="{{ img_classes | strip }}"
+    {% if img_meta and img_meta.width and img_meta.height %}
+      width="{{ img_meta.width }}" height="{{ img_meta.height }}"
+    {% endif %}
+  >
   <figcaption class="{{ caption_classes | strip }}">{{ caption }}</figcaption>
 </figure>

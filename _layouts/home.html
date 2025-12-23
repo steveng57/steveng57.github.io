@@ -45,6 +45,9 @@ pagination:
             {% assign lqip_attr = 'lqip="' | append: lqip | append: '"' %}
           {% endif %}
 
+          {% assign img_key = src | split: '/' | last %}
+          {% assign img_meta = site.data.img-info[img_key] %}
+
           {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
 
           <div class="col-md-5">
@@ -52,6 +55,9 @@ pagination:
               src="{{ src }}"
               alt="{{ alt }}"
               {{ lqip_attr }}
+              {% if img_meta and img_meta.width and img_meta.height %}
+                width="{{ img_meta.width }}" height="{{ img_meta.height }}"
+              {% endif %}
               decoding="async"
               {% if forloop.first %}
                 loading="eager" fetchpriority="high"

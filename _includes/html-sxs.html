@@ -15,8 +15,11 @@
   so behavior is consistent in both development and production.
 {%- endcomment -%}
 
-{% assign caption1 = include.caption1 | default: site.data.img-info[include.img1].title %}
-{% assign caption2 = include.caption2 | default: site.data.img-info[include.img2].title %}
+{% assign img1_meta = site.data.img-info[include.img1] %}
+{% assign img2_meta = site.data.img-info[include.img2] %}
+
+{% assign caption1 = include.caption1 | default: img1_meta.title %}
+{% assign caption2 = include.caption2 | default: img2_meta.title %}
 
 {% assign wrapper_classes = include.wrapper_classes | default: "d-flex flex-column flex-md-row justify-content-center align-items-center gap-2 mb-3" %}
 
@@ -58,11 +61,27 @@
 
 <div class="{{ wrapper_classes | strip }}">
   <figure class="{{ figure1_classes | strip }}">
-    <img src="{{ include.img1 }}" alt="{{ alt1 }}" title="{{ title1 }}" class="{{ img1_classes | strip }}">
+    <img
+      src="{{ include.img1 }}"
+      alt="{{ alt1 }}"
+      title="{{ title1 }}"
+      class="{{ img1_classes | strip }}"
+      {% if img1_meta and img1_meta.width and img1_meta.height %}
+        width="{{ img1_meta.width }}" height="{{ img1_meta.height }}"
+      {% endif %}
+    >
     <figcaption class="{{ caption_classes | strip }}">{{ caption1 }}</figcaption>
   </figure>
   <figure class="{{ figure2_classes | strip }}">
-    <img src="{{ include.img2 }}" alt="{{ alt2 }}" title="{{ title2 }}" class="{{ img2_classes | strip }}">
+    <img
+      src="{{ include.img2 }}"
+      alt="{{ alt2 }}"
+      title="{{ title2 }}"
+      class="{{ img2_classes | strip }}"
+      {% if img2_meta and img2_meta.width and img2_meta.height %}
+        width="{{ img2_meta.width }}" height="{{ img2_meta.height }}"
+      {% endif %}
+    >
     <figcaption class="{{ caption_classes | strip }}">{{ caption2 }}</figcaption>
   </figure>
 </div>
