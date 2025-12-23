@@ -58,6 +58,10 @@ pagination:
               {% if img_meta and img_meta.width and img_meta.height %}
                 width="{{ img_meta.width }}" height="{{ img_meta.height }}"
               {% endif %}
+              {% if src contains '/thumbnails/' %}
+                srcset="{{ src }} 1x, {{ src | replace: '/thumbnails/', '/thumbnails-2x/' }} 2x"
+                sizes="(min-width: 768px) 320px, 100vw"
+              {% endif %}
               decoding="async"
               {% if forloop.first %}
                 loading="eager" fetchpriority="high"

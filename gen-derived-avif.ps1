@@ -19,6 +19,8 @@ param(
     [switch]$PruneLegacy,
     [ValidateRange(1,100)]
     [int]$ThumbnailScale = 50,
+    [ValidateRange(1,200)]
+    [int]$Thumbnail2xScale = 100,
     [ValidateRange(1,100)]
     [int]$TinyfileScale = 10,
     [ValidateRange(1,200)]
@@ -150,12 +152,15 @@ foreach ($postFolder in $postFolders) {
     Write-Info "Processing folder '$($postFolder.FullName)'."
 
     $thumbnailsPath = Join-Path -Path $postFolder.FullName -ChildPath "thumbnails"
+    $thumbnails2xPath = Join-Path -Path $postFolder.FullName -ChildPath "thumbnails-2x"
     $tinyfilesPath = Join-Path -Path $postFolder.FullName -ChildPath "tinyfiles"
     $null = New-Item -Path $thumbnailsPath -ItemType Directory -Force
+    $null = New-Item -Path $thumbnails2xPath -ItemType Directory -Force
     $null = New-Item -Path $tinyfilesPath -ItemType Directory -Force
 
     if ($PruneLegacy) {
         Get-ChildItem -Path $thumbnailsPath -Include *.jpg, *.jpeg, *.png -File -ErrorAction SilentlyContinue | Remove-Item -Force
+        Get-ChildItem -Path $thumbnails2xPath -Include *.jpg, *.jpeg, *.png -File -ErrorAction SilentlyContinue | Remove-Item -Force
         Get-ChildItem -Path $tinyfilesPath -Include *.jpg, *.jpeg, *.png -File -ErrorAction SilentlyContinue | Remove-Item -Force
     }
 
@@ -171,14 +176,20 @@ foreach ($postFolder in $postFolders) {
         $needsTinyfile = $tagTokens -contains "gallery"
 
         $thumbnailTarget = Join-Path -Path $thumbnailsPath -ChildPath ($image.BaseName + ".avif")
+        $thumbnail2xTarget = Join-Path -Path $thumbnails2xPath -ChildPath ($image.BaseName + ".avif")
         $tinyfileTarget = Join-Path -Path $tinyfilesPath -ChildPath ($image.BaseName + ".avif")
 
         if ($needsThumbnail) {
             if ($Force -or (ShouldRebuild -Source $image.FullName -Destination $thumbnailTarget)) {
                 Invoke-MagickEncode -InputPath $image.FullName -DestinationPath $thumbnailTarget -ResizePercent ("$ThumbnailScale%") -QualityValue $Quality
             }
+            if ($Force -or (ShouldRebuild -Source $image.FullName -Destination $thumbnail2xTarget)) {
+                $resize2x = if ($Thumbnail2xScale -ne 100) { "$Thumbnail2xScale%" } else { $null }
+                Invoke-MagickEncode -InputPath $image.FullName -DestinationPath $thumbnail2xTarget -ResizePercent $resize2x -QualityValue $Quality
+            }
         } else {
             Remove-Derived -Destination $thumbnailTarget
+            Remove-Derived -Destination $thumbnail2xTarget
         }
 
         if ($needsTinyfile) {
