@@ -80,7 +80,7 @@ $ErrorActionPreference = "Stop"
 # Color output functions
 function Write-Info {
     param([string]$Message)
-    Write-Host "ℹ️  $Message" -ForegroundColor Cyan
+    Write-Host "ℹ️ $Message" -ForegroundColor Cyan
 }
 
 function Write-Success {
@@ -90,7 +90,7 @@ function Write-Success {
 
 function Write-Warning {
     param([string]$Message)
-    Write-Host "⚠️  $Message" -ForegroundColor Yellow
+    Write-Host "⚠️ $Message" -ForegroundColor Yellow
 }
 
 function Write-Error {
@@ -354,6 +354,15 @@ try {
         Update-ImageAssets
     }
     
+    # Configure JEKYLL_ENV based on mode
+    if ($Production) {
+        Write-Info "Setting JEKYLL_ENV=production"
+        $env:JEKYLL_ENV = "production"
+    } else {
+        Write-Info "Clearing JEKYLL_ENV for development run"
+        Remove-Item Env:JEKYLL_ENV -ErrorAction SilentlyContinue
+    }
+
     # Build Jekyll command
     $jekyllCmd = Build-JekyllCommand
     
