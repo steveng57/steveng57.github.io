@@ -17,12 +17,12 @@ layout: nil
     </style>
 </head>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/lightgallery.min.js" integrity="sha512-n02TbYimj64qb98ed5WwkNiSw/i9Xlvv4Ehvhg0jLp3qMAMWCYUHbOMbppZ0vimtyiyw9NqNqxUZC4hq86f4aQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/zoom/lg-zoom.min.js" integrity="sha512-fwxc/NvaA3du4ZRE6J/Ilrqi2xwOB1QfHBR4neA+ha13/pkweiRfPgBiV4VbfAf/Vi3rXAXdQ3zexUJ1V2bWrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/thumbnail/lg-thumbnail.min.js" integrity="sha512-jZxB8WysJ6S6e4Hz5IZpAzR1WiflBl0hBxriHGlLkUN32T18+rD1aLNifa1KTll/zx8lIfWVP1NqEjHi/Khy5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/hash/lg-hash.min.js" integrity="sha512-7pwvWMvioJA+xl0tDiKuLlcnCo1dzCPtWKTOZOJtpgsW7cBWDdjwnKNkVAHEeL+JAtz2HRRmAgFjW6ZJInDGdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/fullscreen/lg-fullscreen.min.js" integrity="sha512-d/EbIxiQq9RUy7FPFpf782bw3OQKXR90SwMSiNorOP5En9rbpnSDzkJZXpSKLBCNMmdSd5UOeWzYUIStpack6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/autoplay/lg-autoplay.min.js" integrity="sha512-D01DFAeHKUDKHU/Vc3Yrnhe9SPLmXjAM5bD5yf6ORDqDYhrZ0ggjPyHHqj4j3pk+279etMci7NEScTjg6WD++g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/lightgallery.min.js" integrity="sha512-n02TbYimj64qb98ed5WwkNiSw/i9Xlvv4Ehvhg0jLp3qMAMWCYUHbOMbppZ0vimtyiyw9NqNqxUZC4hq86f4aQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/zoom/lg-zoom.min.js" integrity="sha512-fwxc/NvaA3du4ZRE6J/Ilrqi2xwOB1QfHBR4neA+ha13/pkweiRfPgBiV4VbfAf/Vi3rXAXdQ3zexUJ1V2bWrg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/thumbnail/lg-thumbnail.min.js" integrity="sha512-jZxB8WysJ6S6e4Hz5IZpAzR1WiflBl0hBxriHGlLkUN32T18+rD1aLNifa1KTll/zx8lIfWVP1NqEjHi/Khy5w==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/hash/lg-hash.min.js" integrity="sha512-7pwvWMvioJA+xl0tDiKuLlcnCo1dzCPtWKTOZOJtpgsW7cBWDdjwnKNkVAHEeL+JAtz2HRRmAgFjW6ZJInDGdA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/fullscreen/lg-fullscreen.min.js" integrity="sha512-d/EbIxiQq9RUy7FPFpf782bw3OQKXR90SwMSiNorOP5En9rbpnSDzkJZXpSKLBCNMmdSd5UOeWzYUIStpack6g==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/autoplay/lg-autoplay.min.js" integrity="sha512-D01DFAeHKUDKHU/Vc3Yrnhe9SPLmXjAM5bD5yf6ORDqDYhrZ0ggjPyHHqj4j3pk+279etMci7NEScTjg6WD++g==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
 <div id="inline-gallery-container" class="inline-gallery-container"></div>
 {% assign albumfolder = page.albumfolder %}
@@ -34,6 +34,8 @@ layout: nil
 
 
 <script type="text/javascript">
+window.addEventListener('load', function () {
+if (!window.lightGallery) { return; }
 
 var dynamicImages = [
     {% for image in imageFiles %}
@@ -108,6 +110,6 @@ if (matches) {
 
 inlineGallery.openGallery(slideIndex);
 
-
+});
 </script>
 </html>
