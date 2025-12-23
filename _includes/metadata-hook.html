@@ -1,6 +1,10 @@
 {%- comment -%}
   Site-wide metadata hook.
-  Currently unused; kept as a placeholder
-  for any future global metadata or styles
-  that need to be injected into <head>.
+  Used for small, global <head> additions that improve performance.
 {%- endcomment -%}
+
+{%- if site.pageviews and site.pageviews.provider == 'goatcounter' and site.goatcounter and site.goatcounter.id -%}
+  {%- assign goatcounter_origin = 'https://' | append: site.goatcounter.id | append: '.goatcounter.com' -%}
+  <link rel="preconnect" href="{{ goatcounter_origin }}" crossorigin>
+  <link rel="dns-prefetch" href="//{{ site.goatcounter.id }}.goatcounter.com">
+{%- endif -%}
