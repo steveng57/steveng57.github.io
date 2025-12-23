@@ -5,7 +5,7 @@ vendor
 # Jekyll cache
 .jekyll-cache
 _site
-
+_site_*
 # RubyGems
 *.gem
 

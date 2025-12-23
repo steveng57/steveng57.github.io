@@ -1,18 +1,68 @@
-.w-66 {
-    width: 66% !important;
+/* Figure layout utilities for html-side.html */
+.sjg-figure {
+    display: block;
+    margin: 0 0 1rem 0;
 }
 
-.w-33 {
-    width: 33% !important;
+.sjg-figure-left {
+    float: left;
+    margin-right: 1rem;
 }
 
-/* Explicitly float figure elements for side images */
-.figure.float-start {
-    float: left !important;
+.sjg-figure-right {
+    float: right;
+    margin-left: 1rem;
 }
 
-.figure.float-end {
-    float: right !important;
+.sjg-figure-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sjg-figure-33 {
+    width: 33%;
+}
+
+.sjg-figure-50 {
+    width: 50%;
+}
+
+.sjg-figure-66 {
+    width: 66%;
+}
+
+.sjg-figure-75 {
+    width: 75%;
+}
+
+.sjg-figure-90 {
+    width: 90%;
+}
+
+.sjg-figure-100 {
+    width: 100%;
+}
+
+/* Side-by-side helper spacing (used by html-sxs.html) */
+.sjg-sxs-left,
+.sjg-sxs-right {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .sjg-sxs-left {
+        margin-right: 0.25rem;
+    }
+
+    .sjg-sxs-right {
+        margin-left: 0.25rem;
+    }
+
+    /* Ensure flex-md-row works even without full Bootstrap utilities */
+    .flex-md-row {
+        flex-direction: row !important;
+    }
 }
 
 img {
@@ -62,11 +112,12 @@ figure img {
 }
 
 @media (max-width: 767.98px) {
-    .figure.float-start,
-    .figure.float-end {
-        float: none !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+    .sjg-figure-left,
+    .sjg-figure-right {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
 }
 

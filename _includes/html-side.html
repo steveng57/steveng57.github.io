@@ -10,46 +10,43 @@
     - img_classes: add extra classes to the `<img>`
     - caption_classes: add extra classes to the `<figcaption>`
     - style: append inline styles to the `<figure>`
+
+  Layout is implemented using custom `sjg-figure-*` classes defined in
+  `_sass/post.scss`, rather than Bootstrap utility classes, so behavior is
+  consistent in both development and production builds.
 {%- endcomment -%}
 
 {% assign caption = include.caption | default: site.data.img-info[include.img].title %}
 {% assign align = include.align | default: "center-full" %}
 
-{% assign figure_classes = "figure d-block mb-3" %}
+{% assign figure_classes = "figure sjg-figure" %}
 {% assign figure_styles = "" %}
 {% assign img_classes = "figure-img img-fluid rounded" %}
 {% assign caption_classes = "figure-caption text-center" %}
 
 {% case align %}
   {% when "left" %}
-    {% assign figure_classes = figure_classes | append: " float-start me-3" %}
-    {% capture figure_styles %}{{ figure_styles }}width: 66%; {% endcapture %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-left sjg-figure-66" %}
   {% when "left-33" %}
-    {% assign figure_classes = figure_classes | append: " float-start me-3" %}
-    {% capture figure_styles %}{{ figure_styles }}width: 33%; {% endcapture %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-left sjg-figure-33" %}
   {% when "left-50" %}
-    {% assign figure_classes = figure_classes | append: " float-start me-3" %}
-    {% capture figure_styles %}{{ figure_styles }}width: 50%; {% endcapture %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-left sjg-figure-50" %}
   {% when "right" %}
-    {% assign figure_classes = figure_classes | append: " float-end ms-3" %}
-    {% capture figure_styles %}{{ figure_styles }}width: 66%; {% endcapture %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-right sjg-figure-66" %}
   {% when "right-33" %}
-    {% assign figure_classes = figure_classes | append: " float-end ms-3" %}
-    {% capture figure_styles %}{{ figure_styles }}width: 33%; {% endcapture %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-right sjg-figure-33" %}
   {% when "right-50" %}
-    {% assign figure_classes = figure_classes | append: " float-end ms-3" %}
-    {% capture figure_styles %}{{ figure_styles }}width: 50%; {% endcapture %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-right sjg-figure-50" %}
   {% when "center" %}
-    {% assign figure_classes = figure_classes | append: " mx-auto w-75" %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-center sjg-figure-75" %}
   {% when "center-wide" %}
-    {% assign figure_classes = figure_classes | append: " mx-auto" %}
-    {% capture figure_styles %}{{ figure_styles }}width: 90%; {% endcapture %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-center sjg-figure-90" %}
   {% when "center-full" %}
-    {% assign figure_classes = figure_classes | append: " mx-auto w-100" %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-center sjg-figure-100" %}
   {% when "none" %}
-    {% assign figure_classes = figure_classes | append: "" %}
+    {# no additional layout classes #}
   {% else %}
-    {% assign figure_classes = figure_classes | append: " mx-auto w-100" %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-center sjg-figure-100" %}
 {% endcase %}
 
 {% if include.extra_classes %}

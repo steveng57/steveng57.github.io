@@ -354,20 +354,20 @@ try {
         Update-ImageAssets
     }
     
-    # Configure JEKYLL_ENV based on mode
-    if ($Production) {
-        Write-Info "Setting JEKYLL_ENV=production"
-        $env:JEKYLL_ENV = "production"
-    } else {
-        Write-Info "Clearing JEKYLL_ENV for development run"
-        Remove-Item Env:JEKYLL_ENV -ErrorAction SilentlyContinue
-    }
-
     # Build Jekyll command
     $jekyllCmd = Build-JekyllCommand
     
     # Show startup information
     Show-StartupInfo
+    
+    # Configure JEKYLL_ENV based on mode
+    if ($Production) {
+        Write-Info "Setting JEKYLL_ENV=production"
+        $env:JEKYLL_ENV = "production"
+    } else {
+        Write-Info "Setting JEKYLL_ENV=development"
+        $env:JEKYLL_ENV = "development"
+    }
     
     # Start Jekyll server
     Write-Step "Starting Jekyll server..."

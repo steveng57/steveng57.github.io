@@ -9,6 +9,10 @@
     - figure1_classes / figure2_classes: per-figure overrides
     - img1_classes / img2_classes: extra classes on each `<img>`
     - caption_classes: extra classes on both captions
+
+  Horizontal spacing between figures uses custom `sjg-sxs-left`/`sjg-sxs-right`
+  classes defined in `_sass/post.scss` instead of Bootstrap margin utilities,
+  so behavior is consistent in both development and production.
 {%- endcomment -%}
 
 {% assign caption1 = include.caption1 | default: site.data.img-info[include.img1].title %}
@@ -21,13 +25,13 @@
 {% if include.figure1_classes %}
   {% assign figure1_classes = include.figure1_classes %}
 {% else %}
-  {% assign figure1_classes = base_figure_classes | append: " me-md-1" %}
+  {% assign figure1_classes = base_figure_classes | append: " sjg-sxs-left" %}
 {% endif %}
 
 {% if include.figure2_classes %}
   {% assign figure2_classes = include.figure2_classes %}
 {% else %}
-  {% assign figure2_classes = base_figure_classes | append: " ms-md-1" %}
+  {% assign figure2_classes = base_figure_classes | append: " sjg-sxs-right" %}
 {% endif %}
 
 {% assign image_base_classes = "figure-img img-fluid rounded" %}
