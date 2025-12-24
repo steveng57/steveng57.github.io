@@ -20,7 +20,6 @@ tags:
   ]
 image:
   path: /thumbnails/20230405_134555.avif
-  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAywAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAArAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAADTbWRhdBIACgkYEX9TBAQ0GhAyuwEaQBRRRQUA8ZSoXmqfFeDtlyn90jm9KAOpZymH2/+XO6VBJaYq6vmzJEYKcQURIMHzEnno/3LD5AGn9ePjFS5HB221ukHDfFvv6NQdWv3/53aCYOali/4Wp4ahLyPArJBnFf6SqNH7f+DIvMl9eqju6CO3EMYREpM4DKRtyHdQz9xnzx9OdGV3zVjeIiZ/QSug8kLjQnf3AEUvHojsnJTj8rTsFWf+A9NniSvHDfZk3RZ8g8oEFNOL7Ri5"
   alt: Let the Crafting Begin
 media_subpath: /assets/img/posts/punkins-playground
 ---
@@ -80,4 +79,3 @@ The legs are removable in case we ever want to move it. That's never going to ha
 - Gray {{ site.data.links.chillepoxy }} for the inlay
 - Latex paint from Benjamin Moore
 {: .sjg-list }
-

@@ -17,7 +17,6 @@ tags:
   ]
 image:
   path: /thumbnails/IMG_0639.avif
-  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAhAAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACMbWRhdBIACgkYET92CAhoNCAydRpAFFFFBQDPELVTyjowucZxUftKRntbEBm9fGBJs4CODTjHfuAzEu+A3ANzWw+pKDiXUPCjqHVaMC3LcPo1BG6EsKNTLkFvXDvePT1dSQkQBv0r3WHmEhbvT8Pf3tuMvUutHf92J/IgNO6REl+r/Pj7nmnrQA=="
   alt: It's a keeper
 media_subpath: /assets/img/posts/keepsake-box
 ---
@@ -62,4 +61,3 @@ Orange {{ site.data.links.chillepoxy }} for the inlay, which was carved with the
 - {{ site.data.links.domino }} for mitre joinery
 - {{ site.data.links.rubio }} Pure finish
 {: .sjg-list }
-

@@ -8,7 +8,6 @@ category: [Woodworking, Pets]
 tags: [Woodworking, Poplar, Bench, Pets, Epoxy, Inlay]
 image:
   path: /thumbnails/20220225_091904.avif
-  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAZgAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAgAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAABubWRhdBIACgkYET/2CAhoNCAyVxpAFFFFBQDPo6XqTamvvCAb5u0w6l4YdiYb2GQUPLy5NUf7s7vOBJleIb8YD0B+1rX2kk14lNibdx0DWDYvs3eJXEL7SObo+pRpAbAhK5ltmpimDLQOgA=="
   alt: Puppy paws are a woodworkers right of passage
 media_subpath: /assets/img/posts/puppy-steps
 ---
@@ -52,4 +51,3 @@ It's in the mudroom and serves as a way to get the boys up to the desk for clean
 - Poplar from {{ site.data.links.kjp }}
 - {{ site.data.links.domino }} joinery
 {: .sjg-list }
-

@@ -8,7 +8,6 @@ category: [Woodworking, Workshop]
 tags: [Woodworking, Workshop, Plywood, Baltic Birch, Dowels, Dominos]
 image:
   path: /thumbnails/20210827_212517.avif
-  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAfwAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACHbWRhdBIACgkYET92CAhoNCAycBpAFFFFBQDPC/OCQ2ofpKvYst9HvEpSzOb65DDJ60HUjUOWHxdBXjcS4IlXiY25RGLYoVm1yqRt7nMgusAjl1YmXSKG9JRRuuNfkezDoy6pL3m+/bwYxjUSg2c6G6V9INayeF4yq70y0CVWMSb8hyk="
   alt: Nature abhors a vacuum
 media_subpath: /assets/img/posts/vacuum-dolly
 ---
@@ -49,4 +48,3 @@ This gets a **lot** of use in the shop. It hasn't fallen over on me yet, but the
 - Big maple dowels
 - {{ site.data.links.leevalley }} casters
 {: .sjg-list }
-

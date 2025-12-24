@@ -17,7 +17,6 @@ tags:
   ]
 image:
   path: /thumbnails/IMG_0626.avif
-  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAA6AAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAArAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAADwbWRhdBIACgkYEX9TBAQ0GhAy2AEaQBRRRQUA8ZK/TTKvqGywyedDqQHi0TTbVVMuLLjl4ZIDfY7YclMMsTrWeJWk0oN8Ue6eYLq4cBNg+MYcufHAOluFlbAGttRFXkLr1edlhX+Y8d/R1ry43/SoNFXC5Ljt9K5v4Fdld4VRQAYNqT7aw/vr/VNwNk+e89bJAC/g42A+uMowzSXihSLiWAP8SxG1sHYPW9S2j3b/8m0SaANZhdPSIy8SqJxR11SfFeuJEmRKQo3WrIy5u+3MLYn/KpnwicJaH1UmMAk8VA6o9hemtrMJSeb7u8M="
   alt: A very special gift for a very special person
 media_subpath: /assets/img/posts/cribbage-board
 favorite: true
@@ -78,4 +77,3 @@ The pic below is of the board at my dad's place on a nice teak dining table that
 - Black {{ site.data.links.chillepoxy }} inlay
 - {{ site.data.links.shaper }} for carving
 {: .sjg-list }
-

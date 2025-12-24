@@ -9,7 +9,6 @@ category: [Woodworking, Home Decor]
 tags: [Woodworking, Walnut, Pencil Holder, Trays, Epoxy, Inlay]
 image:
   path: /thumbnails/IMG_0912.avif
-  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAApQAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACtbWRhdBIACgkYET92CAhoNCAylQEaQBRRRQUAuLQIe/4kYciWjNH9tE2tszO/vtmWG6LkXTIPeBqRk+wYbUL6RWtAsN3fbmYPsua+DwLZo1SZ1OaCagkdelLIVvjUPr28pdNwiJTa76Kiv26oj4Hty95458wGuBeB4ddhIjVrlRN8ktHvxGkqwUXQCZs8qoPg0psncZq2OvwPsW5JJp384U90ic6/KAW+gA=="
   alt: Lilly's Creations Pencil Holder
 media_subpath: /assets/img/posts/lillys-creations
 favorite: false
@@ -90,4 +89,3 @@ A subtle epoxy inlay done here, and coated with {{ site.data.links.rubio }} to b
 - {{ site.data.links.rubio }} Walnut Oil 2C for finish
 - {{ site.data.links.chillepoxy }} for the inlay
 {: .sjg-list }
-

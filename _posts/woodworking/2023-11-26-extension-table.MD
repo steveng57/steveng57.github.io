@@ -8,7 +8,6 @@ category: [Woodworking, Furniture]
 tags: [Woodworking, Ash, Furniture, Table]
 image:
   path: /thumbnails/IMG_0221.avif
-  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAsgAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAArAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAAC6bWRhdBIACgkYEX9TBAQ0GhAyogEaQBRRRQUA8jsR5UFnvGw0ULrP0D2o6He9IL5YZU1qgZ+2hlxPTnf/ABZuTzqqtzLF6JDcMT5FbiY3Mz9H/5eCscPQVUnrFEtPMRyqqe7o1XDn5y3LcMez99AaPktXZpORdB2higzkikdhBzbC/EHGb6L19WC08e21nb6Ii0L59tWjzz50OY7cM70AQn8/OgutnhPUBBw/D1l3f3+lfUQgoMA="
   alt: It's a desert topping and a floor wax
 media_subpath: /assets/img/posts/extension-table
 ---
@@ -78,4 +77,3 @@ This makes for a nice big dining area that can comfortably seat ten people, with
 - Metal legs purchased from {{ site.data.links.rustydesign }}. The irony (see what I did there) is not lost on me.
 - Rubio Monocoat and Chocolate Precolour Easy.
 {: .sjg-list }
-

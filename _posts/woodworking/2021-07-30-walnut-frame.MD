@@ -8,7 +8,6 @@ category: [Woodworking, Home Decor]
 tags: [Woodworking, Picture Frame, Walnut, Home Decor, Dominos]
 image:
   path: /thumbnails/20210730_234800423_iOS.avif
-  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAABFgAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAArAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAAEebWRhdBIACgkYEX9TBAQ0GhAyhgIaQBRRRQUA8jU2uBDPN41M+X7ivNLCk5eFkz+y2jOha9qIfjpfpIVvL/MpetnOPw34tRmmJ5fYH1RfWu5Jbq+c4DXH1VgX0n+JS2xs4P3pC7L6Keo6N6pz45vrJ4jPSGsQxTQiCB8N/BrSP5BQ+5SiJEN+g++B1L0ZN1ctH5nXw/C8NJJGgENNHpt0xpcwbRMmmCFJaIKmGvC1fOhrVFG+cVlUOESkQxZo04M2gCiinUvKetJCRugHu1t7kwq/B4a7zLLpLLhla/hzyEISyiNhuXjsvs+zVK5lPRg5awrFMtkRG1zwq1XlrPoAWZ+BaH49anNqs2QP8C5M8h3OT8LdWrtfY9S+"
   alt: For the Birds
 media_subpath: /assets/img/posts/walnut-frame
 ---
@@ -53,4 +52,3 @@ When I first wrote this blog entry, I had not yet taken the above picture, so in
 - {{ site.data.links.domino }} (to strengthen the miters)
 - "Infinity" clips to mount the backing to the outside frame from {{ site.data.links.leevalley }}
 {: .sjg-list }
-

@@ -11,12 +11,6 @@
 .PARAMETER RegenerateImages
     Regenerate derived AVIF assets (thumbnails/tinyfiles) and image captions before serving
 
-.PARAMETER EmbedLqip
-    Embeds a base64-encoded LQIP (data URI) into each post's front matter (image.lqip)
-
-.PARAMETER OverwriteLqip
-    When used with -EmbedLqip, overwrites existing image.lqip entries (default: skip posts that already have image.lqip)
-
 .PARAMETER NoDrafts
     Exclude drafts from the build
 
@@ -67,8 +61,6 @@
 [CmdletBinding()]
 param(
     [switch]$RegenerateImages,
-    [switch]$EmbedLqip,
-    [switch]$OverwriteLqip,
     [switch]$NoDrafts,
     [switch]$NoFuture,
     [switch]$NoLiveReload,
@@ -133,7 +125,7 @@ function Test-Dependencies {
         }
     }
     
-    if ($RegenerateImages -or $EmbedLqip) {
+    if ($RegenerateImages) {
         $imageTools = @{
             "ffmpeg" = "FFMPEG"
             "magick" = "ImageMagick"
@@ -145,20 +137,8 @@ function Test-Dependencies {
                 Write-Success "$($tool.Value) is available"
             }
             catch {
-                if ($EmbedLqip -and $tool.Key -eq 'magick') {
-                    Write-Error "ImageMagick is required for -EmbedLqip"
-                    $missing += 'ImageMagick'
-                } else {
-                    Write-Warning "$($tool.Value) is not available - image regeneration may fail"
-                }
+                Write-Warning "$($tool.Value) is not available - image regeneration may fail"
             }
-        }
-    }
-
-    if ($EmbedLqip) {
-        if (-not (Test-Path ".\\tools\\set-post-lqip.ps1")) {
-            Write-Error "tools\\set-post-lqip.ps1 not found. Cannot embed LQIP into front matter."
-            $missing += 'tools\\set-post-lqip.ps1'
         }
     }
     
@@ -222,94 +202,6 @@ function Update-ImageAssets {
     } else {
         Write-Warning "gen-imagecaptions.ps1 not found"
     }
-
-    if ($EmbedLqip) {
-        Update-PostLqip
-    }
-}
-
-function Get-FrontMatterText {
-    param(
-        [Parameter(Mandatory=$true)]
-        [string]$Content
-    )
-
-    # Extract YAML front matter in a robust way. Only supports files that start with ---.
-    # Also handle potential UTF-8 BOM.
-    $normalized = $Content
-    if ($normalized.Length -gt 0 -and $normalized[0] -eq [char]0xFEFF) {
-        $normalized = $normalized.Substring(1)
-    }
-
-    $m = [regex]::Match(
-        $normalized,
-        "(?s)\A---\s*\r?\n(.*?)\r?\n---\s*\r?\n"
-    )
-
-    if (-not $m.Success) {
-        return $null
-    }
-
-    return $m.Groups[1].Value
-}
-
-function Test-PostHasImageLqip {
-    param(
-        [Parameter(Mandatory=$true)]
-        [string]$PostPath
-    )
-
-    try {
-        $raw = Get-Content -Raw -LiteralPath $PostPath -Encoding utf8
-        $fm = Get-FrontMatterText -Content $raw
-        if (-not $fm) { return $false }
-
-        # Look specifically for image.lqip inside the image: map.
-        $m = [regex]::Match($fm, "(?ms)^\s*image\s*:\s*\r?\n(?:[ \t].*\r?\n)*?[ \t]+lqip\s*:\s*.+$")
-        return $m.Success
-    } catch {
-        return $false
-    }
-}
-
-function Update-PostLqip {
-    Write-Step "Embedding LQIP into post front matter..."
-
-    $postsRoot = Join-Path $PSScriptRoot "_posts"
-    if (-not (Test-Path -LiteralPath $postsRoot)) {
-        Write-Warning "_posts folder not found; skipping LQIP embedding"
-        return
-    }
-
-    $postFiles = Get-ChildItem -Path $postsRoot -Recurse -File -Include *.md, *.MD
-    if (-not $postFiles -or $postFiles.Count -eq 0) {
-        Write-Info "No posts found under _posts; skipping LQIP embedding"
-        return
-    }
-
-    $updated = 0
-    $skipped = 0
-    $failed = 0
-
-    foreach ($post in $postFiles) {
-        if (-not $OverwriteLqip) {
-            if (Test-PostHasImageLqip -PostPath $post.FullName) {
-                $skipped++
-                continue
-            }
-        }
-
-        try {
-            # Force real writes even if the caller's session has $WhatIfPreference/$ConfirmPreference set.
-            & "${PSScriptRoot}\\tools\\set-post-lqip.ps1" -PostPath $post.FullName -WhatIf:$false -Confirm:$false
-            $updated++
-        } catch {
-            $failed++
-            Write-Warning "LQIP embedding failed for $($post.FullName): $_"
-        }
-    }
-
-    Write-Success "LQIP embedding complete. Updated: $updated; Skipped: $skipped; Failed: $failed"
 }
 
 # Build the Jekyll command
@@ -374,8 +266,6 @@ function Show-CustomHelp {
     Write-Host "  .\serve.ps1                    # Start development server with defaults" -ForegroundColor Gray
     Write-Host "  .\serve.ps1 -Production        # Start in production mode" -ForegroundColor Gray
     Write-Host "  .\serve.ps1 -RegenerateImages  # Regenerate image assets before serving" -ForegroundColor Gray
-    Write-Host "  .\serve.ps1 -EmbedLqip           # Embed base64 LQIP into post front matter" -ForegroundColor Gray
-    Write-Host "  .\serve.ps1 -RegenerateImages -EmbedLqip  # Regenerate images and embed LQIP" -ForegroundColor Gray
     Write-Host ""
     Write-Host "OPTIONS:" -ForegroundColor Yellow
     Write-Host ""
@@ -393,8 +283,6 @@ function Show-CustomHelp {
     Write-Host "  Build Options:" -ForegroundColor Cyan
     Write-Host "    -Clean               Clean _site directory before building" -ForegroundColor White
     Write-Host "    -RegenerateImages    Run image processing scripts before serving" -ForegroundColor White
-    Write-Host "    -EmbedLqip           Embed base64 LQIP into posts (image.lqip)" -ForegroundColor White
-    Write-Host "    -OverwriteLqip       Overwrite existing image.lqip when embedding" -ForegroundColor White
     Write-Host ""
     Write-Host "  Utility:" -ForegroundColor Cyan
     Write-Host "    -CheckOnly           Only check dependencies, don't serve" -ForegroundColor White
@@ -449,11 +337,6 @@ try {
     # Regenerate images if requested
     if ($RegenerateImages) {
         Update-ImageAssets
-    }
-
-    # Embed LQIP even when not regenerating images
-    if ($EmbedLqip -and -not $RegenerateImages) {
-        Update-PostLqip
     }
 
     # Configure JEKYLL_ENV based on mode

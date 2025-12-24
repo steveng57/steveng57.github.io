@@ -9,7 +9,6 @@ tags:
   [Woodworking, Walnut, Trays, Epoxy, Inlay, Home Decor, Shaper Origin, Dominos]
 image:
   path: /thumbnails/IMG_0079.avif
-  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAgQAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACJbWRhdBIACgkYET92CAhoNCAychpAFFFFBQDJpg+1tKI1H24T6gkHHAZwqRwQNfE6fjfLdnUGda/wEV0Y1r3uO+QD18lkNfAKNQYcSxiU9mtieUyS0+nWvB6KITfL7xbwohxwJXEKaaNt1p+4sHF+ijX+1Ewjz9ByErArpvm0s907IJTUwA=="
   alt: Hey hey it's the munchies
 media_subpath: /assets/img/posts/munchies-tray
 ---
@@ -59,4 +58,3 @@ A tray full of munchies in its new home, which is normally resting upon the [ext
 {: .sjg-list }
 
 [Compound Angle Calculator]: https://jansson.us/jcompound.html
-

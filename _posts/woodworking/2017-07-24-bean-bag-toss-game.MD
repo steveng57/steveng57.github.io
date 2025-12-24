@@ -8,7 +8,6 @@ category: [Woodworking, Games]
 tags: [Woodworking, Games, Outdoors, Plywood, Red Oak, Cedar]
 image:
   path: /thumbnails/20170724_234953.avif
-  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAABewAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAA5AAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAAGDbWRhdBIACgkYEX/DBAQ0GhAy6wIaQBRRRQUA8ZSBMJj5Wwjkja5XQ7mTD6DLlngCGYedIBJEI2BhOgObVlPueQTd4T91olhbTJaLpxdygalMWzYx3Int13E/2SqZPFNoqvClQkeIxVrifuJNqB7b2cnrxXM6CAGYzT3p0Mpk3EvYNbF0AV2d1qmwiau49Rtv0Gz1HVga5GtZj8hXf8pYE7rPb5ALxTEGaPZGtyCiGwQ7+GfjBeS6FZzOQZbtW2BhJhy0GtdtsJojALd6mxiSSXukrMhDYYKTaE66mK6L3Y5bbkOZAQcGM+0FeRy+gSCkshUXdjqlzsch1juoOuJ5tS8GbKBUQqTWFiSYPhX0lHnhlwvWLKRhqhDuqJ4AhCuONhdmeexPwrStwvCM9dBdzf4vQl2YhE0Efknd+F40QtGRqUeOQxkl2nHYqTxcVb7qJtr3M204YgtWd7lilXvFwMovNyMD9UvVSmc/bb27OalgJfx4/uLgj5APt7uE2TA="
   alt: Lots of practice carving holes on this one
 media_subpath: /assets/img/posts/bean-bag-toss-game
 ---
@@ -54,4 +53,3 @@ Debbie stamped some dog paw prints on the final version which made it look reall
 - {{ site.data.links.kreg }} pocket hole jig and screws
 - Custom built router large radius jig
 {: .sjg-list }
-

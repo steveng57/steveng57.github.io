@@ -8,7 +8,6 @@ category: [Woodworking, Workshop]
 tags: [Woodworking, Workshop, Router, Mitre Stand, Table, Plywood, Baltic Birch, Dominos]
 image:
   path: /thumbnails/20230405_141755.avif
-  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAwQAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAADJbWRhdBIACgkYET92CAhoNCAysQEaQBRRRQUA0AbYwIcmf3fUv5QNHQwdoeFa+p1Q5KsIWgKTxLRj0D+aMmdd+2tYYqbEy0GngJLjYPPFJe8nEFMINLTaG3jvbNDvh3+j8H4C4DBgjkXJmlHD2hYeYX0f3PTxfIJNNXFzp9VlNOA/3AV0tWy3p/LDNvqxXopLHGHU3+xMTcJVeEWXcdGTYb7BVv04ktKjyOlg/6LoGd+762Sv2ziyiohPhG6YQEuyMAppWHY="
   alt: Spiffy new router table
 media_subpath: /assets/img/posts/shop-projects
 ---
@@ -58,4 +57,3 @@ It is so nice to have a proper set of workshop stands for the router and the mit
 - {{ site.data.links.richelieu }} drawer pulls
 - {{ site.data.links.domino }} for joinery
 {: .sjg-list }
-
