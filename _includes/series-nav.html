@@ -4,9 +4,14 @@
   Usage:
     - Set `series: "Some Series Name"` in a post's front matter.
     - Optional: set `series_title` to override the displayed title.
+    - Optional: pass `mode` when including:
+        - `mode="body"` (default): prompt-style block in post body
+        - `mode="panel"`: right-sidebar panel section
 
   Default ordering is by `date` ascending (oldest -> newest).
 {%- endcomment -%}
+
+{%- assign series_mode = include.mode | default: 'body' -%}
 
 {%- if page.series != nil and page.series != '' -%}
   {%- assign series_name = page.series -%}
@@ -14,19 +19,39 @@
   {%- assign series_posts = site.posts | where: 'series', series_name | sort: 'date' -%}
 
   {%- if series_posts != nil and series_posts.size > 1 -%}
-    <blockquote class="prompt-info mt-4 mb-4">
-      <p>This post is part of a series:<strong> {{ series_title }} </strong></p>
-      <ol class="mb-0">
-        {%- for p in series_posts -%}
-          <li>
-            {%- if p.url == page.url -%}
-              <strong>{{ p.title }}</strong>
-            {%- else -%}
-              <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
-            {%- endif -%}
-          </li>
-        {%- endfor -%}
-      </ol>
-    </blockquote>
+
+    {%- if series_mode == 'panel' -%}
+      <section id="panel-series" class="mb-3">
+        <h2 class="panel-heading ps-3 pb-2 mb-0">Also In This Series</h2>
+        <ul class="content list-unstyled ps-3 ms-1 pb-1 mt-2">
+          {%- for p in series_posts -%}
+            <li class="text-truncate lh-lg">
+              {%- if p.url == page.url -%}
+                <span class="sjg-series-current">{{ p.title }}</span>
+              {%- else -%}
+                <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </section>
+
+    {%- else -%}
+      <blockquote class="prompt-info mt-4 mb-4">
+        <p>This post is part of a series:<strong> {{ series_title }} </strong></p>
+        <ul class="mb-0">
+          {%- for p in series_posts -%}
+            <li>
+              {%- if p.url == page.url -%}
+                <strong>{{ p.title }}</strong>
+              {%- else -%}
+                <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </blockquote>
+    {%- endif -%}
+
   {%- endif -%}
 {%- endif -%}

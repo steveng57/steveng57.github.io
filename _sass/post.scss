@@ -65,7 +65,7 @@
     }
 }
 
-img {
+main img {
     border-radius: 10px;
 }
 
@@ -82,16 +82,14 @@ img {
 }
 
 /* Search-like form utilities (match Chirpy search box look) */
-.sjg-search-like {
+.sjg-search-like,
+.sjg-search-like-group {
     border: 1px solid var(--search-border-color);
     border-radius: 1rem;
     background: var(--main-bg);
 }
 
 .sjg-search-like-group {
-    border: 1px solid var(--search-border-color);
-    border-radius: 1rem;
-    background: var(--main-bg);
     padding: 0 .5rem;
 }
 
@@ -110,7 +108,6 @@ img {
 
 figcaption {
     font-size: 0.875rem; /* Adjust as needed */
-    color: var(--text-color);
     text-align: center;
 }
 
@@ -119,6 +116,7 @@ figure img {
     height: auto;
 }
 
+figcaption,
 .figure-caption {
     color: var(--text-color);
 }
@@ -142,15 +140,17 @@ video.embed-video + em {
     margin-bottom: 0rem !important;
 }
 
-h3 {
+h3,
+h4 {
     margin-top: 0.25rem !important;
     margin-bottom: 0.5em !important;
+}
+
+h3 {
     font-size: 1.33rem !important;
 }
 
 h4 {
-    margin-top: 0.25rem !important;
-    margin-bottom: 0.5em !important;
     font-size: 1.17rem !important;
 }
 
@@ -159,10 +159,9 @@ h4 {
   }
   
 .sjg-list li::before {
-    content: "\2713"; /* This is the Unicode for the Font Awesome check icon */
+    content: "\2713"; /* Unicode check mark */
     display: inline-block;
     margin-right: 10px;
-    font-family: 'FontAwesome';
 }
 
 .sjg-br {
@@ -175,3 +174,39 @@ h4 {
   text-align: center;
   margin: 1em 0;
 }
+
+/* --- Series + TOC coexistence ---
+   The Series panel is rendered near the TOC and shares the same sidebar area.
+   Chirpy's default `#toc-wrapper ul li a { padding: ... }` rule is intentionally
+   broad; we narrow its effect by zeroing it out and reapplying it only to the
+   actual TOC nav (`#toc`).
+*/
+
+/* Neutralize TOC link padding for non-TOC lists (e.g. Series). */
+#toc-wrapper ul li > a {
+    padding: 0;
+}
+
+/* Reapply Chirpy's intended padding to actual TOC links only. */
+#toc-wrapper #toc ul li > a {
+    padding: 0.4rem 0 0.4rem 1.25rem;
+}
+
+/* Series panel: mimic Chirpy panel links (e.g. "Recently Updated"). */
+#panel-series {
+    color: var(--text-muted);
+}
+
+#panel-series a {
+    color: inherit;
+
+    /* Chirpy panel links remove the default underline/bottom-border. */
+    text-decoration: none;
+    border-bottom: none;
+}
+
+#panel-series a:hover {
+    /* Match panel behavior: underline effect via border, not text-decoration. */
+    border-bottom: 1px solid currentColor;
+}
+

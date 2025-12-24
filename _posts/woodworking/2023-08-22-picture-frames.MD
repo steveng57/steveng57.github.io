@@ -59,4 +59,4 @@ The trick to keeping it centred is that if you use 7 cards on the left, then you
 - {{ site.data.links.domino }} for mitre joinery
 {: .sjg-list }
 
-{% include series-nav.html %}
+
