@@ -176,22 +176,39 @@ h4 {
   margin: 1em 0;
 }
 
-/* Series panel: match panel link styling and align with TOC indentation */
-#toc-wrapper #panel-series a,
-#toc-wrapper #panel-series .sjg-series-current {
-    color: var(--text-muted);
-    display: block;
+/* --- Series + TOC coexistence ---
+   The Series panel is rendered near the TOC and shares the same sidebar area.
+   Chirpy's default `#toc-wrapper ul li a { padding: ... }` rule is intentionally
+   broad; we narrow its effect by zeroing it out and reapplying it only to the
+   actual TOC nav (`#toc`).
+*/
 
-    /* Keep TOC indentation, but match tighter list spacing like "Recently Updated" */
-    padding: 0 0 0 1.25rem !important;
-
-    /* Ensure no persistent underline from global link styling */
-    text-decoration: none !important;
-    background-image: none !important;
-    border-bottom: none !important;
+/* Neutralize TOC link padding for non-TOC lists (e.g. Series). */
+#toc-wrapper ul li a {
+    padding: 0;
 }
 
-#toc-wrapper #panel-series a:hover {
-    text-decoration: underline !important;
+/* Reapply Chirpy's intended padding to actual TOC links only. */
+#toc-wrapper #toc ul li a {
+    padding: 0.4rem 0 0.4rem 1.25rem;
+}
+
+/* Series panel: mimic Chirpy panel links (e.g. "Recently Updated"). */
+#panel-series {
+    color: var(--text-muted);
+}
+
+#panel-series a {
+    color: inherit;
+
+    /* Chirpy panel links remove the default underline/bottom-border. */
+    text-decoration: none;
+    border-bottom: none;
+}
+
+#panel-series a:hover {
+    /* Match panel behavior: underline effect via border, not text-decoration. */
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
 }
 
