@@ -7,8 +7,15 @@
 	background: var(--main-bg);
 }
 
+/* Match site image rounding within the gallery (gallery layout has no <main>). */
+.inline-gallery-container img,
+.lg-outer .lg-img-wrap img,
+.lg-outer .lg-object {
+	border-radius: 10px;
+}
+
 .lg-thumb-item img {
-	border-radius: 0px;
+	border-radius: 10px;
 }
 
 .inline-gallery-captions {
