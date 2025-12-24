@@ -9,7 +9,7 @@
     serving options for different development scenarios.
 
 .PARAMETER RegenerateImages
-    Regenerate thumbnails and image captions before serving
+    Regenerate derived AVIF assets (thumbnails/tinyfiles) and image captions before serving
 
 .PARAMETER NoDrafts
     Exclude drafts from the build
@@ -129,7 +129,6 @@ function Test-Dependencies {
         $imageTools = @{
             "ffmpeg" = "FFMPEG"
             "magick" = "ImageMagick"
-            "avifenc" = "AVIF Encoder"
         }
         
         foreach ($tool in $imageTools.GetEnumerator()) {
@@ -175,33 +174,19 @@ function Clear-SiteDirectory {
 # Regenerate image assets
 function Update-ImageAssets {
     Write-Step "Regenerating image assets..."
-    
-    # Convert primary assets to AVIF
-    if (Test-Path "convert-to-avif.ps1") {
-        Write-Info "Converting source images to AVIF..."
-        try {
-            & ".\convert-to-avif.ps1"
-            Write-Success "AVIF generation complete"
-        }
-        catch {
-            Write-Warning "AVIF conversion failed: $_"
-        }
-    } else {
-        Write-Warning "convert-to-avif.ps1 not found"
-    }
 
-    # Generate thumbnails
-    if (Test-Path "gen-thumbnails.ps1") {
-        Write-Info "Generating thumbnails..."
+    # Generate derived AVIF assets (thumbnails/tinyfiles/posters)
+    if (Test-Path "gen-derived-avif.ps1") {
+        Write-Info "Generating derived AVIF assets..."
         try {
-            & ".\gen-thumbnails.ps1"
-            Write-Success "Thumbnails generated"
+            & ".\gen-derived-avif.ps1"
+            Write-Success "Derived AVIF assets generated"
         }
         catch {
-            Write-Warning "Thumbnail generation failed: $_"
+            Write-Warning "Derived AVIF generation failed: $_"
         }
     } else {
-        Write-Warning "gen-thumbnails.ps1 not found"
+        Write-Warning "gen-derived-avif.ps1 not found"
     }
     
     # Generate image captions

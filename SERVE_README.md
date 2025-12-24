@@ -28,7 +28,7 @@ This repository now includes an enhanced PowerShell script for running the Jekyl
 
 ### Image Asset Management
 ```powershell
-# Regenerate thumbnails and captions before serving
+# Regenerate derived AVIF assets (thumbnails/tinyfiles) and captions before serving
 .\serve.ps1 -RegenerateImages
 
 # Clean build directory and regenerate images
