@@ -123,4 +123,4 @@ Deb created an excellent colour match, so the frame goes great with the branches
 - {{ site.data.links.domino }} for mitre joinery
 {: .sjg-list }
 
-{% include series-nav.html %}
+

@@ -1,0 +1,15 @@
+<!-- The right-side Panel -->
+
+<aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
+  <div class="access">
+    <!-- Get 5 last posted/updated posts -->
+    {% include_cached access-lastmod.html %}
+
+    <!-- The trending tags list -->
+    {% include_cached trending-tags.html %}
+
+    {% include series-nav.html mode="panel" %}
+  </div>
+
+  {% include toc.html %}
+</aside>
