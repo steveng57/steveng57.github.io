@@ -54,8 +54,8 @@
   {% assign caption_classes = caption_classes | append: " " | append: include.caption_classes %}
 {% endif %}
 
-{% assign alt1 = include.alt1 | default: include.img1 %}
-{% assign alt2 = include.alt2 | default: include.img2 %}
+{% assign alt1 = include.alt1 | default: img1_meta.title | default: include.img1 %}
+{% assign alt2 = include.alt2 | default: img2_meta.title | default: include.img2 %}
 {% assign title1 = include.title1 | default: caption1 %}
 {% assign title2 = include.title2 | default: caption2 %}
 
@@ -63,8 +63,8 @@
   <figure class="{{ figure1_classes | strip }}">
     <img
       src="{{ include.img1 }}"
-      alt="{{ alt1 }}"
-      title="{{ title1 }}"
+      alt="{{ alt1 | escape }}"
+      title="{{ title1 | escape }}"
       class="{{ img1_classes | strip }}"
       {% if img1_meta and img1_meta.width and img1_meta.height %}
         width="{{ img1_meta.width }}" height="{{ img1_meta.height }}"
@@ -75,8 +75,8 @@
   <figure class="{{ figure2_classes | strip }}">
     <img
       src="{{ include.img2 }}"
-      alt="{{ alt2 }}"
-      title="{{ title2 }}"
+      alt="{{ alt2 | escape }}"
+      title="{{ title2 | escape }}"
       class="{{ img2_classes | strip }}"
       {% if img2_meta and img2_meta.width and img2_meta.height %}
         width="{{ img2_meta.width }}" height="{{ img2_meta.height }}"

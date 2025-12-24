@@ -72,15 +72,15 @@
 {% endif %}
 {% assign figure_styles = figure_styles | strip %}
 
-{% assign alt_text = include.alt | default: include.img %}
+{% assign alt_text = include.alt | default: img_meta.title | default: include.img %}
 {% assign title_text = include.title | default: caption %}
 
 <div style="height: 0.001rem;"></div>
 <figure class="{{ figure_classes | strip }}"{% if figure_styles != "" %} style="{{ figure_styles }}"{% endif %}>
   <img
     src="{{ include.img }}"
-    alt="{{ alt_text }}"
-    title="{{ title_text }}"
+    alt="{{ alt_text | escape }}"
+    title="{{ title_text | escape }}"
     class="{{ img_classes | strip }}"
     {% if img_meta and img_meta.width and img_meta.height %}
       width="{{ img_meta.width }}" height="{{ img_meta.height }}"
