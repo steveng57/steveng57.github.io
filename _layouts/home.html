@@ -56,8 +56,25 @@ pagination:
 
                       {% assign f_alt = fp.image.alt | xml_escape | default: 'Preview Image' %}
 
+                      {% assign f_img_key = fsrc | split: '/' | last %}
+                      {% assign f_img_meta = site.data.img-info[f_img_key] %}
+
                       <div class="col-md-5">
-                        <img src="{{ fsrc }}" alt="{{ f_alt }}" class="img-fluid">
+                        <div class="preview-img">
+                          <img
+                            src="{{ fsrc }}"
+                            alt="{{ f_alt }}"
+                            {% if f_img_meta and f_img_meta.width and f_img_meta.height %}
+                              width="{{ f_img_meta.width }}" height="{{ f_img_meta.height }}"
+                            {% endif %}
+                            {% if fsrc contains '/thumbnails/' %}
+                              srcset="{{ fsrc }} 1x, {{ fsrc | replace: '/thumbnails/', '/thumbnails-2x/' }} 2x"
+                              sizes="(min-width: 768px) 320px, 100vw"
+                            {% endif %}
+                            decoding="async"
+                            loading="eager"
+                          >
+                        </div>
                       </div>
 
                       {% assign body_col = '7' %}
@@ -113,6 +130,8 @@ pagination:
             {% endunless %}
           {% endif %}
 
+          {% assign use_lqip = false %}
+
           {% if post.image.lqip %}
             {% assign lqip = post.image.lqip %}
 
@@ -127,7 +146,7 @@ pagination:
               {% endunless %}
             {% endif %}
 
-            {% assign lqip_attr = 'lqip="' | append: lqip | append: '"' %}
+            {% assign use_lqip = true %}
           {% endif %}
 
           {% assign img_key = src | split: '/' | last %}
@@ -136,25 +155,32 @@ pagination:
           {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
 
           <div class="col-md-5">
-            <img
-              src="{{ src }}"
-              alt="{{ alt }}"
-              {{ lqip_attr }}
-              {% if img_meta and img_meta.width and img_meta.height %}
-                width="{{ img_meta.width }}" height="{{ img_meta.height }}"
-              {% endif %}
-              {% if src contains '/thumbnails/' %}
-                srcset="{{ src }} 1x, {{ src | replace: '/thumbnails/', '/thumbnails-2x/' }} 2x"
-                sizes="(min-width: 768px) 320px, 100vw"
-              {% endif %}
-              decoding="async"
-              {% if forloop.index <= eager_preview_count %}
-                loading="eager"
-                {% if forloop.index == 1 %}fetchpriority="high"{% endif %}
-              {% else %}
-                loading="lazy"
-              {% endif %}
-            >
+            <div class="preview-img {% if use_lqip %}blur{% elsif forloop.index > eager_preview_count %}shimmer{% endif %}">
+              <img
+                {% if use_lqip %}
+                  src="{{ lqip }}"
+                  data-src="{{ src }}"
+                  data-lqip="true"
+                {% else %}
+                  src="{{ src }}"
+                {% endif %}
+                alt="{{ alt }}"
+                {% if img_meta and img_meta.width and img_meta.height %}
+                  width="{{ img_meta.width }}" height="{{ img_meta.height }}"
+                {% endif %}
+                {% if use_lqip != true and src contains '/thumbnails/' %}
+                  srcset="{{ src }} 1x, {{ src | replace: '/thumbnails/', '/thumbnails-2x/' }} 2x"
+                  sizes="(min-width: 768px) 320px, 100vw"
+                {% endif %}
+                decoding="async"
+                {% if forloop.index <= eager_preview_count %}
+                  loading="eager"
+                  {% if forloop.index == 1 %}fetchpriority="high"{% endif %}
+                {% else %}
+                  loading="lazy"
+                {% endif %}
+              >
+            </div>
           </div>
 
           {% assign card_body_col = '7' %}
