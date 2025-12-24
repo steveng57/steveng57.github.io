@@ -5,8 +5,16 @@ layout: nil
 <html lang="{{ lang }}">
 
 <head>
-    <title>{{ page.title }}</title>
-    <meta name='description' content="Steven Goulet's Image Gallery from his photo blog.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+
+    {% seo %}
+
+        {% if page.image == nil and site.social_preview_image %}
+            <meta property="og:image" content="{{ site.social_preview_image | absolute_url }}" />
+            <meta name="twitter:image" content="{{ site.social_preview_image | absolute_url }}" />
+        {% endif %}
+
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lightgallery-bundle.min.css" integrity="sha512-fXavT4uA4L0uTUFHC275D7zd751ohbSuD6VUMc5JysWfmR+NxTI3w7etE7N9hjTETcoh0w0V+24Cel4xXnqvCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,6 +26,8 @@ layout: nil
         }
     </style>
 </head>
+
+<body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/lightgallery.min.js" integrity="sha512-n02TbYimj64qb98ed5WwkNiSw/i9Xlvv4Ehvhg0jLp3qMAMWCYUHbOMbppZ0vimtyiyw9NqNqxUZC4hq86f4aQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/zoom/lg-zoom.min.js" integrity="sha512-fwxc/NvaA3du4ZRE6J/Ilrqi2xwOB1QfHBR4neA+ha13/pkweiRfPgBiV4VbfAf/Vi3rXAXdQ3zexUJ1V2bWrg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
@@ -114,4 +124,5 @@ inlineGallery.openGallery(slideIndex);
 
 });
 </script>
+</body>
 </html>
