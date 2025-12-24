@@ -8,6 +8,7 @@ category: [Woodworking, Kitchen]
 tags: [Woodworking, Charcuterie Board, Kitchen, Maple, Walnut]
 image:
   path: /thumbnails/20220227_191616.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAArgAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAAC2bWRhdBIACgkYET92CAhoNCAyngEaQBRRRQUA0TQ4Te7uDcu0vcDBngbcQf2ThnKSO0PL1OAjI9CFT8vGUEBO6hJTtN05WqIl8IoT4F7+m6nZKiOlhbTHjvDs/OampMDJFRWYpADxwC2B/B5oRUDURaZ7+KBH49W81GEN00PptHATOmIXwhirqcyZNzErXtXetl2esPquuWvS1k4y0IdlOndn46Dxc1JxaeyQ0r+5p3+57A=="
   alt: One for Theresa
 media_subpath: /assets/img/posts/charcuterie-boards
 ---
@@ -41,3 +42,4 @@ It was finished with a food safe product called Honeybees Natural Wood Cream, mo
 - **Mahogony:** From Africa, the color is variable, ranging from a very pale pink to a deeper reddish brown, sometimes with streaks of medium to dark reddish brown. Color tends to darken with age. Quartersawn surfaces can also exhibit a ribbon-stripe appearance. Comprised of a handful of species from the Khaya genus, all of which are native to Africa. Sometimes lacks the deeper reddish brown color and durability that is common for true mahogany.
 - **Padauk:** From Africa, the wood color can vary, ranging from a pale pinkish orange to a deep brownish red. Most pieces tend to start reddish orange when freshly cut, darkening substantially over time to a reddish/purplish brown (some lighter pieces age to a grayish brown).  
   Padauk has a very unique reddish orange coloration, and the wood is sometimes referred to by the name Vermillion. This dramatic color darkens to a beautiful deep red-brown. Padauk is moderately heavy, strong, and stiff, with exceptional stability. It’s a popular hardwood among hobbyist woodworkers because of its unique color and versatility.
+

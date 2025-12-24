@@ -33,6 +33,19 @@ This repository now includes an enhanced PowerShell script for running the Jekyl
 
 # Clean build directory and regenerate images
 .\serve.ps1 -Clean -RegenerateImages
+
+# (Optional) Also embed an inline base64 LQIP into post front matter
+# Writes image.lqip as a data URI: data:image/avif;base64,...
+.\serve.ps1 -EmbedLqip
+
+# Overwrite existing image.lqip entries
+.\serve.ps1 -EmbedLqip -OverwriteLqip
+
+# Or combine with image regeneration
+.\serve.ps1 -RegenerateImages -EmbedLqip
+
+# Or run it for a single post
+.\tools\set-post-lqip.ps1 -PostPath .\_posts\home-and-garden\2025-06-20-new-pc-build.MD
 ```
 
 ### Development Options
@@ -50,6 +63,8 @@ This repository now includes an enhanced PowerShell script for running the Jekyl
 | Parameter | Description | Default |
 |-----------|-------------|---------|
 | `-RegenerateImages` | Run image processing scripts before serving | Off |
+| `-EmbedLqip` | Embed base64 LQIP into posts (image.lqip) | Off |
+| `-OverwriteLqip` | Overwrite existing image.lqip when embedding | Off (skip existing) |
 | `-NoDrafts` | Exclude draft posts | Off (drafts included) |
 | `-NoFuture` | Exclude future-dated posts | Off (future posts included) |
 | `-NoLiveReload` | Disable live reload | Off (live reload enabled) |

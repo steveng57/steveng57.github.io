@@ -10,6 +10,7 @@ tags: [Woodworking, Picture Frame, Frames, Poplar, Home Decor, Dominos]
 series: Picture Frames
 image:
   path: /thumbnails/IMG_1674.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAaQAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAZAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAABxbWRhdBIACgkYET+GCAhoNCAyWhpAFFFFBQDRMhd1iEUgjQJzMsm+l3dsrxXxXUOmOVokHEuWhfUShe3rUq0XPW37tU0p8zBgIoCWFgDxt8Y9HsCQ+tDiX5ciqxebvNKTxSTQvdEcGJpXmBRMGA=="
   alt: More Picture Frames
 media_subpath: /assets/img/posts/more-picture-frames
 favorite: false
@@ -124,3 +125,4 @@ Deb created an excellent colour match, so the frame goes great with the branches
 {: .sjg-list }
 
 {% include series-nav.html %}
+

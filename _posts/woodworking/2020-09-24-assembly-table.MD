@@ -8,6 +8,7 @@ category: [Woodworking, Workshop]
 tags: [Woodworking, Assembly Table, Workbench, Workshop]
 image:
   path: /thumbnails/20201001_193728.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAjAAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACUbWRhdBIACgkYET92CAhoNCAyfRpAFFFFBQDPWnb51pq/fx7R2yI5cyu53pG376pq4lJZk1IpO25XRwXZGHffSGd0jf0pU6g2qmtiRR1rWRJ9fIhRK1+/R5rD4emZfesm/TmwLWpd7IUdHvUcrJoobVqKmzT6+qekRfRylndJ2CqBaOYxvD9+KQRokao5PLek"
   alt: About 2 weeks to assemble
 media_subpath: /assets/img/posts/assembly-table
 ---
@@ -64,3 +65,4 @@ Anyway, there is a special jig you can get from {{ site.data.links.leevalley }} 
 - Aluminum - Lots and lots of it from {{ site.data.links.vention }} in Montreal
 - MDF for the top from the big box store
 {: .sjg-list }
+

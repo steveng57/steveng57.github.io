@@ -9,6 +9,7 @@ category: [Woodworking, Furniture]
 tags: [Woodworking, Walnut, Table, Crafts, Bench, Dominos]
 image:
   path: /thumbnails/IMG_0693.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAqAAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACwbWRhdBIACgkYET92CAhoNCAymAEaQBRRRQUAz6R/R7kPSIpi0pM8sGb3T8RfibCQuvFfr0Q6i6E9/EzDh1TfVhRlFkc+NcEK88CU5tO1GGABR4f/D9pl59WSIaVAh3diYyCX9lTud5WEXD1DjPyTFi9ZH9fxS4OP6CXu89SVVDGo/N2Hb0imneTGvLJa47B7SJcfcGRUcUw26zfHmyPjk9NgTx6xI8+jLwvfEA=="
   alt: Walnut Table and Benches
 media_subpath: /assets/img/posts/walnut-table
 favorite: true
@@ -104,3 +105,4 @@ Here is a mini photo gallery of the table and benches setup in our theatre room.
 - Hardware from {{ site.data.links.leevalley }}
 - Lots of {{ site.data.links.domino }} usage, both the standard and the XL, for the joinery
 {: .sjg-list }
+

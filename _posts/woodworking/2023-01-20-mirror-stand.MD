@@ -8,6 +8,7 @@ category: [Woodworking, Jewelry Boxes]
 tags: [Woodworking, Jewelry Boxes, Epoxy, Inlay, Poplar]
 image:
   path: /thumbnails/IMG_0734.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAigAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACSbWRhdBIACgkYET92CAhoNCAyexpAFFFFBQDPERnE97bTLcnT34sRmiNs8DNjK+6HsNVa0KvdrNiPQkxGVazNCKA2nMstxAZYrMAlDeyivz9JtnZblSOJ+PGxoKehL7gtINPyRCjwHrJcTfbXJsNZMLKcB3iS0RQSxdiPgsHFXZQ0BeuE2l7WTZfMfRldoA=="
   alt: Combo Jewelry Box Thing and Mirror Stand
 media_subpath: /assets/img/posts/mirror-stand
 ---
@@ -53,3 +54,4 @@ Here it is with the mirror installed. The top has a couple of trays carved in it
 - {{ site.data.links.domino }} for the mitre joinery
 - {{ site.data.links.origin }} for the carve
 {: .sjg-list }
+

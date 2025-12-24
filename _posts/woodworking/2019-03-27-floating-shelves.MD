@@ -8,6 +8,7 @@ category: [Woodworking, Home Decor]
 tags: [Woodworking, Red Oak, Shelves, Floating Shelves]
 image:
   path: /thumbnails/IMG_0752.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAegAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACCbWRhdBIACgkYET92CAhoNCAyaxpAFFFFBQDRUsxbNfFBEA8lWU9Eah44lpYE3f+H4ygdhofYXDWcp2MDiiHXql9YZOx6ZuJxFj5PuiH05Zl1cGDGN5iyaiqECTxKZ2tf0rtPF2bmWDaX9XUBQ0JAUSD4qJ59BRJ0otxjoYWg"
   alt: A smooch from a pooch is definitely good for the soul
 media_subpath: /assets/img/posts/floating-shelves
 ---
@@ -46,3 +47,4 @@ The shelves are 8 inches deep by 32 inches wide by 1.5 inches thick. And pretty 
 - Red Oak from {{ site.data.links.robertbury }}
 - {{ site.data.links.generalfinishes }} black stain and polyurethane
 {: .sjg-list }
+

@@ -8,6 +8,7 @@ category: [Woodworking, Home Decor]
 tags: [Woodworking, Red Oak, Epoxy, Inlay, Kitchen]
 image:
   path: /thumbnails/IMG_0822.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAmwAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACjbWRhdBIACgkYET92CAhoNCAyiwEaQBRRRQQAz1sWJ/cmMEId1KVP7tqneEge29OXXqJjaFq9wUf3Y4FV+sYinBfBc69kjf7ZsUyIzPvY3qgRS4jHYYDegNx5J5eZEq6U6UZCowWWU+auyhUHIkF29Bog/KDO9LJhVTO6CAGcyE64/0AdhFRDZFhBMQlqcIrH2B/J9+DEXuPenil7ZOqI"
   alt: Stuff by the Pool
 media_subpath: /assets/img/posts/long-centerpiece
 ---
@@ -55,3 +56,4 @@ Even though they are sold oak, they still warped quite a bit in the elements. I 
 - The carve was done with the {{ site.data.links.origin }}
 - {{ site.data.links.chillepoxy }} for the inlay
 {: .sjg-list }
+

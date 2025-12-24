@@ -8,6 +8,7 @@ category: [Home and Garden, Greenhouse]
 tags: [Woodworking, Raised Bed, Garden, Cedar, Outdoors, Furniture]
 image:
   path: /thumbnails/20220628_125950.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAhAAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACMbWRhdBIACgkYET92CAhoNCAydRpAFFFFBQDJ5RbW8G1MxooeoWcFHe7fwHRrqVdDd/qpIKHODrx1Jr8foXiMXza4d0AUYGqRt9mUeXtcHSY7sihtnN+Vx5eMysyWnxkbNVmUA9Ml0G5VEFtZplSe73bG+mPfDhQVxvNT7AT8DZhakgkv3Zh08A=="
   alt: Cedar Plant Boxes
 media_subpath: /assets/img/posts/raised-beds
 ---
@@ -63,3 +64,4 @@ Three of the smaller beds are in our greenhouse in the back.  Not sure I would h
 {: .sjg-list }
 
 [Cutek Extreme]: https://wood-source.com/product/cutek-extreme
+

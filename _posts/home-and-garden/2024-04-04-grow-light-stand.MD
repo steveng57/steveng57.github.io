@@ -8,6 +8,7 @@ category: [Home and Garden, Greenhouse]
 tags: [Grow-light, Stands, Greenhouse, Garden]
 image:
   path: /thumbnails/IMG_0866.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAA7wAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAArAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAAD3bWRhdBIACgkYEX9TBAQ0GhAy3wEaQBRRRQUA8d08XRrDlXCriACMKv2kWc6oHq/L/rMOXw18ZvMND37kxB8bOMi62eJtlJVBYRnOJolswc1vt7FS8JwZ4KKUeksopn6IiGQZyNdb9n48fTn1CwmXzSqsgYcKd6SeWRHhaiCpbe+nPYYejA/8C2evzTZvgWCYLb7nEe3GjuuH1yiyq1CgjCHC8p7q8nCi5yZnwVwq3YqqHJ9f5+G/MQ2OPK1oVQdc3k4Y9PVwFvZ+ZcKFAZoGEgyfl60QWWn1gEOBTgTNdA4uyYCNLrTs212vXpSEWObUec3w"
   alt: No, not that kind of grow op!
 media_subpath: /assets/img/posts/grow-light-stand
 ---
@@ -55,3 +56,4 @@ Dwarf Curled Scotch Kale on the bottom, and Grand Rapids Lettuce on the top. Loo
 - Pocket holes and screws from {{ site.data.links.kreg }}
 - Grow lights from [Lee Valley](https://www.leevalley.com/en-ca/shop/garden/planting/grow-lights/76513-floralight-t5-led-full-spectrum-tabletop-grow-light-stand?item=PK450){{ site.tb }}
   {: .sjg-list }
+

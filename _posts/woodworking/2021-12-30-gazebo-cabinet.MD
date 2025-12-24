@@ -8,6 +8,7 @@ category: [Woodworking, Furniture]
 tags: [Woodworking, Red Oak, Cabinets, Shelves, Dominos]
 image:
   path: /thumbnails/IMG_0758C.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAkQAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAXAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACZbWRhdBIACgkYET9mCAhoNCAygQEaQBRRRQQA0TJBevOnoLPhE/DsvYavmkU+jl1X/7pMhNDMX6y4Rjevx7+W8OAce7J7iN3l5j9jFse5cssim7xfxvYPJLeepAB6+DIj+N/MgvPxGIrgyY6I20HHijnJa9sGq6JcpIhW+FoxVYu86DbGrz5GCqJPJpuzt6bCD4g//HQ="
   alt: Cabinet for Gazebo
 media_subpath: /assets/img/posts/gazebo-cabinet
 ---
@@ -47,3 +48,4 @@ We were going to put a little fridge and microwave in there, but current thinkin
 - {{ site.data.links.rubio }} Intense Black Precolour Easy, Black Oil 2C for finish
 - {{ site.data.links.domino }} for pretty much all joinery, except pocket holes for the back stretchers
 {: .sjg-list }
+

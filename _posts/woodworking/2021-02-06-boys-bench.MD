@@ -8,6 +8,7 @@ category: [Woodworking, Pets]
 tags: [Woodworking, Bench, Drawers, Red Oak, Pets]
 image:
   path: /thumbnails/IMG_0536.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAigAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACSbWRhdBIACgkYET92CAhoNCAyexpAFFFFBQDLPJ2Lkij8KoJm7HD8yR/mUY/50iu9dCH4Cd5YTuZrxrxqPQbFIWvuvwdhi0rMeYsElVC41MquIns0UyX873E3NYistvGbbV6rhXdjcXskIJxeOSRLkLOuRrF+jBcFutitSYeo7xQZKYI9unrowLL3qK37WA=="
   alt: Beast of a bench
 media_subpath: /assets/img/posts/boys-bench
 ---
@@ -54,3 +55,4 @@ This is one of my first pieces to be 'retired', where we will soon be taking it 
 - Lots and lots of pocket screws from {{ site.data.links.kreg }}
 - Rubber paint from Amazon
 {: .sjg-list }
+

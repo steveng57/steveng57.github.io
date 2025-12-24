@@ -9,6 +9,7 @@ category: [Woodworking, Home Decor]
 tags: [Woodworking, Plywood, Shelves, Baltic Birch, Pool]
 image:
   path: /thumbnails/IMG_1835.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAA0QAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAZAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAADZbWRhdBIACgkYET+GCAhoNCAywQEaQBRRRQUAzwvv4Qlv6DUKb1t9A5pvJ1OKp+AJWSTrNzki1/F1Yv8K3LbutAdZ+4ya+TQd8jUyKIkaeRvqDln1/i7o+cILf+meh8amhlyGouyo8GPjKxDct930VA5/UPMbmMY6MgkYZxb9axwQti68ObxLUJfr0aLatyR3SxU6FaJSWk4/9v0YmBZzGUDyblHsg3D3hTSJtIwh+KZ/bcItQ9h2RaZoCDeM1jTev1cBvZEd+OGTx0XotXT2JYT1jUPM"
   alt: Pool Mat Shelf
 media_subpath: /assets/img/posts/pool-mat-shelf
 favorite: false
@@ -104,3 +105,4 @@ Lathered in five coats of polyurethane to keep the water out.
 - Joinery was all done with the {{ site.data.links.domino }}
 - Waterproof glue was {{ site.data.links.titebond }}
 {:.sjg-list }
+

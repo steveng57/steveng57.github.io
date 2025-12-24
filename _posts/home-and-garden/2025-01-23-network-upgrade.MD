@@ -9,6 +9,7 @@ category: [Home and Garden, House Tech]
 tags: [House Tech, Networking]
 image:
   path: /thumbnails/IMG_1640b.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAbAAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAhAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAAB0bWRhdBIACgkYEX8DBAQ0GhAyXRpAFFFFBQDq8uAw3+1pDlZJgRFTsCuSGxkCg1ViCuvlre4/1clgylq0LjFaOTtYrveOm6YKn8A6z9LBuPA004XUV9tGe24zEMvphFfRrpI+Pmw3AUav4bKu/kaJUA=="
   alt: Network Upgrade
 media_subpath: /assets/img/posts/network-upgrade
 ---
@@ -88,3 +89,4 @@ The Unifi line has just come out with a few more goodies to add to the home netw
 - [Main Switch - Unifi Pro HD 24 PoE](https://ca.store.ui.com/ca/en/category/all-switching/products/usw-pro-hd-24-poe){:target='_blank'}
 - [Legacy Unifi gear from Ubiquiti](https://www.ui.com/){:target='_blank'}
 {: .sjg-list }
+

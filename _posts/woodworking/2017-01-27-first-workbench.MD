@@ -9,6 +9,7 @@ tags: [Woodworking, Workbench, Assembly Table, Workshop]
 pin: false
 image:
   path: /thumbnails/20170127_010801.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAdQAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAASAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAAB9bWRhdBIACgkYET8WCAhoNCAyZhpAFFFFBQC1J79KDH6vOkfJmk+qGIDts5jtmvLeGNmkfz5b/03kSQfXcFUr5VcsuP4oEhzS48/l8GaIVkxXvzYwiKz9/9PDvGjtSHRXrUI11r77XuWiC4JO5+AiDC/tGXPsr0Cn3A=="
   alt: MDF and 2x4's - pretty simple
 media_subpath: /assets/img/posts/first-workbench
 ---
@@ -55,3 +56,4 @@ While it is no longer my primary workbench / assembly table, it still gets a lot
 - {{ site.data.links.leevalley}} Mobile Wheels
 - Tung oil (not tongue oil, that would be gross)
 {: .sjg-list }
+

@@ -8,6 +8,7 @@ category: [Woodworking, Kitchen]
 tags: [Woodworking, Poplar, Epoxy, Inlay, Kitchen]
 image:
   path: /thumbnails/IMG_0810.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAmgAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACibWRhdBIACgkYET92CAhoNCAyigEaQBRRRQUA0TJufXmwslkQ4nk/ljZslLP9SzyQVeuVDcvU2ODfiGBIbvNgIdB3T+7Jrj2Yz6UZjKIp4zMeBst+7EJmaHHUHFU5CJE6gB0un2EmSdp/dTrRwaGOmmKakgt+u6IDpcLnwUSxwOd+78aMTlmsZOuBaBUwQ/egkYC3WlQ/XJU3Bp++v0w="
   alt: Odds and Ends in the Kitchen
 media_subpath: /assets/img/posts/kitchen-things
 ---
@@ -55,3 +56,4 @@ _Easy peasy lemon squeezy._ I have no idea what that saying means, but it's fun 
 - The carve was done with the {{ site.data.links.origin }}
 - {{ site.data.links.chillepoxy }} for the inlay
 {: .sjg-list }
+

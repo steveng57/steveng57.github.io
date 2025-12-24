@@ -9,6 +9,7 @@ tags:
   [Woodworking, Serving Tray, Trays, Epoxy, Poplar, Home Decor, Shaper Origin]
 image:
   path: /thumbnails/20230405_141951.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAmgAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACibWRhdBIACgkYET92CAhoNCAyigEaQBRRRQUA0AntWlnzf+g302nO/m+1gKtbVO6axgVcS1gCzpsgHi5V/DzsFpu2bzZjShLUZrdKQrB+dxJOhCGsBJ24UOwyLsNZ6C5dAbx384Af5fYYJab55vj61PoAXaFwREPk1ACzG9m5J4Hquj7Y17S6t9V4ZmnulSf8MufYQ0WRWcn5ZnMvsIA="
   alt: These are FIVE colour epoxy inlays
 media_subpath: /assets/img/posts/serving-trays
 ---
@@ -50,3 +51,4 @@ The Flower Tray is where the learnings were applied and turned out better than t
 - Various coloured epoxies by {{ site.data.links.chillepoxy }}
 - {{ site.data.links.shaper }} to carve the inlays
 {: .sjg-list }
+

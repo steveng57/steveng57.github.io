@@ -8,6 +8,7 @@ category: [Woodworking, Home Decor]
 tags: [Woodworking, Taper, Stands, Red Oak, Home Decor, Dominos]
 image:
   path: /thumbnails/20210428_181207.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAswAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAAC7bWRhdBIACgkYET92CAhoNCAyowEaQBRRRQUAy0ivRKesbyyNF4dCtigpbkNWH5IB4/nHrKzyqOdpPzAkiw0l157t76hxIHmfHVnQMqHwF2bO4y1Cgcd76lBjiIElJGkp6c961Ass6I/IxqciduNnNkQewX4RvmKtfE7fBnA9usic83LyEoxkHUWOBNGLw3M/ul195NgidTFbflrHwc9WbznzuU+PLxrggjggMMyez6X/kAI2HDPA"
   alt: Greenery and Redery
 media_subpath: /assets/img/posts/plant-stands
 ---
@@ -63,3 +64,4 @@ Ta da! All dressed up with freshly potted plants and in their new home, though w
 - Tapering Jig
 - Amazon procured white pots
 {: .sjg-list }
+

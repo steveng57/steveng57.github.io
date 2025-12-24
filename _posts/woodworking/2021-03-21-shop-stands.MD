@@ -8,6 +8,7 @@ category: [Woodworking, Workshop]
 tags: [Woodworking, Drawers, Stands, Plywood, Baltic Birch, Workshop]
 image:
   path: /thumbnails/20210321_210903.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAmgAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACibWRhdBIACgkYET92CAhoNCAyigEaQBRRRQQAz5sr6EJXSfJQEBe6WqaqVDdMFVyuxjNuw0vHIanrLl0QCPTtbeupzzFDLWTOg+HzGRc9+GF7sdXKfQxu1nyWmtEZz3kKmOhcGpXvKQZyv39zHoEEaZmRRe0+dN6SnOl6FJ4sdtjvrGh+B6k2p8SnQEFcAxEpNTDBws/eNqiCsrHc0YA="
   alt: Waiting for Work
 media_subpath: /assets/img/posts/shop-stands
 ---
@@ -55,3 +56,4 @@ Ok, I really like this pic, so showing it again in higher resolution. Not really
 - {{ site.data.links.domino }} for the drawers
 - {{ site.data.links.richelieu }} drawer pulls
 {: .sjg-list }
+

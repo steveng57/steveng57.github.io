@@ -8,6 +8,7 @@ category: [Woodworking, Furniture]
 tags: [Woodworking, Concrete, Table, End Table, Red Oak, Furniture]
 image:
   path: /thumbnails/IMG_0553.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAA7wAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAArAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAAD3bWRhdBIACgkYEX9TBAQ0GhAy3wEaQBRRRQUA6e6nKsTn8P3N+JKkX5o19ewt3Jqb9DKqLs9ZwbaYI5YKYOGWr67gaFAzZrlBP66wC2j1+38CnDun/Aj6iggpk6sVNeQusOhEj1o9eLLbMaeW3/7m1JcJ7FIDMXICAP1YucIhi/dA7YYLdfUCW0qJ7V5TGvbbCjVJualza4jglawBo3Gx0Ar4r3Mf42aFb1rQmW/WB6SCXUNy6gr4fCKzq4ejKpLM56VOw27z0zhL9X0whZpJHzrEBHgD+l9LULIq86Z7Jl1Bd3RT+R57SzGKvQEXiAi7pN/1"
   alt: Adding a new material to the shop
 media_subpath: /assets/img/posts/concrete-end-tables
 ---
@@ -81,3 +82,4 @@ This gets used on a daily basis as a cleaning station for the boys when they com
 - {{ site.data.links.rubio }} finish
 - [Buddy Rhodes](https://www.buddyrhodes.com){:target="\_blank"} concrete products
 {: .sjg-list }
+

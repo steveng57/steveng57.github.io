@@ -9,6 +9,7 @@ category: [Home and Garden, House Tech]
 tags: [House Tech, Woodworking, Solar, Pool]
 image:
   path: /thumbnails/IMG_1811.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAkAAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAUAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACYbWRhdBIACgkYET82CAhoNCAygAEaQBRRRQUAz68+ZspSwtbRl4Wnoxpjaj4nmAMzmNz24zCAJ7nhC5oB0CfzVFgDJ8VJOU3liUrTDk1s9yan+WvqgJfjaDzlFzaV13rJ5KlUA3ElTxoGKPqIKmNZYEwpPxgtyhIyLE9uYLJ/tO89UOLjuFmIo4Vb5OJ/0X5KIFNM2g=="
   alt: Solar Pool Heater
 media_subpath: /assets/img/posts/solar-pool-heater
 favorite: false
@@ -81,3 +82,4 @@ Having lived with this device for three pool seasons at the time of this writing
 - Dakota lithium battery from [Total Battery](https://www.totalbattery.com){:target='_blank'}
 - 6 inch casters (with brakes) from {{ site.data.links.leevalley }}
 {:.sjg-list }
+

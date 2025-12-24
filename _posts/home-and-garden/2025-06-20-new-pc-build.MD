@@ -9,6 +9,7 @@ category: [Home and Garden, House Tech]
 tags: [Computer, PC, House Tech]
 image:
   path: /thumbnails/IMG_1927.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAVQAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAABdbWRhdBIACgkYET92CAhoNCAyRhpAFFFFBADFexzWohOqhLwv39slEWPf/iZGIuIgf26VnWmoUCOiPwm8klcIfqYKBkBeBCNAJOjubQ+KrXY3txm1yX6I47A="
   alt: Booting the OS
 media_subpath: /assets/img/posts/new-pc-build
 favorite: false
@@ -216,3 +217,5 @@ Here is a good background to show off the 4K.  I know you can't see it in the pi
 - Monitors are [DELL 27 Plus 4K Model S27255QS](https://www.dell.com/en-ca/shop/dell-27-plus-4k-monitor-s2725qs/apd/210-brnd/monitors-monitor-accessories?msockid=2341291a1f756914244b3f0b1eb468a7){:target='_blank'} bought from [Amazon](https://www.amazon.ca/Dell-Plus-Monitor-Integrated-Comfortview/dp/B0F1GF1KFC/ref=asc_df_B0F1GF1KFC?tag=bingshopdesk-20&linkCode=df0&hvadid=80195828197082&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=124691&hvtargid=pla-4583795293432449&msclkid=faa122f0cbb514d9436a4a8a29a00357&th=1){:target='_blank'}
 - A Philips #2 head screwdriver, supplied from you local toolbox 
 {:.sjg-list }
+
+

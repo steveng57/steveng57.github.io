@@ -9,6 +9,7 @@ tags: [Woodworking, Picture Frame, Frames, Poplar, Home Decor, Dominos]
 series: Picture Frames
 image:
   path: /thumbnails/20230822_191820.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAA/AAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAArAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAAEEbWRhdBIACgkYEX9TBAQ0GhAy7AEaQBRRRQUA8ZRb//xluCepHOiE6/ZVckzBCTOXUqgQyC6rK6YOceNggeeUuT731mn3x/PSMI68acp/JB5rrXYY/HoLD0BGgXRJ8nJ+Bwq3/e4ax7iIkWwXhHAwWMYopLlDS3I5qN8reiXRtyAB0ZUscoo4alJ4iREMlgjnG4kTdRWWTXTtuT4qAPcvAzDU4qlChRO9e8uD6no6fQ8+8+h3YDqzL3TBRxlycwWOl8XENf8dDlCueR8UYRFNVueLn7hYhKvGgYw3ZAVo/Gxkf3NNEz+3sMn49bF2dE6gZURBDE8XVhWxMVA2jX9JUA=="
   alt: The first of many to be sure
 media_subpath: /assets/img/posts/picture-frames
 ---
@@ -60,3 +61,4 @@ The trick to keeping it centred is that if you use 7 cards on the left, then you
 {: .sjg-list }
 
 {% include series-nav.html %}
+

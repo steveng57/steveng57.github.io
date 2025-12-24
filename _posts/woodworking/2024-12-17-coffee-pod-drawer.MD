@@ -9,6 +9,7 @@ category: [Woodworking, Home Decor]
 tags: [Woodworking, Walnut, Inlay, Drawers]
 image:
   path: /thumbnails/IMG_1509.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAtgAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAAC+bWRhdBIACgkYET92CAhoNCAypgEaQBRRRQUA0Abo04oj9nCpS7VHjQvWhnHqxIhJq+PnBSiiMKzPpAfL5oNnzvvVmV9dZBM51sQcj6JYjqZemmTaP39D8Q9keLQ/akoUMAmnpem4AX0p3tpLxfBkL2vxXev3TAo4/crN7xsmo2z+OcN/CbvBPEVfDSd+bF/9yHNCVUNeeUJOMOjmYqUuBi8macPmDZnfdRMPWcOSM/6ypAfqFpHRY6xM"
   alt: Coffee Pod Drawer
 media_subpath: /assets/img/posts/coffee-pod-drawer
 ---
@@ -99,3 +100,4 @@ So a couple of interesting things about this project, they are small things, but
 - {{ site.data.links.origin }} for cutting the box joints and the front inlay
 - White and gray {{ site.data.links.chillepoxy }}
 {: .sjg-list }
+

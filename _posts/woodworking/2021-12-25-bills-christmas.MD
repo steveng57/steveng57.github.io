@@ -8,6 +8,7 @@ category: [Woodworking, Home Decor]
 tags: [Woodworking, Signs, Epoxy, Inlay, Walnut, Red Oak, Shaper Origin]
 image:
   path: /thumbnails/golf-sign.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAiAAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAgAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACQbWRhdBIACgkYET/2CAhoNCAyeRpAFFFFBQDPEWygqywWkseHv8aKs0qjUPi0DN3OviAhNe2bzmydYYf+jRzg4e1G7O80tw1DvRMV8dxDejvFoP41hV15mNuSlFwE8EzdKl9IjifjjtpvcWqN+U3uz+SSn4tY90SZQoJKwgkAjgtn7BLhqJVi1kCEHCg="
   alt: Golf is a good sign
 media_subpath: /assets/img/posts/bills-christmas
 ---
@@ -54,3 +55,4 @@ This was a gift to Bill for Christmas 2022.
 - {{ site.data.links.origin }} for the carve
 - {{ site.data.links.rubio }} for both finishes
 {: .sjg-list }
+

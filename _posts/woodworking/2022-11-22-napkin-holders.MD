@@ -8,6 +8,7 @@ category: [Woodworking, Kitchen]
 tags: [Woodworking, Napkin Holder, Kitchen, Walnut, Epoxy, Inlay, Shaper Origin]
 image:
   path: /thumbnails/20221122_113942.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAbAAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAAB0bWRhdBIACgkYET92CAhoNCAyXRpAFFFFBQDPEUEVj0JUySXzklzlV6s9210eS9H3QpHhASXuNRFbDi95a4qgwhionZq0xYw1kTOmZzw8J39oxbYxnLTa7h4ans6aSOeamM8u7ZaWAWil6s2bpziCsA=="
   alt: Walnut Napkin Holder with White Epoxy Inlay
 media_subpath: /assets/img/posts/napkin-holders
 ---
@@ -67,3 +68,4 @@ If you are so inclined, you can check out the [charcuterie board]({% post_url /w
 - {{ site.data.links.domino }}
 - White {{ site.data.links.chillepoxy }} epoxy for the inlay
 {: .sjg-list }
+

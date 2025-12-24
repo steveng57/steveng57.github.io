@@ -8,6 +8,7 @@ category: [Woodworking, Jewelry Boxes]
 tags: [Woodworking, Walnut, Jewelry Boxes, Shaper Origin, Dominos]
 image:
   path: /thumbnails/IMG_0461.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAmgAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAARAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACibWRhdBIACgkYET8GCAhoNCAyigEaQBRRRQUAz1iXqtvd1hIvjdNXP1bgopZxAKZYXGwANsBVJlazH0laa1H27wV35LeEU3kmeep8w6LUJ7XBtk0bok9YwVJC1iwa34hptKROCFg7M3BCZxEBYepovQ/hY/fwTfObxB3Qb8bcQ3dVDeK5s6jQJ9zjJwb2tmxqxmBHxuehxBMzDpEZMUA="
   alt: Earrings Trays - a gift for a wonderful human
 media_subpath: /assets/img/posts/earring-boxes
 favorite: true
@@ -79,3 +80,4 @@ All filled with all kinds of earrings. Looks like I might have to make more!
 - Hardware from {{ site.data.links.leevalley }}
 - Green Velvet from Amazon
 {: .sjg-list }
+

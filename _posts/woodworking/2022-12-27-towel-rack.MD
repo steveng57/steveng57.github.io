@@ -8,6 +8,7 @@ category: [Woodworking, Furniture]
 tags: [Woodworking, Maple, Towel Rack, Furniture, Dominos, Shaper Origin]
 image:
   path: /thumbnails/IMG_0681.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAfAAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAYAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACEbWRhdBIACgkYET92CAhoNCAybRpAFFFFBQDRMmjwM43Dx79k3j6oToo2sI0Wk/YQc20X6q3Qad1Ei5d0wqaSsxT2GdMQmom2g2UTt6Nz37qiWlhrS6GYiFRFKCq3PGzVOuw79mAAHMOr4fu5EdqLvev5x7kcXxQLVfzgsXhut4A="
   alt: A great place to hang
 media_subpath: "/assets/img/posts/towel-rack"
 ---
@@ -59,3 +60,4 @@ It's been in use for over a year at this point and no issues with warping or ben
 - Polyeurethane finish
 - {{ site.data.links.domino }} for joinery
 {: .sjg-list }
+

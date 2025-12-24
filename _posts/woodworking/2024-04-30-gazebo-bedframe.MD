@@ -9,6 +9,7 @@ category: [Woodworking, Home Decor]
 tags: [Woodworking, White Oak, Bedframe, LED Lighting]
 image:
   path: /thumbnails/gazebo-bedframe-sketchup.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAAYwAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAVAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAABrbWRhdBIACgkYET9GCAhoNCAyVBpAFFFFBQDPEJXMqHYyoDVTpl9Jm+vSFz4mJMvhpCsG8AifPZOgOvvCpsSwZQzUQav/SNgxhdXpPZPcNAct7XGt28SYk4RAGJFc5yt7a64+sh+JcA=="
   alt: Gazebo Bedframe
 media_subpath: /assets/img/posts/gazebo-bedframe
 ---
@@ -89,3 +90,4 @@ On the wall above the bed, you'll see the walnut picture frame I made to host fo
 - {{ site.data.links.domino }} with special domino connectors
 - LED strip lighting from {{ site.data.links.leevalley }}
 {: .sjg-list }
+

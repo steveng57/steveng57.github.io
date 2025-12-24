@@ -8,6 +8,7 @@ category: [Woodworking, Pets]
 tags: [Woodworking, Ozzie, Epoxy, Inlay, Red Oak, Pets, Dominos, Shaper Origin]
 image:
   path: /thumbnails/20220328_071254.avif
+  lqip: "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAANZtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAD6AAEAAAAAAAAApwAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAVmlwcnAAAAA4aXBjbwAAAAxhdjFDgQAMAAAAABRpc3BlAAAAAAAAACAAAAAkAAAAEHBpeGkAAAAAAwgICAAAABZpcG1hAAAAAAAAAAEAAQOBAgMAAACvbWRhdBIACgkYEX8bBAQ0GhAylwEaQBRRRQUA8jU22F9k3HdQigxPVEEc+EQekWLWXlZs+WyojRtsD6czjZGULzTIJtWoOAXE0JQRU1J9Yg6M+cGCCOSp6mCdaRBWxEg7CBMtwt9+93Om3nANRlIXXXxEr1jcBRJRHOP8m8LCrnIHqAPzOqGpRomhLFbChcPymtaJgugbw4y8nVVeu0A/xUDVLPCkTeAK5w/Y"
   alt: Sweet Dreams Ozman
 media_subpath: "/assets/img/posts/ozzie-dreams"
 ---
@@ -47,3 +48,4 @@ Epoxy inlay complete, pillows installed and Ozzie giving it a trial run.
 - {{ site.data.links.domino }} for joinery
 - {{ site.data.links.rubio }} Intense Black and Black 2C for the finish
 {: .sjg-list }
+
