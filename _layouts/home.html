@@ -8,6 +8,8 @@ pagination:
 
 {{ content }}
 
+{% assign eager_preview_count = 6 %}
+
 {% comment %}
   Optional per-category intro + featured posts.
   Uses _data/category_extras.yml, keyed by `page.category_path | join: '/'`.
@@ -146,8 +148,9 @@ pagination:
                 sizes="(min-width: 768px) 320px, 100vw"
               {% endif %}
               decoding="async"
-              {% if forloop.first %}
-                loading="eager" fetchpriority="high"
+              {% if forloop.index <= eager_preview_count %}
+                loading="eager"
+                {% if forloop.index == 1 %}fetchpriority="high"{% endif %}
               {% else %}
                 loading="lazy"
               {% endif %}

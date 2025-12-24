@@ -15,7 +15,7 @@
 
   {%- if series_posts != nil and series_posts.size > 1 -%}
     <blockquote class="prompt-info mt-4 mb-4">
-      <p><strong>Series:</strong> {{ series_title }}</p>
+      <p>This post is part of a series:<strong> {{ series_title }} </strong></p>
       <ol class="mb-0">
         {%- for p in series_posts -%}
           <li>
