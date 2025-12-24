@@ -175,3 +175,23 @@ h4 {
   text-align: center;
   margin: 1em 0;
 }
+
+/* Series panel: match panel link styling and align with TOC indentation */
+#toc-wrapper #panel-series a,
+#toc-wrapper #panel-series .sjg-series-current {
+    color: var(--text-muted);
+    display: block;
+
+    /* Keep TOC indentation, but match tighter list spacing like "Recently Updated" */
+    padding: 0 0 0 1.25rem !important;
+
+    /* Ensure no persistent underline from global link styling */
+    text-decoration: none !important;
+    background-image: none !important;
+    border-bottom: none !important;
+}
+
+#toc-wrapper #panel-series a:hover {
+    text-decoration: underline !important;
+}
+

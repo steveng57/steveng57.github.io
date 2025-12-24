@@ -21,22 +21,19 @@
   {%- if series_posts != nil and series_posts.size > 1 -%}
 
     {%- if series_mode == 'panel' -%}
-      <section id="panel-series">
-        <h2 class="panel-heading">In This Series:</h2>
-        <div class="content pb-1 ms-1 mt-2 me-3">
-          <p class="mb-2">{{ series_title }}</p>
-          <ul class="ps-3 mb-0">
-            {%- for p in series_posts -%}
-              <li class="lh-lg">
-                {%- if p.url == page.url -%}
-                  <span class="fw-semibold">{{ p.title }}</span>
-                {%- else -%}
-                  <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
-                {%- endif -%}
-              </li>
-            {%- endfor -%}
-          </ul>
-        </div>
+      <section id="panel-series" class="mb-3">
+        <h2 class="panel-heading ps-3 pb-2 mb-0">In This Series:</h2>
+        <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
+          {%- for p in series_posts -%}
+            <li class="text-truncate lh-lg">
+              {%- if p.url == page.url -%}
+                <span class="fw-semibold sjg-series-current">{{ p.title }}</span>
+              {%- else -%}
+                <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
       </section>
 
     {%- else -%}
