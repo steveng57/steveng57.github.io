@@ -343,9 +343,12 @@ try {
     if ($Production) {
         $env:JEKYLL_ENV = "production"
         Write-Success "JEKYLL_ENV=production"
+        & asciiart.exe "Production Mode" --theme green
+
     } else {
         $env:JEKYLL_ENV = "development"
         Write-Success "JEKYLL_ENV=development"
+        & asciiart.exe "Development Mode" --theme red
     }
     
     # Build Jekyll command
