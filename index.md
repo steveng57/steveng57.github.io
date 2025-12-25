@@ -68,7 +68,7 @@ The [Categories]({% link _tabs/categories.md %}) link shows the posts group by t
 The [Tags]({% link _tabs/tags.md %}) link will display a _tag wall_ splattered with every tag from every post. Click on a random one to see what fun that brings.
 {: .sjg-br}
 
-To all the fans of this website, pictured below, please be [let me know](mailto:steveng57@outlook.com) if you find any bugs or other inaccuracies. This is very much a work in progress.
+To all the fans of this website, pictured below, please be [let me know]({% link contact/index.html %}) if you find any bugs or other inaccuracies. This is very much a work in progress.
 
 ## Favorite Posts
 
