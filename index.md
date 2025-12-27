@@ -1,6 +1,8 @@
 ---
 # the default layout is 'page'
 layout: page
+title: Steve's Stuff
+description: A collection of woodworking things and other stuff.
 author: sjg
 image:
   path: IMG_0697.avif
