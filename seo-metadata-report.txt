@@ -1,33 +1,16 @@
-Scanned: 95 index pages
+Scanned: 97 index pages
 
 == Missing description ==
 
 
 == Duplicate titles (count>1) ==
 
-Count Name
------ ----
-   16 Steve's Stuff
-    2 Furniture | Steve's Stuff
-    2 Games | Steve's Stuff
-    2 Greenhouse | Steve's Stuff
-    2 Home Decor | Steve's Stuff
-    2 House Tech | Steve's Stuff
-    2 Jewelry Boxes | Steve's Stuff
-    2 Kitchen | Steve's Stuff
-    2 Pets | Steve's Stuff
-    2 Woodworking | Steve's Stuff
-    2 Workshop | Steve's Stuff
-
-
 
 == Duplicate descriptions (count>1, non-empty) ==
 
 Count Description
 ----- -----------
-   77 A bunch of postings on woodworking and other things that interest me.
-    5 Posts in Woodworking on Steve’s Stuff.
-    2 Posts in Woodworking › Home Decor on Steve’s Stuff.
+   97 A bunch of postings on woodworking and other things that interest me.
 
 
 
@@ -35,16 +18,17 @@ Count Description
 
 Canonical                                                Title
 ---------                                                -----
-https://www.stevengoulet.com/categories/furniture/       Furniture | Steve's Stuff
-https://www.stevengoulet.com/categories/games/           Games | Steve's Stuff
-https://www.stevengoulet.com/categories/greenhouse/      Greenhouse | Steve's Stuff
-https://www.stevengoulet.com/categories/home-and-garden/ Home and Garden | Steve's Stuff
-https://www.stevengoulet.com/categories/home-decor/      Home Decor | Steve's Stuff
-https://www.stevengoulet.com/categories/house-tech/      House Tech | Steve's Stuff
-https://www.stevengoulet.com/categories/jewelry-boxes/   Jewelry Boxes | Steve's Stuff
-https://www.stevengoulet.com/categories/kitchen/         Kitchen | Steve's Stuff
-https://www.stevengoulet.com/categories/pets/            Pets | Steve's Stuff
-https://www.stevengoulet.com/categories/woodworking/     Woodworking | Steve's Stuff
-https://www.stevengoulet.com/categories/workshop/        Workshop | Steve's Stuff
+https://www.stevengoulet.com/categories/                 Categories | Steve's Stuff
+https://www.stevengoulet.com/categories/furniture/       Category: Furniture | Steve's Stuff
+https://www.stevengoulet.com/categories/games/           Category: Games | Steve's Stuff
+https://www.stevengoulet.com/categories/greenhouse/      Category: Greenhouse | Steve's Stuff
+https://www.stevengoulet.com/categories/home-and-garden/ Category: Home and Garden | Steve's Stuff
+https://www.stevengoulet.com/categories/home-decor/      Category: Home Decor | Steve's Stuff
+https://www.stevengoulet.com/categories/house-tech/      Category: House Tech | Steve's Stuff
+https://www.stevengoulet.com/categories/jewelry-boxes/   Category: Jewelry Boxes | Steve's Stuff
+https://www.stevengoulet.com/categories/kitchen/         Category: Kitchen | Steve's Stuff
+https://www.stevengoulet.com/categories/pets/            Category: Pets | Steve's Stuff
+https://www.stevengoulet.com/categories/woodworking/     Category: Woodworking | Steve's Stuff
+https://www.stevengoulet.com/categories/workshop/        Category: Workshop | Steve's Stuff
 
 

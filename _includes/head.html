@@ -53,6 +53,15 @@
         {%- assign _show_page_title_prefix = true -%}
         {%- assign _page_title = page.title | default: '' | strip -%}
         {%- assign _site_title = site.title | default: '' | strip -%}
+        {%- assign _title_context_prefix = '' -%}
+
+        {%- if page.url and page.url != '' -%}
+        {%- if page.url contains '/categories/' and page.url != '/categories/' and page.url != '/categories' -%}
+        {%- assign _title_context_prefix = 'Category: ' -%}
+        {%- elsif page.url contains '/tags/' and page.url != '/tags/' and page.url != '/tags' -%}
+        {%- assign _title_context_prefix = 'Tag: ' -%}
+        {%- endif -%}
+        {%- endif -%}
 
         {%- comment -%}
         Chirpy intentionally suppresses page.title on `layout: home` (homepage).
@@ -64,7 +73,7 @@
         {%- endif -%}
 
         {%- if _show_page_title_prefix and _page_title != '' and _page_title != _site_title -%}
-        {{ _page_title | append: ' | ' }}
+        {{ _title_context_prefix | append: _page_title | append: ' | ' }}
         {%- endif -%}
         {{ site.title }}
     </title>
