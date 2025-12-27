@@ -88,7 +88,11 @@
 
     <div id="topbar-title">
       {% if page.layout == 'home' %}
-        {{- site.data.locales[include.lang].title | default: site.title -}}
+        {%- if page.category_path and page.category_path.size > 0 and page.title -%}
+          {{- page.title -}}
+        {%- else -%}
+          {{- site.data.locales[include.lang].title | default: site.title -}}
+        {%- endif -%}
       {% elsif page.collection == 'tabs' or page.layout == 'page' %}
         {%- capture tab_key -%}{{ page.url | split: '/' }}{%- endcapture -%}
         {{- site.data.locales[include.lang].tabs[tab_key] | default: page.title -}}
