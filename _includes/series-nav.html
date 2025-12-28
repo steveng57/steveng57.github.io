@@ -26,11 +26,7 @@
         <ul class="content list-unstyled ps-3 ms-1 pb-1 mt-2">
           {%- for p in series_posts -%}
             <li class="text-truncate lh-lg">
-              {%- if p.url == page.url -%}
-                <span class="sjg-series-current">{{ p.title }}</span>
-              {%- else -%}
-                <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
-              {%- endif -%}
+              <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
             </li>
           {%- endfor -%}
         </ul>
