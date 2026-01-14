@@ -20,6 +20,11 @@
 {% assign img_meta = site.data.img-info[include.img] %}
 {% assign caption = include.caption | default: img_meta.title %}
 {% assign align = include.align | default: "center-full" %}
+{% assign img_loading = include.loading | default: "lazy" %}
+{% assign img_decoding = include.decoding | default: "async" %}
+{% assign img_fetchpriority = include.fetchpriority | default: "low" %}
+{% assign img_srcset = include.srcset | default: "" %}
+{% assign img_sizes = include.sizes | default: "" %}
 
 {% assign figure_classes = "figure sjg-figure" %}
 {% assign figure_styles = "" %}
@@ -82,6 +87,15 @@
     alt="{{ alt_text | escape }}"
     title="{{ title_text | escape }}"
     class="{{ img_classes | strip }}"
+    loading="{{ img_loading }}"
+    decoding="{{ img_decoding }}"
+    fetchpriority="{{ img_fetchpriority }}"
+    {% if img_srcset != "" %}
+      srcset="{{ img_srcset | escape }}"
+    {% endif %}
+    {% if img_sizes != "" %}
+      sizes="{{ img_sizes | escape }}"
+    {% endif %}
     {% if img_meta and img_meta.width and img_meta.height %}
       width="{{ img_meta.width }}" height="{{ img_meta.height }}"
     {% endif %}
