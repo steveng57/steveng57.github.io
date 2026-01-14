@@ -21,7 +21,9 @@
       {% endif %}
 
       {% if page.image %}
-        {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
+        {% assign header_img = page.image.path | default: page.image %}
+        {% assign header_img_meta = site.data.img-info[header_img] %}
+        {% capture src %}src="{{ header_img }}"{% endcapture %}
         {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
         {% capture alt %}alt="{{ page.image.alt | default: page.title | xml_escape }}"{% endcapture %}
 
@@ -30,7 +32,13 @@
         {% endif %}
 
         <div class="mt-3 mb-3">
-          <img {{ src }} {{ class }} {{ alt }} width="1200" height="630" {{ lqip }}>
+          <img {{ src }} {{ class }} {{ alt }}
+            {% if header_img_meta and header_img_meta.width and header_img_meta.height %}
+              width="{{ header_img_meta.width }}" height="{{ header_img_meta.height }}"
+            {% else %}
+              width="1200" height="630"
+            {% endif %}
+            {{ lqip }}>
           {%- if page.image.alt -%}
             <figcaption class="pt-2 pb-2">{{ page.image.alt }}</figcaption>
           {%- endif -%}
