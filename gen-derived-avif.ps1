@@ -165,7 +165,7 @@ foreach ($postFolder in $postFolders) {
     }
 
     $primaryImages = Get-ChildItem -Path $postFolder.FullName -File |
-        Where-Object { @('.jpeg', '.jpg', '.heic') -contains $_.Extension.ToLowerInvariant() }
+        Where-Object { @('.jpeg', '.jpg', '.heic', '.png') -contains $_.Extension.ToLowerInvariant() }
 
     foreach ($image in $primaryImages) {
         $shellFolder = $shell.Namespace($image.DirectoryName)
