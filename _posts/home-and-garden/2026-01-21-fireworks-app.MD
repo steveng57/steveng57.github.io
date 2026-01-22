@@ -185,11 +185,16 @@ Add comments explaining:
 
 Yeah I know that was too much to read and there is no way you should read it.  But I put that in here to emphasize the point that from my simple descriptive paragraph, ChatGPT generated a whoppingly detailed prompt, that I then cut and past back into CP.  
 
-And it was awesome...
+{% include html-side.html img="Screenshot-2026-01-22-104855.avif" align="right" %}
+### And it was awesome...
 
 I walked away, made a cup of coffee, and about 20 minutes later came back and CP had done the job.  It did it pretty well too, much much better than it would have if I had not refined my prompt thru ChatGPT. Now these always require a bit of tweaking and fine tuning, but over all it did a bang up job.  And once in a while CP went off into the weeds or "lost the plot" as they say, but in general it was pretty cool and often it was great at it.
 
-With this awesome new power, I discovered I could take on bolder challenges and try more complicated designs.  If they didn't work, I would either back out the changes, or used what was learned by myself and the AI to make another attempt at it.  
+With this awesome new power, I discovered I could take on bolder challenges and try more complicated designs.  If they didn't work, I would either back out the changes, or used what was learned by myself and the AI to make another attempt at it.
+
+The pic shows the strobe burst embedded in what is called a _peony_ style particle burst.  I think the folk in the red parkas in the bleachers really liked it a lot.
+
+{% include clear-float.html %}
 
 ### Refactoring
 
