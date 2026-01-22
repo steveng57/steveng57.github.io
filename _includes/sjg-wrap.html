@@ -1,0 +1,6 @@
+{% assign mode = include.mode | default: 'start' %}
+{% if mode == 'end' %}
+</div>
+{% else %}
+<div class="sjg-wrapped" markdown="1">
+{% endif %}

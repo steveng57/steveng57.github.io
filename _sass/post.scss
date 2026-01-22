@@ -107,7 +107,8 @@ main img {
 }
 
 figcaption {
-    font-size: 0.875rem; /* Adjust as needed */
+    font-size: 0.875rem;
+    /* Adjust as needed */
     text-align: center;
 }
 
@@ -122,6 +123,7 @@ figcaption,
 }
 
 @media (max-width: 767.98px) {
+
     .sjg-figure-left,
     .sjg-figure-right {
         float: none;
@@ -132,8 +134,9 @@ figcaption,
 }
 
 /* used to be sjg-video */
-video.embed-video + em {
-    font-size: 0.875rem !important; /* Adjust as needed */
+video.embed-video+em {
+    font-size: 0.875rem !important;
+    /* Adjust as needed */
     color: var(--text-color) !important;
     text-align: center !important;
     margin-top: 1rem !important;
@@ -156,12 +159,24 @@ h4 {
 
 .sjg-list {
     list-style: none;
-  }
-  
+}
+
 .sjg-list li::before {
-    content: "\2713"; /* Unicode check mark */
+    content: "\2713";
+    /* Unicode check mark */
     display: inline-block;
     margin-right: 10px;
+}
+
+.sjg-wrapped {
+    white-space: pre-wrap;
+    font-family: monospace;
+    font-size: 0.9em;
+    line-height: 1.25;
+    background-color: var(--code-bg);
+    color: var(--link-color);
+    padding: 1em;
+    border-radius: 4px;
 }
 
 .sjg-br {
@@ -169,10 +184,10 @@ h4 {
 }
 
 .sjg-bigtext {
-  font-size: 4em;
-  font-weight: bold;
-  text-align: center;
-  margin: 1em 0;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    margin: 1em 0;
 }
 
 /* --- Series + TOC coexistence ---
@@ -183,12 +198,12 @@ h4 {
 */
 
 /* Neutralize TOC link padding for non-TOC lists (e.g. Series). */
-#toc-wrapper ul li > a {
+#toc-wrapper ul li>a {
     padding: 0;
 }
 
 /* Reapply Chirpy's intended padding to actual TOC links only. */
-#toc-wrapper #toc ul li > a {
+#toc-wrapper #toc ul li>a {
     padding: 0.4rem 0 0.4rem 1.25rem;
 }
 
@@ -209,4 +224,3 @@ h4 {
     /* Match panel behavior: underline effect via border, not text-decoration. */
     border-bottom: 1px solid currentColor;
 }
-
