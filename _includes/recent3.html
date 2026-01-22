@@ -1,0 +1,117 @@
+<!-- The 3 Most Recent Posts -->
+<h2 class="h4 mb-3">Latest posts</h2>
+
+{% assign latest_posts = site.posts | slice: 0, 3 %}
+<div id="main-wrapper" class="d-flex justify-content-center"><div class="container d-flex flex-column px-xxl-5">
+<div class="row flex-grow-1">
+<main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">    
+<div id="post-list" class="fles-grow-1 px-x1-1"> 
+{% for post in latest_posts %}
+<div class="col-12">
+    {% assign src = post.media_subpath | append: '/' | append: post.image.path | replace: '///', '/' | replace: '//', '/' %}
+  {% assign img_key = src | split: '/' | last %}
+  {% assign img_meta = site.data.img-info[img_key] %}
+  {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
+
+  <article class="card-wrapper card">
+    <a href="{{- post.url -}}" class="post-preview row g-0 flex-md-row-reverse">
+      {% assign card_body_col = '12' %}
+      <div class="col-md-5">
+        <div class="preview-img">
+          <img
+            src="{{ src | relative_url }}"
+            alt="{{ alt }}"
+            {% if img_meta and img_meta.width and img_meta.height %}
+              width="{{ img_meta.width }}" height="{{ img_meta.height }}"
+            {% endif %}
+            {% if src contains '/thumbnails/' %}
+              srcset="{{ src | relative_url }} 1x, {{ src | replace: '/thumbnails/', '/thumbnails-2x/' | relative_url }} 2x"
+              sizes="(min-width: 768px) 320px, 100vw"
+            {% endif %}
+            decoding="async"
+            loading="lazy"
+          >
+        </div>
+      </div>
+
+      <div class="col-md-7">
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">{{- post.title -}}</h1>
+          <div class="card-text content mt-0 mb-3">
+            <p>{{- post.description -}}</p>
+          </div>
+          <div class="post-meta flex-grow-1 d-flex align-items-end"></div>
+        </div>
+      </div>
+    </a>
+  </article>
+
+  {% comment %}
+  <div class="col-12">
+    <article class="card-wrapper card h-100">
+      <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse h-100">
+        {% assign card_body_col = '12' %}
+
+        {% if post.image %}
+          {% assign src = post.image.path | default: post.image %}
+
+          {% if post.media_subpath %}
+            {% unless src contains '://' %}
+              {% assign src = post.media_subpath
+                | append: '/'
+                | append: src
+                | replace: '///', '/'
+                | replace: '//', '/'
+              %}
+            {% endunless %}
+          {% endif %}
+
+          {%- if src and src[0] != '/' -%}
+            {% assign src = '/' | append: src %}
+          {%- endif -%}
+          {% assign src = src | replace: '///', '/' | replace: '//', '/' %}
+
+          {% assign img_key = src | split: '/' | last %}
+          {% assign img_meta = site.data.img-info[img_key] %}
+          {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
+
+          <div class="col-md-5">
+            <div class="preview-img">
+              <img
+                src="{{ src | relative_url }}"
+                alt="{{ alt }}"
+                {% if img_meta and img_meta.width and img_meta.height %}
+                  width="{{ img_meta.width }}" height="{{ img_meta.height }}"
+                {% endif %}
+                {% if src contains '/thumbnails/' %}
+                  srcset="{{ src | relative_url }} 1x, {{ src | replace: '/thumbnails/', '/thumbnails-2x/' | relative_url }} 2x"
+                  sizes="(min-width: 768px) 320px, 100vw"
+                {% endif %}
+                decoding="async"
+                loading="lazy"
+              >
+            </div>
+          </div>
+
+          {% assign card_body_col = '7' %}
+        {% endif %}
+
+        <div class="col-md-{{ card_body_col }}">
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title h5 my-2 mt-md-0">{{ post.title }}</h3>
+            <div class="card-text content mt-0 mb-2">
+              <p>{{ post.description | default: post.excerpt | strip_html | strip_newlines }}</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </article>
+  </div>
+  {% endcomment %}
+</div>
+{% endfor %}
+</div>
+</main>
+</div>
+</div>
+</div>

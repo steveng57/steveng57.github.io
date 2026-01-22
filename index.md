@@ -5,9 +5,8 @@ title: Steve's Stuff
 description: A collection of woodworking things and other stuff.
 author: sjg
 image:
-  path: IMG_0697.avif
+  path: /assets/img/about/IMG_0697.avif
   alt: The most precious thing in my shop.  A gift from the family.
-media_subpath: /assets/img/about
 date: 2024-01-28 10:59:55 -0500
 last_modified_at: 2025-12-11 21:45:00 -0500
 toc: true
@@ -21,7 +20,7 @@ Welcome to my photo blog of various "maker" things I am up to, mostly woodworkin
 
 You can dive right in by clicking on the links in the sidebar on the left (a menu dropdown on mobile devices), or if you want to get a quick tutorial on the way the site works, then you can continue reading below.  Either way, I am here for you.
 
-A link to my latest post can always be found here: [{{ site.posts.first.title }}]({{ site.posts.first.url | relative_url}} ).
+{% include recent3.html %}
 
 ## Finding Your Way
 
@@ -97,11 +96,11 @@ Sometime in late 2016, I started to setup a workshop in the basement. Retirement
 
 I live in a rural suburb of Ottawa called Manotick with my wife Debbie and our little ones, Riley and Daisy.  The little avatar pic in the upper left is of Riley and Ozzie.  Ozzie took his journey over the rainbow bridge in spring 2024.  Boy do I miss that little guy.  There is a video tribute to him [here]({% link ozzie/index.md %}), and below is a great pic of Ozzie with Riley on the left.
 
-{% include html-side.html img="20150131_134612.avif" align="center" caption="Debbie took this great shot of the boys" %}
+{% include html-side.html img="/assets/img/about/20150131_134612.avif" align="center" caption="Debbie took this great shot of the boys" %}
 
 {% include clear-float.html break = 2 %}
 
-{% include html-side.html img="steven-sticker.avif" caption="Enjoy the Blog!" align="left-33"%}
+{% include html-side.html img="/assets/img/about/steven-sticker.avif" caption="Enjoy the Blog!" align="left-33"%}
 
 I am also a Pisces, which is silly because there is no science behind that stuff at all. The other thing you should know about me is that I am all about science. Actually, that one fact probably tells you a lot about me, from my political leanings, to my thoughts on religion, climate change, and more.
 
