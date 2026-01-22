@@ -20,6 +20,10 @@ Welcome to my photo blog of various "maker" things I am up to, mostly woodworkin
 
 You can dive right in by clicking on the links in the sidebar on the left (a menu dropdown on mobile devices), or if you want to get a quick tutorial on the way the site works, then you can continue reading below.  Either way, I am here for you.
 
+## Recent Posts
+
+Here are my three most recent posts:
+
 {% include recent3.html %}
 
 ## Finding Your Way

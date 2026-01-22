@@ -72,6 +72,8 @@ main img {
 /* Constrain home page card preview images to a consistent aspect ratio */
 #post-list .card .col-md-5 {
     aspect-ratio: 4 / 3;
+    display: flex;
+    align-self: stretch;
 }
 
 #post-list .card .col-md-5 img {
@@ -79,6 +81,102 @@ main img {
     height: 100%;
     object-fit: cover;
     border-radius: 0 10px 10px 0;
+}
+
+#post-list .card .preview-img {
+    height: 100%;
+    flex: 1;
+}
+
+#post-list .card .preview-img,
+#post-list .card .preview-img img {
+    border-radius: 10px;
+}
+
+#post-list .card .preview-img > a {
+    position: absolute;
+    inset: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+#post-list .card .preview-img > a.shimmer {
+    padding-top: 0;
+    height: 100%;
+}
+
+#post-list .card .preview-img > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#post-list .card .preview-img img {
+    display: block;
+}
+
+/* Match home page card hover contrast in light/dark modes */
+:root {
+    --card-hover-bg: rgba(0, 0, 0, 0.1);
+}
+
+html[data-mode='dark'] {
+    --card-hover-bg: rgba(255, 255, 255, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not([data-mode]),
+    html[data-mode='dark'] {
+        --card-hover-bg: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Home page recent cards: keep hover shading and remove link underline */
+#post-list .card-wrapper {
+    position: relative;
+    border-radius: 10px;
+}
+
+#post-list .card-wrapper .post-preview {
+    border-radius: 10px;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    align-items: stretch;
+}
+
+#post-list .card-wrapper:hover .post-preview {
+    background-color: var(--card-hover-bg);
+    box-shadow: 0 0 0 1px var(--main-border-color);
+}
+
+#post-list .card-wrapper .preview-img {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#post-list .card-wrapper .preview-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.2s ease-in-out;
+}
+
+#post-list .card-wrapper:hover .preview-img::after {
+    background-color: var(--card-hover-bg);
+}
+
+#post-list .card-wrapper > a.sjg-card-link,
+#post-list .card-wrapper > a.sjg-card-link:hover,
+#post-list .card-wrapper > a.sjg-card-link:focus,
+#post-list .card-wrapper > a.sjg-card-link:focus-visible {
+    text-decoration: none;
+    border-bottom: none;
+    box-shadow: none;
 }
 
 /* Search-like form utilities (match Chirpy search box look) */
