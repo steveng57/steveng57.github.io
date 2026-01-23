@@ -2,7 +2,7 @@
 author: sjg
 layout: post
 title: Coffee Pod Drawer
-description: A Christmas gift for Matt, a walnut storage drawer for coffee pods
+description: A Christmas gift for Matt, a walnut storage drawer for coffee pods.
 date: 2024-12-24 12:00:00 -0500
 last_modified_at: 2024-12-30 12:26:05 -0500
 category: [Woodworking, Home Decor]

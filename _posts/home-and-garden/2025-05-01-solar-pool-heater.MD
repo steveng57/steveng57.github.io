@@ -2,7 +2,7 @@
 author: sjg
 layout: post
 title: Solar Pool Heater
-description: A solar powered pool heater and solar powered pump
+description: A solar powered pool heater and solar powered pump.
 date: 2025-05-01 21:19:42 -0500
 last_modified_at: 2025-05-22 21:48:08 -0500
 category: [Home and Garden, House Tech]

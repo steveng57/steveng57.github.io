@@ -2,7 +2,7 @@
 author: sjg
 layout: post
 title: Network Upgrade
-description: A tech post, upgrading my home network from 1Gbps to 10Gbps
+description: A tech post, upgrading my home network from 1Gbps to 10Gbps.
 date: 2025-01-23 21:47:56 -0500
 last_modified_at: 2025-11-28 21:48:08 -0500
 category: [Home and Garden, House Tech]

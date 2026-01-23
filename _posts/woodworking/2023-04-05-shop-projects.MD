@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Shop Projects
-description: A new mitre station and router table for the shop
+description: A new mitre station and router table for the shop.
 date: 2023-04-05 18:32:00 -0500
 last_modified_at: 2024-02-25 19:12:11 -0500
 category: [Woodworking, Workshop]

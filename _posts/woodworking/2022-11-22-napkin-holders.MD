@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Napkin Holders
-description: Napkin holders with which to hold napkins
+description: Napkin holders with which to hold napkins.
 date: 2022-11-22 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 category: [Woodworking, Kitchen]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Raised Beds
-description: Cedar raised garden beds, lots of them, for the back yard
+description: Cedar raised garden beds, lots of them, for the back yard.
 date: 2022-06-28 18:32:00 -0500
 last_modified_at: 2024-05-29 17:58:45 -0400
 category: [Home and Garden, Greenhouse]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Towel Rack
-description: A custom fit towel rack for the master bathroom
+description: A custom fit towel rack for the master bathroom.
 date: 2022-12-27 18:32:00 -0500
 last_modified_at: 2024-02-23 11:45:18 -0500
 category: [Woodworking, Furniture]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Boys Bench
-description: A crazy custom bench, an experiment really
+description: A crazy custom bench, an experiment really.
 date: 2021-02-06 17:58:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 category: [Woodworking, Pets]

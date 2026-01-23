@@ -1,8 +1,8 @@
 ---
 author: sjg
 layout: post
-title: Fireworks App
-description: Something from my bucket list, a fireworks simulator app 
+title: Fireworks Simulation App
+description: Something from my bucket list, a simulator app that generates realistic 3d fireworks shows
 date: 2026-01-21 11:19:42 -0500
 last_modified_at: 2026-01-21 11:48:08 -0500
 category: [Home and Garden, House Tech] 

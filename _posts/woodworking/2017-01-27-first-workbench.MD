@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First Workbench
-description:  A small getting-started assembly table
+description:  A small getting-started assembly table.
 date: 2017-01-27 17:56:00 -0500
 last_modified_at: 2024-03-12 10:59:37 -0500
 category: [Woodworking, Workshop]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Long Centerpiece
-description: A piece to brighten up our outdoor living spaces
+description: A piece to brighten up our outdoor living spaces.
 date: 2023-05-15 18:32:00 -0500
 last_modified_at: 2024-03-13 12:06:37 -0500
 category: [Woodworking, Home Decor]

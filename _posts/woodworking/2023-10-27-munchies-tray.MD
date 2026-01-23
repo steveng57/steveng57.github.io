@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Munchies Tray
-description: Hey hey, it's the munchies
+description: Hey hey, it's the munchies.
 date: 2023-10-27 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 category: [Woodworking, Home Decor]

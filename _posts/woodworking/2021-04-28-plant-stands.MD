@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Plant Stands
-description: White ceramic pots with black-stained oak stands
+description: White ceramic pots with black-stained oak stands.
 date: 2021-04-28 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 category: [Woodworking, Home Decor]

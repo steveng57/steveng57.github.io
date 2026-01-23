@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ozzie Dreams
-description: A special place for a special boy
+description: A special place for a very special boy.
 date: 2022-03-28 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 category: [Woodworking, Pets]
