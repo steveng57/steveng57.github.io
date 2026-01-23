@@ -118,6 +118,17 @@ main img {
     display: block;
 }
 
+/* Remove default anchor underline/border on full-card links */
+.post-preview {
+    border-bottom: none !important;
+}
+
+.post-preview:hover,
+.post-preview:focus,
+.post-preview:active {
+    border-bottom: none !important;
+}
+
 /* Match home page card hover contrast in light/dark modes */
 :root {
     --card-hover-bg: rgba(0, 0, 0, 0.1);
