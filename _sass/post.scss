@@ -93,7 +93,7 @@ main img {
     border-radius: 10px;
 }
 
-#post-list .card .preview-img > a {
+#post-list .card .preview-img>a {
     position: absolute;
     inset: 0;
     display: block;
@@ -102,12 +102,12 @@ main img {
     line-height: 0;
 }
 
-#post-list .card .preview-img > a.shimmer {
+#post-list .card .preview-img>a.shimmer {
     padding-top: 0;
     height: 100%;
 }
 
-#post-list .card .preview-img > a > img {
+#post-list .card .preview-img>a>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -139,6 +139,7 @@ html[data-mode='dark'] {
 }
 
 @media (prefers-color-scheme: dark) {
+
     html:not([data-mode]),
     html[data-mode='dark'] {
         --card-hover-bg: rgba(255, 255, 255, 0.1);
