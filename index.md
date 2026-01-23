@@ -20,7 +20,7 @@ Welcome to my photo blog of various "maker" things I am up to, mostly woodworkin
 
 You can dive right in by clicking on the links in the sidebar on the left (a menu dropdown on mobile devices), or if you want to get a quick tutorial on the way the site works, then you can continue reading below.  Either way, I am here for you.
 
-## Recent Posts
+## My Latest Posts
 
 Here are my three most recent posts:
 
@@ -79,13 +79,7 @@ To all the fans of this website, pictured below, please be [let me know]({% link
 
 Here are some of my favorite projects:
 
-<ul>
-  {% for post in site.posts %}
-    {% if post.favorite %}
-      <li><a href="{{ post.url | relative_url }}">{{ post.title }}:</a> {{ post.description }}.</li>
-    {% endif %}
-  {% endfor %}
-</ul>
+{% include recent3.html mode="favorites" show_title=false limit=nil %}
 
 ## Odds and Ends
 

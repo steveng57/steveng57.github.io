@@ -1,8 +1,22 @@
-<!-- The 3 Most Recent Posts -->
+{% assign mode = include.mode | default: 'latest' %}
+{% assign limit = include.limit %}
+{% assign has_limit = include.limit | default: '' %}
+{% assign show_title = include.show_title | default: true %}
 
-{% assign latest_posts = site.posts | slice: 0, 3 %}
+{% if mode == 'favorites' %}
+  {% assign posts = site.posts | where_exp: 'p', 'p.favorite' %}
+  {% if has_limit != '' %}
+    {% assign posts = posts | slice: 0, limit %}
+  {% endif %}
+{% else %}
+  {% if has_limit == '' %}
+    {% assign limit = 3 %}
+  {% endif %}
+  {% assign posts = site.posts | slice: 0, limit %}
+{% endif %}
+
 <div id="post-list" class="flex-grow-1 px-xl-1">
-  {% for post in latest_posts %}
+  {% for post in posts %}
     {% assign card_body_col = '12' %}
 
     <article class="card-wrapper card">
