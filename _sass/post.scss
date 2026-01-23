@@ -134,51 +134,6 @@ html[data-mode='dark'] {
     }
 }
 
-/* Home page recent cards: keep hover shading and remove link underline */
-#post-list .card-wrapper {
-    position: relative;
-    border-radius: 10px;
-}
-
-#post-list .card-wrapper .post-preview {
-    border-radius: 10px;
-    background-color: transparent;
-    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    align-items: stretch;
-}
-
-#post-list .card-wrapper:hover .post-preview {
-    background-color: var(--card-hover-bg);
-    box-shadow: 0 0 0 1px var(--main-border-color);
-}
-
-#post-list .card-wrapper .preview-img {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-#post-list .card-wrapper .preview-img::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0);
-    transition: background-color 0.2s ease-in-out;
-}
-
-#post-list .card-wrapper:hover .preview-img::after {
-    background-color: var(--card-hover-bg);
-}
-
-#post-list .card-wrapper > a.sjg-card-link,
-#post-list .card-wrapper > a.sjg-card-link:hover,
-#post-list .card-wrapper > a.sjg-card-link:focus,
-#post-list .card-wrapper > a.sjg-card-link:focus-visible {
-    text-decoration: none;
-    border-bottom: none;
-    box-shadow: none;
-}
-
 /* Search-like form utilities (match Chirpy search box look) */
 .sjg-search-like,
 .sjg-search-like-group {

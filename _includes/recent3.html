@@ -5,8 +5,8 @@
   {% for post in latest_posts %}
     {% assign card_body_col = '12' %}
 
-    <article class="card-wrapper card position-relative">
-      <div class="post-preview row g-0 flex-md-row-reverse">
+    <article class="card-wrapper card">
+      <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse text-decoration-none border-bottom-0">
 
         {% if post.image %}
           {% assign src = post.image.path | default: post.image %}
@@ -29,7 +29,7 @@
 
           <div class="col-md-5">
             <div class="preview-img">
-              <img
+              <img data-no-lightbox="true"
                 src="{{ src | relative_url }}"
                 alt="{{ alt }}"
                 {% if img_meta and img_meta.width and img_meta.height %}
@@ -81,13 +81,7 @@
           </div>
         </div>
 
-      </div>
-      <a
-        href="{{ post.url | relative_url }}"
-        aria-label="{{ post.title | xml_escape }}"
-        class="sjg-card-link"
-        style="position: absolute; inset: 0; z-index: 1;"
-      ></a>
+      </a>
     </article>
   {% endfor %}
 </div>
