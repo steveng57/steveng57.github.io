@@ -2,7 +2,7 @@
 author: sjg
 layout: post
 title: Building a New PC
-description: The old one went kaput, so time for a new computer built with the latest and greatest parts
+description: The old one went kaput, so time for a new computer built with the latest and greatest parts.
 date: 2025-06-20 21:19:42 -0500
 last_modified_at: 2025-07-17 21:48:08 -0500
 category: [Home and Garden, House Tech] 
