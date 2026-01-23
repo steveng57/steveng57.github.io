@@ -59,7 +59,7 @@ I gave CP the conceptual overview of what I was after, and we started simple, ju
 
 It took about 1/2 and hour to get rolling, but it was a good investment as I learned how to talk "fireworks simulator" talk to CP.  You would not beleive the amount of futzing I had to do just to make the launch pad 10cm thick instead of 0, and I could have easily changed it in the code myself, but I wanted to figure out the process.
 
-We them moved on to building the launch canisters and putting them on the pad.  This is where ChatGPT came in handy as I asked it to give me a fireworks tutorial on canisters and how they work.  I love projects where you learn something about other domains, and this is certainly one of them.  I am not a fireworks expert by any means, but I do know the difference in muzzle velocities of an M2 versus an M10 mortar is!
+We then moved on to building the launch canisters and putting them on the pad.  This is where ChatGPT came in as a fireworks expert when I asked it to give me a tutorial on canisters and how they work.  I love projects where you learn something about other domains, and this is certainly one of them.  I am not a fireworks expert by any means, but I do know the difference in muzzle velocities of an M2 versus an M10 mortar is!
 
 {% include html-side.html img="Screenshot-2026-01-21-212456.avif" align="full" %}
 
