@@ -5,9 +5,7 @@
 
 {% if mode == 'favorites' %}
   {% assign posts = site.posts | where_exp: 'p', 'p.favorite' %}
-  {% assign pinned_posts = posts | where_exp: 'p', 'p.pin' %}
-  {% assign unpinned_posts = posts | where_exp: 'p', 'p.pin != true' %}
-  {% assign posts = pinned_posts | concat: unpinned_posts %}
+  {% assign posts = posts | sort: "pin" | reverse %}
   {% if has_limit != '' %}
     {% assign posts = posts | slice: 0, limit %}
   {% endif %}
