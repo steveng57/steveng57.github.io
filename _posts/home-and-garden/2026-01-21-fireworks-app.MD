@@ -264,7 +264,7 @@ Yeah yeah, I hear ya, enough talk, let's get to the show already.  Allright, her
 
 It has a two minute main show with a one minute finale.  It has full 3d camera rotation and sound.  Play on.
 
-{% include embed/youtube.html id = "pZ3ZiswNZL4?si=85kmr13iJmvb3WJY" %}
+{% include embed/youtube.html id = "SwWim1dEHG8?si=kJlN11lWFdsaikw3" %}
 
 ## Resources
 - Microsoft Visual Studio 
