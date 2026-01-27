@@ -18,7 +18,8 @@ pin: false
 
 January 1st came around, and with all the cool fireworks displays, it got me to thinking about an old fascination I had with simulation software and fireworks.  It has been on my _bucket list_ to write a fireworks simulator for a while, but my software skill-set was more around server side development and video production.  I knew a little about game design and GPU coding, just enough to be dangerous.  With the advent of AI co-coders like Github Copilot and Codex (from OpenAI, the same folk who brought you ChatGPT), I figured I would give it a try.  This post will have some geek aspects to it, since it is largely about writing this app, but I think the non-software engineers out there might fight it interesting as I share some of my take on what it is like to code with an AI assistant (or two or three as you will see).
 
-If you want to play along with any of this, see the app itself or look at the code, it is in a public Github repo here: [Fireworks App](https://www.github.com/steveng57/fireworksapp){:target='_blank'}.  A link to the most recent release and installation instructions can be found on the right side.  Enjoy!
+> If you want to play along with any of this, see the app itself or look at the code, it is in a public Github repo here: [Fireworks App](https://www.github.com/steveng57/fireworksapp){:target='_blank'}.  A link to the most recent release and installation instructions can be found on the right side.  Enjoy!
+{:.prompt-info}
 
 ## The Environment
 
@@ -257,6 +258,9 @@ It was a great experience, but not without its challenges:
 - **Losing it**.  Every once in a while, I would say about 1 in 10 times for complex scenarios, both ChatGPT and CP would get lost, or "lost-the-plot" as it were.  They were just in never-never-land, and no matter what I said I could not get them out of it, even with my advanced prompt engineering efforts.  I would have to "put it down and walk away"...one time CP even agreed that "we should try again later".  Too funny.
 - **Visuals to code**.  Describing the visuals behind the fireworks and trying to get that into code can be very trying.  It is not easy to get from "starry flaming bursts" to working code.  Such is the state of human/machine communications.  In some ways though I am impressed that it was able to do it at all, and eventually the AI would get there.
 - **Nits**.  There are about 50 "little things" that drive you a little crazy in the workflows.  For example, sometimes the AI would resort to writing Powershell scripts to get its job done, but would produce a bunch of errors in its own script when doing so, causing multiple passes to fix it.  All of which is going on my bill.  Stop it, you should be able to get powershell syntax correct the first time, not need three passes to make it work.  There were a lot of things like that.
+
+> If I had to sum it up the negatives in a single statement it would be:  Instead of coding and doing the software engineering thing, it sometimes felt like spoon feeding two cantankerous toddlers.
+{:.prompt-warning}
 
 ## The Finale
 
