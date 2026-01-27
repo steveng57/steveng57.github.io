@@ -60,11 +60,25 @@ I gave CP the conceptual overview of what I was after, and we started simple, ju
 
 It took about 1/2 and hour to get rolling, but it was a good investment as I learned how to talk "fireworks simulator" talk to CP.  You would not beleive the amount of futzing I had to do just to make the launch pad 10cm thick instead of 0, and I could have easily changed it in the code myself, but I wanted to figure out the process.
 
-We then moved on to building the launch canisters and putting them on the pad.  This is where ChatGPT came in as a fireworks expert when I asked it to give me a tutorial on canisters and how they work.  I love projects where you learn something about other domains, and this is certainly one of them.  I am not a fireworks expert by any means, but I do know the difference in muzzle velocities of an M2 versus an M10 mortar is!
+We then moved on to building the launch canisters and putting them on the pad.  This is where ChatGPT came in as a fireworks expert when I asked it to give me a tutorial on canisters and how they work.  I love projects where you learn something about other domains, and this is certainly one of them.  I am not a fireworks expert by any means, but I do know the difference in muzzle velocities of an M2 versus an M10 mortar!
+
+{% include html-side.html img="sparks.avif" align="left" %}
+
+### Sparks Fly
+
+One thing that tooks a surprising amount of time was getting the spark particles looking and flowing right.
+
+They actually started off square, which had a neat flickering and fluttering effect, but if you ever moved the camera in close it just didn't look right.  And their motion was originally off.  Not sure if it was lack of simulated wind resistance or what, but I added some some, slowed things down, make the particles spherical, and all was good.
+
+The image here is from later builds where you can "fly" the camera thru the fireworks and change the viewing angle.  Here we are above the launch pad looking down on it and the bleachers.  Those people had better be careful, the sparks can burn holes in their parkas!
+
+{% include clear-float.html %}
+
+I created a handful of very simple single stage fireworks, modelled them in the app and created "show" that lets you run thru a sequence of launches.  It worked well but the physics needed a lot of work, things just didn't look real.  
 
 {% include html-side.html img="Screenshot-2026-01-21-212456.avif" align="full" %}
 
-I created a handful of very simple single stage fireworks, modelled them in the app and created "show" that lets you run thru a sequence of launches.  It worked well but the physics needed a lot of work, things just didn't look real.  
+{% include clear-float.html %}
 
 ### First major AI usage
 
@@ -197,6 +211,12 @@ The pic shows the strobe burst embedded in what is called a _peony_ style partic
 
 {% include clear-float.html %}
 
+### Sounds
+
+I almost forgot to talk about sounds.  We added sound processing to the app.  Basically what happens is that each firework throws a serious of "events" (launch, burst, pop etc) over to the sound engine, along with an Id of what kind of firework it is.  The sound engine looks up the sound to play for that type of firework and plays it.
+
+I ran into a problem that the simple sound engine I created could only handle about 16 simultaneous sounds, and there were often many more than that at any one time.  CP suggested a number of multiplexing sounds libraries that can help with this problem, what they do is merge the audio from multiple sources in a single one before sending it down the audio processing pipeline.  So we took the best one and implemented it and had good sound in about an hour (would have taken me several hours without CP).
+
 ### Refactoring
 
 Refactoring code, I discovered, is an AI specialty.  It is very good at it, but you have to be specific about what you want, else it just makes assumptions and runs around like crazy.  Sounds a lot like some former co-workers I used to know (and love).
@@ -248,9 +268,19 @@ There are countless examples of this that I have run across in the construction 
 
 The second big thing is time.  I started this app a little after New Year's and it took a couple of weeks to get it where I wanted.  That time would be measured in months, not weeks, if I had done this without AI.  My gut says about three or four months.  But to be honest, I am not sure I would have been willing to put that much time and effort into it without AI, so it may never had gotten written in the first place.
 
+{% include html-side.html img="burst.avif" align="right" %}
+
+### Bursting
+
+In this image we see one of the more complex burst types called _Chrysanthemum_.  It's one of my favorites.
+
+At this stage the complexity of the fireworks engine was pretty robust, and since I had added a lot of knobs and dials along the way, I could control it to do lots of different things.  One must curb ones enthusiasm however, since if you have a twenty-seven stage explosion each with 10,000 subshells, it might start to lose it realism.
+
+{% include clear-float.html %}
+
 ### Knowledge
 
-The ability of the AI to be a "Graphics Programming Expert" was amazing too.  It saved so much search time, looking thru docs etc.  I could ask general questions about how something worked on the GPU or DirectX 11, and it almost always had an instantaneously great answer.
+The ability of the AI to be a "Graphics Programming Expert" was amazing too.  It saved so much search time, looking thru docs etc.  I could ask general questions about how something worked on the GPU or DirectX 11, and it almost always had an instantaneously great answer.  I say "almost" because once in a while it would go into the weeds and take me with it.  Which leads me to talk about...
 
 ### The Bad and The Ugly
 
@@ -266,7 +296,7 @@ It was a great experience, but not without its challenges:
 
 Yeah yeah, I hear ya, enough talk, let's get to the show already.  Allright, here is the YouTube video capture of one of the shows I have created.  
 
-It has a two minute main show with a one minute finale.  It has full 3d camera rotation and sound.  Play on.
+It has a two minute main show with a one minute finale.  It has full 3d camera rotation and sound.  Play on in full screen mode for the best experience.
 
 {% include embed/youtube.html id = "SwWim1dEHG8?si=kJlN11lWFdsaikw3" %}
 

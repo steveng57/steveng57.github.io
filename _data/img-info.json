@@ -495,6 +495,22 @@
     "height": 1536,
     "gallery": true
   },
+  "burst.avif": {
+    "title": "Bursting With Delight",
+    "subject": "",
+    "datetaken": "2026-01-27T11:32:00",
+    "width": 1663,
+    "height": 1374,
+    "gallery": false
+  },
+  "burst.png": {
+    "title": "Bursting With Delight",
+    "subject": "",
+    "datetaken": "2026-01-27T11:32:00",
+    "width": 1663,
+    "height": 1374,
+    "gallery": false
+  },
   "computer-stand-1.avif": {
     "title": "Bill's First Christmas",
     "subject": "Bill's First Christmas",
@@ -1909,6 +1925,22 @@
     "datetaken": "2025-05-22T22:42:00",
     "width": 1150,
     "height": 1095,
+    "gallery": false
+  },
+  "sparks.avif": {
+    "title": "Sparks Flying",
+    "subject": "",
+    "datetaken": "2026-01-27T10:56:00",
+    "width": 1827,
+    "height": 1485,
+    "gallery": false
+  },
+  "sparks.png": {
+    "title": "Sparks Flying",
+    "subject": "",
+    "datetaken": "2026-01-27T10:56:00",
+    "width": 1827,
+    "height": 1485,
     "gallery": false
   },
   "SpeedTest.avif": {
