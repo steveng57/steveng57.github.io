@@ -213,9 +213,9 @@ The pic shows the strobe burst embedded in what is called a _peony_ style partic
 
 ### Sounds
 
-I almost forgot to talk about sounds.  We added sound processing to the app.  Basically what happens is that each firework throws a serious of "events" (launch, burst, pop etc) over to the sound engine, along with an Id of what kind of firework it is.  The sound engine looks up the sound to play for that type of firework and plays it.
+I almost forgot to talk about sounds.  We added sound processing to the app.  Basically what happens is that each firework throws a series of "events" (launch, burst, pop etc) over to the sound engine, along with an Id of what kind of firework it is.  The sound engine looks up the sound to play for that type of firework and plays it.
 
-I ran into a problem that the simple sound engine I created could only handle about 16 simultaneous sounds, and there were often many more than that at any one time.  CP suggested a number of multiplexing sounds libraries that can help with this problem, what they do is merge the audio from multiple sources in a single one before sending it down the audio processing pipeline.  So we took the best one and implemented it and had good sound in about an hour (would have taken me several hours without CP).
+I ran into a problem that the simple sound engine I created could only handle about 16 simultaneous sounds, and there were often many more than that playing at any one time.  CP suggested a number of multiplexing sounds libraries that can help with this problem, what they do is merge the audio from multiple sources in a single one before sending it down the audio processing pipeline.  So we took the best one and implemented it and had good sound in about an hour, which would have taken me several without CP.
 
 ### Refactoring
 
