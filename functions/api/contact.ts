@@ -1,6 +1,7 @@
 interface KvNamespace 
 {
-  put(key: string, value: string): Promise<void>;
+  put(key: string, value: string, options?: { expirationTtl?: number }): Promise<void>;
+  get(key: string): Promise<string | null>;
 }
 
 interface ContactEnv 
@@ -55,11 +56,23 @@ class ContactRequestHandler
     private static readonly EmailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     private static readonly MaxEmailLength = 320;
     private static readonly MaxSubjectLength = 120;
+    private static readonly MaxBodyBytes = 20000; // conservative form size guard
+    private static readonly MaxBodyChars = 8000;  // combined email+subject+message guard
+    private static readonly MaxMessageLength = 4000; // truncate before logging/sending
+    private static readonly RateLimitMaxRequests = 5;
+    private static readonly RateLimitWindowMs = 60 * 60 * 1000; // 1 hour
     private static readonly ResendSubjectSliceLength = 90;
     private static readonly EmailSubjectPrefix = "Website Message: ";
 
     public static async HandleAsync({ request, env }: ContactContext): Promise<Response>
     {
+        // Cheap size check before reading the body
+        const contentLength = request.headers.get("content-length");
+        if (contentLength && parseInt(contentLength, 10) > this.MaxBodyBytes)
+        {
+            return this.PayloadTooLarge("Request body too large");
+        }
+
         const form = await request.formData();
 
         const email = this.getFormValue(form, "email", { trim: true });
@@ -68,6 +81,14 @@ class ContactRequestHandler
         const nickname = this.getFormValue(form, "nickname");
         const turnstileToken = this.getFormValue(form, "cf-turnstile-response");
         const trimmedMessage = message.trim();
+
+        const totalChars = email.length + subject.length + trimmedMessage.length;
+        if (totalChars > this.MaxBodyChars)
+        {
+            return this.PayloadTooLarge("Combined fields too large");
+        }
+
+        const safeMessage = trimmedMessage.slice(0, this.MaxMessageLength);
 
         if (nickname)
         {
@@ -99,6 +120,15 @@ class ContactRequestHandler
             return this.ServerError("Turnstile secret key not configured");
         }
 
+        if (env.CONTACT_LOG && "get" in env.CONTACT_LOG)
+        {
+            const rateCheck = await this.CheckRateLimit(request, env.CONTACT_LOG);
+            if (!rateCheck.ok)
+            {
+                return this.TooManyRequests(rateCheck.message);
+            }
+        }
+
         const turnstileResp = await fetch(
             "https://challenges.cloudflare.com/turnstile/v0/siteverify",
             {
@@ -127,7 +157,7 @@ class ContactRequestHandler
                 ts: timestamp,
                 email,
                 subject,
-                message
+                message: safeMessage
             };
 
             await env.CONTACT_LOG.put(`msg-${timestamp}`, JSON.stringify(entry));
@@ -144,7 +174,7 @@ class ContactRequestHandler
                 ? normalizedSubject.slice(0, this.ResendSubjectSliceLength).trimEnd()
                 : normalizedSubject;
         const composedSubject = `${this.EmailSubjectPrefix}${truncatedSubject}`;
-        const htmlMessage = this.EscapeHtml(message).replace(/\r?\n/g, "<br>");
+        const htmlMessage = this.EscapeHtml(safeMessage).replace(/\r?\n/g, "<br>");
 
         const payload: ResendEmailPayload = {
             from: "Steven Goulet Website <noreply@stevengoulet.com>",
@@ -158,7 +188,7 @@ From: ${email}
 Subject: ${normalizedSubject}
 
 Message:
-${message}`,
+${safeMessage}`,
             html: `
                 <h2>New message from stevengoulet.com</h2>
                 <p><strong>From:</strong> ${this.EscapeHtml(email)}</p>
@@ -272,5 +302,72 @@ ${message}`,
             status,
             headers: { Location: location }
         });
+    }
+
+    private static PayloadTooLarge(message: string): Response
+    {
+        return new Response(message, { status: 413 });
+    }
+
+    private static TooManyRequests(message: string): Response
+    {
+        return new Response(message, { status: 429 });
+    }
+
+    private static GetClientIp(request: Request): string
+    {
+        const cfIp = request.headers.get("cf-connecting-ip");
+        if (cfIp) return cfIp;
+
+        const xff = request.headers.get("x-forwarded-for");
+        if (xff) return xff.split(",")[0].trim();
+
+        return "unknown";
+    }
+
+    private static async CheckRateLimit(request: Request, kv: KvNamespace): Promise<{ ok: boolean; message?: string }>
+    {
+        const ip = this.GetClientIp(request);
+        if (!ip || ip === "unknown")
+        {
+            return { ok: true };
+        }
+
+        const rateKey = `rate-${ip}`;
+        let count = 0;
+        let windowStart = Date.now();
+
+        try
+        {
+            const existing = await kv.get(rateKey);
+            if (existing)
+            {
+                const parsed = JSON.parse(existing) as { count: number; windowStart: number };
+                count = parsed.count || 0;
+                windowStart = parsed.windowStart || windowStart;
+            }
+        }
+        catch
+        {
+            /* ignore parse errors and treat as empty */
+        }
+
+        const now = Date.now();
+        if (now - windowStart > this.RateLimitWindowMs)
+        {
+            count = 0;
+            windowStart = now;
+        }
+
+        count += 1;
+
+        if (count > this.RateLimitMaxRequests)
+        {
+            return { ok: false, message: "Too many submissions. Please try again later." };
+        }
+
+        await kv.put(rateKey, JSON.stringify({ count, windowStart }), { expirationTtl: Math.ceil(this.RateLimitWindowMs / 1000) });
+
+        return { ok: true };
     }
 }
