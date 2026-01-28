@@ -66,9 +66,9 @@ We then moved on to building the launch canisters and putting them on the pad.  
 
 ### Sparks Fly
 
-One thing that tooks a surprising amount of time was getting the spark particles looking and flowing right.
+One thing that took a surprising amount of time was getting the spark particles looking and flowing right.
 
-They actually started off square, which had a neat flickering and fluttering effect, but if you ever moved the camera in close it just didn't look right.  And their motion was originally off.  Not sure if it was lack of simulated wind resistance or what, but I added some some, slowed things down, make the particles spherical, and all was good.
+They actually started off square, which had a neat flickering and fluttering effect, but if you ever moved the camera in close it just didn't look right.  So I spent some time making the particles spherical, or at least appear that way: they are actually circles that always face the camera.  And the particle motion was originally off, the physics wasn't working.  More on this below. 
 
 The image here is from later builds where you can "fly" the camera thru the fireworks and change the viewing angle.  Here we are above the launch pad looking down on it and the bleachers.  Those people had better be careful, the sparks can burn holes in their parkas!
 
@@ -82,7 +82,7 @@ I created a handful of very simple single stage fireworks, modelled them in the 
 
 ### First major AI usage
 
-Once thing the physics had wrong was timing: things just looked too fast.  Even though I had modelled things to scale and was using real physics constants (ie acceleration due to gravity = 9.8m/sec<sup>2</sup>), but somethings were off.  Not sure it was the wind resistance of a real show versus my simulation or what, but things needed to slow down.  I wanted to add a factor (like 0.80) somewhere that would slow time down across the board.
+As mentioned above, the physics timing was a bit off: things just looked too fast.  Even though I had modelled things to scale and was using real physics constants (ie acceleration due to gravity = 9.8m/sec<sup>2</sup>), but somethings were off.  Not sure it was the wind resistance of a real show versus my simulation or what, but things needed to slow down.  I wanted to add a factor (like 0.80) somewhere that would slow time down across the board.
 
 Copilot couldn't get this, no matter what I tried it just couldn't get it right.  The implementation was weird, off.  It just didn't fix the problem it was supposed to.  So I zipped up code and gave it to ChatGPT and gave it an explanation of what I had tried with CP, and to my surprise it did not just fix the problem, ChatGPT said <sic> "Yeah, Copilot can be like that. Here is what you need to tell it...".  So I copied and pasted from ChatGPT over to CP and it worked like a charm.  Ultimately this proved one very important thing: that I cannot write the best AI prompts and instructions, in fact I suck at it.
 
@@ -91,15 +91,19 @@ Now I had heard of this before, using one AI to craft a detailed prompt for the 
 ### ChatGPT Prompt Engineering
 
 Here is an example of the process.  Here I write the following to ChatGPT (skip to the end of the blue section if you are not interested in prompt engineering, which will be 98% of you.):
+
 {% include sjg-wrap.html mode="start"%}
+
 We need to add a new profile and maybe a burst shape to the app. This one will be called strobe, and it will start with a peony style sphere of particles sparkling, then inside that sphere 100 or so (configurable) "strobes" will appear. Each strobe subshell will be a sharp small pop of colour (defaulting to white) that is about 2.5cm in radius (configurable) and lasts for only 0.25 seconds (configurable). Strobe subshells have no trail. Since the primary shell will have subshells and its own burst, we should model it on an profile that already has the same properties (like peonytowillow).
 
 Help me write the perfect Copilot prompts for this.
+
 {% include sjg-wrap.html mode="end" %}
 
 And here is what ChatGPT came back with:
 
 {% include sjg-wrap.html mode="start" %}
+
 **Prompt 1 — Add a new Strobe profile (modeled after PeonyToWillow)**
 
 Goal: Define a reusable profile that combines a normal burst and timed subshell strobes.
@@ -196,11 +200,13 @@ Visual goal:
 Add comments explaining:
 - Why strobes are implemented as subshells.
 - Which parts are intentionally different from PeonyToWillow.
+
 {% include sjg-wrap.html mode="end" %}
 
 Yeah I know that was too much to read and there is no way you should read it.  But I put that in here to emphasize the point that from my simple descriptive paragraph, ChatGPT generated a whoppingly detailed prompt, that I then cut and past back into CP.  
 
 {% include html-side.html img="Screenshot-2026-01-22-104855.avif" align="right" %}
+
 ### And it was awesome...
 
 I walked away, made a cup of coffee, and about 20 minutes later came back and CP had done the job.  It did it pretty well too, much much better than it would have if I had not refined my prompt thru ChatGPT. Now these always require a bit of tweaking and fine tuning, but over all it did a bang up job.  And once in a while CP went off into the weeds or "lost the plot" as they say, but in general it was pretty cool and often it was great at it.
@@ -274,7 +280,7 @@ The second big thing is time.  I started this app a little after New Year's and 
 
 In this image we see one of the more complex burst types called _Chrysanthemum_.  It's one of my favorites.
 
-At this stage the complexity of the fireworks engine was pretty robust, and since I had added a lot of knobs and dials along the way, I could control it to do lots of different things.  One must curb ones enthusiasm however, since if you have a twenty-seven stage explosion each with 10,000 subshells, it might start to lose it realism.
+At this stage the complexity of the fireworks engine was pretty robust, and since I had added a lot of knobs and dials along the way, I could control it to do lots of different things.  One must curb ones enthusiasm however, since if you have a twenty-seven stage explosion each with 10,000 subshells, it might start to lose any sense of realism.
 
 {% include clear-float.html %}
 
@@ -294,7 +300,7 @@ It was a great experience, but not without its challenges:
 
 ## The Finale
 
-Yeah yeah, I hear ya, enough talk, let's get to the show already.  Allright, here is the YouTube video capture of one of the shows I have created.  
+Yeah yeah, I hear ya, enough talk, let's get to the show already.  Alright, here is the YouTube video capture of one of the shows I have created.  
 
 It has a two minute main show with a one minute finale.  It has full 3d camera rotation and sound.  Play on in full screen mode for the best experience.
 
