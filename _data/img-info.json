@@ -495,6 +495,14 @@
     "height": 1536,
     "gallery": true
   },
+  "Affogato.avif": {
+    "title": "Affogato - An Itialian Delicacy",
+    "subject": "Affogato - An Itialian Delicacy",
+    "datetaken": "2026-02-10T17:43:00",
+    "width": 500,
+    "height": 333,
+    "gallery": false
+  },
   "burst.avif": {
     "title": "Bursting With Delight",
     "subject": "",
@@ -1750,6 +1758,94 @@
     "width": 2048,
     "height": 1245,
     "gallery": false
+  },
+  "IMG_2298.avif": {
+    "title": "Bad Cut #1",
+    "subject": "Bad Cut #1",
+    "datetaken": "2026-02-05T12:55:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
+  "IMG_2301.avif": {
+    "title": "Smaller Sticks",
+    "subject": "Smaller Sticks",
+    "datetaken": "2026-02-05T13:12:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_2302.avif": {
+    "title": "Rabbet",
+    "subject": "Rabbet",
+    "datetaken": "2026-02-06T13:03:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_2304.avif": {
+    "title": "What the...?",
+    "subject": "What the...?",
+    "datetaken": "2026-02-06T13:03:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_2307.avif": {
+    "title": "Clamping Time",
+    "subject": "Clamping Time",
+    "datetaken": "2026-02-06T15:51:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_2310.avif": {
+    "title": "Back Braces",
+    "subject": "Back Braces",
+    "datetaken": "2026-02-08T15:23:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_2318.avif": {
+    "title": "Finished",
+    "subject": "Finished",
+    "datetaken": "2026-02-10T11:00:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": false
+  },
+  "IMG_2320.avif": {
+    "title": "Spacermania",
+    "subject": "Spacermania",
+    "datetaken": "2026-02-10T13:54:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_2322.avif": {
+    "title": "Sauna Bound",
+    "subject": "Sauna Bound",
+    "datetaken": "2026-02-10T14:57:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_2323.avif": {
+    "title": "Spa Ready",
+    "subject": "Spa Ready",
+    "datetaken": "2026-02-10T14:57:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_2324.avif": {
+    "title": "Frames for Sauna",
+    "subject": "Frames for Sauna",
+    "datetaken": "2026-02-10T14:57:00",
+    "width": 2048,
+    "height": 1536,
+    "gallery": true
   },
   "IMG_DT1.avif": {
     "title": "New Home",
