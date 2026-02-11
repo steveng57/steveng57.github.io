@@ -4,7 +4,7 @@ on:
   push:
     branches: ["main"]
   schedule:
-    - cron: '1 4 * * *'
+    - cron: "1 4 * * *"
   workflow_dispatch:
 
 permissions:
@@ -23,7 +23,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive  # This is the key line for submodules
+          submodules: recursive # This is the key line for submodules
 
       - name: Update submodules to latest
         run: |
@@ -59,7 +59,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.4.4'
+          ruby-version: "3.4.4"
           bundler-cache: true
 
       - name: Setup Pages
@@ -72,7 +72,7 @@ jobs:
           JEKYLL_ENV: production
 
       - name: Run htmlproofer
-        run: bundle exec htmlproofer ./_site --disable-external --check-html --allow-hash-href
+        run: bundle exec htmlproofer ./_site --disable-external --checks html --allow-hash-href
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

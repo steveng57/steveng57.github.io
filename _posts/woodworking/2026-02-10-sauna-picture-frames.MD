@@ -82,7 +82,6 @@ I'm in!!!
 
 See, they are almost exactly the same!
 
-
 {% include html-side.html img="IMG_2320.avif" align="left" %}
 ### Alignment Issues
 
