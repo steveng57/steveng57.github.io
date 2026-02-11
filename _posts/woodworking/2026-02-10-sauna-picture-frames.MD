@@ -89,6 +89,8 @@ So one of the more challenging aspects of this build was that the artwork itself
 
 I had to use copious amounts of clamps and spacers (the blue, white, red, and green plastic things in the pic) to get things aligned properly in the frames before screwing them in place.
 
+If you are wondering about the playing cards in the box with the spacers, they are not for an impromptu game of workshop blackjack (though not a bad idea).  It turns out that playing cards make great spacers, three of them make about one mm.  You can put one or ten of them in a spot and as long as you put the same number of cards on the opposite side, you are golden.  Or combine them with the plastic thingies for even more flexibility!
+
 {% include clear-float.html break=1 %}
 
 ## Done and Ready
