@@ -18,7 +18,7 @@ pin: true
 ## Background
 We got some cool prints that matched the theme we were going for in the new sauna building out back, which I would have to describe as "contemporary organic", meaning marbles, tiles, and woods, but with a modern spa-like styling.
 
-I know this is my fourth post on picture frames, and that might get a little repetitive, so I have included some hand-puppets at the end for your entertainment, stay tuned.
+I know this is my fourth post on picture frames, and that might get a little repetitive, so I have included a hand-puppet show at the end for your entertainment, stay tuned.
 
 ## The Design
 I did NOT use Sketchup for this one, so it proves I can do some things on the fly.  It's the same design as the last two in the series, a _"shadow box"_ frame.  The difference here is that the other two were painted poplar, but this set of frames are made from white oak.  Some foreshadowing: white oak is **way** harder than poplar.  If you look at the Janka hardness scale, it is about 2.5 times harder.
@@ -31,7 +31,7 @@ I did NOT use Sketchup for this one, so it proves I can do some things on the fl
 
 This was bad.  Ugly bad.  So when making frames like this, you start with a board that is about 25mm (an inch) thick, and from that you want to rip it down the middle on the bandsaw to get two pieces, one about 12mm thick and the other about 7mm thick.  This allows for a little bit of waste and accounts for the kerf of the blade, which is about 1.5mm thick.  
 
-But I made a couple or three mistakes here.  First, this board is almost 20cm (8in) wide, meaning the bandsaw blade has to cut all the way thru that.  Second, my bandsaw blade was a little dull for white oak, which is a pretty hard hardwood.  Third, I didn't have the right setup on the bandsaw.  Fourth, rather than looking at the entire board as I was cutting, I was focussed on just the top part, and did not realize the bottom was going totally wonky on me.  And fifth...and sixth... 
+But I made a couple or three mistakes here.  First, this board is almost 20cm (8in) wide, meaning the bandsaw blade has to cut all the way through that.  Second, my bandsaw blade was a little dull for white oak, which is a pretty hard hardwood.  Third, I didn't have the right setup on the bandsaw.  Fourth, rather than looking at the entire board as I was cutting, I was focussed on just the top part, and did not realize the bottom was going totally wonky on me.  And fifth...and sixth... 
 
 {% include clear-float.html break=1 %}
 
@@ -51,7 +51,7 @@ It was such a botched mess, I just turned off the bandsaw and walked away.  When
 
 {% include html-sxs.html img1="IMG_2301.avif" img2="IMG_2302.avif" %}
 
-So when I came back the next day, shaking off the shear disgust of my previous efforts, I did a couple of things to make things work.  The number one fix was to cut the boards down to about 40mm from 200mm in width so that the bandsaw had a lot less to chew on as it went thru the board.  Next thing was to get a brand new blade, which proved to be a real difference: it cut through the white oak like a chainsaw thru a dandelion.  I also did a bunch of little things like a better bandsaw setup, proper out-feed support etc. 
+So when I came back the next day, shaking off the shear disgust of my previous efforts, I did a couple of things to make things work.  The number one fix was to cut the boards down to about 40mm from 200mm in width so that the bandsaw had a lot less to chew on as it went through the board.  Next thing was to get a brand new blade, which proved to be a real difference: it cut through the white oak like a chainsaw through a dandelion.  I also did a bunch of little things like a better bandsaw setup, proper out-feed support etc. 
 
 {% include html-side.html img="IMG_2307.avif" align="left" %}
 ### Clamps and Glue
@@ -101,9 +101,9 @@ After all that, they were ready to go.
 
 Once we get these frames installed in the new sauna, we will take some pics and publish them here.  Stay tuned, I think they are going to look great!
 
-## Hand Puppets
+## Hand-Puppet Show
 
-So here are the hand puppets I promised earlier...well look at that, this post is too long as it is, it will have to wait until next time.
+So here is the hand-puppet show I promised earlier...well look at that, this post is too long as it is, it will have to wait until next time.
 
 ## Materials and Tools
 
