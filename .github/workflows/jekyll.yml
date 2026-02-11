@@ -72,7 +72,7 @@ jobs:
           JEKYLL_ENV: production
 
       - name: Run htmlproofer
-        run: bundle exec htmlproofer ./_site --disable-external --check-html --allow-hash-href
+        run: bundle exec htmlproofer ./_site --disable-external --checks html --allow-hash-href
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
