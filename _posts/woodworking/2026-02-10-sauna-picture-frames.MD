@@ -33,7 +33,7 @@ This was bad.  Ugly bad.  So when making frames like this, you start with a boar
 
 But I made a couple or three mistakes here.  First, this board is almost 20cm (8in) wide, meaning the bandsaw blade has to cut all the way through that.  Second, my bandsaw blade was a little dull for white oak, which is a pretty hard hardwood.  Third, I didn't have the right setup on the bandsaw.  Fourth, rather than looking at the entire board as I was cutting, I was focussed on just the top part, and did not realize the bottom was going totally wonky on me.  And fifth...and sixth... 
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include html-side.html img="IMG_2304.avif" align="right" %}
 
@@ -45,7 +45,7 @@ When you cut a board down the middle, it is supposed to have wood on both sides.
 
 It was such a botched mess, I just turned off the bandsaw and walked away.  When it's not working, it's best to take a break and come back with a clear head.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ### The Fix Is In
 
@@ -54,11 +54,12 @@ It was such a botched mess, I just turned off the bandsaw and walked away.  When
 So when I came back the next day, shaking off the shear disgust of my previous efforts, I did a couple of things to make things work.  The number one fix was to cut the boards down to about 40mm from 200mm in width so that the bandsaw had a lot less to chew on as it went through the board.  Next thing was to get a brand new blade, which proved to make a real difference: it cut through the white oak like a chainsaw through a dandelion.  I also did a bunch of little things like a better bandsaw setup, proper out-feed support etc. 
 
 {% include html-side.html img="IMG_2307.avif" align="left" %}
+
 ### Clamps and Glue
 
 After cutting the rabbet (not rabbit my fellow woodworkers!), it was time for the dominos on the corner mitres and some glue and clamps.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ### Back Braces in Place
 
@@ -68,7 +69,7 @@ Armed with an 18 gauge brad-nailer, I glued the back braces in place.
 
 The braces are made from the 7mm cuts mentioned above, and they are not visible when the frame is complete, so they are sometimes rough and only partially finished.  They are for stability, strength and ensuring the outer boards are straight.  The artwork itself is mounted directly to these with screws from the underside, so they need to be solid.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ### Finished
 
@@ -89,9 +90,9 @@ So one of the more challenging aspects of this build was that the artwork itself
 
 I had to use copious amounts of clamps and spacers (the blue, white, red, and green plastic things in the pic) to get things aligned properly in the frames before screwing them in place.
 
-If you are wondering about the playing cards in the box with the spacers, they are not for an impromptu game of workshop blackjack (though not a bad idea).  It turns out that playing cards make great spacers, three of them make about one mm.  You can put one or ten of them in a spot and as long as you put the same number of cards on the opposite side, you are golden.  Or combine them with the plastic thingies for even more flexibility!
+If you are wondering about the playing cards in the box with the spacers, they are not for an impromptu game of workshop blackjack (though not a bad idea).  It turns out that playing cards make great spacers, they are about 0.30mm each, so three of them make about one mm.  You can put one or ten of them in a spot and as long as you put the same number of cards on the opposite side, you are golden, or combine them with the plastic thingies for even more flexibility!
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ## Done and Ready
 
