@@ -18,7 +18,7 @@ pin: true
 ## Background
 We got some cool prints that matched the theme we were going for in the new sauna building out back, which I would have to describe as "contemporary organic", meaning marbles, tiles, and woods, but with a modern spa-like styling.
 
-I know this is my fourth post on picture frames, and that might get a little repetitive, so I have included a hand-puppet show at the end for your entertainment, stay tuned.
+I know this is my fourth post on picture frames, and that might get a little repetitive, so I have included a puppet show at the end for your entertainment, stay tuned.
 
 ## The Design
 I did NOT use Sketchup for this one, so it proves I can do some things on the fly.  It's the same design as the last two in the series, a _"shadow box"_ frame.  The difference here is that the other two were painted poplar, but this set of frames are made from white oak.  Some foreshadowing: white oak is **way** harder than poplar.  If you look at the Janka hardness scale, it is about 2.5 times harder.
@@ -85,7 +85,7 @@ See, they are almost exactly the same!
 {% include html-side.html img="IMG_2320.avif" align="left" %}
 ### Alignment Issues
 
-So one of the more challenging aspects of this build was that the artwork itself was neither square nor straight.  Both pieces had been in the basement for quite a while, and stuff like that will happen over time.  The corners were out of square sometimes by as much as five degrees, and if you looked down an edge you could see a lot of bowing.  It was nasty, like a full centimeter on the larger piece.
+So one of the more challenging aspects of this build was that the artwork itself was neither square nor straight.  Both pieces had been in the basement for quite a while, and stuff like that will happen over time.  The corners were out of square sometimes by as much as five degrees, and if you looked down an edge you could see a lot of bowing.  It was nasty, like a full centimeter bend on the larger piece.
 
 I had to use copious amounts of clamps and spacers (the blue, white, red, and green plastic things in the pic) to get things aligned properly in the frames before screwing them in place.
 
@@ -101,9 +101,9 @@ After all that, they were ready to go.
 
 Once we get these frames installed in the new sauna, we will take some pics and publish them here.  Stay tuned, I think they are going to look great!
 
-## Hand-Puppet Show
+## Puppet Show
 
-So here is the hand-puppet show I promised earlier...well look at that, this post is too long as it is, it will have to wait until next time.
+So here is the puppet show I promised earlier...well look at that, we're out of time.  It will have to wait until the next post.
 
 ## Materials and Tools
 
