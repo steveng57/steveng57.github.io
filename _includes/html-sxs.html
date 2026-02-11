@@ -5,7 +5,8 @@
     - alt1 / alt2: override alt text for each image
     - title1 / title2: override title attribute
     - align: optional sizing helper; use `equal-33`, `equal-50` (alias `equal`),
-             `equal-66`, or `equal-75` to give both figures matching widths.
+             `equal-66`, `equal-75`, or `equal-height` to give both figures matching widths
+             or matching heights.
              Defaults to natural image sizing (unchanged from legacy behavior).
     - wrapper_classes: additional classes for the outer flex container
     - figure_classes: base classes applied to both `<figure>` elements
@@ -26,6 +27,9 @@
 
 {% assign align = include.align | default: "" %}
 {% assign size_class = "" %}
+{% assign figure1_style = "" %}
+{% assign figure2_style = "" %}
+
 {% case align %}
   {% when "equal", "equal-50" %}
     {% assign size_class = " sjg-sxs-equal-50" %}
@@ -35,6 +39,21 @@
     {% assign size_class = " sjg-sxs-equal-66" %}
   {% when "equal-75" %}
     {% assign size_class = " sjg-sxs-equal-75" %}
+  {% when "equal-height" %}
+    {% assign size_class = " sjg-sxs-equal-height" %}
+    {% if img1_meta.width and img1_meta.height and img2_meta.width and img2_meta.height %}
+      {% assign w1 = img1_meta.width | times: 1.0 %}
+      {% assign h1 = img1_meta.height | times: 1.0 %}
+      {% assign w2 = img2_meta.width | times: 1.0 %}
+      {% assign h2 = img2_meta.height | times: 1.0 %}
+      {% assign ar1 = w1 | divided_by: h1 %}
+      {% assign ar2 = w2 | divided_by: h2 %}
+      {% assign total_ar = ar1 | plus: ar2 %}
+      {% assign pct1 = ar1 | divided_by: total_ar | times: 100 %}
+      {% assign pct2 = ar2 | divided_by: total_ar | times: 100 %}
+      {% assign figure1_style = "--sxs-width: " | append: pct1 | append: "%" %}
+      {% assign figure2_style = "--sxs-width: " | append: pct2 | append: "%" %}
+    {% endif %}
   {% else %}
     {% assign size_class = "" %}
 {% endcase %}
@@ -83,7 +102,7 @@
 {% assign title2 = include.title2 | default: caption2 %}
 
 <div class="{{ wrapper_classes | strip }}">
-  <figure class="{{ figure1_classes | strip }}">
+  <figure class="{{ figure1_classes | strip }}" style="{{ figure1_style }}">
     <img
       src="{{ include.img1 }}"
       alt="{{ alt1 | escape }}"
@@ -95,7 +114,7 @@
     >
     <figcaption class="{{ caption_classes | strip }}">{{ caption1 }}</figcaption>
   </figure>
-  <figure class="{{ figure2_classes | strip }}">
+  <figure class="{{ figure2_classes | strip }}" style="{{ figure2_style }}">
     <img
       src="{{ include.img2 }}"
       alt="{{ alt2 | escape }}"

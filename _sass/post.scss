@@ -53,7 +53,8 @@
 .sjg-sxs-equal-33,
 .sjg-sxs-equal-50,
 .sjg-sxs-equal-66,
-.sjg-sxs-equal-75 {
+.sjg-sxs-equal-75,
+.sjg-sxs-equal-height {
     flex: 1 1 100%;
     max-width: 100%;
     width: 100%;
@@ -86,6 +87,11 @@
     .sjg-sxs-equal-75 {
         flex-basis: 75%;
         max-width: 75%;
+    }
+
+    .sjg-sxs-equal-height {
+        flex-basis: var(--sxs-width);
+        max-width: var(--sxs-width);
     }
 
     /* Ensure flex-md-row works even without full Bootstrap utilities */

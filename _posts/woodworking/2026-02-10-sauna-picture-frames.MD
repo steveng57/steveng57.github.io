@@ -79,9 +79,9 @@ After trying a number of different shades of grey Rubio Monocoat hard-wax oils, 
 I'm in!!!
 {: .prompt-info .sjg-br }
 
-{% include html-sxs.html img1="IMG_2318.avif" img2="Affogato.avif" align="equal" %}
+{% include html-sxs.html img1="IMG_2318.avif" img2="Affogato.avif" align="equal-height" %}
 
-See, they are almost exactly the same!
+See, they are almost identical!
 
 {% include html-side.html img="IMG_2320.avif" align="left" %}
 ### Alignment Issues
