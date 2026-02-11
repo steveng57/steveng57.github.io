@@ -4,6 +4,9 @@
     - caption1 / caption2: optional captions; default to `_data/img-info.json`
     - alt1 / alt2: override alt text for each image
     - title1 / title2: override title attribute
+    - align: optional sizing helper; use `equal-33`, `equal-50` (alias `equal`),
+             `equal-66`, or `equal-75` to give both figures matching widths.
+             Defaults to natural image sizing (unchanged from legacy behavior).
     - wrapper_classes: additional classes for the outer flex container
     - figure_classes: base classes applied to both `<figure>` elements
     - figure1_classes / figure2_classes: per-figure overrides
@@ -21,6 +24,21 @@
 {% assign caption1 = include.caption1 | default: img1_meta.title %}
 {% assign caption2 = include.caption2 | default: img2_meta.title %}
 
+{% assign align = include.align | default: "" %}
+{% assign size_class = "" %}
+{% case align %}
+  {% when "equal", "equal-50" %}
+    {% assign size_class = " sjg-sxs-equal-50" %}
+  {% when "equal-33" %}
+    {% assign size_class = " sjg-sxs-equal-33" %}
+  {% when "equal-66" %}
+    {% assign size_class = " sjg-sxs-equal-66" %}
+  {% when "equal-75" %}
+    {% assign size_class = " sjg-sxs-equal-75" %}
+  {% else %}
+    {% assign size_class = "" %}
+{% endcase %}
+
 {% assign wrapper_classes = include.wrapper_classes | default: "d-flex flex-column flex-md-row justify-content-center align-items-center gap-2 mb-3" %}
 
 {% assign base_figure_classes = include.figure_classes | default: "figure d-inline-flex flex-column align-items-center text-center mb-0" %}
@@ -35,6 +53,11 @@
   {% assign figure2_classes = include.figure2_classes %}
 {% else %}
   {% assign figure2_classes = base_figure_classes | append: " sjg-sxs-right" %}
+{% endif %}
+
+{% if size_class != "" %}
+  {% assign figure1_classes = figure1_classes | append: size_class %}
+  {% assign figure2_classes = figure2_classes | append: size_class %}
 {% endif %}
 
 {% assign image_base_classes = "figure-img img-fluid rounded" %}

@@ -50,6 +50,15 @@
     margin-bottom: 0.5rem;
 }
 
+.sjg-sxs-equal-33,
+.sjg-sxs-equal-50,
+.sjg-sxs-equal-66,
+.sjg-sxs-equal-75 {
+    flex: 1 1 100%;
+    max-width: 100%;
+    width: 100%;
+}
+
 @media (min-width: 768px) {
     .sjg-sxs-left {
         margin-right: 0.25rem;
@@ -57,6 +66,26 @@
 
     .sjg-sxs-right {
         margin-left: 0.25rem;
+    }
+
+    .sjg-sxs-equal-33 {
+        flex-basis: 33%;
+        max-width: 33%;
+    }
+
+    .sjg-sxs-equal-50 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .sjg-sxs-equal-66 {
+        flex-basis: 66%;
+        max-width: 66%;
+    }
+
+    .sjg-sxs-equal-75 {
+        flex-basis: 75%;
+        max-width: 75%;
     }
 
     /* Ensure flex-md-row works even without full Bootstrap utilities */
