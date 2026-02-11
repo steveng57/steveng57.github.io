@@ -62,7 +62,7 @@ After cutting the rabbet (not rabbit my fellow woodworkers!), it was time for th
 
 ### Back Braces in Place
 
-{% include html-side.html img="IMG_2310.avif" align="left" %}
+{% include html-side.html img="IMG_2310.avif" align="right" %}
 
 Armed with an 18 gauge brad-nailer, I glued the back braces in place.  
 
