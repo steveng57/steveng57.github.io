@@ -59,11 +59,11 @@ So when I came back the next day, shaking off the shear disgust of my previous e
 
 After cutting the rabbet (not rabbit my fellow woodworkers!), it was time for the dominos on the corner mitres and some glue and clamps.
 
-{% include clear-float.html %}
-
-### Back Braces in Place
+{% include clear-float.html break=1 %}
 
 {% include html-side.html img="IMG_2310.avif" align="right" %}
+
+### Back Braces in Place
 
 Armed with an 18 gauge brad-nailer, I glued the back braces in place.  
 
