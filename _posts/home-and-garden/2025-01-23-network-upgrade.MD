@@ -84,7 +84,7 @@ The Unifi line has just come out with a few more goodies to add to the home netw
 
 ## Materials and Tools
 
-- [Router - Unifi Dream Machine Pro](https://ca.store.ui.com/ca/en/category/all-cloud-gateways/products/udm-pro/){:target='_blank'}
-- [Main Switch - Unifi Pro HD 24 PoE](https://ca.store.ui.com/ca/en/category/all-switching/products/usw-pro-hd-24-poe){:target='_blank'}
-- [Legacy Unifi gear from Ubiquiti](https://www.ui.com/){:target='_blank'}
+- [Router - Unifi Dream Machine Pro](https://ca.store.ui.com/ca/en/category/all-cloud-gateways/products/udm-pro/){{site.tb}}
+- [Main Switch - Unifi Pro HD 24 PoE](https://ca.store.ui.com/ca/en/category/all-switching/products/usw-pro-hd-24-poe){{site.tb}}
+- [Legacy Unifi gear from Ubiquiti](https://www.ui.com/){{site.tb}}
 {: .sjg-list }

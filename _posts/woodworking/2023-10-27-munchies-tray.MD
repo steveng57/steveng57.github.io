@@ -16,7 +16,7 @@ media_subpath: /assets/img/posts/munchies-tray
 
 When I set out to do this, I hadn't really thought of the complications that are involved in doing angled cuts like this. I mean, I knew there would be some, but I had to really dig deep and resurrect some old trigonometry skills. Nah, not really, I used an online calculator, but still it was a lot of weird angles. It's a 15&deg; angle to the sides, but when you are doing the cuts, it's a double mitre angle cut at 13.1&deg; tilt, and 34&deg; mitre. Yikes.
 
-> **Mitre Calculator**: For those who are interested in a really good online mitre cut calculator, here is the one I used: [Compound Angle Calculator]{:target="\_blank"}
+> **Mitre Calculator**: For those who are interested in a really good online mitre cut calculator, here is the one I used: [Compound Angle Calculator]{{site.tb}}
 {: .prompt-tip }
 
 ## Under Construction

@@ -18,7 +18,7 @@ pin: false
 
 January 1st came around, and with all the cool fireworks displays, it got me to thinking about an old fascination I had with simulation software and fireworks.  It has been on my _bucket list_ to write a fireworks simulator for a while, but my software skill-set was more around server side development and video production.  I knew a little about game design and GPU coding, just enough to be dangerous.  With the advent of AI co-coders like Github Copilot and Codex (from OpenAI, the same folk who brought you ChatGPT), I figured I would give it a try.  This post will have some geek aspects to it, since it is largely about writing this app, but I think the non-software engineers out there might fight it interesting as I share some of my take on what it is like to code with an AI assistant (or two or three as you will see).
 
-> If you want to play along with any of this, see the app itself or look at the code, it is in a public Github repo here: [Fireworks App](https://www.github.com/steveng57/fireworksapp){:target='_blank'}.  A link to the most recent release and installation instructions can be found on the right side.  Enjoy!
+> If you want to play along with any of this, see the app itself or look at the code, it is in a public Github repo here: [Fireworks App](https://www.github.com/steveng57/fireworksapp){{site.tb}}.  A link to the most recent release and installation instructions can be found on the right side.  Enjoy!
 {:.prompt-info}
 
 ## The Environment
@@ -308,7 +308,7 @@ It has a two minute main show with a one minute finale.  It has full 3d camera r
 
 ## Resources
 - Microsoft Visual Studio 
-- Github Copilot details can be found here: [Github Copilot](https://github.com/features/copilot){:target='_blank'}
-- ChatGPT is at [OpenAI](https://www.openai.com){:target='_blank'}
+- Github Copilot details can be found here: [Github Copilot](https://github.com/features/copilot){{site.tb}}
+- ChatGPT is at [OpenAI](https://www.openai.com){{site.tb}}
 - Codex (part of ChatGPT)
 {:.sjg-list }

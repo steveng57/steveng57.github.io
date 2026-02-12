@@ -2,9 +2,9 @@
 author: sjg
 layout: post
 title: Sauna Picture Frames
-description: A set of artwork frames for the new sauna building out back.
+description: A set of white oak shadow box frames for artwork in the new sauna building out back.
 date: 2026-02-10 12:19:42 -0500
-last_modified_at: 2026-02-10 12:48:08 -0500
+last_modified_at: 2026-02-12 12:48:08 -0500
 category: [Woodworking, Home Decor]
 tags: [Woodworking, Picture Frames, Frames, White Oak, Home Decor, Dominos]
 image:
@@ -21,7 +21,7 @@ We got some cool prints that matched the theme we were going for in the new saun
 I know this is my fourth post on picture frames, and that might get a little repetitive, so I have included a puppet show at the end for your entertainment, stay tuned.
 
 ## The Design
-I did NOT use Sketchup for this one, so it proves I can do some things on the fly.  It's the same design as the last two in the series, a _"shadow box"_ frame.  The difference here is that the other two were painted poplar, but this set of frames are made from white oak.  Some foreshadowing: white oak is **way** harder than poplar.  If you look at the Janka hardness scale, it is about 2.5 times harder.
+I did not use Sketchup for this one, so it proves I can do at least janka some things on the fly.  It's the same design as the last two in the series, a _"shadow box"_ frame.  The difference here is that the other two were painted poplar, but this set of frames are made from white oak.  Some foreshadowing: white oak is **way** harder than poplar.  If you look at the [Janka hardness scale](https://en.wikipedia.org/wiki/Janka_hardness_test){{- site.tb -}}, it is about 2.5 times harder.
 
 ## Construction
 
@@ -43,6 +43,8 @@ It's not supposed to look like this.
 
 When you cut a board down the middle, it is supposed to have wood on both sides.  In my case 7mm thick on one side, and 12mm thick on the other.  This side is neither.
 
+A big part of the problem was that I was focussed on the top part of the board, where the bandsaw blade entered the wood.  I was totally neglecting the bottom of the piece, which was going in a different direction (aka _"going wonky"_).
+
 It was such a botched mess, I just turned off the bandsaw and walked away.  When it's not working, it's best to take a break and come back with a clear head.
 
 {% include clear-float.html %}
@@ -52,6 +54,8 @@ It was such a botched mess, I just turned off the bandsaw and walked away.  When
 {% include html-sxs.html img1="IMG_2301.avif" img2="IMG_2302.avif" %}
 
 So when I came back the next day, shaking off the shear disgust of my previous efforts, I did a couple of things to make things work.  The number one fix was to cut the boards down to about 40mm from 200mm in width so that the bandsaw had a lot less to chew on as it went through the board.  Next thing was to get a brand new blade, which proved to make a real difference: it cut through the white oak like a chainsaw through a dandelion.  I also did a bunch of little things like a better bandsaw setup, proper out-feed support etc. 
+
+{% include clear-float.html break=1 %}
 
 {% include html-side.html img="IMG_2307.avif" align="left" %}
 
@@ -69,21 +73,24 @@ Armed with an 18 gauge brad-nailer, I glued the back braces in place.
 
 The braces are made from the 7mm cuts mentioned above, and they are not visible when the frame is complete, so they are sometimes rough and only partially finished.  They are for stability, strength and ensuring the outer boards are straight.  The artwork itself is mounted directly to these with screws from the underside, so they need to be solid.
 
-{% include clear-float.html %}
+{% include clear-float.html break = 1 %}
 
 ### Finished
 
 After trying a number of different shades of grey Rubio Monocoat hard-wax oils, we settled on a colour called _Affogato_.
 
-> [According to Wikipedia, _Affogato_ is defined as an Italian dessert with _gelato drowned in coffee_.](https://en.wikipedia.org/wiki/Affogato){:target='_blank' rel='noopener noreferrer'}  
+> [According to Wikipedia, _Affogato_ is defined as an Italian dessert with _gelato drowned in coffee_.](https://en.wikipedia.org/wiki/Affogato){{site.tb}}  
 I'm in!!!
 {: .prompt-info .sjg-br }
 
 {% include html-sxs.html img1="IMG_2318.avif" img2="Affogato.avif" align="equal-height" %}
 
-See, they are almost identical!
+See, they are almost identical!  I can't see the difference, can you see the difference?
+
+{% include clear-float.html break = 1 %}
 
 {% include html-side.html img="IMG_2320.avif" align="left" %}
+
 ### Alignment Issues
 
 So one of the more challenging aspects of this build was that the artwork itself was neither square nor straight.  Both pieces had been in the basement for quite a while, and stuff like that will happen over time.  The corners were out of square sometimes by as much as five degrees, and if you looked down an edge you could see a lot of bowing.  It was nasty, like a full centimeter bend on the larger piece.

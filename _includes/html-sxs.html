@@ -13,6 +13,9 @@
     - figure1_classes / figure2_classes: per-figure overrides
     - img1_classes / img2_classes: extra classes on each `<img>`
     - caption_classes: extra classes on both captions
+    - loading: image loading strategy (default: lazy)
+    - decoding: image decoding strategy (default: async)
+    - fetchpriority: image fetch priority (default: low)
 
   Horizontal spacing between figures uses custom `sjg-sxs-left`/`sjg-sxs-right`
   classes defined in `_sass/post.scss` instead of Bootstrap margin utilities,
@@ -24,6 +27,10 @@
 
 {% assign caption1 = include.caption1 | default: img1_meta.title %}
 {% assign caption2 = include.caption2 | default: img2_meta.title %}
+
+{% assign img_loading = include.loading | default: "lazy" %}
+{% assign img_decoding = include.decoding | default: "async" %}
+{% assign img_fetchpriority = include.fetchpriority | default: "low" %}
 
 {% assign align = include.align | default: "" %}
 {% assign size_class = "" %}
@@ -104,6 +111,9 @@
 <div class="{{ wrapper_classes | strip }}">
   <figure class="{{ figure1_classes | strip }}" style="{{ figure1_style }}">
     <img
+      loading="{{ img_loading }}"
+      decoding="{{ img_decoding }}"
+      fetchpriority="{{ img_fetchpriority }}"
       src="{{ include.img1 }}"
       alt="{{ alt1 | escape }}"
       title="{{ title1 | escape }}"
@@ -117,6 +127,9 @@
   <figure class="{{ figure2_classes | strip }}" style="{{ figure2_style }}">
     <img
       src="{{ include.img2 }}"
+      loading="{{ img_loading }}"
+      decoding="{{ img_decoding }}"
+      fetchpriority="{{ img_fetchpriority }}"
       alt="{{ alt2 | escape }}"
       title="{{ title2 | escape }}"
       class="{{ img2_classes | strip }}"

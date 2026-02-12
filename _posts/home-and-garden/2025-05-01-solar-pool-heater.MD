@@ -77,7 +77,7 @@ Having lived with this device for three pool seasons at the time of this writing
 
 - Standard pressure treated 2x4's and plywood from Home Depot
 - {{ pex_pipe }}, also from Home Depot
-- 100W Solar Panel Kit from [Renogy](https://www.renogy.com){:target='_blank'} via Amazon
-- Dakota lithium battery from [Total Battery](https://www.totalbattery.com){:target='_blank'}
+- 100W Solar Panel Kit from [Renogy](https://www.renogy.com){{site.tb}} via Amazon
+- Dakota lithium battery from [Total Battery](https://www.totalbattery.com){{site.tb}}
 - 6 inch casters (with brakes) from {{ site.data.links.leevalley }}
 {:.sjg-list }

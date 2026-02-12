@@ -16,7 +16,7 @@ pin: false
 ---
 ## Background
 
-So around the beginning of the month, my desktop PC began to give up the ghost.  I have my operating system (OS) on one drive and my data on another physical disk.  At first it just looked like the data drive was going, meaning one of the disks in the [RAID](https://en.wikipedia.org/wiki/RAID){:target='_blank'} array was snafu'd. 
+So around the beginning of the month, my desktop PC began to give up the ghost.  I have my operating system (OS) on one drive and my data on another physical disk.  At first it just looked like the data drive was going, meaning one of the disks in the [RAID](https://en.wikipedia.org/wiki/RAID){{site.tb}} array was snafu'd. 
 
 However, things deteriorated rather rapidly from there, and all of a sudden the data drive was not reachable, and not long after that the OS itself disappeared.  I just got a flashing cursor on the screen, and eventually that stopped happening too.  No signs of life at all.  Admittedly, this was a strange failure that I had not seen before, but sometimes tech fails in odd ways.  I am pretty sure it was the motherboard that went south, though I guess it could have been the CPU too. It was 12 years old and had served me very, very well.  
 
@@ -32,7 +32,7 @@ Everyone wants the fastest speed possible in their PC, but how you get there and
 
 I am not a gamer (nor am I a crypto miner), so GPU speed was not a big thing.  I do a lot of 3d modelling and the like though, so something CAD capable was needed.  
 
-CPU and disk speed were paramount though, so I did splurge a bit on the latest gen i9 Intel chips and a good motherboard.  I also went pure [NVME M.2 SSD](https://en.wikipedia.org/wiki/M.2){:target='_blank'} throughout, which for those not in the business means **fast**.  These products started appearing on the market in 2014/2015, just after my last full PC build.  Instead of spinning disks fetching your data over a slow connection, these drives have not moving parts and are all on chips connected to the CPU via a super fast bus.  This proved to be a great call, and I am super happy with the speed of the build.  But I will leave you in suspense for now, see the results section at the bottom for details!
+CPU and disk speed were paramount though, so I did splurge a bit on the latest gen i9 Intel chips and a good motherboard.  I also went pure [NVME M.2 SSD](https://en.wikipedia.org/wiki/M.2){{site.tb}} throughout, which for those not in the business means **fast**.  These products started appearing on the market in 2014/2015, just after my last full PC build.  Instead of spinning disks fetching your data over a slow connection, these drives have not moving parts and are all on chips connected to the CPU via a super fast bus.  This proved to be a great call, and I am super happy with the speed of the build.  But I will leave you in suspense for now, see the results section at the bottom for details!
 
 ### Silence
 
@@ -106,7 +106,7 @@ Now the hardcore gamers and the crypto kids are going to go for something like t
 
 For me though, that would be a waste of money and energy.  Those beasts require a lot of power, and power produces heat, and heat turns the fans on high.  Fans on high make noise: see requirement #2 above.
 
-So I went with the Nvidia T1000.  Not sure why they felt the need to steal the model number from [The Terminator](https://en.wikipedia.org/wiki/T-1000){:target='_blank'}, but there you are.  It is a more "workstation" oriented video card, meaning that it is geared for 3d modeling, multiple monitors etc.  
+So I went with the Nvidia T1000.  Not sure why they felt the need to steal the model number from [The Terminator](https://en.wikipedia.org/wiki/T-1000){{site.tb}}, but there you are.  It is a more "workstation" oriented video card, meaning that it is geared for 3d modeling, multiple monitors etc.  
 
 > **Multiple monitors:**  For those that do any kind of computer work, if you haven't done so already, go for a multiple monitor setup.  It is truly a game-changer.  I've been using them for decades, long before Windows had any formal support for it even.  It feels like I am working with handcuffs when I have to go back to a single monitor.  There is great support in Windows now for lots of monitors.
 {: .prompt-tip .sjg-br}
@@ -196,7 +196,7 @@ I could do a bar chart or something to drive the point home, but I hope you get 
 
 {% include html-sxs.html img1="monitor-s2725qs-gray-gallery-1.avif" img2="monitor-s2725qs-gray-gallery-3.avif" %}
 
-I went with the [DELL 27 Plus 4K Model S27255QS](https://www.dell.com/en-ca/shop/dell-27-plus-4k-monitor-s2725qs/apd/210-brnd/monitors-monitor-accessories?msockid=2341291a1f756914244b3f0b1eb468a7){:target='_blank'}, which was released in December of 2024.  
+I went with the [DELL 27 Plus 4K Model S27255QS](https://www.dell.com/en-ca/shop/dell-27-plus-4k-monitor-s2725qs/apd/210-brnd/monitors-monitor-accessories?msockid=2341291a1f756914244b3f0b1eb468a7){{site.tb}}, which was released in December of 2024.  
 
 It has 4k, a 120Hz refresh rate, and good HDR.  It checks all the boxes except OLED, which I can live without since it quadruples the cost.  Speaking of cost, they were on sale from $420 down to $350, and still free shipping.
 
@@ -212,7 +212,7 @@ Here is a good background to show off the 4K.  I know you can't see it in the pi
 
 ## Materials and Tools
 
-- Most parts were bought at [Newegg.ca](https://www.newegg.ca){:target='_blank'}
-- Monitors are [DELL 27 Plus 4K Model S27255QS](https://www.dell.com/en-ca/shop/dell-27-plus-4k-monitor-s2725qs/apd/210-brnd/monitors-monitor-accessories?msockid=2341291a1f756914244b3f0b1eb468a7){:target='_blank'} bought from [Amazon](https://www.amazon.ca/Dell-Plus-Monitor-Integrated-Comfortview/dp/B0F1GF1KFC/ref=asc_df_B0F1GF1KFC?tag=bingshopdesk-20&linkCode=df0&hvadid=80195828197082&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=124691&hvtargid=pla-4583795293432449&msclkid=faa122f0cbb514d9436a4a8a29a00357&th=1){:target='_blank'}
+- Most parts were bought at [Newegg.ca](https://www.newegg.ca){{site.tb}}
+- Monitors are [DELL 27 Plus 4K Model S27255QS](https://www.dell.com/en-ca/shop/dell-27-plus-4k-monitor-s2725qs/apd/210-brnd/monitors-monitor-accessories?msockid=2341291a1f756914244b3f0b1eb468a7){{site.tb}} bought from [Amazon](https://www.amazon.ca/Dell-Plus-Monitor-Integrated-Comfortview/dp/B0F1GF1KFC/ref=asc_df_B0F1GF1KFC?tag=bingshopdesk-20&linkCode=df0&hvadid=80195828197082&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=124691&hvtargid=pla-4583795293432449&msclkid=faa122f0cbb514d9436a4a8a29a00357&th=1){{site.tb}}
 - A Philips #2 head screwdriver, supplied from you local toolbox 
 {:.sjg-list }
