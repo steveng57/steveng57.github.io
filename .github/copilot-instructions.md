@@ -54,6 +54,7 @@
 
 ## Development & CI
 - Local development (Windows PowerShell):
+  - **IMPORTANT**: This environment is Windows-based. Always use PowerShell commands (e.g. `Set-Content`, `Get-ChildItem`) and avoid Linux-specific tools like `cat`, `grep`, `ls`, or `touch` unless running within a specific WSL context (which is not standard here).
   - Primary entry point is `./serve.ps1`, which wraps `bundle exec jekyll serve` with dependency checks and options like `-RegenerateImages`, `-Production`, `-Clean`, `-Port`, and `-CheckOnly`.
   - For a full refresh of media and captions before serving, prefer running `./gen-derived-avif.ps1` then `./gen-imagecaptions.ps1`, and update `serve.ps1` in tandem if you change that workflow.
 - CI/CD:

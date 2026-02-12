@@ -1,13 +1,8 @@
-{% if include.break %}
-    {% assign break = include.break %}
-{% else %}
-    {% assign break = 0 %}
-{% endif %}
-<div style="clear: both;">
-
-{% if break %}
-    {% for i in (1..break) %}
-        <br> 
-    {% endfor %}
-{% endif %}
-</div>
+{%- comment -%}
+  Clears floats and optionally adds vertical spacing.
+  Parameter `break` specifies the spacing amount in lines (e.g. 1, 2, 0.5).
+  Defaults to 0 if not provided.
+{%- endcomment -%}
+{% assign break_lines = include.break | default: 0 %}
+{% assign height_val = break_lines | times: 1.5 %}
+<div style="clear: both; height: {{ height_val }}em;"></div>
