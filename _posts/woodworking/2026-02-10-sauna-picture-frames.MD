@@ -33,7 +33,7 @@ This was bad.  Ugly bad.  So when making frames like this, you start with a boar
 
 But I made a couple or three mistakes here.  First, this board is almost 20cm (8in) wide, meaning the bandsaw blade has to cut all the way through that.  Second, my bandsaw blade was a little dull for white oak, which is a pretty hard hardwood.  Third, I didn't have the right setup on the bandsaw.  Fourth, rather than looking at the entire board as I was cutting, I was focussed on just the top part, and did not realize the bottom was going totally wonky on me.  And fifth...and sixth... 
 
-{% include clear-float.html %}
+{% include clear-float.html break=1 %}
 
 {% include html-side.html img="IMG_2304.avif" align="right" %}
 
