@@ -25,16 +25,13 @@
           <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
         </a>
       </li>
+      {% assign top_groups = site.posts | group_by_exp: "item", "item.categories[0]" %}
       {% assign topcats = '' | split: '' %}
 
-      {% for p in site.posts %}
-        {% assign cats = p.category | default: p.categories %}
-        {% if cats and cats.size > 0 %}
-          {% assign top = cats[0] %}
-          {% unless topcats contains top %}
-            {% assign topcats = topcats | push: top %}
-          {% endunless %}
-        {% endif %}
+      {% for group in top_groups %}
+        {% unless group.name == nil or group.name == '' %}
+          {% assign topcats = topcats | push: group.name %}
+        {% endunless %}
       {% endfor %}
 
       {% assign topcats = topcats | sort %}
@@ -95,15 +92,15 @@
         </li>
 
         {% assign subcats = '' | split: '' %}
-        {% for p in site.posts %}
-          {% assign cats = p.category | default: p.categories %}
-          {% if cats and cats.size > 1 and cats[0] == top %}
-            {% assign sub = cats[1] %}
-            {% unless subcats contains sub %}
-              {% assign subcats = subcats | push: sub %}
+        {% assign current_group = top_groups | where: "name", top | first %}
+        {% if current_group %}
+          {% assign sub_groups = current_group.items | group_by_exp: "item", "item.categories[1]" %}
+          {% for sub_group in sub_groups %}
+            {% unless sub_group.name == nil or sub_group.name == '' %}
+              {% assign subcats = subcats | push: sub_group.name %}
             {% endunless %}
-          {% endif %}
-        {% endfor %}
+          {% endfor %}
+        {% endif %}
 
         {% assign subcats = subcats | sort %}
 
