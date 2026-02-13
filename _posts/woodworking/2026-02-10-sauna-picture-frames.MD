@@ -21,7 +21,7 @@ We got some cool prints that matched the theme we were going for in the new saun
 I know this is my fourth post on picture frames, and that might get a little repetitive, so I have included a puppet show at the end for your entertainment, stay tuned.
 
 ## The Design
-I did not use Sketchup for this one, so it proves I can do at least janka some things on the fly.  It's the same design as the last two in the series, a _"shadow box"_ frame.  The difference here is that the other two were painted poplar, but this set of frames are made from white oak.  Some foreshadowing: white oak is **way** harder than poplar.  If you look at the [Janka hardness scale](https://en.wikipedia.org/wiki/Janka_hardness_test){{- site.tb -}}, it is about 2.5 times harder.
+I did not use Sketchup for this one, so it proves I can do at least some things on the fly.  It's the same design as the last two in the series, a _"shadow box"_ frame.  The difference here is that the other two were painted poplar, but this set of frames are made from white oak.  Some foreshadowing: white oak is **way** harder than poplar.  If you look at the [Janka hardness scale](https://en.wikipedia.org/wiki/Janka_hardness_test){{- site.tb -}}, it is about 2.5 times harder.
 
 ## Construction
 
