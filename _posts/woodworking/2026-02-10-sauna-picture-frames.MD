@@ -109,7 +109,33 @@ After all that, they were ready to go.
 
 ## In Production
 
-Once we get these frames installed in the new sauna, we will take some pics and publish them here.  Stay tuned, I think they are going to look great!
+After carefully carrying the frames out to the sauna over very slippery icy stamped concrete, we mounted the frames in the spa. 
+
+First some close up pictures of the frame itself before we get to the good stuff.
+
+{% include html-sxs.html img1="11019.avif" img2="IMG_2342.avif" align = "equal-height" %}
+
+{% include clear-float.html break = 1 %}
+
+{% include html-side.html img="11018.avif" align="left" %}
+
+### The Big One
+
+This frame is mounted at the end of a hallway, but not much point in a picture like that because all you see is the hallway.  Instead a semi-profile shot shows off the contrasts of the frame and the print quite nicely.
+
+It makes me want to assume the Lotus position and chant "ooohhhmmm" repeatedly. 
+
+{% include clear-float.html break = 1 %}
+
+{% include html-side.html img="IMG_2344.avif" align="right" %}
+
+### The Cool One
+
+This print has a great vibe.  There is something about it that draws you in, maybe it's the windswept leaves that do it, or maybe it's the colours.  Either way, the frame makes it pop and say "Here I am!" 
+
+Both frames and prints help create a warm, cozy, and refreshing feeling in the new sauna.
+
+{% include clear-float.html %}
 
 ## Puppet Show
 

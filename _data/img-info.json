@@ -1,4 +1,20 @@
 {
+  "11018.avif": {
+    "title": "Looking Good",
+    "subject": "Looking Good",
+    "datetaken": "2026-02-14T15:52:00",
+    "width": 1500,
+    "height": 2000,
+    "gallery": true
+  },
+  "11019.avif": {
+    "title": "My Close Up",
+    "subject": "My Close Up",
+    "datetaken": "2026-02-14T15:53:00",
+    "width": 1500,
+    "height": 2000,
+    "gallery": false
+  },
   "20170127_010801.avif": {
     "title": "Not bad for 2x4's and plywood",
     "subject": "Not bad for 2x4's and plywood",
@@ -1846,6 +1862,22 @@
     "width": 2048,
     "height": 1536,
     "gallery": true
+  },
+  "IMG_2342.avif": {
+    "title": "My Dark Side",
+    "subject": "My Dark Side",
+    "datetaken": "2026-02-13T18:13:00",
+    "width": 1661,
+    "height": 2048,
+    "gallery": false
+  },
+  "IMG_2344.avif": {
+    "title": "Really Good",
+    "subject": "Really Good",
+    "datetaken": "2026-02-13T18:16:00",
+    "width": 1536,
+    "height": 2048,
+    "gallery": false
   },
   "IMG_DT1.avif": {
     "title": "New Home",
