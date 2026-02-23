@@ -2,7 +2,7 @@
 author: sjg
 layout: post
 title: Sauna Picture Frames
-description: A set of white oak shadow box frames for artwork in the new sauna building out back.
+description: A set of _white-oak shadow-box_ frames for artwork in the new sauna building out back.
 date: 2026-02-10 12:19:42 -0500
 last_modified_at: 2026-02-12 12:48:08 -0500
 category: [Woodworking, Home Decor]
