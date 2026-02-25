@@ -13,7 +13,8 @@ tags:
     Shaper Origin,
     Walnut,
     Games,
-    Shaper Origin,
+    Epoxy,
+    Inlay
   ]
 image:
   path: /thumbnails/IMG_0626.avif
