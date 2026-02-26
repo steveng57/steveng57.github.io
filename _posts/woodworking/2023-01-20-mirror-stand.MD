@@ -5,7 +5,7 @@ description: A multi-purpose stand for the bathroom vanity.
 date: 2023-01-20 18:32:00 -0500
 last_modified_at: 2024-03-03 14:56:34 -0500
 category: [Woodworking, Jewelry Boxes]
-tags: [Woodworking, Jewelry Boxes, Epoxy, Inlay, Poplar]
+tags: [Woodworking, Jewelry Boxes, Shaper Origin, Epoxy, Inlay, Poplar]
 image:
   path: /thumbnails/IMG_0734.avif
   alt: Combo Jewelry Box Thing and Mirror Stand
