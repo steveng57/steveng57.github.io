@@ -17,7 +17,7 @@ I tried something very new with these concrete nested end tables. It ended up in
 
 I thought solid wood was heavy until I made this. Moving these requires a warm-up and a good stretch beforehand.
 
-The concrete I used was a special artisan blend from [Buddy Rhodes]{{site.tb}}.
+The concrete I used was a special artisan blend from [Buddy Rhodes].
 
 ## Under Construction
 
@@ -82,7 +82,7 @@ This gets used on a daily basis as a cleaning station for the boys when they com
 - Red Oak from {{ site.data.links.kjp }}
 - {{ site.data.links.domino }} for joinery
 - {{ site.data.links.rubio }} finish
-- [Buddy Rhodes]{{site.tb}} concrete products
+- [Buddy Rhodes] concrete products
 {: .sjg-list }
 
 [Buddy Rhodes]: https://www.buddyrhodes.com

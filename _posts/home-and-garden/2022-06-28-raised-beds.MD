@@ -33,7 +33,7 @@ Cedar is one of the best smelling woods when you cut into it. It releases a wond
 
 ### It's Extreme
 
-These were eventually finished with another product from {{ site.data.links.woodsource }} called [Cutek Extreme]{{site.tb}}, which is an outdoor wood protection oil.
+These were eventually finished with another product from {{ site.data.links.woodsource }} called [Cutek Extreme], which is an outdoor wood protection oil.
 
 The neat thing about this stuff is that they have a pretty broad spectrum of colouring called "Colourtone" that you can add to the base product so that you can get exactly the colour you want.
 {% include clear-float.html %}
@@ -59,7 +59,7 @@ Three of the smaller beds are in our greenhouse in the back.  Not sure I would h
 
 - Western Red Cedar from {{ site.data.links.woodsource }}
 - {{ site.data.links.kreg }} pocket screws
-- [Cutek Extreme]{{ site.tb }}
+- [Cutek Extreme]
 - Titebond III waterproof glue
 {: .sjg-list }
 

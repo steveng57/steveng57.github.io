@@ -53,5 +53,5 @@ Dwarf Curled Scotch Kale on the bottom, and Grand Rapids Lettuce on the top. Loo
 
 - 1&Prime;x3&Prime; strapping Plywood from Home Depot
 - Pocket holes and screws from {{ site.data.links.kreg }}
-- Grow lights from [Lee Valley](https://www.leevalley.com/en-ca/shop/garden/planting/grow-lights/76513-floralight-t5-led-full-spectrum-tabletop-grow-light-stand?item=PK450){{ site.tb }}
-  {: .sjg-list }
+- Grow lights from [Lee Valley](https://www.leevalley.com/en-ca/shop/garden/planting/grow-lights/76513-floralight-t5-led-full-spectrum-tabletop-grow-light-stand?item=PK450)
+{: .sjg-list }

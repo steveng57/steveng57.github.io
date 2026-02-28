@@ -242,4 +242,4 @@ plugins:
   - jekyll-paginate-v2
 
 # Global Variables
-tb: "{:target='_blank' rel='noopener noreferrer'}"
+# You can add any custom variables here, and they will be accessible in the templates via `site.VARIABLE_NAME`
