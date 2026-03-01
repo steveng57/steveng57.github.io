@@ -17,7 +17,7 @@ external_link_hook = lambda do |doc|
   end
 
   # Add additional domains manually if needed
-  internal_hosts << "steveng57.github.io"
+  # internal_hosts << "steveng57.github.io"
 
   doc.output.gsub!(%r{<a\s+[^>]*href="([^"]+)"[^>]*>}i) do |a_tag|
     href = Regexp.last_match(1)
