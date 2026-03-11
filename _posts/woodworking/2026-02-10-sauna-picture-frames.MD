@@ -27,7 +27,7 @@ I did not use Sketchup for this one, so it proves I can do at least some things 
 
 {% include html-side.html img="IMG_2298.avif" align="left" %}
 
-### Mistakes Out of the Gate
+### Mistakes at the Outset
 
 This was bad.  Ugly bad.  So when making frames like this, you start with a board that is about 25mm (an inch) thick, and from that you want to rip it down the middle on the bandsaw to get two pieces, one about 12mm thick and the other about 7mm thick.  This allows for a little bit of waste and accounts for the kerf of the blade, which is about 1.5mm thick.  
 
@@ -39,7 +39,7 @@ But I made a couple or three mistakes here.  First, this board is almost 20cm (8
 
 ### The Pain Continues
 
-It's not supposed to look like this.  
+It's not supposed to look like this.
 
 When you cut a board down the middle, it is supposed to have wood on both sides.  In my case 7mm thick on one side, and 12mm thick on the other.  This side is neither.
 
