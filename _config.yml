@@ -38,6 +38,7 @@ social:
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Steven Goulet
   email: steveng57@outlook.com # change to your email address
+  # fediverse_handle: "@you@domain.com" # change to your fediverse handle or leave empty
   links:
     # The first element serves as the copyright owner's link
     - https://www.facebook.com/steven.goulet.58
