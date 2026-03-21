@@ -1,0 +1,126 @@
+{%- comment -%}
+  Adaptive HLS video include for self-hosted streams.
+
+  Parameters:
+    - id: unique DOM id for the player (required when multiple players on a page)
+    - master: HLS master playlist URL (required)
+    - mp4: optional progressive MP4 fallback URL
+    - poster: optional poster image URL
+    - title: optional title used for aria-label
+    - caption: optional figcaption text
+    - preload: metadata|none|auto (default: metadata)
+    - controls: true|false (default: true)
+    - autoplay: true|false (default: false)
+    - muted: true|false (default: false)
+    - loop: true|false (default: false)
+    - playsinline: true|false (default: true)
+    - class: optional extra classes for figure wrapper
+{%- endcomment -%}
+
+{% assign player_id = include.id | default: "hls-player" %}
+{% assign hls_master = include.master | default: "" %}
+{% assign mp4_fallback = include.mp4 | default: "" %}
+{% assign poster_url = include.poster | default: "" %}
+{% assign preload_mode = include.preload | default: "metadata" %}
+
+{% assign hls_master_url = "" %}
+{% assign mp4_fallback_url = "" %}
+{% assign poster_url_resolved = "" %}
+
+{% if hls_master != "" %}
+  {%- capture _hls_master_url -%}{% include media-url.html src=hls_master subpath=page.media_subpath %}{%- endcapture -%}
+  {% assign hls_master_url = _hls_master_url | strip %}
+{% endif %}
+
+{% if mp4_fallback != "" %}
+  {%- capture _mp4_fallback_url -%}{% include media-url.html src=mp4_fallback subpath=page.media_subpath %}{%- endcapture -%}
+  {% assign mp4_fallback_url = _mp4_fallback_url | strip %}
+{% endif %}
+
+{% if poster_url != "" %}
+  {%- capture _poster_url_resolved -%}{% include media-url.html src=poster_url subpath=page.media_subpath %}{%- endcapture -%}
+  {% assign poster_url_resolved = _poster_url_resolved | strip %}
+{% endif %}
+
+{% assign controls_flag = include.controls | default: "true" | downcase %}
+{% assign autoplay_flag = include.autoplay | default: "false" | downcase %}
+{% assign muted_flag = include.muted | default: "false" | downcase %}
+{% assign loop_flag = include.loop | default: "false" | downcase %}
+{% assign playsinline_flag = include.playsinline | default: "true" | downcase %}
+
+{% if hls_master == "" %}
+  <p><strong>video-hls include error:</strong> `master` parameter is required.</p>
+{% else %}
+<figure class="sjg-video-hls {% if include.class %}{{ include.class }}{% endif %}">
+  <div class="rounded" style="overflow: hidden;">
+    <video
+      id="{{ player_id | escape }}"
+      class="embed-video w-100 d-block"
+      preload="{{ preload_mode | escape }}"
+      {% if include.title %}aria-label="{{ include.title | escape }}" title="{{ include.title | escape }}"{% endif %}
+      {% if poster_url_resolved != "" %}poster="{{ poster_url_resolved | escape }}"{% endif %}
+      {% if controls_flag != "false" %}controls{% endif %}
+      {% if autoplay_flag == "true" %}autoplay{% endif %}
+      {% if muted_flag == "true" %}muted{% endif %}
+      {% if loop_flag == "true" %}loop{% endif %}
+      {% if playsinline_flag != "false" %}playsinline{% endif %}>
+      {% if mp4_fallback_url != "" %}<source src="{{ mp4_fallback_url | escape }}" type="video/mp4">{% endif %}
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+  {% if include.caption %}<figcaption class="figure-caption text-center">{{ include.caption }}</figcaption>{% endif %}
+</figure>
+
+<script>
+(function () {
+  const playerId = {{ player_id | jsonify }};
+  const hlsSource = {{ hls_master_url | jsonify }};
+  const mp4Source = {{ mp4_fallback_url | jsonify }};
+
+  function initPlayer() {
+    const video = document.getElementById(playerId);
+    if (!video) {
+      return;
+    }
+
+    if (video.canPlayType("application/vnd.apple.mpegurl")) {
+      video.src = hlsSource;
+      return;
+    }
+
+    if (window.Hls && window.Hls.isSupported()) {
+      const hls = new window.Hls({
+        enableWorker: true,
+        lowLatencyMode: false
+      });
+      hls.loadSource(hlsSource);
+      hls.attachMedia(video);
+      return;
+    }
+
+    if (mp4Source && !video.currentSrc) {
+      video.src = mp4Source;
+    }
+  }
+
+  if (window.Hls) {
+    initPlayer();
+    return;
+  }
+
+  const existingScript = document.getElementById("hlsjs-cdn");
+  if (existingScript) {
+    existingScript.addEventListener("load", initPlayer, { once: true });
+    initPlayer();
+    return;
+  }
+
+  const script = document.createElement("script");
+  script.id = "hlsjs-cdn";
+  script.src = "https://cdn.jsdelivr.net/npm/hls.js@1/dist/hls.min.js";
+  script.defer = true;
+  script.addEventListener("load", initPlayer, { once: true });
+  document.head.appendChild(script);
+})();
+</script>
+{% endif %}

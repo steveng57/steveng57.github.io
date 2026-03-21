@@ -30,6 +30,14 @@ This was built on Windows and there are a couple of pre-jekyll-build steps to ru
 
 Deprecated helper scripts are archived under `deprecated/` for historical reference.
 
+### DIY Adaptive Video (HLS)
+
+For self-hosted adaptive bitrate streaming with Cloudflare + Jekyll:
+
+- Guide: `docs/hls-diy-cloudflare.md`
+- Encoder skeleton script: `gen-hls.ps1`
+- Post include: `_includes/embed/video-hls.html`
+
 ## Categories & Navigation
 
 Posts use a hierarchical `category` front matter array, for example:

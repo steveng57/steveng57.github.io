@@ -1,0 +1,137 @@
+# DIY HLS on Cloudflare for This Site
+
+This guide captures a practical DIY adaptive-bitrate (ABR) setup for this repository.
+
+## 1) Proposed folder convention
+
+Keep source MP4 files where they already live, and put HLS outputs beside them.
+
+```text
+assets/img/posts/<post-folder>/
+  clip-name.mp4                     # source video used for encoding
+  thumbnails/
+    clip-name.avif                  # poster image (existing workflow)
+  stream/
+    clip-name/
+      master.m3u8                   # ABR entrypoint used by pages
+      360p/
+        index.m3u8
+        seg_000.ts
+      720p/
+        index.m3u8
+        seg_000.ts
+      1080p/
+        index.m3u8
+        seg_000.ts
+```
+
+Notes:
+- Keep each clip in its own stream folder to avoid segment naming collisions.
+- Use stable lowercase names for clip folders to keep URLs predictable.
+- If you offload to R2, keep this same folder structure in the bucket.
+
+## 2) PowerShell encoding script skeleton
+
+Use `gen-hls.ps1` (added at repo root) as the starting point.
+
+What it does now:
+- Scans `assets/img/posts/*` for `*.mp4` clips.
+- Encodes three HLS renditions (360p, 720p, 1080p) using H.264 + AAC.
+- Writes `master.m3u8` plus variant playlists and `.ts` segments.
+- Supports `-TargetPosts`, `-Rebuild`, and `-WhatIf`.
+
+Example usage:
+
+```powershell
+# Build HLS for all post folders
+./gen-hls.ps1
+
+# Build only one post folder
+./gen-hls.ps1 -TargetPosts new-pc-build
+
+# Dry run to inspect ffmpeg commands
+./gen-hls.ps1 -WhatIf
+```
+
+## 3) Jekyll include snippet using hls.js
+
+A new include was added: `_includes/embed/video-hls.html`.
+
+Example in a post body:
+
+```liquid
+{% include embed/video-hls.html
+  id="daybed-abr"
+  master="stream/daybed2/master.m3u8"
+  mp4="daybed2.mp4"
+  poster="thumbnails/daybed2.avif"
+  title="Daybed - 180 degree view"
+  caption="Adaptive stream with MP4 fallback"
+  muted="true"
+%}
+```
+
+How it behaves:
+- Safari/iOS: uses native HLS support.
+- Other modern browsers: loads `hls.js` from jsDelivr and plays the HLS master playlist.
+- Legacy edge cases: falls back to the optional MP4 source.
+
+## 4) Cloudflare cache and CORS settings
+
+If serving directly from this site origin:
+- CORS is usually unnecessary because media is same-origin.
+- Add a Cache Rule for HLS assets.
+
+If serving from R2/custom media subdomain (recommended):
+- Configure CORS on the bucket (or via response headers) to allow your site origin.
+- Use a dedicated hostname (for example `media.yourdomain.com`) in front of the bucket.
+
+Recommended response headers:
+
+```text
+Access-Control-Allow-Origin: https://www.stevengoulet.com
+Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+Access-Control-Allow-Headers: Range
+Access-Control-Expose-Headers: Content-Length, Content-Range, Accept-Ranges
+Timing-Allow-Origin: https://www.stevengoulet.com
+```
+
+Recommended cache behavior:
+- `*.ts` or `*.m4s` segments: long cache (`Cache-Control: public, max-age=31536000, immutable`)
+- Variant playlists (`*/index.m3u8`): short cache (`max-age=30` to `120`)
+- Master playlist (`master.m3u8`): short cache (`max-age=30` to `120`)
+
+Suggested Cloudflare Cache Rules:
+- Rule 1 (segment files):
+  - Expression: `(http.request.uri.path contains "/stream/") and (http.request.uri.path matches "(?i).*\\.(ts|m4s)$")`
+  - Action: Cache eligibility = Eligible, Edge TTL = 1 month (or honor origin with long max-age)
+- Rule 2 (playlists):
+  - Expression: `(http.request.uri.path contains "/stream/") and (http.request.uri.path matches "(?i).*\\.m3u8$")`
+  - Action: Cache eligibility = Eligible, Edge TTL = 1 minute
+
+If using R2 with a custom domain, a simple bucket CORS config looks like:
+
+```json
+[
+  {
+    "AllowedOrigins": ["https://www.stevengoulet.com"],
+    "AllowedMethods": ["GET", "HEAD"],
+    "AllowedHeaders": ["Range"],
+    "ExposeHeaders": ["Content-Length", "Content-Range", "Accept-Ranges"],
+    "MaxAgeSeconds": 86400
+  }
+]
+```
+
+Rationale:
+- Segments are immutable content addressed by path/sequence.
+- Playlists may change during rollouts, so short TTL avoids stale manifests.
+
+## Practical compatibility notes
+
+For broad browser support, keep:
+- Video codec: H.264 (`libx264`)
+- Audio codec: AAC (`aac`)
+- Segment duration around 4 seconds for responsive ABR switching.
+
+This setup targets modern desktop/mobile browsers and includes MP4 fallback for older clients.
