@@ -23,7 +23,7 @@
 - Derivative generation: run `./gen-derived-avif.ps1` to create AVIF derivatives under each post folder:
   - `thumbnails/*.avif` when the EXIF tag list (Shell property index 18) contains `thumbnail`.
   - `tinyfiles/*.avif` when the tag list contains `gallery` (these feed `_layouts/lightgallery.html`).
-  - Poster frames for `.mp4` videos are captured as AVIF into `thumbnails/`.
+- HLS and video posters: run `./gen-hls.ps1` to build HLS ladders for `.mp4`/`.mov` clips and capture poster frames as AVIF into the corresponding `thumbnails/` folder.
 - Metadata extraction: run `./gen-imagecaptions.ps1` to scan `assets/img/posts` (PNG/AVIF) and write `_data/img-info.json` keyed by the bare filename (e.g., `IMG_1927.avif`).
 - Contract to preserve when editing automation or includes:
   - `html-side.html` uses `include.img` both as the image URL (or relative path) and as the lookup key into `img-info.json`.

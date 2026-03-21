@@ -78,33 +78,39 @@ param(
 $ErrorActionPreference = "Stop"
 
 # Color output functions
-function Write-Info {
+function Write-Info
+{
     param([string]$Message)
     Write-Host "ℹ️ $Message" -ForegroundColor Cyan
 }
 
-function Write-Success {
+function Write-Success
+{
     param([string]$Message)
     Write-Host "✅ $Message" -ForegroundColor Green
 }
 
-function Write-Warning {
+function Write-Warning
+{
     param([string]$Message)
     Write-Host "⚠️ $Message" -ForegroundColor Yellow
 }
 
-function Write-Error {
+function Write-Error
+{
     param([string]$Message)
     Write-Host "❌ $Message" -ForegroundColor Red
 }
 
-function Write-Step {
+function Write-Step
+{
     param([string]$Message)
     Write-Host "🔄 $Message" -ForegroundColor Magenta
 }
 
 # Check if required tools are available
-function Test-Dependencies {
+function Test-Dependencies
+{
     Write-Step "Checking dependencies..."
     
     $dependencies = @{
@@ -114,42 +120,51 @@ function Test-Dependencies {
     
     $missing = @()
     
-    foreach ($dep in $dependencies.GetEnumerator()) {
-        try {
+    foreach ($dep in $dependencies.GetEnumerator())
+    {
+        try
+        {
             $null = Get-Command $dep.Key -ErrorAction Stop
             Write-Success "$($dep.Value) is available"
         }
-        catch {
+        catch
+        {
             Write-Error "$($dep.Value) is not available"
             $missing += $dep.Value
         }
     }
     
-    if ($RegenerateImages) {
+    if ($RegenerateImages)
+    {
         $imageTools = @{
             "ffmpeg" = "FFMPEG"
             "magick" = "ImageMagick"
         }
         
-        foreach ($tool in $imageTools.GetEnumerator()) {
-            try {
+        foreach ($tool in $imageTools.GetEnumerator())
+        {
+            try
+            {
                 $null = Get-Command $tool.Key -ErrorAction Stop
                 Write-Success "$($tool.Value) is available"
             }
-            catch {
+            catch
+            {
                 Write-Warning "$($tool.Value) is not available - image regeneration may fail"
             }
         }
     }
     
-    if ($missing.Count -gt 0) {
+    if ($missing.Count -gt 0)
+    {
         Write-Error "Missing required dependencies: $($missing -join ', ')"
         Write-Info "Please install the missing dependencies and try again."
         exit 1
     }
     
     # Check if Gemfile exists
-    if (-not (Test-Path "Gemfile")) {
+    if (-not (Test-Path "Gemfile"))
+    {
         Write-Error "Gemfile not found. Are you in the correct directory?"
         exit 1
     }
@@ -158,54 +173,70 @@ function Test-Dependencies {
 }
 
 # Clean the _site directory
-function Clear-SiteDirectory {
-    if (Test-Path "_site") {
+function Clear-SiteDirectory
+{
+    if (Test-Path "_site")
+    {
         Write-Step "Cleaning _site directory..."
-        try {
+        try
+        {
             Remove-Item "_site" -Recurse -Force
             Write-Success "Cleaned _site directory"
         }
-        catch {
+        catch
+        {
             Write-Warning "Could not clean _site directory: $_"
         }
     }
 }
 
 # Regenerate image assets
-function Update-ImageAssets {
+function Update-ImageAssets
+{
     Write-Step "Regenerating image assets..."
 
-    # Generate derived AVIF assets (thumbnails/tinyfiles/posters)
-    if (Test-Path "gen-derived-avif.ps1") {
+    # Generate derived AVIF assets (thumbnails/tinyfiles)
+    if (Test-Path "gen-derived-avif.ps1")
+    {
         Write-Info "Generating derived AVIF assets..."
-        try {
+        try
+        {
             & ".\gen-derived-avif.ps1"
             Write-Success "Derived AVIF assets generated"
         }
-        catch {
+        catch
+        {
             Write-Warning "Derived AVIF generation failed: $_"
         }
-    } else {
+    }
+    else
+    {
         Write-Warning "gen-derived-avif.ps1 not found"
     }
     
     # Generate image captions
-    if (Test-Path "gen-imagecaptions.ps1") {
+    if (Test-Path "gen-imagecaptions.ps1")
+    {
         Write-Info "Generating image captions..."
-        try {
+        try
+        {
             & ".\gen-imagecaptions.ps1"
             Write-Success "Image captions generated"
         }
-        catch {
+        catch
+        {
             Write-Warning "Image caption generation failed: $_"
         }
-    } else {
+    }
+    else
+    {
         Write-Warning "gen-imagecaptions.ps1 not found"
     }
 }
 
 # Build the Jekyll command
-function Build-JekyllCommand {
+function Build-JekyllCommand
+{
     $cmd = @("bundle", "exec", "jekyll", "serve")
     
     # Add port and host
@@ -213,18 +244,22 @@ function Build-JekyllCommand {
     $cmd += "--host", $HostAddress
     
     # Add conditional flags
-    if (-not $NoLiveReload -and -not $Production) {
+    if (-not $NoLiveReload -and -not $Production)
+    {
         $cmd += "--livereload"
-        if ($LiveReloadPort) {
+        if ($LiveReloadPort)
+        {
             $cmd += "--livereload-port", $LiveReloadPort.ToString()
         }
     }
     
-    if (-not $NoDrafts -and -not $Production) {
+    if (-not $NoDrafts -and -not $Production)
+    {
         $cmd += "--drafts"
     }
     
-    if (-not $NoFuture -and -not $Production) {
+    if (-not $NoFuture -and -not $Production)
+    {
         $cmd += "--future"
     }
     
@@ -232,18 +267,21 @@ function Build-JekyllCommand {
 }
 
 # Display startup information
-function Show-StartupInfo {
+function Show-StartupInfo
+{
     Write-Host ""
     Write-Host "🚀 Jekyll Development Server" -ForegroundColor Blue
     Write-Host "================================" -ForegroundColor Blue
     Write-Info "Site URL: http://$HostAddress`:$Port"
     Write-Info "Mode: $(if ($Production) { 'Production' } else { 'Development' })"
     
-    if (-not $Production) {
+    if (-not $Production)
+    {
         Write-Info "Features enabled:"
         if (-not $NoDrafts) { Write-Host "  • Draft posts" -ForegroundColor Gray }
         if (-not $NoFuture) { Write-Host "  • Future posts" -ForegroundColor Gray }
-        if (-not $NoLiveReload) {
+        if (-not $NoLiveReload)
+        {
             Write-Host "  • Live reload (port $LiveReloadPort)" -ForegroundColor Gray
         }
     }
@@ -254,7 +292,8 @@ function Show-StartupInfo {
 }
 
 # Display custom help message
-function Show-CustomHelp {
+function Show-CustomHelp
+{
     Write-Host ""
     Write-Host "🌟 Jekyll Site Server - steveng57.github.io" -ForegroundColor Blue
     Write-Host "=============================================" -ForegroundColor Blue
@@ -310,9 +349,11 @@ function Show-CustomHelp {
 }
 
 # Main execution
-try {
+try
+{
     # Show help if requested
-    if ($Help) {
+    if ($Help)
+    {
         Show-CustomHelp
         exit 0
     }
@@ -324,28 +365,34 @@ try {
     # Check dependencies
     Test-Dependencies
     
-    if ($CheckOnly) {
+    if ($CheckOnly)
+    {
         Write-Success "Dependency check complete. Ready to serve!"
         exit 0
     }
     
     # Clean if requested
-    if ($Clean) {
+    if ($Clean)
+    {
         Clear-SiteDirectory
     }
     
     # Regenerate images if requested
-    if ($RegenerateImages) {
+    if ($RegenerateImages)
+    {
         Update-ImageAssets
     }
 
     # Configure JEKYLL_ENV based on mode
-    if ($Production) {
+    if ($Production)
+    {
         $env:JEKYLL_ENV = "production"
         Write-Success "JEKYLL_ENV=production"
         & asciiart.exe "Production Mode" --theme green
 
-    } else {
+    }
+    else
+    {
         $env:JEKYLL_ENV = "development"
         Write-Success "JEKYLL_ENV=development"
         & asciiart.exe "Development Mode" --theme red
@@ -363,12 +410,16 @@ try {
     Write-Host ""
     
     # Execute Jekyll
-    & $jekyllCmd[0] $jekyllCmd[1..($jekyllCmd.Length-1)]
+    & $jekyllCmd[0] $jekyllCmd[1..($jekyllCmd.Length - 1)]
     
-} catch {
+}
+catch
+{
     Write-Error "An error occurred: $_"
     exit 1
-} finally {
+}
+finally
+{
     Write-Host ""
     Write-Info "Jekyll server stopped."
 }

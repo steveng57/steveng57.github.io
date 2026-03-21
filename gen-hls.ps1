@@ -20,7 +20,11 @@ param(
     [string]$PostsRoot = "./assets/img/posts",
     [string[]]$TargetPosts,
     [switch]$Rebuild,
-    [switch]$WhatIf
+    [switch]$WhatIf,
+    [ValidateRange(1, 200)]
+    [int]$PosterScale = 100,
+    [ValidateRange(0, 100)]
+    [int]$PosterQuality = 75
 )
 
 Set-StrictMode -Version Latest
@@ -31,6 +35,77 @@ function Test-RequiredTooling
     if (-not (Get-Command ffmpeg -ErrorAction SilentlyContinue))
     {
         throw "ffmpeg was not found in PATH. Install ffmpeg and retry."
+    }
+
+    if (-not (Get-Command magick -ErrorAction SilentlyContinue))
+    {
+        throw "ImageMagick 'magick' was not found in PATH. Install ImageMagick and retry."
+    }
+}
+
+function New-VideoPoster
+{
+    param(
+        [Parameter(Mandatory = $true)][System.IO.FileInfo]$Clip
+    )
+
+    $thumbDir = Join-Path $Clip.Directory.FullName "thumbnails"
+    if (-not (Test-Path $thumbDir))
+    {
+        New-Item -ItemType Directory -Path $thumbDir -Force | Out-Null
+    }
+
+    $posterPath = Join-Path $thumbDir ("{0}.avif" -f $Clip.BaseName)
+
+    $needsPoster = $true
+    if (Test-Path $posterPath)
+    {
+        try
+        {
+            $sourceInfo = Get-Item -LiteralPath $Clip.FullName
+            $destInfo = Get-Item -LiteralPath $posterPath
+            if (-not $Rebuild -and $sourceInfo.LastWriteTimeUtc -le $destInfo.LastWriteTimeUtc)
+            {
+                $needsPoster = $false
+            }
+        }
+        catch
+        {
+            Write-Warning "Failed to compare timestamps for poster '$posterPath'. Regenerating."
+        }
+    }
+
+    if (-not $needsPoster)
+    {
+        return
+    }
+
+    $resizePercent = if ($PosterScale -ne 100) { "{0}%" -f $PosterScale } else { $null }
+
+    $inputArg = "{0}[0]" -f $Clip.FullName
+    $args = @()
+    $args += $inputArg
+    if ($resizePercent)
+    {
+        $args += "-resize"
+        $args += $resizePercent
+    }
+    $args += "-strip"
+    $args += "-quality"
+    $args += $PosterQuality.ToString()
+    $args += $posterPath
+
+    if ($WhatIf)
+    {
+        Write-Host "[WhatIf] magick $($args -join ' ')"
+        return
+    }
+
+    Write-Host "Generating poster frame: $posterPath"
+    & magick @args
+    if ($LASTEXITCODE -ne 0)
+    {
+        throw "magick failed while generating poster for clip $($Clip.FullName)"
     }
 }
 
@@ -148,6 +223,8 @@ function Convert-ClipToHls
         [Parameter(Mandatory = $true)][System.IO.FileInfo]$Clip
     )
 
+    New-VideoPoster -Clip $Clip
+
     $streamRoot = Join-Path $Clip.Directory.FullName "stream"
     $outputDir = Join-Path $streamRoot $Clip.BaseName
 
@@ -194,7 +271,10 @@ foreach ($postDir in $postDirs)
         continue
     }
 
-    $clips = Get-ChildItem -Path $postDir -Filter "*.mp4" -File -ErrorAction SilentlyContinue
+    $clips = @()
+    $clips += Get-ChildItem -Path $postDir -Filter "*.mp4" -File -ErrorAction SilentlyContinue
+    $clips += Get-ChildItem -Path $postDir -Filter "*.mov" -File -ErrorAction SilentlyContinue
+
     foreach ($clip in $clips)
     {
         Convert-ClipToHls -Clip $clip
