@@ -49,6 +49,11 @@
 
     {{ seo_tags }}
 
+    {%- if site.social.fediverse_handle %}
+    <!-- Fediverse handle/creator -->
+    <meta name="fediverse:creator" content="{{ site.social.fediverse_handle }}">
+    {% endif %}
+
     <title>
         {%- assign _show_page_title_prefix = true -%}
         {%- assign _page_title = page.title | default: '' | strip -%}
