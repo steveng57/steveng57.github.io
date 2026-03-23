@@ -49,7 +49,12 @@ function New-VideoPoster
         [Parameter(Mandatory = $true)][System.IO.FileInfo]$Clip
     )
 
-    $thumbDir = Join-Path $Clip.Directory.FullName "thumbnails"
+    # Allow source clips to live in a per-post subfolder (for example, "video-src")
+    # while keeping derived posters in the post's root media folder.
+    $clipDir = $Clip.Directory
+    $postDir = if ($clipDir.Name -ieq "video-src") { $clipDir.Parent } else { $clipDir }
+
+    $thumbDir = Join-Path $postDir.FullName "thumbnails"
     if (-not (Test-Path $thumbDir))
     {
         New-Item -ItemType Directory -Path $thumbDir -Force | Out-Null
@@ -225,7 +230,12 @@ function Convert-ClipToHls
 
     New-VideoPoster -Clip $Clip
 
-    $streamRoot = Join-Path $Clip.Directory.FullName "stream"
+    # Keep HLS outputs under the post's root media folder even when
+    # the source clip lives in a subfolder like "video-src".
+    $clipDir = $Clip.Directory
+    $postDir = if ($clipDir.Name -ieq "video-src") { $clipDir.Parent } else { $clipDir }
+
+    $streamRoot = Join-Path $postDir.FullName "stream"
     $outputDir = Join-Path $streamRoot $Clip.BaseName
 
     if ((Test-Path $outputDir) -and -not $Rebuild)
@@ -272,8 +282,10 @@ foreach ($postDir in $postDirs)
     }
 
     $clips = @()
-    $clips += Get-ChildItem -Path $postDir -Filter "*.mp4" -File -ErrorAction SilentlyContinue
-    $clips += Get-ChildItem -Path $postDir -Filter "*.mov" -File -ErrorAction SilentlyContinue
+    # Scan recursively so source clips can live in a nested folder such as
+    # "video-src" without affecting the location of derived outputs.
+    $clips += Get-ChildItem -Path $postDir -Filter "*.mp4" -File -Recurse -ErrorAction SilentlyContinue
+    $clips += Get-ChildItem -Path $postDir -Filter "*.mov" -File -Recurse -ErrorAction SilentlyContinue
 
     foreach ($clip in $clips)
     {
