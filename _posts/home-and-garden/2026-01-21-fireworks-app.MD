@@ -304,7 +304,19 @@ Yeah yeah, I hear ya, enough talk, let's get to the show already.  Alright, here
 
 It has a two minute main show with a one minute finale.  It has full 3d camera rotation and sound.  Play on in full screen mode for the best experience.
 
-{% include embed/youtube.html id = "SwWim1dEHG8?si=kJlN11lWFdsaikw3" %}
+{% include embed/video-hls.html
+  id="fireworks_slim"
+  master="stream/fireworks_slim/master.m3u8"
+  mp4="fireworks_slim.mp4"
+  poster="thumbnails/fireworks_slim.avif"
+  title="Fireworks Simulator"
+  caption="Fireworks Simulator App"
+  controls="true"
+  muted="false"
+  autoplay="false"
+  loop="false"
+  playsinline="true"
+%}
 
 ## Resources
 - Microsoft Visual Studio 
