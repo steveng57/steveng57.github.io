@@ -51,7 +51,7 @@ google_site_verification: 5IhkIIuL1MraUQQs3bMejAi6fZYn20p3r7oR9gPdlkc
 
 # Environment-specific configuration
 env:
-  turnstile_site_key: '0x4AAAAAACDJGG8YoVocKgq2' # fallback for local dev
+  turnstile_site_key: "0x4AAAAAACDJGG8YoVocKgq2" # fallback for local dev
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
@@ -60,14 +60,14 @@ analytics:
   google:
     id: # fill in your Google Analytics ID
   goatcounter:
-    id: '9830369'
+    id: "9830369"
 
 # Pageviews settings
 pageviews:
-  provider: 'goatcounter'
+  provider: "goatcounter"
 
 goatcounter:
-  id: '9830369'
+  id: "9830369"
 
 # Prefer color scheme setting.
 #
