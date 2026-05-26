@@ -28,7 +28,7 @@ Here are my three most recent posts:
 
 ## Recently Modified
 
-And here are some other posts that have been updated recently with new content.
+And here are some other posts that have been updated recently with new content:
 
 {% include recent3.html mode='modified' limit=3 %}
 
