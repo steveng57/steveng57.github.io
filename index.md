@@ -32,7 +32,7 @@ And here are some other posts that have been updated recently with new content:
 
 {% include recent3.html mode='modified' limit=3 %}
 
-## Finding Your Way
+## Navigating the Site
 
 ### Home Page
 
