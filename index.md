@@ -26,6 +26,12 @@ Here are my three most recent posts:
 
 {% include recent3.html %}
 
+## Recently Modified
+
+And here are some other posts that have been updated recently with new content.
+
+{% include recent3.html mode='modified' limit=3 %}
+
 ## Finding Your Way
 
 ### Home Page

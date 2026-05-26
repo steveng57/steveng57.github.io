@@ -11,6 +11,20 @@
   {% if has_limit != '' %}
     {% assign posts = posts | slice: 0, limit %}
   {% endif %}
+{% elsif mode == 'modified' %}
+  {% if has_limit == '' %}
+    {% assign limit = 3 %}
+  {% endif %}
+
+  {% assign recent_by_date = site.posts | slice: 0, 3 %}
+  {% assign recent_url_1 = recent_by_date[0].url %}
+  {% assign recent_url_2 = recent_by_date[1].url %}
+  {% assign recent_url_3 = recent_by_date[2].url %}
+
+  {% assign modified_posts = site.posts | where_exp: 'p', 'p.last_modified_at' | sort: 'last_modified_at' | reverse %}
+  {% assign posts = modified_posts | where_exp: 'p', 'p.url != recent_url_1 and p.url != recent_url_2 and p.url != recent_url_3' %}
+
+  {% assign posts = posts | slice: 0, limit %}
 {% else %}
   {% if has_limit == '' %}
     {% assign limit = 3 %}
