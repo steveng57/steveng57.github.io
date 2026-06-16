@@ -4,7 +4,7 @@ layout: post
 title: Network Upgrade
 description: A tech post, upgrading my home network from 1Gbps to 10Gbps.
 date: 2025-01-23 21:47:56 -0500
-last_modified_at: 2025-11-28 21:48:08 -0500
+last_modified_at: 2026-06-16 21:48:08 -0500
 category: [Home and Garden, House Tech]
 tags: [House Tech, Networking]
 image:
@@ -78,9 +78,15 @@ Now all I need is for Rogers to increase their upload speed to a reasonable 1Gbp
 
 {% include clear-float.html break=1 %}
 
-## What's Next
+## Update Number 2
 
-The Unifi line has just come out with a few more goodies to add to the home network.  Not available in Canada just yet, but stay tuned, they will be here soon...
+Unifi finally came out with some power management hardware, basically an uninterruptible power supply (UPS) a power distrubion system (PDS).  
+
+A UPS (second from the bottom) makes sure that things stay running all the time, a battery backup basically.  We live in a semi-rural area and get a **lot** of power outages... some long, some the 15 second variety.  This should keep everything going long enough to survive the short outages, and long enough for the generator out back to kick in.  
+
+A PDS (on the bottom) just lets you keep track of where the power is going and acts as a surge protector.  It also lets you remotely reboot things if you need to, which can come in handy.  Essentially, it is a really smart programmable power bar.
+
+{% include html-side.html img="IMG_2831.avif" align="center" %}
 
 ## Materials and Tools
 

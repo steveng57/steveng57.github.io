@@ -223,6 +223,8 @@ exclude:
   - deprecated/
   - assets/img/**/*.jpeg
   - assets/img/**/*.jpg
+  - assets/img/**/*.heic
+  - assets/img/**/*.HEIC
   # Treat large source videos as build-time inputs only. Place them
   # under a per-post "video-src" subfolder so they are excluded from
   # the generated site and therefore from Cloudflare Pages' asset
