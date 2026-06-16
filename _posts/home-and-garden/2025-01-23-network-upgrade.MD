@@ -80,11 +80,11 @@ Now all I need is for Rogers to increase their upload speed to a reasonable 1Gbp
 
 ## Update Number 2
 
-Unifi finally came out with some power management hardware, basically an uninterruptible power supply (UPS) a power distrubion system (PDS).  
+Unifi finally came out with some power management hardware, basically an uninterruptible power supply (UPS), and a power distrubion system (PDS).  
 
-A UPS (second from the bottom) makes sure that things stay running all the time, a battery backup basically.  We live in a semi-rural area and get a **lot** of power outages... some long, some the 15 second variety.  This should keep everything going long enough to survive the short outages, and long enough for the generator out back to kick in.  
+A UPS (second from the bottom) makes sure that things stays up and running all the time, a smart battery backup basically.  We live in a semi-rural area and get a **lot** of power outages... some long, some the 15 second variety.  This should keep everything going long enough to survive the short outages, and in a worst case scenario, long enough for the generator out back to kick in.  
 
-A PDS (on the bottom) just lets you keep track of where the power is going and acts as a surge protector.  It also lets you remotely reboot things if you need to, which can come in handy.  Essentially, it is a really smart programmable power bar.
+A PDS (on the bottom) just lets you keep track of where the power is going and acts as a surge protector.  It also lets you remotely reboot things if you need to, which can come in handy.  Essentially, it is a really smart, programmable power bar.
 
 {% include html-side.html img="IMG_2831.avif" align="center" %}
 
