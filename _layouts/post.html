@@ -36,16 +36,38 @@ script_includes:
       {% endif %}
 
       {% if page.image %}
-        {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
+        {% assign hero_src = page.image.hero | default: page.image.full | default: page.image.path | default: page.image %}
+        {% unless page.image.hero or page.image.full %}
+          {% if hero_src contains '/thumbnails/' %}
+            {% assign hero_src = hero_src | replace: '/thumbnails/', '/' %}
+          {% endif %}
+        {% endunless %}
+
+        {% if page.media_subpath and hero_src contains '/' %}
+          {% unless hero_src contains '://' %}
+            {% assign hero_src = hero_src | split: '/' | last %}
+          {% endunless %}
+        {% endif %}
+
+        {% assign hero_img_key = hero_src | split: '/' | last %}
+        {% assign hero_img_meta = site.data.img-info[hero_img_key] %}
+        {% capture src %}src="{{ hero_src }}"{% endcapture %}
         {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
         {% capture alt %}alt="{{ page.image.alt | xml_escape | default: "Preview Image" }}"{% endcapture %}
+        {% assign lqip = nil %}
 
         {% if page.image.lqip %}
           {%- capture lqip -%}lqip="{{ page.image.lqip }}"{%- endcapture -%}
         {% endif %}
 
         <div class="mt-3 mb-3">
-          <img {{ src }} {{ class }} {{ alt }} w="1200" h="630" {{ lqip }}>
+          <img {{ src }} {{ class }} {{ alt }}
+            {% if hero_img_meta and hero_img_meta.width and hero_img_meta.height %}
+              width="{{ hero_img_meta.width }}" height="{{ hero_img_meta.height }}"
+            {% else %}
+              width="1200" height="630"
+            {% endif %}
+            {{ lqip }}>
           {%- if page.image.alt -%}
             <figcaption class="text-center pt-2 pb-2">{{ page.image.alt }}</figcaption>
           {%- endif -%}

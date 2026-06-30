@@ -7,7 +7,8 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 category: [Woodworking, Workshop]
 tags: [Woodworking, Workshop, Plywood, Baltic Birch, Dowels, Dominos]
 image:
-  path: /thumbnails/20210827_212517.avif
+  path: 20210827_212517.avif
+  thumb: /thumbnails/20210827_212517.avif
   alt: Nature abhors a vacuum
 media_subpath: /assets/img/posts/vacuum-dolly
 ---

@@ -8,7 +8,8 @@ last_modified_at: 2024-06-22 19:07:27 -0500
 category: [Woodworking, Home Decor]
 tags: [Woodworking, White Oak, Bedframe, LED Lighting]
 image:
-  path: /thumbnails/gazebo-bedframe-sketchup.avif
+  path: gazebo-bedframe-sketchup.avif
+  thumb: /thumbnails/gazebo-bedframe-sketchup.avif
   alt: Gazebo Bedframe
 media_subpath: /assets/img/posts/gazebo-bedframe
 ---

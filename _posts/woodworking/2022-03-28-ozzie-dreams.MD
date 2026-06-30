@@ -7,7 +7,8 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 category: [Woodworking, Pets]
 tags: [Woodworking, Ozzie, Epoxy, Inlay, Red Oak, Pets, Dominos, Shaper Origin]
 image:
-  path: /thumbnails/20220328_071254.avif
+  path: 20220328_071254.avif
+  thumb: /thumbnails/20220328_071254.avif
   alt: Sweet Dreams Ozman
 media_subpath: "/assets/img/posts/ozzie-dreams"
 ---

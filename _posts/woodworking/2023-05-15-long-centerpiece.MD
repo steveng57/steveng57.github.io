@@ -7,7 +7,8 @@ last_modified_at: 2024-03-13 12:06:37 -0500
 category: [Woodworking, Home Decor]
 tags: [Woodworking, Red Oak, Shaper Origin, Epoxy, Inlay, Kitchen]
 image:
-  path: /thumbnails/IMG_0822.avif
+  path: IMG_0822.avif
+  thumb: /thumbnails/IMG_0822.avif
   alt: Stuff by the Pool
 media_subpath: /assets/img/posts/long-centerpiece
 ---

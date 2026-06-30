@@ -17,7 +17,8 @@ tags:
     Inlay
   ]
 image:
-  path: /thumbnails/IMG_0626.avif
+  path: IMG_0626.avif
+  thumb: /thumbnails/IMG_0626.avif
   alt: A very special gift for a very special person
 media_subpath: /assets/img/posts/cribbage-board
 favorite: true

@@ -7,7 +7,8 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 category: [Woodworking, Kitchen]
 tags: [Woodworking, Napkin Holder, Kitchen, Walnut, Epoxy, Inlay, Shaper Origin]
 image:
-  path: /thumbnails/20221122_113942.avif
+  path: 20221122_113942.avif
+  thumb: /thumbnails/20221122_113942.avif
   alt: Walnut Napkin Holder with White Epoxy Inlay
 media_subpath: /assets/img/posts/napkin-holders
 ---

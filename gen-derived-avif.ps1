@@ -13,10 +13,11 @@ param(
     [string]$SourcePath = ".\assets\img\posts",
     [switch]$Force,
     [switch]$PruneLegacy,
-    [ValidateRange(1, 100)]
-    [int]$ThumbnailScale = 50,
-    [ValidateRange(1, 200)]
-    [int]$Thumbnail2xScale = 100,
+    [switch]$PruneUntaggedDerived,
+    [ValidateRange(1, 4096)]
+    [int]$ThumbnailWidth = 480,
+    [ValidateRange(1, 4096)]
+    [int]$Thumbnail2xWidth = 960,
     [ValidateRange(1, 100)]
     [int]$TinyfileScale = 10,
     [ValidateRange(0, 100)]
@@ -108,7 +109,7 @@ function Invoke-MagickEncode
     param(
         [string]$InputPath,
         [string]$DestinationPath,
-        [string]$ResizePercent,
+        [string]$ResizeGeometry,
         [int]$QualityValue,
         [switch]$VideoFrame
     )
@@ -121,10 +122,10 @@ function Invoke-MagickEncode
 
     $arguments = @()
     $arguments += $inputArgument
-    if ($ResizePercent)
+    if ($ResizeGeometry)
     {
         $arguments += "-resize"
-        $arguments += $ResizePercent
+        $arguments += $ResizeGeometry
     }
     $arguments += "-strip"
     $arguments += "-quality"
@@ -201,30 +202,35 @@ foreach ($postFolder in $postFolders)
         {
             if ($Force -or (ShouldRebuild -Source $image.FullName -Destination $thumbnailTarget))
             {
-                Invoke-MagickEncode -InputPath $image.FullName -DestinationPath $thumbnailTarget -ResizePercent ("$ThumbnailScale%") -QualityValue $Quality
+                Invoke-MagickEncode -InputPath $image.FullName -DestinationPath $thumbnailTarget -ResizeGeometry ("${ThumbnailWidth}x>") -QualityValue $Quality
             }
             if ($Force -or (ShouldRebuild -Source $image.FullName -Destination $thumbnail2xTarget))
             {
-                $resize2x = if ($Thumbnail2xScale -ne 100) { "$Thumbnail2xScale%" } else { $null }
-                Invoke-MagickEncode -InputPath $image.FullName -DestinationPath $thumbnail2xTarget -ResizePercent $resize2x -QualityValue $Quality
+                Invoke-MagickEncode -InputPath $image.FullName -DestinationPath $thumbnail2xTarget -ResizeGeometry ("${Thumbnail2xWidth}x>") -QualityValue $Quality
             }
         }
         else
         {
-            Remove-Derived -Destination $thumbnailTarget
-            Remove-Derived -Destination $thumbnail2xTarget
+            if ($PruneUntaggedDerived)
+            {
+                Remove-Derived -Destination $thumbnailTarget
+                Remove-Derived -Destination $thumbnail2xTarget
+            }
         }
 
         if ($needsTinyfile)
         {
             if ($Force -or (ShouldRebuild -Source $image.FullName -Destination $tinyfileTarget))
             {
-                Invoke-MagickEncode -InputPath $image.FullName -DestinationPath $tinyfileTarget -ResizePercent ("$TinyfileScale%") -QualityValue $Quality
+                Invoke-MagickEncode -InputPath $image.FullName -DestinationPath $tinyfileTarget -ResizeGeometry ("$TinyfileScale%") -QualityValue $Quality
             }
         }
         else
         {
-            Remove-Derived -Destination $tinyfileTarget
+            if ($PruneUntaggedDerived)
+            {
+                Remove-Derived -Destination $tinyfileTarget
+            }
         }
     }
 

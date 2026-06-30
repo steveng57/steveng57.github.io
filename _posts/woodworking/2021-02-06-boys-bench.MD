@@ -7,7 +7,8 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 category: [Woodworking, Pets]
 tags: [Woodworking, Bench, Drawers, Red Oak, Pets]
 image:
-  path: /thumbnails/IMG_0536.avif
+  path: IMG_0536.avif
+  thumb: /thumbnails/IMG_0536.avif
   alt: Beast of a bench
 media_subpath: /assets/img/posts/boys-bench
 ---

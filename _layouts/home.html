@@ -41,7 +41,11 @@ pagination:
                     {% assign body_col = '12' %}
 
                     {% if fp.image %}
-                      {% assign fsrc = fp.image.path | default: fp.image %}
+                      {% assign fsrc = fp.image.thumb | default: fp.image.thumbnail | default: fp.image.path | default: fp.image %}
+                      {% unless fp.image.thumb or fp.image.thumbnail or fsrc contains '/thumbnails/' or fsrc contains '://' %}
+                        {% assign fsrc_file = fsrc | split: '/' | last %}
+                        {% assign fsrc = '/thumbnails/' | append: fsrc_file %}
+                      {% endunless %}
 
                       {% if fp.media_subpath %}
                         {% unless fsrc contains '://' %}
@@ -58,6 +62,8 @@ pagination:
 
                       {% assign f_img_key = fsrc | split: '/' | last %}
                       {% assign f_img_meta = site.data.img-info[f_img_key] %}
+                      {% assign fsrc_2x = fsrc | replace: '/thumbnails/', '/thumbnails-2x/' %}
+                      {% assign fsrc_2x_root = '/' | append: fsrc_2x | replace_first: '//', '/' %}
 
                       <div class="col-md-5">
                         <div class="preview-img">
@@ -68,7 +74,7 @@ pagination:
                               width="{{ f_img_meta.width }}" height="{{ f_img_meta.height }}"
                             {% endif %}
                             {% if fsrc contains '/thumbnails/' %}
-                              srcset="{{ fsrc }} 1x, {{ fsrc | replace: '/thumbnails/', '/thumbnails-2x/' }} 2x"
+                              srcset="{{ fsrc | relative_url }} 1x, {{ fsrc_2x_root | relative_url }} 2x"
                               sizes="(min-width: 768px) 320px, 100vw"
                             {% endif %}
                             decoding="async"
@@ -117,7 +123,11 @@ pagination:
         {% assign card_body_col = '12' %}
 
         {% if post.image %}
-          {% assign src = post.image.path | default: post.image %}
+          {% assign src = post.image.thumb | default: post.image.thumbnail | default: post.image.path | default: post.image %}
+          {% unless post.image.thumb or post.image.thumbnail or src contains '/thumbnails/' or src contains '://' %}
+            {% assign src_file = src | split: '/' | last %}
+            {% assign src = '/thumbnails/' | append: src_file %}
+          {% endunless %}
 
           {% if post.media_subpath %}
             {% unless src contains '://' %}
@@ -151,6 +161,8 @@ pagination:
 
           {% assign img_key = src | split: '/' | last %}
           {% assign img_meta = site.data.img-info[img_key] %}
+          {% assign src_2x = src | replace: '/thumbnails/', '/thumbnails-2x/' %}
+          {% assign src_2x_root = '/' | append: src_2x | replace_first: '//', '/' %}
 
           {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
 
@@ -169,7 +181,7 @@ pagination:
                   width="{{ img_meta.width }}" height="{{ img_meta.height }}"
                 {% endif %}
                 {% if use_lqip != true and src contains '/thumbnails/' %}
-                  srcset="{{ src }} 1x, {{ src | replace: '/thumbnails/', '/thumbnails-2x/' }} 2x"
+                  srcset="{{ src | relative_url }} 1x, {{ src_2x_root | relative_url }} 2x"
                   sizes="(min-width: 768px) 320px, 100vw"
                 {% endif %}
                 decoding="async"

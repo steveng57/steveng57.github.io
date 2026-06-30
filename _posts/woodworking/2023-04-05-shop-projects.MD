@@ -7,7 +7,8 @@ last_modified_at: 2024-02-25 19:12:11 -0500
 category: [Woodworking, Workshop]
 tags: [Woodworking, Workshop, Router, Mitre Stand, Table, Plywood, Baltic Birch, Dominos]
 image:
-  path: /thumbnails/20230405_141755.avif
+  path: 20230405_141755.avif
+  thumb: /thumbnails/20230405_141755.avif
   alt: Spiffy new router table
 media_subpath: /assets/img/posts/shop-projects
 ---

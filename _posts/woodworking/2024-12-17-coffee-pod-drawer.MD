@@ -8,7 +8,8 @@ last_modified_at: 2024-12-30 12:26:05 -0500
 category: [Woodworking, Home Decor]
 tags: [Woodworking, Walnut, Shaper Origin, Inlay, Drawers]
 image:
-  path: /thumbnails/IMG_1509.avif
+  path: IMG_1509.avif
+  thumb: /thumbnails/IMG_1509.avif
   alt: Coffee Pod Drawer
 media_subpath: /assets/img/posts/coffee-pod-drawer
 ---

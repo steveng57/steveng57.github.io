@@ -16,7 +16,8 @@ tags:
     Shaper Origin,
   ]
 image:
-  path: /thumbnails/IMG_0639.avif
+  path: IMG_0639.avif
+  thumb: /thumbnails/IMG_0639.avif
   alt: It's a keeper
 media_subpath: /assets/img/posts/keepsake-box
 ---

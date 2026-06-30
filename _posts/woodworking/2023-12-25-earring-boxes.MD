@@ -7,7 +7,8 @@ last_modified_at: 2025-01-02 11:00:00 -0500
 category: [Woodworking, Jewelry Boxes]
 tags: [Woodworking, Walnut, Jewelry Boxes, Shaper Origin, Dominos]
 image:
-  path: /thumbnails/IMG_0461.avif
+  path: IMG_0461.avif
+  thumb: /thumbnails/IMG_0461.avif
   alt: Earrings Trays - a gift for a wonderful human
 media_subpath: /assets/img/posts/earring-boxes
 favorite: true

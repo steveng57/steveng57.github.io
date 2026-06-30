@@ -19,7 +19,8 @@ tags:
     Baltic Birch,
   ]
 image:
-  path: /thumbnails/20230405_134555.avif
+  path: 20230405_134555.avif
+  thumb: /thumbnails/20230405_134555.avif
   alt: Let the Crafting Begin
 media_subpath: /assets/img/posts/punkins-playground
 ---

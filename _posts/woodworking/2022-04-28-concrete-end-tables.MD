@@ -7,7 +7,8 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 category: [Woodworking, Furniture]
 tags: [Woodworking, Concrete, Table, End Table, Red Oak, Furniture]
 image:
-  path: /thumbnails/IMG_0553.avif
+  path: IMG_0553.avif
+  thumb: /thumbnails/IMG_0553.avif
   alt: Adding a new material to the shop
 media_subpath: /assets/img/posts/concrete-end-tables
 ---

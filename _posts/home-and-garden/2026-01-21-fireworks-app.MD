@@ -8,7 +8,8 @@ last_modified_at: 2026-01-21 11:48:08 -0500
 category: [Home and Garden, House Tech] 
 tags: [Computer, PC, House Tech]
 image:
-  path: /thumbnails/Square1024x1024Logo.avif
+  path: Square1024x1024Logo.avif
+  thumb: /thumbnails/Square1024x1024Logo.avif
   alt: Fireworks Fun
 media_subpath: /assets/img/posts/fireworks-app
 favorite: false

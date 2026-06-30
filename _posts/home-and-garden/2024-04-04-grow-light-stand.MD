@@ -7,7 +7,8 @@ last_modified_at: 2024-04-04 21:53:53 -0400
 category: [Home and Garden, Greenhouse]
 tags: [Grow-light, Stands, Greenhouse, Garden]
 image:
-  path: /thumbnails/IMG_0866.avif
+  path: IMG_0866.avif
+  thumb: /thumbnails/IMG_0866.avif
   alt: No, not that kind of grow op!
 media_subpath: /assets/img/posts/grow-light-stand
 ---

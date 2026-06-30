@@ -8,7 +8,8 @@ last_modified_at: 2025-07-17 21:48:08 -0500
 category: [Home and Garden, House Tech] 
 tags: [Computer, PC, House Tech]
 image:
-  path: /thumbnails/IMG_1927.avif
+  path: IMG_1927.avif
+  thumb: /thumbnails/IMG_1927.avif
   alt: Booting the OS
 media_subpath: /assets/img/posts/new-pc-build
 favorite: false

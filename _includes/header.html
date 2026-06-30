@@ -20,11 +20,25 @@
       {% endif %}
 
       {% if page.image %}
-        {% assign header_img = page.image.path | default: page.image %}
-        {% assign header_img_meta = site.data.img-info[header_img] %}
+        {% assign header_img = page.image.hero | default: page.image.full | default: page.image.path | default: page.image %}
+        {% unless page.image.hero or page.image.full %}
+          {% if header_img contains '/thumbnails/' %}
+            {% assign header_img = header_img | replace: '/thumbnails/', '/' %}
+          {% endif %}
+        {% endunless %}
+
+        {% if page.media_subpath and header_img contains '/' %}
+          {% unless header_img contains '://' %}
+            {% assign header_img = header_img | split: '/' | last %}
+          {% endunless %}
+        {% endif %}
+
+        {% assign header_img_key = header_img | split: '/' | last %}
+        {% assign header_img_meta = site.data.img-info[header_img_key] %}
         {% capture src %}src="{{ header_img }}"{% endcapture %}
         {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
         {% capture alt %}alt="{{ page.image.alt | default: page.title | xml_escape }}"{% endcapture %}
+        {% assign lqip = nil %}
 
         {% if page.image.lqip %}
           {%- capture lqip -%}lqip="{{ page.image.lqip }}"{%- endcapture -%}

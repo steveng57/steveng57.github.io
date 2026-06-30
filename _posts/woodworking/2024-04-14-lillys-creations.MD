@@ -8,7 +8,8 @@ last_modified_at: 2024-04-14 11:08:52 -0400
 category: [Woodworking, Home Decor]
 tags: [Woodworking, Walnut, Pencil Holder, Trays, Shaper Origin, Epoxy, Inlay]
 image:
-  path: /thumbnails/IMG_0912.avif
+  path: IMG_0912.avif
+  thumb: /thumbnails/IMG_0912.avif
   alt: Lilly's Creations Pencil Holder
 media_subpath: /assets/img/posts/lillys-creations
 favorite: false

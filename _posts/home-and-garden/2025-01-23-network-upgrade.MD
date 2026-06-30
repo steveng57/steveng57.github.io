@@ -8,7 +8,8 @@ last_modified_at: 2026-06-16 21:48:08 -0500
 category: [Home and Garden, House Tech]
 tags: [House Tech, Networking]
 image:
-  path: /thumbnails/IMG_1640b.avif
+  path: IMG_1640b.avif
+  thumb: /thumbnails/IMG_1640b.avif
   alt: Network Upgrade
 media_subpath: /assets/img/posts/network-upgrade
 ---

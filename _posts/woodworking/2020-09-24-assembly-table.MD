@@ -7,7 +7,8 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 category: [Woodworking, Workshop]
 tags: [Woodworking, Assembly Table, Workbench, Workshop]
 image:
-  path: /thumbnails/20201001_193728.avif
+  path: 20201001_193728.avif
+  thumb: /thumbnails/20201001_193728.avif
   alt: About 2 weeks to assemble
 media_subpath: /assets/img/posts/assembly-table
 ---

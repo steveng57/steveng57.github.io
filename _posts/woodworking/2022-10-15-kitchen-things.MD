@@ -7,7 +7,8 @@ last_modified_at: 2024-03-12 11:23:36 -0500
 category: [Woodworking, Kitchen]
 tags: [Woodworking, Poplar, Epoxy, Inlay, Kitchen]
 image:
-  path: /thumbnails/IMG_0810.avif
+  path: IMG_0810.avif
+  thumb: /thumbnails/IMG_0810.avif
   alt: Odds and Ends in the Kitchen
 media_subpath: /assets/img/posts/kitchen-things
 ---

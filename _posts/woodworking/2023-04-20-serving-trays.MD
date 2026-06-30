@@ -8,7 +8,8 @@ category: [Woodworking, Home Decor]
 tags:
   [Woodworking, Serving Tray, Trays, Epoxy, Poplar, Home Decor, Shaper Origin]
 image:
-  path: /thumbnails/20230405_141951.avif
+  path: 20230405_141951.avif
+  thumb: /thumbnails/20230405_141951.avif
   alt: These are FIVE colour epoxy inlays
 media_subpath: /assets/img/posts/serving-trays
 ---

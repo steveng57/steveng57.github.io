@@ -7,7 +7,8 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 category: [Woodworking, Games]
 tags: [Woodworking, Games, Outdoors, Plywood, Red Oak, Cedar]
 image:
-  path: /thumbnails/20170724_234953.avif
+  path: 20170724_234953.avif
+  thumb: /thumbnails/20170724_234953.avif
   alt: Lots of practice carving holes on this one
 media_subpath: /assets/img/posts/bean-bag-toss-game
 ---
