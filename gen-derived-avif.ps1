@@ -185,6 +185,114 @@ function Copy-Metadata
     }
 }
 
+function Get-MetadataSnapshot
+{
+    param([string]$Path)
+
+    $arguments = @(
+        "-json",
+        "-Title",
+        "-ImageDescription",
+        "-Description",
+        "-XPTitle",
+        "-XPSubject",
+        "-Subject",
+        "-Keywords",
+        "-HierarchicalSubject",
+        "-DateTimeOriginal",
+        "-CreateDate",
+        $Path
+    )
+
+    $previousLcAll = $env:LC_ALL
+    $previousLang = $env:LANG
+    try
+    {
+        $env:LC_ALL = "C"
+        $env:LANG = "C"
+        $json = & $script:ExifToolExecutable $arguments
+        if ($LASTEXITCODE -ne 0)
+        {
+            throw "exiftool exited with code $LASTEXITCODE"
+        }
+
+        $items = $json | ConvertFrom-Json
+        return $items | Select-Object -First 1
+    }
+    finally
+    {
+        $env:LC_ALL = $previousLcAll
+        $env:LANG = $previousLang
+    }
+}
+
+function Convert-MetadataValue
+{
+    param($Value)
+
+    if ($null -eq $Value)
+    {
+        return ""
+    }
+
+    $values = @()
+    if ($Value -is [array])
+    {
+        $values = @($Value)
+    }
+    else
+    {
+        $values = @($Value)
+    }
+
+    return ($values |
+        Where-Object { -not [string]::IsNullOrWhiteSpace($_) } |
+        ForEach-Object { $_.ToString().Trim() } |
+        Sort-Object) -join "`n"
+}
+
+function Test-MetadataCopyNeeded
+{
+    param(
+        [string]$SourcePath,
+        [string]$DestinationPath
+    )
+
+    if (-not (Test-Path -LiteralPath $DestinationPath))
+    {
+        return $true
+    }
+
+    $sourceMetadata = Get-MetadataSnapshot -Path $SourcePath
+    $destinationMetadata = Get-MetadataSnapshot -Path $DestinationPath
+    foreach ($name in @('Title', 'ImageDescription', 'Description', 'XPTitle', 'XPSubject', 'Subject', 'Keywords', 'HierarchicalSubject', 'DateTimeOriginal', 'CreateDate'))
+    {
+        $sourceValue = ""
+        if ($sourceMetadata.PSObject.Properties.Name -contains $name)
+        {
+            $sourceValue = Convert-MetadataValue $sourceMetadata.$name
+        }
+
+        if ([string]::IsNullOrWhiteSpace($sourceValue) -or $sourceValue -match '^0000[:\-]00[:\-]00')
+        {
+            continue
+        }
+
+        $destinationValue = ""
+        if ($destinationMetadata.PSObject.Properties.Name -contains $name)
+        {
+            $destinationValue = Convert-MetadataValue $destinationMetadata.$name
+        }
+
+        if ($sourceValue -ne $destinationValue)
+        {
+            return $true
+        }
+    }
+
+    return $false
+}
+
 try
 {
     $script:MagickExecutable = (Get-Command "magick" -ErrorAction Stop).Source
@@ -300,12 +408,14 @@ foreach ($postFolder in $postFolders)
     foreach ($video in $videoFiles)
     {
         $posterTarget = Join-Path -Path $thumbnailsPath -ChildPath ($video.BaseName + ".avif")
+        $posterRebuilt = $false
         if ($Force -or (ShouldRebuild -Source $video.FullName -Destination $posterTarget))
         {
             Invoke-MagickEncode -InputPath $video.FullName -DestinationPath $posterTarget -ResizeGeometry $null -QualityValue $Quality -VideoFrame
+            $posterRebuilt = $true
         }
 
-        if (Test-Path -LiteralPath $posterTarget)
+        if ($posterRebuilt -or (Test-MetadataCopyNeeded -SourcePath $video.FullName -DestinationPath $posterTarget))
         {
             Copy-Metadata -SourcePath $video.FullName -DestinationPath $posterTarget
         }
