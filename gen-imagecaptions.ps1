@@ -1,20 +1,11 @@
 <#
 .SYNOPSIS
-Generates thumbnails for images in a specified folder.
+Generates image metadata for post images.
 
 .DESCRIPTION
-This function generates thumbnails for images in the specified folder. By default, it does not delete existing thumbnails, but you can enable the deletion of existing thumbnails by setting the $deleteExisting parameter to $true.
-
-.PARAMETER folderPath
-The path of the folder containing the images.
-
-.PARAMETER deleteExisting
-Specifies whether to delete existing thumbnails before generating new ones. Default value is $false.
-
-.EXAMPLE
-GenerateThumbnails -folderPath "C:\Images" -deleteExisting $true
-Generates thumbnails for images in the "C:\Images" folder and deletes any existing thumbnails.
-
+Scans post image folders and writes `_data/img-info.json`. Keys are full
+site-relative paths starting with `assets/` so original images and derived
+thumbnail images remain distinct.
 #>
 
 param(
@@ -22,7 +13,15 @@ param(
 )
 
 function Convert-DateTaken($rawDate) {
-   $cleanDate = $rawDate -replace "[^a-zA-Z0-9 -:]", ""
+   if ($null -eq $rawDate) {
+      return $null
+   }
+
+   $cleanDate = $rawDate.ToString() -replace "[^a-zA-Z0-9 .:-]", ""
+   if ($cleanDate -match '^(\d{4}):(\d{2}):(\d{2})(.*)$') {
+      $cleanDate = "$($matches[1])-$($matches[2])-$($matches[3])$($matches[4])"
+   }
+
    if (-not [string]::IsNullOrWhiteSpace($cleanDate)) {
       try {
          return [datetime]$cleanDate
@@ -35,53 +34,53 @@ function Convert-DateTaken($rawDate) {
    return $null
 }
 
-function Get-ShellImageMetadata($shell, $imageFile, $titleIndex, $subjectIndex, $dateTakenIndex, $dimensionsIndex, $tagIndex) {
-   $shellFolder = $shell.Namespace($imageFile.DirectoryName)
-   if (-not $shellFolder) {
-      return $null
-   }
-
-   $shellFile = $shellFolder.ParseName($imageFile.Name)
-   if (-not $shellFile) {
-      return $null
-   }
-
-   $dimensions = $shellFolder.GetDetailsOf($shellFile, $dimensionsIndex)
-   $dimArray = $dimensions -split 'x'
-   $width = 0
-   $height = 0
-   if ($dimArray.Length -ge 2) {
-      $width = [int]($dimArray[0] -replace "[^0-9]", "")
-      $height = [int]($dimArray[1] -replace "[^0-9]", "")
-   }
-
-   $tag = $shellFolder.GetDetailsOf($shellFile, $tagIndex)
-   $tagsArray = if ($tag) { $tag -split "\s*;\s*" } else { @() }
-
-   return [pscustomobject]@{
-      Title     = $shellFolder.GetDetailsOf($shellFile, $titleIndex)
-      Subject   = $shellFolder.GetDetailsOf($shellFile, $subjectIndex)
-      DateTaken = Convert-DateTaken $shellFolder.GetDetailsOf($shellFile, $dateTakenIndex)
-      Width     = $width
-      Height    = $height
-      Gallery   = $tagsArray -contains "gallery"
-   }
+function Get-MetadataKey($repoRoot, $imageFile) {
+   return [System.IO.Path]::GetRelativePath($repoRoot, $imageFile.FullName).Replace('\', '/')
 }
 
-function Get-MagickImageDimensions($imageFile) {
-   if (-not $script:MagickExecutable) {
-      return $null
+function Convert-ExifArray($value) {
+   if ($null -eq $value) {
+      return @()
    }
 
-   $dimensions = & $script:MagickExecutable identify -format "%w %h" $imageFile.FullName 2>$null
-   if ($LASTEXITCODE -eq 0 -and $dimensions -match '^(\d+)\s+(\d+)$') {
-      return [pscustomobject]@{
-         Width  = [int]$matches[1]
-         Height = [int]$matches[2]
+   if ($value -is [array]) {
+      return @($value)
+   }
+
+   return @($value)
+}
+
+function Get-FirstExifValue($metadata, [string[]]$names) {
+   if ($null -eq $metadata) {
+      return ""
+   }
+
+   foreach ($name in $names) {
+      if ($metadata.PSObject.Properties.Name -contains $name) {
+         $value = $metadata.$name
+         if ($value -is [array]) {
+            $value = ($value | Where-Object { -not [string]::IsNullOrWhiteSpace($_) } | Select-Object -First 1)
+         }
+         if (-not [string]::IsNullOrWhiteSpace($value)) {
+            return $value.ToString()
+         }
       }
    }
 
-   return $null
+   return ""
+}
+
+function Get-ExifTagTokens($metadata) {
+   $tokens = @()
+   foreach ($name in @('Subject', 'Keywords', 'HierarchicalSubject')) {
+      if ($metadata -and $metadata.PSObject.Properties.Name -contains $name) {
+         $tokens += Convert-ExifArray $metadata.$name
+      }
+   }
+
+   return $tokens |
+      Where-Object { -not [string]::IsNullOrWhiteSpace($_) } |
+      ForEach-Object { $_.ToString().Trim().ToLowerInvariant() }
 }
 
 function Find-MetadataSourceFile($imageFile) {
@@ -100,79 +99,119 @@ function Find-MetadataSourceFile($imageFile) {
    return $null
 }
 
-function GenerateImageCaptions($folderPath) {
-   $repoRoot = (Get-Location).Path
-
-   # Create a Shell.Application object
-   $shell = New-Object -ComObject Shell.Application
-
-   # Create a hashtable to store the metadata
-   $metadata = @{}
-
-   # Define the property indices for the title, subject, and date taken
-   # These indices might vary depending on the version of Windows
-   $titleIndex = 21
-   $subjectIndex = 22
-   $dateTakenIndex = 12
-   $dimensionsIndex = 31
-   $tagIndex = 18
-
+function Get-ExifMetadataMap($repoRoot, $imageFiles) {
    try {
-      $script:MagickExecutable = (Get-Command "magick" -ErrorAction Stop).Source
+      $exifTool = (Get-Command "exiftool" -ErrorAction Stop).Source
    }
    catch {
-      $script:MagickExecutable = $null
-      Write-Warning "ImageMagick 'magick' executable not found on PATH. Falling back to Windows Shell dimensions."
+      throw "ExifTool executable not found on PATH."
    }
 
-   #$imageFiles = Get-ChildItem -Path $folderPath -File -Recurse -Depth 2 | Where-Object { $_.Extension -in @('.jpeg', '.jpg', '.png', '.avif') }
-   $imageFiles = Get-ChildItem -Path $folderPath -File -Recurse -Depth 2 | Where-Object { $_.Extension -in @('.png', '.avif') }
-   # Group files by directory for efficient shell operations
+   $argFile = [System.IO.Path]::GetTempFileName()
+
+   try {
+      $arguments = @(
+         "-json",
+         "-Title",
+         "-ImageDescription",
+         "-Description",
+         "-XPTitle",
+         "-XPSubject",
+         "-Subject",
+         "-Keywords",
+         "-HierarchicalSubject",
+         "-DateTimeOriginal",
+         "-CreateDate",
+         "-ImageWidth",
+         "-ImageHeight"
+      )
+
+      $arguments += $imageFiles | ForEach-Object { $_.FullName }
+      Set-Content -LiteralPath $argFile -Value $arguments -Encoding UTF8
+
+      $previousLcAll = $env:LC_ALL
+      $previousLang = $env:LANG
+      $env:LC_ALL = "C"
+      $env:LANG = "C"
+      $json = & $exifTool "-@" $argFile
+      if ($LASTEXITCODE -ne 0) {
+         throw "ExifTool exited with code $LASTEXITCODE."
+      }
+   }
+   finally {
+      $env:LC_ALL = $previousLcAll
+      $env:LANG = $previousLang
+      Remove-Item -LiteralPath $argFile -Force -ErrorAction SilentlyContinue
+   }
+
+   $metadataMap = @{}
+   $metadataItems = $json | ConvertFrom-Json
+   foreach ($item in $metadataItems) {
+      $sourcePath = $item.SourceFile
+      if (-not [System.IO.Path]::IsPathRooted($sourcePath)) {
+         $sourcePath = Join-Path -Path $repoRoot -ChildPath $sourcePath
+      }
+
+      $key = [System.IO.Path]::GetRelativePath($repoRoot, $sourcePath).Replace('\', '/')
+      $metadataMap[$key] = $item
+   }
+
+   return $metadataMap
+}
+
+function GenerateImageCaptions($folderPath) {
+   $repoRoot = (Get-Location).Path
+   $metadata = @{}
+
+   $imageFiles = Get-ChildItem -Path $folderPath -File -Recurse -Depth 2 |
+      Where-Object { $_.Extension.ToLowerInvariant() -in @('.png', '.avif') }
+
+   $sourceFiles = $imageFiles | ForEach-Object { Find-MetadataSourceFile $_ } | Where-Object { $_ }
+   $metadataFilesByPath = @{}
+   foreach ($file in ($imageFiles + $sourceFiles)) {
+      $metadataFilesByPath[$file.FullName] = $file
+   }
+
+   $exifMetadata = Get-ExifMetadataMap $repoRoot $metadataFilesByPath.Values
    $filesByFolder = $imageFiles | Group-Object { $_.DirectoryName }
 
    foreach ($folderGroup in $filesByFolder) {
       Write-Output "Processing folder: $(Split-Path $folderGroup.Name -Leaf)"
-      
+
       foreach ($imageFile in $folderGroup.Group) {
-         $metadataKey = [System.IO.Path]::GetRelativePath($repoRoot, $imageFile.FullName).Replace('\', '/')
-         $imageMetadata = Get-ShellImageMetadata $shell $imageFile $titleIndex $subjectIndex $dateTakenIndex $dimensionsIndex $tagIndex
+         $metadataKey = Get-MetadataKey $repoRoot $imageFile
+         $imageMetadata = $exifMetadata[$metadataKey]
+
          $sourceMetadata = $null
          $sourceFile = Find-MetadataSourceFile $imageFile
          if ($sourceFile -and $sourceFile.FullName -ne $imageFile.FullName) {
-            $sourceMetadata = Get-ShellImageMetadata $shell $sourceFile $titleIndex $subjectIndex $dateTakenIndex $dimensionsIndex $tagIndex
+            $sourceMetadata = $exifMetadata[(Get-MetadataKey $repoRoot $sourceFile)]
          }
 
-         $title = $imageMetadata.Title
+         $title = Get-FirstExifValue $imageMetadata @('Title', 'ImageDescription', 'Description', 'XPTitle')
          if ([string]::IsNullOrWhiteSpace($title) -and $sourceMetadata) {
-            $title = $sourceMetadata.Title
+            $title = Get-FirstExifValue $sourceMetadata @('Title', 'ImageDescription', 'Description', 'XPTitle')
          }
 
-         $subject = $imageMetadata.Subject
+         $subject = Get-FirstExifValue $imageMetadata @('XPSubject', 'ImageDescription', 'Description', 'Title', 'XPTitle')
          if ([string]::IsNullOrWhiteSpace($subject) -and $sourceMetadata) {
-            $subject = $sourceMetadata.Subject
+            $subject = Get-FirstExifValue $sourceMetadata @('XPSubject', 'ImageDescription', 'Description', 'Title', 'XPTitle')
          }
 
-         $dateTaken = $imageMetadata.DateTaken
+         $dateTaken = Convert-DateTaken (Get-FirstExifValue $imageMetadata @('DateTimeOriginal', 'CreateDate'))
          if (-not $dateTaken -and $sourceMetadata) {
-            $dateTaken = $sourceMetadata.DateTaken
+            $dateTaken = Convert-DateTaken (Get-FirstExifValue $sourceMetadata @('DateTimeOriginal', 'CreateDate'))
          }
 
-         $width = $imageMetadata.Width
-         $height = $imageMetadata.Height
-         if ($width -le 0 -or $height -le 0) {
-            $magickDimensions = Get-MagickImageDimensions $imageFile
-            if ($magickDimensions) {
-               $width = $magickDimensions.Width
-               $height = $magickDimensions.Height
-            }
-         }
+         $width = if ($imageMetadata.ImageWidth) { [int]$imageMetadata.ImageWidth } else { 0 }
+         $height = if ($imageMetadata.ImageHeight) { [int]$imageMetadata.ImageHeight } else { 0 }
 
-         $gallery = $imageMetadata.Gallery
-         if (-not $gallery -and $sourceMetadata) {
-            $gallery = $sourceMetadata.Gallery
+         $tagTokens = @(Get-ExifTagTokens $imageMetadata)
+         if ($tagTokens.Count -eq 0 -and $sourceMetadata) {
+            $tagTokens = @(Get-ExifTagTokens $sourceMetadata)
          }
+         $gallery = $tagTokens -contains "gallery"
 
-         # Store metadata by full site-relative path to disambiguate derivatives.
          $metadata[$metadataKey] = [ordered]@{
             'title'     = $title
             'subject'   = $subject
@@ -184,21 +223,14 @@ function GenerateImageCaptions($folderPath) {
       }
    }
 
-   # Sort the $metadata by filename (key) - maintain existing sorting behavior
    $sortedMetadata = [ordered]@{}
    foreach ($key in ($metadata.Keys | Sort-Object)) {
       $sortedMetadata[$key] = $metadata[$key]
    }
 
-   # Convert the $metadata object to JSON format
    $jsonContent = $sortedMetadata | ConvertTo-Json
-   
-   # Define the file path for the JSON file
    $jsonFilePath = Join-Path -Path "_data" -ChildPath "img-info.json"
-
-   # Write the JSON content to the file
    $jsonContent | Out-File -FilePath $jsonFilePath -Encoding UTF8
 }
 
-# Call the function with the specified folder path
 GenerateImageCaptions $folderPath
