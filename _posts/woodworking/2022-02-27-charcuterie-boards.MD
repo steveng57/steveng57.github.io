@@ -7,7 +7,8 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 category: [Woodworking, Kitchen]
 tags: [Woodworking, Charcuterie Board, Kitchen, Maple, Walnut]
 image:
-  path: /thumbnails/20220227_191616.avif
+  path: 20220227_191616.avif
+  thumb: /thumbnails/20220227_191616.avif
   alt: One for Theresa
 media_subpath: /assets/img/posts/charcuterie-boards
 ---

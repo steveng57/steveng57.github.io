@@ -7,7 +7,8 @@ last_modified_at: 2024-05-18 15:39:40 -0400
 category: [Woodworking, Workshop]
 tags: [Woodworking, Drawers, Stands, Plywood, Baltic Birch, Workshop]
 image:
-  path: /thumbnails/20210321_210903.avif
+  path: 20210321_210903.avif
+  thumb: /thumbnails/20210321_210903.avif
   alt: Waiting for Work
 media_subpath: /assets/img/posts/shop-stands
 ---

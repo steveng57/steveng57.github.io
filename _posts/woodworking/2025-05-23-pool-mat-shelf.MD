@@ -8,7 +8,8 @@ last_modified_at: 2025-05-26 21:48:08 -0500
 category: [Woodworking, Home Decor]
 tags: [Woodworking, Plywood, Shelves, Baltic Birch, Pool]
 image:
-  path: /thumbnails/IMG_1835.avif
+  path: IMG_1835.avif
+  thumb: /thumbnails/IMG_1835.avif
   alt: Pool Mat Shelf
 media_subpath: /assets/img/posts/pool-mat-shelf
 favorite: false

@@ -7,7 +7,8 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 category: [Woodworking, Pets]
 tags: [Woodworking, Poplar, Bench, Pets, Epoxy, Inlay]
 image:
-  path: /thumbnails/20220225_091904.avif
+  path: 20220225_091904.avif
+  thumb: /thumbnails/20220225_091904.avif
   alt: Puppy paws are a woodworkers right of passage
 media_subpath: /assets/img/posts/puppy-steps
 ---

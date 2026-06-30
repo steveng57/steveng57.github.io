@@ -7,7 +7,8 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 category: [Woodworking, Furniture]
 tags: [Woodworking, Ash, Furniture, Table]
 image:
-  path: /thumbnails/IMG_0221.avif
+  path: IMG_0221.avif
+  thumb: /thumbnails/IMG_0221.avif
   alt: It's a desert topping and a floor wax
 media_subpath: /assets/img/posts/extension-table
 ---

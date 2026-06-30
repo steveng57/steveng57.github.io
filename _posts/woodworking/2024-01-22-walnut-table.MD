@@ -8,7 +8,8 @@ last_modified_at: 2024-05-15 20:09:21 -0400
 category: [Woodworking, Furniture]
 tags: [Woodworking, Walnut, Table, Crafts, Bench, Dominos]
 image:
-  path: /thumbnails/IMG_0693.avif
+  path: IMG_0693.avif
+  thumb: /thumbnails/IMG_0693.avif
   alt: Walnut Table and Benches
 media_subpath: /assets/img/posts/walnut-table
 favorite: true

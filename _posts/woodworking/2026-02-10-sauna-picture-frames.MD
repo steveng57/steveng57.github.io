@@ -8,7 +8,8 @@ last_modified_at: 2026-02-12 12:48:08 -0500
 category: [Woodworking, Home Decor]
 tags: [Woodworking, Picture Frames, Frames, White Oak, Home Decor, Dominos]
 image:
-  path: /thumbnails/IMG_2324.avif
+  path: IMG_2324.avif
+  thumb: /thumbnails/IMG_2324.avif
   alt: Picture Frames for Sauna
 media_subpath: /assets/img/posts/sauna-picture-frames/
 favorite: false

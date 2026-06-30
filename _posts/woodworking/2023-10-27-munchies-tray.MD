@@ -8,7 +8,8 @@ category: [Woodworking, Home Decor]
 tags:
   [Woodworking, Walnut, Trays, Epoxy, Inlay, Home Decor, Shaper Origin, Dominos]
 image:
-  path: /thumbnails/IMG_0079.avif
+  path: IMG_0079.avif
+  thumb: /thumbnails/IMG_0079.avif
   alt: Hey hey it's the munchies
 media_subpath: /assets/img/posts/munchies-tray
 ---

@@ -8,7 +8,8 @@ category: [Woodworking, Workshop]
 tags: [Woodworking, Workbench, Assembly Table, Workshop]
 pin: false
 image:
-  path: /thumbnails/20170127_010801.avif
+  path: 20170127_010801.avif
+  thumb: /thumbnails/20170127_010801.avif
   alt: MDF and 2x4's - pretty simple
 media_subpath: /assets/img/posts/first-workbench
 ---

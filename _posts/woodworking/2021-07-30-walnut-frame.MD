@@ -8,7 +8,8 @@ category: [Woodworking, Home Decor]
 tags: [Woodworking, Picture Frame, Walnut, Home Decor, Dominos]
 series: Picture Frames
 image:
-  path: /thumbnails/20210730_234800423_iOS.avif
+  path: 20210730_234800423_iOS.avif
+  thumb: /thumbnails/20210730_234800423_iOS.avif
   alt: For the Birds
 media_subpath: /assets/img/posts/walnut-frame
 ---

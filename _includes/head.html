@@ -14,14 +14,20 @@
     <!-- Setup Open Graph image -->
 
     {% if page.image %}
-    {% assign src = page.image.path | default: page.image %}
+    {% assign seo_raw_src = page.image.path | default: page.image %}
+    {% assign src = page.image.hero | default: page.image.full | default: seo_raw_src %}
+    {% unless page.image.hero or page.image.full %}
+    {% if src contains '/thumbnails/' %}
+    {% assign src = src | replace: '/thumbnails/', '/' %}
+    {% endif %}
+    {% endunless %}
 
     {% unless src contains '://' %}
     {%- capture img_url -%}
     {% include media-url.html src=src subpath=page.media_subpath absolute=true %}
     {%- endcapture -%}
 
-    {%- capture old_url -%}{{ src | absolute_url }}{%- endcapture -%}
+    {%- capture old_url -%}{{ seo_raw_src | absolute_url }}{%- endcapture -%}
     {%- capture new_url -%}{{ img_url }}{%- endcapture -%}
 
     {% assign seo_tags = seo_tags | replace: old_url, new_url %}

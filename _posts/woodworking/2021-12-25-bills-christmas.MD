@@ -7,7 +7,8 @@ last_modified_at: 2024-03-03 14:56:34 -0500
 category: [Woodworking, Home Decor]
 tags: [Woodworking, Signs, Epoxy, Inlay, Walnut, Red Oak, Shaper Origin]
 image:
-  path: /thumbnails/golf-sign.avif
+  path: golf-sign.avif
+  thumb: /thumbnails/golf-sign.avif
   alt: Golf is a good sign
 media_subpath: /assets/img/posts/bills-christmas
 ---

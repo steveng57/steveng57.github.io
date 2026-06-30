@@ -7,7 +7,8 @@ last_modified_at: 2024-02-17 18:32:00 -0500
 category: [Woodworking, Home Decor]
 tags: [Woodworking, Taper, Stands, Red Oak, Home Decor, Dominos]
 image:
-  path: /thumbnails/20210428_181207.avif
+  path: 20210428_181207.avif
+  thumb: /thumbnails/20210428_181207.avif
   alt: Greenery and Redery
 media_subpath: /assets/img/posts/plant-stands
 ---

@@ -7,7 +7,8 @@ last_modified_at: 2024-03-07 18:00:14 -0500
 category: [Woodworking, Furniture]
 tags: [Woodworking, Red Oak, Cabinets, Shelves, Dominos]
 image:
-  path: /thumbnails/IMG_0758C.avif
+  path: IMG_0758C.avif
+  thumb: /thumbnails/IMG_0758C.avif
   alt: Cabinet for Gazebo
 media_subpath: /assets/img/posts/gazebo-cabinet
 ---

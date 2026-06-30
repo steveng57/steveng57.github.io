@@ -17,7 +17,8 @@ tags:
     LED Lighting,
   ]
 image:
-  path: /thumbnails/20220114_114921.avif
+  path: 20220114_114921.avif
+  thumb: /thumbnails/20220114_114921.avif
   alt: Where are the drawer fronts?
 media_subpath: /assets/img/posts/theatre-kitchen
 favorite: true

@@ -8,7 +8,8 @@ last_modified_at: 2025-05-22 21:48:08 -0500
 category: [Home and Garden, House Tech]
 tags: [House Tech, Woodworking, Solar, Pool]
 image:
-  path: /thumbnails/IMG_1811.avif
+  path: IMG_1811.avif
+  thumb: /thumbnails/IMG_1811.avif
   alt: Solar Pool Heater
 media_subpath: /assets/img/posts/solar-pool-heater
 favorite: false

@@ -9,7 +9,8 @@ category: [Woodworking, Home Decor]
 tags: [Woodworking, Picture Frame, Frames, Poplar, Home Decor, Dominos]
 series: Picture Frames
 image:
-  path: /thumbnails/IMG_1674.avif
+  path: IMG_1674.avif
+  thumb: /thumbnails/IMG_1674.avif
   alt: More Picture Frames
 media_subpath: /assets/img/posts/more-picture-frames
 favorite: false

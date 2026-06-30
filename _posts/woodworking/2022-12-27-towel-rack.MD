@@ -7,7 +7,8 @@ last_modified_at: 2024-02-23 11:45:18 -0500
 category: [Woodworking, Furniture]
 tags: [Woodworking, Maple, Towel Rack, Furniture, Dominos, Shaper Origin]
 image:
-  path: /thumbnails/IMG_0681.avif
+  path: IMG_0681.avif
+  thumb: /thumbnails/IMG_0681.avif
   alt: A great place to hang
 media_subpath: "/assets/img/posts/towel-rack"
 ---

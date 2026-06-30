@@ -40,7 +40,11 @@
       <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse text-decoration-none border-bottom-0">
 
         {% if post.image %}
-          {% assign src = post.image.path | default: post.image %}
+          {% assign src = post.image.thumb | default: post.image.thumbnail | default: post.image.path | default: post.image %}
+          {% unless post.image.thumb or post.image.thumbnail or src contains '/thumbnails/' or src contains '://' %}
+            {% assign src_file = src | split: '/' | last %}
+            {% assign src = '/thumbnails/' | append: src_file %}
+          {% endunless %}
 
           {% if post.media_subpath %}
             {% unless src contains '://' %}
@@ -55,6 +59,8 @@
 
           {% assign img_key = src | split: '/' | last %}
           {% assign img_meta = site.data.img-info[img_key] %}
+          {% assign src_2x = src | replace: '/thumbnails/', '/thumbnails-2x/' %}
+          {% assign src_2x_root = '/' | append: src_2x | replace_first: '//', '/' %}
 
           {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
 
@@ -67,11 +73,10 @@
                   width="{{ img_meta.width }}" height="{{ img_meta.height }}"
                 {% endif %}
                 {% if src contains '/thumbnails/' %}
-                  srcset="{{ src | relative_url }} 1x, {{ src | replace: '/thumbnails/', '/thumbnails-2x/' | relative_url }} 2x"
+                  srcset="{{ src | relative_url }} 1x, {{ src_2x_root | relative_url }} 2x"
                   sizes="(min-width: 768px) 320px, 100vw"
                 {% endif %}
                 decoding="async"
-                loading="lazy"
               >
             </div>
           </div>

@@ -7,7 +7,8 @@ last_modified_at: 2024-03-03 14:56:34 -0500
 category: [Woodworking, Jewelry Boxes]
 tags: [Woodworking, Jewelry Boxes, Shaper Origin, Epoxy, Inlay, Poplar]
 image:
-  path: /thumbnails/IMG_0734.avif
+  path: IMG_0734.avif
+  thumb: /thumbnails/IMG_0734.avif
   alt: Combo Jewelry Box Thing and Mirror Stand
 media_subpath: /assets/img/posts/mirror-stand
 ---

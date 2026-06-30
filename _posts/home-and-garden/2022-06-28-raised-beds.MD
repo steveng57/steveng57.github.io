@@ -7,7 +7,8 @@ last_modified_at: 2024-05-29 17:58:45 -0400
 category: [Home and Garden, Greenhouse]
 tags: [Woodworking, Raised Bed, Garden, Cedar, Outdoors, Furniture]
 image:
-  path: /thumbnails/20220628_125950.avif
+  path: 20220628_125950.avif
+  thumb: /thumbnails/20220628_125950.avif
   alt: Cedar Plant Boxes
 media_subpath: /assets/img/posts/raised-beds
 ---

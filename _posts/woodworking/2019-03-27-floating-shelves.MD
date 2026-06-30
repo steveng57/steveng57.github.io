@@ -7,7 +7,8 @@ last_modified_at: 2024-03-06 15:20:58 -0500
 category: [Woodworking, Home Decor]
 tags: [Woodworking, Red Oak, Shelves, Floating Shelves]
 image:
-  path: /thumbnails/IMG_0752.avif
+  path: IMG_0752.avif
+  thumb: /thumbnails/IMG_0752.avif
   alt: A smooch from a pooch is definitely good for the soul
 media_subpath: /assets/img/posts/floating-shelves
 ---
