@@ -163,7 +163,7 @@ function GenerateImageCaptions($folderPath) {
    $repoRoot = (Get-Location).Path
    $metadata = @{}
 
-   $imageFiles = Get-ChildItem -Path $folderPath -File -Recurse -Depth 2 |
+   $imageFiles = Get-ChildItem -Path $folderPath -File -Recurse -Depth 3 |
       Where-Object { $_.Extension.ToLowerInvariant() -in @('.png', '.avif') }
 
    $sourceFiles = $imageFiles | ForEach-Object { Find-MetadataSourceFile $_ } | Where-Object { $_ }

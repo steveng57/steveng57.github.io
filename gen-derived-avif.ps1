@@ -1,14 +1,13 @@
 <#
 .SYNOPSIS
-Builds AVIF derivatives for post media from primary image and video assets.
+Builds AVIF derivatives for post images.
 
 .DESCRIPTION
-Discovers primary media within each post folder and generates AVIF derivatives for
+Discovers primary images within each post folder and generates AVIF derivatives for
 `thumbnails/` and `tinyfiles/` when the source EXIF tags include `thumbnail` or `gallery`
 respectively. ImageMagick's `magick` tool performs every conversion so that derived assets
-stay synchronized with the primary media. MP4 files produce poster AVIFs in `thumbnails/`
-with selected metadata copied from the source video. Existing derivatives are refreshed only
-when the source is newer unless -Force is specified.
+stay synchronized with the primary media. Existing derivatives are refreshed only when the
+source is newer unless -Force is specified.
 #>
 param(
     [string]$SourcePath = ".\assets\img\posts",
@@ -111,18 +110,11 @@ function Invoke-MagickEncode
         [string]$InputPath,
         [string]$DestinationPath,
         [string]$ResizeGeometry,
-        [int]$QualityValue,
-        [switch]$VideoFrame
+        [int]$QualityValue
     )
 
-    $inputArgument = $InputPath
-    if ($VideoFrame)
-    {
-        $inputArgument = "${InputPath}[0]"
-    }
-
     $arguments = @()
-    $arguments += $inputArgument
+    $arguments += $InputPath
     if ($ResizeGeometry)
     {
         $arguments += "-resize"
@@ -141,158 +133,6 @@ function Invoke-MagickEncode
     }
 }
 
-function Copy-Metadata
-{
-    param(
-        [string]$SourcePath,
-        [string]$DestinationPath
-    )
-
-    $arguments = @(
-        "-overwrite_original",
-        "-TagsFromFile",
-        $SourcePath,
-        "-Title",
-        "-ImageDescription",
-        "-Description",
-        "-XPTitle",
-        "-XPSubject",
-        "-Subject",
-        "-Keywords",
-        "-HierarchicalSubject",
-        "-DateTimeOriginal",
-        "-CreateDate",
-        $DestinationPath
-    )
-
-    Write-Info "exiftool $($arguments -join ' ')"
-    $previousLcAll = $env:LC_ALL
-    $previousLang = $env:LANG
-    try
-    {
-        $env:LC_ALL = "C"
-        $env:LANG = "C"
-        & $script:ExifToolExecutable $arguments
-        if ($LASTEXITCODE -ne 0)
-        {
-            throw "exiftool exited with code $LASTEXITCODE"
-        }
-    }
-    finally
-    {
-        $env:LC_ALL = $previousLcAll
-        $env:LANG = $previousLang
-    }
-}
-
-function Get-MetadataSnapshot
-{
-    param([string]$Path)
-
-    $arguments = @(
-        "-json",
-        "-Title",
-        "-ImageDescription",
-        "-Description",
-        "-XPTitle",
-        "-XPSubject",
-        "-Subject",
-        "-Keywords",
-        "-HierarchicalSubject",
-        "-DateTimeOriginal",
-        "-CreateDate",
-        $Path
-    )
-
-    $previousLcAll = $env:LC_ALL
-    $previousLang = $env:LANG
-    try
-    {
-        $env:LC_ALL = "C"
-        $env:LANG = "C"
-        $json = & $script:ExifToolExecutable $arguments
-        if ($LASTEXITCODE -ne 0)
-        {
-            throw "exiftool exited with code $LASTEXITCODE"
-        }
-
-        $items = $json | ConvertFrom-Json
-        return $items | Select-Object -First 1
-    }
-    finally
-    {
-        $env:LC_ALL = $previousLcAll
-        $env:LANG = $previousLang
-    }
-}
-
-function Convert-MetadataValue
-{
-    param($Value)
-
-    if ($null -eq $Value)
-    {
-        return ""
-    }
-
-    $values = @()
-    if ($Value -is [array])
-    {
-        $values = @($Value)
-    }
-    else
-    {
-        $values = @($Value)
-    }
-
-    return ($values |
-        Where-Object { -not [string]::IsNullOrWhiteSpace($_) } |
-        ForEach-Object { $_.ToString().Trim() } |
-        Sort-Object) -join "`n"
-}
-
-function Test-MetadataCopyNeeded
-{
-    param(
-        [string]$SourcePath,
-        [string]$DestinationPath
-    )
-
-    if (-not (Test-Path -LiteralPath $DestinationPath))
-    {
-        return $true
-    }
-
-    $sourceMetadata = Get-MetadataSnapshot -Path $SourcePath
-    $destinationMetadata = Get-MetadataSnapshot -Path $DestinationPath
-    foreach ($name in @('Title', 'ImageDescription', 'Description', 'XPTitle', 'XPSubject', 'Subject', 'Keywords', 'HierarchicalSubject', 'DateTimeOriginal', 'CreateDate'))
-    {
-        $sourceValue = ""
-        if ($sourceMetadata.PSObject.Properties.Name -contains $name)
-        {
-            $sourceValue = Convert-MetadataValue $sourceMetadata.$name
-        }
-
-        if ([string]::IsNullOrWhiteSpace($sourceValue) -or $sourceValue -match '^0000[:\-]00[:\-]00')
-        {
-            continue
-        }
-
-        $destinationValue = ""
-        if ($destinationMetadata.PSObject.Properties.Name -contains $name)
-        {
-            $destinationValue = Convert-MetadataValue $destinationMetadata.$name
-        }
-
-        if ($sourceValue -ne $destinationValue)
-        {
-            return $true
-        }
-    }
-
-    return $false
-}
-
 try
 {
     $script:MagickExecutable = (Get-Command "magick" -ErrorAction Stop).Source
@@ -300,16 +140,6 @@ try
 catch
 {
     Write-ErrorMessage "ImageMagick 'magick' executable not found on PATH."
-    exit 1
-}
-
-try
-{
-    $script:ExifToolExecutable = (Get-Command "exiftool" -ErrorAction Stop).Source
-}
-catch
-{
-    Write-ErrorMessage "ExifTool executable not found on PATH."
     exit 1
 }
 
@@ -347,14 +177,6 @@ foreach ($postFolder in $postFolders)
 
     $primaryImages = Get-ChildItem -Path $postFolder.FullName -File |
     Where-Object { @('.jpeg', '.jpg', '.heic', '.png') -contains $_.Extension.ToLowerInvariant() }
-
-    $videoFiles = @()
-    $videoFiles += Get-ChildItem -Path $postFolder.FullName -File -Filter "*.mp4"
-    $videoSourcePath = Join-Path -Path $postFolder.FullName -ChildPath "video-src"
-    if (Test-Path -LiteralPath $videoSourcePath)
-    {
-        $videoFiles += Get-ChildItem -Path $videoSourcePath -File -Filter "*.mp4"
-    }
 
     foreach ($image in $primaryImages)
     {
@@ -402,22 +224,6 @@ foreach ($postFolder in $postFolders)
             {
                 Remove-Derived -Destination $tinyfileTarget
             }
-        }
-    }
-
-    foreach ($video in $videoFiles)
-    {
-        $posterTarget = Join-Path -Path $thumbnailsPath -ChildPath ($video.BaseName + ".avif")
-        $posterRebuilt = $false
-        if ($Force -or (ShouldRebuild -Source $video.FullName -Destination $posterTarget))
-        {
-            Invoke-MagickEncode -InputPath $video.FullName -DestinationPath $posterTarget -ResizeGeometry $null -QualityValue $Quality -VideoFrame
-            $posterRebuilt = $true
-        }
-
-        if ($posterRebuilt -or (Test-MetadataCopyNeeded -SourcePath $video.FullName -DestinationPath $posterTarget))
-        {
-            Copy-Metadata -SourcePath $video.FullName -DestinationPath $posterTarget
         }
     }
 

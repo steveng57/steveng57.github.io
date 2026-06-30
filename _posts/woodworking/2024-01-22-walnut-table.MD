@@ -100,7 +100,7 @@ Here is a mini photo gallery of the table and benches setup in our theatre room.
   id="img-0695-abr"
   master="stream/IMG_0695/master.m3u8"
   mp4="IMG_0695.mp4"
-  poster="thumbnails/IMG_0695.avif"
+  poster="stream/IMG_0695/poster.avif"
   title="Walnut Table"
   caption="Walnut Table - 180° View"
   controls="true"

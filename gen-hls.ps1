@@ -9,6 +9,7 @@ with a master playlist and one playlist per rendition.
 
 Expected output layout for each source clip:
   assets/img/posts/<post-folder>/stream/<clip-name>/master.m3u8
+  assets/img/posts/<post-folder>/stream/<clip-name>/poster.avif
   assets/img/posts/<post-folder>/stream/<clip-name>/360p/index.m3u8
   assets/img/posts/<post-folder>/stream/<clip-name>/360p/seg_000.ts
   assets/img/posts/<post-folder>/stream/<clip-name>/720p/index.m3u8
@@ -41,29 +42,171 @@ function Test-RequiredTooling
     {
         throw "ImageMagick 'magick' was not found in PATH. Install ImageMagick and retry."
     }
+
+    if (-not (Get-Command exiftool -ErrorAction SilentlyContinue))
+    {
+        throw "ExifTool was not found in PATH. Install ExifTool and retry."
+    }
+}
+
+function Copy-Metadata
+{
+    param(
+        [Parameter(Mandatory = $true)][string]$SourcePath,
+        [Parameter(Mandatory = $true)][string]$DestinationPath
+    )
+
+    $args = @(
+        "-overwrite_original",
+        "-TagsFromFile",
+        $SourcePath,
+        "-Title",
+        "-ImageDescription",
+        "-Description",
+        "-XPTitle",
+        "-XPSubject",
+        "-Subject",
+        "-Keywords",
+        "-HierarchicalSubject",
+        "-DateTimeOriginal",
+        "-CreateDate",
+        $DestinationPath
+    )
+
+    $previousLcAll = $env:LC_ALL
+    $previousLang = $env:LANG
+    try
+    {
+        $env:LC_ALL = "C"
+        $env:LANG = "C"
+        & exiftool @args
+        if ($LASTEXITCODE -ne 0)
+        {
+            throw "exiftool failed while copying metadata to $DestinationPath"
+        }
+    }
+    finally
+    {
+        $env:LC_ALL = $previousLcAll
+        $env:LANG = $previousLang
+    }
+}
+
+function Get-MetadataSnapshot
+{
+    param([Parameter(Mandatory = $true)][string]$Path)
+
+    $args = @(
+        "-json",
+        "-Title",
+        "-ImageDescription",
+        "-Description",
+        "-XPTitle",
+        "-XPSubject",
+        "-Subject",
+        "-Keywords",
+        "-HierarchicalSubject",
+        "-DateTimeOriginal",
+        "-CreateDate",
+        $Path
+    )
+
+    $previousLcAll = $env:LC_ALL
+    $previousLang = $env:LANG
+    try
+    {
+        $env:LC_ALL = "C"
+        $env:LANG = "C"
+        $json = & exiftool @args
+        if ($LASTEXITCODE -ne 0)
+        {
+            throw "exiftool failed while reading metadata from $Path"
+        }
+
+        $items = $json | ConvertFrom-Json
+        return $items | Select-Object -First 1
+    }
+    finally
+    {
+        $env:LC_ALL = $previousLcAll
+        $env:LANG = $previousLang
+    }
+}
+
+function Convert-MetadataValue
+{
+    param($Value)
+
+    if ($null -eq $Value)
+    {
+        return ""
+    }
+
+    $values = if ($Value -is [array]) { @($Value) } else { @($Value) }
+    return ($values |
+        Where-Object { -not [string]::IsNullOrWhiteSpace($_) } |
+        ForEach-Object { $_.ToString().Trim() } |
+        Sort-Object) -join "`n"
+}
+
+function Test-MetadataCopyNeeded
+{
+    param(
+        [Parameter(Mandatory = $true)][string]$SourcePath,
+        [Parameter(Mandatory = $true)][string]$DestinationPath
+    )
+
+    if (-not (Test-Path -LiteralPath $DestinationPath))
+    {
+        return $true
+    }
+
+    $sourceMetadata = Get-MetadataSnapshot -Path $SourcePath
+    $destinationMetadata = Get-MetadataSnapshot -Path $DestinationPath
+    foreach ($name in @('Title', 'ImageDescription', 'Description', 'XPTitle', 'XPSubject', 'Subject', 'Keywords', 'HierarchicalSubject', 'DateTimeOriginal', 'CreateDate'))
+    {
+        $sourceValue = ""
+        if ($sourceMetadata.PSObject.Properties.Name -contains $name)
+        {
+            $sourceValue = Convert-MetadataValue $sourceMetadata.$name
+        }
+
+        if ([string]::IsNullOrWhiteSpace($sourceValue) -or $sourceValue -match '^0000[:\-]00[:\-]00')
+        {
+            continue
+        }
+
+        $destinationValue = ""
+        if ($destinationMetadata.PSObject.Properties.Name -contains $name)
+        {
+            $destinationValue = Convert-MetadataValue $destinationMetadata.$name
+        }
+
+        if ($sourceValue -ne $destinationValue)
+        {
+            return $true
+        }
+    }
+
+    return $false
 }
 
 function New-VideoPoster
 {
     param(
-        [Parameter(Mandatory = $true)][System.IO.FileInfo]$Clip
+        [Parameter(Mandatory = $true)][System.IO.FileInfo]$Clip,
+        [Parameter(Mandatory = $true)][string]$OutputDir
     )
 
-    # Allow source clips to live in a per-post subfolder (for example, "video-src")
-    # while keeping derived posters in the post's root media folder.
-    $clipDir = $Clip.Directory
-    $postDir = if ($clipDir.Name -ieq "video-src") { $clipDir.Parent } else { $clipDir }
-
-    $thumbDir = Join-Path $postDir.FullName "thumbnails"
-    if (-not (Test-Path $thumbDir))
+    if (-not (Test-Path -LiteralPath $OutputDir))
     {
-        New-Item -ItemType Directory -Path $thumbDir -Force | Out-Null
+        New-Item -ItemType Directory -Path $OutputDir -Force | Out-Null
     }
 
-    $posterPath = Join-Path $thumbDir ("{0}.avif" -f $Clip.BaseName)
+    $posterPath = Join-Path $OutputDir "poster.avif"
 
     $needsPoster = $true
-    if (Test-Path $posterPath)
+    if (Test-Path -LiteralPath $posterPath)
     {
         try
         {
@@ -82,6 +225,10 @@ function New-VideoPoster
 
     if (-not $needsPoster)
     {
+        if ((-not $WhatIf) -and (Test-MetadataCopyNeeded -SourcePath $Clip.FullName -DestinationPath $posterPath))
+        {
+            Copy-Metadata -SourcePath $Clip.FullName -DestinationPath $posterPath
+        }
         return
     }
 
@@ -103,6 +250,7 @@ function New-VideoPoster
     if ($WhatIf)
     {
         Write-Host "[WhatIf] magick $($args -join ' ')"
+        Write-Host "[WhatIf] exiftool -TagsFromFile $($Clip.FullName) ... $posterPath"
         return
     }
 
@@ -112,6 +260,8 @@ function New-VideoPoster
     {
         throw "magick failed while generating poster for clip $($Clip.FullName)"
     }
+
+    Copy-Metadata -SourcePath $Clip.FullName -DestinationPath $posterPath
 }
 
 function Get-Renditions
@@ -228,8 +378,6 @@ function Convert-ClipToHls
         [Parameter(Mandatory = $true)][System.IO.FileInfo]$Clip
     )
 
-    New-VideoPoster -Clip $Clip
-
     # Keep HLS outputs under the post's root media folder even when
     # the source clip lives in a subfolder like "video-src".
     $clipDir = $Clip.Directory
@@ -240,6 +388,7 @@ function Convert-ClipToHls
 
     if ((Test-Path $outputDir) -and -not $Rebuild)
     {
+        New-VideoPoster -Clip $Clip -OutputDir $outputDir
         Write-Host "Skipping existing HLS output: $outputDir"
         return
     }
@@ -258,6 +407,7 @@ function Convert-ClipToHls
     }
 
     New-MasterPlaylist -OutputDir $outputDir -Renditions $renditions
+    New-VideoPoster -Clip $Clip -OutputDir $outputDir
     Write-Host "Created HLS set: $outputDir"
 }
 

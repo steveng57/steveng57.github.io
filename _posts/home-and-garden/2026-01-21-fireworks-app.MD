@@ -309,7 +309,7 @@ It has a two minute main show with a one minute finale.  It has full 3d camera r
   id="fireworks_slim"
   master="stream/fireworks_slim/master.m3u8"
   mp4=""
-  poster="thumbnails/fireworks_slim.avif"
+  poster="stream/fireworks_slim/poster.avif"
   title="Fireworks Simulator"
   caption="Fireworks Simulator App"
   controls="true"
