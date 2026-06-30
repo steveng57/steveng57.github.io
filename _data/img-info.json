@@ -712,9 +712,9 @@
     "gallery": true
   },
   "assets/img/posts/daybed/thumbnails/daybed2.avif": {
-    "title": "",
-    "subject": "",
-    "datetaken": null,
+    "title": "Daybed 180",
+    "subject": "Daybed 180",
+    "datetaken": "2024-02-29T16:52:26",
     "width": 1280,
     "height": 720,
     "gallery": false
@@ -1112,8 +1112,8 @@
     "gallery": true
   },
   "assets/img/posts/fireworks-app/thumbnails/fireworks_slim.avif": {
-    "title": "",
-    "subject": "",
+    "title": "FireworksApp | Down:0 Up:0 Move:676 Wheel:2 SetCursor:676 Shells:148",
+    "subject": "FireworksApp | Down:0 Up:0 Move:676 Wheel:2 SetCursor:676 Shells:148",
     "datetaken": null,
     "width": 2016,
     "height": 1080,
@@ -3992,9 +3992,9 @@
     "gallery": true
   },
   "assets/img/posts/walnut-table/thumbnails/IMG_0695.avif": {
-    "title": "",
-    "subject": "",
-    "datetaken": null,
+    "title": "Walnut Table 180",
+    "subject": "Walnut Table 180",
+    "datetaken": "2024-02-27T00:20:10",
     "width": 1280,
     "height": 720,
     "gallery": false

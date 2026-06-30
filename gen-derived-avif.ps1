@@ -1,13 +1,14 @@
 <#
 .SYNOPSIS
-Builds AVIF derivatives for post media from primary JPEG and HEIC assets.
+Builds AVIF derivatives for post media from primary image and video assets.
 
 .DESCRIPTION
-Discovers primary images within each post folder and generates AVIF derivatives for
+Discovers primary media within each post folder and generates AVIF derivatives for
 `thumbnails/` and `tinyfiles/` when the source EXIF tags include `thumbnail` or `gallery`
 respectively. ImageMagick's `magick` tool performs every conversion so that derived assets
-stay synchronized with the primary media. Existing derivatives are refreshed only when the
-source is newer unless -Force is specified.
+stay synchronized with the primary media. MP4 files produce poster AVIFs in `thumbnails/`
+with selected metadata copied from the source video. Existing derivatives are refreshed only
+when the source is newer unless -Force is specified.
 #>
 param(
     [string]$SourcePath = ".\assets\img\posts",
@@ -140,6 +141,50 @@ function Invoke-MagickEncode
     }
 }
 
+function Copy-Metadata
+{
+    param(
+        [string]$SourcePath,
+        [string]$DestinationPath
+    )
+
+    $arguments = @(
+        "-overwrite_original",
+        "-TagsFromFile",
+        $SourcePath,
+        "-Title",
+        "-ImageDescription",
+        "-Description",
+        "-XPTitle",
+        "-XPSubject",
+        "-Subject",
+        "-Keywords",
+        "-HierarchicalSubject",
+        "-DateTimeOriginal",
+        "-CreateDate",
+        $DestinationPath
+    )
+
+    Write-Info "exiftool $($arguments -join ' ')"
+    $previousLcAll = $env:LC_ALL
+    $previousLang = $env:LANG
+    try
+    {
+        $env:LC_ALL = "C"
+        $env:LANG = "C"
+        & $script:ExifToolExecutable $arguments
+        if ($LASTEXITCODE -ne 0)
+        {
+            throw "exiftool exited with code $LASTEXITCODE"
+        }
+    }
+    finally
+    {
+        $env:LC_ALL = $previousLcAll
+        $env:LANG = $previousLang
+    }
+}
+
 try
 {
     $script:MagickExecutable = (Get-Command "magick" -ErrorAction Stop).Source
@@ -147,6 +192,16 @@ try
 catch
 {
     Write-ErrorMessage "ImageMagick 'magick' executable not found on PATH."
+    exit 1
+}
+
+try
+{
+    $script:ExifToolExecutable = (Get-Command "exiftool" -ErrorAction Stop).Source
+}
+catch
+{
+    Write-ErrorMessage "ExifTool executable not found on PATH."
     exit 1
 }
 
@@ -184,6 +239,14 @@ foreach ($postFolder in $postFolders)
 
     $primaryImages = Get-ChildItem -Path $postFolder.FullName -File |
     Where-Object { @('.jpeg', '.jpg', '.heic', '.png') -contains $_.Extension.ToLowerInvariant() }
+
+    $videoFiles = @()
+    $videoFiles += Get-ChildItem -Path $postFolder.FullName -File -Filter "*.mp4"
+    $videoSourcePath = Join-Path -Path $postFolder.FullName -ChildPath "video-src"
+    if (Test-Path -LiteralPath $videoSourcePath)
+    {
+        $videoFiles += Get-ChildItem -Path $videoSourcePath -File -Filter "*.mp4"
+    }
 
     foreach ($image in $primaryImages)
     {
@@ -231,6 +294,20 @@ foreach ($postFolder in $postFolders)
             {
                 Remove-Derived -Destination $tinyfileTarget
             }
+        }
+    }
+
+    foreach ($video in $videoFiles)
+    {
+        $posterTarget = Join-Path -Path $thumbnailsPath -ChildPath ($video.BaseName + ".avif")
+        if ($Force -or (ShouldRebuild -Source $video.FullName -Destination $posterTarget))
+        {
+            Invoke-MagickEncode -InputPath $video.FullName -DestinationPath $posterTarget -ResizeGeometry $null -QualityValue $Quality -VideoFrame
+        }
+
+        if (Test-Path -LiteralPath $posterTarget)
+        {
+            Copy-Metadata -SourcePath $video.FullName -DestinationPath $posterTarget
         }
     }
 
