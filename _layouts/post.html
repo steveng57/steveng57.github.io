@@ -49,7 +49,17 @@ script_includes:
           {% endunless %}
         {% endif %}
 
-        {% assign hero_img_key = hero_src | split: '/' | last %}
+        {% if page.media_subpath %}
+          {% assign hero_img_key = page.media_subpath
+            | append: '/'
+            | append: hero_src
+            | replace: '///', '/'
+            | replace: '//', '/'
+            | remove_first: '/'
+          %}
+        {% else %}
+          {% assign hero_img_key = hero_src | remove_first: '/' %}
+        {% endif %}
         {% assign hero_img_meta = site.data.img-info[hero_img_key] %}
         {% capture src %}src="{{ hero_src }}"{% endcapture %}
         {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}

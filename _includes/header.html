@@ -33,7 +33,17 @@
           {% endunless %}
         {% endif %}
 
-        {% assign header_img_key = header_img | split: '/' | last %}
+        {% if page.media_subpath %}
+          {% assign header_img_key = page.media_subpath
+            | append: '/'
+            | append: header_img
+            | replace: '///', '/'
+            | replace: '//', '/'
+            | remove_first: '/'
+          %}
+        {% else %}
+          {% assign header_img_key = header_img | remove_first: '/' %}
+        {% endif %}
         {% assign header_img_meta = site.data.img-info[header_img_key] %}
         {% capture src %}src="{{ header_img }}"{% endcapture %}
         {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}

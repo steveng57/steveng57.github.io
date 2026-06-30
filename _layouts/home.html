@@ -60,7 +60,7 @@ pagination:
 
                       {% assign f_alt = fp.image.alt | xml_escape | default: 'Preview Image' %}
 
-                      {% assign f_img_key = fsrc | split: '/' | last %}
+                      {% assign f_img_key = fsrc | remove_first: '/' %}
                       {% assign f_img_meta = site.data.img-info[f_img_key] %}
                       {% assign fsrc_2x = fsrc | replace: '/thumbnails/', '/thumbnails-2x/' %}
                       {% assign fsrc_2x_root = '/' | append: fsrc_2x | replace_first: '//', '/' %}
@@ -159,7 +159,7 @@ pagination:
             {% assign use_lqip = true %}
           {% endif %}
 
-          {% assign img_key = src | split: '/' | last %}
+          {% assign img_key = src | remove_first: '/' %}
           {% assign img_meta = site.data.img-info[img_key] %}
           {% assign src_2x = src | replace: '/thumbnails/', '/thumbnails-2x/' %}
           {% assign src_2x_root = '/' | append: src_2x | replace_first: '//', '/' %}

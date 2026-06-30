@@ -22,8 +22,36 @@
   so behavior is consistent in both development and production.
 {%- endcomment -%}
 
-{% assign img1_meta = site.data.img-info[include.img1] %}
-{% assign img2_meta = site.data.img-info[include.img2] %}
+{% if include.img1 contains '://' %}
+  {% assign img1_key = include.img1 %}
+{% elsif include.img1 contains '/assets/' or include.img1 contains 'assets/' %}
+  {% assign img1_key = include.img1 | remove_first: '/' %}
+{% else %}
+  {% assign img1_key = page.media_subpath
+    | append: '/'
+    | append: include.img1
+    | replace: '///', '/'
+    | replace: '//', '/'
+    | remove_first: '/'
+  %}
+{% endif %}
+
+{% if include.img2 contains '://' %}
+  {% assign img2_key = include.img2 %}
+{% elsif include.img2 contains '/assets/' or include.img2 contains 'assets/' %}
+  {% assign img2_key = include.img2 | remove_first: '/' %}
+{% else %}
+  {% assign img2_key = page.media_subpath
+    | append: '/'
+    | append: include.img2
+    | replace: '///', '/'
+    | replace: '//', '/'
+    | remove_first: '/'
+  %}
+{% endif %}
+
+{% assign img1_meta = site.data.img-info[img1_key] %}
+{% assign img2_meta = site.data.img-info[img2_key] %}
 
 {% assign caption1 = include.caption1 | default: img1_meta.title %}
 {% assign caption2 = include.caption2 | default: img2_meta.title %}

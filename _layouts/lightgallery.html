@@ -51,18 +51,20 @@ if (!window.lightGallery) { return; }
 
 var dynamicImages = [
     {% for image in imageFiles %}
-        {% if site.data.img-info[image.name].gallery %}
+        {% assign image_meta_key = image.path | replace: '/tinyfiles', '' | remove_first: '/' %}
+        {% assign image_meta = site.data.img-info[image_meta_key] %}
+        {% if image_meta.gallery %}
             {% assign postname = image.path | replace: '/tinyfiles', '' | replace: albumfolder, '' | replace: image.name, '' | replace: '/', '' | replace: '-', ' ' %}
             {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
-            {% assign datetaken =  site.data.img-info[image.name].datetaken  | date: "%b %-d, %Y" %}
+            {% assign datetaken = image_meta.datetaken | date: "%b %-d, %Y" %}
             {
                 'src': '{{ image.path | replace: "/tinyfiles", "" }}',
                 'thumb': '{{ image.path }}',
                 'href': '{{ redirect }}',
-                'width': '{{ site.data.img-info[image.name].width }}',
-                'height': '{{ site.data.img-info[image.name].height }}',
+                'width': '{{ image_meta.width }}',
+                'height': '{{ image_meta.height }}',
                 'slideName': '{{ image.name }}',
-                'subHtml': "<div class='inline-gallery-captions lightGallery-captions'><a href='{{ redirect }}'><h4>{{ site.data.img-info[image.name].title }}</h4><p>{{ datetaken }}</p></a></div>"
+                'subHtml': "<div class='inline-gallery-captions lightGallery-captions'><a href='{{ redirect }}'><h4>{{ image_meta.title }}</h4><p>{{ datetaken }}</p></a></div>"
             },
         {% endif %}
     {% endfor %}

@@ -17,7 +17,20 @@
   consistent in both development and production builds.
 {%- endcomment -%}
 
-{% assign img_meta = site.data.img-info[include.img] %}
+{% if include.img contains '://' %}
+  {% assign img_key = include.img %}
+{% elsif include.img contains '/assets/' or include.img contains 'assets/' %}
+  {% assign img_key = include.img | remove_first: '/' %}
+{% else %}
+  {% assign img_key = page.media_subpath
+    | append: '/'
+    | append: include.img
+    | replace: '///', '/'
+    | replace: '//', '/'
+    | remove_first: '/'
+  %}
+{% endif %}
+{% assign img_meta = site.data.img-info[img_key] %}
 {% assign caption = include.caption | default: img_meta.title %}
 {% assign align = include.align | default: "center-full" %}
 {% assign img_loading = include.loading | default: "lazy" %}
