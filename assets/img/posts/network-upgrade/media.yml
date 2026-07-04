@@ -1,0 +1,59 @@
+cover: "IMG_1640b.jpeg"
+
+images:
+  - source: "IMG_1640b.jpeg"
+    published: "IMG_1640b.avif"
+    include: false
+    gallery: false
+    thumbnail: true
+    caption: "UNAS Storage"
+
+  - source: "IMG_1590.jpeg"
+    published: "IMG_1590.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "A Tangled Web"
+
+  - source: "IMG_1591.jpeg"
+    published: "IMG_1591.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "A Fine Mess"
+
+  - source: "IMG_1608.jpeg"
+    published: "IMG_1608.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Part One Up Close"
+
+  - source: "IMG_1611.jpeg"
+    published: "IMG_1611.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Finished Product"
+
+  - source: "SpeedTest.jpeg"
+    published: "SpeedTest.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Zippy"
+
+  - source: "IMG_1641.jpeg"
+    published: "IMG_1641.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Pretty Much Done"
+
+  - source: "IMG_2831.HEIC"
+    published: "IMG_2831.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "More Gear"
+

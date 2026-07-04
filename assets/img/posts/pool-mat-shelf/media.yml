@@ -1,0 +1,59 @@
+cover: "IMG_1835.jpeg"
+
+images:
+  - source: "IMG_1835.jpeg"
+    published: "IMG_1835.avif"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Mats Installed"
+
+  - source: "pool-mat-shelf-sketchup.jpeg"
+    published: "pool-mat-shelf-sketchup.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Gotta have the Sketchup"
+
+  - source: "IMG_1818.jpeg"
+    published: "IMG_1818.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "The Easy Stuff"
+
+  - source: "IMG_1819.jpeg"
+    published: "IMG_1819.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "The Tough Stuff"
+
+  - source: "IMG_1820.jpeg"
+    published: "IMG_1820.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "More Clamps"
+
+  - source: "IMG_1830.jpeg"
+    published: "IMG_1830.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Clamps"
+
+  - source: "IMG_1831.jpeg"
+    published: "IMG_1831.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "More Clamps"
+
+  - source: "IMG_1832.jpeg"
+    published: "IMG_1832.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Pool Mat Shelf"
+

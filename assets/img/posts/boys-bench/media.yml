@@ -1,0 +1,17 @@
+cover: "IMG_0536.jpeg"
+
+images:
+  - source: "IMG_0536.jpeg"
+    published: "IMG_0536.avif"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "A Strange Piece"
+
+  - source: "IMG_0537.jpeg"
+    published: "IMG_0537.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Magic Drawer doubles as a step for the boys"
+

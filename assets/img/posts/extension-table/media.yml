@@ -1,0 +1,38 @@
+cover: "IMG_0221.jpeg"
+
+images:
+  - source: "IMG_0221.jpeg"
+    published: "IMG_0221.avif"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Extension Table"
+
+  - source: "IMG_0216.jpeg"
+    published: "IMG_0216.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Au Chocolat"
+
+  - source: "IMG_0218.jpeg"
+    published: "IMG_0218.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Work in Progress"
+
+  - source: "IMG_0226.jpeg"
+    published: "IMG_0226.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Profile View"
+
+  - source: "IMG_0818.jpeg"
+    published: "IMG_0818.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Extension Mode"
+

@@ -1,0 +1,31 @@
+cover: "IMG_0758C.jpeg"
+
+images:
+  - source: "IMG_0758C.jpeg"
+    published: "IMG_0758C.avif"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "A Basket Case"
+
+  - source: "gazebo-cabinet-sketchup.jpeg"
+    published: "gazebo-cabinet-sketchup.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Gazebo Cabinet Sketchup"
+
+  - source: "IMG_0760.jpeg"
+    published: "IMG_0760.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Cool Blue Baskets"
+
+  - source: "IMG_0759.jpeg"
+    published: "IMG_0759.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Full Height Shot"
+

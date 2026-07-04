@@ -55,6 +55,15 @@ images:
 
 `source` is the master image in the post media folder. `published` is optional; when present, it is the site image filename that derived AVIF generation and `_data/img-info.json` metadata should use. When `media.yml` exists, media scripts use it instead of Windows tags for gallery and thumbnail decisions. If it does not exist, scripts fall back to the legacy tag-based behavior. Jekyll still reads `_data/img-info.json`; `media.yml` is input for the PowerShell tooling, while `img-info.json` remains generated metadata for dimensions, dates, captions, and gallery rendering.
 
+Legacy post media folders can be converted with a dry run first:
+
+```powershell
+./convert-media-manifests.ps1 -Slug pen-tray
+./convert-media-manifests.ps1 -Slug pen-tray -Apply
+```
+
+The converter infers `media.yml` from post front matter, image includes, and the current `_data/img-info.json` snapshot. It does not read Windows tags. Use `-Force` only when intentionally replacing an existing manifest.
+
 For a parameter-driven run:
 
 ```powershell

@@ -1,0 +1,52 @@
+cover: "IMG_0461.jpeg"
+
+images:
+  - source: "IMG_0461.jpeg"
+    published: "IMG_0461.avif"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Engravings"
+
+  - source: "earring-box-sketchup.jpeg"
+    published: "earring-box-sketchup.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Earring Box - Exploded View"
+
+  - source: "IMG_0455.jpeg"
+    published: "IMG_0455.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "It's a Mess"
+
+  - source: "IMG_0466.jpeg"
+    published: "IMG_0466.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "36 Holes per Box"
+
+  - source: "IMG_0467.jpeg"
+    published: "IMG_0467.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Mmmm Green Velvet"
+
+  - source: "earring-box-01.jpeg"
+    published: "earring-box-01.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Cozy Earrings All Tucked In"
+
+  - source: "earrings-from-top.jpeg"
+    published: "earrings-from-top.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Blingy Bling"
+

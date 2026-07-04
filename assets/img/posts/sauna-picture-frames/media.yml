@@ -1,0 +1,115 @@
+cover: "IMG_2324.HEIC"
+
+images:
+  - source: "IMG_2324.HEIC"
+    published: "IMG_2324.avif"
+    include: false
+    gallery: true
+    thumbnail: true
+    caption: "Frames for Sauna"
+
+  - source: "IMG_2298.HEIC"
+    published: "IMG_2298.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Bad Cut #1"
+
+  - source: "IMG_2304.HEIC"
+    published: "IMG_2304.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "What the...?"
+
+  - source: "IMG_2301.HEIC"
+    published: "IMG_2301.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Smaller Sticks"
+
+  - source: "IMG_2302.HEIC"
+    published: "IMG_2302.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Rabbet"
+
+  - source: "IMG_2307.HEIC"
+    published: "IMG_2307.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Clamping Time"
+
+  - source: "IMG_2310.HEIC"
+    published: "IMG_2310.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Back Braces"
+
+  - source: "IMG_2318.HEIC"
+    published: "IMG_2318.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Finished"
+
+  - source: "Affogato.jpg"
+    published: "Affogato.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Affogato - An Itialian Delicacy"
+
+  - source: "IMG_2320.HEIC"
+    published: "IMG_2320.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Spacermania"
+
+  - source: "IMG_2322.HEIC"
+    published: "IMG_2322.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Sauna Bound"
+
+  - source: "IMG_2323.HEIC"
+    published: "IMG_2323.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Spa Ready"
+
+  - source: "11019.jpg"
+    published: "11019.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "My Close Up"
+
+  - source: "IMG_2342.HEIC"
+    published: "IMG_2342.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "My Dark Side"
+
+  - source: "11018.jpg"
+    published: "11018.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Looking Good"
+
+  - source: "IMG_2344.HEIC"
+    published: "IMG_2344.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Really Good"
+

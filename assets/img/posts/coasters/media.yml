@@ -1,0 +1,31 @@
+cover: "IMG_0706.jpeg"
+
+images:
+  - source: "IMG_0706.jpeg"
+    published: "IMG_0706.avif"
+    include: false
+    gallery: false
+    thumbnail: true
+    caption: "Ignore the one on the right."
+
+  - source: "IMG_0703.jpeg"
+    published: "IMG_0703.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Happy Puppy"
+
+  - source: "IMG_0708.jpeg"
+    published: "IMG_0708.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "The Classic Paw"
+
+  - source: "IMG_0701.jpeg"
+    published: "IMG_0701.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Top Walnut, Bottom Maple"
+

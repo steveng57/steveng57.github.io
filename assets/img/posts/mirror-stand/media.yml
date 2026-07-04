@@ -1,0 +1,38 @@
+cover: "IMG_0734.jpeg"
+
+images:
+  - source: "IMG_0734.jpeg"
+    published: "IMG_0734.avif"
+    include: false
+    gallery: false
+    thumbnail: true
+    caption: "Poplar Box"
+
+  - source: "mirror-stand-shaperhub.jpeg"
+    published: "mirror-stand-shaperhub.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Shaper Hub Drawing"
+
+  - source: "IMG_0736.jpeg"
+    published: "IMG_0736.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Fun Side"
+
+  - source: "IMG_0740.jpeg"
+    published: "IMG_0740.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Bling - Enough said"
+
+  - source: "IMG_0737.jpeg"
+    published: "IMG_0737.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "With Mirror"
+
