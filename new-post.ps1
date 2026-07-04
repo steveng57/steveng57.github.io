@@ -297,6 +297,28 @@ function ConvertTo-SiteImageName {
     return $trimmed
 }
 
+function Resolve-CoverSourceName {
+    param(
+        [Parameter(Mandatory = $true)][string]$CoverValue,
+        [System.IO.FileInfo[]]$ImportedCandidates
+    )
+
+    $coverBase = [System.IO.Path]::GetFileNameWithoutExtension($CoverValue)
+    $masterExtensions = @(".heic", ".jpg", ".jpeg", ".png")
+    $matchingMaster = @($ImportedCandidates |
+        Where-Object {
+            $masterExtensions -contains $_.Extension.ToLowerInvariant() -and
+            [System.IO.Path]::GetFileNameWithoutExtension($_.Name) -eq $coverBase
+        } |
+        Select-Object -First 1)
+
+    if ($matchingMaster.Count -gt 0) {
+        return $matchingMaster[0].Name
+    }
+
+    return $CoverValue
+}
+
 function Get-ImportedImageIncludeBlock {
     param(
         [System.IO.FileInfo[]]$ImportedCandidates,
@@ -321,6 +343,46 @@ function Get-ImportedImageIncludeBlock {
     }
 
     return ($lines -join "`r`n`r`n")
+}
+
+function ConvertTo-YamlBoolean {
+    param([bool]$Value)
+
+    return $Value.ToString().ToLowerInvariant()
+}
+
+function New-MediaManifestContent {
+    param(
+        [System.IO.FileInfo[]]$ImportedCandidates,
+        [string]$CoverSource
+    )
+
+    $imageExtensions = @(".avif", ".png", ".jpg", ".jpeg", ".heic")
+    $imageFiles = @($ImportedCandidates |
+        Where-Object { $imageExtensions -contains $_.Extension.ToLowerInvariant() } |
+        Sort-Object Name)
+
+    if ($imageFiles.Count -eq 0) {
+        return ""
+    }
+
+    $coverBase = [System.IO.Path]::GetFileNameWithoutExtension($CoverSource)
+    $lines = @()
+    $lines += "cover: $CoverSource"
+    $lines += ""
+    $lines += "images:"
+
+    foreach ($image in $imageFiles) {
+        $isCover = ([System.IO.Path]::GetFileNameWithoutExtension($image.Name) -eq $coverBase)
+        $lines += "  - source: $($image.Name)"
+        $lines += "    include: true"
+        $lines += "    gallery: true"
+        $lines += "    thumbnail: $(ConvertTo-YamlBoolean $isCover)"
+        $lines += "    caption: `"`""
+        $lines += ""
+    }
+
+    return ($lines -join "`r`n")
 }
 
 function Invoke-ScopedDerivativeGeneration {
@@ -370,7 +432,9 @@ try {
     }
 
     $importCandidates = @(Get-ImportableMedia -Folder $ImportFrom)
-    $CoverImage = Resolve-CoverImage -CurrentValue $CoverImage -ImportedCandidates $importCandidates
+    $CoverSource = Resolve-CoverImage -CurrentValue $CoverImage -ImportedCandidates $importCandidates
+    $CoverSource = Resolve-CoverSourceName -CoverValue $CoverSource -ImportedCandidates $importCandidates
+    $CoverImage = $CoverSource
     $CoverImage = ConvertTo-SiteImageName -ImageName $CoverImage
     $CoverAlt = Read-RequiredValue -Prompt "Cover alt/caption" -CurrentValue $CoverAlt
 
@@ -415,6 +479,7 @@ try {
         $seriesLine = "series: $(ConvertTo-YamlScalar $Series)`r`n"
     }
     $imageIncludeBlock = Get-ImportedImageIncludeBlock -ImportedCandidates $importCandidates -FallbackImage $CoverImage
+    $mediaManifestContent = New-MediaManifestContent -ImportedCandidates $importCandidates -CoverSource $CoverSource
 
     $content = @"
 ---
@@ -462,6 +527,12 @@ Write the finished result here.
                 Copy-Item -LiteralPath $candidate.FullName -Destination $destination -Force:$Force
             }
             Write-Info "Imported $($importCandidates.Count) media file(s) into assets/img/posts/$Slug."
+
+            if (-not [string]::IsNullOrWhiteSpace($mediaManifestContent)) {
+                $mediaManifestPath = Join-Path $mediaDir "media.yml"
+                Set-Content -LiteralPath $mediaManifestPath -Value $mediaManifestContent -Encoding UTF8
+                Write-Info "Created $mediaManifestPath"
+            }
         }
 
         if ($GenerateDerivatives) {

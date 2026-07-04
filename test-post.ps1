@@ -221,6 +221,30 @@ function Test-IncludeReferences {
     }
 }
 
+function Test-MediaManifest {
+    param([string]$MediaDir)
+
+    $manifestPath = Join-Path $MediaDir "media.yml"
+    if (-not (Test-Path -LiteralPath $manifestPath)) {
+        Write-CheckWarning "No media.yml found; using legacy media behavior."
+        return
+    }
+
+    Write-CheckOk "media.yml exists."
+    foreach ($line in Get-Content -LiteralPath $manifestPath) {
+        if ($line -match '^\s*-\s*source:\s*(.+?)\s*$') {
+            $source = $matches[1].Trim().Trim('"').Trim("'")
+            $sourcePath = Join-Path $MediaDir $source
+            if (Test-Path -LiteralPath $sourcePath) {
+                Write-CheckOk "media.yml source exists: $source"
+            }
+            else {
+                Write-CheckError "media.yml source is missing: $source"
+            }
+        }
+    }
+}
+
 function Test-JekyllBuild {
     Push-Location $RepoRoot
     try {
@@ -311,6 +335,7 @@ if (-not [string]::IsNullOrWhiteSpace($mediaSubpath)) {
     Test-RelativeMediaFile -MediaDir $mediaDir -Reference $imagePath -Context "Cover image"
     Test-RelativeMediaFile -MediaDir $mediaDir -Reference $imageThumb -Context "Cover thumbnail"
     Test-IncludeReferences -Content $content -MediaDir $mediaDir
+    Test-MediaManifest -MediaDir $mediaDir
 }
 
 $iconPath = Join-Path (Join-Path $RepoRoot "_data") "category_icons.yml"

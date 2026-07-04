@@ -39,6 +39,21 @@ The wizard creates both pieces needed for a post:
 
 It prompts for title, date, category, tags, description, cover image, and optional pin/favorite/series metadata. It can also copy source media from a folder into the new post media folder. If you pick a HEIC/JPG/PNG cover image, the generated markdown references the matching `.avif` file for the site image and thumbnail. Imported still images are also added to the post body as `html-side.html` include lines.
 
+For imported still images, the wizard also creates `assets/img/posts/<slug>/media.yml`. This file captures authoring intent while keeping HEIC/JPG/PNG files as master images and AVIF files as the published site images:
+
+```yaml
+cover: IMG_1001.HEIC
+
+images:
+  - source: IMG_1001.HEIC
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: ""
+```
+
+When `media.yml` exists, media scripts use it instead of Windows tags for gallery and thumbnail decisions. If it does not exist, scripts fall back to the legacy tag-based behavior. Jekyll still reads `_data/img-info.json`; `media.yml` is input for the PowerShell tooling, while `img-info.json` remains generated metadata for dimensions, dates, captions, and gallery rendering.
+
 For a parameter-driven run:
 
 ```powershell
