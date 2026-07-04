@@ -101,6 +101,14 @@ function ConvertTo-SiteImageName([string]$imageName) {
    return $trimmed
 }
 
+function Get-PublishedImageName($image) {
+   if ($image.PSObject.Properties.Name -contains 'Published' -and -not [string]::IsNullOrWhiteSpace($image.Published)) {
+      return $image.Published
+   }
+
+   return ConvertTo-SiteImageName $image.Source
+}
+
 function Read-MediaManifest($folder) {
    $manifestPath = Join-Path -Path $folder.FullName -ChildPath "media.yml"
    if (-not (Test-Path -LiteralPath $manifestPath)) {
@@ -130,6 +138,7 @@ function Read-MediaManifest($folder) {
 
          $current = [ordered]@{
             Source    = $matches[1].Trim().Trim('"').Trim("'")
+            Published = ""
             Include   = $false
             Gallery   = $false
             Thumbnail = $false
@@ -138,10 +147,11 @@ function Read-MediaManifest($folder) {
          continue
       }
 
-      if ($current -and $line -match '^\s*(include|gallery|thumbnail|caption):\s*(.*?)\s*$') {
+      if ($current -and $line -match '^\s*(published|include|gallery|thumbnail|caption):\s*(.*?)\s*$') {
          $key = $matches[1].ToLowerInvariant()
          $value = $matches[2].Trim().Trim('"').Trim("'")
          switch ($key) {
+            'published' { $current.Published = $value }
             'include' { $current.Include = ConvertTo-BoolValue $value }
             'gallery' { $current.Gallery = ConvertTo-BoolValue $value }
             'thumbnail' { $current.Thumbnail = ConvertTo-BoolValue $value }
@@ -169,7 +179,7 @@ function Get-MediaIntentMap($folderPath) {
       }
 
       foreach ($image in $manifest.Images) {
-         $published = ConvertTo-SiteImageName $image.Source
+         $published = Get-PublishedImageName $image
          foreach ($relativeName in @($published, "thumbnails/$published", "thumbnails-2x/$published", "tinyfiles/$published")) {
             $key = (Join-Path -Path $postFolder.FullName -ChildPath ($relativeName -replace '/', [System.IO.Path]::DirectorySeparatorChar))
             $intentMap[$key] = $image

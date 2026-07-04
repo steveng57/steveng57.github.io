@@ -231,15 +231,26 @@ function Test-MediaManifest {
     }
 
     Write-CheckOk "media.yml exists."
+    $currentSource = ""
     foreach ($line in Get-Content -LiteralPath $manifestPath) {
         if ($line -match '^\s*-\s*source:\s*(.+?)\s*$') {
-            $source = $matches[1].Trim().Trim('"').Trim("'")
-            $sourcePath = Join-Path $MediaDir $source
+            $currentSource = $matches[1].Trim().Trim('"').Trim("'")
+            $sourcePath = Join-Path $MediaDir $currentSource
             if (Test-Path -LiteralPath $sourcePath) {
-                Write-CheckOk "media.yml source exists: $source"
+                Write-CheckOk "media.yml source exists: $currentSource"
             }
             else {
-                Write-CheckError "media.yml source is missing: $source"
+                Write-CheckError "media.yml source is missing: $currentSource"
+            }
+        }
+        elseif ($line -match '^\s*published:\s*(.+?)\s*$') {
+            $published = $matches[1].Trim().Trim('"').Trim("'")
+            $publishedPath = Join-Path $MediaDir $published
+            if (Test-Path -LiteralPath $publishedPath) {
+                Write-CheckOk "media.yml published file exists: $published"
+            }
+            else {
+                Write-CheckWarning "media.yml published file is not generated yet: $published ($currentSource)"
             }
         }
     }

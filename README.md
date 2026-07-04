@@ -46,13 +46,14 @@ cover: IMG_1001.HEIC
 
 images:
   - source: IMG_1001.HEIC
+    published: IMG_1001.avif
     include: true
     gallery: true
     thumbnail: true
     caption: ""
 ```
 
-When `media.yml` exists, media scripts use it instead of Windows tags for gallery and thumbnail decisions. If it does not exist, scripts fall back to the legacy tag-based behavior. Jekyll still reads `_data/img-info.json`; `media.yml` is input for the PowerShell tooling, while `img-info.json` remains generated metadata for dimensions, dates, captions, and gallery rendering.
+`source` is the master image in the post media folder. `published` is optional; when present, it is the site image filename that derived AVIF generation and `_data/img-info.json` metadata should use. When `media.yml` exists, media scripts use it instead of Windows tags for gallery and thumbnail decisions. If it does not exist, scripts fall back to the legacy tag-based behavior. Jekyll still reads `_data/img-info.json`; `media.yml` is input for the PowerShell tooling, while `img-info.json` remains generated metadata for dimensions, dates, captions, and gallery rendering.
 
 For a parameter-driven run:
 
@@ -72,7 +73,7 @@ The validator checks front matter, category shape, the media folder, cover image
 This was built on Windows and there are a couple of pre-jekyll-build steps to run via Windows Powershell
   - To generate full-size AVIF files plus thumbnail/tinyfile derivatives run `./gen-derived-avif.ps1`.  Note that HEIC, jpeg/jpg, and png files serve as source files, but are not used directly in the site. Full-size AVIF files default to `-MaxDimension 2048`.
     - To process only one post media folder, run `./gen-derived-avif.ps1 -PostSlug pen-tray`, `./gen-derived-avif.ps1 -PostPath assets/img/posts/pen-tray`, or `./gen-derived-avif.ps1 -SourcePath assets/img/posts/pen-tray`.
-  - To generate the captions data file (`_data/img-info.json`) run `./gen-imagecaptions.ps1`.
+  - To generate the image metadata file (`_data/img-info.json`) run `./gen-img-info.ps1`.
 
 Deprecated helper scripts are archived under `deprecated/` for historical reference.
 

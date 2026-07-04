@@ -170,6 +170,32 @@ function ConvertTo-BoolValue
     return @('true', 'yes', '1', 'on') -contains $Value.ToString().Trim().ToLowerInvariant()
 }
 
+function ConvertTo-SiteImageName
+{
+    param([Parameter(Mandatory = $true)][string]$ImageName)
+
+    $trimmed = $ImageName.Trim().Trim('"').Trim("'")
+    $extension = [System.IO.Path]::GetExtension($trimmed).ToLowerInvariant()
+    if ($extension -in @('.heic', '.jpg', '.jpeg', '.png'))
+    {
+        return ([System.IO.Path]::GetFileNameWithoutExtension($trimmed) + '.avif')
+    }
+
+    return $trimmed
+}
+
+function Get-PublishedImageName
+{
+    param([Parameter(Mandatory = $true)]$ManifestImage)
+
+    if ($ManifestImage.PSObject.Properties.Name -contains 'Published' -and -not [string]::IsNullOrWhiteSpace($ManifestImage.Published))
+    {
+        return $ManifestImage.Published
+    }
+
+    return ConvertTo-SiteImageName -ImageName $ManifestImage.Source
+}
+
 function Read-MediaManifest
 {
     param([Parameter(Mandatory = $true)][System.IO.DirectoryInfo]$Folder)
@@ -208,6 +234,7 @@ function Read-MediaManifest
 
             $current = [ordered]@{
                 Source = $matches[1].Trim().Trim('"').Trim("'")
+                Published = ""
                 Include = $false
                 Gallery = $false
                 Thumbnail = $false
@@ -216,12 +243,13 @@ function Read-MediaManifest
             continue
         }
 
-        if ($current -and $line -match '^\s*(include|gallery|thumbnail|caption):\s*(.*?)\s*$')
+        if ($current -and $line -match '^\s*(published|include|gallery|thumbnail|caption):\s*(.*?)\s*$')
         {
             $key = $matches[1].ToLowerInvariant()
             $value = $matches[2].Trim().Trim('"').Trim("'")
             switch ($key)
             {
+                'published' { $current.Published = $value }
                 'include' { $current.Include = ConvertTo-BoolValue $value }
                 'gallery' { $current.Gallery = ConvertTo-BoolValue $value }
                 'thumbnail' { $current.Thumbnail = ConvertTo-BoolValue $value }
@@ -395,6 +423,7 @@ foreach ($postFolder in $postFolders)
             {
                 $imagesToProcess += [pscustomobject]@{
                     File = $imageFile
+                    Published = Get-PublishedImageName -ManifestImage $manifestImage
                     NeedsThumbnail = [bool]$manifestImage.Thumbnail
                     NeedsTinyfile = [bool]$manifestImage.Gallery
                 }
@@ -412,6 +441,7 @@ foreach ($postFolder in $postFolders)
 
             $imagesToProcess += [pscustomobject]@{
                 File = $image
+                Published = ($image.BaseName + ".avif")
                 NeedsThumbnail = $tagTokens -contains "thumbnail"
                 NeedsTinyfile = $tagTokens -contains "gallery"
             }
@@ -421,15 +451,16 @@ foreach ($postFolder in $postFolders)
     foreach ($imageSpec in $imagesToProcess)
     {
         $image = $imageSpec.File
+        $publishedName = $imageSpec.Published
         $needsThumbnail = $imageSpec.NeedsThumbnail
         $needsTinyfile = $imageSpec.NeedsTinyfile
 
-        $fullSizeTarget = Join-Path -Path $postFolder.FullName -ChildPath ($image.BaseName + ".avif")
-        $thumbnailTarget = Join-Path -Path $thumbnailsPath -ChildPath ($image.BaseName + ".avif")
-        $thumbnail2xTarget = Join-Path -Path $thumbnails2xPath -ChildPath ($image.BaseName + ".avif")
-        $tinyfileTarget = Join-Path -Path $tinyfilesPath -ChildPath ($image.BaseName + ".avif")
+        $fullSizeTarget = Join-Path -Path $postFolder.FullName -ChildPath $publishedName
+        $thumbnailTarget = Join-Path -Path $thumbnailsPath -ChildPath $publishedName
+        $thumbnail2xTarget = Join-Path -Path $thumbnails2xPath -ChildPath $publishedName
+        $tinyfileTarget = Join-Path -Path $tinyfilesPath -ChildPath $publishedName
 
-        if ($image.Extension.ToLowerInvariant() -ne ".avif" -and ($Force -or (ShouldRebuild -Source $image.FullName -Destination $fullSizeTarget)))
+        if ($image.FullName -ne $fullSizeTarget -and ($Force -or (ShouldRebuild -Source $image.FullName -Destination $fullSizeTarget)))
         {
             Invoke-MagickEncode -InputPath $image.FullName -DestinationPath $fullSizeTarget -ResizeGeometry ("${MaxDimension}x${MaxDimension}>") -QualityValue $null
         }

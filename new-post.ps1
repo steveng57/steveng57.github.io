@@ -374,7 +374,9 @@ function New-MediaManifestContent {
 
     foreach ($image in $imageFiles) {
         $isCover = ([System.IO.Path]::GetFileNameWithoutExtension($image.Name) -eq $coverBase)
+        $publishedName = ConvertTo-SiteImageName -ImageName $image.Name
         $lines += "  - source: $($image.Name)"
+        $lines += "    published: $publishedName"
         $lines += "    include: true"
         $lines += "    gallery: true"
         $lines += "    thumbnail: $(ConvertTo-YamlBoolean $isCover)"
