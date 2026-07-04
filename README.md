@@ -24,6 +24,36 @@ This was built on a windows machine, and requires the following additional apps 
 
 Thats a bit long.  Start with searches on Jekyll and Github Pages.  Go from there.
 
+### Creating a New Post
+
+Use the guided post wizard:
+
+```powershell
+.\new-post.ps1
+```
+
+The wizard creates both pieces needed for a post:
+
+- `_posts/<top-category>/YYYY-MM-DD-slug.MD`
+- `assets/img/posts/<slug>/`
+
+It prompts for title, date, category, tags, description, cover image, and optional pin/favorite/series metadata. It can also copy source media from a folder into the new post media folder.
+
+For a parameter-driven run:
+
+```powershell
+.\new-post.ps1 -Title "Shop Cabinet" -Description "A new storage cabinet." -TopCategory Woodworking -Subcategory Workshop -Tags Woodworking,Workshop -CoverImage IMG_1001.avif -CoverAlt "Finished cabinet"
+```
+
+Validate a post at any time:
+
+```powershell
+.\test-post.ps1 -PostPath _posts\woodworking\2026-02-26-pen-tray.MD
+.\test-post.ps1 -Slug pen-tray
+```
+
+The validator checks front matter, category shape, the media folder, cover image, cover thumbnail, in-post image/video include references, and category icon coverage. Add `-BuildCheck` to run `bundle exec jekyll build` after the convention checks.
+
 This was built on Windows and there are a couple of pre-jekyll-build steps to run via Windows Powershell
   - To generate thumbnail/tinyfile derivatives run `./gen-derived-avif.ps1`.  Note that jpeg (and jpg) files are all converted to avif in this process.  The original jpeg's serve as a source file, but are not used directly in the site.  They are excluded (ignored) by the Jekyll compiler.
   - To generate the captions data file (`_data/img-info.json`) run `./gen-imagecaptions.ps1`.
