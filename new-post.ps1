@@ -12,7 +12,7 @@ source media, and can run post validation after scaffolding.
 .\new-post.ps1
 
 .EXAMPLE
-.\new-post.ps1 -Title "Shop Cabinet" -Description "A new storage cabinet." -TopCategory Woodworking -Subcategory Workshop -Tags Woodworking,Workshop -CoverImage IMG_1001.avif -CoverAlt "Finished cabinet"
+.\new-post.ps1 -Title "Shop Cabinet" -Description "A new storage cabinet." -TopCategory Woodworking -Subcategory Workshop -Tags Woodworking,Workshop -CoverImage IMG_1001.avif -CoverAlt "Finished cabinet" -GenerateDerivatives
 #>
 
 [CmdletBinding(SupportsShouldProcess = $true)]
@@ -31,6 +31,7 @@ param(
     [switch]$Favorite,
     [switch]$Pin,
     [string]$Series,
+    [switch]$GenerateDerivatives,
     [switch]$NoValidate,
     [switch]$Force
 )
@@ -277,6 +278,64 @@ function Resolve-CoverImage {
     return Read-RequiredValue -Prompt "Cover image filename, relative to the post media folder" -CurrentValue ""
 }
 
+function ConvertTo-SiteImageName {
+    param([Parameter(Mandatory = $true)][string]$ImageName)
+
+    $trimmed = $ImageName.Trim()
+    $extension = [System.IO.Path]::GetExtension($trimmed).ToLowerInvariant()
+    if ($extension -in @(".heic", ".jpg", ".jpeg", ".png")) {
+        $directory = [System.IO.Path]::GetDirectoryName($trimmed)
+        $baseName = [System.IO.Path]::GetFileNameWithoutExtension($trimmed)
+        $avifName = "$baseName.avif"
+        if ([string]::IsNullOrWhiteSpace($directory)) {
+            return $avifName
+        }
+
+        return (Join-Path -Path $directory -ChildPath $avifName).Replace('\', '/')
+    }
+
+    return $trimmed
+}
+
+function Get-ImportedImageIncludeBlock {
+    param(
+        [System.IO.FileInfo[]]$ImportedCandidates,
+        [string]$FallbackImage
+    )
+
+    $imageExtensions = @(".avif", ".png", ".jpg", ".jpeg", ".heic")
+    $imageNames = @($ImportedCandidates |
+        Where-Object { $imageExtensions -contains $_.Extension.ToLowerInvariant() } |
+        ForEach-Object { ConvertTo-SiteImageName -ImageName $_.Name } |
+        Sort-Object -Unique)
+
+    if ($imageNames.Count -eq 0) {
+        $imageNames = @($FallbackImage)
+    }
+
+    $lines = @()
+    foreach ($imageName in $imageNames) {
+        if (-not [string]::IsNullOrWhiteSpace($imageName)) {
+            $lines += "{% include html-side.html img=`"$imageName`" align=`"center-full`" %}"
+        }
+    }
+
+    return ($lines -join "`r`n`r`n")
+}
+
+function Invoke-ScopedDerivativeGeneration {
+    param([Parameter(Mandatory = $true)][string]$MediaPath)
+
+    $generatorPath = Join-Path $RepoRoot "gen-derived-avif.ps1"
+    if (-not (Test-Path -LiteralPath $generatorPath)) {
+        Write-Warn "gen-derived-avif.ps1 was not found; skipping derivative generation."
+        return
+    }
+
+    Write-Info "Generating derived AVIF assets for $MediaPath."
+    & $generatorPath -PostPath $MediaPath
+}
+
 Push-Location $RepoRoot
 try {
     $Title = Read-RequiredValue -Prompt "Title" -CurrentValue $Title
@@ -312,6 +371,7 @@ try {
 
     $importCandidates = @(Get-ImportableMedia -Folder $ImportFrom)
     $CoverImage = Resolve-CoverImage -CurrentValue $CoverImage -ImportedCandidates $importCandidates
+    $CoverImage = ConvertTo-SiteImageName -ImageName $CoverImage
     $CoverAlt = Read-RequiredValue -Prompt "Cover alt/caption" -CurrentValue $CoverAlt
 
     if (-not $PSBoundParameters.ContainsKey("Favorite")) {
@@ -324,6 +384,10 @@ try {
 
     if ([string]::IsNullOrWhiteSpace($Series)) {
         $Series = Read-OptionalValue -Prompt "Series name (optional)" -CurrentValue ""
+    }
+
+    if ($importCandidates.Count -gt 0 -and -not $PSBoundParameters.ContainsKey("GenerateDerivatives")) {
+        $GenerateDerivatives = Read-YesNo -Prompt "Generate derived AVIF thumbnails/tinyfiles for imported media now?" -DefaultValue $true
     }
 
     $categoryFolder = ConvertTo-PostSlug $TopCategory
@@ -350,6 +414,7 @@ try {
     if (-not [string]::IsNullOrWhiteSpace($Series)) {
         $seriesLine = "series: $(ConvertTo-YamlScalar $Series)`r`n"
     }
+    $imageIncludeBlock = Get-ImportedImageIncludeBlock -ImportedCandidates $importCandidates -FallbackImage $CoverImage
 
     $content = @"
 ---
@@ -375,7 +440,7 @@ Write the setup here.
 
 ## The Build
 
-{% include html-side.html img="$CoverImage" align="center-full" %}
+$imageIncludeBlock
 
 ## Finished
 
@@ -397,6 +462,10 @@ Write the finished result here.
                 Copy-Item -LiteralPath $candidate.FullName -Destination $destination -Force:$Force
             }
             Write-Info "Imported $($importCandidates.Count) media file(s) into assets/img/posts/$Slug."
+        }
+
+        if ($GenerateDerivatives) {
+            Invoke-ScopedDerivativeGeneration -MediaPath $mediaDir
         }
 
         Set-Content -LiteralPath $postPath -Value $content -Encoding UTF8

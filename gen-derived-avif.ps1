@@ -3,14 +3,22 @@
 Builds AVIF derivatives for post images.
 
 .DESCRIPTION
-Discovers primary images within each post folder and generates AVIF derivatives for
+Discovers primary images within each post folder, generates full-size AVIF files beside
+the source images capped to a maximum dimension, and generates AVIF derivatives for
 `thumbnails/` and `tinyfiles/` when the source EXIF tags include `thumbnail` or `gallery`
-respectively. ImageMagick's `magick` tool performs every conversion so that derived assets
-stay synchronized with the primary media. Existing derivatives are refreshed only when the
-source is newer unless -Force is specified.
+respectively. ImageMagick's `magick` tool performs every conversion so that generated
+assets stay synchronized with the primary media. Existing generated assets are refreshed
+only when the source is newer unless -Force is specified.
+
+By default, SourcePath is treated as the posts media root (`assets/img/posts`) and every
+child post folder is processed. For a faster new-post workflow, pass a specific post
+folder with -SourcePath or -PostPath, or pass one or more slugs with -PostSlug.
 #>
+[CmdletBinding()]
 param(
     [string]$SourcePath = ".\assets\img\posts",
+    [string[]]$PostSlug,
+    [string[]]$PostPath,
     [switch]$Force,
     [switch]$PruneLegacy,
     [switch]$PruneUntaggedDerived,
@@ -18,6 +26,8 @@ param(
     [int]$ThumbnailWidth = 480,
     [ValidateRange(1, 4096)]
     [int]$Thumbnail2xWidth = 960,
+    [ValidateRange(1, 8192)]
+    [int]$MaxDimension = 2048,
     [ValidateRange(1, 100)]
     [int]$TinyfileScale = 10,
     [ValidateRange(0, 100)]
@@ -110,7 +120,8 @@ function Invoke-MagickEncode
         [string]$InputPath,
         [string]$DestinationPath,
         [string]$ResizeGeometry,
-        [int]$QualityValue
+        [Nullable[int]]$QualityValue,
+        [switch]$StripMetadata
     )
 
     $arguments = @()
@@ -120,9 +131,15 @@ function Invoke-MagickEncode
         $arguments += "-resize"
         $arguments += $ResizeGeometry
     }
-    $arguments += "-strip"
-    $arguments += "-quality"
-    $arguments += $QualityValue.ToString()
+    if ($StripMetadata)
+    {
+        $arguments += "-strip"
+    }
+    if ($null -ne $QualityValue)
+    {
+        $arguments += "-quality"
+        $arguments += $QualityValue.ToString()
+    }
     $arguments += $DestinationPath
 
     Write-Info "magick $($arguments -join ' ')"
@@ -131,6 +148,92 @@ function Invoke-MagickEncode
     {
         throw "magick exited with code $LASTEXITCODE"
     }
+}
+
+function Get-PrimaryImages
+{
+    param([Parameter(Mandatory = $true)][System.IO.DirectoryInfo]$Folder)
+
+    return @(Get-ChildItem -LiteralPath $Folder.FullName -File |
+        Where-Object { @('.jpeg', '.jpg', '.heic', '.png') -contains $_.Extension.ToLowerInvariant() })
+}
+
+function Resolve-PostFolders
+{
+    param(
+        [Parameter(Mandatory = $true)][string]$BaseSourcePath,
+        [string[]]$Slugs,
+        [string[]]$Paths
+    )
+
+    $foldersByPath = [ordered]@{}
+
+    if ($Paths -and $Paths.Count -gt 0)
+    {
+        foreach ($path in $Paths)
+        {
+            if (-not (Test-Path -LiteralPath $path))
+            {
+                throw "Post path '$path' was not found."
+            }
+
+            $item = Get-Item -LiteralPath $path
+            if (-not $item.PSIsContainer)
+            {
+                throw "Post path '$path' is not a directory."
+            }
+
+            $foldersByPath[$item.FullName] = [System.IO.DirectoryInfo]$item
+        }
+
+        return @($foldersByPath.Values)
+    }
+
+    if (-not (Test-Path -LiteralPath $BaseSourcePath))
+    {
+        throw "Source path '$BaseSourcePath' was not found."
+    }
+
+    $sourceItem = Get-Item -LiteralPath $BaseSourcePath
+    if (-not $sourceItem.PSIsContainer)
+    {
+        throw "Source path '$BaseSourcePath' is not a directory."
+    }
+
+    if ($Slugs -and $Slugs.Count -gt 0)
+    {
+        foreach ($slug in $Slugs)
+        {
+            if ([string]::IsNullOrWhiteSpace($slug))
+            {
+                continue
+            }
+
+            $candidate = Join-Path -Path $sourceItem.FullName -ChildPath $slug.Trim()
+            if (-not (Test-Path -LiteralPath $candidate))
+            {
+                throw "Post slug '$slug' was not found under '$($sourceItem.FullName)'."
+            }
+
+            $item = Get-Item -LiteralPath $candidate
+            if (-not $item.PSIsContainer)
+            {
+                throw "Post slug '$slug' resolved to a non-directory path."
+            }
+
+            $foldersByPath[$item.FullName] = [System.IO.DirectoryInfo]$item
+        }
+
+        return @($foldersByPath.Values)
+    }
+
+    $sourceDirectory = [System.IO.DirectoryInfo]$sourceItem
+    if ((Get-PrimaryImages -Folder $sourceDirectory).Count -gt 0)
+    {
+        return @($sourceDirectory)
+    }
+
+    return @(Get-ChildItem -LiteralPath $sourceDirectory.FullName -Directory)
 }
 
 try
@@ -143,20 +246,27 @@ catch
     exit 1
 }
 
-if (-not (Test-Path -LiteralPath $SourcePath))
+try
 {
-    Write-ErrorMessage "Source path '$SourcePath' was not found."
+    $postFolders = @(Resolve-PostFolders -BaseSourcePath $SourcePath -Slugs $PostSlug -Paths $PostPath)
+}
+catch
+{
+    Write-ErrorMessage $_.Exception.Message
     exit 1
 }
 
-$resolvedSource = Resolve-Path -Path $SourcePath
-Write-Info "Building derived AVIF assets under '$resolvedSource'."
+if ($postFolders.Count -eq 0)
+{
+    Write-WarningMessage "No post folders found to process."
+    exit 0
+}
+
+Write-Info "Building derived AVIF assets for $($postFolders.Count) post folder(s)."
 
 $shell = New-Object -ComObject Shell.Application
 $tagIndex = 18
 
-# Enumerate each post folder and keep derivatives in sync with tag metadata.
-$postFolders = Get-ChildItem -Path $resolvedSource -Directory
 foreach ($postFolder in $postFolders)
 {
     Write-Info "Processing folder '$($postFolder.FullName)'."
@@ -175,8 +285,7 @@ foreach ($postFolder in $postFolders)
         Get-ChildItem -Path $tinyfilesPath -Include *.jpg, *.jpeg, *.png -File -ErrorAction SilentlyContinue | Remove-Item -Force
     }
 
-    $primaryImages = Get-ChildItem -Path $postFolder.FullName -File |
-    Where-Object { @('.jpeg', '.jpg', '.heic', '.png') -contains $_.Extension.ToLowerInvariant() }
+    $primaryImages = Get-PrimaryImages -Folder $postFolder
 
     foreach ($image in $primaryImages)
     {
@@ -187,19 +296,25 @@ foreach ($postFolder in $postFolders)
         $needsThumbnail = $tagTokens -contains "thumbnail"
         $needsTinyfile = $tagTokens -contains "gallery"
 
+        $fullSizeTarget = Join-Path -Path $postFolder.FullName -ChildPath ($image.BaseName + ".avif")
         $thumbnailTarget = Join-Path -Path $thumbnailsPath -ChildPath ($image.BaseName + ".avif")
         $thumbnail2xTarget = Join-Path -Path $thumbnails2xPath -ChildPath ($image.BaseName + ".avif")
         $tinyfileTarget = Join-Path -Path $tinyfilesPath -ChildPath ($image.BaseName + ".avif")
+
+        if ($Force -or (ShouldRebuild -Source $image.FullName -Destination $fullSizeTarget))
+        {
+            Invoke-MagickEncode -InputPath $image.FullName -DestinationPath $fullSizeTarget -ResizeGeometry ("${MaxDimension}x${MaxDimension}>") -QualityValue $null
+        }
 
         if ($needsThumbnail)
         {
             if ($Force -or (ShouldRebuild -Source $image.FullName -Destination $thumbnailTarget))
             {
-                Invoke-MagickEncode -InputPath $image.FullName -DestinationPath $thumbnailTarget -ResizeGeometry ("${ThumbnailWidth}x>") -QualityValue $Quality
+                Invoke-MagickEncode -InputPath $image.FullName -DestinationPath $thumbnailTarget -ResizeGeometry ("${ThumbnailWidth}x>") -QualityValue $Quality -StripMetadata
             }
             if ($Force -or (ShouldRebuild -Source $image.FullName -Destination $thumbnail2xTarget))
             {
-                Invoke-MagickEncode -InputPath $image.FullName -DestinationPath $thumbnail2xTarget -ResizeGeometry ("${Thumbnail2xWidth}x>") -QualityValue $Quality
+                Invoke-MagickEncode -InputPath $image.FullName -DestinationPath $thumbnail2xTarget -ResizeGeometry ("${Thumbnail2xWidth}x>") -QualityValue $Quality -StripMetadata
             }
         }
         else
@@ -215,7 +330,7 @@ foreach ($postFolder in $postFolders)
         {
             if ($Force -or (ShouldRebuild -Source $image.FullName -Destination $tinyfileTarget))
             {
-                Invoke-MagickEncode -InputPath $image.FullName -DestinationPath $tinyfileTarget -ResizeGeometry ("$TinyfileScale%") -QualityValue $Quality
+                Invoke-MagickEncode -InputPath $image.FullName -DestinationPath $tinyfileTarget -ResizeGeometry ("$TinyfileScale%") -QualityValue $Quality -StripMetadata
             }
         }
         else

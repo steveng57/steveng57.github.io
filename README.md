@@ -37,12 +37,12 @@ The wizard creates both pieces needed for a post:
 - `_posts/<top-category>/YYYY-MM-DD-slug.MD`
 - `assets/img/posts/<slug>/`
 
-It prompts for title, date, category, tags, description, cover image, and optional pin/favorite/series metadata. It can also copy source media from a folder into the new post media folder.
+It prompts for title, date, category, tags, description, cover image, and optional pin/favorite/series metadata. It can also copy source media from a folder into the new post media folder. If you pick a HEIC/JPG/PNG cover image, the generated markdown references the matching `.avif` file for the site image and thumbnail. Imported still images are also added to the post body as `html-side.html` include lines.
 
 For a parameter-driven run:
 
 ```powershell
-.\new-post.ps1 -Title "Shop Cabinet" -Description "A new storage cabinet." -TopCategory Woodworking -Subcategory Workshop -Tags Woodworking,Workshop -CoverImage IMG_1001.avif -CoverAlt "Finished cabinet"
+.\new-post.ps1 -Title "Shop Cabinet" -Description "A new storage cabinet." -TopCategory Woodworking -Subcategory Workshop -Tags Woodworking,Workshop -CoverImage IMG_1001.avif -CoverAlt "Finished cabinet" -GenerateDerivatives
 ```
 
 Validate a post at any time:
@@ -55,7 +55,8 @@ Validate a post at any time:
 The validator checks front matter, category shape, the media folder, cover image, cover thumbnail, in-post image/video include references, and category icon coverage. Add `-BuildCheck` to run `bundle exec jekyll build` after the convention checks.
 
 This was built on Windows and there are a couple of pre-jekyll-build steps to run via Windows Powershell
-  - To generate thumbnail/tinyfile derivatives run `./gen-derived-avif.ps1`.  Note that jpeg (and jpg) files are all converted to avif in this process.  The original jpeg's serve as a source file, but are not used directly in the site.  They are excluded (ignored) by the Jekyll compiler.
+  - To generate full-size AVIF files plus thumbnail/tinyfile derivatives run `./gen-derived-avif.ps1`.  Note that HEIC, jpeg/jpg, and png files serve as source files, but are not used directly in the site. Full-size AVIF files default to `-MaxDimension 2048`.
+    - To process only one post media folder, run `./gen-derived-avif.ps1 -PostSlug pen-tray`, `./gen-derived-avif.ps1 -PostPath assets/img/posts/pen-tray`, or `./gen-derived-avif.ps1 -SourcePath assets/img/posts/pen-tray`.
   - To generate the captions data file (`_data/img-info.json`) run `./gen-imagecaptions.ps1`.
 
 Deprecated helper scripts are archived under `deprecated/` for historical reference.
