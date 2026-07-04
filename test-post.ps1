@@ -253,6 +253,16 @@ function Test-MediaManifest {
                 Write-CheckWarning "media.yml published file is not generated yet: $published ($currentSource)"
             }
         }
+        elseif ($line -match '^\s*poster:\s*(.+?)\s*$') {
+            $poster = $matches[1].Trim().Trim('"').Trim("'")
+            $posterPath = Join-Path $MediaDir $poster
+            if (Test-Path -LiteralPath $posterPath) {
+                Write-CheckOk "media.yml poster file exists: $poster"
+            }
+            else {
+                Write-CheckWarning "media.yml poster file is not generated yet: $poster ($currentSource)"
+            }
+        }
     }
 }
 

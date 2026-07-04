@@ -64,6 +64,17 @@ Legacy post media folders can be converted with a dry run first:
 
 The converter infers `media.yml` from post front matter, image includes, and the current `_data/img-info.json` snapshot. It does not read Windows tags. Use `-Force` only when intentionally replacing an existing manifest.
 
+Imported `.mp4` and `.mov` files are copied into the post media folder as source videos. The wizard adds a `videos:` section to `media.yml`, emits a starter `embed/video-hls.html` include, and, when derivative generation is enabled, runs `gen-hls.ps1` for the new post folder. HLS output is written under `stream/<video-name>/`.
+
+```yaml
+videos:
+  - source: walkthrough.mp4
+    published: stream/walkthrough/master.m3u8
+    poster: stream/walkthrough/poster.avif
+    include: true
+    caption: ""
+```
+
 For a parameter-driven run:
 
 ```powershell

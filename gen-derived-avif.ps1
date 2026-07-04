@@ -211,6 +211,7 @@ function Read-MediaManifest
         Images = @()
     }
     $current = $null
+    $section = ""
 
     foreach ($line in Get-Content -LiteralPath $manifestPath)
     {
@@ -225,7 +226,19 @@ function Read-MediaManifest
             continue
         }
 
-        if ($line -match '^\s*-\s*source:\s*(.+?)\s*$')
+        if ($line -match '^\s*images:\s*$')
+        {
+            $section = "images"
+            continue
+        }
+
+        if ($line -match '^\s*videos:\s*$')
+        {
+            $section = "videos"
+            continue
+        }
+
+        if ($section -eq "images" -and $line -match '^\s*-\s*source:\s*(.+?)\s*$')
         {
             if ($current)
             {
@@ -243,7 +256,7 @@ function Read-MediaManifest
             continue
         }
 
-        if ($current -and $line -match '^\s*(published|include|gallery|thumbnail|caption):\s*(.*?)\s*$')
+        if ($section -eq "images" -and $current -and $line -match '^\s*(published|include|gallery|thumbnail|caption):\s*(.*?)\s*$')
         {
             $key = $matches[1].ToLowerInvariant()
             $value = $matches[2].Trim().Trim('"').Trim("'")
