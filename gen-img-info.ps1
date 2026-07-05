@@ -138,6 +138,15 @@ function Get-PublishedImageName($image) {
    return ConvertTo-SiteImageName $image.Source
 }
 
+function Get-PublishedVideoName($video) {
+   if ($video.PSObject.Properties.Name -contains 'Published' -and -not [string]::IsNullOrWhiteSpace($video.Published)) {
+      return $video.Published
+   }
+
+   $baseName = [System.IO.Path]::GetFileNameWithoutExtension($video.Source)
+   return "stream/$baseName/master.m3u8"
+}
+
 function Read-MediaManifest($folder) {
    $manifestPath = Join-Path -Path $folder.FullName -ChildPath "media.yml"
    if (-not (Test-Path -LiteralPath $manifestPath)) {
@@ -147,6 +156,7 @@ function Read-MediaManifest($folder) {
    $manifest = [ordered]@{
       Cover  = ""
       Images = @()
+      Videos = @()
    }
    $current = $null
    $section = ""
@@ -162,11 +172,31 @@ function Read-MediaManifest($folder) {
       }
 
       if ($line -match '^\s*images:\s*$') {
+         if ($current) {
+            if ($section -eq "images") {
+               $manifest.Images += [pscustomobject]$current
+            }
+            elseif ($section -eq "videos") {
+               $manifest.Videos += [pscustomobject]$current
+            }
+         }
+
+         $current = $null
          $section = "images"
          continue
       }
 
       if ($line -match '^\s*videos:\s*$') {
+         if ($current) {
+            if ($section -eq "images") {
+               $manifest.Images += [pscustomobject]$current
+            }
+            elseif ($section -eq "videos") {
+               $manifest.Videos += [pscustomobject]$current
+            }
+         }
+
+         $current = $null
          $section = "videos"
          continue
       }
@@ -187,6 +217,21 @@ function Read-MediaManifest($folder) {
          continue
       }
 
+      if ($section -eq "videos" -and $line -match '^\s*-\s*source:\s*(.+?)\s*$') {
+         if ($current) {
+            $manifest.Videos += [pscustomobject]$current
+         }
+
+         $current = [ordered]@{
+            Source    = $matches[1].Trim().Trim('"').Trim("'")
+            Published = ""
+            Poster    = ""
+            Include   = $false
+            Caption   = ""
+         }
+         continue
+      }
+
       if ($section -eq "images" -and $current -and $line -match '^\s*(published|include|gallery|thumbnail|caption):\s*(.*?)\s*$') {
          $key = $matches[1].ToLowerInvariant()
          $value = $matches[2].Trim().Trim('"').Trim("'")
@@ -198,10 +243,26 @@ function Read-MediaManifest($folder) {
             'caption' { $current.Caption = $value }
          }
       }
+
+      if ($section -eq "videos" -and $current -and $line -match '^\s*(published|poster|include|caption):\s*(.*?)\s*$') {
+         $key = $matches[1].ToLowerInvariant()
+         $value = $matches[2].Trim().Trim('"').Trim("'")
+         switch ($key) {
+            'published' { $current.Published = $value }
+            'poster' { $current.Poster = $value }
+            'include' { $current.Include = ConvertTo-BoolValue $value }
+            'caption' { $current.Caption = $value }
+         }
+      }
    }
 
    if ($current) {
-      $manifest.Images += [pscustomobject]$current
+      if ($section -eq "images") {
+         $manifest.Images += [pscustomobject]$current
+      }
+      elseif ($section -eq "videos") {
+         $manifest.Videos += [pscustomobject]$current
+      }
    }
 
    return [pscustomobject]$manifest
@@ -224,6 +285,27 @@ function Get-MediaIntentMap($folderPath) {
             $key = (Join-Path -Path $postFolder.FullName -ChildPath ($relativeName -replace '/', [System.IO.Path]::DirectorySeparatorChar))
             $intentMap[$key] = $image
          }
+      }
+   }
+
+   return $intentMap
+}
+
+function Get-VideoIntentMap($folderPath) {
+   $intentMap = @{}
+   $manifestFiles = @(Get-ChildItem -Path $folderPath -Filter "media.yml" -File -Recurse -ErrorAction SilentlyContinue)
+   $postFolders = @($manifestFiles | ForEach-Object { $_.Directory })
+
+   foreach ($postFolder in $postFolders) {
+      $manifest = Read-MediaManifest $postFolder
+      if (-not $manifest) {
+         continue
+      }
+
+      foreach ($video in $manifest.Videos) {
+         $published = Get-PublishedVideoName $video
+         $key = (Join-Path -Path $postFolder.FullName -ChildPath ($published -replace '/', [System.IO.Path]::DirectorySeparatorChar))
+         $intentMap[$key] = $video
       }
    }
 
@@ -311,6 +393,7 @@ function GenerateImageCaptions($folderPath) {
    $repoRoot = (Get-Location).Path
    $metadata = @{}
    $mediaIntentMap = Get-MediaIntentMap $folderPath
+   $videoIntentMap = Get-VideoIntentMap $folderPath
 
    $imageFiles = Get-ChildItem -Path $folderPath -File -Recurse -Depth 3 |
       Where-Object { $_.Extension.ToLowerInvariant() -in @('.png', '.avif') }
@@ -377,6 +460,18 @@ function GenerateImageCaptions($folderPath) {
             'height'    = $displayDimensions.Height
             'gallery'   = $gallery
          }
+      }
+   }
+
+   foreach ($videoPath in $videoIntentMap.Keys) {
+      $video = $videoIntentMap[$videoPath]
+      $metadataKey = [System.IO.Path]::GetRelativePath($repoRoot, $videoPath).Replace('\', '/')
+
+      $metadata[$metadataKey] = [ordered]@{
+         'title'   = $video.Caption
+         'subject' = $video.Caption
+         'poster'  = $video.Poster
+         'gallery' = $false
       }
    }
 

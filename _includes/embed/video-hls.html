@@ -7,7 +7,7 @@
     - mp4: optional progressive MP4 fallback URL
     - poster: optional poster image URL
     - title: optional title used for aria-label
-    - caption: optional figcaption text
+    - caption: optional figcaption text; defaults to `_data/img-info.json` lookup
     - preload: metadata|none|auto (default: metadata)
     - controls: true|false (default: true)
     - autoplay: true|false (default: false)
@@ -23,6 +23,22 @@
 {% assign mp4_fallback = include.mp4 | default: "" %}
 {% assign poster_url = include.poster | default: "" %}
 {% assign preload_mode = include.preload | default: "metadata" %}
+
+{% if hls_master contains '://' %}
+  {% assign video_key = hls_master %}
+{% elsif hls_master contains '/assets/' or hls_master contains 'assets/' %}
+  {% assign video_key = hls_master | remove_first: '/' %}
+{% else %}
+  {% assign video_key = page.media_subpath
+    | append: '/'
+    | append: hls_master
+    | replace: '///', '/'
+    | replace: '//', '/'
+    | remove_first: '/'
+  %}
+{% endif %}
+{% assign video_meta = site.data.img-info[video_key] %}
+{% assign caption = include.caption | default: video_meta.title %}
 
 {% assign hls_master_url = "" %}
 {% assign mp4_fallback_url = "" %}
@@ -76,7 +92,7 @@
       Your browser does not support HTML5 video.
     </video>
   </div>
-  {% if include.caption %}<figcaption class="figure-caption text-center">{{ include.caption }}</figcaption>{% endif %}
+  {% if caption %}<figcaption class="figure-caption text-center">{{ caption }}</figcaption>{% endif %}
 </figure>
 
 <script>
