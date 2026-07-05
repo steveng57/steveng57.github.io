@@ -35,6 +35,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+. (Join-Path $PSScriptRoot "media-manifest.ps1")
 
 function Write-Info
 {
@@ -423,12 +424,12 @@ foreach ($postFolder in $postFolders)
         Get-ChildItem -Path $tinyfilesPath -Include *.jpg, *.jpeg, *.png -File -ErrorAction SilentlyContinue | Remove-Item -Force
     }
 
-    $manifest = Read-MediaManifest -Folder $postFolder
+    $manifest = Read-MediaManifestForFolder -Folder $postFolder
     $imagesToProcess = @()
 
     if ($manifest -and $manifest.Images.Count -gt 0)
     {
-        Write-Info "Using media.yml intent for '$($postFolder.Name)'."
+        Write-Info "Using media manifest intent for '$($postFolder.Name)'."
         foreach ($manifestImage in $manifest.Images)
         {
             $imageFile = Get-ManifestImageFile -Folder $postFolder -ManifestImage $manifestImage

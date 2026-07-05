@@ -1,0 +1,23 @@
+cover: "golf-sign.jpeg"
+
+images:
+  "golf-sign.avif":
+    source: "golf-sign.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Bill's Second Christmas"
+
+  "computer-stand-1.avif":
+    source: "computer-stand-1.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Bill's First Christmas"
+
+  "computer-stand-3.avif":
+    source: "computer-stand-3.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "The drawer actually functions!"

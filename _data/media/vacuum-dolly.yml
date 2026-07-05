@@ -1,0 +1,23 @@
+cover: "20210827_212517.jpeg"
+
+images:
+  "20210827_212517.avif":
+    source: "20210827_212517.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "More holes and circles"
+
+  "20210827_212427.avif":
+    source: "20210827_212427.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Lots of holes and circles"
+
+  "IMG_0539.avif":
+    source: "IMG_0539.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Loaded up and put to work"

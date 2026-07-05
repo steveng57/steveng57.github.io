@@ -1,0 +1,86 @@
+cover: "IMG_2379c.heic"
+
+images:
+  "IMG_2379c.avif":
+    source: "IMG_2379c.heic"
+    include: false
+    gallery: true
+    thumbnail: true
+    caption: "Walnut Accessories"
+
+  "pen-tray-shaper-studio.avif":
+    source: "pen-tray-shaper-studio.png"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Pen Tray in Shaper Studio"
+
+  "IMG_2353.avif":
+    source: "IMG_2353.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "BenchPilot in Action"
+
+  "IMG_2355.avif":
+    source: "IMG_2355.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "BenchPilot"
+
+  "IMG_2359.avif":
+    source: "IMG_2359.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Ready for Finish"
+
+  "IMG_2351.avif":
+    source: "IMG_2351.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Finish Ready"
+
+  "IMG_2365.avif":
+    source: "IMG_2365.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Sanding Board"
+
+  "IMG_2362.avif":
+    source: "IMG_2362.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Don't Sand So Close To Me"
+
+  "IMG_2361.avif":
+    source: "IMG_2361.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Awkward Clamping Fun"
+
+  "IMG_2369.avif":
+    source: "IMG_2369.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Wax Oil Finish"
+
+  "IMG_2378.avif":
+    source: "IMG_2378.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Holder for the Pens"
+
+  "IMG_2377.avif":
+    source: "IMG_2377.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Phone in Place"

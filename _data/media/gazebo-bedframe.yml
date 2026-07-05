@@ -1,0 +1,44 @@
+cover: "gazebo-bedframe-sketchup.jpeg"
+
+images:
+  "gazebo-bedframe-sketchup.avif":
+    source: "gazebo-bedframe-sketchup.jpeg"
+    include: false
+    gallery: false
+    thumbnail: true
+    caption: "Bedframe sides, slats, and pedestal"
+
+  "IMG_0947.avif":
+    source: "IMG_0947.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Pedestal Plywood"
+
+  "IMG_0948.avif":
+    source: "IMG_0948.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Pedestal Glue-up"
+
+  "IMG_0959.avif":
+    source: "IMG_0959.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "All Assembled - Upside Down"
+
+  "IMG_0962.avif":
+    source: "IMG_0962.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "White Oak Sides"
+
+  "IMG_1092.avif":
+    source: "IMG_1092.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "All Dressed Up"

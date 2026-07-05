@@ -1,0 +1,65 @@
+cover: "IMG_1509.jpeg"
+
+images:
+  "IMG_1509.avif":
+    source: "IMG_1509.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Curing"
+
+  "Sketchup - Coffee Pod Drawer.avif":
+    source: "Sketchup - Coffee Pod Drawer.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Coffee Pod Drawer Design"
+
+  "IMG_1487.avif":
+    source: "IMG_1487.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Starting with Offcuts"
+
+  "IMG_1498.avif":
+    source: "IMG_1498.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Box Joints for Strength"
+
+  "IMG_1499.avif":
+    source: "IMG_1499.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Pod Holder"
+
+  "IMG_1488.avif":
+    source: "IMG_1488.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Drawer Assembly"
+
+  "IMG_1503.avif":
+    source: "IMG_1503.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Engraving with Origin"
+
+  "IMG_1507.avif":
+    source: "IMG_1507.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Epoxy Inlay"
+
+  "IMG_1508.avif":
+    source: "IMG_1508.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "First Coat"

@@ -1,0 +1,37 @@
+cover: "IMG_0530.jpeg"
+
+images:
+  "IMG_0530.avif":
+    source: "IMG_0530.jpeg"
+    include: false
+    gallery: true
+    thumbnail: true
+    caption: "Table all dressed up"
+
+  "20200808_184843.avif":
+    source: "20200808_184843.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Naughty Handle"
+
+  "20200808_184834.avif":
+    source: "20200808_184834.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Bad Bad Handle"
+
+  "20200714_172147328_iOS.avif":
+    source: "20200714_172147328_iOS.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Yoga Room Table"
+
+  "IMG_0531.avif":
+    source: "IMG_0531.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Heater Dolly"

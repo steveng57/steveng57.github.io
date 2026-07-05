@@ -1,0 +1,37 @@
+cover: "IMG_0626.jpeg"
+
+images:
+  "IMG_0626.avif":
+    source: "IMG_0626.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "At home and in use"
+
+  "CribbageBoard02.avif":
+    source: "CribbageBoard02.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Cribbage Board on Shaper Hub"
+
+  "20230720_163338.avif":
+    source: "20230720_163338.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Just finished"
+
+  "20230720_163408.avif":
+    source: "20230720_163408.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Engraving"
+
+  "20230720_200245-1.avif":
+    source: "20230720_200245-1.jpeg"
+    include: false
+    gallery: true
+    thumbnail: false
+    caption: "Finish Cured and Ready"

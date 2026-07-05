@@ -1,0 +1,44 @@
+cover: "IMG_0553.jpeg"
+
+images:
+  "IMG_0553.avif":
+    source: "IMG_0553.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "In Place at Home"
+
+  "20220420_174227.avif":
+    source: "20220420_174227.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "In Fine Form"
+
+  "20220420_174306.avif":
+    source: "20220420_174306.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Table legs need to be sturdy"
+
+  "20220503_133849.avif":
+    source: "20220503_133849.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Blotchy Awful Mess"
+
+  "20220623_123043.avif":
+    source: "20220623_123043.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Saved"
+
+  "20220623_123128.avif":
+    source: "20220623_123128.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Unnested Nesting Tables"

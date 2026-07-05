@@ -1,0 +1,114 @@
+cover: "IMG_2324.HEIC"
+
+images:
+  "IMG_2324.avif":
+    source: "IMG_2324.HEIC"
+    include: false
+    gallery: true
+    thumbnail: true
+    caption: "Frames for Sauna"
+
+  "IMG_2298.avif":
+    source: "IMG_2298.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Bad Cut #1"
+
+  "IMG_2304.avif":
+    source: "IMG_2304.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "What the...?"
+
+  "IMG_2301.avif":
+    source: "IMG_2301.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Smaller Sticks"
+
+  "IMG_2302.avif":
+    source: "IMG_2302.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Rabbet"
+
+  "IMG_2307.avif":
+    source: "IMG_2307.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Clamping Time"
+
+  "IMG_2310.avif":
+    source: "IMG_2310.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Back Braces"
+
+  "IMG_2318.avif":
+    source: "IMG_2318.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Finished"
+
+  "Affogato.avif":
+    source: "Affogato.jpg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Affogato - An Itialian Delicacy"
+
+  "IMG_2320.avif":
+    source: "IMG_2320.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Spacermania"
+
+  "IMG_2322.avif":
+    source: "IMG_2322.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Sauna Bound"
+
+  "IMG_2323.avif":
+    source: "IMG_2323.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Spa Ready"
+
+  "11019.avif":
+    source: "11019.jpg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "My Close Up"
+
+  "IMG_2342.avif":
+    source: "IMG_2342.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "My Dark Side"
+
+  "11018.avif":
+    source: "11018.jpg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Looking Good"
+
+  "IMG_2344.avif":
+    source: "IMG_2344.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Really Good"

@@ -12,6 +12,8 @@ param(
    [string]$folderPath = ".\assets\img\posts"
 )
 
+. (Join-Path $PSScriptRoot "media-manifest.ps1")
+
 function Convert-DateTaken($rawDate) {
    if ($null -eq $rawDate) {
       return $null
@@ -270,11 +272,20 @@ function Read-MediaManifest($folder) {
 
 function Get-MediaIntentMap($folderPath) {
    $intentMap = @{}
-   $manifestFiles = @(Get-ChildItem -Path $folderPath -Filter "media.yml" -File -Recurse -ErrorAction SilentlyContinue)
-   $postFolders = @($manifestFiles | ForEach-Object { $_.Directory })
+   $root = Get-Item -LiteralPath $folderPath
+   if (-not $root.PSIsContainer) {
+      return $intentMap
+   }
+
+   if ((Get-ChildItem -LiteralPath $root.FullName -File -ErrorAction SilentlyContinue | Where-Object { $_.Extension.ToLowerInvariant() -in @('.png', '.avif', '.jpg', '.jpeg', '.heic') } | Select-Object -First 1)) {
+      $postFolders = @($root)
+   }
+   else {
+      $postFolders = @(Get-ChildItem -LiteralPath $root.FullName -Directory -ErrorAction SilentlyContinue)
+   }
 
    foreach ($postFolder in $postFolders) {
-      $manifest = Read-MediaManifest $postFolder
+      $manifest = Read-MediaManifestForFolder -Folder $postFolder
       if (-not $manifest) {
          continue
       }
@@ -293,11 +304,20 @@ function Get-MediaIntentMap($folderPath) {
 
 function Get-VideoIntentMap($folderPath) {
    $intentMap = @{}
-   $manifestFiles = @(Get-ChildItem -Path $folderPath -Filter "media.yml" -File -Recurse -ErrorAction SilentlyContinue)
-   $postFolders = @($manifestFiles | ForEach-Object { $_.Directory })
+   $root = Get-Item -LiteralPath $folderPath
+   if (-not $root.PSIsContainer) {
+      return $intentMap
+   }
+
+   if ((Get-ChildItem -LiteralPath $root.FullName -File -ErrorAction SilentlyContinue | Where-Object { $_.Extension.ToLowerInvariant() -in @('.mp4', '.mov', '.png', '.avif', '.jpg', '.jpeg', '.heic') } | Select-Object -First 1)) {
+      $postFolders = @($root)
+   }
+   else {
+      $postFolders = @(Get-ChildItem -LiteralPath $root.FullName -Directory -ErrorAction SilentlyContinue)
+   }
 
    foreach ($postFolder in $postFolders) {
-      $manifest = Read-MediaManifest $postFolder
+      $manifest = Read-MediaManifestForFolder -Folder $postFolder
       if (-not $manifest) {
          continue
       }

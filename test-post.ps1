@@ -21,6 +21,7 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
 $RepoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+. (Join-Path $RepoRoot "media-manifest.ps1")
 $script:ErrorCount = 0
 $script:WarningCount = 0
 
@@ -224,43 +225,61 @@ function Test-IncludeReferences {
 function Test-MediaManifest {
     param([string]$MediaDir)
 
-    $manifestPath = Join-Path $MediaDir "media.yml"
-    if (-not (Test-Path -LiteralPath $manifestPath)) {
-        Write-CheckWarning "No media.yml found; using legacy media behavior."
+    $mediaFolder = Get-Item -LiteralPath $MediaDir
+    $dataManifestPath = Get-MediaManifestPath -Slug $mediaFolder.Name -RepoRoot $RepoRoot
+    $legacyManifestPath = Join-Path $MediaDir "media.yml"
+    $manifestPath = if (Test-Path -LiteralPath $dataManifestPath) { $dataManifestPath } else { $legacyManifestPath }
+    $manifest = Read-MediaManifestFile -ManifestPath $manifestPath
+    if (-not $manifest) {
+        Write-CheckWarning "No media manifest found; using legacy media behavior."
         return
     }
 
-    Write-CheckOk "media.yml exists."
-    $currentSource = ""
-    foreach ($line in Get-Content -LiteralPath $manifestPath) {
-        if ($line -match '^\s*-\s*source:\s*(.+?)\s*$') {
-            $currentSource = $matches[1].Trim().Trim('"').Trim("'")
-            $sourcePath = Join-Path $MediaDir $currentSource
-            if (Test-Path -LiteralPath $sourcePath) {
-                Write-CheckOk "media.yml source exists: $currentSource"
-            }
-            else {
-                Write-CheckError "media.yml source is missing: $currentSource"
-            }
+    Write-CheckOk "media manifest exists: $manifestPath"
+    foreach ($image in $manifest.Images) {
+        $sourcePath = Join-Path $MediaDir $image.Source
+        if (Test-Path -LiteralPath $sourcePath) {
+            Write-CheckOk "media manifest source exists: $($image.Source)"
         }
-        elseif ($line -match '^\s*published:\s*(.+?)\s*$') {
-            $published = $matches[1].Trim().Trim('"').Trim("'")
-            $publishedPath = Join-Path $MediaDir $published
-            if (Test-Path -LiteralPath $publishedPath) {
-                Write-CheckOk "media.yml published file exists: $published"
-            }
-            else {
-                Write-CheckWarning "media.yml published file is not generated yet: $published ($currentSource)"
-            }
+        else {
+            Write-CheckError "media manifest source is missing: $($image.Source)"
         }
-        elseif ($line -match '^\s*poster:\s*(.+?)\s*$') {
-            $poster = $matches[1].Trim().Trim('"').Trim("'")
-            $posterPath = Join-Path $MediaDir $poster
+
+        $published = Get-PublishedImageName -Image $image
+        $publishedPath = Join-Path $MediaDir $published
+        if (Test-Path -LiteralPath $publishedPath) {
+            Write-CheckOk "media manifest published file exists: $published"
+        }
+        else {
+            Write-CheckWarning "media manifest published file is not generated yet: $published ($($image.Source))"
+        }
+    }
+
+    foreach ($video in $manifest.Videos) {
+        $sourcePath = Join-Path $MediaDir $video.Source
+        if (Test-Path -LiteralPath $sourcePath) {
+            Write-CheckOk "media manifest source exists: $($video.Source)"
+        }
+        else {
+            Write-CheckError "media manifest source is missing: $($video.Source)"
+        }
+
+        $published = Get-PublishedVideoName -Video $video
+        $publishedPath = Join-Path $MediaDir $published
+        if (Test-Path -LiteralPath $publishedPath) {
+            Write-CheckOk "media manifest published file exists: $published"
+        }
+        else {
+            Write-CheckWarning "media manifest published file is not generated yet: $published ($($video.Source))"
+        }
+
+        if (-not [string]::IsNullOrWhiteSpace($video.Poster)) {
+            $posterPath = Join-Path $MediaDir $video.Poster
             if (Test-Path -LiteralPath $posterPath) {
-                Write-CheckOk "media.yml poster file exists: $poster"
+                Write-CheckOk "media manifest poster file exists: $($video.Poster)"
             }
             else {
-                Write-CheckWarning "media.yml poster file is not generated yet: $poster ($currentSource)"
+                Write-CheckWarning "media manifest poster file is not generated yet: $($video.Poster) ($($video.Source))"
             }
         }
     }

@@ -1,0 +1,30 @@
+cover: "IMG_1811.jpeg"
+
+images:
+  "IMG_1811.avif":
+    source: "IMG_1811.jpeg"
+    include: false
+    gallery: true
+    thumbnail: true
+    caption: "Powered by the Sun"
+
+  "solar-panel-sketchup.avif":
+    source: "solar-panel-sketchup.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Designs in Sketchup"
+
+  "IMG_1810.avif":
+    source: "IMG_1810.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "The Inner Workings"
+
+  "IMG_1809.avif":
+    source: "IMG_1809.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Sun heats the water, the water heats the pool"

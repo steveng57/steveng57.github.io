@@ -1,0 +1,30 @@
+cover: "IMG_0822.jpeg"
+
+images:
+  "IMG_0822.avif":
+    source: "IMG_0822.jpeg"
+    include: true
+    gallery: false
+    thumbnail: true
+    caption: "South in Winter"
+
+  "IMG_0821.avif":
+    source: "IMG_0821.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "North in Summer"
+
+  "long-centerpiece-sketchup.avif":
+    source: "long-centerpiece-sketchup.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Centerpiece Sketchup"
+
+  "IMG_0825.avif":
+    source: "IMG_0825.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Warped Beyond Repair?"

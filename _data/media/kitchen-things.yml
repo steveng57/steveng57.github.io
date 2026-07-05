@@ -1,0 +1,37 @@
+cover: "IMG_0810.jpeg"
+
+images:
+  "IMG_0810.avif":
+    source: "IMG_0810.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Computer Stand"
+
+  "IMG_0812.avif":
+    source: "IMG_0812.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Footstool"
+
+  "IMG_0813.avif":
+    source: "IMG_0813.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Footstool with Love"
+
+  "IMG_0811.avif":
+    source: "IMG_0811.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Customized"
+
+  "punkins-puter-studio.avif":
+    source: "punkins-puter-studio.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Font Layout in Shaper Studio"

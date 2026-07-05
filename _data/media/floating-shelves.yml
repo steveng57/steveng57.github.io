@@ -1,0 +1,37 @@
+cover: "IMG_0752.jpeg"
+
+images:
+  "IMG_0752.avif":
+    source: "IMG_0752.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Hallway Shelf #2"
+
+  "IMG_0743.avif":
+    source: "IMG_0743.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Workout Room Shelf #1"
+
+  "IMG_0744.avif":
+    source: "IMG_0744.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Workout Room Shelf #2"
+
+  "IMG_0751.avif":
+    source: "IMG_0751.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Hallway Shelf #1"
+
+  "floating-shelves-sketchup.avif":
+    source: "floating-shelves-sketchup.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Floating Shelf in Sketchup"

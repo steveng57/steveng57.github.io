@@ -1,0 +1,30 @@
+cover: "20210709_192858.jpeg"
+
+images:
+  "20210709_192858.avif":
+    source: "20210709_192858.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Left Side"
+
+  "end-table-sketchup.avif":
+    source: "end-table-sketchup.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "End Table Sketchup Drawing"
+
+  "20210709_192749.avif":
+    source: "20210709_192749.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Right Side"
+
+  "20210709_192803.avif":
+    source: "20210709_192803.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "They fit!  Just barely."

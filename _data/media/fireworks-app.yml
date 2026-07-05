@@ -1,0 +1,44 @@
+cover: "Square1024x1024Logo.png"
+
+images:
+  "Square1024x1024Logo.avif":
+    source: "Square1024x1024Logo.png"
+    include: false
+    gallery: true
+    thumbnail: true
+    caption: "Fireworks Burst"
+
+  "Screenshot-2026-01-21-211227.avif":
+    source: "Screenshot-2026-01-21-211227.png"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Visual Studio Dev Env with Copilot"
+
+  "sparks.avif":
+    source: "sparks.png"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Sparks Flying"
+
+  "Screenshot-2026-01-21-212456.avif":
+    source: "Screenshot-2026-01-21-212456.png"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Early Versions - Simple Shapes"
+
+  "Screenshot-2026-01-22-104855.avif":
+    source: "Screenshot-2026-01-22-104855.png"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Strobe Burst"
+
+  "burst.avif":
+    source: "burst.png"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Bursting With Delight"

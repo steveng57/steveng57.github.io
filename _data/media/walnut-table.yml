@@ -1,0 +1,65 @@
+cover: "IMG_0693.jpeg"
+
+images:
+  "IMG_0693.avif":
+    source: "IMG_0693.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Even Better"
+
+  "IMG_0490.avif":
+    source: "IMG_0490.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Table Legs"
+
+  "IMG_0499.avif":
+    source: "IMG_0499.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "I'm Not Bored"
+
+  "IMG_0512.avif":
+    source: "IMG_0512.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Tables Are Tops"
+
+  "IMG_0516.avif":
+    source: "IMG_0516.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "It's got legs!"
+
+  "IMG_0634.avif":
+    source: "IMG_0634.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Legs.  Lot and lots of legs"
+
+  "IMG_0656.avif":
+    source: "IMG_0656.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Two bench tops are better than one"
+
+  "IMG_0659.avif":
+    source: "IMG_0659.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Legs assembled"
+
+  "IMG_0691.avif":
+    source: "IMG_0691.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "From on High"

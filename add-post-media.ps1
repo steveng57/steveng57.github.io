@@ -4,7 +4,7 @@
 Adds image or video media to an existing Jekyll post.
 
 .DESCRIPTION
-Imports media into the post's assets/img/posts/<slug> folder, updates media.yml,
+Imports media into the post's assets/img/posts/<slug> folder, updates _data/media,
 adds starter include blocks to the post body, generates derived assets, and runs
 the post validator.
 
@@ -335,13 +335,14 @@ try {
 
     Write-Info "Imported or reused $($imported.Count) media file(s) in $mediaDir."
 
-    $manifestPath = Join-Path $mediaDir "media.yml"
+    $mediaSlug = Split-Path -Path $mediaDir -Leaf
+    $manifestPath = Get-MediaManifestPath -Slug $mediaSlug -RepoRoot $RepoRoot
     $manifestAdded = @(Add-MediaManifestEntries -ManifestPath $manifestPath -ImportedCandidates $imported)
     if ($manifestAdded.Count -gt 0) {
         Write-Info "Updated $manifestPath with $($manifestAdded.Count) new media item(s)."
     }
     else {
-        Write-Info "media.yml already had entries for the imported media."
+        Write-Info "_data/media already had entries for the imported media."
     }
 
     Add-IncludeBlocksToPost -PostPath $resolvedPostPath -ImportedCandidates $imported -PostTitle $postTitle

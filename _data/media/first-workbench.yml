@@ -1,0 +1,23 @@
+cover: "20170127_010801.jpeg"
+
+images:
+  "20170127_010801.avif":
+    source: "20170127_010801.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Not bad for 2x4's and plywood"
+
+  "20170202_151701.avif":
+    source: "20170202_151701.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Let's make something!"
+
+  "IMG_0699.avif":
+    source: "IMG_0699.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Still getting lots of good use!"

@@ -1,0 +1,114 @@
+cover: "IMG_1927.jpeg"
+
+images:
+  "IMG_1927.avif":
+    source: "IMG_1927.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "It Works!"
+
+  "IMG_1915.avif":
+    source: "IMG_1915.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "It has arrived!"
+
+  "Fractal-Case.png":
+    source: "Fractal-Case.png"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Sleek and Stylish"
+
+  "intel_core_i9_14900k_3.avif":
+    source: "intel_core_i9_14900k_3.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "A Modern CPU"
+
+  "gigabyte-motherboard.png":
+    source: "gigabyte-motherboard.png"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Gigabyte Motherboard"
+
+  "corsair-ssd.png":
+    source: "corsair-ssd.png"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "A Modern Drive"
+
+  "T1000_3QTR-Front-Right.png":
+    source: "T1000_3QTR-Front-Right.png"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "A Perfect Match"
+
+  "IMG_1917.avif":
+    source: "IMG_1917.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Commandearing the Dining Room Table"
+
+  "IMG_1920.avif":
+    source: "IMG_1920.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Assembly Mode"
+
+  "IMG_1928.avif":
+    source: "IMG_1928.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Water Cooling"
+
+  "IMG_1926.avif":
+    source: "IMG_1926.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "On its side"
+
+  "Gigabyte-BIOS.avif":
+    source: "Gigabyte-BIOS.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "It Boots!"
+
+  "monitor-s2725qs-gray-gallery-1.avif":
+    source: "monitor-s2725qs-gray-gallery-1.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Colourful"
+
+  "monitor-s2725qs-gray-gallery-3.avif":
+    source: "monitor-s2725qs-gray-gallery-3.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Sleek"
+
+  "IMG_1959.avif":
+    source: "IMG_1959.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "New Monitor Extensions"
+
+  "IMG_1958.avif":
+    source: "IMG_1958.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "4K Fun"

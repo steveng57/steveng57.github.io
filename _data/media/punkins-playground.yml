@@ -1,0 +1,37 @@
+cover: "20230405_134555.jpeg"
+
+images:
+  "20230405_134555.avif":
+    source: "20230405_134555.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "In Play"
+
+  "punkins-playground-sketchup.avif":
+    source: "punkins-playground-sketchup.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Punkin's Playground in Sketchup"
+
+  "IMG_0560.avif":
+    source: "IMG_0560.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "This is a big table"
+
+  "IMG_0559.avif":
+    source: "IMG_0559.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Torsion Box Construction"
+
+  "IMG_0558.avif":
+    source: "IMG_0558.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "More Pocket Screws"

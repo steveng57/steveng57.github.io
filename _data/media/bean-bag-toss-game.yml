@@ -1,0 +1,16 @@
+cover: "20170724_234953.jpeg"
+
+images:
+  "20170724_234953.avif":
+    source: "20170724_234953.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Needs some bright red paint"
+
+  "20170724_234944.avif":
+    source: "20170724_234944.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Want to play a game?"

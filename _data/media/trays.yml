@@ -1,0 +1,37 @@
+cover: "IMG_0517.jpeg"
+
+images:
+  "IMG_0517.avif":
+    source: "IMG_0517.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Debbie dressed it up nice"
+
+  "20200714_161152.avif":
+    source: "20200714_161152.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "I'm melting..."
+
+  "20200714_161022.avif":
+    source: "20200714_161022.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Someone left the cake out in the rain"
+
+  "tile-tray.avif":
+    source: "tile-tray.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Tray with Tile Inlay"
+
+  "IMG_0518.avif":
+    source: "IMG_0518.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Dining Decorations"

@@ -1,12 +1,12 @@
 <#
 .SYNOPSIS
-Creates per-post media.yml manifests for legacy post media folders.
+Creates per-post _data/media manifests for legacy post media folders.
 
 .DESCRIPTION
-Infers media.yml from post front matter, image include tags, and the current
+Infers _data/media/<slug>.yml from post front matter, image include tags, and the current
 _data/img-info.json file. The script does not read Windows EXIF tags.
 
-By default this is a dry run. Pass -Apply to write media.yml files.
+By default this is a dry run. Pass -Apply to write _data/media files.
 #>
 
 param(
@@ -20,6 +20,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 $RepoRoot = (Get-Location).Path
+. (Join-Path $RepoRoot "media-manifest.ps1")
 
 function Write-Info {
     param([string]$Message)
@@ -308,22 +309,7 @@ function New-MediaManifestContent {
         [Parameter(Mandatory = $true)][System.Collections.Specialized.OrderedDictionary]$Images
     )
 
-    $lines = @()
-    $lines += "cover: $(ConvertTo-YamlString $CoverSource)"
-    $lines += ""
-    $lines += "images:"
-
-    foreach ($image in $Images.Values) {
-        $lines += "  - source: $(ConvertTo-YamlString $image.Source)"
-        $lines += "    published: $(ConvertTo-YamlString $image.Published)"
-        $lines += "    include: $(ConvertTo-YamlBoolean $image.Include)"
-        $lines += "    gallery: $(ConvertTo-YamlBoolean $image.Gallery)"
-        $lines += "    thumbnail: $(ConvertTo-YamlBoolean $image.Thumbnail)"
-        $lines += "    caption: $(ConvertTo-YamlString $image.Caption)"
-        $lines += ""
-    }
-
-    return ($lines -join "`r`n")
+    return ConvertTo-MediaManifestContent -Cover $CoverSource -Images @($Images.Values) -Videos @()
 }
 
 if (-not (Test-Path -LiteralPath $PostsRoot)) {
@@ -373,9 +359,9 @@ foreach ($postFile in $postFiles) {
         continue
     }
 
-    $manifestPath = Join-Path -Path $mediaDir.FullName -ChildPath "media.yml"
+    $manifestPath = Get-MediaManifestPath -Slug $mediaSlug -RepoRoot $RepoRoot
     if ((Test-Path -LiteralPath $manifestPath) -and -not $Force) {
-        Write-Info "Skipping $mediaSlug; media.yml already exists. Use -Force to overwrite."
+        Write-Info "Skipping $mediaSlug; _data/media manifest already exists. Use -Force to overwrite."
         $skipped++
         continue
     }
@@ -459,5 +445,5 @@ if ($Apply) {
     Write-Info "Complete. Processed $processed post(s), wrote $written manifest(s), skipped $skipped."
 }
 else {
-    Write-Info "Dry run complete. Processed $processed post(s), skipped $skipped. Pass -Apply to write media.yml files."
+    Write-Info "Dry run complete. Processed $processed post(s), skipped $skipped. Pass -Apply to write _data/media files."
 }
