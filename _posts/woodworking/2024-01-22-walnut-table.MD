@@ -108,6 +108,7 @@ Here is a mini photo gallery of the table and benches setup in our theatre room.
   autoplay="false"
   loop="false"
   playsinline="true"
+  orientation="landscape"
 %}
 
 ## Materials

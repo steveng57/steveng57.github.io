@@ -362,6 +362,17 @@ function Get-DisplayVideoDimensions
     {
         $rotation = [int]$StreamInfo.tags.rotate
     }
+    elseif (Test-ObjectProperty -InputObject $StreamInfo -Name "side_data_list")
+    {
+        foreach ($sideData in @($StreamInfo.side_data_list))
+        {
+            if (Test-ObjectProperty -InputObject $sideData -Name "rotation")
+            {
+                $rotation = [int]$sideData.rotation
+                break
+            }
+        }
+    }
 
     if ([Math]::Abs($rotation) % 180 -eq 90)
     {
@@ -479,7 +490,7 @@ function Get-VideoStreamInfo
     $args = @(
         "-v", "error",
         "-select_streams", "v:0",
-        "-show_entries", "stream=width,height,pix_fmt,color_space,color_transfer,color_primaries:stream_tags=rotate",
+        "-show_entries", "stream=width,height,pix_fmt,color_space,color_transfer,color_primaries:stream_tags=rotate:stream_side_data=rotation",
         "-of", "json",
         $InputFile
     )

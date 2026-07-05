@@ -245,9 +245,18 @@ figcaption,
 }
 
 .sjg-video-portrait .sjg-video-frame {
-    max-width: min(100%, 28rem);
+    width: min(100%, 45vh, 36rem);
+    aspect-ratio: var(--sjg-video-aspect, 9 / 16);
     margin-left: auto;
     margin-right: auto;
+}
+
+.sjg-video-portrait video.embed-video {
+    width: 100% !important;
+    height: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
 }
 
 video.embed-video+em {

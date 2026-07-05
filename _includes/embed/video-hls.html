@@ -99,6 +99,7 @@
 
       figure.classList.toggle("sjg-video-portrait", video.videoHeight > video.videoWidth);
       figure.classList.toggle("sjg-video-landscape", video.videoWidth >= video.videoHeight);
+      figure.style.setProperty("--sjg-video-aspect", `${video.videoWidth} / ${video.videoHeight}`);
     }, { once: true });
 
     if (video.canPlayType("application/vnd.apple.mpegurl")) {

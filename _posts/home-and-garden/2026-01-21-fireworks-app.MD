@@ -317,6 +317,7 @@ It has a two minute main show with a one minute finale.  It has full 3d camera r
   autoplay="false"
   loop="false"
   playsinline="true"
+  orientation="landscape"
 %}
 
 ## Resources

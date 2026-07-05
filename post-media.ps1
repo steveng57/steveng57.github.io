@@ -134,6 +134,75 @@ function ConvertTo-VideoId {
     return "$id-abr"
 }
 
+function Test-ObjectProperty {
+    param(
+        $InputObject,
+        [Parameter(Mandatory = $true)][string]$Name
+    )
+
+    return (
+        $null -ne $InputObject -and
+        $null -ne $InputObject.PSObject -and
+        @($InputObject.PSObject.Properties | Where-Object { $_.Name -eq $Name }).Count -gt 0
+    )
+}
+
+function Get-VideoOrientation {
+    param([Parameter(Mandatory = $true)][System.IO.FileInfo]$Video)
+
+    if (-not (Get-Command ffprobe -ErrorAction SilentlyContinue)) {
+        return ""
+    }
+
+    try {
+        $json = & ffprobe -v error -select_streams v:0 -show_entries "stream=width,height:stream_tags=rotate:stream_side_data=rotation" -of json $Video.FullName
+        if ($LASTEXITCODE -ne 0) {
+            return ""
+        }
+
+        $info = $json | ConvertFrom-Json
+        $stream = $info.streams | Select-Object -First 1
+        if (-not $stream) {
+            return ""
+        }
+
+        $width = if (Test-ObjectProperty -InputObject $stream -Name "width") { [int]$stream.width } else { 0 }
+        $height = if (Test-ObjectProperty -InputObject $stream -Name "height") { [int]$stream.height } else { 0 }
+        $rotation = 0
+        if ((Test-ObjectProperty -InputObject $stream -Name "tags") -and
+            (Test-ObjectProperty -InputObject $stream.tags -Name "rotate")) {
+            $rotation = [int]$stream.tags.rotate
+        }
+        elseif (Test-ObjectProperty -InputObject $stream -Name "side_data_list") {
+            foreach ($sideData in @($stream.side_data_list)) {
+                if (Test-ObjectProperty -InputObject $sideData -Name "rotation") {
+                    $rotation = [int]$sideData.rotation
+                    break
+                }
+            }
+        }
+
+        if ([Math]::Abs($rotation) % 180 -eq 90) {
+            $temp = $width
+            $width = $height
+            $height = $temp
+        }
+
+        if ($width -gt 0 -and $height -gt $width) {
+            return "portrait"
+        }
+
+        if ($width -gt 0 -and $height -gt 0) {
+            return "landscape"
+        }
+    }
+    catch {
+        return ""
+    }
+
+    return ""
+}
+
 function Get-ImportedVideoIncludeBlock {
     param(
         [System.IO.FileInfo[]]$ImportedCandidates,
@@ -153,12 +222,14 @@ function Get-ImportedVideoIncludeBlock {
         $baseName = [System.IO.Path]::GetFileNameWithoutExtension($video.Name)
         $playerId = ConvertTo-VideoId -Value $video.Name
         $mp4Line = if ($video.Extension.ToLowerInvariant() -eq ".mp4") { "  mp4=`"$($video.Name)`"`r`n" } else { "  mp4=`"`"`r`n" }
+        $orientation = Get-VideoOrientation -Video $video
+        $orientationLine = if (-not [string]::IsNullOrWhiteSpace($orientation)) { "  orientation=`"$orientation`"`r`n" } else { "" }
         $blocks += @"
 {% include embed/video-hls.html
   id="$playerId"
   master="stream/$baseName/master.m3u8"
 $mp4Line  poster="stream/$baseName/poster.avif"
-  title="$(($PostTitle).Replace('"', '&quot;'))"
+${orientationLine}  title="$(($PostTitle).Replace('"', '&quot;'))"
   caption=""
   controls="true"
   muted="false"
