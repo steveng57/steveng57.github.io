@@ -15,6 +15,7 @@
     - loop: true|false (default: false)
     - playsinline: true|false (default: true)
     - class: optional extra classes for figure wrapper
+    - orientation: optional `portrait` or `landscape` hint for initial layout
 {%- endcomment -%}
 
 {% assign player_id = include.id | default: "hls-player" %}
@@ -47,12 +48,19 @@
 {% assign muted_flag = include.muted | default: "false" | downcase %}
 {% assign loop_flag = include.loop | default: "false" | downcase %}
 {% assign playsinline_flag = include.playsinline | default: "true" | downcase %}
+{% assign orientation_class = "" %}
+{% assign orientation_hint = include.orientation | default: "" | downcase %}
+{% if orientation_hint == "portrait" %}
+  {% assign orientation_class = " sjg-video-portrait" %}
+{% elsif orientation_hint == "landscape" %}
+  {% assign orientation_class = " sjg-video-landscape" %}
+{% endif %}
 
 {% if hls_master == "" %}
   <p><strong>video-hls include error:</strong> `master` parameter is required.</p>
 {% else %}
-<figure class="sjg-video-hls {% if include.class %}{{ include.class }}{% endif %}">
-  <div class="rounded" style="overflow: hidden;">
+<figure class="sjg-video-hls{{ orientation_class }} {% if include.class %}{{ include.class }}{% endif %}">
+  <div class="sjg-video-frame rounded">
     <video
       id="{{ player_id | escape }}"
       class="embed-video w-100 d-block"
@@ -82,6 +90,16 @@
     if (!video) {
       return;
     }
+
+    video.addEventListener("loadedmetadata", () => {
+      const figure = video.closest(".sjg-video-hls");
+      if (!figure || !video.videoWidth || !video.videoHeight) {
+        return;
+      }
+
+      figure.classList.toggle("sjg-video-portrait", video.videoHeight > video.videoWidth);
+      figure.classList.toggle("sjg-video-landscape", video.videoWidth >= video.videoHeight);
+    }, { once: true });
 
     if (video.canPlayType("application/vnd.apple.mpegurl")) {
       video.src = hlsSource;

@@ -335,9 +335,97 @@ function New-VideoPoster
     Copy-Metadata -SourcePath $Clip.FullName -DestinationPath $posterPath
 }
 
+function Test-ObjectProperty
+{
+    param(
+        $InputObject,
+        [Parameter(Mandatory = $true)][string]$Name
+    )
+
+    return (
+        $null -ne $InputObject -and
+        $null -ne $InputObject.PSObject -and
+        @($InputObject.PSObject.Properties | Where-Object { $_.Name -eq $Name }).Count -gt 0
+    )
+}
+
+function Get-DisplayVideoDimensions
+{
+    param($StreamInfo)
+
+    $width = if (Test-ObjectProperty -InputObject $StreamInfo -Name "width") { [int]$StreamInfo.width } else { 0 }
+    $height = if (Test-ObjectProperty -InputObject $StreamInfo -Name "height") { [int]$StreamInfo.height } else { 0 }
+
+    $rotation = 0
+    if ((Test-ObjectProperty -InputObject $StreamInfo -Name "tags") -and
+        (Test-ObjectProperty -InputObject $StreamInfo.tags -Name "rotate"))
+    {
+        $rotation = [int]$StreamInfo.tags.rotate
+    }
+
+    if ([Math]::Abs($rotation) % 180 -eq 90)
+    {
+        return [pscustomobject]@{
+            Width  = $height
+            Height = $width
+        }
+    }
+
+    return [pscustomobject]@{
+        Width  = $width
+        Height = $height
+    }
+}
+
+function ConvertTo-EvenDimension
+{
+    param([Parameter(Mandatory = $true)][double]$Value)
+
+    $dimension = [Math]::Floor($Value)
+    if ($dimension % 2 -ne 0)
+    {
+        $dimension--
+    }
+
+    return [Math]::Max(2, [int]$dimension)
+}
+
+function New-Rendition
+{
+    param(
+        [Parameter(Mandatory = $true)][hashtable]$BaseRendition,
+        [Parameter(Mandatory = $true)][int]$SourceWidth,
+        [Parameter(Mandatory = $true)][int]$SourceHeight
+    )
+
+    $maxWidth = [int]$BaseRendition["Width"]
+    $maxHeight = [int]$BaseRendition["Height"]
+    if ($SourceHeight -gt $SourceWidth)
+    {
+        $maxWidth = [int]$BaseRendition["Height"]
+        $maxHeight = [int]$BaseRendition["Width"]
+    }
+
+    $scale = [Math]::Min($maxWidth / $SourceWidth, $maxHeight / $SourceHeight)
+
+    return [pscustomobject]@{
+        Name         = $BaseRendition["Name"]
+        Width        = ConvertTo-EvenDimension ($SourceWidth * $scale)
+        Height       = ConvertTo-EvenDimension ($SourceHeight * $scale)
+        VideoBitrate = $BaseRendition["VideoBitrate"]
+        MaxRate      = $BaseRendition["MaxRate"]
+        BufferSize   = $BaseRendition["BufferSize"]
+        AudioBitrate = $BaseRendition["AudioBitrate"]
+        Bandwidth    = $BaseRendition["Bandwidth"]
+    }
+}
+
 function Get-Renditions
 {
-    @(
+    param($StreamInfo)
+
+    $dimensions = Get-DisplayVideoDimensions -StreamInfo $StreamInfo
+    $baseRenditions = @(
         @{
             Name         = "360p"
             Width        = 640
@@ -369,6 +457,19 @@ function Get-Renditions
             Bandwidth    = 5500000
         }
     )
+
+    if ($dimensions.Width -le 0 -or $dimensions.Height -le 0)
+    {
+        return @($baseRenditions | ForEach-Object { [pscustomobject]$_ })
+    }
+
+    $renditions = [System.Collections.ArrayList]::new()
+    foreach ($baseRendition in $baseRenditions)
+    {
+        [void]$renditions.Add((New-Rendition -BaseRendition $baseRendition -SourceWidth $dimensions.Width -SourceHeight $dimensions.Height))
+    }
+
+    return @($renditions)
 }
 
 function Get-VideoStreamInfo
@@ -378,7 +479,7 @@ function Get-VideoStreamInfo
     $args = @(
         "-v", "error",
         "-select_streams", "v:0",
-        "-show_entries", "stream=pix_fmt,color_space,color_transfer,color_primaries",
+        "-show_entries", "stream=width,height,pix_fmt,color_space,color_transfer,color_primaries:stream_tags=rotate",
         "-of", "json",
         $InputFile
     )
@@ -423,11 +524,13 @@ function Get-HdrToneMapFilter
 function Get-VideoFilter
 {
     param(
-        [Parameter(Mandatory = $true)][hashtable]$Rendition,
+        [Parameter(Mandatory = $true)]$Rendition,
         [Parameter(Mandatory = $true)][bool]$IsHdr
     )
 
-    $resizeFilter = "scale=w=$($Rendition.Width):h=$($Rendition.Height):force_original_aspect_ratio=decrease,pad=$($Rendition.Width):$($Rendition.Height):(ow-iw)/2:(oh-ih)/2"
+    $width = $Rendition.Width
+    $height = $Rendition.Height
+    $resizeFilter = "scale=w=$($width):h=$($height),setsar=1"
     if (-not $IsHdr)
     {
         return "$resizeFilter,format=yuv420p"
@@ -441,11 +544,16 @@ function New-HlsVariant
     param(
         [Parameter(Mandatory = $true)][string]$InputFile,
         [Parameter(Mandatory = $true)][string]$OutputDir,
-        [Parameter(Mandatory = $true)][hashtable]$Rendition,
+        [Parameter(Mandatory = $true)]$Rendition,
         [Parameter(Mandatory = $true)][bool]$IsHdr
     )
 
-    $variantDir = Join-Path $OutputDir $Rendition.Name
+    $renditionName = $Rendition.Name
+    $videoBitrate = $Rendition.VideoBitrate
+    $maxRate = $Rendition.MaxRate
+    $bufferSize = $Rendition.BufferSize
+    $audioBitrate = $Rendition.AudioBitrate
+    $variantDir = Join-Path $OutputDir $renditionName
     if ($WhatIf)
     {
         Write-Host "[WhatIf] New-Item -ItemType Directory -Path $variantDir -Force"
@@ -471,11 +579,11 @@ function New-HlsVariant
         "-g", "48",
         "-keyint_min", "48",
         "-sc_threshold", "0",
-        "-b:v", $Rendition.VideoBitrate,
-        "-maxrate", $Rendition.MaxRate,
-        "-bufsize", $Rendition.BufferSize,
+        "-b:v", $videoBitrate,
+        "-maxrate", $maxRate,
+        "-bufsize", $bufferSize,
         "-c:a", "aac",
-        "-b:a", $Rendition.AudioBitrate,
+        "-b:a", $audioBitrate,
         "-ac", "2",
         "-ar", "48000",
         "-f", "hls",
@@ -492,11 +600,11 @@ function New-HlsVariant
         return
     }
 
-    Write-Host "Encoding $($Rendition.Name) from $InputFile"
+    Write-Host "Encoding $renditionName from $InputFile"
     & ffmpeg @args
     if ($LASTEXITCODE -ne 0)
     {
-        throw "ffmpeg failed for rendition $($Rendition.Name): $InputFile"
+        throw "ffmpeg failed for rendition ${renditionName}: $InputFile"
     }
 }
 
@@ -512,8 +620,12 @@ function New-MasterPlaylist
 
     foreach ($rendition in $Renditions)
     {
-        $lines += "#EXT-X-STREAM-INF:BANDWIDTH=$($rendition.Bandwidth),RESOLUTION=$($rendition.Width)x$($rendition.Height)"
-        $lines += "$($rendition.Name)/index.m3u8"
+        $bandwidth = $rendition.Bandwidth
+        $width = $rendition.Width
+        $height = $rendition.Height
+        $name = $rendition.Name
+        $lines += "#EXT-X-STREAM-INF:BANDWIDTH=$bandwidth,RESOLUTION=$($width)x$height"
+        $lines += "$name/index.m3u8"
     }
 
     if ($WhatIf)
@@ -574,7 +686,7 @@ function Convert-ClipToHls
         New-Item -ItemType Directory -Path $outputDir -Force | Out-Null
     }
 
-    $renditions = Get-Renditions
+    $renditions = Get-Renditions -StreamInfo $streamInfo
 
     foreach ($rendition in $renditions)
     {

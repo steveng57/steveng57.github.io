@@ -234,6 +234,22 @@ figcaption,
 }
 
 /* used to be sjg-video */
+.sjg-video-hls {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sjg-video-frame {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.sjg-video-portrait .sjg-video-frame {
+    max-width: min(100%, 28rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 video.embed-video+em {
     font-size: 0.875rem !important;
     /* Adjust as needed */
