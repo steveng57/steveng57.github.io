@@ -40,6 +40,7 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
 $RepoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+. (Join-Path $RepoRoot "post-media.ps1")
 
 function Write-Info {
     param([string]$Message)
@@ -227,19 +228,6 @@ function ConvertTo-YamlScalar {
     return '"' + $Value.Replace("\", "\\").Replace('"', '\"') + '"'
 }
 
-function Get-ImportableMedia {
-    param([string]$Folder)
-
-    if ([string]::IsNullOrWhiteSpace($Folder) -or -not (Test-Path -LiteralPath $Folder)) {
-        return @()
-    }
-
-    $extensions = @(".jpg", ".jpeg", ".png", ".heic", ".avif", ".mp4", ".mov")
-    return @(Get-ChildItem -LiteralPath $Folder -File |
-        Where-Object { $extensions -contains $_.Extension.ToLowerInvariant() } |
-        Sort-Object Name)
-}
-
 function Resolve-CoverImage {
     param(
         [string]$CurrentValue,
@@ -276,226 +264,6 @@ function Resolve-CoverImage {
     }
 
     return Read-RequiredValue -Prompt "Cover image filename, relative to the post media folder" -CurrentValue ""
-}
-
-function ConvertTo-SiteImageName {
-    param([Parameter(Mandatory = $true)][string]$ImageName)
-
-    $trimmed = $ImageName.Trim()
-    $extension = [System.IO.Path]::GetExtension($trimmed).ToLowerInvariant()
-    if ($extension -in @(".heic", ".jpg", ".jpeg", ".png")) {
-        $directory = [System.IO.Path]::GetDirectoryName($trimmed)
-        $baseName = [System.IO.Path]::GetFileNameWithoutExtension($trimmed)
-        $avifName = "$baseName.avif"
-        if ([string]::IsNullOrWhiteSpace($directory)) {
-            return $avifName
-        }
-
-        return (Join-Path -Path $directory -ChildPath $avifName).Replace('\', '/')
-    }
-
-    return $trimmed
-}
-
-function Resolve-CoverSourceName {
-    param(
-        [Parameter(Mandatory = $true)][string]$CoverValue,
-        [System.IO.FileInfo[]]$ImportedCandidates
-    )
-
-    $coverBase = [System.IO.Path]::GetFileNameWithoutExtension($CoverValue)
-    $masterExtensions = @(".heic", ".jpg", ".jpeg", ".png")
-    $matchingMaster = @($ImportedCandidates |
-        Where-Object {
-            $masterExtensions -contains $_.Extension.ToLowerInvariant() -and
-            [System.IO.Path]::GetFileNameWithoutExtension($_.Name) -eq $coverBase
-        } |
-        Select-Object -First 1)
-
-    if ($matchingMaster.Count -gt 0) {
-        return $matchingMaster[0].Name
-    }
-
-    return $CoverValue
-}
-
-function Get-ImportedImageIncludeBlock {
-    param(
-        [System.IO.FileInfo[]]$ImportedCandidates,
-        [string]$FallbackImage
-    )
-
-    $imageExtensions = @(".avif", ".png", ".jpg", ".jpeg", ".heic")
-    $imageNames = @($ImportedCandidates |
-        Where-Object { $imageExtensions -contains $_.Extension.ToLowerInvariant() } |
-        ForEach-Object { ConvertTo-SiteImageName -ImageName $_.Name } |
-        Sort-Object -Unique)
-
-    if ($imageNames.Count -eq 0) {
-        $imageNames = @($FallbackImage)
-    }
-
-    $lines = @()
-    foreach ($imageName in $imageNames) {
-        if (-not [string]::IsNullOrWhiteSpace($imageName)) {
-            $lines += "{% include html-side.html img=`"$imageName`" align=`"center-full`" %}"
-        }
-    }
-
-    return ($lines -join "`r`n`r`n")
-}
-
-function ConvertTo-VideoId {
-    param([Parameter(Mandatory = $true)][string]$Value)
-
-    $id = [System.IO.Path]::GetFileNameWithoutExtension($Value).ToLowerInvariant()
-    $id = $id -replace "[^a-z0-9]+", "-"
-    $id = $id.Trim("-")
-    if ([string]::IsNullOrWhiteSpace($id)) {
-        return "video"
-    }
-
-    return "$id-abr"
-}
-
-function Get-ImportedVideoIncludeBlock {
-    param(
-        [System.IO.FileInfo[]]$ImportedCandidates,
-        [string]$PostTitle
-    )
-
-    $videoFiles = @($ImportedCandidates |
-        Where-Object { @(".mp4", ".mov") -contains $_.Extension.ToLowerInvariant() } |
-        Sort-Object Name)
-
-    if ($videoFiles.Count -eq 0) {
-        return ""
-    }
-
-    $blocks = @()
-    foreach ($video in $videoFiles) {
-        $baseName = [System.IO.Path]::GetFileNameWithoutExtension($video.Name)
-        $playerId = ConvertTo-VideoId -Value $video.Name
-        $mp4Line = if ($video.Extension.ToLowerInvariant() -eq ".mp4") { "  mp4=`"$($video.Name)`"`r`n" } else { "  mp4=`"`"`r`n" }
-        $blocks += @"
-{% include embed/video-hls.html
-  id="$playerId"
-  master="stream/$baseName/master.m3u8"
-$mp4Line  poster="stream/$baseName/poster.avif"
-  title="$(($PostTitle).Replace('"', '&quot;'))"
-  caption=""
-  controls="true"
-  muted="false"
-  autoplay="false"
-  loop="false"
-  playsinline="true"
-%}
-"@
-    }
-
-    return ($blocks -join "`r`n")
-}
-
-function ConvertTo-YamlBoolean {
-    param([bool]$Value)
-
-    return $Value.ToString().ToLowerInvariant()
-}
-
-function New-MediaManifestContent {
-    param(
-        [System.IO.FileInfo[]]$ImportedCandidates,
-        [string]$CoverSource
-    )
-
-    $imageExtensions = @(".avif", ".png", ".jpg", ".jpeg", ".heic")
-    $imageFiles = @($ImportedCandidates |
-        Where-Object { $imageExtensions -contains $_.Extension.ToLowerInvariant() } |
-        Sort-Object Name)
-    $videoFiles = @($ImportedCandidates |
-        Where-Object { @(".mp4", ".mov") -contains $_.Extension.ToLowerInvariant() } |
-        Sort-Object Name)
-
-    if ($imageFiles.Count -eq 0 -and $videoFiles.Count -eq 0) {
-        return ""
-    }
-
-    $coverBase = [System.IO.Path]::GetFileNameWithoutExtension($CoverSource)
-    $lines = @()
-    if ($imageFiles.Count -gt 0) {
-        $lines += "cover: $CoverSource"
-        $lines += ""
-        $lines += "images:"
-
-        foreach ($image in $imageFiles) {
-            $isCover = ([System.IO.Path]::GetFileNameWithoutExtension($image.Name) -eq $coverBase)
-            $publishedName = ConvertTo-SiteImageName -ImageName $image.Name
-            $lines += "  - source: $($image.Name)"
-            $lines += "    published: $publishedName"
-            $lines += "    include: true"
-            $lines += "    gallery: true"
-            $lines += "    thumbnail: $(ConvertTo-YamlBoolean $isCover)"
-            $lines += "    caption: `"`""
-            $lines += ""
-        }
-    }
-
-    if ($videoFiles.Count -gt 0) {
-        if ($lines.Count -gt 0 -and $lines[-1] -ne "") {
-            $lines += ""
-        }
-
-        $lines += "videos:"
-        foreach ($video in $videoFiles) {
-            $baseName = [System.IO.Path]::GetFileNameWithoutExtension($video.Name)
-            $lines += "  - source: $($video.Name)"
-            $lines += "    published: stream/$baseName/master.m3u8"
-            $lines += "    poster: stream/$baseName/poster.avif"
-            $lines += "    include: true"
-            $lines += "    caption: `"`""
-            $lines += ""
-        }
-    }
-
-    return ($lines -join "`r`n")
-}
-
-function Invoke-ScopedHlsGeneration {
-    param([Parameter(Mandatory = $true)][string]$PostSlug)
-
-    $generatorPath = Join-Path $RepoRoot "gen-hls.ps1"
-    if (-not (Test-Path -LiteralPath $generatorPath)) {
-        Write-Warn "gen-hls.ps1 was not found; skipping HLS generation."
-        return
-    }
-
-    Write-Info "Generating HLS video assets for $PostSlug."
-    & $generatorPath -PostsRoot (Join-Path (Join-Path (Join-Path $RepoRoot "assets") "img") "posts") -TargetPosts $PostSlug
-}
-
-function Test-HasImportedVideo {
-    param([System.IO.FileInfo[]]$ImportedCandidates)
-
-    return (@($ImportedCandidates | Where-Object { @(".mp4", ".mov") -contains $_.Extension.ToLowerInvariant() }).Count -gt 0)
-}
-
-function Test-HasImportedImage {
-    param([System.IO.FileInfo[]]$ImportedCandidates)
-
-    return (@($ImportedCandidates | Where-Object { @(".avif", ".png", ".jpg", ".jpeg", ".heic") -contains $_.Extension.ToLowerInvariant() }).Count -gt 0)
-}
-
-function Invoke-ScopedDerivativeGeneration {
-    param([Parameter(Mandatory = $true)][string]$MediaPath)
-
-    $generatorPath = Join-Path $RepoRoot "gen-derived-avif.ps1"
-    if (-not (Test-Path -LiteralPath $generatorPath)) {
-        Write-Warn "gen-derived-avif.ps1 was not found; skipping derivative generation."
-        return
-    }
-
-    Write-Info "Generating derived AVIF assets for $MediaPath."
-    & $generatorPath -PostPath $MediaPath
 }
 
 Push-Location $RepoRoot
@@ -645,7 +413,7 @@ Write the finished result here.
         if ($GenerateDerivatives) {
             if (Test-HasImportedImage -ImportedCandidates $importCandidates) {
                 try {
-                    Invoke-ScopedDerivativeGeneration -MediaPath $mediaDir
+                    Invoke-ScopedDerivativeGeneration -RepoRoot $RepoRoot -MediaPath $mediaDir
                 }
                 catch {
                     Write-Warn "Derived image generation failed: $($_.Exception.Message)"
@@ -653,7 +421,7 @@ Write the finished result here.
             }
             if (Test-HasImportedVideo -ImportedCandidates $importCandidates) {
                 try {
-                    Invoke-ScopedHlsGeneration -PostSlug $Slug
+                    Invoke-ScopedHlsGeneration -RepoRoot $RepoRoot -PostSlug $Slug
                 }
                 catch {
                     Write-Warn "HLS video generation failed: $($_.Exception.Message)"

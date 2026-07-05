@@ -81,6 +81,22 @@ For a parameter-driven run:
 .\new-post.ps1 -Title "Shop Cabinet" -Description "A new storage cabinet." -TopCategory Woodworking -Subcategory Workshop -Tags Woodworking,Workshop -CoverImage IMG_1001.avif -CoverAlt "Finished cabinet" -GenerateDerivatives
 ```
 
+### Adding Media to an Existing Post
+
+Use `add-post-media.ps1` when a post already exists and you want to add more images or videos:
+
+```powershell
+.\add-post-media.ps1 -Slug pen-tray -ImportFrom C:\Temp\pen-tray-media
+```
+
+The script reuses the same media workflow as `new-post.ps1`. It copies supported media into `assets/img/posts/<slug>/`, updates `media.yml`, adds starter `html-side.html` or `embed/video-hls.html` include blocks to the post body, optionally runs image/video derivative generation, and then validates the post.
+
+You can also pass explicit files:
+
+```powershell
+.\add-post-media.ps1 -PostPath _posts\woodworking\2026-02-26-pen-tray.MD -MediaFiles C:\Temp\IMG_1002.HEIC,C:\Temp\walkthrough.MOV
+```
+
 Validate a post at any time:
 
 ```powershell
