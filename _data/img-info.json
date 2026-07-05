@@ -315,24 +315,24 @@
     "title": "Happy Puppy",
     "subject": "Happy Puppy",
     "datetaken": "2024-02-28T12:50:43",
-    "width": 1536,
-    "height": 2048,
+    "width": 2048,
+    "height": 1536,
     "gallery": true
   },
   "assets/img/posts/coasters/IMG_0706.avif": {
     "title": "Ignore the one on the right.",
     "subject": "Ignore the one on the right.",
     "datetaken": "2024-02-28T13:00:08",
-    "width": 1536,
-    "height": 2048,
+    "width": 2048,
+    "height": 1536,
     "gallery": false
   },
   "assets/img/posts/coasters/IMG_0708.avif": {
     "title": "The Classic Paw",
     "subject": "The Classic Paw",
     "datetaken": "2024-02-28T13:01:44",
-    "width": 1536,
-    "height": 2048,
+    "width": 2048,
+    "height": 1536,
     "gallery": true
   },
   "assets/img/posts/coasters/thumbnails-2x/IMG_0706.avif": {
@@ -579,8 +579,8 @@
     "title": "Engraving",
     "subject": "Engraving",
     "datetaken": "2023-07-20T16:34:09",
-    "width": 1536,
-    "height": 2048,
+    "width": 2048,
+    "height": 1536,
     "gallery": false
   },
   "assets/img/posts/cribbage-board/20230720_200245-1.avif": {
@@ -1603,8 +1603,8 @@
     "title": "You start with a board",
     "subject": "You start with a board",
     "datetaken": "2024-04-06T16:46:29",
-    "width": 1536,
-    "height": 2048,
+    "width": 2048,
+    "height": 1536,
     "gallery": false
   },
   "assets/img/posts/lillys-creations/IMG_0870.avif": {
@@ -1619,8 +1619,8 @@
     "title": "Carve with the Origin",
     "subject": "Carve with the Origin",
     "datetaken": "2024-04-07T18:52:40",
-    "width": 1536,
-    "height": 2048,
+    "width": 2048,
+    "height": 1536,
     "gallery": true
   },
   "assets/img/posts/lillys-creations/IMG_0882.avif": {
@@ -2907,8 +2907,8 @@
     "title": "In Play",
     "subject": "In Play",
     "datetaken": "2023-04-05T13:45:56",
-    "width": 2048,
-    "height": 1536,
+    "width": 1536,
+    "height": 2048,
     "gallery": true
   },
   "assets/img/posts/punkins-playground/IMG_0558.avif": {
@@ -3131,8 +3131,8 @@
     "title": "My Close Up",
     "subject": "My Close Up",
     "datetaken": "2026-02-14T15:53:01",
-    "width": 2000,
-    "height": 1500,
+    "width": 1500,
+    "height": 2000,
     "gallery": false
   },
   "assets/img/posts/sauna-picture-frames/Affogato.avif": {

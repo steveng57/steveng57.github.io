@@ -83,6 +83,35 @@ function Get-ExifTagTokens($metadata) {
       ForEach-Object { $_.ToString().Trim().ToLowerInvariant() }
 }
 
+function Get-DisplayDimensions($metadata) {
+   $width = if ($metadata -and $metadata.ImageWidth) { [int]$metadata.ImageWidth } else { 0 }
+   $height = if ($metadata -and $metadata.ImageHeight) { [int]$metadata.ImageHeight } else { 0 }
+
+   if ($width -le 0 -or $height -le 0) {
+      return [pscustomobject]@{
+         Width  = $width
+         Height = $height
+      }
+   }
+
+   $orientation = ""
+   if ($metadata -and $metadata.PSObject.Properties.Name -contains 'Orientation') {
+      $orientation = $metadata.Orientation.ToString()
+   }
+
+   if ($orientation -match '\b(90|270)\b') {
+      return [pscustomobject]@{
+         Width  = $height
+         Height = $width
+      }
+   }
+
+   return [pscustomobject]@{
+      Width  = $width
+      Height = $height
+   }
+}
+
 function ConvertTo-BoolValue($value) {
    if ($null -eq $value) {
       return $false
@@ -240,6 +269,7 @@ function Get-ExifMetadataMap($repoRoot, $imageFiles) {
          "-HierarchicalSubject",
          "-DateTimeOriginal",
          "-CreateDate",
+         "-Orientation",
          "-ImageWidth",
          "-ImageHeight"
       )
@@ -328,8 +358,7 @@ function GenerateImageCaptions($folderPath) {
             $dateTaken = Convert-DateTaken (Get-FirstExifValue $sourceMetadata @('DateTimeOriginal', 'CreateDate'))
          }
 
-         $width = if ($imageMetadata.ImageWidth) { [int]$imageMetadata.ImageWidth } else { 0 }
-         $height = if ($imageMetadata.ImageHeight) { [int]$imageMetadata.ImageHeight } else { 0 }
+         $displayDimensions = Get-DisplayDimensions $imageMetadata
 
          $tagTokens = @(Get-ExifTagTokens $imageMetadata)
          if ($tagTokens.Count -eq 0 -and $sourceMetadata) {
@@ -344,8 +373,8 @@ function GenerateImageCaptions($folderPath) {
             'title'     = $title
             'subject'   = $subject
             'datetaken' = $dateTaken
-            'width'     = $width
-            'height'    = $height
+            'width'     = $displayDimensions.Width
+            'height'    = $displayDimensions.Height
             'gallery'   = $gallery
          }
       }
