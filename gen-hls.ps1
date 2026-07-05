@@ -195,12 +195,20 @@ function New-VideoPoster
 {
     param(
         [Parameter(Mandatory = $true)][System.IO.FileInfo]$Clip,
-        [Parameter(Mandatory = $true)][string]$OutputDir
+        [Parameter(Mandatory = $true)][string]$OutputDir,
+        [Parameter(Mandatory = $true)][bool]$IsHdr
     )
 
     if (-not (Test-Path -LiteralPath $OutputDir))
     {
-        New-Item -ItemType Directory -Path $OutputDir -Force | Out-Null
+        if ($WhatIf)
+        {
+            Write-Host "[WhatIf] New-Item -ItemType Directory -Path $OutputDir -Force"
+        }
+        else
+        {
+            New-Item -ItemType Directory -Path $OutputDir -Force | Out-Null
+        }
     }
 
     $posterPath = Join-Path $OutputDir "poster.avif"
@@ -233,6 +241,69 @@ function New-VideoPoster
     }
 
     $resizePercent = if ($PosterScale -ne 100) { "{0}%" -f $PosterScale } else { $null }
+
+    if ($IsHdr)
+    {
+        $tempPoster = Join-Path ([System.IO.Path]::GetTempPath()) ("hls-poster-{0}.png" -f ([guid]::NewGuid().ToString("N")))
+        $posterFilter = Get-HdrToneMapFilter
+        if ($PosterScale -ne 100)
+        {
+            $posterFilter = "$posterFilter,scale=iw*$PosterScale/100:ih*$PosterScale/100"
+        }
+        $posterFilter = "$posterFilter,format=rgb24"
+
+        $ffmpegArgs = @(
+            "-y",
+            "-i", $Clip.FullName,
+            "-map", "0:v:0",
+            "-frames:v", "1",
+            "-vf", $posterFilter,
+            "-update", "1",
+            $tempPoster
+        )
+
+        $magickArgs = @(
+            $tempPoster,
+            "-strip",
+            "-quality",
+            $PosterQuality.ToString(),
+            $posterPath
+        )
+
+        if ($WhatIf)
+        {
+            Write-Host "[WhatIf] ffmpeg $($ffmpegArgs -join ' ')"
+            Write-Host "[WhatIf] magick $($magickArgs -join ' ')"
+            Write-Host "[WhatIf] exiftool -TagsFromFile $($Clip.FullName) ... $posterPath"
+            return
+        }
+
+        try
+        {
+            Write-Host "Generating tone-mapped poster frame: $posterPath"
+            & ffmpeg @ffmpegArgs
+            if ($LASTEXITCODE -ne 0)
+            {
+                throw "ffmpeg failed while extracting tone-mapped poster for clip $($Clip.FullName)"
+            }
+
+            & magick @magickArgs
+            if ($LASTEXITCODE -ne 0)
+            {
+                throw "magick failed while generating poster for clip $($Clip.FullName)"
+            }
+        }
+        finally
+        {
+            if (Test-Path -LiteralPath $tempPoster)
+            {
+                Remove-Item -LiteralPath $tempPoster -Force
+            }
+        }
+
+        Copy-Metadata -SourcePath $Clip.FullName -DestinationPath $posterPath
+        return
+    }
 
     $inputArg = "{0}[0]" -f $Clip.FullName
     $args = @()
@@ -300,16 +371,89 @@ function Get-Renditions
     )
 }
 
+function Get-VideoStreamInfo
+{
+    param([Parameter(Mandatory = $true)][string]$InputFile)
+
+    $args = @(
+        "-v", "error",
+        "-select_streams", "v:0",
+        "-show_entries", "stream=pix_fmt,color_space,color_transfer,color_primaries",
+        "-of", "json",
+        $InputFile
+    )
+
+    $json = & ffprobe @args
+    if ($LASTEXITCODE -ne 0)
+    {
+        throw "ffprobe failed while reading video stream info: $InputFile"
+    }
+
+    $info = $json | ConvertFrom-Json
+    return $info.streams | Select-Object -First 1
+}
+
+function Test-HdrVideo
+{
+    param($StreamInfo)
+
+    if ($null -eq $StreamInfo)
+    {
+        return $false
+    }
+
+    $pixFmt = if ($StreamInfo.PSObject.Properties.Name -contains "pix_fmt") { $StreamInfo.pix_fmt } else { "" }
+    $transfer = if ($StreamInfo.PSObject.Properties.Name -contains "color_transfer") { $StreamInfo.color_transfer } else { "" }
+    $primaries = if ($StreamInfo.PSObject.Properties.Name -contains "color_primaries") { $StreamInfo.color_primaries } else { "" }
+    $space = if ($StreamInfo.PSObject.Properties.Name -contains "color_space") { $StreamInfo.color_space } else { "" }
+
+    return (
+        $pixFmt -match "10|12" -or
+        $transfer -in @("arib-std-b67", "smpte2084") -or
+        $primaries -eq "bt2020" -or
+        $space -match "bt2020"
+    )
+}
+
+function Get-HdrToneMapFilter
+{
+    return "zscale=transfer=linear:npl=100,format=gbrpf32le,zscale=primaries=bt709,tonemap=tonemap=hable:desat=0,zscale=transfer=bt709:matrix=bt709:range=tv"
+}
+
+function Get-VideoFilter
+{
+    param(
+        [Parameter(Mandatory = $true)][hashtable]$Rendition,
+        [Parameter(Mandatory = $true)][bool]$IsHdr
+    )
+
+    $resizeFilter = "scale=w=$($Rendition.Width):h=$($Rendition.Height):force_original_aspect_ratio=decrease,pad=$($Rendition.Width):$($Rendition.Height):(ow-iw)/2:(oh-ih)/2"
+    if (-not $IsHdr)
+    {
+        return "$resizeFilter,format=yuv420p"
+    }
+
+    return "$(Get-HdrToneMapFilter),$resizeFilter,format=yuv420p"
+}
+
 function New-HlsVariant
 {
     param(
         [Parameter(Mandatory = $true)][string]$InputFile,
         [Parameter(Mandatory = $true)][string]$OutputDir,
-        [Parameter(Mandatory = $true)][hashtable]$Rendition
+        [Parameter(Mandatory = $true)][hashtable]$Rendition,
+        [Parameter(Mandatory = $true)][bool]$IsHdr
     )
 
     $variantDir = Join-Path $OutputDir $Rendition.Name
-    New-Item -ItemType Directory -Path $variantDir -Force | Out-Null
+    if ($WhatIf)
+    {
+        Write-Host "[WhatIf] New-Item -ItemType Directory -Path $variantDir -Force"
+    }
+    else
+    {
+        New-Item -ItemType Directory -Path $variantDir -Force | Out-Null
+    }
 
     $playlistPath = Join-Path $variantDir "index.m3u8"
     $segmentPattern = Join-Path $variantDir "seg_%03d.ts"
@@ -317,9 +461,12 @@ function New-HlsVariant
     $args = @(
         "-y",
         "-i", $InputFile,
-        "-vf", "scale=w=$($Rendition.Width):h=$($Rendition.Height):force_original_aspect_ratio=decrease,pad=$($Rendition.Width):$($Rendition.Height):(ow-iw)/2:(oh-ih)/2",
+        "-map", "0:v:0",
+        "-map", "0:a:0?",
+        "-vf", (Get-VideoFilter -Rendition $Rendition -IsHdr $IsHdr),
         "-c:v", "libx264",
         "-profile:v", "high",
+        "-pix_fmt", "yuv420p",
         "-preset", "medium",
         "-g", "48",
         "-keyint_min", "48",
@@ -369,6 +516,12 @@ function New-MasterPlaylist
         $lines += "$($rendition.Name)/index.m3u8"
     }
 
+    if ($WhatIf)
+    {
+        Write-Host "[WhatIf] Set-Content -Path $masterPath -Encoding UTF8"
+        return
+    }
+
     Set-Content -Path $masterPath -Value $lines -Encoding UTF8
 }
 
@@ -386,28 +539,50 @@ function Convert-ClipToHls
     $streamRoot = Join-Path $postDir.FullName "stream"
     $outputDir = Join-Path $streamRoot $Clip.BaseName
 
+    $streamInfo = Get-VideoStreamInfo -InputFile $Clip.FullName
+    $isHdr = Test-HdrVideo -StreamInfo $streamInfo
+    if ($isHdr)
+    {
+        Write-Host "Detected HDR/BT.2020 source; applying SDR tone mapping: $($Clip.FullName)"
+    }
+
     if ((Test-Path $outputDir) -and -not $Rebuild)
     {
-        New-VideoPoster -Clip $Clip -OutputDir $outputDir
+        New-VideoPoster -Clip $Clip -OutputDir $outputDir -IsHdr $isHdr
         Write-Host "Skipping existing HLS output: $outputDir"
         return
     }
 
     if (Test-Path $outputDir)
     {
-        Remove-Item -Path $outputDir -Recurse -Force
+        if ($WhatIf)
+        {
+            Write-Host "[WhatIf] Remove-Item -Path $outputDir -Recurse -Force"
+        }
+        else
+        {
+            Remove-Item -Path $outputDir -Recurse -Force
+        }
     }
 
-    New-Item -ItemType Directory -Path $outputDir -Force | Out-Null
+    if ($WhatIf)
+    {
+        Write-Host "[WhatIf] New-Item -ItemType Directory -Path $outputDir -Force"
+    }
+    else
+    {
+        New-Item -ItemType Directory -Path $outputDir -Force | Out-Null
+    }
+
     $renditions = Get-Renditions
 
     foreach ($rendition in $renditions)
     {
-        New-HlsVariant -InputFile $Clip.FullName -OutputDir $outputDir -Rendition $rendition
+        New-HlsVariant -InputFile $Clip.FullName -OutputDir $outputDir -Rendition $rendition -IsHdr $isHdr
     }
 
     New-MasterPlaylist -OutputDir $outputDir -Renditions $renditions
-    New-VideoPoster -Clip $Clip -OutputDir $outputDir
+    New-VideoPoster -Clip $Clip -OutputDir $outputDir -IsHdr $isHdr
     Write-Host "Created HLS set: $outputDir"
 }
 

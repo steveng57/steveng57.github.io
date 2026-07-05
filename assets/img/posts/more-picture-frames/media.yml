@@ -1,0 +1,87 @@
+cover: "IMG_1674.jpeg"
+
+images:
+  - source: "IMG_1674.jpeg"
+    published: "IMG_1674.avif"
+    include: true
+    gallery: false
+    thumbnail: true
+    caption: "Framed Something-or-Other"
+
+  - source: "IMG_1652.jpeg"
+    published: "IMG_1652.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Frameless Tulips"
+
+  - source: "IMG_1653.jpeg"
+    published: "IMG_1653.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Frameless Something-or-Other"
+
+  - source: "IMG_1655.jpeg"
+    published: "IMG_1655.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Strap Clamps Rule!!!"
+
+  - source: "IMG_1658.jpeg"
+    published: "IMG_1658.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Glue-up Done"
+
+  - source: "IMG_1667.jpeg"
+    published: "IMG_1667.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Primed and Ready for Paint"
+
+  - source: "IMG_1675.jpeg"
+    published: "IMG_1675.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Framed Tulips"
+
+  - source: "IMG_1680.jpeg"
+    published: "IMG_1680.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Needs Some Pop"
+
+  - source: "IMG_1689.jpeg"
+    published: "IMG_1689.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Domino Detailing"
+
+  - source: "IMG_1696.jpeg"
+    published: "IMG_1696.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Headed for the Gazebo"
+
+  - source: "IMG_1697.jpeg"
+    published: "IMG_1697.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Destination: New Sauna"
+
+  - source: "IMG_1695.jpeg"
+    published: "IMG_1695.avif"
+    include: false
+    gallery: true
+    thumbnail: false
+    caption: "Mounted and Ready to Hang"
+

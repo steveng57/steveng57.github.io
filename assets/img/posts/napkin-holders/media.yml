@@ -1,0 +1,38 @@
+cover: "20221122_113942.jpeg"
+
+images:
+  - source: "20221122_113942.jpeg"
+    published: "20221122_113942.avif"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Deluxe Napkin Holder"
+
+  - source: "20221122_113946.jpeg"
+    published: "20221122_113946.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Different Angle"
+
+  - source: "IMG_DT1.jpeg"
+    published: "IMG_DT1.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "New Home"
+
+  - source: "IMG_DT2.jpeg"
+    published: "IMG_DT2.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "One for Friends"
+
+  - source: "IMG_0555.jpeg"
+    published: "IMG_0555.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Looking Pretty"
+

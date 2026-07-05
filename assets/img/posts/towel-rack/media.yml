@@ -1,0 +1,31 @@
+cover: "IMG_0681.jpeg"
+
+images:
+  - source: "IMG_0681.jpeg"
+    published: "IMG_0681.avif"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "In the Bath"
+
+  - source: "towel-rack-sketchup.jpeg"
+    published: "towel-rack-sketchup.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Sketchup for Towel Rack"
+
+  - source: "IMG_0677.jpeg"
+    published: "IMG_0677.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "My Good Side"
+
+  - source: "IMG_0678.jpeg"
+    published: "IMG_0678.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Up Front"
+

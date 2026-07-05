@@ -1,0 +1,59 @@
+cover: "20220114_114921.jpeg"
+
+images:
+  - source: "20220114_114921.jpeg"
+    published: "20220114_114921.avif"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Arrrg, the drawer faces were too small"
+
+  - source: "theatre-kitchen-sketchup.jpeg"
+    published: "theatre-kitchen-sketchup.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "A detailed design was needed"
+
+  - source: "IMG_0542.jpeg"
+    published: "IMG_0542.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Mistakes Were Made"
+
+  - source: "20220123_191254.jpeg"
+    published: "20220123_191254.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Awaiting granite"
+
+  - source: "20220131_222101.jpeg"
+    published: "20220131_222101.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Cool blue lights on fridge"
+
+  - source: "IMG_0154.jpeg"
+    published: "IMG_0154.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "One needs cool lighting"
+
+  - source: "IMG_0541.jpeg"
+    published: "IMG_0541.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "All Done"
+
+  - source: "IMG_0540.jpeg"
+    published: "IMG_0540.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Popcorn machine at the ready"
+

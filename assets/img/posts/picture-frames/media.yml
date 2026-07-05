@@ -1,0 +1,31 @@
+cover: "20230822_191820.jpeg"
+
+images:
+  - source: "20230822_191820.jpeg"
+    published: "20230822_191820.avif"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Aligned with a Deck of Cards"
+
+  - source: "20230822_184956.jpeg"
+    published: "20230822_184956.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Black for the Shadow Effect"
+
+  - source: "20230822_184948.jpeg"
+    published: "20230822_184948.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Poplar frames are popular"
+
+  - source: "IMG_0636.jpeg"
+    published: "IMG_0636.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Proudly on display in our guest bedroom"
+

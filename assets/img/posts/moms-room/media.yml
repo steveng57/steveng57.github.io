@@ -1,0 +1,31 @@
+cover: "IMG_0748.jpeg"
+
+images:
+  - source: "IMG_0748.jpeg"
+    published: "IMG_0748.avif"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Simple Custom Desk"
+
+  - source: "IMG_0746.jpeg"
+    published: "IMG_0746.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "First Bookcase"
+
+  - source: "IMG_0749.jpeg"
+    published: "IMG_0749.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Unintentional Keepsake Box"
+
+  - source: "IMG_0750.jpeg"
+    published: "IMG_0750.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Unplanned Box"
+

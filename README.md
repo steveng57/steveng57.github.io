@@ -24,9 +24,92 @@ This was built on a windows machine, and requires the following additional apps 
 
 Thats a bit long.  Start with searches on Jekyll and Github Pages.  Go from there.
 
+### Creating a New Post
+
+Use the guided post wizard:
+
+```powershell
+.\new-post.ps1
+```
+
+The wizard creates both pieces needed for a post:
+
+- `_posts/<top-category>/YYYY-MM-DD-slug.MD`
+- `assets/img/posts/<slug>/`
+
+It prompts for title, date, category, tags, description, cover image, and optional pin/favorite/series metadata. It can also copy source media from a folder into the new post media folder. If you pick a HEIC/JPG/PNG cover image, the generated markdown references the matching `.avif` file for the site image and thumbnail. Imported still images are also added to the post body as `html-side.html` include lines.
+
+For imported still images, the wizard also creates `assets/img/posts/<slug>/media.yml`. This file captures authoring intent while keeping HEIC/JPG/PNG files as master images and AVIF files as the published site images:
+
+```yaml
+cover: IMG_1001.HEIC
+
+images:
+  - source: IMG_1001.HEIC
+    published: IMG_1001.avif
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: ""
+```
+
+`source` is the master image in the post media folder. `published` is optional; when present, it is the site image filename that derived AVIF generation and `_data/img-info.json` metadata should use. When `media.yml` exists, media scripts use it instead of Windows tags for gallery and thumbnail decisions. If it does not exist, scripts fall back to the legacy tag-based behavior. Jekyll still reads `_data/img-info.json`; `media.yml` is input for the PowerShell tooling, while `img-info.json` remains generated metadata for dimensions, dates, captions, and gallery rendering.
+
+Legacy post media folders can be converted with a dry run first:
+
+```powershell
+./convert-media-manifests.ps1 -Slug pen-tray
+./convert-media-manifests.ps1 -Slug pen-tray -Apply
+```
+
+The converter infers `media.yml` from post front matter, image includes, and the current `_data/img-info.json` snapshot. It does not read Windows tags. Use `-Force` only when intentionally replacing an existing manifest.
+
+Imported `.mp4` and `.mov` files are copied into the post media folder as source videos. The wizard adds a `videos:` section to `media.yml`, emits a starter `embed/video-hls.html` include, and, when derivative generation is enabled, runs `gen-hls.ps1` for the new post folder. HLS output is written under `stream/<video-name>/`.
+
+```yaml
+videos:
+  - source: walkthrough.mp4
+    published: stream/walkthrough/master.m3u8
+    poster: stream/walkthrough/poster.avif
+    include: true
+    caption: ""
+```
+
+For a parameter-driven run:
+
+```powershell
+.\new-post.ps1 -Title "Shop Cabinet" -Description "A new storage cabinet." -TopCategory Woodworking -Subcategory Workshop -Tags Woodworking,Workshop -CoverImage IMG_1001.avif -CoverAlt "Finished cabinet" -GenerateDerivatives
+```
+
+### Adding Media to an Existing Post
+
+Use `add-post-media.ps1` when a post already exists and you want to add more images or videos:
+
+```powershell
+.\add-post-media.ps1 -Slug pen-tray -ImportFrom C:\Temp\pen-tray-media
+```
+
+The script reuses the same media workflow as `new-post.ps1`. It copies supported media into `assets/img/posts/<slug>/`, updates `media.yml`, adds starter `html-side.html` or `embed/video-hls.html` include blocks to the post body, optionally runs image/video derivative generation, and then validates the post.
+
+You can also pass explicit files:
+
+```powershell
+.\add-post-media.ps1 -PostPath _posts\woodworking\2026-02-26-pen-tray.MD -MediaFiles C:\Temp\IMG_1002.HEIC,C:\Temp\walkthrough.MOV
+```
+
+Validate a post at any time:
+
+```powershell
+.\test-post.ps1 -PostPath _posts\woodworking\2026-02-26-pen-tray.MD
+.\test-post.ps1 -Slug pen-tray
+```
+
+The validator checks front matter, category shape, the media folder, cover image, cover thumbnail, in-post image/video include references, and category icon coverage. Add `-BuildCheck` to run `bundle exec jekyll build` after the convention checks.
+
 This was built on Windows and there are a couple of pre-jekyll-build steps to run via Windows Powershell
-  - To generate thumbnail/tinyfile derivatives run `./gen-derived-avif.ps1`.  Note that jpeg (and jpg) files are all converted to avif in this process.  The original jpeg's serve as a source file, but are not used directly in the site.  They are excluded (ignored) by the Jekyll compiler.
-  - To generate the captions data file (`_data/img-info.json`) run `./gen-imagecaptions.ps1`.
+  - To generate full-size AVIF files plus thumbnail/tinyfile derivatives run `./gen-derived-avif.ps1`.  Note that HEIC, jpeg/jpg, and png files serve as source files, but are not used directly in the site. Full-size AVIF files default to `-MaxDimension 2048`.
+    - To process only one post media folder, run `./gen-derived-avif.ps1 -PostSlug pen-tray`, `./gen-derived-avif.ps1 -PostPath assets/img/posts/pen-tray`, or `./gen-derived-avif.ps1 -SourcePath assets/img/posts/pen-tray`.
+  - To generate the image metadata file (`_data/img-info.json`) run `./gen-img-info.ps1`.
 
 Deprecated helper scripts are archived under `deprecated/` for historical reference.
 

@@ -1,0 +1,31 @@
+cover: "20230405_141951.jpeg"
+
+images:
+  - source: "20230405_141951.jpeg"
+    published: "20230405_141951.avif"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "The Flowers"
+
+  - source: "tray-handle-sketchup.jpeg"
+    published: "tray-handle-sketchup.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Tray Handle Design for Shaper Origin"
+
+  - source: "tray-sketchup.jpeg"
+    published: "tray-sketchup.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Tray in Sketchup for fun"
+
+  - source: "20230405_141946.jpeg"
+    published: "20230405_141946.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "The Tree"
+

@@ -9,7 +9,7 @@
     serving options for different development scenarios.
 
 .PARAMETER RegenerateImages
-    Regenerate derived AVIF assets (thumbnails/tinyfiles) and image captions before serving
+    Regenerate derived AVIF assets (thumbnails/tinyfiles) and image metadata before serving
 
 .PARAMETER NoDrafts
     Exclude drafts from the build
@@ -214,23 +214,23 @@ function Update-ImageAssets
         Write-Warning "gen-derived-avif.ps1 not found"
     }
     
-    # Generate image captions
-    if (Test-Path "gen-imagecaptions.ps1")
+    # Generate image metadata
+    if (Test-Path "gen-img-info.ps1")
     {
-        Write-Info "Generating image captions..."
+        Write-Info "Generating image metadata..."
         try
         {
-            & ".\gen-imagecaptions.ps1"
-            Write-Success "Image captions generated"
+            & ".\gen-img-info.ps1"
+            Write-Success "Image metadata generated"
         }
         catch
         {
-            Write-Warning "Image caption generation failed: $_"
+            Write-Warning "Image metadata generation failed: $_"
         }
     }
     else
     {
-        Write-Warning "gen-imagecaptions.ps1 not found"
+        Write-Warning "gen-img-info.ps1 not found"
     }
 }
 

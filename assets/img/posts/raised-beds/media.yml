@@ -1,0 +1,31 @@
+cover: "20220628_125950.jpeg"
+
+images:
+  - source: "20220628_125950.jpeg"
+    published: "20220628_125950.avif"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Where's my dirt?"
+
+  - source: "20220628_125859.jpeg"
+    published: "20220628_125859.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Under Construction in Garage"
+
+  - source: "20220628_125916.jpeg"
+    published: "20220628_125916.avif"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "End Shot"
+
+  - source: "IMG_1012.jpeg"
+    published: "IMG_1012.avif"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Greenhouse Garden Beds"
+
