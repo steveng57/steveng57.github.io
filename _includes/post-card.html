@@ -1,0 +1,26 @@
+{% comment %}
+  Render a single post card by slug.
+
+  Usage:
+    {% include post-card.html slug="sauna-picture-frames" %}
+{% endcomment %}
+
+{% assign target_slug = include.slug | default: include.post_slug %}
+{% assign post = include.post %}
+
+{% if post == nil and target_slug %}
+  {% assign post = site.posts | where: 'slug', target_slug | first %}
+{% endif %}
+
+{% if post == nil and target_slug %}
+  {% assign target_url = '/posts/' | append: target_slug | append: '/' %}
+  {% assign post = site.posts | where: 'url', target_url | first %}
+{% endif %}
+
+{% if post %}
+  <div class="post-list flex-grow-1 px-xl-1">
+    {% include post-card-item.html post=post %}
+  </div>
+{% elsif include.show_missing %}
+  <p class="text-muted">Post not found: {{ target_slug }}</p>
+{% endif %}

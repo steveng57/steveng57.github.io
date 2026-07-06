@@ -61,6 +61,15 @@
       {% continue %}
     {% endunless %}
 
+    {% if _left contains 'data-no-refactor' %}
+      {% assign _left = _left
+        | replace: ' data-no-refactor="true"', ''
+        | replace: ' data-no-refactor="1"', ''
+      %}
+      {% assign _img_content = _img_content | append: IMG_TAG | append: _left | append: _right %}
+      {% continue %}
+    {% endif %}
+
     {% assign _left = _left | remove: ' /' | replace: ' w=', ' width=' | replace: ' h=', ' height=' %}
     {% assign _attrs = _left | split: '" ' %}
 
