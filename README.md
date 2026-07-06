@@ -106,6 +106,15 @@ Validate a post at any time:
 
 The validator checks front matter, category shape, the media folder, cover image, cover thumbnail, in-post image/video include references, and category icon coverage. Add `-BuildCheck` to run `bundle exec jekyll build` after the convention checks.
 
+Validate every media manifest at any time:
+
+```powershell
+.\test-media-manifests.ps1
+.\test-media-manifests.ps1 -Slug pen-tray
+```
+
+The media manifest validator checks `_data/media/<slug>.yml` files against `assets/img/posts/<slug>/`, including source files, published AVIF files, requested thumbnails, gallery tinyfiles, video HLS masters, posters, duplicate entries, and leftover legacy `media.yml` files. It prints only warnings/errors by default; add `-Verbose` for the full per-file trace or `-TreatWarningsAsErrors` for stricter checks.
+
 This was built on Windows and there are a couple of pre-jekyll-build steps to run via Windows Powershell
   - To generate full-size AVIF files plus thumbnail/tinyfile derivatives run `./gen-derived-avif.ps1`.  Note that HEIC, jpeg/jpg, and png files serve as source files, but are not used directly in the site. Full-size AVIF files default to `-MaxDimension 2048`.
     - To process only one post media folder, run `./gen-derived-avif.ps1 -PostSlug pen-tray`, `./gen-derived-avif.ps1 -PostPath assets/img/posts/pen-tray`, or `./gen-derived-avif.ps1 -SourcePath assets/img/posts/pen-tray`.

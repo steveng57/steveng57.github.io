@@ -231,7 +231,6 @@ function Get-ImportedVideoIncludeBlock {
   master="stream/$baseName/master.m3u8"
 $mp4Line  poster="stream/$baseName/poster.avif"
 ${orientationLine}  title="$(($PostTitle).Replace('"', '&quot;'))"
-  caption=""
   controls="true"
   muted="false"
   autoplay="false"

@@ -159,127 +159,6 @@ function Get-PrimaryImages
         Where-Object { @('.jpeg', '.jpg', '.heic', '.png') -contains $_.Extension.ToLowerInvariant() })
 }
 
-function ConvertTo-BoolValue
-{
-    param($Value)
-
-    if ($null -eq $Value)
-    {
-        return $false
-    }
-
-    return @('true', 'yes', '1', 'on') -contains $Value.ToString().Trim().ToLowerInvariant()
-}
-
-function ConvertTo-SiteImageName
-{
-    param([Parameter(Mandatory = $true)][string]$ImageName)
-
-    $trimmed = $ImageName.Trim().Trim('"').Trim("'")
-    $extension = [System.IO.Path]::GetExtension($trimmed).ToLowerInvariant()
-    if ($extension -in @('.heic', '.jpg', '.jpeg', '.png'))
-    {
-        return ([System.IO.Path]::GetFileNameWithoutExtension($trimmed) + '.avif')
-    }
-
-    return $trimmed
-}
-
-function Get-PublishedImageName
-{
-    param([Parameter(Mandatory = $true)]$ManifestImage)
-
-    if ($ManifestImage.PSObject.Properties.Name -contains 'Published' -and -not [string]::IsNullOrWhiteSpace($ManifestImage.Published))
-    {
-        return $ManifestImage.Published
-    }
-
-    return ConvertTo-SiteImageName -ImageName $ManifestImage.Source
-}
-
-function Read-MediaManifest
-{
-    param([Parameter(Mandatory = $true)][System.IO.DirectoryInfo]$Folder)
-
-    $manifestPath = Join-Path -Path $Folder.FullName -ChildPath "media.yml"
-    if (-not (Test-Path -LiteralPath $manifestPath))
-    {
-        return $null
-    }
-
-    $manifest = [ordered]@{
-        Cover = ""
-        Images = @()
-    }
-    $current = $null
-    $section = ""
-
-    foreach ($line in Get-Content -LiteralPath $manifestPath)
-    {
-        if ($line -match '^\s*#' -or [string]::IsNullOrWhiteSpace($line))
-        {
-            continue
-        }
-
-        if ($line -match '^\s*cover:\s*(.+?)\s*$')
-        {
-            $manifest.Cover = $matches[1].Trim().Trim('"').Trim("'")
-            continue
-        }
-
-        if ($line -match '^\s*images:\s*$')
-        {
-            $section = "images"
-            continue
-        }
-
-        if ($line -match '^\s*videos:\s*$')
-        {
-            $section = "videos"
-            continue
-        }
-
-        if ($section -eq "images" -and $line -match '^\s*-\s*source:\s*(.+?)\s*$')
-        {
-            if ($current)
-            {
-                $manifest.Images += [pscustomobject]$current
-            }
-
-            $current = [ordered]@{
-                Source = $matches[1].Trim().Trim('"').Trim("'")
-                Published = ""
-                Include = $false
-                Gallery = $false
-                Thumbnail = $false
-                Caption = ""
-            }
-            continue
-        }
-
-        if ($section -eq "images" -and $current -and $line -match '^\s*(published|include|gallery|thumbnail|caption):\s*(.*?)\s*$')
-        {
-            $key = $matches[1].ToLowerInvariant()
-            $value = $matches[2].Trim().Trim('"').Trim("'")
-            switch ($key)
-            {
-                'published' { $current.Published = $value }
-                'include' { $current.Include = ConvertTo-BoolValue $value }
-                'gallery' { $current.Gallery = ConvertTo-BoolValue $value }
-                'thumbnail' { $current.Thumbnail = ConvertTo-BoolValue $value }
-                'caption' { $current.Caption = $value }
-            }
-        }
-    }
-
-    if ($current)
-    {
-        $manifest.Images += [pscustomobject]$current
-    }
-
-    return [pscustomobject]$manifest
-}
-
 function Get-ManifestImageFile
 {
     param(
@@ -437,7 +316,7 @@ foreach ($postFolder in $postFolders)
             {
                 $imagesToProcess += [pscustomobject]@{
                     File = $imageFile
-                    Published = Get-PublishedImageName -ManifestImage $manifestImage
+                    Published = Get-PublishedImageName -Image $manifestImage
                     NeedsThumbnail = [bool]$manifestImage.Thumbnail
                     NeedsTinyfile = [bool]$manifestImage.Gallery
                 }
