@@ -70,7 +70,8 @@ var dynamicImages = [
         {% if media_item %}
             {% assign gallery_flag = media_item.gallery %}
         {% endif %}
-        {% assign image_title = media_item.caption | default: image_meta.title %}
+        {% assign filename_caption = image.name | url_decode %}
+        {% assign image_title = media_item.caption | default: image_meta.title | default: filename_caption %}
         {% if gallery_flag %}
             {% assign postname = image.path | replace: '/tinyfiles', '' | replace: albumfolder, '' | replace: image.name, '' | replace: '/', '' | replace: '-', ' ' %}
             {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}

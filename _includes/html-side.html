@@ -1,7 +1,7 @@
 {%- comment -%}
   Responsive figure helper used across posts. Accepts the following parameters:
     - img: image path relative to the post's `media_subpath` (required)
-    - caption: optional manual caption; defaults to `_data/media`, then `_data/img-info.json`
+    - caption: optional manual caption; defaults to `_data/media`, then `_data/img-info.json`, then filename
     - align: layout keyword (left, left-33, left-50, right, right-33, right-50,
               center, center-wide, center-full, full, none).
               Defaults to center-full; `full` is an alias of `center-full`.
@@ -44,7 +44,8 @@
 {% if post_media and post_media.images %}
   {% assign media_item = post_media.images[media_lookup_key] %}
 {% endif %}
-{% assign caption = include.caption | default: media_item.caption | default: img_meta.title %}
+{% assign filename_caption = include.img | split: "/" | last | url_decode %}
+{% assign caption = include.caption | default: media_item.caption | default: img_meta.title | default: filename_caption %}
 {% assign align = include.align | default: "center-full" %}
 {% assign img_loading = include.loading | default: "lazy" %}
 {% assign img_decoding = include.decoding | default: "async" %}
@@ -103,7 +104,7 @@
 {% endif %}
 {% assign figure_styles = figure_styles | strip %}
 
-{% assign alt_text = include.alt | default: media_item.caption | default: img_meta.title | default: include.img %}
+{% assign alt_text = include.alt | default: media_item.caption | default: img_meta.title | default: filename_caption %}
 {% assign title_text = include.title | default: caption %}
 
 <div style="height: 0.001rem;"></div>
