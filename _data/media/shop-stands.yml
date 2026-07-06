@@ -1,0 +1,37 @@
+cover: "20210321_210903.jpeg"
+
+images:
+  "20210321_210903.avif":
+    source: "20210321_210903.jpeg"
+    include: false
+    gallery: true
+    thumbnail: true
+    caption: "I did say 15 drawers right?"
+
+  "workshop-cabinets.avif":
+    source: "workshop-cabinets.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Cabinets Drawing"
+
+  "workshop-cabinets-layout.avif":
+    source: "workshop-cabinets-layout.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Plywood Layout"
+
+  "20210321_210850.avif":
+    source: "20210321_210850.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "15 drawers total"
+
+  "20210323_161917.avif":
+    source: "20210323_161917.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Installed.  Waiting on new tools"

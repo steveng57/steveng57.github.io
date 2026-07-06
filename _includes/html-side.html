@@ -1,7 +1,7 @@
 {%- comment -%}
   Responsive figure helper used across posts. Accepts the following parameters:
     - img: image path relative to the post's `media_subpath` (required)
-    - caption: optional manual caption; defaults to `_data/img-info.json` lookup
+    - caption: optional manual caption; defaults to `_data/media`, then `_data/img-info.json`
     - align: layout keyword (left, left-33, left-50, right, right-33, right-50,
               center, center-wide, center-full, full, none).
               Defaults to center-full; `full` is an alias of `center-full`.
@@ -31,7 +31,20 @@
   %}
 {% endif %}
 {% assign img_meta = site.data.img-info[img_key] %}
-{% assign caption = include.caption | default: img_meta.title %}
+{% assign media_slug = "" %}
+{% assign media_parts = page.media_subpath | default: "" | split: "/" %}
+{% for media_part in media_parts %}
+  {% if media_part != "" %}
+    {% assign media_slug = media_part %}
+  {% endif %}
+{% endfor %}
+{% assign post_media = site.data.media[media_slug] %}
+{% assign media_lookup_key = include.img | remove_first: page.media_subpath | remove_first: "/" %}
+{% assign media_item = nil %}
+{% if post_media and post_media.images %}
+  {% assign media_item = post_media.images[media_lookup_key] %}
+{% endif %}
+{% assign caption = include.caption | default: media_item.caption | default: img_meta.title %}
 {% assign align = include.align | default: "center-full" %}
 {% assign img_loading = include.loading | default: "lazy" %}
 {% assign img_decoding = include.decoding | default: "async" %}
@@ -90,7 +103,7 @@
 {% endif %}
 {% assign figure_styles = figure_styles | strip %}
 
-{% assign alt_text = include.alt | default: img_meta.title | default: include.img %}
+{% assign alt_text = include.alt | default: media_item.caption | default: img_meta.title | default: include.img %}
 {% assign title_text = include.title | default: caption %}
 
 <div style="height: 0.001rem;"></div>

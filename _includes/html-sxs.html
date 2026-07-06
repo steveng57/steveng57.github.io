@@ -1,7 +1,7 @@
 {%- comment -%}
   Side-by-side image helper. Parameters:
     - img1 / img2: image paths relative to the post `media_subpath` (required)
-    - caption1 / caption2: optional captions; default to `_data/img-info.json`
+    - caption1 / caption2: optional captions; default to `_data/media`, then `_data/img-info.json`
     - alt1 / alt2: override alt text for each image
     - title1 / title2: override title attribute
     - align: optional sizing helper; use `equal-33`, `equal-50` (alias `equal`),
@@ -53,8 +53,25 @@
 {% assign img1_meta = site.data.img-info[img1_key] %}
 {% assign img2_meta = site.data.img-info[img2_key] %}
 
-{% assign caption1 = include.caption1 | default: img1_meta.title %}
-{% assign caption2 = include.caption2 | default: img2_meta.title %}
+{% assign media_slug = "" %}
+{% assign media_parts = page.media_subpath | default: "" | split: "/" %}
+{% for media_part in media_parts %}
+  {% if media_part != "" %}
+    {% assign media_slug = media_part %}
+  {% endif %}
+{% endfor %}
+{% assign post_media = site.data.media[media_slug] %}
+{% assign media_lookup_key1 = include.img1 | remove_first: page.media_subpath | remove_first: "/" %}
+{% assign media_lookup_key2 = include.img2 | remove_first: page.media_subpath | remove_first: "/" %}
+{% assign media_item1 = nil %}
+{% assign media_item2 = nil %}
+{% if post_media and post_media.images %}
+  {% assign media_item1 = post_media.images[media_lookup_key1] %}
+  {% assign media_item2 = post_media.images[media_lookup_key2] %}
+{% endif %}
+
+{% assign caption1 = include.caption1 | default: media_item1.caption | default: img1_meta.title %}
+{% assign caption2 = include.caption2 | default: media_item2.caption | default: img2_meta.title %}
 
 {% assign img_loading = include.loading | default: "lazy" %}
 {% assign img_decoding = include.decoding | default: "async" %}
@@ -131,8 +148,8 @@
   {% assign caption_classes = caption_classes | append: " " | append: include.caption_classes %}
 {% endif %}
 
-{% assign alt1 = include.alt1 | default: img1_meta.title | default: include.img1 %}
-{% assign alt2 = include.alt2 | default: img2_meta.title | default: include.img2 %}
+{% assign alt1 = include.alt1 | default: media_item1.caption | default: img1_meta.title | default: include.img1 %}
+{% assign alt2 = include.alt2 | default: media_item2.caption | default: img2_meta.title | default: include.img2 %}
 {% assign title1 = include.title1 | default: caption1 %}
 {% assign title2 = include.title2 | default: caption2 %}
 

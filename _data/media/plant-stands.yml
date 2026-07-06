@@ -1,0 +1,37 @@
+cover: "20210428_181207.jpeg"
+
+images:
+  "20210428_181207.avif":
+    source: "20210428_181207.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Complete with plants installed"
+
+  "plant-stands-sketchup.avif":
+    source: "plant-stands-sketchup.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Plant Stands in Sketchup"
+
+  "20210427_190041.avif":
+    source: "20210427_190041.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Mmmm... Taper"
+
+  "20210421_212015.avif":
+    source: "20210421_212015.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Kiln Dried Pots"
+
+  "20210418_000920000_iOS.avif":
+    source: "20210418_000920000_iOS.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Needing Vegetation"

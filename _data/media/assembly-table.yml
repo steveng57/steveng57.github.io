@@ -1,0 +1,30 @@
+cover: "20201001_193728.jpeg"
+
+images:
+  "20201001_193728.avif":
+    source: "20201001_193728.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Pretty (not for long)"
+
+  "20200908_213627.avif":
+    source: "20200908_213627.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Framing was only half the battle"
+
+  "20200908_213651.avif":
+    source: "20200908_213651.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "It was still a battle though"
+
+  "20201001_194851.avif":
+    source: "20201001_194851.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "In place and at the ready"

@@ -1,0 +1,44 @@
+cover: "IMG_0912.jpeg"
+
+images:
+  "IMG_0912.avif":
+    source: "IMG_0912.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Lilly's Creations"
+
+  "IMG_0868.avif":
+    source: "IMG_0868.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "You start with a board"
+
+  "IMG_0870.avif":
+    source: "IMG_0870.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Cut the board a certain way"
+
+  "IMG_0871.avif":
+    source: "IMG_0871.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Carve with the Origin"
+
+  "IMG_0901.avif":
+    source: "IMG_0901.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Dry Fit"
+
+  "IMG_0882.avif":
+    source: "IMG_0882.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Band Clamps"

@@ -1,0 +1,23 @@
+cover: "IMG_0866.jpeg"
+
+images:
+  "IMG_0866.avif":
+    source: "IMG_0866.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Grow now"
+
+  "IMG_0864.avif":
+    source: "IMG_0864.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "A Blank Canvas"
+
+  "IMG_0865.avif":
+    source: "IMG_0865.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Just Needs Seeds"

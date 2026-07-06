@@ -1,0 +1,23 @@
+cover: "20220227_191616.jpeg"
+
+images:
+  "20220227_191616.avif":
+    source: "20220227_191616.jpeg"
+    include: false
+    gallery: true
+    thumbnail: true
+    caption: "One for Theresa"
+
+  "20220227_191600.avif":
+    source: "20220227_191600.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "One for Debbie"
+
+  "IMG_0547.avif":
+    source: "IMG_0547.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "At Home in the Kitchen"

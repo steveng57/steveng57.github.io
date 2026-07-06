@@ -1,0 +1,30 @@
+cover: "IMG_0079.jpeg"
+
+images:
+  "IMG_0079.avif":
+    source: "IMG_0079.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Wait. This is my good side."
+
+  "munchies-tray-sketchup.avif":
+    source: "munchies-tray-sketchup.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Sketchup Drawing of Munchies Tray"
+
+  "IMG_0074.avif":
+    source: "IMG_0074.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "This is my good side"
+
+  "IMG_0643.avif":
+    source: "IMG_0643.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "All Loaded Up With Munchies"

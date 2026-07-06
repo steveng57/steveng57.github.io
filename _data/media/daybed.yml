@@ -1,0 +1,44 @@
+cover: "20240120_222026808_iOS.jpeg"
+
+images:
+  "20240120_222026808_iOS.avif":
+    source: "20240120_222026808_iOS.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "The Daybed as it is today"
+
+  "20191006_210910.avif":
+    source: "20191006_210910.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Monster Glue-up"
+
+  "20191101_212037.avif":
+    source: "20191101_212037.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Assembled"
+
+  "20191217_214555.avif":
+    source: "20191217_214555.jpeg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Painted - Also a Nice View"
+
+  "20191217_214541.avif":
+    source: "20191217_214541.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Painted - Nice Front View"
+
+  "20191225_174206.avif":
+    source: "20191225_174206.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "In Place"

@@ -39,21 +39,21 @@ The wizard creates both pieces needed for a post:
 
 It prompts for title, date, category, tags, description, cover image, and optional pin/favorite/series metadata. It can also copy source media from a folder into the new post media folder. If you pick a HEIC/JPG/PNG cover image, the generated markdown references the matching `.avif` file for the site image and thumbnail. Imported still images are also added to the post body as `html-side.html` include lines.
 
-For imported still images, the wizard also creates `assets/img/posts/<slug>/media.yml`. This file captures authoring intent while keeping HEIC/JPG/PNG files as master images and AVIF files as the published site images:
+For imported still images, the wizard also creates `_data/media/<slug>.yml`. This file captures authoring intent while keeping HEIC/JPG/PNG files as master images and AVIF files as the published site images:
 
 ```yaml
-cover: IMG_1001.HEIC
+cover: "IMG_1001.HEIC"
 
 images:
-  - source: IMG_1001.HEIC
-    published: IMG_1001.avif
+  "IMG_1001.avif":
+    source: "IMG_1001.HEIC"
     include: true
     gallery: true
     thumbnail: true
     caption: ""
 ```
 
-`source` is the master image in the post media folder. `published` is optional; when present, it is the site image filename that derived AVIF generation and `_data/img-info.json` metadata should use. When `media.yml` exists, media scripts use it instead of Windows tags for gallery and thumbnail decisions. If it does not exist, scripts fall back to the legacy tag-based behavior. Jekyll still reads `_data/img-info.json`; `media.yml` is input for the PowerShell tooling, while `img-info.json` remains generated metadata for dimensions, dates, captions, and gallery rendering.
+The image key is the published site filename. `source` is the master image in the post media folder. Media scripts use `_data/media/<slug>.yml` instead of Windows tags for gallery and thumbnail decisions. Jekyll also reads it directly for captions and gallery intent. `_data/img-info.json` remains generated metadata for dimensions, dates, and EXIF fallback values.
 
 Legacy post media folders can be converted with a dry run first:
 
@@ -62,15 +62,15 @@ Legacy post media folders can be converted with a dry run first:
 ./convert-media-manifests.ps1 -Slug pen-tray -Apply
 ```
 
-The converter infers `media.yml` from post front matter, image includes, and the current `_data/img-info.json` snapshot. It does not read Windows tags. Use `-Force` only when intentionally replacing an existing manifest.
+The converter infers `_data/media/<slug>.yml` from post front matter, image includes, and the current `_data/img-info.json` snapshot. It does not read Windows tags. Use `-Force` only when intentionally replacing an existing manifest.
 
-Imported `.mp4` and `.mov` files are copied into the post media folder as source videos. The wizard adds a `videos:` section to `media.yml`, emits a starter `embed/video-hls.html` include, and, when derivative generation is enabled, runs `gen-hls.ps1` for the new post folder. HLS output is written under `stream/<video-name>/`.
+Imported `.mp4` and `.mov` files are copied into the post media folder as source videos. The wizard adds a `videos:` section to `_data/media/<slug>.yml`, emits a starter `embed/video-hls.html` include, and, when derivative generation is enabled, runs `gen-hls.ps1` for the new post folder. HLS output is written under `stream/<video-name>/`.
 
 ```yaml
 videos:
-  - source: walkthrough.mp4
-    published: stream/walkthrough/master.m3u8
-    poster: stream/walkthrough/poster.avif
+  "stream/walkthrough/master.m3u8":
+    source: "walkthrough.mp4"
+    poster: "stream/walkthrough/poster.avif"
     include: true
     caption: ""
 ```
@@ -89,7 +89,7 @@ Use `add-post-media.ps1` when a post already exists and you want to add more ima
 .\add-post-media.ps1 -Slug pen-tray -ImportFrom C:\Temp\pen-tray-media
 ```
 
-The script reuses the same media workflow as `new-post.ps1`. It copies supported media into `assets/img/posts/<slug>/`, updates `media.yml`, adds starter `html-side.html` or `embed/video-hls.html` include blocks to the post body, optionally runs image/video derivative generation, and then validates the post.
+The script reuses the same media workflow as `new-post.ps1`. It copies supported media into `assets/img/posts/<slug>/`, updates `_data/media/<slug>.yml`, adds starter `html-side.html` or `embed/video-hls.html` include blocks to the post body, optionally runs image/video derivative generation, and then validates the post.
 
 You can also pass explicit files:
 
@@ -105,6 +105,15 @@ Validate a post at any time:
 ```
 
 The validator checks front matter, category shape, the media folder, cover image, cover thumbnail, in-post image/video include references, and category icon coverage. Add `-BuildCheck` to run `bundle exec jekyll build` after the convention checks.
+
+Validate every media manifest at any time:
+
+```powershell
+.\test-media-manifests.ps1
+.\test-media-manifests.ps1 -Slug pen-tray
+```
+
+The media manifest validator checks `_data/media/<slug>.yml` files against `assets/img/posts/<slug>/`, including source files, published AVIF files, requested thumbnails, gallery tinyfiles, video HLS masters, posters, duplicate entries, and leftover legacy `media.yml` files. It prints only warnings/errors by default; add `-Verbose` for the full per-file trace or `-TreatWarningsAsErrors` for stricter checks.
 
 This was built on Windows and there are a couple of pre-jekyll-build steps to run via Windows Powershell
   - To generate full-size AVIF files plus thumbnail/tinyfile derivatives run `./gen-derived-avif.ps1`.  Note that HEIC, jpeg/jpg, and png files serve as source files, but are not used directly in the site. Full-size AVIF files default to `-MaxDimension 2048`.

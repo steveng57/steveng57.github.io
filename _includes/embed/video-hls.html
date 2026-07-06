@@ -5,9 +5,9 @@
     - id: unique DOM id for the player (required when multiple players on a page)
     - master: HLS master playlist URL (required)
     - mp4: optional progressive MP4 fallback URL
-    - poster: optional poster image URL
+    - poster: optional poster image URL; defaults to `_data/media` lookup
     - title: optional title used for aria-label
-    - caption: optional figcaption text; defaults to `_data/img-info.json` lookup
+    - caption: optional figcaption text; defaults to `_data/media`, then `_data/img-info.json`
     - preload: metadata|none|auto (default: metadata)
     - controls: true|false (default: true)
     - autoplay: true|false (default: false)
@@ -21,7 +21,6 @@
 {% assign player_id = include.id | default: "hls-player" %}
 {% assign hls_master = include.master | default: "" %}
 {% assign mp4_fallback = include.mp4 | default: "" %}
-{% assign poster_url = include.poster | default: "" %}
 {% assign preload_mode = include.preload | default: "metadata" %}
 
 {% if hls_master contains '://' %}
@@ -38,7 +37,21 @@
   %}
 {% endif %}
 {% assign video_meta = site.data.img-info[video_key] %}
-{% assign caption = include.caption | default: video_meta.title %}
+{% assign media_slug = "" %}
+{% assign media_parts = page.media_subpath | default: "" | split: "/" %}
+{% for media_part in media_parts %}
+  {% if media_part != "" %}
+    {% assign media_slug = media_part %}
+  {% endif %}
+{% endfor %}
+{% assign post_media = site.data.media[media_slug] %}
+{% assign media_lookup_key = hls_master | remove_first: page.media_subpath | remove_first: "/" %}
+{% assign video_media = nil %}
+{% if post_media and post_media.videos %}
+  {% assign video_media = post_media.videos[media_lookup_key] %}
+{% endif %}
+{% assign poster_url = include.poster | default: video_media.poster | default: "" %}
+{% assign caption = include.caption | default: video_media.caption | default: video_meta.title %}
 
 {% assign hls_master_url = "" %}
 {% assign mp4_fallback_url = "" %}

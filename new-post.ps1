@@ -400,7 +400,7 @@ Write the finished result here.
             Write-Info "Imported $($importCandidates.Count) media file(s) into assets/img/posts/$Slug."
 
             if (-not [string]::IsNullOrWhiteSpace($mediaManifestContent)) {
-                $mediaManifestPath = Join-Path $mediaDir "media.yml"
+                $mediaManifestPath = Get-MediaManifestPath -Slug $Slug -RepoRoot $RepoRoot
                 Set-Content -LiteralPath $mediaManifestPath -Value $mediaManifestContent -Encoding UTF8
                 Write-Info "Created $mediaManifestPath"
             }

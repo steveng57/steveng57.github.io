@@ -217,6 +217,21 @@ exclude:
   - rollup.config.js
   - package*.json
   - "*.ps1"
+  # jekyll-watch only ignores exclude entries that resolve to real paths.
+  # Keep explicit script filenames here so editing tooling scripts does not
+  # trigger a development-server rebuild.
+  - add-post-media.ps1
+  - check-brokenlinks.ps1
+  - convert-media-manifests.ps1
+  - gen-derived-avif.ps1
+  - gen-hls.ps1
+  - gen-img-info.ps1
+  - media-manifest.ps1
+  - new-post.ps1
+  - post-media.ps1
+  - serve.ps1
+  - test-media-manifests.ps1
+  - test-post.ps1
   - "*.cmd"
   - "*.afphoto"
   - tsconfig.json

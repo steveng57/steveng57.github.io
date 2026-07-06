@@ -53,7 +53,25 @@ var dynamicImages = [
     {% for image in imageFiles %}
         {% assign image_meta_key = image.path | replace: '/tinyfiles', '' | remove_first: '/' %}
         {% assign image_meta = site.data.img-info[image_meta_key] %}
-        {% if image_meta.gallery %}
+        {% assign image_relative_path = image.path | remove_first: albumfolder %}
+        {% assign image_path_parts = image_relative_path | split: "/" %}
+        {% assign media_slug = "" %}
+        {% for image_path_part in image_path_parts %}
+            {% if media_slug == "" and image_path_part != "" %}
+                {% assign media_slug = image_path_part %}
+            {% endif %}
+        {% endfor %}
+        {% assign post_media = site.data.media[media_slug] %}
+        {% assign media_item = nil %}
+        {% if post_media and post_media.images %}
+            {% assign media_item = post_media.images[image.name] %}
+        {% endif %}
+        {% assign gallery_flag = image_meta.gallery %}
+        {% if media_item %}
+            {% assign gallery_flag = media_item.gallery %}
+        {% endif %}
+        {% assign image_title = media_item.caption | default: image_meta.title %}
+        {% if gallery_flag %}
             {% assign postname = image.path | replace: '/tinyfiles', '' | replace: albumfolder, '' | replace: image.name, '' | replace: '/', '' | replace: '-', ' ' %}
             {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
             {% assign datetaken = image_meta.datetaken | date: "%b %-d, %Y" %}
@@ -64,7 +82,7 @@ var dynamicImages = [
                 'width': '{{ image_meta.width }}',
                 'height': '{{ image_meta.height }}',
                 'slideName': '{{ image.name }}',
-                'subHtml': "<div class='inline-gallery-captions lightGallery-captions'><a href='{{ redirect }}'><h4>{{ image_meta.title }}</h4><p>{{ datetaken }}</p></a></div>"
+                'subHtml': "<div class='inline-gallery-captions lightGallery-captions'><a href='{{ redirect }}'><h4>{{ image_title }}</h4><p>{{ datetaken }}</p></a></div>"
             },
         {% endif %}
     {% endfor %}

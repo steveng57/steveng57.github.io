@@ -1,0 +1,23 @@
+cover: "20220225_091904.jpeg"
+
+images:
+  "20220225_091904.avif":
+    source: "20220225_091904.jpeg"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "The Paws Classic"
+
+  "IMG_0543.avif":
+    source: "IMG_0543.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Yoga Room Version"
+
+  "IMG_0545.avif":
+    source: "IMG_0545.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Mudroom Version"

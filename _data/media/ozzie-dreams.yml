@@ -1,0 +1,23 @@
+cover: "20220328_071254.jpeg"
+
+images:
+  "20220328_071254.avif":
+    source: "20220328_071254.jpeg"
+    include: true
+    gallery: false
+    thumbnail: true
+    caption: "Sweet Dreams My Boy"
+
+  "20220310_084545.avif":
+    source: "20220310_084545.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "You take a bunch of sticks..."
+
+  "20220316_201504.avif":
+    source: "20220316_201504.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Awaiting Epoxy"

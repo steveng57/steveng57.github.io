@@ -1,6 +1,7 @@
 #Requires -Version 5.1
 
 Set-StrictMode -Version Latest
+. (Join-Path $PSScriptRoot "media-manifest.ps1")
 
 function ConvertTo-SiteImageName {
     param([Parameter(Mandatory = $true)][string]$ImageName)
@@ -230,7 +231,6 @@ function Get-ImportedVideoIncludeBlock {
   master="stream/$baseName/master.m3u8"
 $mp4Line  poster="stream/$baseName/poster.avif"
 ${orientationLine}  title="$(($PostTitle).Replace('"', '&quot;'))"
-  caption=""
   controls="true"
   muted="false"
   autoplay="false"
@@ -292,32 +292,37 @@ function New-MediaManifestContent {
     }
 
     $coverBase = [System.IO.Path]::GetFileNameWithoutExtension($CoverSource)
-    $lines = @()
+    $images = @()
+    $videos = @()
     if ($imageFiles.Count -gt 0) {
-        $lines += "cover: $CoverSource"
-        $lines += ""
-        $lines += "images:"
-
         foreach ($image in $imageFiles) {
             $isCover = ([System.IO.Path]::GetFileNameWithoutExtension($image.Name) -eq $coverBase)
-            $lines += New-MediaManifestImageEntryLines -Image $image -Thumbnail $isCover
-            $lines += ""
+            $publishedName = ConvertTo-SiteImageName -ImageName $image.Name
+            $images += [pscustomobject]@{
+                Source    = $image.Name
+                Published = $publishedName
+                Include   = $true
+                Gallery   = $true
+                Thumbnail = $isCover
+                Caption   = ""
+            }
         }
     }
 
     if ($videoFiles.Count -gt 0) {
-        if ($lines.Count -gt 0 -and $lines[-1] -ne "") {
-            $lines += ""
-        }
-
-        $lines += "videos:"
         foreach ($video in $videoFiles) {
-            $lines += New-MediaManifestVideoEntryLines -Video $video
-            $lines += ""
+            $baseName = [System.IO.Path]::GetFileNameWithoutExtension($video.Name)
+            $videos += [pscustomobject]@{
+                Source    = $video.Name
+                Published = "stream/$baseName/master.m3u8"
+                Poster    = "stream/$baseName/poster.avif"
+                Include   = $true
+                Caption   = ""
+            }
         }
     }
 
-    return ($lines -join "`r`n")
+    return ConvertTo-MediaManifestContent -Cover $CoverSource -Images $images -Videos $videos
 }
 
 function Test-HasImportedVideo {
@@ -371,12 +376,13 @@ function Get-MediaManifestSourceNames {
         return @()
     }
 
-    return @(Get-Content -LiteralPath $ManifestPath |
-        ForEach-Object {
-            if ($_ -match '^\s*-\s*source:\s*(.+?)\s*$') {
-                $matches[1].Trim().Trim('"').Trim("'")
-            }
-        } |
+    $manifest = Read-MediaManifestFile -ManifestPath $ManifestPath
+    if (-not $manifest) {
+        return @()
+    }
+
+    return @(($manifest.Images + $manifest.Videos) |
+        ForEach-Object { $_.Source } |
         Where-Object { -not [string]::IsNullOrWhiteSpace($_) })
 }
 
@@ -417,46 +423,58 @@ function Add-MediaManifestEntries {
         [string]$CoverSource = ""
     )
 
-    $existingSources = @(Get-MediaManifestSourceNames -ManifestPath $ManifestPath)
+    $manifest = Read-MediaManifestFile -ManifestPath $ManifestPath
+    if (-not $manifest) {
+        $manifest = [pscustomobject]@{
+            Cover  = $CoverSource
+            Images = @()
+            Videos = @()
+        }
+    }
+
+    if ([string]::IsNullOrWhiteSpace($manifest.Cover)) {
+        $manifest.Cover = $CoverSource
+    }
+
+    $existingSources = @($manifest.Images + $manifest.Videos |
+        ForEach-Object { $_.Source } |
+        Where-Object { -not [string]::IsNullOrWhiteSpace($_) })
     $newItems = @($ImportedCandidates | Where-Object { $existingSources -notcontains $_.Name })
     if ($newItems.Count -eq 0) {
         return @()
     }
 
-    if (-not (Test-Path -LiteralPath $ManifestPath)) {
-        if ([string]::IsNullOrWhiteSpace($CoverSource)) {
-            $firstImage = @($newItems | Where-Object { @(".avif", ".png", ".jpg", ".jpeg", ".heic") -contains $_.Extension.ToLowerInvariant() } | Select-Object -First 1)
-            if ($firstImage.Count -gt 0) {
-                $CoverSource = $firstImage[0].Name
-            }
+    if ([string]::IsNullOrWhiteSpace($manifest.Cover)) {
+        $firstImage = @($newItems | Where-Object { @(".avif", ".png", ".jpg", ".jpeg", ".heic") -contains $_.Extension.ToLowerInvariant() } | Select-Object -First 1)
+        if ($firstImage.Count -gt 0) {
+            $manifest.Cover = $firstImage[0].Name
         }
-
-        $content = New-MediaManifestContent -ImportedCandidates $newItems -CoverSource $CoverSource
-        Set-Content -LiteralPath $ManifestPath -Value $content -Encoding UTF8
-        return $newItems
     }
 
-    $content = Get-Content -LiteralPath $ManifestPath -Raw
-    $imageLines = @()
-    $videoLines = @()
     foreach ($item in $newItems) {
         if (@(".avif", ".png", ".jpg", ".jpeg", ".heic") -contains $item.Extension.ToLowerInvariant()) {
-            $imageLines += New-MediaManifestImageEntryLines -Image $item -Thumbnail $false
-            $imageLines += ""
+            $manifest.Images += [pscustomobject]@{
+                Source    = $item.Name
+                Published = ConvertTo-SiteImageName -ImageName $item.Name
+                Include   = $true
+                Gallery   = $true
+                Thumbnail = $false
+                Caption   = ""
+            }
         }
         elseif (@(".mp4", ".mov") -contains $item.Extension.ToLowerInvariant()) {
-            $videoLines += New-MediaManifestVideoEntryLines -Video $item
-            $videoLines += ""
+            $baseName = [System.IO.Path]::GetFileNameWithoutExtension($item.Name)
+            $manifest.Videos += [pscustomobject]@{
+                Source    = $item.Name
+                Published = "stream/$baseName/master.m3u8"
+                Poster    = "stream/$baseName/poster.avif"
+                Include   = $true
+                Caption   = ""
+            }
         }
     }
 
-    if ($imageLines.Count -gt 0) {
-        $content = Add-ManifestSectionEntries -Content $content -SectionName "images" -EntryLines $imageLines
-    }
-    if ($videoLines.Count -gt 0) {
-        $content = Add-ManifestSectionEntries -Content $content -SectionName "videos" -EntryLines $videoLines
-    }
-    Set-Content -LiteralPath $ManifestPath -Value $content.TrimEnd() -Encoding UTF8
+    Write-MediaManifestFile -ManifestPath $ManifestPath -Manifest $manifest
 
     return $newItems
 }

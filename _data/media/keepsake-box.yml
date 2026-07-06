@@ -1,0 +1,23 @@
+cover: "IMG_0639.jpeg"
+
+images:
+  "IMG_0639.avif":
+    source: "IMG_0639.jpeg"
+    include: true
+    gallery: false
+    thumbnail: true
+    caption: "Wrap Around Grain"
+
+  "IMG_0637.avif":
+    source: "IMG_0637.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Maple Pinstripes"
+
+  "IMG_0640.avif":
+    source: "IMG_0640.jpeg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Epoxy Inlay on Lid"
