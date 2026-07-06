@@ -34,6 +34,10 @@
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
-    {% include post-card-item.html post=post %}
+    {% if include.eager_first and forloop.first %}
+      {% include post-card-item.html post=post loading='eager' fetchpriority='high' %}
+    {% else %}
+      {% include post-card-item.html post=post %}
+    {% endif %}
   {% endfor %}
 </div>

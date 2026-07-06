@@ -1,5 +1,7 @@
 {% assign post = include.post %}
 {% assign card_body_col = '12' %}
+{% assign img_loading = include.loading | default: 'lazy' %}
+{% assign img_fetchpriority = include.fetchpriority | default: 'low' %}
 
 <article class="card-wrapper card">
   <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse text-decoration-none border-bottom-0">
@@ -42,6 +44,8 @@
               sizes="(min-width: 768px) 320px, 100vw"
             {% endif %}
             decoding="async"
+            loading="{{ img_loading }}"
+            fetchpriority="{{ img_fetchpriority }}"
           >
         </div>
       </div>

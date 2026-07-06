@@ -8,7 +8,7 @@ pagination:
 
 {{ content }}
 
-{% assign eager_preview_count = 6 %}
+{% assign eager_preview_count = 2 %}
 
 {% comment %}
   Optional per-category intro + featured posts.
@@ -140,25 +140,6 @@ pagination:
             {% endunless %}
           {% endif %}
 
-          {% assign use_lqip = false %}
-
-          {% if post.image.lqip %}
-            {% assign lqip = post.image.lqip %}
-
-            {% if post.media_subpath %}
-              {% unless lqip contains 'data:' %}
-                {% assign lqip = post.media_subpath
-                  | append: '/'
-                  | append: lqip
-                  | replace: '///', '/'
-                  | replace: '//', '/'
-                %}
-              {% endunless %}
-            {% endif %}
-
-            {% assign use_lqip = true %}
-          {% endif %}
-
           {% assign img_key = src | remove_first: '/' %}
           {% assign img_meta = site.data.img-info[img_key] %}
           {% assign src_2x = src | replace: '/thumbnails/', '/thumbnails-2x/' %}
@@ -167,20 +148,14 @@ pagination:
           {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
 
           <div class="col-md-5">
-            <div class="preview-img {% if use_lqip %}blur{% elsif forloop.index > eager_preview_count %}shimmer{% endif %}">
+            <div class="preview-img {% if forloop.index > eager_preview_count %}shimmer{% endif %}">
               <img
-                {% if use_lqip %}
-                  src="{{ lqip }}"
-                  data-src="{{ src }}"
-                  data-lqip="true"
-                {% else %}
-                  src="{{ src }}"
-                {% endif %}
+                src="{{ src }}"
                 alt="{{ alt }}"
                 {% if img_meta and img_meta.width and img_meta.height %}
                   width="{{ img_meta.width }}" height="{{ img_meta.height }}"
                 {% endif %}
-                {% if use_lqip != true and src contains '/thumbnails/' %}
+                {% if src contains '/thumbnails/' %}
                   srcset="{{ src | relative_url }} 1x, {{ src_2x_root | relative_url }} 2x"
                   sizes="(min-width: 768px) 320px, 100vw"
                 {% endif %}

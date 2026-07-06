@@ -24,7 +24,7 @@ You can dive right in by clicking on the links in the sidebar on the left (a men
 
 Here are my three most recent posts:
 
-{% include recent3.html %}
+{% include recent3.html eager_first=true %}
 
 ## Recently Modified
 

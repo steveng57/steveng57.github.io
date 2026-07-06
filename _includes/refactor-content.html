@@ -74,7 +74,6 @@
     {% assign _attrs = _left | split: '" ' %}
 
     {% assign _src = null %}
-    {% assign _lqip = null %}
     {% assign _class = null %}
 
     {% for _attr in _attrs %}
@@ -89,8 +88,6 @@
       {% case _key %}
         {% when 'src' %}
           {% assign _src = _value %}
-        {% when 'lqip' %}
-          {% assign _lqip = _value %}
         {% when 'class' %}
           {% assign _class = _value %}
       {% endcase %}
@@ -149,21 +146,7 @@
       {% assign _left = _left | replace: 'src="', _src_alt %}
     {% endunless %}
 
-    {% if _lqip %}
-      {% assign _lazyload = false %}
-      {% assign _wrapper_class = _wrapper_class | append: ' blur' %}
-
-      {% unless _lqip contains 'data:' %}
-        {% assign _lqip_alt = 'lqip="' | append: _path_prefix %}
-        {% assign _left = _left | replace: 'lqip="', _lqip_alt %}
-      {% endunless %}
-
-      <!-- add image placeholder -->
-      {% assign _left = _left | replace: 'src=', 'data-src=' | replace: ' lqip=', ' data-lqip="true" src=' %}
-
-    {% else %}
-      {% assign _wrapper_class = _wrapper_class | append: ' shimmer' %}
-    {% endif %}
+    {% assign _wrapper_class = _wrapper_class | append: ' shimmer' %}
 
     <!-- lazy-load images -->
     {% if _lazyload %}
@@ -191,9 +174,7 @@
         {% if _parent == '</a>' %}
           <!-- add class to exist <a> tag -->
           {% assign _size = _img_content | size | minus: 1 %}
-          {% capture _class %}
-            class="img-link{% unless _lqip %} shimmer{% endunless %}"
-          {% endcapture %}
+          {% capture _class %}class="img-link shimmer"{% endcapture %}
           {% assign _img_content = _img_content | slice: 0, _size | append: _class | append: '>' %}
 
         {% else %}
