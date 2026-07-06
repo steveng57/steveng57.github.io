@@ -33,7 +33,7 @@ I also wanted to be sure to get the finger joints just right (that's what this s
 
 ### Tree Tray
 
-The Tree Tray was done first, and so I learned how **not** do it here. Basically on something like this, you need to sand and finish before final assembly, otherwise it it too difficult to get into corners and things.
+The Tree Tray was done first, and so I learned how **not** to do it here. Basically on something like this, you need to sand and finish before final assembly, otherwise it is too difficult to get into corners and things.
 
 While it is not quite as blotchy in real life as this photo would make it seem, it is still just a little too blotchy for my taste. The Flower turned out better.
 {% include clear-float.html break = 1%}

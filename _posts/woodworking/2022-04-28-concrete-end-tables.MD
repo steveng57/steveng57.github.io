@@ -28,7 +28,7 @@ The concrete I used was a special artisan blend from [Buddy Rhodes].
 
 The first thing you need to do for a concrete top is make a form mold for the pieces.
 
-A neat trick I found on YouTube was to use a bead of black silicone around the seem to seal the edges, and also give you an nice quarter-round soft edge on the table top when you flip it over.
+A neat trick I found on YouTube was to use a bead of black silicone around the seam to seal the edges, and also give you a nice quarter-round soft edge on the table top when you flip it over.
 
 The black colouring makes it easier to remove when you are done. Made from spare melamine I had from some old shelving.
 

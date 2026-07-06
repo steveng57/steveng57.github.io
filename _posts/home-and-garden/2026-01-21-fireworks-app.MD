@@ -17,7 +17,7 @@ pin: false
 ---
 ## Background
 
-January 1st came around, and with all the cool fireworks displays, it got me to thinking about an old fascination I had with simulation software and fireworks.  It has been on my _bucket list_ to write a fireworks simulator for a while, but my software skill-set was more around server side development and video production.  I knew a little about game design and GPU coding, just enough to be dangerous.  With the advent of AI co-coders like Github Copilot and Codex (from OpenAI, the same folk who brought you ChatGPT), I figured I would give it a try.  This post will have some geek aspects to it, since it is largely about writing this app, but I think the non-software engineers out there might fight it interesting as I share some of my take on what it is like to code with an AI assistant (or two or three as you will see).
+January 1st came around, and with all the cool fireworks displays, it got me to thinking about an old fascination I had with simulation software and fireworks.  It has been on my _bucket list_ to write a fireworks simulator for a while, but my software skill-set was more around server side development and video production.  I knew a little about game design and GPU coding, just enough to be dangerous.  With the advent of AI co-coders like Github Copilot and Codex (from OpenAI, the same folk who brought you ChatGPT), I figured I would give it a try.  This post will have some geek aspects to it, since it is largely about writing this app, but I think the non-software engineers out there might find it interesting as I share some of my take on what it is like to code with an AI assistant (or two or three as you will see).
 
 > If you want to play along with any of this, see the app itself or look at the code, it is in a public Github repo here: [Fireworks App](https://www.github.com/steveng57/fireworksapp).  A link to the most recent release and installation instructions can be found on the right side.  Enjoy!
 {:.prompt-info}
@@ -59,7 +59,7 @@ As mentioned, I am not a gamer or graphics developer, so I spent some time tryin
 
 I gave CP the conceptual overview of what I was after, and we started simple, just generating a launch pad for the fireworks, which is really nothing more than a blue square.  This took a surprising amount of work since CP and I just were not on the same page.  It was training me (indirectly) as much as I was training it.
 
-It took about 1/2 and hour to get rolling, but it was a good investment as I learned how to talk "fireworks simulator" talk to CP.  You would not beleive the amount of futzing I had to do just to make the launch pad 10cm thick instead of 0, and I could have easily changed it in the code myself, but I wanted to figure out the process.
+It took about 1/2 an hour to get rolling, but it was a good investment as I learned how to talk "fireworks simulator" talk to CP.  You would not believe the amount of futzing I had to do just to make the launch pad 10cm thick instead of 0, and I could have easily changed it in the code myself, but I wanted to figure out the process.
 
 We then moved on to building the launch canisters and putting them on the pad.  This is where ChatGPT came in as a fireworks expert when I asked it to give me a tutorial on canisters and how they work.  I love projects where you learn something about other domains, and this is certainly one of them.  I am not a fireworks expert by any means, but I do know the difference in muzzle velocities of an M2 versus an M10 mortar!
 
@@ -242,7 +242,7 @@ Here are my thoughts on using the various forms of AI throughout the process.
 
 ### Context
 
-If I had to use one word always blows my mind about how the AI's work, it would be **_context_**.  They understand context.  And for the most part they understand it so well that you think you are in a conversation with a human.  It is truly amazing.  I will give you a small example of what I mean.
+If I had to pick one thing that always blows my mind about how the AI's work, it would be **_context_**.  They understand context.  And for the most part they understand it so well that you think you are in a conversation with a human.  It is truly amazing.  I will give you a small example of what I mean.
 
 At one point in time, I was creating the fireworks _show_, and that involved laying out the effects and shells that would be used.  I created an array of Ids that defined the shells and the order they are to fire in.  After I had created the list, I started going thru it putting the comments "Hero" and "not-Hero" beside them so that I could tell which were the bigger more spectacular fireworks from the "filler" kind.
 

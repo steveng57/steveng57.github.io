@@ -34,7 +34,7 @@ The solid Red Oak for the exterior helps make this a heavy beast.
 
 ## On the Positive Side
 
-One the positive side, you could drive a tank on it, and I think it would hold.
+On the positive side, you could drive a tank on it, and I think it would hold.
 
 There are a couple of cool things about this bench though, some stuff where I was completely winging it:
 

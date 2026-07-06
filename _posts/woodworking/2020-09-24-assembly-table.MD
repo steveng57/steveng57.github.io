@@ -30,7 +30,7 @@ After watching countless YouTube videos on large assembly tables, I did the basi
 
 Since this was a pretty big undertaking, and my aluminum skills are near zero, I decided to work with a company called {{ site.data.links.vention }} for the next stages of the design work. They are based in Montreal and specialize in "Industrial Automation", but they will take on orders and projects of any size. They also have offices and distribution capabilities in the US and Europe.
 
-**They are totally awesome and fantastic.** They did all the detailed design work in their CAD tooling, with lots of back and forth until we got all the bits right. Then they made all the parts and shipped them to me on a couple of large pallettes. I cannot recommend them any more highly, so if you are in the market for anything of the aluminum extrusion variety, you need to give them try.
+**They are totally awesome and fantastic.** They did all the detailed design work in their CAD tooling, with lots of back and forth until we got all the bits right. Then they made all the parts and shipped them to me on a couple of large pallettes. I cannot recommend them any more highly, so if you are in the market for anything of the aluminum extrusion variety, you need to give them a try.
 {% include clear-float.html break = 1 %}
 
 {% include html-side.html img="20200908_213651.avif" align = "right" %}

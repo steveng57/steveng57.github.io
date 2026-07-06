@@ -28,7 +28,7 @@ Now Al is a great guy, but this was indeed his first rodeo putting something lik
 
 Now this is a good shop too, but they gave him instructions on installing the most mondo beefy network cabling one could think of for a complete end-to-end home automation experience.  This meant five ethernet wires running to each and every location I specified.  This is all fine, I put having that much ethernet cabling in the 'good problem to have" category.  
 
-But when you run all those wires back to the same location in the basement (it's called the _home run_ if you're interested), creates a really big cluster of wires coming together behind my equipment rack.  I had to sort thru them all to get the right ones to plug into the gear, which I thing took about two hours on its own.
+But when you run all those wires back to the same location in the basement (it's called the _home run_ if you're interested), it creates a really big cluster of wires coming together behind my equipment rack.  I had to sort thru them all to get the right ones to plug into the gear, which I think took about two hours on its own.
 
 {% include html-sxs.html img1="IMG_1590.avif" img2="IMG_1591.avif" %}
 

@@ -33,7 +33,7 @@ Everyone wants the fastest speed possible in their PC, but how you get there and
 
 I am not a gamer (nor am I a crypto miner), so GPU speed was not a big thing.  I do a lot of 3d modelling and the like though, so something CAD capable was needed.  
 
-CPU and disk speed were paramount though, so I did splurge a bit on the latest gen i9 Intel chips and a good motherboard.  I also went pure [NVME M.2 SSD](https://en.wikipedia.org/wiki/M.2) throughout, which for those not in the business means **fast**.  These products started appearing on the market in 2014/2015, just after my last full PC build.  Instead of spinning disks fetching your data over a slow connection, these drives have not moving parts and are all on chips connected to the CPU via a super fast bus.  This proved to be a great call, and I am super happy with the speed of the build.  But I will leave you in suspense for now, see the results section at the bottom for details!
+CPU and disk speed were paramount though, so I did splurge a bit on the latest gen i9 Intel chips and a good motherboard.  I also went pure [NVME M.2 SSD](https://en.wikipedia.org/wiki/M.2) throughout, which for those not in the business means **fast**.  These products started appearing on the market in 2014/2015, just after my last full PC build.  Instead of spinning disks fetching your data over a slow connection, these drives have no moving parts and are all on chips connected to the CPU via a super fast bus.  This proved to be a great call, and I am super happy with the speed of the build.  But I will leave you in suspense for now, see the results section at the bottom for details!
 
 ### Silence
 
@@ -118,9 +118,9 @@ Unlike its beefier counterparts, this video card it is smaller only has one fan,
 
 ## The Assembly
 
-I took over the dining table for the assembly phase.  Lot of moving parts in any new PC build.  You even get a bunch of extra parts that you don't need, for example they send parts for Intel chips and for AMD chips, but you are only every going to use one of those.  Keeping tracking of the parts is super important.
+I took over the dining table for the assembly phase.  Lots of moving parts in any new PC build.  You even get a bunch of extra parts that you don't need, for example they send parts for Intel chips and for AMD chips, but you are only ever going to use one of those.  Keeping track of the parts is super important.
 
-> The instructions are terrible.  It doesn't matter which part we are talking about, they are all atrocious. If you every want to try a PC build yourself, be prepared for that.  The manufacturers websites are sometimes helpful, though not always, and YouTube is your friend here.
+> The instructions are terrible.  It doesn't matter which part we are talking about, they are all atrocious. If you ever want to try a PC build yourself, be prepared for that.  The manufacturers websites are sometimes helpful, though not always, and YouTube is your friend here.
 {: .prompt-warning .sjg-br}
 
 {% include clear-float.html break=1 %}
@@ -215,5 +215,5 @@ Here is a good background to show off the 4K.  I know you can't see it in the pi
 
 - Most parts were bought at [Newegg.ca](https://www.newegg.ca)
 - Monitors are [DELL 27 Plus 4K Model S27255QS](https://www.dell.com/en-ca/shop/dell-27-plus-4k-monitor-s2725qs/apd/210-brnd/monitors-monitor-accessories?msockid=2341291a1f756914244b3f0b1eb468a7) bought from [Amazon](https://www.amazon.ca/Dell-Plus-Monitor-Integrated-Comfortview/dp/B0F1GF1KFC/ref=asc_df_B0F1GF1KFC?tag=bingshopdesk-20&linkCode=df0&hvadid=80195828197082&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=124691&hvtargid=pla-4583795293432449&msclkid=faa122f0cbb514d9436a4a8a29a00357&th=1)
-- A Philips #2 head screwdriver, supplied from you local toolbox 
+- A Philips #2 head screwdriver, supplied from your local toolbox 
 {:.sjg-list }
