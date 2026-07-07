@@ -23,7 +23,7 @@ media_subpath: /assets/img/posts/walnut-frame
 
 ### Local Artist
 
-Debbie found these cute little guys at a local art centre.
+Debbie found these cute little guys at a local art centre.  Cute and colourful, a great combo!
 
 {% include html-side.html img="20191026_171746.avif" align="center" %}
 
