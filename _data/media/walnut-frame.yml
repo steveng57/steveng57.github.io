@@ -14,3 +14,10 @@ images:
     gallery: true
     thumbnail: false
     caption: "Birds Hanging Out"
+
+  "20191026_171746.avif":
+    source: "20191026_171746.jpg"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "A Colourful Collection"

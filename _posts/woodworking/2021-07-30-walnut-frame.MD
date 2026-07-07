@@ -23,7 +23,11 @@ media_subpath: /assets/img/posts/walnut-frame
 
 ### Local Artist
 
-Debbie found these cute little guys at a local art centre. We thought they would look good together, having a little group chat.
+Debbie found these cute little guys at a local art centre.
+
+{% include html-side.html img="20191026_171746.avif" align="center" %}
+
+Debbie picked out four of her favorites and thought they would look good together, having a little group chat.  Maybe they have their favorite app for that, who knows.
 
 {% include clear-float.html break = 1%}
 
@@ -54,3 +58,5 @@ When I first wrote this blog entry, I had not yet taken the above picture, so in
 - {{ site.data.links.domino }} (to strengthen the miters)
 - "Infinity" clips to mount the backing to the outside frame from {{ site.data.links.leevalley }}
 {: .sjg-list }
+
+
