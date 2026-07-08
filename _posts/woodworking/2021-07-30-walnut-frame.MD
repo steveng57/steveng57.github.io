@@ -37,7 +37,16 @@ Debbie picked out four of her favorites and thought they would look good togethe
 
 Pretty simple, only tricky part was mounting and positioning the individual pieces of artwork so that they could be screwed into the backing in the right spot.
 
-{% include clear-float.html %}
+{% include clear-float.html break = 1 %}
+
+{% include html-side.html img="IMG_2913.avif" align="left" %}
+### Inverse Mullet
+
+Lots of _Infinity Clips_ used here.  It sounds like something from a Marvel movie, but it's just a bunch of fasteners.
+
+I call this pic the _Inverse Mullet_ because it's all party in the front, and business in the back.  I know, I know... a long way for a bad joke.  Yet here you are.
+
+{% include clear-float.html break=1 %}
 
 ## In the Gazebo
 
@@ -58,5 +67,6 @@ When I first wrote this blog entry, I had not yet taken the above picture, so in
 - {{ site.data.links.domino }} (to strengthen the miters)
 - "Infinity" clips to mount the backing to the outside frame from {{ site.data.links.leevalley }}
 {: .sjg-list }
+
 
 

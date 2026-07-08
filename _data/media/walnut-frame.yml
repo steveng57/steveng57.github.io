@@ -21,3 +21,10 @@ images:
     gallery: true
     thumbnail: false
     caption: "A Colourful Collection"
+
+  "IMG_2913.avif":
+    source: "IMG_2913.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "The Inverse Mullet"
