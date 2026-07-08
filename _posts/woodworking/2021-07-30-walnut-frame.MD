@@ -15,9 +15,9 @@ media_subpath: /assets/img/posts/walnut-frame
 ---
 ## Origins
 
-"I've been framed!!!", said the yellow bird to the blue bird. This one was pretty simple but it's one of the first things I did in walnut. Beautiful wood to work with. A little smelly, but I try not to inhale.
+"I've been framed!!!", said the yellow bird to the blue bird. This one was pretty simple, but it's one of the first things I did in walnut. Beautiful wood to work with. A little smelly, but I try not to inhale.
 
-100% solid walnut, throughout.
+100% solid walnut throughout.
 
 ## The Details
 
@@ -27,7 +27,7 @@ Debbie found these cute little guys at a local art centre.  Cute and colourful, 
 
 {% include html-side.html img="20191026_171746.avif" align="center" %}
 
-Debbie picked out four of her favorites and thought they would look good together, having a little group chat.  Maybe they have their favorite app for that, who knows.
+Debbie picked out four of her favourites and thought they would look good together, having a little group chat. Maybe they have their favourite app for that, who knows.
 
 {% include clear-float.html break = 1%}
 
@@ -35,7 +35,7 @@ Debbie picked out four of her favorites and thought they would look good togethe
 
 ### Local Birds
 
-Pretty simple, only tricky part was mounting and positioning the individual pieces of artwork so that they could be screwed into the backing in the right spot.
+Pretty simple. The only tricky part was mounting and positioning the individual pieces of artwork so that they could be screwed into the backing in the right spot.
 
 {% include clear-float.html break = 1 %}
 
@@ -44,19 +44,19 @@ Pretty simple, only tricky part was mounting and positioning the individual piec
 
 Lots of _Infinity Clips_ used here.  It sounds like something from a Marvel movie, but it's just a bunch of fasteners.
 
-I call this pic the _Inverse Mullet_ because it's all party in the front, and business in the back.  I know, I know... a long way for a bad joke.  Yet here you are.
+I call this pic the _Inverse Mullet_ because it's all party in the front and business in the back. I know, I know... a long way to go for a bad joke. Yet here you are.
 
 {% include clear-float.html break=1 %}
 
 ## In the Gazebo
 
-Here they are in there new home, getting all chatty and hanging out.
+Here they are in their new home, getting all chatty and hanging out.
 
 {% include html-side.html img="IMG_0757.avif" align="center-wide" %}
 
 ## Placeholder
 
-When I first wrote this blog entry, I had not yet taken the above picture, so instead I put a placeholder just for giggles. The thing is though, I have now grown attached to this placeholder so I am going to leave it right where it is.
+When I first wrote this blog entry, I had not yet taken the above picture, so instead I put in a placeholder just for giggles. The thing is, though, I have now grown attached to this placeholder, so I am going to leave it right where it is.
 
 {% include embed/youtube.html id='dQw4w9WgXcQ' %}
 {% include clear-float.html %}
