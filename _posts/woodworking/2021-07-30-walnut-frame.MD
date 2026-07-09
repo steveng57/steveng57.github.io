@@ -42,11 +42,11 @@ Pretty simple. The only tricky part was mounting and positioning the individual 
 {% include html-side.html img="IMG_2913.avif" align="left" %}
 ### Inverse Mullet
 
-Lots of _Infinity Clips_ used here.  It sounds like something from a Marvel movie, but it's just a bunch of fasteners.
+Lots of _Infinity Clips_ used here, the 12 figure-eight loopy things that hold the backing to the outside of the frame.  It sounds like something from a Marvel movie, but it's just a bunch of fasteners.
 
-I call this pic the _Inverse Mullet_ because it's all party in the front and business in the back. I know, I know... a long way to go for a bad joke. Yet here you are.
+I almost called this pic the _Inverse Mullet_ because it's all party in the front and business in the back. I know, I know... a long way to go for a bad joke. Yet here you are.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ## In the Gazebo
 
