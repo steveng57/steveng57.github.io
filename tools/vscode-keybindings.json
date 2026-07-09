@@ -1,0 +1,7 @@
+[
+  {
+    "key": "ctrl+shift+o",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Open Related Post Files by Slug"
+  }
+]
