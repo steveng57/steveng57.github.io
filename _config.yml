@@ -242,6 +242,9 @@ exclude:
   - assets/img/**/*.heic
   - assets/img/**/*.HEIC
   - assets/img/posts/**/*.mp4
+  - assets/img/posts/**/*.MP4
+  - assets/img/posts/**/*.mov
+  - assets/img/posts/**/*.MOV
   # Treat large source videos as build-time inputs only. Place them
   # under a per-post "video-src" subfolder so they are excluded from
   # the generated site and therefore from Cloudflare Pages' asset

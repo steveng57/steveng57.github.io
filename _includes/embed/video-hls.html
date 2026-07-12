@@ -8,6 +8,8 @@
     - poster: optional poster image URL; defaults to `_data/media` lookup
     - title: optional title used for aria-label
     - caption: optional figcaption text; defaults to `_data/media`, then `_data/img-info.json`, then filename
+    - align: layout keyword (left, left-33, left-50, right, right-33, right-50,
+             center, center-wide, center-full, full, none). Defaults to center-full.
     - preload: metadata|none|auto (default: metadata)
     - controls: true|false (default: true)
     - autoplay: true|false (default: false)
@@ -45,7 +47,13 @@
   {% endif %}
 {% endfor %}
 {% assign post_media = site.data.media[media_slug] %}
-{% assign media_lookup_key = hls_master | remove_first: page.media_subpath | remove_first: "/" %}
+{% assign media_lookup_key = hls_master %}
+{% assign media_lookup_first_char = media_lookup_key | slice: 0, 1 %}
+{% if page.media_subpath != "" and hls_master contains page.media_subpath %}
+  {% assign media_lookup_key = hls_master | remove_first: page.media_subpath | remove_first: "/" %}
+{% elsif media_lookup_first_char == "/" %}
+  {% assign media_lookup_key = hls_master | remove_first: "/" %}
+{% endif %}
 {% assign video_media = nil %}
 {% if post_media and post_media.videos %}
   {% assign video_media = post_media.videos[media_lookup_key] %}
@@ -80,16 +88,51 @@
 {% assign playsinline_flag = include.playsinline | default: "true" | downcase %}
 {% assign orientation_class = "" %}
 {% assign orientation_hint = include.orientation | default: "" | downcase %}
+{% assign align = include.align | default: "center-full" %}
+{% assign figure_classes = "sjg-video-hls sjg-figure" %}
 {% if orientation_hint == "portrait" %}
   {% assign orientation_class = " sjg-video-portrait" %}
 {% elsif orientation_hint == "landscape" %}
   {% assign orientation_class = " sjg-video-landscape" %}
 {% endif %}
+{% assign figure_classes = figure_classes | append: orientation_class %}
+
+{% case align %}
+  {% when "left" %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-left sjg-figure-66" %}
+  {% when "left-33" %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-left sjg-figure-33" %}
+  {% when "left-50" %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-left sjg-figure-50" %}
+  {% when "right" %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-right sjg-figure-66" %}
+  {% when "right-33" %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-right sjg-figure-33" %}
+  {% when "right-50" %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-right sjg-figure-50" %}
+  {% when "center" %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-center sjg-figure-75" %}
+  {% when "center-wide" %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-center sjg-figure-90" %}
+  {% when "center-full" %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-center sjg-figure-100" %}
+  {% when "full" %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-center sjg-figure-100" %}
+  {% when "none" %}
+    {# no additional layout classes #}
+  {% else %}
+    {% assign figure_classes = figure_classes | append: " sjg-figure-center sjg-figure-100" %}
+{% endcase %}
+
+{% if include.class %}
+  {% assign figure_classes = figure_classes | append: " " | append: include.class %}
+{% endif %}
 
 {% if hls_master == "" %}
   <p><strong>video-hls include error:</strong> `master` parameter is required.</p>
 {% else %}
-<figure class="sjg-video-hls{{ orientation_class }} {% if include.class %}{{ include.class }}{% endif %}">
+<div style="height: 0.001rem;"></div>
+<figure class="{{ figure_classes | strip }}">
   <div class="sjg-video-frame rounded">
     <video
       id="{{ player_id | escape }}"

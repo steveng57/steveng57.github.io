@@ -1,0 +1,192 @@
+cover: "IMG_2936.HEIC"
+
+images:
+  "4884155735830755613.avif":
+    source: "4884155735830755613.jpg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "An Internet Find"
+
+  "console-sketchup.avif":
+    source: "console-sketchup.png"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "There is always a Sketchup sketch"
+
+  "IMG_2388.avif":
+    source: "IMG_2388.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Raw Red Oak from the Stash"
+
+  "IMG_2396.avif":
+    source: "IMG_2396.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Console Top Panel"
+
+  "IMG_2398.avif":
+    source: "IMG_2398.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Top and Sides Glued Up"
+
+  "IMG_2426.avif":
+    source: "IMG_2426.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: ""
+
+  "IMG_2430.avif":
+    source: "IMG_2430.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "The Nightmare Begins..."
+
+  "IMG_2431.avif":
+    source: "IMG_2431.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "...and Continues"
+
+  "IMG_2440.avif":
+    source: "IMG_2440.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Drawer Box Dry Fit"
+
+  "IMG_2443.avif":
+    source: "IMG_2443.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: ""
+
+  "IMG_2459.avif":
+    source: "IMG_2459.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Ultra Wide Pulls"
+
+  "IMG_2816.avif":
+    source: "IMG_2816.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Walnut Layers"
+
+  "IMG_2834.avif":
+    source: "IMG_2834.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: ""
+
+  "IMG_2836.avif":
+    source: "IMG_2836.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Walnut Strips"
+
+  "IMG_2840.avif":
+    source: "IMG_2840.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "One time, at band clamp..."
+
+  "IMG_2842.avif":
+    source: "IMG_2842.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Edgy Baby"
+
+  "IMG_2845.avif":
+    source: "IMG_2845.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "First Dry Fit"
+
+  "IMG_2899.avif":
+    source: "IMG_2899.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Rubio Monocoat Collection"
+
+  "IMG_2906.avif":
+    source: "IMG_2906.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Intense Black and Urban Grey"
+
+  "IMG_2917.avif":
+    source: "IMG_2917.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Satin Sheen Finish"
+
+  "IMG_2922.avif":
+    source: "IMG_2922.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Charcoal"
+
+  "IMG_2933.avif":
+    source: "IMG_2933.HEIC"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Looking Good"
+
+  "IMG_2936.avif":
+    source: "IMG_2936.HEIC"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "Mmm...Walnut"
+
+videos:
+  "stream/IMG_2457/master.m3u8":
+    source: "IMG_2457.MOV"
+    poster: "stream/IMG_2457/poster.avif"
+    include: true
+    caption: "Oh so satisfying"
+    orientation: "landscape"
+
+  "stream/IMG_2829/master.m3u8":
+    source: "IMG_2829.MOV"
+    poster: "stream/IMG_2829/poster.avif"
+    include: true
+    caption: "In the Bag"
+    orientation: "portrait"
+
+  "stream/IMG_2830/master.m3u8":
+    source: "IMG_2830.MOV"
+    poster: "stream/IMG_2830/poster.avif"
+    include: true
+    caption: "Pump Up the Volume"
+    orientation: "portrait"
+
+  "stream/IMG_2937/master.m3u8":
+    source: "IMG_2937.MOV"
+    poster: "stream/IMG_2937/poster.avif"
+    include: true
+    caption: "Fini"
+    orientation: "landscape"
