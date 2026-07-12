@@ -69,7 +69,7 @@ images:
     include: true
     gallery: false
     thumbnail: false
-    caption: ""
+    caption: "Clamping the Drawer Box"
 
   "IMG_2459.avif":
     source: "IMG_2459.HEIC"
@@ -90,7 +90,7 @@ images:
     include: true
     gallery: false
     thumbnail: false
-    caption: ""
+    caption: "Layer Cakes"
 
   "IMG_2836.avif":
     source: "IMG_2836.HEIC"

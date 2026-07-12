@@ -14,7 +14,7 @@ image:
 media_subpath: /assets/img/posts/sauna-picture-frames/
 favorite: false
 series: Picture Frames
-pin: true
+pin: false
 ---
 ## Background
 We got some cool prints that matched the theme we were going for in the new sauna building out back, which I would have to describe as "contemporary organic", meaning marbles, tiles, and woods, but with a modern spa-like styling.
