@@ -75,7 +75,10 @@ var dynamicImages = [
         {% if gallery_flag %}
             {% assign postname = image.path | replace: '/tinyfiles', '' | replace: albumfolder, '' | replace: image.name, '' | replace: '/', '' | replace: '-', ' ' %}
             {% assign redirect = '/posts/' | append: postname | replace: ' ', '-' %}
-            {% assign datetaken = image_meta.datetaken | date: "%b %-d, %Y" %}
+            {% assign post_slug = postname | replace: ' ', '-' %}
+            {% assign gallery_post = site.posts | where: "slug", post_slug | first %}
+            {% assign gallery_date = image_meta.datetaken | default: gallery_post.date %}
+            {% assign datetaken = gallery_date | date: "%b %-d, %Y" %}
             {
                 'src': '{{ image.path | replace: "/tinyfiles", "" }}',
                 'thumb': '{{ image.path }}',
