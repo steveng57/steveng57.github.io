@@ -112,17 +112,21 @@ Goal: Define a reusable profile that combines a normal burst and timed subshell 
 We need to add a new fireworks profile called "Strobe".
 
 This profile should be modeled closely on an existing profile that already:
-• Has a primary shell burst
-• Spawns subshells
-• Manages multiple visual phases
+
+- Has a primary shell burst
+- Spawns subshells
+- Manages multiple visual phases
+
 (e.g., PeonyToWillow or a similar multi-stage profile)
 
 High-level behavior:
+
 1. The primary shell launches normally.
 2. At burst time, it produces a Peony-style spherical burst of sparkling particles.
 3. Inside that sphere, a configurable number of "strobe subshells" will appear and pop.
 
 Profile structure requirements:
+
 - Name: "strobe"
 - Must have both:
   - A primary burst definition (Peony-style)
@@ -131,6 +135,7 @@ Profile structure requirements:
 - Subshells must NOT spawn further subshells.
 
 Configuration parameters (with reasonable defaults):
+
 - strobeCount (default ~100)
 - strobeColor (default: white)
 - strobeRadiusMeters (default: 0.025m)   // ~2.5cm
@@ -141,6 +146,7 @@ Configuration parameters (with reasonable defaults):
 - Primary peony spark lifetime should be longer than the strobe lifetime.
 
 Design guidance:
+
 - Follow the same data layout, naming, and initialization patterns used by PeonyToWillow.
 - Reuse existing particle kinds where possible.
 - Any new fields added to the profile should be clearly commented as "Strobe-specific".
