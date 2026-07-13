@@ -162,31 +162,34 @@ images:
     thumbnail: true
     caption: "Mmm...Walnut"
 
+  "IMG_2934.avif":
+    source: "IMG_2934.HEIC"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "Wide Angle Glam"
+
 videos:
   "stream/IMG_2457/master.m3u8":
     source: "IMG_2457.MOV"
     poster: "stream/IMG_2457/poster.avif"
     include: true
     caption: "Oh so satisfying"
-    orientation: "landscape"
 
   "stream/IMG_2829/master.m3u8":
     source: "IMG_2829.MOV"
     poster: "stream/IMG_2829/poster.avif"
     include: true
     caption: "In the Bag"
-    orientation: "portrait"
 
   "stream/IMG_2830/master.m3u8":
     source: "IMG_2830.MOV"
     poster: "stream/IMG_2830/poster.avif"
     include: true
     caption: "Pump Up the Volume"
-    orientation: "portrait"
 
   "stream/IMG_2937/master.m3u8":
     source: "IMG_2937.MOV"
     poster: "stream/IMG_2937/poster.avif"
     include: true
     caption: "Fini"
-    orientation: "landscape"
