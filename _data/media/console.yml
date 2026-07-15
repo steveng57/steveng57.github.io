@@ -41,7 +41,7 @@ images:
     include: true
     gallery: false
     thumbnail: false
-    caption: ""
+    caption: "Everything in its place"
 
   "IMG_2430.avif":
     source: "IMG_2430.HEIC"
