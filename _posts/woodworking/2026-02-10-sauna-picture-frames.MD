@@ -84,7 +84,7 @@ After trying a number of different shades of grey Rubio Monocoat hard-wax oils, 
 I'm in!!!
 {: .prompt-info .sjg-br }
 
-{% include html-sxs.html img1="IMG_2318.avif" img2="Affogato.avif" align="equal-height" %}
+{% include html-sxs.html img1="IMG_2318.avif" img2="Affogato.avif" %}
 
 See, they are almost identical!  I can't see the difference, can you see the difference?
 
@@ -114,7 +114,7 @@ After carefully carrying the frames out to the sauna over very slippery icy stam
 
 First some close up pictures of the frame itself before we get to the good stuff.
 
-{% include html-sxs.html img1="11019.avif" img2="IMG_2342.avif" align = "equal-height" %}
+{% include html-sxs.html img1="11019.avif" img2="IMG_2342.avif" %}
 
 {% include clear-float.html break = 1 %}
 

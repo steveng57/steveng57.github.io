@@ -7,7 +7,7 @@
     - align: optional sizing helper; use `equal-33`, `equal-50` (alias `equal`),
              `equal-66`, `equal-75`, or `equal-height` to give both figures matching widths
              or matching heights.
-             Defaults to natural image sizing (unchanged from legacy behavior).
+             Defaults to `equal-height`.
     - wrapper_classes: additional classes for the outer flex container
     - figure_classes: base classes applied to both `<figure>` elements
     - figure1_classes / figure2_classes: per-figure overrides
@@ -79,7 +79,7 @@
 {% assign img_decoding = include.decoding | default: "async" %}
 {% assign img_fetchpriority = include.fetchpriority | default: "low" %}
 
-{% assign align = include.align | default: "" %}
+{% assign align = include.align | default: "equal-height" %}
 {% assign size_class = "" %}
 {% assign figure1_style = "" %}
 {% assign figure2_style = "" %}
