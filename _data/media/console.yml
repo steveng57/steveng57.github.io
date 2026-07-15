@@ -169,6 +169,13 @@ images:
     thumbnail: false
     caption: "Wide Angle Glam"
 
+  "IMG_2817.avif":
+    source: "IMG_2817.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Platen"
+
 videos:
   "stream/IMG_2457/master.m3u8":
     source: "IMG_2457.MOV"
