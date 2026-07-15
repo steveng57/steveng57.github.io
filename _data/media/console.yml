@@ -41,7 +41,7 @@ images:
     include: true
     gallery: false
     thumbnail: false
-    caption: "Everything in its place"
+    caption: "Stretchers stretching and dividers dividing"
 
   "IMG_2430.avif":
     source: "IMG_2430.HEIC"
