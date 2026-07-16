@@ -58,7 +58,7 @@
   - Primary entry point is `./serve.ps1`, which wraps `bundle exec jekyll serve` with dependency checks and options like `-RegenerateImages`, `-Production`, `-Clean`, `-Port`, and `-CheckOnly`.
   - For a full refresh of media and captions before serving, prefer running `./gen-derived-avif.ps1` then `./gen-imagecaptions.ps1`, and update `serve.ps1` in tandem if you change that workflow.
 - CI/CD:
-  - `.github/workflows/jekyll.yml` builds with Ruby 3.4.4, updates submodules to latest, runs `bundle exec jekyll build`, and deploys to GitHub Pages.
+  - `.github/workflows/jekyll.yml` builds with Ruby 3.4.10, updates submodules to latest, runs `bundle exec jekyll build`, and deploys to GitHub Pages.
   - Link health checks can be run manually via `./check-brokenlinks.ps1 -rootUrl https://www.stevengoulet.com`.
 
 ## Contact Function (Cloudflare Pages)
