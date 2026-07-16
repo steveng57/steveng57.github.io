@@ -201,7 +201,7 @@ function Test-IncludeReferences {
         [string]$MediaDir
     )
 
-    $includeMatches = [regex]::Matches($Content, "{%\s*include\s+(html-side\.html|html-sxs\.html|embed/video-hls\.html)\s+(.*?)%}", "Singleline")
+    $includeMatches = [regex]::Matches($Content, "{%\s*include\s+(figure\.html|figure-pair\.html|embed/video-hls\.html)\s+(.*?)%}", "Singleline")
     foreach ($include in $includeMatches) {
         $includeName = $include.Groups[1].Value
         $args = $include.Groups[2].Value

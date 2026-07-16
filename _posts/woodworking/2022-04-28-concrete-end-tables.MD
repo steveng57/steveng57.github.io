@@ -22,7 +22,7 @@ The concrete I used was a special artisan blend from [Buddy Rhodes].
 
 ## Under Construction
 
-{% include html-side.html img="20220420_174227.avif" align="left" %}
+{% include figure.html img="20220420_174227.avif" align="left" %}
 
 ### In Fine Form
 
@@ -34,7 +34,7 @@ The black colouring makes it easier to remove when you are done. Made from spare
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20220420_174306.avif" align="right" %}
+{% include figure.html img="20220420_174306.avif" align="right" %}
 
 ### The Legs
 
@@ -42,7 +42,7 @@ Standard leg with an apron. Only tricky part here is that I made the apron extra
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20220503_133849.avif" align="left" %}
+{% include figure.html img="20220503_133849.avif" align="left" %}
 
 ### The Poor Pour
 
@@ -52,7 +52,7 @@ In my dream, I had though this was going to be an eggshell white with a few flec
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20220623_123043.avif" align="right" %}
+{% include figure.html img="20220623_123043.avif" align="right" %}
 
 ### The Fix Is In
 
@@ -66,7 +66,7 @@ But it worked out well in the end. I can honestly say I am very happy with how i
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20220623_123128.avif" align="left" %}
+{% include figure.html img="20220623_123128.avif" align="left" %}
 
 ### Call Me Hairy
 
@@ -76,7 +76,7 @@ This one took a long time, so it gets another pic. I like the hairy arm in the p
 ## In Production
 
 This gets used on a daily basis as a cleaning station for the boys when they come in from the outside.
-{% include html-side.html img="IMG_0553.avif" align="center-wide" %}
+{% include figure.html img="IMG_0553.avif" align="center-wide" %}
 
 ## Materials
 

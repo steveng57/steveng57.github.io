@@ -26,7 +26,7 @@ I did not use Sketchup for this one, so it proves I can do at least some things 
 
 ## Construction
 
-{% include html-side.html img="IMG_2298.avif" align="left" %}
+{% include figure.html img="IMG_2298.avif" align="left" %}
 
 ### Mistakes at the Outset
 
@@ -36,7 +36,7 @@ But I made a couple or three mistakes here.  First, this board is almost 20cm (8
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_2304.avif" align="right" %}
+{% include figure.html img="IMG_2304.avif" align="right" %}
 
 ### The Pain Continues
 
@@ -52,13 +52,13 @@ It was such a botched mess, I just turned off the bandsaw and walked away.  When
 
 ### The Fix Is In
 
-{% include html-sxs.html img1="IMG_2301.avif" img2="IMG_2302.avif" %}
+{% include figure-pair.html img1="IMG_2301.avif" img2="IMG_2302.avif" %}
 
 So when I came back the next day, shaking off the shear disgust of my previous efforts, I did a couple of things to make things work.  The number one fix was to cut the boards down to about 40mm from 200mm in width so that the bandsaw had a lot less to chew on as it went through the board.  Next thing was to get a brand new blade, which proved to make a real difference: it cut through the white oak like a chainsaw through a dandelion.  I also did a bunch of little things like a better bandsaw setup, proper out-feed support etc. 
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_2307.avif" align="left" %}
+{% include figure.html img="IMG_2307.avif" align="left" %}
 
 ### Clamps and Glue
 
@@ -66,7 +66,7 @@ After cutting the rabbet (not rabbit my fellow woodworkers!), it was time for th
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_2310.avif" align="right" %}
+{% include figure.html img="IMG_2310.avif" align="right" %}
 
 ### Back Braces in Place
 
@@ -84,13 +84,13 @@ After trying a number of different shades of grey Rubio Monocoat hard-wax oils, 
 I'm in!!!
 {: .prompt-info .sjg-br }
 
-{% include html-sxs.html img1="IMG_2318.avif" img2="Affogato.avif" %}
+{% include figure-pair.html img1="IMG_2318.avif" img2="Affogato.avif" %}
 
 See, they are almost identical!  I can't see the difference, can you see the difference?
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="IMG_2320.avif" align="left" %}
+{% include figure.html img="IMG_2320.avif" align="left" %}
 
 ### Alignment Issues
 
@@ -106,7 +106,7 @@ If you are wondering about the playing cards in the box with the spacers, they a
 
 After all that, they were ready to go.  
 
-{% include html-sxs.html img1="IMG_2322.avif" img2="IMG_2323.avif" %}
+{% include figure-pair.html img1="IMG_2322.avif" img2="IMG_2323.avif" %}
 
 ## In Production
 
@@ -114,11 +114,11 @@ After carefully carrying the frames out to the sauna over very slippery icy stam
 
 First some close up pictures of the frame itself before we get to the good stuff.
 
-{% include html-sxs.html img1="11019.avif" img2="IMG_2342.avif" %}
+{% include figure-pair.html img1="11019.avif" img2="IMG_2342.avif" %}
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="11018.avif" align="left" %}
+{% include figure.html img="11018.avif" align="left" %}
 
 ### The Big One
 
@@ -128,7 +128,7 @@ It makes me want to assume the Lotus position and chant "ooohhhmmm" repeatedly.
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="IMG_2344.avif" align="right" %}
+{% include figure.html img="IMG_2344.avif" align="right" %}
 
 ### The Cool One
 

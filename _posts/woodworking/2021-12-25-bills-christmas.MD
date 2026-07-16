@@ -20,7 +20,7 @@ Over tha past few years, the east coast side of the family has decided to have e
 
 ## The Stand
 
-{% include html-side.html img="computer-stand-1.avif" align="left" %}
+{% include figure.html img="computer-stand-1.avif" align="left" %}
 
 ### Computer Support
 
@@ -29,7 +29,7 @@ I designed the stand in Sketchup, with a number of people sneaking into Bill's o
 It took a bit of skullduggery but we made it work.  
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="computer-stand-3.avif" align="right" %}
+{% include figure.html img="computer-stand-3.avif" align="right" %}
 
 ### Drawer
 
@@ -38,7 +38,7 @@ One thing that was novel here was that I made the drawer slides myself out of ha
 
 ## Everywhere a Sign
 
-{% include html-side.html img="golf-sign.avif" align="left" %}
+{% include figure.html img="golf-sign.avif" align="left" %}
 
 ### Epoxy Inlay
 

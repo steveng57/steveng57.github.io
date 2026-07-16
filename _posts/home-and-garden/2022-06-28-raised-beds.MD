@@ -20,7 +20,7 @@ When the weather gets warmer, I will head out back and take some pics of the fin
 
 ## Under Construction
 
-{% include html-side.html img="20220628_125859.avif" align="left" %}
+{% include figure.html img="20220628_125859.avif" align="left" %}
 
 ### Cedar
 
@@ -30,7 +30,7 @@ Cedar is one of the best smelling woods when you cut into it. It releases a wond
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20220628_125916.avif" align="right" %}
+{% include figure.html img="20220628_125916.avif" align="right" %}
 
 ### It's Extreme
 
@@ -41,7 +41,7 @@ The neat thing about this stuff is that they have a pretty broad spectrum of col
 
 ## Ready For Stain
 
-{% include html-side.html img="20220628_125950.avif" align="left" %}
+{% include figure.html img="20220628_125950.avif" align="left" %}
 
 It's a pretty messy oil stain, but it's not too thick.  It's a little thicker than water so you can easily slop it on.
 
@@ -49,7 +49,7 @@ It's a pretty messy oil stain, but it's not too thick.  It's a little thicker th
 
 ## In Production
 
-{% include html-side.html img="IMG_1012.avif" align="center-wide" %}
+{% include figure.html img="IMG_1012.avif" align="center-wide" %}
 
 {% include clear-float.html break = 1 %}
 

@@ -115,7 +115,7 @@ function Get-ImportedImageIncludeBlock {
     $lines = @()
     foreach ($imageName in $imageNames) {
         if (-not [string]::IsNullOrWhiteSpace($imageName)) {
-            $lines += "{% include html-side.html img=`"$imageName`" align=`"center-full`" %}`r`n`r`n{% include clear-float.html break=1 %}"
+            $lines += "{% include figure.html img=`"$imageName`" align=`"center-full`" %}`r`n`r`n{% include clear-float.html break=1 %}"
         }
     }
 

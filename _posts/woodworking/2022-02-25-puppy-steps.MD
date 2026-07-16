@@ -18,7 +18,7 @@ This one was really simple, but a much needed project. Just a box really, but a 
 
 ## Under Construction
 
-{% include html-side.html img="20220225_091904.avif" align="left" %}
+{% include figure.html img="20220225_091904.avif" align="left" %}
 
 ### A First
 
@@ -26,7 +26,7 @@ This was the first time I attempted any engraving or detail work like this, note
 
 {% include clear-float.html break = 1%}
 
-{% include html-side.html img="IMG_0543.avif" align="right" %}
+{% include figure.html img="IMG_0543.avif" align="right" %}
 
 ### The Carve
 
@@ -37,7 +37,7 @@ In both the yoga room and mudroom steps, the prints were carved about 6mm deep.
 
 ## In Production
 
-{% include html-side.html img="IMG_0545.avif" align="left" %}
+{% include figure.html img="IMG_0545.avif" align="left" %}
 
 ### Mudroom
 

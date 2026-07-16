@@ -18,7 +18,7 @@ Ok, so the difference between a charcuterie board and a cutting board, is that a
 
 ## Under Construction
 
-{% include html-side.html img="20220227_191600.avif" align="left" %}
+{% include figure.html img="20220227_191600.avif" align="left" %}
 
 ### In the Sticks
 
@@ -32,7 +32,7 @@ It was finished with a food safe product called Honeybees Natural Wood Cream, mo
 
 ## In Production
 
-{% include html-side.html img="IMG_0547.avif" %}
+{% include figure.html img="IMG_0547.avif" %}
 
 ## Materials
 

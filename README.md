@@ -37,7 +37,7 @@ The wizard creates both pieces needed for a post:
 - `_posts/<top-category>/YYYY-MM-DD-slug.MD`
 - `assets/img/posts/<slug>/`
 
-It prompts for title, date, category, tags, description, cover image, and optional pin/favorite/series metadata. It can also copy source media from a folder into the new post media folder. If you pick a HEIC/JPG/PNG cover image, the generated markdown references the matching `.avif` file for the site image and thumbnail. Imported still images are also added to the post body as `html-side.html` include lines.
+It prompts for title, date, category, tags, description, cover image, and optional pin/favorite/series metadata. It can also copy source media from a folder into the new post media folder. If you pick a HEIC/JPG/PNG cover image, the generated markdown references the matching `.avif` file for the site image and thumbnail. Imported still images are also added to the post body as `figure.html` include lines.
 
 For imported still images, the wizard also creates `_data/media/<slug>.yml`. This file captures authoring intent while keeping HEIC/JPG/PNG files as master images and AVIF files as the published site images:
 
@@ -89,7 +89,7 @@ Use `add-post-media.ps1` when a post already exists and you want to add more ima
 .\add-post-media.ps1 -Slug pen-tray -ImportFrom C:\Temp\pen-tray-media
 ```
 
-The script reuses the same media workflow as `new-post.ps1`. It copies supported media into `assets/img/posts/<slug>/`, updates `_data/media/<slug>.yml`, adds starter `html-side.html` or `embed/video-hls.html` include blocks to the post body, optionally runs image/video derivative generation, and then validates the post.
+The script reuses the same media workflow as `new-post.ps1`. It copies supported media into `assets/img/posts/<slug>/`, updates `_data/media/<slug>.yml`, adds starter `figure.html` or `embed/video-hls.html` include blocks to the post body, optionally runs image/video derivative generation, and then validates the post.
 
 You can also pass explicit files:
 

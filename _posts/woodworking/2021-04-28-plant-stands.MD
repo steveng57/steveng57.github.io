@@ -20,11 +20,11 @@ It is always nice when you work on a piece that is going to be on display. I als
 
 ### The Design
 
-{% include html-side.html img="plant-stands-sketchup.avif" align="right" %}
+{% include figure.html img="plant-stands-sketchup.avif" align="right" %}
 This seems a bit silly looking back on it now, to have gone to this length in the design. But it was a great way to learn {{ site.data.links.sketchup }}, which has been super valuable in many projects.
 {% include clear-float.html break = 1%}
 
-{% include html-side.html img="20210427_190041.avif" align="left" %}
+{% include figure.html img="20210427_190041.avif" align="left" %}
 
 ### The Stands
 
@@ -35,7 +35,7 @@ I used General Finishes stain and polyurethane for the finish. It is very nice s
 I've made three of these of varying sizes.
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20210421_212015.avif" align="right" %}
+{% include figure.html img="20210421_212015.avif" align="right" %}
 
 ### The Pots
 
@@ -44,7 +44,7 @@ After a couple weeks of letting the ceramic cure, I put nice white glaze on them
 Nah, not really. I bought them on Amazon for about $70 each. I would tell you the brand name, but they are not selling them anymore.
 {% include clear-float.html %}
 
-{% include html-side.html img="20210418_000920000_iOS.avif" align="left" %}
+{% include figure.html img="20210418_000920000_iOS.avif" align="left" %}
 
 ### Assembled
 
@@ -55,7 +55,7 @@ It was important to get the width just right. You don't want too large or small 
 
 Ta da! All dressed up with freshly potted plants and in their new home, though we do move them around around a bit.
 
-{% include html-side.html img="20210428_181207.avif" %}
+{% include figure.html img="20210428_181207.avif" %}
 
 ## Materials
 

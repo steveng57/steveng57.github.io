@@ -30,7 +30,7 @@ This table was specially made to fit into Debbie's craft area. It of my own desi
 
 ## The Design
 
-{% include html-side.html img="punkins-playground-sketchup.avif" align="left" %}
+{% include figure.html img="punkins-playground-sketchup.avif" align="left" %}
 
 ### Sketchup
 
@@ -44,11 +44,11 @@ I really shouldn't be telling everyone all my secrets.
 
 A big piece of 4&#39;x8&#39; Baltic Birch plywood was used as the main surface. If you've not worked with that material before, I highly recommend it. It is nice stuff, super strong, made of 13 layers of wood instead of the 5 or 7 you get at the big box store. You can get it here at {{ site.data.links.balticbirch }}, check it out!
 
-{% include html-side.html img="IMG_0560.avif" %}
+{% include figure.html img="IMG_0560.avif" %}
 
 ## Under Construction - Literally
 
-{% include html-side.html img="IMG_0559.avif" align="left" %}
+{% include figure.html img="IMG_0559.avif" align="left" %}
 
 ### Torsion Box
 
@@ -58,7 +58,7 @@ It basically means that you put 3 to 4 inch strips running down the length and w
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_0558.avif" align="right" %}
+{% include figure.html img="IMG_0558.avif" align="right" %}
 
 ### Funky Legs
 
@@ -70,7 +70,7 @@ The legs are removable in case we ever want to move it. That's never going to ha
 
 ## In Play
 
-{% include html-side.html img="20230405_134555.avif" align="center-wide" %}
+{% include figure.html img="20230405_134555.avif" align="center-wide" %}
 
 ## Materials
 

@@ -23,7 +23,7 @@ The footstool and the computer stand get used every day, very cool. Made from po
 
 ## Footstool
 
-{% include html-sxs.html img1="IMG_0812.avif" img2="IMG_0813.avif" %}
+{% include figure-pair.html img1="IMG_0812.avif" img2="IMG_0813.avif" %}
 
 I've made many a footstool since taking up the craft. Deb likes to use this one when sitting on the barstools are the new island. Everyone seems to love the heart carved into the sides. Me too.
 
@@ -31,7 +31,7 @@ I've made many a footstool since taking up the craft. Deb likes to use this one 
 
 ## The Computer Stand
 
-{% include html-sxs.html img1="IMG_0811.avif" img2="IMG_0810.avif" %}
+{% include figure-pair.html img1="IMG_0811.avif" img2="IMG_0810.avif" %}
 
 This stand was custom made to the exact height. Storage underneath for the keyboard when not in use. Of course I had to do something on the engraving just to keep it lively.
 
@@ -39,7 +39,7 @@ This stand was custom made to the exact height. Storage underneath for the keybo
 
 ## The Design
 
-{% include html-side.html img="punkins-puter-studio.avif" align="center-wide" %}
+{% include figure.html img="punkins-puter-studio.avif" align="center-wide" %}
 
 {% include clear-float.html break  = 1 %}
 

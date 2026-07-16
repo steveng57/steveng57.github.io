@@ -20,7 +20,7 @@ Custom made to fit a particular spot in his kitchen, I enlisted the help of my s
 
 ## The Coffee Pod Drawer
 
-{% include html-side.html img="Sketchup - Coffee Pod Drawer.avif" align="left" %}
+{% include figure.html img="Sketchup - Coffee Pod Drawer.avif" align="left" %}
 
 ### The Design
 
@@ -28,7 +28,7 @@ Started with Sketchup {{ site.data.links.sketchup}}, and did the layout of the d
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_1487.avif" align="right" %}
+{% include figure.html img="IMG_1487.avif" align="right" %}
 
 ### Walnut Offcuts
 
@@ -45,19 +45,19 @@ The drawer itself consists of the sides and bottom, both of which involved the S
 The sides were thinner than a normal box, only about 10mm thick, so the corner joinery had to be stronger than just a butt joint and some glue.  I opted for finger joints (aka box joints) on this one.
 
 
-{% include html-side.html img="IMG_1498.avif" align="center" %}
+{% include figure.html img="IMG_1498.avif" align="center" %}
 
 {% include clear-float.html break=1 %}
 
 For the bottom, I carved seven rows of three circles as nestling places for the pods.  I don't know how well that will work over time as it is a bit of a pain to place them all neatly in the circles.  I expect that eventually the pods will be tossed in the drawer a little ad-hoc.  I know that's what I would do.
 
-{% include html-sxs.html img1="IMG_1499.avif" img2="IMG_1488.avif" %}
+{% include figure-pair.html img1="IMG_1499.avif" img2="IMG_1488.avif" %}
 
 {% include clear-float.html break=1 %}
 
 ### The Drawer Front
 
-{% include html-side.html img="IMG_1503.avif" align="left" %}
+{% include figure.html img="IMG_1503.avif" align="left" %}
 
 #### The Inlay
 
@@ -65,7 +65,7 @@ The font is called "Satisfy", which is oddly satisfying.  Designed in Shaper Stu
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_1507.avif" align="right" %}
+{% include figure.html img="IMG_1507.avif" align="right" %}
 
 #### Chillin'
 
@@ -73,7 +73,7 @@ The epoxy is {{ site.data.links.chillepoxy }}, a light gray made by combining wh
 
 {% include clear-float.html  break=1 %}
 
-{% include html-side.html img="IMG_1508.avif" align="left" %}
+{% include figure.html img="IMG_1508.avif" align="left" %}
 
 ### Fit and Finish
 
@@ -89,7 +89,7 @@ So a couple of interesting things about this project, they are small things, but
 
 {% include clear-float.html break=1%}
 
-{% include html-side.html img="IMG_1509.avif" align="full" %}
+{% include figure.html img="IMG_1509.avif" align="full" %}
 
 {% include clear-float.html break=1%}
 

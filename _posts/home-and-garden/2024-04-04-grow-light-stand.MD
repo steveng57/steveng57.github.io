@@ -20,7 +20,7 @@ They are meant to be put on a table, but they take up a lot of room that way. La
 
 ## Under Construction
 
-{% include html-side.html img="IMG_0864.avif" align="left" %}
+{% include figure.html img="IMG_0864.avif" align="left" %}
 
 ### Open Spaces
 
@@ -28,7 +28,7 @@ So rather than tempt fate and risk it happening again, this year I decided to do
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_0865.avif" align="right" %}
+{% include figure.html img="IMG_0865.avif" align="right" %}
 
 ### Sturdy Stacks
 
@@ -48,7 +48,7 @@ All seeded and seated. The grow light stays on for about 16 hours a day, giving 
 
 Dwarf Curled Scotch Kale on the bottom, and Grand Rapids Lettuce on the top. Look, I don't make the names.
 
-{% include html-side.html img="IMG_0866.avif" align="center-wide" %}
+{% include figure.html img="IMG_0866.avif" align="center-wide" %}
 
 ## Materials
 

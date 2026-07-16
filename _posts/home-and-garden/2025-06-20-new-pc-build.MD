@@ -45,13 +45,13 @@ In this build I made a number of decisions that were based on noise level, and I
 
 One thing that has gotten a lot better since the last time I did this is the _'configurators'_ available on sites like Newegg.  These help make sure you buy compatible parts that all work together nicely.  It's no fun when you go to plug something in and realize it's the wrong pin configuration or something.  Ask me how I know!
 
-{% include html-side.html img="IMG_1915.avif" align="center" %}
+{% include figure.html img="IMG_1915.avif" align="center" %}
 
 I give Newegg a **B-** rating overall.  The parts configurator was great, prices seemed competitive with Amazon etc.  My main complaint was that I paid for expedited shipping for the whole purchase (hey I am a geek, I cannot live without a PC for long), and while most of the order arrived pretty quick, the motherboard took almost a week longer than everything else to get here.  And you really can't do anything without a motherboard: literally everything plugs into it.  
 
 ## The Parts
 
-{% include html-side.html img="Fractal-Case.png" align="right-50" %}
+{% include figure.html img="Fractal-Case.png" align="right-50" %}
 
 ### The Case 
 
@@ -60,14 +60,14 @@ I went with the Fractal Design case, similar to the one pictured here.
 It's a great case and boasts a truly silent design, with sound dampening padding on all available interior surfaces.
 
 {% include clear-float.html break=1 %}
-{% include html-side.html img="intel_core_i9_14900k_3.avif" align="left-50" %}
+{% include figure.html img="intel_core_i9_14900k_3.avif" align="left-50" %}
 ### The CPU
 
 For the CPU, I chose the latest from the Intel line, the i9 14th generation.  I like AMD too though, but I feel bad for Intel these days, so let's call it supporting an old partner.
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="gigabyte-motherboard.png" align="right" %}
+{% include figure.html img="gigabyte-motherboard.png" align="right" %}
 ### The Motherboard
 
 This was a bit of a departure for me.  The Gigabyte brand of motherboards is targeted a bit more towards gamers, which means it has a lot of overclocking features and stuff for flashy RGB light do razzle-dazzle on all your components.  I don't need or even want those things as they can destabilize things, and my PC is hidden behind the desk anyway. 
@@ -86,7 +86,7 @@ From their website:
 - High-Res Audio：ALC1220 & Audiophile Grade Capacitors
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="corsair-ssd.png" align="left" %}
+{% include figure.html img="corsair-ssd.png" align="left" %}
 ### NVME 2.0 SSD
 
 This is where a lot of the speed came from. 
@@ -99,7 +99,7 @@ This is what a modern "hard drive" looks like.  All chips, no disks.
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="T1000_3QTR-Front-Right.png" align="right" %}
+{% include figure.html img="T1000_3QTR-Front-Right.png" align="right" %}
 
 ### The Video Card
 
@@ -125,14 +125,14 @@ I took over the dining table for the assembly phase.  Lots of moving parts in an
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_1917.avif" align="left" %}
+{% include figure.html img="IMG_1917.avif" align="left" %}
 ### The Layout
 
 I started by getting all the parts together and laying them out on the table.  Opening boxes and pulling out the limited (very limited) instructions came next.
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_1920.avif" align="right" %}
+{% include figure.html img="IMG_1920.avif" align="right" %}
 ### Diving In
 
 Opened up the case, pulled out the parts that I wouldn't be using (no need for any old fashioned hard drives in this build!)
@@ -141,7 +141,7 @@ Got some sorting trays (the yellow trays here) from Lee Valley for keeping the s
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_1928.avif" align="left" %}
+{% include figure.html img="IMG_1928.avif" align="left" %}
 
 ### The Water Cooler
 
@@ -153,7 +153,7 @@ It turns out to be easier than I thought, you hook up the cooling block to the C
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_1926.avif" align="right" %}
+{% include figure.html img="IMG_1926.avif" align="right" %}
 ### Power Supply
 
 Last but not least was hooking up the power supply.  Nothing at all different here, this one had the same connections as the one I installed 12 years ago.
@@ -165,13 +165,13 @@ Last but not least was hooking up the power supply.  Nothing at all different he
 
 It is always a great moment after a build when you power things up and they all work properly.  Don't ask me what a _CPU Biscuit_ is, I have no idea, but apparently I have 87 of them. (see pic)
 
-{% include html-side.html img="Gigabyte-BIOS.avif" align="center-full" %}
+{% include figure.html img="Gigabyte-BIOS.avif" align="center-full" %}
 
 If there are problems, there are usually a series of angry beeps produced by the motherboard or the offending components, or in a worst case scenario...crickets.  In this case, everything worked great the first time, and I started configuring things in the BIOS and installing the operating system, Windows 11.
 
 ### OS Boot
 
-{% include html-side.html img="IMG_1927.avif" align="center-full" %}
+{% include figure.html img="IMG_1927.avif" align="center-full" %}
 
 Installing the OS went pretty well, at least until Windows tried to do its whole _activation dance_.  That wasn't very well thought out, but that is a topic for another post.
 
@@ -195,7 +195,7 @@ I could do a bar chart or something to drive the point home, but I hope you get 
 > Since the new graphics card was so much more powerful than the previous one, and my monitors were the better part of a decade old, I decided to upgrade my monitors.
 {: .prompt-tip}
 
-{% include html-sxs.html img1="monitor-s2725qs-gray-gallery-1.avif" img2="monitor-s2725qs-gray-gallery-3.avif" %}
+{% include figure-pair.html img1="monitor-s2725qs-gray-gallery-1.avif" img2="monitor-s2725qs-gray-gallery-3.avif" %}
 
 I went with the [DELL 27 Plus 4K Model S27255QS](https://www.dell.com/en-ca/shop/dell-27-plus-4k-monitor-s2725qs/apd/210-brnd/monitors-monitor-accessories?msockid=2341291a1f756914244b3f0b1eb468a7), which was released in December of 2024.  
 
@@ -203,11 +203,11 @@ It has 4k, a 120Hz refresh rate, and good HDR.  It checks all the boxes except O
 
 It all adds up to double the pixels on the screens.  Images and video are definitely better, but what I find the best for my aging eyes is the text: it is way easier to read, and scrolling is super smooth.  A big improvement!
 
-{% include html-side.html img="IMG_1959.avif" align="center-full" %}
+{% include figure.html img="IMG_1959.avif" align="center-full" %}
 
 While I was at it, I added some monitor extension to allow more movement in the screens.  Now I can pull them out further and align them the way I want.
 
-{% include html-side.html img="IMG_1958.avif" align="center-full" %}
+{% include figure.html img="IMG_1958.avif" align="center-full" %}
 
 Here is a good background to show off the 4K.  I know you can't see it in the pic above so you'll have to take my word for it, it's awesome.
 

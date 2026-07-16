@@ -21,7 +21,7 @@ At the request of the customer (aka Debbie), I made a custom towel rack to fit p
 
 ## Under Construction
 
-{% include html-side.html img="towel-rack-sketchup.avif" align="left" %}
+{% include figure.html img="towel-rack-sketchup.avif" align="left" %}
 
 ### Sketchup
 
@@ -31,7 +31,7 @@ Once you have your 3d model, export the parts to the {{ site.data.links.origin }
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="IMG_0677.avif" align="right" %}
+{% include figure.html img="IMG_0677.avif" align="right" %}
 
 ### Poly Poly Poly
 
@@ -41,7 +41,7 @@ So...I heavily lathered everything with 6 or 7 coats of poly, making sure the ro
 
 {% include clear-float.html break =1 %}
 
-{% include html-side.html img="IMG_0678.avif" align="left" %}
+{% include figure.html img="IMG_0678.avif" align="left" %}
 
 ### Maple Rods
 
@@ -52,7 +52,7 @@ The rods are solid maple, picked up at {{ site.data.links.leevalley }}. Pretty s
 ## In Position
 
 It's been in use for over a year at this point and no issues with warping or bending so far. Fingers crossed.
-{% include html-side.html img="IMG_0681.avif" %}
+{% include figure.html img="IMG_0681.avif" %}
 
 ## Materials
 

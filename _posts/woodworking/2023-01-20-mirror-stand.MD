@@ -18,14 +18,14 @@ A cool part of woodworking is that you can do custom designed stuff. In this cas
 
 ## The Box
 
-{% include html-side.html img="mirror-stand-shaperhub.avif" align="left" %}
+{% include figure.html img="mirror-stand-shaperhub.avif" align="left" %}
 It starts with the design, which in this case was done on the web via {{ site.data.links.shaperhub }}.
 
 I took a bunch of clip-art that suited the box and put them together on this drawing, then transferred that to the {{ site.data.links.origin }}.
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_0736.avif" align="right" %}
+{% include figure.html img="IMG_0736.avif" align="right" %}
 
 ### Rings and Things
 
@@ -34,7 +34,7 @@ Once the design imported to the Origin, you carve, and before the assembly, you 
 The photo doesn't show it very well, but it sparkles. Trust me.
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_0740.avif" align="left" %}
+{% include figure.html img="IMG_0740.avif" align="left" %}
 
 ### Bling
 
@@ -45,7 +45,7 @@ The process was similar for the _Bling_ side of the box, but I used a single-lin
 
 Here it is with the mirror installed. The top has a couple of trays carved in it for holding earrings or makeup.
 
-{% include html-side.html img="IMG_0737.avif" align="center" %}
+{% include figure.html img="IMG_0737.avif" align="center" %}
 {% include clear-float.html break=1 %}
 
 ## Materials

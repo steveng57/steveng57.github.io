@@ -25,7 +25,7 @@ The thinking is that when not in use, it sits against the wall and acts as a ser
 
 ## Under Construction
 
-{% include html-side.html img="IMG_0216.avif" align="center" %}
+{% include figure.html img="IMG_0216.avif" align="center" %}
 {% include clear-float.html break = 1 %}
 
 There was a deep gouge in the top of this that took a fair amount of epoxy and sanding to make disappear. If you know where to look...actually no, you can't see it at all.
@@ -34,7 +34,7 @@ Mmmm...{{ site.data.links.rubio }} **Chocolate** was the colour used here. Mmmm.
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="IMG_0218.avif" align="left" %}
+{% include figure.html img="IMG_0218.avif" align="left" %}
 
 ### Apron
 
@@ -42,7 +42,7 @@ Normally an apron, seen in the foreground here, is situated between the legs of 
 
 {% include clear-float.html break  = 1%}
 
-{% include html-side.html img="IMG_0221.avif" align="right" %}
+{% include figure.html img="IMG_0221.avif" align="right" %}
 
 ### Metal Legs
 
@@ -54,7 +54,7 @@ I bought these from {{ site.data.links.rustydesign }}, an Ontario based company 
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="IMG_0226.avif" align="left" %}
+{% include figure.html img="IMG_0226.avif" align="left" %}
 
 ### Edging
 
@@ -70,7 +70,7 @@ In situ as an extension to the existing table. I levelled it to the exact height
 
 This makes for a nice big dining area that can comfortably seat ten people, with lots of room in the middle for serving plates. Makes me hungry.
 
-{% include html-side.html img="IMG_0818.avif" align="center-wide" %}
+{% include figure.html img="IMG_0818.avif" align="center-wide" %}
 
 ## Materials
 

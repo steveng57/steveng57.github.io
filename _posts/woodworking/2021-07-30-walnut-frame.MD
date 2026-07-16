@@ -25,13 +25,13 @@ media_subpath: /assets/img/posts/walnut-frame
 
 Debbie found these cute little guys at a local art centre.  Cute and colourful, a great combo!
 
-{% include html-side.html img="20191026_171746.avif" align="center" %}
+{% include figure.html img="20191026_171746.avif" align="center" %}
 
 Debbie picked out four of her favourites and thought they would look good together, having a little group chat. Maybe they have their favourite app for that, who knows.
 
 {% include clear-float.html break = 1%}
 
-{% include html-side.html img="20210730_234800423_iOS.avif" align="right" %}
+{% include figure.html img="20210730_234800423_iOS.avif" align="right" %}
 
 ### Local Birds
 
@@ -39,7 +39,7 @@ Pretty simple. The only tricky part was mounting and positioning the individual 
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="IMG_2913.avif" align="left" %}
+{% include figure.html img="IMG_2913.avif" align="left" %}
 ### Inverse Mullet
 
 Lots of _Infinity Clips_ used here, the 12 figure-eight loopy things that hold the backing to the outside of the frame.  It sounds like something from a Marvel movie, but it's just a bunch of fasteners.
@@ -52,7 +52,7 @@ I almost called this pic the _Inverse Mullet_ because it's all party in the fron
 
 Here they are in their new home, getting all chatty and hanging out.
 
-{% include html-side.html img="IMG_0757.avif" align="center-wide" %}
+{% include figure.html img="IMG_0757.avif" align="center-wide" %}
 
 ## Placeholder
 

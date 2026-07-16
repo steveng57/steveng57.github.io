@@ -29,7 +29,7 @@ I am a C# developer by trade, I spent a good chunk of my career in "devdiv" (dev
 
 Once on the C# path, DirectX seemed the next logical step.  There are more sophisticated options out there (the Unreal Engine came up a lot), but it is pretty complex and has a super steep learning curve.  The AI recommended DirectX v11 over v12 which was surprising, as it cited a lot of unnecessary complexity in v12.  Ok.
 
-{% include html-side.html img="Screenshot-2026-01-21-211227.avif" align="full" %}
+{% include figure.html img="Screenshot-2026-01-21-211227.avif" align="full" %}
 
 Visual Studio was the dev env of choice.  As much as I like VS Code, nothing beats the power you get from the full Visual Studio experience when debugging and diving deep.
 
@@ -63,7 +63,7 @@ It took about 1/2 an hour to get rolling, but it was a good investment as I lear
 
 We then moved on to building the launch canisters and putting them on the pad.  This is where ChatGPT came in as a fireworks expert when I asked it to give me a tutorial on canisters and how they work.  I love projects where you learn something about other domains, and this is certainly one of them.  I am not a fireworks expert by any means, but I do know the difference in muzzle velocities of an M2 versus an M10 mortar!
 
-{% include html-side.html img="sparks.avif" align="left" %}
+{% include figure.html img="sparks.avif" align="left" %}
 
 ### Sparks Fly
 
@@ -77,7 +77,7 @@ The image here is from later builds where you can "fly" the camera thru the fire
 
 I created a handful of very simple single stage fireworks, modelled them in the app and created "show" that lets you run thru a sequence of launches.  It worked well but the physics needed a lot of work, things just didn't look real.  
 
-{% include html-side.html img="Screenshot-2026-01-21-212456.avif" align="full" %}
+{% include figure.html img="Screenshot-2026-01-21-212456.avif" align="full" %}
 
 {% include clear-float.html %}
 
@@ -212,7 +212,7 @@ Add comments explaining:
 
 Yeah I know that was too much to read and there is no way you should read it.  But I put that in here to emphasize the point that from my simple descriptive paragraph, ChatGPT generated a whoppingly detailed prompt, that I then cut and past back into CP.  
 
-{% include html-side.html img="Screenshot-2026-01-22-104855.avif" align="right" %}
+{% include figure.html img="Screenshot-2026-01-22-104855.avif" align="right" %}
 
 ### And it was awesome...
 
@@ -281,7 +281,7 @@ There are countless examples of this that I have run across in the construction 
 
 The second big thing is time.  I started this app a little after New Year's and it took a couple of weeks to get it where I wanted.  That time would be measured in months, not weeks, if I had done this without AI.  My gut says about three or four months.  But to be honest, I am not sure I would have been willing to put that much time and effort into it without AI, so it may never had gotten written in the first place.
 
-{% include html-side.html img="burst.avif" align="right" %}
+{% include figure.html img="burst.avif" align="right" %}
 
 ### Bursting
 

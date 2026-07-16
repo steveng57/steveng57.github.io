@@ -1,4 +1,4 @@
-/* Figure layout utilities for html-side.html */
+/* Figure layout utilities for figure.html */
 .sjg-figure {
     display: block;
     margin: 0 0 1rem 0;
@@ -43,7 +43,7 @@
     width: 100%;
 }
 
-/* Side-by-side helper spacing (used by html-sxs.html) */
+/* Side-by-side helper spacing (used by figure-pair.html) */
 .sjg-sxs-left,
 .sjg-sxs-right {
     margin-top: 0.5rem;

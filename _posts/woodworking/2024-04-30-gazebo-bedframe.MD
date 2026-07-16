@@ -28,7 +28,7 @@ Per my usual process, I drew this up in {{ site.data.links.sketchup}}, shown in 
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_0947.avif" align="left" %}
+{% include figure.html img="IMG_0947.avif" align="left" %}
 
 ### The Pedestal
 
@@ -36,7 +36,7 @@ The pedestal for the bed is a bunch of plywood strips each about cut about 10cm 
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_0948.avif" align="right" %}
+{% include figure.html img="IMG_0948.avif" align="right" %}
 
 ### Pedestal Glue-up
 
@@ -46,7 +46,7 @@ I made the edge banding myself, from offcuts of the sides of the bedframe itself
 
 {% include clear-float.html break=1 %}
 
-{% include html-side.html img="IMG_0959.avif" align="left" %}
+{% include figure.html img="IMG_0959.avif" align="left" %}
 
 ### Assembly Time
 
@@ -58,7 +58,7 @@ Not that we plan on moving this that often, but it can be disassembled into smal
 
 {% include clear-float.html  break=1 %}
 
-{% include html-side.html img="IMG_0962.avif" align="right" %}
+{% include figure.html img="IMG_0962.avif" align="right" %}
 
 ### The Oak
 
@@ -70,7 +70,7 @@ White Oak is a beautiful hardwood, and the Nordic White stain just brought it to
 
 {% include clear-float.html break=1%}
 
-{% include html-side.html img="IMG_1092.avif" align="left" %}
+{% include figure.html img="IMG_1092.avif" align="left" %}
 
 ### Lights, Camera, Action
 

@@ -18,7 +18,7 @@ This was true labour of love. Our boy Ozzie needed a new place to sleep. It seem
 
 ## Under Construction
 
-{% include html-side.html img="20220310_084545.avif" align="left" %}
+{% include figure.html img="20220310_084545.avif" align="left" %}
 
 ### Slats
 
@@ -27,7 +27,7 @@ Lots and lots of slats on this one. About 30+ of them all up. Using the {{ site.
 By this point in my wood working career, I had figured out how to make things a little bit lighter. The bottom is a much thinner plywood, but has a support in the centre to keep it strong.
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20220316_201504.avif" align="right" %}
+{% include figure.html img="20220316_201504.avif" align="right" %}
 
 ### Wow, It Worked
 
@@ -40,7 +40,7 @@ I finally had the good sense to make this piece a little lighter than my others.
 
 Epoxy inlay complete, pillows installed and Ozzie giving it a trial run.
 
-{% include html-side.html img="20220328_071254.avif" %}
+{% include figure.html img="20220328_071254.avif" %}
 
 ## Materials
 

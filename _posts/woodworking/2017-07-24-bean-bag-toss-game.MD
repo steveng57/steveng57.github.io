@@ -29,7 +29,7 @@ The inner circles were just done with a router circle jig I crafted. Drilled som
 
 Copious amounts of waterproof glue helped fix the situation.
 
-{% include html-side.html img="20170724_234944.avif" align = "left" %}
+{% include figure.html img="20170724_234944.avif" align = "left" %}
 
 ### Cedar and Ply
 
@@ -38,7 +38,7 @@ While the face board was just your vanilla big-box-store plywood, the back board
 The two Bag Toss Boards were later painted candy-apple red.
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20170724_234953.avif" align = "right" %}
+{% include figure.html img="20170724_234953.avif" align = "right" %}
 
 ### Playtime
 

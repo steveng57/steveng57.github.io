@@ -100,11 +100,11 @@ Sometime in late 2016, I started to setup a workshop in the basement. Retirement
 
 I live in a rural suburb of Ottawa called Manotick with my wife Debbie and our little ones, Riley and Daisy.  The little avatar pic in the upper left is of Riley and Ozzie.  Ozzie took his journey over the rainbow bridge in spring 2024.  Boy do I miss that little guy.  There is a video tribute to him [here]({% link ozzie/index.md %}), and below is a great pic of Ozzie with Riley on the left.
 
-{% include html-side.html img="/assets/img/about/20150131_134612.avif" align="center" caption="Debbie took this great shot of the boys" %}
+{% include figure.html img="/assets/img/about/20150131_134612.avif" align="center" caption="Debbie took this great shot of the boys" %}
 
 {% include clear-float.html break = 2 %}
 
-{% include html-side.html img="/assets/img/about/steven-sticker.avif" caption="Enjoy the Blog!" align="left-33"%}
+{% include figure.html img="/assets/img/about/steven-sticker.avif" caption="Enjoy the Blog!" align="left-33"%}
 
 I am also a Pisces, which is silly because there is no science behind that stuff at all. The other thing you should know about me is that I am all about science. Actually, that one fact probably tells you a lot about me, from my political leanings, to my thoughts on religion, climate change, and more.
 

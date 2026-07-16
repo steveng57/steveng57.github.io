@@ -27,7 +27,7 @@ I only had a couple of days after finishing the previous project before Debbie's
 
 ## Under Construction
 
-{% include html-side.html img="IMG_0637.avif" align="left" %}
+{% include figure.html img="IMG_0637.avif" align="left" %}
 
 ### Flowing Grain
 
@@ -37,7 +37,7 @@ This is actually a pretty complicated thing to do. And if you make a mistake on 
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="IMG_0640.avif" align="right" %}
+{% include figure.html img="IMG_0640.avif" align="right" %}
 
 ### Tough Cut
 
@@ -53,7 +53,7 @@ Orange {{ site.data.links.chillepoxy }} for the inlay, which was carved with the
 
 ## All done
 
-{% include html-side.html img="IMG_0639.avif"%}
+{% include figure.html img="IMG_0639.avif"%}
 
 ## Materials
 

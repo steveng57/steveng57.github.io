@@ -18,7 +18,7 @@ Shop furniture is the best place to practice. In this case it was practice with 
 
 ## Under Construction
 
-{% include html-side.html img="20210827_212427.avif" align="left" %}
+{% include figure.html img="20210827_212427.avif" align="left" %}
 
 ### Cyclone Upgrade
 
@@ -28,7 +28,7 @@ I went with the low profile for this vacuum dolly, cause if you make the vertica
 
 {% include clear-float.html break = 1 %}
 
-{% include html-side.html img="20210827_212517.avif" align="right" %}
+{% include figure.html img="20210827_212517.avif" align="right" %}
 
 ### Maple Rods
 
@@ -41,7 +41,7 @@ Yah know, I was going to insert some cute lyrics from the Louis Armstrong song, 
 
 This gets a **lot** of use in the shop. It hasn't fallen over on me yet, but there is still time.
 
-{% include html-side.html img="IMG_0539.avif" align="center-wide" %}
+{% include figure.html img="IMG_0539.avif" align="center-wide" %}
 
 ## Materials
 

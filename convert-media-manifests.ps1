@@ -131,7 +131,7 @@ function Get-PostImageReferences {
     param([Parameter(Mandatory = $true)][string]$Content)
 
     $references = New-Object System.Collections.Generic.List[string]
-    $includeMatches = [regex]::Matches($Content, '{%\s*include\s+(?:html-side|html-sxs)\.html\s+.*?%}')
+    $includeMatches = [regex]::Matches($Content, '{%\s*include\s+(?:figure|figure-pair)\.html\s+.*?%}')
 
     foreach ($include in $includeMatches) {
         $attributeMatches = [regex]::Matches($include.Value, '\bimg\d*\s*=\s*["'']([^"'']+)["'']')

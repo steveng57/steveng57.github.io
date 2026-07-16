@@ -23,7 +23,7 @@ One turned out great, the other...not so much. Read on for details!
 
 ## Table Decorations
 
-{% include html-side.html img="IMG_0821.avif" align="left" %}
+{% include figure.html img="IMG_0821.avif" align="left" %}
 
 ### Long Center&#x200B;piece
 
@@ -35,11 +35,11 @@ Pretty straightforward stuff on this one. By now, I have the epoxy thing down pr
 
 {% include clear-float.html break = 1 %}
 
-{% include html-sxs.html img1="long-centerpiece-sketchup.avif" img2="IMG_0822.avif" %}
+{% include figure-pair.html img1="long-centerpiece-sketchup.avif" img2="IMG_0822.avif" %}
 
 ## Next Up
 
-{% include html-side.html img="IMG_0825.avif" align="right" %}
+{% include figure.html img="IMG_0825.avif" align="right" %}
 
 ### The Round Center&#x200B;pieces
 
