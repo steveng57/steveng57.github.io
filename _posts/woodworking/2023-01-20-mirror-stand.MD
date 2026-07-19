@@ -23,7 +23,7 @@ It starts with the design, which in this case was done on the web via {{ site.da
 
 I took a bunch of clip-art that suited the box and put them together on this drawing, then transferred that to the {{ site.data.links.origin }}.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0736.avif" align="right" %}
 
@@ -32,21 +32,21 @@ I took a bunch of clip-art that suited the box and put them together on this dra
 Once the design imported to the Origin, you carve, and before the assembly, you pour some epoxy. In this case the epoxy was sprinkled with copious amounts of glitter, which was very fitting for this kind of piece.
 
 The photo doesn't show it very well, but it sparkles. Trust me.
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0740.avif" align="left" %}
 
 ### Bling
 
 The process was similar for the _Bling_ side of the box, but I used a single-line-font specially selected from [Single Line Fonts](https://www.singlelinefonts.com). This site has a bunch of cool fonts that work well with these kinds of projects, all at reasonable price.
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## Badda Boom Badda Bling
 
 Here it is with the mirror installed. The top has a couple of trays carved in it for holding earrings or makeup.
 
 {% include figure.html img="IMG_0737.avif" align="center" %}
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ## Materials
 

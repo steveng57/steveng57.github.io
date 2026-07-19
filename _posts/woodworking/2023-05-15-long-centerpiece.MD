@@ -33,7 +33,7 @@ I tried practising finger joints (aka box joints) on this one. They turned out n
 
 Pretty straightforward stuff on this one. By now, I have the epoxy thing down pretty well. Stained it espresso to match the rest of the outdoor furniture. _Espresso_ sounds so much more pretentious than _black_, don't you think?
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure-pair.html img1="long-centerpiece-sketchup.avif" img2="IMG_0822.avif" %}
 

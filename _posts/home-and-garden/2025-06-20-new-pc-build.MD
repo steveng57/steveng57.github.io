@@ -59,13 +59,13 @@ I went with the Fractal Design case, similar to the one pictured here.
 
 It's a great case and boasts a truly silent design, with sound dampening padding on all available interior surfaces.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 {% include figure.html img="intel_core_i9_14900k_3.avif" align="left-50" %}
 ### The CPU
 
 For the CPU, I chose the latest from the Intel line, the i9 14th generation.  I like AMD too though, but I feel bad for Intel these days, so let's call it supporting an old partner.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="gigabyte-motherboard.png" align="right" %}
 ### The Motherboard
@@ -84,7 +84,7 @@ From their website:
 - Fast Networking：5GbE LAN & Wi-Fi 7 with Ultra-high gain antenna
 - Extended Connectivity：HDMI, DP IN, Front & Rear USB-C® 20Gb/s
 - High-Res Audio：ALC1220 & Audiophile Grade Capacitors
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="corsair-ssd.png" align="left" %}
 ### NVME 2.0 SSD
@@ -97,7 +97,7 @@ There are four of them in my setup, 2 terabytes each for a total of 8TB.  They a
 
 This is what a modern "hard drive" looks like.  All chips, no disks.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="T1000_3QTR-Front-Right.png" align="right" %}
 
@@ -114,7 +114,7 @@ So I went with the Nvidia T1000.  Not sure why they felt the need to steal the m
 
 Unlike its beefier counterparts, this video card it is smaller only has one fan, which translates into less noise.  In summary, it seems perfect for my needs. 
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ## The Assembly
 
@@ -123,14 +123,14 @@ I took over the dining table for the assembly phase.  Lots of moving parts in an
 > The instructions are terrible.  It doesn't matter which part we are talking about, they are all atrocious. If you ever want to try a PC build yourself, be prepared for that.  The manufacturers websites are sometimes helpful, though not always, and YouTube is your friend here.
 {: .prompt-warning .sjg-br}
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_1917.avif" align="left" %}
 ### The Layout
 
 I started by getting all the parts together and laying them out on the table.  Opening boxes and pulling out the limited (very limited) instructions came next.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_1920.avif" align="right" %}
 ### Diving In
@@ -139,7 +139,7 @@ Opened up the case, pulled out the parts that I wouldn't be using (no need for a
 
 Got some sorting trays (the yellow trays here) from Lee Valley for keeping the screws and other small parts.  This seemingly trivial thing made a huge difference in keeping everything organized.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_1928.avif" align="left" %}
 
@@ -151,13 +151,13 @@ The standard mechanism for cooling a CPU is to hook up a big fan to the back of 
 
 It turns out to be easier than I thought, you hook up the cooling block to the CPU the same way you would a CPU fan, but there are hoses coming out of the block that run to a series of fans (quiet ones) across the top.  You can see two of them in the pic up high.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_1926.avif" align="right" %}
 ### Power Supply
 
 Last but not least was hooking up the power supply.  Nothing at all different here, this one had the same connections as the one I installed 12 years ago.
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ## Power On
 

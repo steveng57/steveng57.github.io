@@ -26,7 +26,7 @@ They are meant to be put on a table, but they take up a lot of room that way. La
 
 So rather than tempt fate and risk it happening again, this year I decided to do it properly and create a suitable stand, and bolt it to the wall so it would not go anywhere.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0865.avif" align="right" %}
 

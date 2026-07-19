@@ -31,7 +31,7 @@ This one was fairly straightforward. A whole lot of 2x4s from the big box store,
 
 I put some {{ site.data.links.kreg }} track on the top, the blue aluminum extrusion shown here, which one can use to clamp things down. I finished it off with some enamel orange paint and coated the 2x4s in a couple of coats of Tung oil.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="20170202_151701.avif" align = "right" %}
 
@@ -40,7 +40,7 @@ I put some {{ site.data.links.kreg }} track on the top, the blue aluminum extrus
 A couple of thick coats of orange acrylic paint to help make the top more durable. Cause I smash a lot of thing on it, like my thumbs.
 
 Added a bottom shelf for more shop storage, because...you know...storage. I also added a vice to the side because...you know...vice.
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## Today
 

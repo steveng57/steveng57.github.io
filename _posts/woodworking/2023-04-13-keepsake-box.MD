@@ -35,7 +35,7 @@ On this box, the grain flows all the way around, and is sometimes called a "cont
 
 This is actually a pretty complicated thing to do. And if you make a mistake on a board, you need to fix it or else throw out all the boards, since the grain won't match if you try to substitute a new board.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0640.avif" align="right" %}
 

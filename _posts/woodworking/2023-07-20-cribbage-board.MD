@@ -47,7 +47,7 @@ Then you can start cutting, but you need to do it all in a single pass. No takin
 
 _391 holes. Go ahead...count 'em._
 
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 {% include figure.html img="20230720_163338.avif" align="right" %}
 
@@ -59,7 +59,7 @@ But then there was the problem of the wax and the holes. The wax loved to get in
 
 Sanding was also a little...special. Sand too little and it's rough obviously, but sand too much and there are any number of unrepairable things that could go wrong.
 
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## The Backside
 

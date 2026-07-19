@@ -27,7 +27,7 @@ The footstool and the computer stand get used every day, very cool. Made from po
 
 I've made many a footstool since taking up the craft. Deb likes to use this one when sitting on the barstools are the new island. Everyone seems to love the heart carved into the sides. Me too.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 ## The Computer Stand
 
@@ -41,7 +41,7 @@ This stand was custom made to the exact height. Storage underneath for the keybo
 
 {% include figure.html img="punkins-puter-studio.avif" align="center-wide" %}
 
-{% include clear-float.html break  = 1 %}
+{% include clear-float.html %}
 
 Not much to the design here, it's really just a box after all. I used Microsoft Word to layout the text with a comic-sans font, uploaded it to Shaper Studio for the final prep, then downloaded to the Origin for the carve. Shaper Studio is an online design tool that goes with the {{ site.data.links.origin }}, making it super simple to move your drawings onto the tool.
 

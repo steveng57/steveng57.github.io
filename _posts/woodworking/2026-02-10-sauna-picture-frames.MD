@@ -34,7 +34,7 @@ This was bad.  Ugly bad.  So when making frames like this, you start with a boar
 
 But I made a couple or three mistakes here.  First, this board is almost 20cm (8in) wide, meaning the bandsaw blade has to cut all the way through that.  Second, my bandsaw blade was a little dull for white oak, which is a pretty hard hardwood.  Third, I didn't have the right setup on the bandsaw.  Fourth, rather than looking at the entire board as I was cutting, I was focussed on just the top part, and did not realize the bottom was going totally wonky on me.  And fifth...and sixth... 
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_2304.avif" align="right" %}
 
@@ -48,7 +48,7 @@ A big part of the problem was that I was focussed on the top part of the board, 
 
 It was such a botched mess, I just turned off the bandsaw and walked away.  When it's not working, it's best to take a break and come back with a clear head.
 
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ### The Fix Is In
 
@@ -56,7 +56,7 @@ It was such a botched mess, I just turned off the bandsaw and walked away.  When
 
 So when I came back the next day, shaking off the shear disgust of my previous efforts, I did a couple of things to make things work.  The number one fix was to cut the boards down to about 40mm from 200mm in width so that the bandsaw had a lot less to chew on as it went through the board.  Next thing was to get a brand new blade, which proved to make a real difference: it cut through the white oak like a chainsaw through a dandelion.  I also did a bunch of little things like a better bandsaw setup, proper out-feed support etc. 
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_2307.avif" align="left" %}
 
@@ -64,7 +64,7 @@ So when I came back the next day, shaking off the shear disgust of my previous e
 
 After cutting the rabbet (not rabbit my fellow woodworkers!), it was time for the dominos on the corner mitres and some glue and clamps.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_2310.avif" align="right" %}
 
@@ -74,7 +74,7 @@ Armed with an 18 gauge brad-nailer, I glued the back braces in place.
 
 The braces are made from the 7mm cuts mentioned above, and they are not visible when the frame is complete, so they are sometimes rough and only partially finished.  They are for stability, strength and ensuring the outer boards are straight.  The artwork itself is mounted directly to these with screws from the underside, so they need to be solid.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 ### Finished
 
@@ -88,7 +88,7 @@ I'm in!!!
 
 See, they are almost identical!  I can't see the difference, can you see the difference?
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_2320.avif" align="left" %}
 
@@ -100,7 +100,7 @@ I had to use copious amounts of clamps and spacers (the blue, white, red, and gr
 
 If you are wondering about the playing cards in the box with the spacers, they are not for an impromptu game of workshop blackjack (though not a bad idea).  It turns out that playing cards make great spacers, they are about 0.30mm each, so three of them make about one mm.  You can put one or ten of them in a spot and as long as you put the same number of cards on the opposite side, you are golden, or combine them with the plastic thingies for even more flexibility!
 
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## Done and Ready
 
@@ -116,7 +116,7 @@ First some close up pictures of the frame itself before we get to the good stuff
 
 {% include figure-pair.html img1="11019.avif" img2="IMG_2342.avif" %}
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="11018.avif" align="left" %}
 
@@ -126,7 +126,7 @@ This frame is mounted at the end of a hallway, but not much point in a picture l
 
 It makes me want to assume the Lotus position and chant "ooohhhmmm" repeatedly. 
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_2344.avif" align="right" %}
 
@@ -136,7 +136,7 @@ This print has a great vibe.  There is something about it that draws you in, may
 
 Both frames and prints help create a warm, cozy, and refreshing feeling in the new sauna.
 
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## Puppet Show
 

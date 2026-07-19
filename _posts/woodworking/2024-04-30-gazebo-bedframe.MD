@@ -26,7 +26,7 @@ It was a pretty simple standard project, and we can't have that, so I added some
 
 Per my usual process, I drew this up in {{ site.data.links.sketchup}}, shown in the pic above, which helps you visualize everything up front, the theory being it will minimized mistakes later.  This is often true, but not always.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0947.avif" align="left" %}
 
@@ -34,7 +34,7 @@ Per my usual process, I drew this up in {{ site.data.links.sketchup}}, shown in 
 
 The pedestal for the bed is a bunch of plywood strips each about cut about 10cm (4in) wide.  It  was doubled up to make it about 36mm (1.5in) high, and given we wanted to keep this frame low to the ground, that worked out great.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0948.avif" align="right" %}
 
@@ -44,7 +44,7 @@ This pic might make it look like I am gluing the plywood together here, but I am
 
 I made the edge banding myself, from offcuts of the sides of the bedframe itself.  Cut them rough on the table saw, and then slimmed them down with the drum sander.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0959.avif" align="left" %}
 
@@ -56,7 +56,7 @@ It's all upside down in this pic, the bedframe sides are on the bottom, then the
 
 Not that we plan on moving this that often, but it can be disassembled into smaller, packable parts if needed.
 
-{% include clear-float.html  break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0962.avif" align="right" %}
 
@@ -68,7 +68,7 @@ But even at that the corner looks much better in real life, I just need to be a 
 
 White Oak is a beautiful hardwood, and the Nordic White stain just brought it to life.
 
-{% include clear-float.html break=1%}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_1092.avif" align="left" %}
 
@@ -80,7 +80,7 @@ I added an LED lighting strip to the bottom, pointing downwards to light up the 
 
 On the wall above the bed, you'll see the walnut picture frame I made to host four small paintings we picked up at a local artist's gallery.  Details can be found here - [Walnut Frame]({% post_url /woodworking/2021-07-30-walnut-frame %}).
 
-{% include clear-float.html break=1%}
+{% include clear-float.html %}
 
 ## Materials
 

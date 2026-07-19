@@ -30,7 +30,7 @@ You need to get it done right in Sketchup and there is a bit of extra work to do
 
 Yeah, I am a geek, I know it. I have embraced it.
 
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## The Cabinet
 

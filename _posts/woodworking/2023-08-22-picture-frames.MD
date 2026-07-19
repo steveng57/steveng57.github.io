@@ -29,7 +29,7 @@ I used a new kind of paint on this one, mixing a couple of colours together to g
 
 It's an acrylic paint I picked up at {{ site.data.links.michaels }}.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="20230822_184948.avif" align="right" %}
 
@@ -37,7 +37,7 @@ It's an acrylic paint I picked up at {{ site.data.links.michaels }}.
 
 I made these out of poplar. It's a lighter wood, but still strong enough. Not as sappy as pine, and paints very well. Less pricey than other woods, and if you are going to paint it anyway, might as well spend more on the paint and less on the wood.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="20230822_191820.avif" align="left" %}
 
@@ -47,7 +47,7 @@ I used shims to centre the picture vertically and horizontally in the frame. I h
 
 The trick to keeping it centred is that if you use 7 cards on the left, then you need to use 7 cards on the right.
 
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## In Production
 

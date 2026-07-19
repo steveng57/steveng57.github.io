@@ -34,7 +34,7 @@ The thing I remember most about this one is that there were 15 drawers here. Yes
 
 _Did I mention that there were **15** drawers!!!_
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="20210323_161917.avif" align = "right" %}
 
@@ -43,7 +43,7 @@ _Did I mention that there were **15** drawers!!!_
 This was the first time I had done any extensive work with Baltic Birch plywood. This is marvelous stuff to work with, and several notches above anything you can get at the big box stores.
 
 Still waiting on the spindle sander.
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## All Dressed Up
 

@@ -25,7 +25,7 @@ This was true labour of love. Our boy Ozzie needed a new place to sleep. It seem
 Lots and lots of slats on this one. About 30+ of them all up. Using the {{ site.data.links.domino }} for the loose-tenon joinery made things a bit easier.
 
 By this point in my wood working career, I had figured out how to make things a little bit lighter. The bottom is a much thinner plywood, but has a support in the centre to keep it strong.
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="20220316_201504.avif" align="right" %}
 
@@ -34,7 +34,7 @@ By this point in my wood working career, I had figured out how to make things a 
 Stained with {{ site.data.links.rubio }} hard-wax oil applied and ready for the epoxy inlay.
 
 I finally had the good sense to make this piece a little lighter than my others. While the slats are solid wood, red oak, the bottom is a thinner, lighter plywood, making it somewhat easier to move around.
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## Don't Bother Me
 

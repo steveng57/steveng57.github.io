@@ -23,26 +23,26 @@ When I set out to do this, I hadn't really thought of the complications that are
 ## Under Construction
 
 {% include figure.html img="munchies-tray-sketchup.avif" align="center" %}
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 This is the {{ site.data.links.sketchup }} drawing used to plan the whole thing.
 
 It ended up being bigger than this in the end, as I called an audible during the construction process. Doing such a reckless thing can often come back to haunt you, but in this case it worked out okay. The overall size was never an issue, it was all those angles that were the risky part.
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0074.avif" align="center-full" %}
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 As seems to be my usual for mitres these days, I used the {{ site.data.links.domino }} to add strength to the mitre, and make it easy to glue-up.  You have to use the really small 4mm dominos, but even then, you also have to be careful that you don't blow thru the opposite side on your domino hole.  Cause that looks downright messy and non-pretty.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0079.avif" align="left" %}
 
 ### Crazy Angles
 
 A fun build, while the angles were indeed odd, it was a lot of fun to see it come together.
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## In Production
 

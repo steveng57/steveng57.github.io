@@ -44,7 +44,7 @@ So the solar panel actually charges the battery, but it doesn't feed power to th
 
 The water pump is powered directly by the battery, not the solar panel.  This pump is the kind found in RV's for moving water to the sink and shower.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ## The Outsides
 The solar panel and water coil are kept in a housing made from 2x4's.  This housing is mount on a steel tube (a beefy curtain rod if I am not mistaken) which can be rotated to follow the sun.
@@ -63,7 +63,7 @@ This is where the magic happens.  The coils are made from a variety of {{ pex_pi
 
 Sunlight hits the coils, heats the coils and thusly the water inside.  Heat is trapped inside the coil housing by insulation on the sides and the back, and by plexiglass on the front.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ## The Results
 

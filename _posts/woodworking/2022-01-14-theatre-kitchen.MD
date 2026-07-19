@@ -39,7 +39,7 @@ Not only did I do the main cabinet layout, but I also did the drawers, drawer fr
 
 {% include figure.html img="theatre-kitchen-sketchup.avif" align="center-full" %}
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 It was all good up until this point.
 
@@ -51,12 +51,12 @@ It was then that I went to put on the drawer faces, pictured below.
 
 To my shock and horror, I made them **the wrong size!** Instead of being the required 762mm in width, they were made 726mm in width. My mild dyslexia had bitten me once more.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 > **Measure Twice and Cut Once!**  Hey&hellip; it's a woodworking blog, you know that particular clich&eacute; is gonna appear at least a couple of times.
 {: .prompt-danger}
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0542.avif" align="right" %}
 
@@ -64,14 +64,14 @@ To my shock and horror, I made them **the wrong size!** Instead of being the req
 
 These are still in my shop, awaiting the next project that requires four drawer faces of exactly 726mm width. Or I could sell them. Anyone need a good deal on some 726mm drawer fronts? We can haggle.
 
-{% include clear-float.html break = 1%}
+{% include clear-float.html %}
 
 {% include figure.html img="20220123_191254.avif" align="left" %}
 
 ### The Floor
 
 Installing this on the basement floor was quite a challenge. The floor is not level, not even close. There is about a 40mm (1.5in) drop from one end to the other that I had to shim on the toe-kick. Thankfully, there were quite a few YouTube videos on dealing with this exact problem.
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="20220131_222101.avif" align="right" %}
 
@@ -80,7 +80,7 @@ Installing this on the basement floor was quite a challenge. The floor is not le
 The new fridge in place. Cool blue lights.
 
 The floor is so crooked, that I even had to shim a few things for the fridge to look right. Actually at this point I don't know if it's the floors that are crooked or the walls are out of whack.
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0154.avif" align="left" %}
 
@@ -89,14 +89,14 @@ The floor is so crooked, that I even had to shim a few things for the fridge to 
 Since the theatre room is sometimes very dark, I added a lot of in-cabinet lighting throughout.
 
 I hooked up micro-switches to all the doors and drawers to control them. There is a storage area behind this wall, so it was easy to wire the lights to the power from the back.
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## In Production
 
 We scavenged the granite top from our upstairs kitchen remodel and repurposed it down here. It fit almost perfectly, just had to carve off a bit off the end.
 
 {% include figure.html img="IMG_0541.avif" align="center-wide" %}
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 {% include figure.html img="IMG_0540.avif" align="center-wide" %}
 
 ## Tools and Materials

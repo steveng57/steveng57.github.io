@@ -28,7 +28,7 @@ The Western Red Cedar was purchased just down the way from where I live at a pla
 
 Cedar is one of the best smelling woods when you cut into it. It releases a wonderful aroma that sticks around for days. If only all woods smelled as good.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="20220628_125916.avif" align="right" %}
 
@@ -37,7 +37,7 @@ Cedar is one of the best smelling woods when you cut into it. It releases a wond
 These were eventually finished with another product from {{ site.data.links.woodsource }} called [Cutek Extreme], which is an outdoor wood protection oil.
 
 The neat thing about this stuff is that they have a pretty broad spectrum of colouring called "Colourtone" that you can add to the base product so that you can get exactly the colour you want.
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## Ready For Stain
 
@@ -51,7 +51,7 @@ It's a pretty messy oil stain, but it's not too thick.  It's a little thicker th
 
 {% include figure.html img="IMG_1012.avif" align="center-wide" %}
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 Three of the smaller beds are in our greenhouse in the back.  Not sure I would have gone thru all that work just to put something in a greenhouse, but hey, I have squandered time and energy on many more useless things than this.
 

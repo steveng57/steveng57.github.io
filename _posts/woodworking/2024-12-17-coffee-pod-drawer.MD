@@ -26,7 +26,7 @@ Custom made to fit a particular spot in his kitchen, I enlisted the help of my s
 
 Started with Sketchup {{ site.data.links.sketchup}}, and did the layout of the drawer box and the drawer itself.  It's very nice to get the dimensions all lined up.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_1487.avif" align="right" %}
 
@@ -36,7 +36,7 @@ One of the Secret Santa rules is that there is a budget limit, hence I raided th
 
 The smaller size of this project made it easier to find pieces that would work.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ### The Drawer
 
@@ -47,13 +47,13 @@ The sides were thinner than a normal box, only about 10mm thick, so the corner j
 
 {% include figure.html img="IMG_1498.avif" align="center" %}
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 For the bottom, I carved seven rows of three circles as nestling places for the pods.  I don't know how well that will work over time as it is a bit of a pain to place them all neatly in the circles.  I expect that eventually the pods will be tossed in the drawer a little ad-hoc.  I know that's what I would do.
 
 {% include figure-pair.html img1="IMG_1499.avif" img2="IMG_1488.avif" %}
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ### The Drawer Front
 
@@ -63,7 +63,7 @@ For the bottom, I carved seven rows of three circles as nestling places for the 
 
 The font is called "Satisfy", which is oddly satisfying.  Designed in Shaper Studio, and carved with the Shaper Origin.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_1507.avif" align="right" %}
 
@@ -71,7 +71,7 @@ The font is called "Satisfy", which is oddly satisfying.  Designed in Shaper Stu
 
 The epoxy is {{ site.data.links.chillepoxy }}, a light gray made by combining white with a drop or two of gray.
 
-{% include clear-float.html  break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_1508.avif" align="left" %}
 
@@ -79,7 +79,7 @@ The epoxy is {{ site.data.links.chillepoxy }}, a light gray made by combining wh
 
 The {{ site.data.links.rubio }} was a bit different this time: instead of the normal two or three coats and then another of the maintenance oil, I used a new product from them called SheenPlus, which creates a satin finish.  First coat is the normal walnut oil, then the SheenPlus and you're done.
 
-{% include clear-float.html break=1%}
+{% include clear-float.html %}
 
 ## Odds and Ends
 
@@ -87,11 +87,11 @@ So a couple of interesting things about this project, they are small things, but
 - Home made **drawer slide**. Well it is not a drawer slide as much as it is a drawer track, a couple of strips of wood inset on the sides of the box to make sure that the drawer is snug and centered.  The hard-wax oil that is used to finish it should let it all slide in and out quite nicely.
 - I made my own walnut **edge banding** to cover the end-grain on the front of the drawer box.  I got a new drum sander about a year ago and they are perfect for things like this.  I don't think I could have made this without it.
 
-{% include clear-float.html break=1%}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_1509.avif" align="full" %}
 
-{% include clear-float.html break=1%}
+{% include clear-float.html %}
 
 ## Materials and Tools
 

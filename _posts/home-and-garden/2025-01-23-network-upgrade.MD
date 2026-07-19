@@ -34,7 +34,7 @@ But when you run all those wires back to the same location in the basement (it's
 
 My old gear was facing the back of the rack, to make plugging things from the rats nest easier.  You can see some of the mess dangling in the back.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ## Phase 1 Complete
 
@@ -46,7 +46,7 @@ Sometimes things get worse before they get better.  This is one of those times.
 
 For those interested, I run [Unifi gear from Ubiquiti](https://www.ui.com/).  They make pro-sumer and enterprise networking gear.  It is really really good stuff if you ever want to upgrade from the stuff your ISP gives you.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ## Phase 2 Complete
 
@@ -58,7 +58,7 @@ The empty switch in the middle is a backup in case one of the others fails.  It 
 
 The lights are a bit of kit from Ubiquiti called "Etherlighting".  I never knew I needed that, but clearly I did.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ## Results
 
@@ -66,7 +66,7 @@ Very happy with the results, both the cleanup and the speed.
 
 {% include figure.html img="SpeedTest.avif" align="center-wide" %}
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 Now all I need is for Rogers to increase their upload speed to a reasonable 1Gbps and we're golden.  Not holding my breath though.
 
@@ -77,7 +77,7 @@ Now all I need is for Rogers to increase their upload speed to a reasonable 1Gbp
 
 {% include figure.html img="IMG_1641.avif" align="center" %}
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ## Update Number 2
 

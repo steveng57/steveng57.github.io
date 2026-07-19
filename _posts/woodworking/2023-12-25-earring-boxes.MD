@@ -29,7 +29,7 @@ Here is an exploded view from {{ site.data.links.sketchup }}.
 The design on this changed a fair bit along the way.  I had originally planned on the holes and bottom being one piece with the holes stopping about 6mm from the bottom.  But then getting the green velvet in each hole would have been very difficult, not to mention that they were 72 of them.  
 
 In the end I added a detached bottom, and routed the holes all the way through.  Then placed a sheet of green velvet between the two for final assembly, much easier.
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 ### Finishing
 Doing the finish on this one was pretty messy, partly due to the number of pieces, and also all the nooks and crannies to get into.
@@ -37,7 +37,7 @@ Doing the finish on this one was pretty messy, partly due to the number of piece
 Nice to have a big work surface to spread out. Especially when you are a messy, messy woodworker.
 
 {% include figure.html img="IMG_0455.avif" align="center-full" %}
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0466.avif" align="right" %}
 
@@ -45,7 +45,7 @@ Nice to have a big work surface to spread out. Especially when you are a messy, 
 
 The insert with all the squares was cut as a separate piece from the main box. It was carved using the {{ site.data.links.origin }} from a single block of walnut. This left me with about 72 little cubes of walnut that I still haven't figured out what to do with.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img = "IMG_0467.avif" align = "left" %}
 
@@ -55,23 +55,23 @@ The green velvet was placed on the bottom of the box and the insert placed over 
 
 The top engraving was a little nerve wracking. Make a mistake here and it's hard to patch nicely.
 
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## Ready
 
 Here they are, ready and waiting for the big day.
 
 {% include figure.html img="IMG_0461.avif" align="center-full" %}
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## In Position
 
 All filled with all kinds of earrings. Looks like I might have to make more!
 {% include figure.html img="earring-box-01.avif" align="center-wide" %}
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="earrings-from-top.avif" align="center-wide" %}
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## Materials
 

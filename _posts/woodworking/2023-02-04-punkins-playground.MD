@@ -40,7 +40,7 @@ There is even a plug-in for Sketchup, called [Open Cut List](https://docs.opencu
 
 I really shouldn't be telling everyone all my secrets.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 A big piece of 4&#39;x8&#39; Baltic Birch plywood was used as the main surface. If you've not worked with that material before, I highly recommend it. It is nice stuff, super strong, made of 13 layers of wood instead of the 5 or 7 you get at the big box store. You can get it here at {{ site.data.links.balticbirch }}, check it out!
 
@@ -56,7 +56,7 @@ To make it strong enough to cover that 4&#39;x8&#39; span, I created a _Torsion 
 
 It basically means that you put 3 to 4 inch strips running down the length and width of the plywood, which makes it incredibly strong. The maple trim around the outside also helped with the structural integrity.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0558.avif" align="right" %}
 
@@ -66,7 +66,7 @@ The legs worked well. I was a little nervous about this design at the outset, bu
 
 The legs are removable in case we ever want to move it. That's never going to happen.
 
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## In Play
 

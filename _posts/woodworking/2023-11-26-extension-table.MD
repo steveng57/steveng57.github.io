@@ -26,13 +26,13 @@ The thinking is that when not in use, it sits against the wall and acts as a ser
 ## Under Construction
 
 {% include figure.html img="IMG_0216.avif" align="center" %}
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 There was a deep gouge in the top of this that took a fair amount of epoxy and sanding to make disappear. If you know where to look...actually no, you can't see it at all.
 
 Mmmm...{{ site.data.links.rubio }} **Chocolate** was the colour used here. Mmmm...
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0218.avif" align="left" %}
 
@@ -40,7 +40,7 @@ Mmmm...{{ site.data.links.rubio }} **Chocolate** was the colour used here. Mmmm.
 
 Normally an apron, seen in the foreground here, is situated between the legs of the table, helping to keep them sturdy. In this case, the apron is purely decorative, as the legs will attach to the underside of the table and be inset a fair amount.
 
-{% include clear-float.html break  = 1%}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0221.avif" align="right" %}
 
@@ -52,7 +52,7 @@ With the legs inset as such, I was a bit worried the table would be top-heavy, b
 
 I bought these from {{ site.data.links.rustydesign }}, an Ontario based company outside Toronto. Great quality, great selection, and good prices. Check them out.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0226.avif" align="left" %}
 
@@ -62,7 +62,7 @@ The tricky part was getting the edging to look the same as on the original table
 
 This is where overflow stuff will go when we have family dinners. More importantly, this is where the munchies will go when we watch movies in the theatre.
 
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## In Position
 

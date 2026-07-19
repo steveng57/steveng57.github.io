@@ -30,7 +30,7 @@ There are so many pocket holes holding this thing together, it's just silly. Hal
 
 I built it low to the ground so that the boys could jump on it easy enough, so I left off the trim on the bottom, but I think that looks odd, unfinished.
 The solid Red Oak for the exterior helps make this a heavy beast.
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## On the Positive Side
 

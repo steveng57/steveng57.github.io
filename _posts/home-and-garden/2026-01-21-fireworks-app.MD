@@ -73,13 +73,13 @@ They actually started off square, which had a neat flickering and fluttering eff
 
 The image here is from later builds where you can "fly" the camera thru the fireworks and change the viewing angle.  Here we are above the launch pad looking down on it and the bleachers.  Those people had better be careful, the sparks can burn holes in their parkas!
 
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 I created a handful of very simple single stage fireworks, modelled them in the app and created "show" that lets you run thru a sequence of launches.  It worked well but the physics needed a lot of work, things just didn't look real.  
 
 {% include figure.html img="Screenshot-2026-01-21-212456.avif" align="full" %}
 
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ### First major AI usage
 
@@ -222,7 +222,7 @@ With this awesome new power, I discovered I could take on bolder challenges and 
 
 The pic shows the strobe burst embedded in what is called a _peony_ style particle burst.  I think the folk in the red parkas in the bleachers really liked it a lot.
 
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ### Sounds
 
@@ -289,7 +289,7 @@ In this image we see one of the more complex burst types called _Chrysanthemum_.
 
 At this stage the complexity of the fireworks engine was pretty robust, and since I had added a lot of knobs and dials along the way, I could control it to do lots of different things.  One must curb ones enthusiasm however, since if you have a twenty-seven stage explosion each with 10,000 subshells, it might start to lose any sense of realism.
 
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ### Knowledge
 

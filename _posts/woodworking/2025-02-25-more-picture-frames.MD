@@ -32,7 +32,7 @@ Kinda blah right?  Definitely needs something to make them pop.
 
 Poplar is very popular.  Sorry, that joke never gets old, although Deb would say it got old about a decade ago.  Still, I can't help it.  Hey, this is my blog and I will put whatever lame jokes I want to in here.  Look, I am not forcing you to stay, you can move on if you like, but the bad jokes stay.  They are my trademark, I am known for them.  Yeah, I know I used the same lame joke on the original picture frames post, just let it go already!
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_1655.avif" align="left" %}
 
@@ -42,7 +42,7 @@ After milling the wood to size and cutting to length, it was time for glue-up an
 
 Strap clamps (the black ribbon around the sides here) are perfect for keeping a piece like this under control
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_1658.avif" align="right" %}
 
@@ -54,7 +54,7 @@ Lots of excess glue visible here, but that is going to be painted black and on t
 
 I used 23 gauge pin nails on the backing pieces to hold it to the side pieces while the glue dried. 
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_1667.avif" align="left" %}
 
@@ -66,7 +66,7 @@ I had to do it in the garage because of the cold weather outside as it would not
 
 In the back of this pic you can see snow piled up and covering the window.  We had over 100cm of snow in the last week.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ## The Final Product
 
@@ -82,7 +82,7 @@ In the back of this pic you can see snow piled up and covering the window.  We h
 ### Gazebo Trees
 
 This frame is in a small building we have out back that we call the Gazebo.  It is totally enclosed, so not really a gazebo, but we called it that once and the name stuck.  It is a nice place to hang out in the summer, with cool breezes and cool colours.  Unfortunately, this painting is in the same cool place, and needs something to make it stick out against the pastel walls.
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_1689.avif" align="right" %}
 ### Domino Dominance
@@ -91,7 +91,7 @@ Since I talk a lot about using {{ site.data.links.domino }}, I figured I would f
 
 The frame isn't very thick, about 11.5 mm, so I have to use the smallest dominoes that I have, 4mmx20mm.  You can see one on top of the board on the right. 
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_1696.avif" align="left" %}
 ### Framed Forest
@@ -100,7 +100,7 @@ Mounting this one took a bit of finesse.  The internal frame of the painting had
 
 I clamped it square for a couple of days, then wedged it firmly in place while screwing it to the new frame.  I used a lot more screws than normal to keep is square, around 20 I think.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 
 {% include figure.html img="IMG_1697.avif" align="right" %}
@@ -112,7 +112,7 @@ I used a new set of paints on this frame, a "glass acrylic" that claims to be go
 
 Deb created an excellent colour match, so the frame goes great with the branches in the artwork.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 > Don't forget to check out the walnut frame for the birds [right here.]({% post_url woodworking/2021-07-30-walnut-frame %})  It was the first of the bunch.
 {: .prompt-tip}

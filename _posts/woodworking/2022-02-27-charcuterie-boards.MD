@@ -26,7 +26,7 @@ Take a bunch of sticks, glue them together in just the right order, then run the
 
 The thing that makes these look cool is the different woods, and the contrast between them. It has walnut, maple, Sapele, Mahogany, and Padauk. If you are really into the wood types, I have included a way-too-detailed description of each of them below that I pulled from various sources.
 
-{% include clear-float.html break = 1%}
+{% include clear-float.html %}
 
 It was finished with a food safe product called Honeybees Natural Wood Cream, mostly beeswax. Doesn't that sound just yummy? The rubber feet and stainless-steel connecting screws were procured from local artisans (Lee Valley and Home Depot respectively).
 

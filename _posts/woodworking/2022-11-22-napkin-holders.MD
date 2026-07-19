@@ -27,7 +27,7 @@ The napkin holder projects are among my favorites. Making these is a small chall
 
 White epoxy inlay finished with {{ site.data.links.rubio }} Pure.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="20221122_113942.avif" align="right" %}
 
@@ -35,7 +35,7 @@ White epoxy inlay finished with {{ site.data.links.rubio }} Pure.
 
 A slightly rotated angle for your viewing pleasure.
 
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## One for Friends
 
@@ -51,7 +51,7 @@ After getting confident with the epoxy outline, I decided to try some lettering 
 
 Looking sweet with some good company.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0555.avif" align="left" %}
 
@@ -60,7 +60,7 @@ Looking sweet with some good company.
 It's getting crowded in here.
 
 If you are so inclined, you can check out the [charcuterie board]({% post_url /woodworking/2022-02-27-charcuterie-boards %}) here. Look, I can even spell _charcuterie_ now.
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## Materials
 

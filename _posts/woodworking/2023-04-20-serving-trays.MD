@@ -36,14 +36,14 @@ I also wanted to be sure to get the finger joints just right (that's what this s
 The Tree Tray was done first, and so I learned how **not** to do it here. Basically on something like this, you need to sand and finish before final assembly, otherwise it is too difficult to get into corners and things.
 
 While it is not quite as blotchy in real life as this photo would make it seem, it is still just a little too blotchy for my taste. The Flower turned out better.
-{% include clear-float.html break = 1%}
+{% include clear-float.html %}
 
 {% include figure.html img="20230405_141951.avif" align="right" %}
 
 ### Flower Tray
 
 The Flower Tray is where the learnings were applied and turned out better than the tree, but they make a good set.
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## Materials
 

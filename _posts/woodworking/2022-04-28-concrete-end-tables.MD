@@ -32,7 +32,7 @@ A neat trick I found on YouTube was to use a bead of black silicone around the s
 
 The black colouring makes it easier to remove when you are done. Made from spare melamine I had from some old shelving.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="20220420_174306.avif" align="right" %}
 
@@ -40,7 +40,7 @@ The black colouring makes it easier to remove when you are done. Made from spare
 
 Standard leg with an apron. Only tricky part here is that I made the apron extra beefy, and put brackets in there for added strength. The extra strength is needed at the top, as these are nested tables, you cannot put any stretchers further down on the legs for extra support.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="20220503_133849.avif" align="left" %}
 
@@ -50,7 +50,7 @@ OMG did these turn out **awful**. When I initially poured the tops, I had such h
 
 In my dream, I had though this was going to be an eggshell white with a few flecks of gray. Boy was I wrong. I looked like some kind of bad Rorschach Inkblot test. Not a happy camper at this point. I had no idea how to fix this.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="20220623_123043.avif" align="right" %}
 
@@ -64,14 +64,14 @@ If you have ever sanded concrete, well it makes sanding wood seem like a dream. 
 
 But it worked out well in the end. I can honestly say I am very happy with how it turned out, a nice eggshell and beige patina.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="20220623_123128.avif" align="left" %}
 
 ### Call Me Hairy
 
 This one took a long time, so it gets another pic. I like the hairy arm in the photo. Is that mine?
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## In Production
 

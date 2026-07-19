@@ -29,7 +29,7 @@ Debbie found these cute little guys at a local art centre.  Cute and colourful, 
 
 Debbie picked out four of her favourites and thought they would look good together, having a little group chat. Maybe they have their favourite app for that, who knows.
 
-{% include clear-float.html break = 1%}
+{% include clear-float.html %}
 
 {% include figure.html img="20210730_234800423_iOS.avif" align="right" %}
 
@@ -37,7 +37,7 @@ Debbie picked out four of her favourites and thought they would look good togeth
 
 Pretty simple. The only tricky part was mounting and positioning the individual pieces of artwork so that they could be screwed into the backing in the right spot.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_2913.avif" align="left" %}
 ### Inverse Mullet
@@ -46,7 +46,7 @@ Lots of _Infinity Clips_ used here, the 12 figure-eight loopy things that hold t
 
 I almost called this pic the _Inverse Mullet_ because it's all party in the front and business in the back. I know, I know... a long way to go for a bad joke. Yet here you are.
 
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## In the Gazebo
 
@@ -59,7 +59,7 @@ Here they are in their new home, getting all chatty and hanging out.
 When I first wrote this blog entry, I had not yet taken the above picture, so instead I put in a placeholder just for giggles. The thing is, though, I have now grown attached to this placeholder, so I am going to leave it right where it is.
 
 {% include embed/youtube.html id='dQw4w9WgXcQ' %}
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## Materials
 

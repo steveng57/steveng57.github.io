@@ -29,7 +29,7 @@ I designed the rack in {{ site.data.links.sketchup }} to make sure it had all th
 
 Once you have your 3d model, export the parts to the {{ site.data.links.origin }} and you are off to the races.
 
-{% include clear-float.html break = 1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0677.avif" align="right" %}
 
@@ -39,7 +39,7 @@ I was a little worried about moisture affective the piece, since it was going to
 
 So...I heavily lathered everything with 6 or 7 coats of poly, making sure the rods got an extra dose.
 
-{% include clear-float.html break =1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0678.avif" align="left" %}
 
@@ -47,7 +47,7 @@ So...I heavily lathered everything with 6 or 7 coats of poly, making sure the ro
 
 The rods are solid maple, picked up at {{ site.data.links.leevalley }}. Pretty strong and with all that poly, they should resist any moisture.
 
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## In Position
 

@@ -34,7 +34,7 @@ The back, bottom, and front were pretty straightforward.  Cut them all to the sa
 
 Not much to see here. 
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_1819.avif" align="right" %}
 
@@ -48,7 +48,7 @@ The thing is, you are referencing off of three different surfaces, when one alwa
 
 Cutting the angled sides was fun, and was done with a track saw.  Nothing fancy, just marked a line where the cut was to go, dropped the track on top and made the slice.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 > **To domino or not to domino**: Now the woodworking types out there might be saying, _"Why use dominos when some pockets holes and screws would do just fine?"_  
 And you might be right.  It would probably do fine, but would it be as good?  
@@ -65,7 +65,7 @@ To make sure that everything lined up properly I did a full dry-fit.  Dry-fit ju
 
 I think the thing that made it work is that I glued up all the "basic" parts first, then took measurements of that subassembly before cutting the sides.  That way the sides were cut to the exact size of the completed front/back/bottom, and they fit perfectly.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ### Clamps
 
@@ -87,7 +87,7 @@ I used a french cleat to mount the shelf to the side wall of the pool shed.
 
 Cleats are a great way to mount things like this, since all you do is mount and level a small cleat to the wall, then throw the shelf up onto the cleat. 
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_1835.avif" align="right" %}
 
@@ -97,7 +97,7 @@ Room for several pool mats and even some toys.
 
 Lathered in five coats of polyurethane to keep the water out.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 ## Materials and Tools
 

@@ -32,7 +32,7 @@ This project was made from offcuts of the Walnut Table I had just made. The tabl
 
 I chose this piece because it was wide enough to slice in half and still have some timber to play with.
 
-{% include clear-float.html break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0870.avif" align="right" %}
 
@@ -42,7 +42,7 @@ So I made all the cuts, and put it back together with each piece in its original
 
 As you can see, you have to plan and position the cuts well in advance, and make sure you do the mitres right, else it's all for naught.
 
-{% include clear-float.html  break=1 %}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0871.avif" align="left" %}
 
@@ -54,7 +54,7 @@ Only complication was that I had to make sure that didn't damage the fine point 
 
 The font is called _Satisfy_, which is oddly satisfying.
 
-{% include clear-float.html break=1%}
+{% include clear-float.html %}
 
 ## Join and Finish
 
@@ -66,7 +66,7 @@ Dry fit before the glue-up shown here. I think I must have dry fit this one abou
 
 It was those dividers that were being kind of finicky. They didn't want to stay firm or align properly. A little sanding and some gentle persuasion did the trick.
 
-{% include clear-float.html break=1%}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0882.avif" align="left" %}
 
@@ -74,7 +74,7 @@ It was those dividers that were being kind of finicky. They didn't want to stay 
 
 Band clamps are great for mitred boxes as the put the force on the corner joints inward towards the centre of the box.
 
-{% include clear-float.html break=1%}
+{% include clear-float.html %}
 
 {% include figure.html img="IMG_0912.avif" align="right" %}
 
@@ -82,7 +82,7 @@ Band clamps are great for mitred boxes as the put the force on the corner joints
 
 A subtle epoxy inlay done here, and coated with {{ site.data.links.rubio }} to bring out the richness of the walnut.
 
-{% include clear-float.html break=1%}
+{% include clear-float.html %}
 
 ## Materials
 
