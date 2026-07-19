@@ -52,7 +52,7 @@ A big piece of 4&#39;x8&#39; Baltic Birch plywood was used as the main surface. 
 
 ### Torsion Box
 
-To make it strong enough over that 4&#39;x8&#39; span, it created a 'Torsion Box' using various scraps of other plywood that I had lying around from other projects.
+To make it strong enough to cover that 4&#39;x8&#39; span, I created a _Torsion Box_ using various scraps of other plywood that I had lying around from other projects.
 
 It basically means that you put 3 to 4 inch strips running down the length and width of the plywood, which makes it incredibly strong. The maple trim around the outside also helped with the structural integrity.
 
