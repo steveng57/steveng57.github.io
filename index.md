@@ -8,7 +8,7 @@ image:
   path: /assets/img/about/IMG_0697.avif
   alt: The most precious thing in my shop.  A gift from the family.
 date: 2024-01-28 10:59:55 -0500
-last_modified_at: 2026-01-23 08:45:00 -0500
+last_modified_at: 2026-07-22 13:30:00 -0400
 toc: true
 ---
 
@@ -77,6 +77,11 @@ The [Categories]({% link _tabs/categories.md %}) link shows the posts group by t
 ### Tags
 
 The [Tags]({% link _tabs/tags.md %}) link will display a _tag wall_ splattered with every tag from every post. Click on a random one to see what fun that brings.
+{: .sjg-br}
+
+### Site Stats
+
+The [Site Stats]({% link site-stats.md %}) page is the technical dashboard for this site. It includes build and deployment details, content and media totals, configuration, and live browser diagnostics that can be useful when something is not behaving as expected.
 {: .sjg-br}
 
 To all the fans of this website, pictured below, please be [let me know]({% link contact/index.html %}) if you find any bugs or other inaccuracies. This is very much a work in progress.
