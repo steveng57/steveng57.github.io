@@ -10,7 +10,8 @@ module Jekyll
     priority :lowest
 
     IMAGE_EXTENSIONS = %w[.avif .gif .ico .jpeg .jpg .png .svg .webp].freeze
-    VIDEO_EXTENSIONS = %w[.m3u8 .m4v .mov .mp4 .ts .webm].freeze
+    HLS_EXTENSIONS = %w[.m3u8 .ts].freeze
+    VIDEO_EXTENSIONS = %w[.m4v .mov .mp4 .webm].freeze
 
     def generate(site)
       posts = site.posts.docs
@@ -94,7 +95,10 @@ module Jekyll
       formats = rows.values.sort_by { |row| [-row['bytes'], row['extension']] }
       formats.each { |row| row['size'] = human_size(row['bytes']) }
       image_rows = formats.select { |row| IMAGE_EXTENSIONS.include?(row['extension']) }
+      hls_rows = formats.select { |row| HLS_EXTENSIONS.include?(row['extension']) }
       video_rows = formats.select { |row| VIDEO_EXTENSIONS.include?(row['extension']) }
+      hls_masters = entries.count { |entry| File.basename(entry['path']).downcase == 'master.m3u8' }
+      video_bytes = (hls_rows + video_rows).sum { |row| row['bytes'] }
 
       {
         'files' => formats.sum { |row| row['count'] },
@@ -103,9 +107,10 @@ module Jekyll
         'images' => image_rows.sum { |row| row['count'] },
         'image_bytes' => image_rows.sum { |row| row['bytes'] },
         'image_size' => human_size(image_rows.sum { |row| row['bytes'] }),
-        'video_files' => video_rows.sum { |row| row['count'] },
-        'video_bytes' => video_rows.sum { |row| row['bytes'] },
-        'video_size' => human_size(video_rows.sum { |row| row['bytes'] }),
+        'videos' => hls_masters + video_rows.sum { |row| row['count'] },
+        'hls_files' => hls_rows.sum { |row| row['count'] },
+        'video_bytes' => video_bytes,
+        'video_size' => human_size(video_bytes),
         'formats' => formats,
         'largest' => entries.sort_by { |entry| [-entry['bytes'], entry['path']] }.first(20)
       }

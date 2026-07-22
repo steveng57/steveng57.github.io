@@ -104,12 +104,12 @@ These totals cover static files selected for publication. Original photos, sourc
 <div class="stats-grid">
   <div class="stats-card"><span class="stats-value">{{ assets.files }}</span><span class="stats-label">Static files</span></div>
   <div class="stats-card"><span class="stats-value">{{ assets.images }}</span><span class="stats-label">Images · {{ assets.image_size }}</span></div>
-  <div class="stats-card"><span class="stats-value">{{ assets.video_files }}</span><span class="stats-label">Video/HLS files · {{ assets.video_size }}</span></div>
+  <div class="stats-card"><span class="stats-value">{{ assets.videos }} videos</span><span class="stats-label">{{ assets.hls_files }} HLS delivery files · {{ assets.video_size }}</span></div>
   <div class="stats-card"><span class="stats-value">{{ assets.size }}</span><span class="stats-label">Total static footprint</span></div>
 </div>
 
 <details class="stats-details">
-  <summary>File formats ({{ assets.formats.size }})</summary>
+  <summary>Static file formats ({{ assets.formats.size }})</summary>
   <div class="stats-details-body">
     <table class="stats-table">
       <thead><tr><th scope="col">Extension</th><th scope="col">Files</th><th scope="col">Size</th></tr></thead>
