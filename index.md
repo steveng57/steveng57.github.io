@@ -50,7 +50,7 @@ The posts are usually, but not always, broken up into the following sections:
 - **Design.**  The planning behind the projects, sometimes include screenshots from whatever design software and processes I may have used.
 - **Construction.**  The actual build.  Yeah, this section is kind of important, and also self-explanatory. 
 - **In-use.**  I try to wrap up each post with a pic or two showing the piece in actual use, in its native habitat.
-- **Materials.** A listing of tools and materials, and their suppliers, used in the project.  This section for the nerdy amongst us.
+- **Materials.** A listing of tools and materials, and their suppliers, used in the project.  This section is for the nerdy amongst us.
 
 In the early days, I did not take many pictures of the shop or the projects as they were in progress, so a lot of the pics will be of the finished product. I will be taking more "under construction" photos as time progresses, hopefully that will make the posts more interesting to those who like a bit of the "behind-the-scenes" thing.
 
@@ -61,7 +61,7 @@ In the early days, I did not take many pictures of the shop or the projects as t
 
 The [Image Gallery]({% link _tabs/gallery.md %}) is an alphabetical listing of the best images from all the posts on the site, the top three or four per post. This is meant to be a purely visual experience, and it's a fun way to go through things.
 
-> **Note:** If you see something of interest in the image gallery, you can click on the **image caption** to drill down into the original post. Also note that if you are viewing on a mobile device, an _up or down swipe_ can close the gallery. That way you don't have to hunt for the tiny "close" button.
+> **Note:** If you see something of interest in the image gallery, you can click on the **image caption** to be taken to the original post. Also note that if you are viewing on a mobile device, an _up or down swipe_ can close the gallery. That way you don't have to hunt for the tiny "close" button.
 {: .prompt-info .sjg-br}
 
 ### Timeline
