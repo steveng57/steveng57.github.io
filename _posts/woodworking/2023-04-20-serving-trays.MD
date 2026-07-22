@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Serving Trays
 description: In this episode, we experiment with epoxy inlays in difficult spaces.
 date: 2023-04-20 18:33:00 -0500

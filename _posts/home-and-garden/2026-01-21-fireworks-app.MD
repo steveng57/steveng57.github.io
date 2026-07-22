@@ -1,6 +1,5 @@
 ---
 author: sjg
-layout: post
 title: Fireworks Simulation App
 description: Something from my bucket list, a simulator app that generates realistic 3d fireworks shows.
 date: 2026-01-21 11:19:42 -0500
@@ -29,7 +28,7 @@ I am a C# developer by trade, I spent a good chunk of my career in "devdiv" (dev
 
 Once on the C# path, DirectX seemed the next logical step.  There are more sophisticated options out there (the Unreal Engine came up a lot), but it is pretty complex and has a super steep learning curve.  The AI recommended DirectX v11 over v12 which was surprising, as it cited a lot of unnecessary complexity in v12.  Ok.
 
-{% include figure.html img="Screenshot-2026-01-21-211227.avif" align="full" %}
+{% include figure.html img="Screenshot-2026-01-21-211227.avif" %}
 
 Visual Studio was the dev env of choice.  As much as I like VS Code, nothing beats the power you get from the full Visual Studio experience when debugging and diving deep.
 
@@ -77,7 +76,7 @@ The image here is from later builds where you can "fly" the camera thru the fire
 
 I created a handful of very simple single stage fireworks, modelled them in the app and created "show" that lets you run thru a sequence of launches.  It worked well but the physics needed a lot of work, things just didn't look real.  
 
-{% include figure.html img="Screenshot-2026-01-21-212456.avif" align="full" %}
+{% include figure.html img="Screenshot-2026-01-21-212456.avif" %}
 
 {% include clear-float.html break=0 %}
 

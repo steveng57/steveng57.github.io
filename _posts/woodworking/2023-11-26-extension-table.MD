@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Extension Table
 description: A table add-on for our existing table in the Theatre Room.
 date: 2023-11-26 18:32:00 -0500

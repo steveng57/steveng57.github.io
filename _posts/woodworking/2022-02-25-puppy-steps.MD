@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Puppy Steps
 description: Making it easier for the boys to get up and down on their own.
 date: 2022-02-25 18:32:00 -0500

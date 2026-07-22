@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Munchies Tray
 description: Hey hey, it's the munchies.
 date: 2023-10-27 18:32:00 -0500
@@ -30,7 +29,7 @@ This is the {{ site.data.links.sketchup }} drawing used to plan the whole thing.
 It ended up being bigger than this in the end, as I called an audible during the construction process. Doing such a reckless thing can often come back to haunt you, but in this case it worked out okay. The overall size was never an issue, it was all those angles that were the risky part.
 {% include clear-float.html %}
 
-{% include figure.html img="IMG_0074.avif" align="center-full" %}
+{% include figure.html img="IMG_0074.avif" %}
 {% include clear-float.html %}
 
 As seems to be my usual for mitres these days, I used the {{ site.data.links.domino }} to add strength to the mitre, and make it easy to glue-up.  You have to use the really small 4mm dominos, but even then, you also have to be careful that you don't blow thru the opposite side on your domino hole.  Cause that looks downright messy and non-pretty.

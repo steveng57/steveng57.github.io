@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Bill's Christmas Gifts
 description: A notebook computer stand, and a tee-time sign.
 date: 2021-12-25 18:32:00 -0500

@@ -1,6 +1,5 @@
 ---
 author: sjg
-layout: post
 title: Network Upgrade
 description: A tech post, upgrading my home network from 1Gbps to 10Gbps.
 date: 2025-01-23 21:47:56 -0500

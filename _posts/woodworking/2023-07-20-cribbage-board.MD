@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Cribbage Board
 description: A birthday gift for Dad.  Cribbage has been a lifetime passion.
 date: 2023-07-20 18:32:00 -0500

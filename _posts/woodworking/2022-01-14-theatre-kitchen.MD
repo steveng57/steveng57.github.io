@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Theatre Kitchen
 description: Kitchen style cabinets and drawers for our theatre room, with a spot for a mini-fridge.
 date: 2022-01-14 18:32:00 -0500
@@ -37,7 +36,7 @@ There are times when design software is a _"nice to have"_ and it can make your 
 
 Not only did I do the main cabinet layout, but I also did the drawers, drawer fronts and all.  I even did a few spacing and layout _helper_ drawings, as shown on the right of this picture. 
 
-{% include figure.html img="theatre-kitchen-sketchup.avif" align="center-full" %}
+{% include figure.html img="theatre-kitchen-sketchup.avif" %}
 
 {% include clear-float.html %}
 

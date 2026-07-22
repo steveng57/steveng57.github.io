@@ -1,6 +1,5 @@
 ---
 author: sjg
-layout: post
 title: Walnut Table and Benches
 description: A big project with a whole lot of walnut.
 date: 2024-02-22 18:32:00 -0500

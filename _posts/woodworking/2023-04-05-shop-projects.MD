@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Shop Projects
 description: A new mitre station and router table for the shop.
 date: 2023-04-05 18:32:00 -0500

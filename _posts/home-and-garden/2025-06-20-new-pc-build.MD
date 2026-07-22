@@ -1,6 +1,5 @@
 ---
 author: sjg
-layout: post
 title: Building a New PC
 description: The old one went kaput, so time for a new computer built with the latest and greatest parts.
 date: 2025-06-20 21:19:42 -0500
@@ -165,13 +164,13 @@ Last but not least was hooking up the power supply.  Nothing at all different he
 
 It is always a great moment after a build when you power things up and they all work properly.  Don't ask me what a _CPU Biscuit_ is, I have no idea, but apparently I have 87 of them. (see pic)
 
-{% include figure.html img="Gigabyte-BIOS.avif" align="center-full" %}
+{% include figure.html img="Gigabyte-BIOS.avif" %}
 
 If there are problems, there are usually a series of angry beeps produced by the motherboard or the offending components, or in a worst case scenario...crickets.  In this case, everything worked great the first time, and I started configuring things in the BIOS and installing the operating system, Windows 11.
 
 ### OS Boot
 
-{% include figure.html img="IMG_1927.avif" align="center-full" %}
+{% include figure.html img="IMG_1927.avif" %}
 
 Installing the OS went pretty well, at least until Windows tried to do its whole _activation dance_.  That wasn't very well thought out, but that is a topic for another post.
 
@@ -203,11 +202,11 @@ It has 4k, a 120Hz refresh rate, and good HDR.  It checks all the boxes except O
 
 It all adds up to double the pixels on the screens.  Images and video are definitely better, but what I find the best for my aging eyes is the text: it is way easier to read, and scrolling is super smooth.  A big improvement!
 
-{% include figure.html img="IMG_1959.avif" align="center-full" %}
+{% include figure.html img="IMG_1959.avif" %}
 
 While I was at it, I added some monitor extension to allow more movement in the screens.  Now I can pull them out further and align them the way I want.
 
-{% include figure.html img="IMG_1958.avif" align="center-full" %}
+{% include figure.html img="IMG_1958.avif" %}
 
 Here is a good background to show off the 4K.  I know you can't see it in the pic above so you'll have to take my word for it, it's awesome.
 

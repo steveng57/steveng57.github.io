@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Boys Bench
 description: A crazy custom bench, an experiment really.
 date: 2021-02-06 17:58:00 -0500

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Keepsake Box
 description: A walnut box with maple pin-striping, and a pumpkin logo on the top.
 date: 2023-04-13 18:32:00 -0500

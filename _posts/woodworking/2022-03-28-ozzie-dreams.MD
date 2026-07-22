@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Ozzie Dreams
 description: A special place for a very special boy.
 date: 2022-03-28 18:32:00 -0500

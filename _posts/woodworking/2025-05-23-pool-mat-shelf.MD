@@ -1,6 +1,5 @@
 ---
 author: sjg
-layout: post
 title: Pool Mat Shelf
 description: A better way to store pool mats in the pool shed.
 date: 2025-05-23 21:19:42 -0500

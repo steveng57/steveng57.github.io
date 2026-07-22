@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Earring Boxes
 description: In this episode, we see how to make really complicated boxes.  In this case a Christmas gift for someone special.
 date: 2023-12-25 18:32:00 -0500
@@ -36,7 +35,7 @@ Doing the finish on this one was pretty messy, partly due to the number of piece
 
 Nice to have a big work surface to spread out. Especially when you are a messy, messy woodworker.
 
-{% include figure.html img="IMG_0455.avif" align="center-full" %}
+{% include figure.html img="IMG_0455.avif" %}
 {% include clear-float.html %}
 
 {% include figure.html img="IMG_0466.avif" align="right" %}
@@ -61,7 +60,7 @@ The top engraving was a little nerve wracking. Make a mistake here and it's hard
 
 Here they are, ready and waiting for the big day.
 
-{% include figure.html img="IMG_0461.avif" align="center-full" %}
+{% include figure.html img="IMG_0461.avif" %}
 {% include clear-float.html break=0 %}
 
 ## In Position

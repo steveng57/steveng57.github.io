@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Makeup and Mirror Stand
 description: A multi-purpose stand for the bathroom vanity.
 date: 2023-01-20 18:32:00 -0500

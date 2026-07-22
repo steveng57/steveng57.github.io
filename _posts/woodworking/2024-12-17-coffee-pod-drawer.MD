@@ -1,6 +1,5 @@
 ---
 author: sjg
-layout: post
 title: Coffee Pod Drawer
 description: A Christmas gift for Matt, a walnut storage drawer for coffee pods.
 date: 2024-12-24 12:00:00 -0500
@@ -89,7 +88,7 @@ So a couple of interesting things about this project, they are small things, but
 
 {% include clear-float.html %}
 
-{% include figure.html img="IMG_1509.avif" align="full" %}
+{% include figure.html img="IMG_1509.avif" %}
 
 {% include clear-float.html %}
 

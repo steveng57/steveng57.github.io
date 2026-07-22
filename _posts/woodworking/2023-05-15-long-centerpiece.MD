@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Long Centerpiece
 description: A piece to brighten up our outdoor living spaces.
 date: 2023-05-15 18:32:00 -0500

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Charcuterie Boards
 description: Serving trays made from walnut, maple, and a number exotic African woods.
 date: 2022-02-25 18:32:00 -0500

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Floating Shelves
 description: Made-to-fit shelving for a couple of spots around the house.
 date: 2019-03-17 18:32:00 -0500

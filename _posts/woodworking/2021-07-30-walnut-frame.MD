@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Walnut Picture Frame
 description: A frame tailored for four colourful birds.
 date: 2021-07-30 18:32:00 -0500

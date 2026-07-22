@@ -1,6 +1,5 @@
 ---
 author: sjg
-layout: post
 title: Lilly's Creations
 description: The one where I make a box.  A nice pencil box for holding pencils.
 date: 2024-04-14 11:08:52 -0400

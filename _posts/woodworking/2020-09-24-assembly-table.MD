@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Assembly Table
 description: A bigger, more functional assembly table for the workshop.
 date: 2020-09-24 17:58:00 -0500

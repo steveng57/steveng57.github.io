@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Kitchen Things
 description: In this episode, I tackle a few small projects that make it more comfortable sitting at our kitchen island.
 date: 2022-10-15 18:32:00 -0500

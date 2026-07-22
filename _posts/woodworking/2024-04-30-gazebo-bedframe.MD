@@ -1,6 +1,5 @@
 ---
 author: sjg
-layout: post
 title: Gazebo Bedframe
 description: A slimmed down, low riding bedframe, made from white oak for our Gazebo out back.
 date: 2024-05-01 13:51:51 -0400

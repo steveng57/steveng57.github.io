@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Concrete Nested End Tables
 description: Introducing a new material to the mix - concrete.
 date: 2022-04-28 18:32:00 -0500

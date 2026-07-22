@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Napkin Holders
 description: Napkin holders with which to hold napkins.
 date: 2022-11-22 18:32:00 -0500

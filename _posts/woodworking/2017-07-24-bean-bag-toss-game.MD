@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Bean Bag Toss Game
 description: A summer classic, made from cedar and plywood.  And beans.
 date: 2017-07-24 17:56:00 -0500

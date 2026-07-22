@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Punkin's Playground
 description: A big craft table for an open area in the basement.
 date: 2023-02-04 18:32:00 -0500

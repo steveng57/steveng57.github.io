@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Vacuum Dolly
 description: A custom cart for holding my shop vac.
 date: 2021-08-27 18:32:00 -0500

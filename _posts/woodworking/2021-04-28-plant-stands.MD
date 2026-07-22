@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Plant Stands
 description: White ceramic pots with black-stained oak stands.
 date: 2021-04-28 18:32:00 -0500
