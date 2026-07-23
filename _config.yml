@@ -232,7 +232,6 @@ exclude:
   - serve.ps1
   - test-media-manifests.ps1
   - test-post.ps1
-  - "*.cmd"
   - "*.afphoto"
   - tsconfig.json
   - "*.cmd"
