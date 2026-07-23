@@ -232,6 +232,10 @@ exclude:
   - serve.ps1
   - test-media-manifests.ps1
   - test-post.ps1
+  - test-site.ps1
+  # Pages Functions are compiled separately by Cloudflare/Wrangler and must
+  # not be copied into the generated static site.
+  - functions
   - "*.afphoto"
   - tsconfig.json
   - "*.cmd"

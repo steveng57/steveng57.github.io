@@ -106,6 +106,14 @@ Validate a post at any time:
 
 The validator checks front matter, category shape, the media folder, cover image, cover thumbnail, in-post image/video include references, and category icon coverage. Add `-BuildCheck` to run `bundle exec jekyll build` after the convention checks.
 
+Validate the generated site's HTML after a Jekyll build:
+
+```powershell
+.\test-site.ps1
+```
+
+This runs HTMLProofer with the same checks as CI. On Windows it isolates the host's `DEBUG` environment variable and supplies RubyInstaller's versioned libcurl DLL to HTMLProofer without changing the global environment.
+
 Validate every media manifest at any time:
 
 ```powershell
