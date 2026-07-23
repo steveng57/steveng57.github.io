@@ -16,6 +16,7 @@ module Jekyll
     def generate(site)
       posts = site.posts.docs
       static_assets = asset_inventory(site.static_files)
+      static_assets['gallery_images'] = gallery_image_count(site, site.static_files)
 
       site.config['site_stats'] = {
         'build' => build_stats(site),
@@ -114,6 +115,26 @@ module Jekyll
         'formats' => formats,
         'largest' => entries.sort_by { |entry| [-entry['bytes'], entry['path']] }.first(20)
       }
+    end
+
+    def gallery_image_count(site, files)
+      image_info = site.data.fetch('img-info', {})
+      media = site.data.fetch('media', {})
+
+      files.count do |file|
+        relative_path = file.relative_path.tr('\\', '/')
+        match = relative_path.match(%r{\A/assets/img/posts/([^/]+)/tinyfiles/([^/]+\.avif)\z}i)
+        next false unless match
+
+        slug = match[1]
+        filename = match[2]
+        image_key = relative_path.sub('/tinyfiles', '').delete_prefix('/')
+        image_metadata = image_info.fetch(image_key, {})
+        media_item = media.dig(slug, 'images', filename)
+        gallery_flag = media_item ? media_item['gallery'] : image_metadata['gallery']
+
+        gallery_flag == true
+      end
     end
 
     def feature_stats(site)

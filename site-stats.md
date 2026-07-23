@@ -16,7 +16,7 @@ last_modified_at: 2026-07-22 13:30:00 -0400
 
 <div class="site-stats" data-generated-at="{{ build.generated_at | date_to_xmlschema }}" markdown="1">
 
-This page is a technical snapshot of the site. Build and content figures are captured when Jekyll generates the site; browser diagnostics are calculated locally when you open this page. Nothing in the browser section is sent back to the site.
+This page is a technical snapshot of the site. It is intended for us geeks to check things out, and to assist in site debugging.  Build and content figures are captured when Jekyll generates the site; browser diagnostics are calculated locally when you open this page. Nothing in the browser section is sent back to the site, I am not trying to fish or anything.
 {: .stats-intro}
 
 ## At a glance
@@ -26,6 +26,7 @@ This page is a technical snapshot of the site. Build and content figures are cap
   <div class="stats-card"><span class="stats-value">{{ content_stats.categories }}</span><span class="stats-label">Categories</span></div>
   <div class="stats-card"><span class="stats-value">{{ content_stats.tags }}</span><span class="stats-label">Tags</span></div>
   <div class="stats-card"><span class="stats-value">{{ assets.images }}</span><span class="stats-label">Published images</span></div>
+  <div class="stats-card"><span class="stats-value">{{ assets.gallery_images }}</span><span class="stats-label">Gallery images</span></div>
   <div class="stats-card"><span class="stats-value">{{ assets.size }}</span><span class="stats-label">Static assets</span></div>
   <div class="stats-card"><span class="stats-value">{{ build.generated_at | date: "%b %-d, %Y" }}</span><span class="stats-label">Last generated</span></div>
 </div>
@@ -156,13 +157,8 @@ These totals cover static files selected for publication. Original photos, sourc
 
 ## Your browser
 
-These values describe this browser tab and can change as you resize the window, change theme, go offline, or update the site. They stay on your device unless you choose **Copy diagnostics**.
+These values describe this browser tab and can change as you resize the window, change theme, go offline, or update the site. They stay on your device unless you choose **Copy diagnostics** below.
 {: .stats-note}
-
-<div class="stats-actions">
-  <button type="button" class="btn btn-outline-primary" id="copy-site-diagnostics">Copy diagnostics</button>
-  <span class="stats-status" id="copy-site-diagnostics-status" role="status" aria-live="polite"></span>
-</div>
 
 <table class="stats-table" id="browser-stats" data-diagnostics-section="Browser">
   <tbody>
@@ -188,6 +184,11 @@ These values describe this browser tab and can change as you resize the window, 
     <tr><th scope="row">Browser identification</th><td data-stat="userAgent">Checking…</td></tr>
   </tbody>
 </table>
+
+<div class="stats-actions">
+  <button type="button" class="btn btn-outline-primary" id="copy-site-diagnostics">Copy diagnostics</button>
+  <span class="stats-status" id="copy-site-diagnostics-status" role="status" aria-live="polite"></span>
+</div>
 
 </div>
 
