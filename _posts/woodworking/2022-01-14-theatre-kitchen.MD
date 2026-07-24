@@ -32,9 +32,9 @@ This was a long one. It took a bit over a month in the shop to make this one com
 
 ### The Design
 
-There are times when design software is a _"nice to have"_ and it can make your life a little easier.  This was not one of those times, it was a definite necessity here, and I would not even have attempted this without it.
+There are times when design software is a _"nice to have"_ and can make your life a little easier.  This was not one of those times; it was a definite necessity here, and I would not even have attempted this without it.
 
-Not only did I do the main cabinet layout, but I also did the drawers, drawer fronts and all.  I even did a few spacing and layout _helper_ drawings, as shown on the right of this picture. 
+Not only did I do the main cabinet layout, but I also did the drawers, drawer fronts, and all.  I even did a few spacing and layout _helper_ drawings, as shown on the right of this picture.
 
 {% include figure.html img="theatre-kitchen-sketchup.avif" %}
 
@@ -48,7 +48,7 @@ It was all good up until this point.
 
 It was then that I went to put on the drawer faces, pictured below.
 
-To my shock and horror, I made them **the wrong size!** Instead of being the required 762mm in width, they were made 726mm in width. My mild dyslexia had bitten me once more.
+To my shock and horror, I made them **the wrong size!** Instead of being the required 762 mm in width, they were made 726 mm in width. My mild dyslexia had bitten me once more.
 
 {% include clear-float.html %}
 
@@ -61,7 +61,7 @@ To my shock and horror, I made them **the wrong size!** Instead of being the req
 
 ### Spare Parts
 
-These are still in my shop, awaiting the next project that requires four drawer faces of exactly 726mm width. Or I could sell them. Anyone need a good deal on some 726mm drawer fronts? We can haggle.
+These are still in my shop, awaiting the next project that requires four drawer faces of exactly 726 mm in width. Or I could sell them. Anyone need a good deal on some 726 mm drawer fronts? We can haggle.
 
 {% include clear-float.html %}
 
@@ -69,7 +69,7 @@ These are still in my shop, awaiting the next project that requires four drawer 
 
 ### The Floor
 
-Installing this on the basement floor was quite a challenge. The floor is not level, not even close. There is about a 40mm (1.5in) drop from one end to the other that I had to shim on the toe-kick. Thankfully, there were quite a few YouTube videos on dealing with this exact problem.
+Installing this on the basement floor was quite a challenge. The floor is not level, not even close. There is about a 40 mm (1.5 in) drop from one end to the other that I had to shim on the toe-kick. Thankfully, there were quite a few YouTube videos on dealing with this exact problem.
 {% include clear-float.html %}
 
 {% include figure.html img="20220131_222101.avif" align="right" %}
@@ -78,7 +78,7 @@ Installing this on the basement floor was quite a challenge. The floor is not le
 
 The new fridge in place. Cool blue lights.
 
-The floor is so crooked, that I even had to shim a few things for the fridge to look right. Actually at this point I don't know if it's the floors that are crooked or the walls are out of whack.
+The floor is so crooked that I even had to shim a few things for the fridge to look right. Actually, at this point, I don't know if it's the floor that is crooked or the walls that are out of whack.
 {% include clear-float.html %}
 
 {% include figure.html img="IMG_0154.avif" align="left" %}
@@ -92,7 +92,7 @@ I hooked up micro-switches to all the doors and drawers to control them. There i
 
 ## In Production
 
-We scavenged the granite top from our upstairs kitchen remodel and repurposed it down here. It fit almost perfectly, just had to carve off a bit off the end.
+We scavenged the granite top from our upstairs kitchen remodel and repurposed it down here. It fit almost perfectly; I just had to carve a bit off the end.
 
 {% include figure.html img="IMG_0541.avif" align="center-wide" %}
 {% include clear-float.html %}

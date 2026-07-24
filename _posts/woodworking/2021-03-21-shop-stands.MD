@@ -13,13 +13,13 @@ media_subpath: /assets/img/posts/shop-stands
 ---
 ## Shop Stuff
 
-There really is no more fun a project than a shop project. Doing shop stuff is perfect for practicing your craft, honing your skills. And best of all, if you make a mistake, no-one will ever ever notice. Except you of course, where the mistake will be staring at you from across the room, taunting you, snickering, slowly driving you crazy until you are forced to fix it. Ask me how I know.
+There really is no more fun a project than a shop project. Doing shop stuff is perfect for practicing your craft and honing your skills. And best of all, if you make a mistake, no one will ever, ever notice. Except you, of course, as the mistake stares at you from across the room, taunting you, snickering, and slowly driving you crazy until you are forced to fix it. Ask me how I know.
 
 ## Design
 
 {% include figure-pair.html img1="workshop-cabinets.avif" img2 = "workshop-cabinets-layout.avif" %}
 
-I modelled everything up in {{ site.data.links.sketchup}}, to get all the dimensions right.  This time though I also did a layout of all the parts on the various thicknesses of plywood.  The outer carcass and drawer fronts are 18mm, the drawers are 15mm, and the carcass backs and drawer bottoms are 6mm.  This was about a year into the pandemic, when plywood prices had gone thru the roof, and I didn't want to make any silly mistakes.  Baltic Birch Plywood was going for 250% of its pre-pandemic prices, which was already kind of high.
+I modelled everything in {{ site.data.links.sketchup}} to get all the dimensions right.  This time, though, I also did a layout of all the parts on the various thicknesses of plywood.  The outer carcass and drawer fronts are 18 mm, the drawers are 15 mm, and the carcass backs and drawer bottoms are 6 mm.  This was about a year into the pandemic, when plywood prices had gone through the roof, and I didn't want to make any silly mistakes.  Baltic birch plywood was going for 250% of its pre-pandemic price, which was already kind of high.
 
 ## Details
 
@@ -29,7 +29,7 @@ I modelled everything up in {{ site.data.links.sketchup}}, to get all the dimens
 
 These were a lot of fun to make, and they turned out great for the most part. The drawer slides are a little bit fidgety, but they work.
 
-The thing I remember most about this one is that there were 15 drawers here. Yes, 15. Not only do things get very tedious at that count, but also a little scary. Scary because if you have made a mistake on one of them, then there is a good chance that you have made the same goof on all 15. Not a pleasant thought. Thankfully that didn't happen here, but that doesn't mean that I didn't sweat it.
+The thing I remember most about this one is that there were 15 drawers here. Yes, 15. Not only do things get very tedious at that count, but they also get a little scary. Scary because if you have made a mistake on one of them, then there is a good chance that you have made the same goof on all 15. Not a pleasant thought. Thankfully, that didn't happen here, but that doesn't mean that I didn't sweat it.
 
 _Did I mention that there were **15** drawers!!!_
 
@@ -47,7 +47,7 @@ Still waiting on the spindle sander.
 ## All Dressed Up
 
 {% include figure.html img="20210323_161917.avif" %}
-Ok, I really like this pic, so showing it again in higher resolution. Not really, this is just a placeholder waiting on a pic showing what it looks like today.
+Okay, I really like this pic, so I'm showing it again in higher resolution. Not really; this is just a placeholder waiting on a pic showing what it looks like today.
 
 ## Materials
 

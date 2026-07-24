@@ -17,7 +17,7 @@ This post is a bit more nerdy than most, but I, a nerd, am quite okay with that.
 
 So over the past few months, my Internet Service Provider (Rogers) has upgraded the speed to my home from 1Gbps to 2Gbps.  Yes, twice as fast, super cool!  While this is great, and the primary network gear in my rack could handle it, all the secondary pipes were maxing out at 1Gbps.  That won't do, no sir, not one bit.
 
-So I decided to do a network upgrade.  Of course, when upgrading a network, you have to do a little planning, a little future proofing, and a little clean-up too.
+So I decided to do a network upgrade.  Of course, when upgrading a network, you have to do a little planning, a little future-proofing, and a little cleanup too.
 
 ## The Mess
 
@@ -25,13 +25,13 @@ So when we built the place back in 2014, I asked my builder to put network cabli
 
 Now Al is a great guy, but this was indeed his first rodeo putting something like this together.  So he did what any savvy installer would, he consulted the experts at a custom home AV shop here in town and asked them what he should install.  
 
-Now this is a good shop too, but they gave him instructions on installing the most mondo beefy network cabling one could think of for a complete end-to-end home automation experience.  This meant five ethernet wires running to each and every location I specified.  This is all fine, I put having that much ethernet cabling in the 'good problem to have" category.  
+Now this is a good shop too, but they gave him instructions on installing the most mondo beefy network cabling one could think of for a complete end-to-end home automation experience.  This meant five Ethernet wires running to each and every location I specified.  This is all fine; I put having that much Ethernet cabling in the "good problem to have" category.
 
-But when you run all those wires back to the same location in the basement (it's called the _home run_ if you're interested), it creates a really big cluster of wires coming together behind my equipment rack.  I had to sort thru them all to get the right ones to plug into the gear, which I think took about two hours on its own.
+But when you run all those wires back to the same location in the basement (it's called the _home run_ if you're interested), it creates a really big cluster of wires coming together behind my equipment rack.  I had to sort through them all to get the right ones to plug into the gear, which I think took about two hours on its own.
 
 {% include figure-pair.html img1="IMG_1590.avif" img2="IMG_1591.avif" %}
 
-My old gear was facing the back of the rack, to make plugging things from the rats nest easier.  You can see some of the mess dangling in the back.
+My old gear was facing the back of the rack to make plugging things in from the rat's nest easier.  You can see some of the mess dangling in the back.
 
 {% include clear-float.html %}
 
@@ -43,7 +43,7 @@ The first order of business was to get the new gear mounted on the front and run
 
 Sometimes things get worse before they get better.  This is one of those times.
 
-For those interested, I run [Unifi gear from Ubiquiti](https://www.ui.com/).  They make pro-sumer and enterprise networking gear.  It is really really good stuff if you ever want to upgrade from the stuff your ISP gives you.
+For those interested, I run [Unifi gear from Ubiquiti](https://www.ui.com/).  They make prosumer and enterprise networking gear.  It is really, really good stuff if you ever want to upgrade from the stuff your ISP gives you.
 
 {% include clear-float.html %}
 
@@ -67,7 +67,7 @@ Very happy with the results, both the cleanup and the speed.
 
 {% include clear-float.html %}
 
-Now all I need is for Rogers to increase their upload speed to a reasonable 1Gbps and we're golden.  Not holding my breath though.
+Now all I need is for Rogers to increase their upload speed to a reasonable 1Gbps and we're golden.  Not holding my breath, though.
 
 ## Update
 
@@ -80,10 +80,10 @@ Now all I need is for Rogers to increase their upload speed to a reasonable 1Gbp
 
 ## Update Number 2
 
-> Unifi has finally come out with some much awaited power management hardware, basically an uninterruptible power supply (UPS), and a power distribution system (PDS).  
+> Unifi has finally come out with some much-awaited power management hardware, basically an uninterruptible power supply (UPS) and a power distribution system (PDS).
 {: .prompt-tip}
 
-A UPS (second from the bottom) makes sure that things stays up and running all the time, a smart battery backup basically.  We live in a semi-rural area and get a **lot** of power outages... some long, some the 15 second variety.  This should keep everything going long enough to survive the short outages, and in a worst case scenario, long enough for the generator out back to kick in.  
+A UPS (second from the bottom) makes sure that things stay up and running all the time; it is basically a smart battery backup.  We live in a semi-rural area and get a **lot** of power outages... some long, some of the 15-second variety.  This should keep everything going long enough to survive the short outages and, in a worst-case scenario, long enough for the generator out back to kick in.
 
 A PDS (on the bottom) just lets you keep track of where the power is going and acts as a surge protector.  It also lets you remotely reboot things if you need to, which can come in handy.  Essentially, it is a really smart, programmable power bar.
 

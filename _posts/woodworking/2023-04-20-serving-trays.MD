@@ -16,11 +16,11 @@ media_subpath: /assets/img/posts/serving-trays
 
 I went for a bit of the artsy, rustic look on these. They were a bit tricky, in the sense that with the epoxy inlay in the tray bottom, suddenly decisions about which part to do first become much more important. How do you assemble it, before or after the epoxy? How do you finish it, before or after the epoxy? Answers! I demand answers!
 
-These were created to go with with the [long centerpiece]({% post_url /woodworking/2023-05-15-long-centerpiece %}) that was built about a month later.
+These were created to go with the [long centerpiece]({% post_url /woodworking/2023-05-15-long-centerpiece %}) that was built about a month later.
 
 ## The Design
 
-There was a fair amount of {{ site.data.links.sketchup }} work involved in designing these trays. Most of it had to do with getting the handle just right. I spent a lot of time on it largely because I did not want to relive the nightmare that was the handle on the [yoga room heater disaster](/posts/yoga-room). Yeah...never again.
+There was a fair amount of {{ site.data.links.sketchup }} work involved in designing these trays. Most of it had to do with getting the handle just right. I spent a lot of time on it largely because I did not want to relive the nightmare that was the handle on the [yoga room heater disaster](/posts/yoga-room). Yeah... never again.
 
 {% include figure-pair.html img1="tray-handle-sketchup.avif" img2="tray-sketchup.avif" %}
 
@@ -32,7 +32,7 @@ I also wanted to be sure to get the finger joints just right (that's what this s
 
 ### Tree Tray
 
-The Tree Tray was done first, and so I learned how **not** to do it here. Basically on something like this, you need to sand and finish before final assembly, otherwise it is too difficult to get into corners and things.
+The Tree Tray was done first, and so I learned how **not** to do it here. Basically, on something like this, you need to sand and finish before final assembly; otherwise, it is too difficult to get into corners and things.
 
 While it is not quite as blotchy in real life as this photo would make it seem, it is still just a little too blotchy for my taste. The Flower turned out better.
 {% include clear-float.html %}
@@ -41,7 +41,7 @@ While it is not quite as blotchy in real life as this photo would make it seem, 
 
 ### Flower Tray
 
-The Flower Tray is where the learnings were applied and turned out better than the tree, but they make a good set.
+The Flower Tray is where the lessons were applied, and it turned out better than the tree, but they make a good set.
 {% include clear-float.html break=0 %}
 
 ## Materials

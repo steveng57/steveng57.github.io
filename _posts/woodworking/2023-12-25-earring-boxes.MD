@@ -1,6 +1,6 @@
 ---
 title: Earring Boxes
-description: In this episode, we see how to make really complicated boxes.  In this case a Christmas gift for someone special.
+description: In this episode, we see how to make really complicated boxes.  In this case, a Christmas gift for someone special.
 date: 2023-12-25 18:32:00 -0500
 last_modified_at: 2025-01-02 11:00:00 -0500
 category: [Woodworking, Jewelry Boxes]
@@ -16,7 +16,7 @@ favorite: true
 
 I really like making special things for other people. This is a fun example of that. Debbie thought it would be cool to make a set of earring boxes for her sister for Christmas. I could not agree more. This was a first of its kind for me. While I have made a great many boxes in the past, the insert was a whole new kind of thing.
 
-> **Cool Tool**: The {{ site.data.links.shaper }} was critical here, no way I could make this with just tools. It is truly an amazing machine.
+> **Cool Tool**: The {{ site.data.links.shaper }} was critical here; there was no way I could make this with just hand tools. It is truly an amazing machine.
 {: .prompt-tip }
 
 ## Under Construction
@@ -25,9 +25,9 @@ I really like making special things for other people. This is a fun example of t
 ### Design
 Here is an exploded view from {{ site.data.links.sketchup }}.
 
-The design on this changed a fair bit along the way.  I had originally planned on the holes and bottom being one piece with the holes stopping about 6mm from the bottom.  But then getting the green velvet in each hole would have been very difficult, not to mention that they were 72 of them.  
+The design on this changed a fair bit along the way.  I had originally planned on the holes and bottom being one piece, with the holes stopping about 6 mm from the bottom.  But then getting the green velvet in each hole would have been very difficult, not to mention that there were 72 of them.
 
-In the end I added a detached bottom, and routed the holes all the way through.  Then placed a sheet of green velvet between the two for final assembly, much easier.
+In the end, I added a detached bottom and routed the holes all the way through.  I then placed a sheet of green velvet between the two for final assembly, which was much easier.
 {% include clear-float.html %}
 
 ### Finishing
@@ -52,7 +52,7 @@ The insert with all the squares was cut as a separate piece from the main box. I
 
 The green velvet was placed on the bottom of the box and the insert placed over it.
 
-The top engraving was a little nerve wracking. Make a mistake here and it's hard to patch nicely.
+The top engraving was a little nerve-wracking. If you make a mistake here, it's hard to patch nicely.
 
 {% include clear-float.html break=0 %}
 

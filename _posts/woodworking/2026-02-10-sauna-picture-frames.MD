@@ -18,10 +18,10 @@ pin: false
 ## Background
 We got some cool prints that matched the theme we were going for in the new sauna building out back, which I would have to describe as "contemporary organic", meaning marbles, tiles, and woods, but with a modern spa-like styling.
 
-I know this is my fourth post on picture frames, and that might get a little repetitive, so I have included a puppet show at the end for your entertainment, stay tuned.
+I know this is my fourth post on picture frames, and that might get a little repetitive, so I have included a puppet show at the end for your entertainment. Stay tuned.
 
 ## The Design
-I did not use Sketchup for this one, so it proves I can do at least some things on the fly.  It's the same design as the last two in the series, a _"shadow box"_ frame.  The difference here is that the other two were painted poplar, but this set of frames are made from white oak.  Some foreshadowing: white oak is **way** harder than poplar.  If you look at the [Janka hardness scale](https://en.wikipedia.org/wiki/Janka_hardness_test), it is about 2.5 times harder.
+I did not use SketchUp for this one, so it proves I can do at least some things on the fly.  It's the same design as the last two in the series, a _"shadow box"_ frame.  The difference here is that the other two were painted poplar, but this set of frames is made from white oak.  Some foreshadowing: white oak is **way** harder than poplar.  If you look at the [Janka hardness scale](https://en.wikipedia.org/wiki/Janka_hardness_test), it is about 2.5 times harder.
 
 ## Construction
 
@@ -41,7 +41,7 @@ But I made a couple or three mistakes here.  First, this board is almost 20cm (8
 
 It's not supposed to look like this.
 
-When you cut a board down the middle, it is supposed to have wood on both sides.  In my case 7mm thick on one side, and 12mm thick on the other.  This side is neither.
+When you cut a board down the middle, it is supposed to have wood on both sides.  In my case, it should be 7 mm thick on one side and 12 mm thick on the other.  This side is neither.
 
 A big part of the problem was that I was focussed on the top part of the board, where the bandsaw blade entered the wood.  I was totally neglecting the bottom of the piece, which was going in a different direction (aka _"going wonky"_).
 
@@ -53,7 +53,7 @@ It was such a botched mess, I just turned off the bandsaw and walked away.  When
 
 {% include figure-pair.html img1="IMG_2301.avif" img2="IMG_2302.avif" %}
 
-So when I came back the next day, shaking off the shear disgust of my previous efforts, I did a couple of things to make things work.  The number one fix was to cut the boards down to about 40mm from 200mm in width so that the bandsaw had a lot less to chew on as it went through the board.  Next thing was to get a brand new blade, which proved to make a real difference: it cut through the white oak like a chainsaw through a dandelion.  I also did a bunch of little things like a better bandsaw setup, proper out-feed support etc. 
+So when I came back the next day, shaking off the sheer disgust of my previous efforts, I did a couple of things to make things work.  The number one fix was to cut the boards down from about 200 mm to 40 mm in width so that the bandsaw had a lot less to chew on as it went through the board.  The next thing was to get a brand new blade, which proved to make a real difference: it cut through the white oak like a chainsaw through a dandelion.  I also did a bunch of little things, like a better bandsaw setup, proper outfeed support, etc.
 
 {% include clear-float.html %}
 
@@ -61,7 +61,7 @@ So when I came back the next day, shaking off the shear disgust of my previous e
 
 ### Clamps and Glue
 
-After cutting the rabbet (not rabbit my fellow woodworkers!), it was time for the dominos on the corner mitres and some glue and clamps.
+After cutting the rabbet (not rabbit, my fellow woodworkers!), it was time for the Dominos on the corner mitres and some glue and clamps.
 
 {% include clear-float.html %}
 
@@ -69,9 +69,9 @@ After cutting the rabbet (not rabbit my fellow woodworkers!), it was time for th
 
 ### Back Braces in Place
 
-Armed with an 18 gauge brad-nailer, I glued the back braces in place.  
+Armed with an 18-gauge brad nailer, I glued the back braces in place.
 
-The braces are made from the 7mm cuts mentioned above, and they are not visible when the frame is complete, so they are sometimes rough and only partially finished.  They are for stability, strength and ensuring the outer boards are straight.  The artwork itself is mounted directly to these with screws from the underside, so they need to be solid.
+The braces are made from the 7 mm cuts mentioned above, and they are not visible when the frame is complete, so they are sometimes rough and only partially finished.  They provide stability and strength and ensure the outer boards are straight.  The artwork itself is mounted directly to these with screws from the underside, so they need to be solid.
 
 {% include clear-float.html %}
 
@@ -93,11 +93,11 @@ See, they are almost identical!  I can't see the difference, can you see the dif
 
 ### Alignment Issues
 
-So one of the more challenging aspects of this build was that the artwork itself was neither square nor straight.  Both pieces had been in the basement for quite a while, and stuff like that will happen over time.  The corners were out of square sometimes by as much as five degrees, and if you looked down an edge you could see a lot of bowing.  It was nasty, like a full centimeter bend on the larger piece.
+So one of the more challenging aspects of this build was that the artwork itself was neither square nor straight.  Both pieces had been in the basement for quite a while, and stuff like that will happen over time.  The corners were sometimes out of square by as much as five degrees, and if you looked down an edge, you could see a lot of bowing.  It was nasty, like a full-centimetre bend on the larger piece.
 
 I had to use copious amounts of clamps and spacers (the blue, white, red, and green plastic things in the pic) to get things aligned properly in the frames before screwing them in place.
 
-If you are wondering about the playing cards in the box with the spacers, they are not for an impromptu game of workshop blackjack (though not a bad idea).  It turns out that playing cards make great spacers, they are about 0.30mm each, so three of them make about one mm.  You can put one or ten of them in a spot and as long as you put the same number of cards on the opposite side, you are golden, or combine them with the plastic thingies for even more flexibility!
+If you are wondering about the playing cards in the box with the spacers, they are not for an impromptu game of workshop blackjack (though not a bad idea).  It turns out that playing cards make great spacers; they are about 0.30 mm each, so three of them make about 1 mm.  You can put one or ten of them in a spot, and as long as you put the same number of cards on the opposite side, you are golden. You can also combine them with the plastic thingies for even more flexibility!
 
 {% include clear-float.html break=0 %}
 
@@ -109,9 +109,9 @@ After all that, they were ready to go.
 
 ## In Production
 
-After carefully carrying the frames out to the sauna over very slippery icy stamped concrete, we mounted the frames in the spa. 
+After carefully carrying the frames out to the sauna over very slippery, icy, stamped concrete, we mounted the frames in the spa.
 
-First some close up pictures of the frame itself before we get to the good stuff.
+First, some close-up pictures of the frame itself before we get to the good stuff.
 
 {% include figure-pair.html img1="11019.avif" img2="IMG_2342.avif" %}
 
@@ -121,9 +121,9 @@ First some close up pictures of the frame itself before we get to the good stuff
 
 ### The Big One
 
-This frame is mounted at the end of a hallway, but not much point in a picture like that because all you see is the hallway.  Instead a semi-profile shot shows off the contrasts of the frame and the print quite nicely.
+This frame is mounted at the end of a hallway, but there isn't much point in a picture like that because all you see is the hallway.  Instead, a semi-profile shot shows off the contrasts of the frame and the print quite nicely.
 
-It makes me want to assume the Lotus position and chant "ooohhhmmm" repeatedly. 
+It makes me want to assume the lotus position and chant "ooohhhmmm" repeatedly.
 
 {% include clear-float.html %}
 

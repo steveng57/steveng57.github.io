@@ -8,12 +8,12 @@ tags: [Woodworking, Poplar, Bench, Pets, Epoxy, Inlay]
 image:
   path: 20220225_091904.avif
   thumb: /thumbnails/20220225_091904.avif
-  alt: Puppy paws are a woodworkers right of passage
+  alt: Puppy paws are a woodworker's rite of passage
 media_subpath: /assets/img/posts/puppy-steps
 ---
 ## Introduction
 
-This one was really simple, but a much needed project. Just a box really, but a couple of steps to make life easier for Riley and Ozzie, jumping up on the daybed, or on the mudroom desk to get ready to go for a walk. We have two of these, one for the yoga room, and another for the mud room.
+This one was really simple but much needed. Just a box, really, but a couple of steps to make life easier for Riley and Ozzie when jumping up on the daybed or the mudroom desk to get ready for a walk. We have two of these, one for the yoga room and another for the mudroom.
 
 ## Under Construction
 
@@ -21,7 +21,7 @@ This one was really simple, but a much needed project. Just a box really, but a 
 
 ### A First
 
-This was the first time I attempted any engraving or detail work like this, note the paws on both steps. The first set of paw prints for the mudroom were done freehand with a stencil and a palm router and then painted.
+This was the first time I attempted any engraving or detail work like this; note the paws on both steps. The first set of paw prints for the mudroom was done freehand with a stencil and a palm router and then painted.
 
 {% include clear-float.html %}
 
@@ -29,9 +29,9 @@ This was the first time I attempted any engraving or detail work like this, note
 
 ### The Carve
 
-The second set of prints was done with my new {{ site.data.links.shaper }}. Much more on this tool in coming posts, it is one of my favorite things ever.
+The second set of prints was done with my new {{ site.data.links.shaper }}. Much more on this tool in coming posts; it is one of my favorite things ever.
 
-In both the yoga room and mudroom steps, the prints were carved about 6mm deep.
+In both the yoga room and mudroom steps, the prints were carved about 6 mm deep.
 {% include clear-float.html break=0 %}
 
 ## In Production
@@ -42,7 +42,7 @@ In both the yoga room and mudroom steps, the prints were carved about 6mm deep.
 
 This step must get used about 20 times a day.
 
-It's in the mudroom and serves as a way to get the boys up to the desk for cleaning, grooming, or putting on winter gear. They are quite used to it now, they bounce right up without hesitation.
+It's in the mudroom and serves as a way to get the boys up to the desk for cleaning, grooming, or putting on winter gear. They are quite used to it now; they bounce right up without hesitation.
 
 {% include clear-float.html break=0 %}
 

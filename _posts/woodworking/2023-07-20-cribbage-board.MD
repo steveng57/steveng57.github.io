@@ -26,7 +26,7 @@ favorite: true
 
 For my father's birthday, I made him this cribbage board from a nice piece of marbled walnut. He says it is working well and that it keeps very good score. That's the main thing.
 
-Almost half the work on this one was at the computer making sure the design was right. I didn't do the entire layout, I spent about $20 for a design off of Etsy, then made a bunch of modifications using the online tools from {{ site.data.links.shaperhub }}.
+Almost half the work on this one was at the computer making sure the design was right. I didn't do the entire layout; I spent about $20 for a design from Etsy, then made a bunch of modifications using the online tools from {{ site.data.links.shaperhub }}.
 
 ## Under Construction
 
@@ -36,9 +36,9 @@ Lots of pictures on this one. **Hey, it was a lot of work.**
 
 ### Layout
 
-The sheer madness of trying to do 391 individual holes with the router, even a computerized one, is...well...madness.
+The sheer madness of trying to do 391 individual holes with the router, even a computerized one, is... well... madness.
 
-First you need to be sure that the computerized layout has no flaws. If you discover one in the middle of the cut, well good luck with that.
+First, you need to be sure that the computerized layout has no flaws. If you discover one in the middle of the cut, well, good luck with that.
 
 Then you need to _grid_ it all up. That means to mount it on the table securely, get it aligned right, then set a grid to the outer dimensions of the board, and place your drawing in the right spot.
 
@@ -56,7 +56,7 @@ Finishing this one was a little tricky too. I use a hard-wax oil called {{ site.
 
 But then there was the problem of the wax and the holes. The wax loved to get in there, but the look was not good, and I am sure the functionality would have been even worse. A 1/8&Prime; drill bit came to my rescue, but like I said, _391 holes. Go ahead...count 'em!_
 
-Sanding was also a little...special. Sand too little and it's rough obviously, but sand too much and there are any number of unrepairable things that could go wrong.
+Sanding was also a little... special. Sand too little and it's rough, obviously, but sand too much and there are any number of unrepairable things that could go wrong.
 
 {% include clear-float.html break=0 %}
 

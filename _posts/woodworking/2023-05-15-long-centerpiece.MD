@@ -13,11 +13,11 @@ media_subpath: /assets/img/posts/long-centerpiece
 ---
 ## Background
 
-I made a few things for the outdoor area by the pool, just to add some decoration. One was a long centerpiece with some engravings, the other was a couple of small round trays for candles or other decorations. It's probably obvious that they were built to resemble the [serving trays]({% post_url /woodworking/2023-04-20-serving-trays %}) that were made around the same time.
+I made a few things for the outdoor area by the pool, just to add some decoration. One was a long centerpiece with some engravings; the others were a couple of small round trays for candles or other decorations. It's probably obvious that they were built to resemble the [serving trays]({% post_url /woodworking/2023-04-20-serving-trays %}) that were made around the same time.
 
 One turned out great, the other...not so much. Read on for details!
 
-> **Pro tip**: Wood moves. Sometimes a lot. It bends, twists, warps, cups. It has a mind of its own really, and sometimes just feels uncomfortable in its own skin.
+> **Pro tip**: Wood moves. Sometimes a lot. It bends, twists, warps, and cups. It has a mind of its own, really, and sometimes just feels uncomfortable in its own skin.
 {: .prompt-warning }
 
 ## Table Decorations
@@ -44,7 +44,7 @@ Pretty straightforward stuff on this one. By now, I have the epoxy thing down pr
 
 These were made out of solid red oak boards, glued up to make a small panel. I then used a router with a circle jig to make the final shape.
 
-Even though they are sold oak, they still warped quite a bit in the elements. I am not sure if they are even salvageable at this point, but I'll see what I can do.
+Even though they are solid oak, they still warped quite a bit in the elements. I am not sure if they are even salvageable at this point, but I'll see what I can do.
 
 {% include clear-float.html break  = 0 %}
 

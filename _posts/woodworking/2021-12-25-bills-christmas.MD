@@ -15,7 +15,7 @@ media_subpath: /assets/img/posts/bills-christmas
 
 Christmas is a great time to be a maker. Making stuff with your own hands to give to friends and family is the most rewarding thing about the woodworking craft.
 
-Over tha past few years, the east coast side of the family has decided to have everybody draw the name of another family member to gift to. I drew Bill's name two years in a row, in 2021 and 2022. It was super fun to make these for Bill, because he is an all-round great guy and a wonderful human being. He's the best.
+Over the past few years, the east coast side of the family has decided to have everybody draw the name of another family member to give a gift to. I drew Bill's name two years in a row, in 2021 and 2022. It was super fun to make these for Bill because he is an all-round great guy and a wonderful human being. He's the best.
 
 ## The Stand
 
@@ -23,9 +23,9 @@ Over tha past few years, the east coast side of the family has decided to have e
 
 ### Computer Support
 
-I designed the stand in Sketchup, with a number of people sneaking into Bill's office to take measurements of his notebook and computer setup so that I could get the dimensions right.
+I designed the stand in SketchUp, with a number of people sneaking into Bill's office to take measurements of his notebook and computer setup so that I could get the dimensions right.
 
-It took a bit of skullduggery but we made it work.  
+It took a bit of skullduggery, but we made it work.
 {% include clear-float.html %}
 
 {% include figure.html img="computer-stand-3.avif" align="right" %}
@@ -41,7 +41,7 @@ One thing that was novel here was that I made the drawer slides myself out of ha
 
 ### Epoxy Inlay
 
-The sign was designed on {{ site.data.links.shaperhub }} with some clip-art and my favorite font: comic-sans. It really doesn't get the respect it deserves. Probably because it has _comic_ right in the name.
+The sign was designed on {{ site.data.links.shaperhub }} with some clip art and my favorite font: Comic Sans. It really doesn't get the respect it deserves. Probably because it has _comic_ right in the name.
 
 This was a gift to Bill for Christmas 2022.
 

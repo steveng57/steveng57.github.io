@@ -15,7 +15,7 @@ media_subpath: /assets/img/posts/coffee-pod-drawer
 ## Background
 I decided to make this coffee pod drawer for Matt this year for Christmas.  I was lucky enough to get his name in our Secret Santa drawing, and he is famous for his love of a good cup of joe, so I thought this would be a good fit.  
 
-Custom made to fit a particular spot in his kitchen, I enlisted the help of my spy network to get proper dimensions and started the design process.
+It was custom-made to fit a particular spot in his kitchen, so I enlisted the help of my spy network to get the proper dimensions and started the design process.
 
 ## The Coffee Pod Drawer
 
@@ -23,7 +23,7 @@ Custom made to fit a particular spot in his kitchen, I enlisted the help of my s
 
 ### The Design
 
-Started with Sketchup {{ site.data.links.sketchup}}, and did the layout of the drawer box and the drawer itself.  It's very nice to get the dimensions all lined up.
+I started with {{ site.data.links.sketchup}} and did the layout of the drawer box and the drawer itself.  It's very nice to get the dimensions all lined up.
 
 {% include clear-float.html %}
 
@@ -31,7 +31,7 @@ Started with Sketchup {{ site.data.links.sketchup}}, and did the layout of the d
 
 ### Walnut Offcuts
 
-One of the Secret Santa rules is that there is a budget limit, hence I raided the offcut pile for supplies, so this cost $0 in my book.  There was a surprising amount of good quality walnut available, as I had recently done a few big walnut projects. 
+One of the Secret Santa rules is that there is a budget limit, so I raided the offcut pile for supplies. This cost $0 in my book.  There was a surprising amount of good-quality walnut available, as I had recently done a few big walnut projects.
 
 The smaller size of this project made it easier to find pieces that would work.
 
@@ -41,14 +41,14 @@ The smaller size of this project made it easier to find pieces that would work.
 
 The drawer itself consists of the sides and bottom, both of which involved the Shaper Origin.  
 
-The sides were thinner than a normal box, only about 10mm thick, so the corner joinery had to be stronger than just a butt joint and some glue.  I opted for finger joints (aka box joints) on this one.
+The sides were thinner than those of a normal box, only about 10 mm thick, so the corner joinery had to be stronger than just a butt joint and some glue.  I opted for finger joints (aka box joints) on this one.
 
 
 {% include figure.html img="IMG_1498.avif" align="center" %}
 
 {% include clear-float.html %}
 
-For the bottom, I carved seven rows of three circles as nestling places for the pods.  I don't know how well that will work over time as it is a bit of a pain to place them all neatly in the circles.  I expect that eventually the pods will be tossed in the drawer a little ad-hoc.  I know that's what I would do.
+For the bottom, I carved seven rows of three circles as nestling places for the pods.  I don't know how well that will work over time, as it is a bit of a pain to place them all neatly in the circles.  I expect that eventually the pods will be tossed in the drawer a little ad hoc.  I know that's what I would do.
 
 {% include figure-pair.html img1="IMG_1499.avif" img2="IMG_1488.avif" %}
 
@@ -60,7 +60,7 @@ For the bottom, I carved seven rows of three circles as nestling places for the 
 
 #### The Inlay
 
-The font is called "Satisfy", which is oddly satisfying.  Designed in Shaper Studio, and carved with the Shaper Origin.
+The font is called "Satisfy," which is oddly satisfying.  It was designed in Shaper Studio and carved with the Shaper Origin.
 
 {% include clear-float.html %}
 
@@ -76,15 +76,15 @@ The epoxy is {{ site.data.links.chillepoxy }}, a light gray made by combining wh
 
 ### Fit and Finish
 
-The {{ site.data.links.rubio }} was a bit different this time: instead of the normal two or three coats and then another of the maintenance oil, I used a new product from them called SheenPlus, which creates a satin finish.  First coat is the normal walnut oil, then the SheenPlus and you're done.
+The {{ site.data.links.rubio }} was a bit different this time: instead of the normal two or three coats and then another of the maintenance oil, I used a new product from them called SheenPlus, which creates a satin finish.  The first coat is the normal walnut oil, then the SheenPlus, and you're done.
 
 {% include clear-float.html %}
 
 ## Odds and Ends
 
-So a couple of interesting things about this project, they are small things, but as this was my first real project of the season and I am kind of rusty, I am very happy with how they turned out.
-- Home made **drawer slide**. Well it is not a drawer slide as much as it is a drawer track, a couple of strips of wood inset on the sides of the box to make sure that the drawer is snug and centered.  The hard-wax oil that is used to finish it should let it all slide in and out quite nicely.
-- I made my own walnut **edge banding** to cover the end-grain on the front of the drawer box.  I got a new drum sander about a year ago and they are perfect for things like this.  I don't think I could have made this without it.
+So, a couple of interesting things about this project: they are small things, but as this was my first real project of the season and I am kind of rusty, I am very happy with how they turned out.
+- Homemade **drawer slide**. Well, it is not a drawer slide as much as it is a drawer track, a couple of strips of wood inset on the sides of the box to make sure that the drawer is snug and centered.  The hard-wax oil that is used to finish it should let it all slide in and out quite nicely.
+- I made my own walnut **edge banding** to cover the end grain on the front of the drawer box.  I got a new drum sander about a year ago, and it is perfect for things like this.  I don't think I could have made this without it.
 
 {% include clear-float.html %}
 

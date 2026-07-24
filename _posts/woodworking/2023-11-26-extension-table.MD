@@ -13,11 +13,11 @@ media_subpath: /assets/img/posts/extension-table
 ---
 ## Some Background
 
-This was my first project using Ash. It's a very nice hardwood, similar to Red Oak but with a little less grain, though not totally closed pores.
+This was my first project using ash. It's a very nice hardwood, similar to red oak but with a little less grain, though its pores are not totally closed.
 
 That texture made it a nice fit for this project, which was to exactly match an existing dining table that we had in the theatre room.
 
-The thinking is that when not in use, it sits against the wall and acts as a serving table. When in use and we have a larger group of people, we slide it over and up against the existing dining table.
+The thinking is that when not in use, it sits against the wall and acts as a serving table. When we have a larger group of people, we slide it over and up against the existing dining table.
 
 > **Chocolate stain**: Chocolate is a wonderful thing to eat, and it makes for a nice stain colour too.
 {: .prompt-tip }
@@ -49,7 +49,7 @@ The metal legs look a little spindly here, but that is for a reason. When the ta
 
 With the legs inset as such, I was a bit worried the table would be top-heavy, but it is surprisingly stable. You would have to take a pretty good run at it to knock it over.
 
-I bought these from {{ site.data.links.rustydesign }}, an Ontario based company outside Toronto. Great quality, great selection, and good prices. Check them out.
+I bought these from {{ site.data.links.rustydesign }}, an Ontario-based company outside Toronto. Great quality, great selection, and good prices. Check them out.
 
 {% include clear-float.html %}
 
@@ -65,7 +65,7 @@ This is where overflow stuff will go when we have family dinners. More important
 
 ## In Position
 
-In situ as an extension to the existing table. I levelled it to the exact height of the other table so that people are less likely to spill things, which sounds easy but our theatre room floor is not very level. Not an exact colour match, but close enough I think.
+In situ as an extension to the existing table. I levelled it to the exact height of the other table so that people are less likely to spill things, which sounds easy, but our theatre room floor is not very level. Not an exact colour match, but close enough, I think.
 
 This makes for a nice big dining area that can comfortably seat ten people, with lots of room in the middle for serving plates. Makes me hungry.
 

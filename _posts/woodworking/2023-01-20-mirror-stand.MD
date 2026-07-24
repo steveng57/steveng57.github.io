@@ -13,14 +13,14 @@ media_subpath: /assets/img/posts/mirror-stand
 ---
 ## Some Background
 
-A cool part of woodworking is that you can do custom designed stuff. In this case, very custom. This is a combination mirror stand, makeup tray, and jewelry box holder all-in-one. Made from poplar to keep it light, with lots of engraving done with the {{ site.data.links.origin}}.
+A cool part of woodworking is that you can do custom-designed stuff. In this case, very custom. This is a combination mirror stand, makeup tray, and jewelry box holder all-in-one. It is made from poplar to keep it light, with lots of engraving done with the {{ site.data.links.origin}}.
 
 ## The Box
 
 {% include figure.html img="mirror-stand-shaperhub.avif" align="left" %}
 It starts with the design, which in this case was done on the web via {{ site.data.links.shaperhub }}.
 
-I took a bunch of clip-art that suited the box and put them together on this drawing, then transferred that to the {{ site.data.links.origin }}.
+I took a bunch of clip art that suited the box and put it together in this drawing, then transferred that to the {{ site.data.links.origin }}.
 
 {% include clear-float.html %}
 
@@ -28,7 +28,7 @@ I took a bunch of clip-art that suited the box and put them together on this dra
 
 ### Rings and Things
 
-Once the design imported to the Origin, you carve, and before the assembly, you pour some epoxy. In this case the epoxy was sprinkled with copious amounts of glitter, which was very fitting for this kind of piece.
+Once the design was imported to the Origin, you carve, and before assembly, you pour some epoxy. In this case, the epoxy was sprinkled with copious amounts of glitter, which was very fitting for this kind of piece.
 
 The photo doesn't show it very well, but it sparkles. Trust me.
 {% include clear-float.html %}
@@ -37,7 +37,7 @@ The photo doesn't show it very well, but it sparkles. Trust me.
 
 ### Bling
 
-The process was similar for the _Bling_ side of the box, but I used a single-line-font specially selected from [Single Line Fonts](https://www.singlelinefonts.com). This site has a bunch of cool fonts that work well with these kinds of projects, all at reasonable price.
+The process was similar for the _Bling_ side of the box, but I used a single-line font specially selected from [Single Line Fonts](https://www.singlelinefonts.com). This site has a bunch of cool fonts that work well with these kinds of projects, all at reasonable prices.
 {% include clear-float.html break=0 %}
 
 ## Badda Boom Badda Bling

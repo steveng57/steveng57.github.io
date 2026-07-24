@@ -16,7 +16,7 @@ media_subpath: /assets/img/posts/first-workbench
 
 Every shop needs a workbench, and there is a first for everything. This is the first workbench I built in this shop.
 
-In setting up my workshop, I had the DeWalt mitre saw from a while back, bought the Rigid table saw from the local Home Depot. With the help of my buddy, I threw some pegboard on the wall and I was in business.
+In setting up my workshop, I used the DeWalt mitre saw I already had and bought the Rigid table saw from the local Home Depot. With the help of my buddy, I threw some pegboard on the wall and I was in business.
 
 ## The First Workbench
 
@@ -26,7 +26,7 @@ In setting up my workshop, I had the DeWalt mitre saw from a while back, bought 
 
 Then, I decided to make my first workbench / assembly table. I have become quite enamored with assembly tables as future posts will tell.
 
-This one was fairly straightforward. A whole lot of 2x4s from the big box store, pocket screws holding it all together.
+This one was fairly straightforward: a whole lot of 2x4s from the big-box store, with pocket screws holding it all together.
 
 I put some {{ site.data.links.kreg }} track on the top, the blue aluminum extrusion shown here, which one can use to clamp things down. I finished it off with some enamel orange paint and coated the 2x4s in a couple of coats of Tung oil.
 
@@ -36,14 +36,14 @@ I put some {{ site.data.links.kreg }} track on the top, the blue aluminum extrus
 
 ### Acrylic Paint
 
-A couple of thick coats of orange acrylic paint to help make the top more durable. Cause I smash a lot of thing on it, like my thumbs.
+A couple of thick coats of orange acrylic paint help make the top more durable. Because I smash a lot of things on it, like my thumbs.
 
 Added a bottom shelf for more shop storage, because...you know...storage. I also added a vice to the side because...you know...vice.
 {% include clear-float.html break=0 %}
 
 ## Today
 
-While it is no longer my primary workbench / assembly table, it still gets a lot of use in the shop. It serves as an out-feed table for the table saw, as a staging area for other tools, and it still gets some exercise as a secondary assembly table.
+While it is no longer my primary workbench / assembly table, it still gets a lot of use in the shop. It serves as an outfeed table for the table saw, as a staging area for other tools, and it still gets some exercise as a secondary assembly table.
 
 {% include figure.html img="IMG_0699.avif" align="center-wide" %}
 

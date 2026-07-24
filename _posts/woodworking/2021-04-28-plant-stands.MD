@@ -13,7 +13,7 @@ media_subpath: /assets/img/posts/plant-stands
 ---
 ## Origins
 
-It is always nice when you work on a piece that is going to be on display. I also like mixing materials into my projects, and these ceramic pots were just the ticket to go along with the espresso stained oak stands.
+It is always nice when you work on a piece that is going to be on display. I also like mixing materials into my projects, and these ceramic pots were just the ticket to go along with the espresso-stained oak stands.
 
 ## Details
 
@@ -27,7 +27,7 @@ This seems a bit silly looking back on it now, to have gone to this length in th
 
 ### The Stands
 
-The stands were cool to make, truly a 3d glue-up. A small taper on the legs gives it a nice look.
+The stands were cool to make, truly a 3D glue-up. A small taper on the legs gives them a nice look.
 
 I used General Finishes stain and polyurethane for the finish. It is very nice stuff, very durable and looks good. Only problem I have with it is that it gives the workpiece a slightly plastic feel, and if you put too many coats, it can start to look a little like plastic. Which is fine if you want to make something shiny. Polyurethane does this because, well, it is plastic.
 
@@ -38,9 +38,10 @@ I've made three of these of varying sizes.
 
 ### The Pots
 
-After a couple weeks of letting the ceramic cure, I put nice white glaze on them. Then I fired up the kiln and baked the pots at around 700 degrees F for about 4 hours, and they came out nice.
+After a couple of weeks of letting the ceramic cure, I put a nice white glaze on them. Then I fired up the kiln and baked the pots at around 700 degrees F for about four hours, and they came out nicely.
 
 Nah, not really. I bought them on Amazon for about $70 each. I would tell you the brand name, but they are not selling them anymore.
+
 {% include clear-float.html break=0 %}
 
 {% include figure.html img="20210418_000920000_iOS.avif" align="left" %}
@@ -52,7 +53,7 @@ It was important to get the width just right. You don't want too large or small 
 
 ### All Done
 
-Ta da! All dressed up with freshly potted plants and in their new home, though we do move them around around a bit.
+Ta da! All dressed up with freshly potted plants and in their new home, though we do move them around a bit.
 
 {% include figure.html img="20210428_181207.avif" %}
 

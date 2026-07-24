@@ -17,7 +17,7 @@ favorite: false
 ## Background
 We've got some artwork around the place that needed some sprucing up.  Some of it is good stuff, some of it is the kind that you buy at Home Sense.  Either way, a nice frame can go a long way to making it look a notch or two better.
 
-This is the second round of "Shadow Box" frames that I've done.  The first can be found here: [Picture Frames]({% post_url woodworking/2023-08-22-picture-frames %})
+This is the second round of "shadow box" frames that I've done.  The first can be found here: [Picture Frames]({% post_url woodworking/2023-08-22-picture-frames %})
 
 ## The Originals
 
@@ -25,7 +25,7 @@ Always good to get a _"before"_ shot, since the _"after"_ should look so much be
 
 {% include figure-pair.html img1="IMG_1652.avif" img2="IMG_1653.avif" %}
 
-Kinda blah right?  Definitely needs something to make them pop.
+Kinda blah, right?  They definitely need something to make them pop.
 
 ## Poplar to the Rescue
 
@@ -39,7 +39,7 @@ Poplar is very popular.  Sorry, that joke never gets old, although Deb would say
 
 After milling the wood to size and cutting to length, it was time for glue-up and clamping.
 
-Strap clamps (the black ribbon around the sides here) are perfect for keeping a piece like this under control
+Strap clamps (the black ribbon around the sides here) are perfect for keeping a piece like this under control.
 
 {% include clear-float.html %}
 
@@ -47,11 +47,11 @@ Strap clamps (the black ribbon around the sides here) are perfect for keeping a 
 
 ### Glued and Nailed
 
-I used the {{ site.data.links.domino }} for the joinery again.  It makes for a nice strong joint.  Though it had been such a long time since the last time I did it, it seemed I had to learn everything all over again.
+I used the {{ site.data.links.domino }} for the joinery again.  It makes for a nice, strong joint.  It had been such a long time since the last time I did it, though, that it seemed I had to learn everything all over again.
 
 Lots of excess glue visible here, but that is going to be painted black and on the inside edge, never to be seen.
 
-I used 23 gauge pin nails on the backing pieces to hold it to the side pieces while the glue dried. 
+I used 23-gauge pin nails on the backing pieces to hold them to the side pieces while the glue dried.
 
 {% include clear-float.html %}
 
@@ -63,7 +63,7 @@ The black paint/primer is applied to the whole thing, inside and out, but the ou
 
 I had to do it in the garage because of the cold weather outside as it would not dry otherwise.  This made the whole house smell like a chemical factory.  Not doing that again...unless I have more painting to do...then maybe.
 
-In the back of this pic you can see snow piled up and covering the window.  We had over 100cm of snow in the last week.
+In the back of this pic, you can see snow piled up and covering the window.  We had over 100 cm of snow in the last week.
 
 {% include clear-float.html %}
 
@@ -74,7 +74,7 @@ In the back of this pic you can see snow piled up and covering the window.  We h
 
 ## Update
 
-> So while I had the shop all setup for picture frames, I decided to do a couple more: one for the Gazebo and one for the new sauna room being built out back.
+> So while I had the shop all set up for picture frames, I decided to do a couple more: one for the gazebo and one for the new sauna room being built out back.
 {: .prompt-tip}
 
 {% include figure.html img="IMG_1680.avif" align="left" %}
@@ -88,16 +88,16 @@ This frame is in a small building we have out back that we call the Gazebo.  It 
 
 Since I talk a lot about using {{ site.data.links.domino }}, I figured I would finally add a pic that shows them being installed on the mitre joints for strength and alignment. 
 
-The frame isn't very thick, about 11.5 mm, so I have to use the smallest dominoes that I have, 4mmx20mm.  You can see one on top of the board on the right. 
+The frame isn't very thick, about 11.5 mm, so I have to use the smallest Dominos that I have, 4 mm x 20 mm.  You can see one on top of the board on the right.
 
 {% include clear-float.html %}
 
 {% include figure.html img="IMG_1696.avif" align="left" %}
 ### Framed Forest
 
-Mounting this one took a bit of finesse.  The internal frame of the painting had become skewed, and was sort-of trapezoidal.  I wasn't about to make my frame trapezoidal to match that mistake, so I had to bend it back into shape.  
+Mounting this one took a bit of finesse.  The internal frame of the painting had become skewed and was sort of trapezoidal.  I wasn't about to make my frame trapezoidal to match that mistake, so I had to bend it back into shape.
 
-I clamped it square for a couple of days, then wedged it firmly in place while screwing it to the new frame.  I used a lot more screws than normal to keep is square, around 20 I think.
+I clamped it square for a couple of days, then wedged it firmly in place while screwing it to the new frame.  I used a lot more screws than normal to keep it square, around 20, I think.
 
 {% include clear-float.html %}
 
@@ -105,9 +105,9 @@ I clamped it square for a couple of days, then wedged it firmly in place while s
 {% include figure.html img="IMG_1697.avif" align="right" %}
 ### Cutie Patootie
 
-That is one adorable, and well-fed bird.
+That is one adorable and well-fed bird.
 
-I used a new set of paints on this frame, a "glass acrylic" that claims to be good on woods, glass, and ceramics.  It worked pretty well. 
+I used a new set of paints on this frame, a "glass acrylic" that claims to be good on wood, glass, and ceramics.  It worked pretty well.
 
 Deb created an excellent colour match, so the frame goes great with the branches in the artwork.
 

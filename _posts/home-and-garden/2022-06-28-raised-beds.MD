@@ -1,6 +1,6 @@
 ---
 title: Raised Beds
-description: Cedar raised garden beds, lots of them, for the back yard.
+description: Cedar raised garden beds, lots of them, for the backyard.
 date: 2022-06-28 18:32:00 -0500
 last_modified_at: 2024-05-29 17:58:45 -0400
 category: [Home and Garden, Greenhouse]
@@ -13,9 +13,9 @@ media_subpath: /assets/img/posts/raised-beds
 ---
 ## Origins
 
-These were a big first: Cedar Raised Beds for out back. These two were placed outside by the greenhouse, for growing tomatoes and things. I made three more (not pictured here) that were eventually placed in our small greenhouse out back.
+These were a big first: cedar raised beds for out back. These two were placed outside by the greenhouse for growing tomatoes and things. I made three more (not pictured here) that were eventually placed in our small greenhouse out back.
 
-When the weather gets warmer, I will head out back and take some pics of the finished product and post here.
+When the weather gets warmer, I will head out back, take some pics of the finished products, and post them here.
 
 ## Under Construction
 
@@ -23,7 +23,7 @@ When the weather gets warmer, I will head out back and take some pics of the fin
 
 ### Cedar
 
-The Western Red Cedar was purchased just down the way from where I live at a place called {{ site.data.links.woodsource }}. They have a great selection of hardwood and supplies to choose from. It's nice to have a place like this just a few minutes away.
+The western red cedar was purchased just down the way from where I live at a place called {{ site.data.links.woodsource }}. They have a great selection of hardwood and supplies to choose from. It's nice to have a place like this just a few minutes away.
 
 Cedar is one of the best smelling woods when you cut into it. It releases a wonderful aroma that sticks around for days. If only all woods smelled as good.
 
@@ -35,7 +35,7 @@ Cedar is one of the best smelling woods when you cut into it. It releases a wond
 
 These were eventually finished with another product from {{ site.data.links.woodsource }} called [Cutek Extreme], which is an outdoor wood protection oil.
 
-The neat thing about this stuff is that they have a pretty broad spectrum of colouring called "Colourtone" that you can add to the base product so that you can get exactly the colour you want.
+The neat thing about this stuff is that they have a pretty broad range of colours called "Colourtone" that you can add to the base product to get exactly the colour you want.
 {% include clear-float.html break=0 %}
 
 ## Ready For Stain
@@ -52,7 +52,7 @@ It's a pretty messy oil stain, but it's not too thick.  It's a little thicker th
 
 {% include clear-float.html %}
 
-Three of the smaller beds are in our greenhouse in the back.  Not sure I would have gone thru all that work just to put something in a greenhouse, but hey, I have squandered time and energy on many more useless things than this.
+Three of the smaller beds are in our greenhouse in the back.  Not sure I would have gone through all that work just to put something in a greenhouse, but hey, I have squandered time and energy on many more useless things than this.
 
 
 ## Materials

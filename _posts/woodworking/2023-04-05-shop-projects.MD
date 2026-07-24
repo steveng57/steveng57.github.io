@@ -29,7 +29,7 @@ I bought a couple or three pieces of plywood from {{ site.data.links.balticbirch
 
 ### Steely
 
-The steel top on the new router table is awesome. Nice level even cuts each and every time.
+The steel top on the new router table is awesome. It provides nice, level, even cuts each and every time.
 
 {% include clear-float.html %}
 

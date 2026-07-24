@@ -13,7 +13,7 @@ media_subpath: /assets/img/posts/concrete-end-tables
 ---
 ## Introduction
 
-I tried something very new with these concrete nested end tables. It ended up in the right place, but it was a bit of a bear to get it there. Needless to say, working with concrete is _very_ different than working with wood. That might sound obvious but it needs to be said. And my artistic skill with the materials were novice at best. Details below.
+I tried something very new with these concrete nested end tables. It ended up in the right place, but it was a bit of a bear to get it there. Needless to say, working with concrete is _very_ different from working with wood. That might sound obvious, but it needs to be said. And my artistic skills with the material were novice at best. Details below.
 
 I thought solid wood was heavy until I made this. Moving these requires a warm-up and a good stretch beforehand.
 
@@ -29,7 +29,7 @@ The first thing you need to do for a concrete top is make a form mold for the pi
 
 A neat trick I found on YouTube was to use a bead of black silicone around the seam to seal the edges, and also give you a nice quarter-round soft edge on the table top when you flip it over.
 
-The black colouring makes it easier to remove when you are done. Made from spare melamine I had from some old shelving.
+The black colouring makes it easier to remove when you are done. The form was made from spare melamine I had from some old shelving.
 
 {% include clear-float.html %}
 
@@ -37,7 +37,7 @@ The black colouring makes it easier to remove when you are done. Made from spare
 
 ### The Legs
 
-Standard leg with an apron. Only tricky part here is that I made the apron extra beefy, and put brackets in there for added strength. The extra strength is needed at the top, as these are nested tables, you cannot put any stretchers further down on the legs for extra support.
+Standard legs with aprons. The only tricky part here is that I made the aprons extra beefy and put brackets in there for added strength. The extra strength is needed at the top because, as these are nested tables, you cannot put any stretchers farther down on the legs for extra support.
 
 {% include clear-float.html %}
 
@@ -47,7 +47,7 @@ Standard leg with an apron. Only tricky part here is that I made the apron extra
 
 OMG did these turn out **awful**. When I initially poured the tops, I had such high hopes. My buddy Mike helped me blend the concrete in a bucket and make the pour. That was tough but it went well enough.
 
-In my dream, I had though this was going to be an eggshell white with a few flecks of gray. Boy was I wrong. I looked like some kind of bad Rorschach Inkblot test. Not a happy camper at this point. I had no idea how to fix this.
+In my dream, I had thought this was going to be an eggshell white with a few flecks of gray. Boy, was I wrong. It looked like some kind of bad Rorschach inkblot test. Not a happy camper at this point. I had no idea how to fix this.
 
 {% include clear-float.html %}
 
@@ -55,11 +55,11 @@ In my dream, I had though this was going to be an eggshell white with a few flec
 
 ### The Fix Is In
 
-Six weeks pass. During that time I tried various things. Many, many various things, including just walking away in disgust for a week.
+Six weeks passed. During that time, I tried various things. Many, many different things, including just walking away in disgust for a week.
 
-Eventually I applied a thin layer of a beigy concrete topcoat, and sanded and smooth it down until I got the finish I wanted.
+Eventually, I applied a thin layer of a beigey concrete topcoat and sanded it smooth until I got the finish I wanted.
 
-If you have ever sanded concrete, well it makes sanding wood seem like a dream. If you sand concrete when it's dry, you get a toxic cloud of ultra fine dust everywhere. If you do it wet, you have mud splattered in every direction. No fun either way.
+If you have ever sanded concrete, well, it makes sanding wood seem like a dream. If you sand concrete when it's dry, you get a toxic cloud of ultrafine dust everywhere. If you do it wet, you have mud splattered in every direction. No fun either way.
 
 But it worked out well in the end. I can honestly say I am very happy with how it turned out, a nice eggshell and beige patina.
 
@@ -74,7 +74,7 @@ This one took a long time, so it gets another pic. I like the hairy arm in the p
 
 ## In Production
 
-This gets used on a daily basis as a cleaning station for the boys when they come in from the outside.
+This gets used daily as a cleaning station for the boys when they come in from outside.
 {% include figure.html img="IMG_0553.avif" align="center-wide" %}
 
 ## Materials

@@ -14,7 +14,7 @@ media_subpath: /assets/img/posts/munchies-tray
 ---
 ## Origins
 
-When I set out to do this, I hadn't really thought of the complications that are involved in doing angled cuts like this. I mean, I knew there would be some, but I had to really dig deep and resurrect some old trigonometry skills. Nah, not really, I used an online calculator, but still it was a lot of weird angles. It's a 15&deg; angle to the sides, but when you are doing the cuts, it's a double mitre angle cut at 13.1&deg; tilt, and 34&deg; mitre. Yikes.
+When I set out to do this, I hadn't really thought of the complications involved in making angled cuts like this. I mean, I knew there would be some, but I had to really dig deep and resurrect some old trigonometry skills. Nah, not really; I used an online calculator, but still, it involved a lot of weird angles. It's a 15&deg; angle to the sides, but when you are doing the cuts, it's a double mitre angle cut at a 13.1&deg; tilt and a 34&deg; mitre. Yikes.
 
 > **Mitre Calculator**: For those who are interested in a really good online mitre cut calculator, here is the one I used: [Compound Angle Calculator]
 {: .prompt-tip }
@@ -32,7 +32,7 @@ It ended up being bigger than this in the end, as I called an audible during the
 {% include figure.html img="IMG_0074.avif" %}
 {% include clear-float.html %}
 
-As seems to be my usual for mitres these days, I used the {{ site.data.links.domino }} to add strength to the mitre, and make it easy to glue-up.  You have to use the really small 4mm dominos, but even then, you also have to be careful that you don't blow thru the opposite side on your domino hole.  Cause that looks downright messy and non-pretty.
+As seems to be my usual for mitres these days, I used the {{ site.data.links.domino }} to add strength to the mitre and make it easy to glue up.  You have to use the really small 4 mm Dominos, but even then, you also have to be careful that you don't blow through the opposite side when cutting your Domino hole.  Because that looks downright messy and non-pretty.
 
 {% include clear-float.html %}
 
@@ -40,7 +40,7 @@ As seems to be my usual for mitres these days, I used the {{ site.data.links.dom
 
 ### Crazy Angles
 
-A fun build, while the angles were indeed odd, it was a lot of fun to see it come together.
+It was a fun build. While the angles were indeed odd, it was a lot of fun to see it come together.
 {% include clear-float.html break=0 %}
 
 ## In Production

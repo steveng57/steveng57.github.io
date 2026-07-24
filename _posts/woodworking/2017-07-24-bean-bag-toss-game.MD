@@ -13,11 +13,11 @@ media_subpath: /assets/img/posts/bean-bag-toss-game
 ---
 ## Background
 
-One of my first tricky projects was a bean bag toss game. Fun and games around the pool in the back yard.
+One of my first tricky projects was a bean bag toss game. Fun and games around the pool in the backyard.
 
 ## Getting to Work
 
-I hadn't done a whole lot of circles and curves with the router before. This changed that in a hurry. To make the curves on the outside rim, I had to make a really big jig, like six feet long that provided the proper radius.
+I hadn't done a whole lot of circles and curves with the router before. This changed that in a hurry. To make the curves on the outside rim, I had to make a really big jig, about six feet long, that provided the proper radius.
 
 The inner circles were just done with a router circle jig I crafted. Drilled some pilot holes for the jig pin to fit in, and off to the races.
 
@@ -32,9 +32,9 @@ Copious amounts of waterproof glue helped fix the situation.
 
 ### Cedar and Ply
 
-While the face board was just your vanilla big-box-store plywood, the back boards were made of cedar. My thinking at the time was that this choice would be a good one since these are outdoors and on the grass a lot. The problem is that cedar is a very soft wood, and my screws were doing all kinds of wonky things, most problematically not staying were they should.
+While the face board was just your vanilla big-box-store plywood, the back boards were made of cedar. My thinking at the time was that this choice would be a good one since these are outdoors and on the grass a lot. The problem is that cedar is a very soft wood, and my screws were doing all kinds of wonky things, most problematically not staying where they should.
 
-The two Bag Toss Boards were later painted candy-apple red.
+The two bag toss boards were later painted candy-apple red.
 {% include clear-float.html %}
 
 {% include figure.html img="20170724_234953.avif" align = "right" %}
@@ -43,7 +43,7 @@ The two Bag Toss Boards were later painted candy-apple red.
 
 These are taken out many times every summer and it's pretty cool to see people having fun with them. It never gets old.
 
-Debbie stamped some dog paw prints on the final version which made it look really cool. I will add a pic of that when the spring thaw comes and the back yard is a little more accessible.
+Debbie stamped some dog paw prints on the final version, which made it look really cool. I will add a pic of that when the spring thaw comes and the backyard is a little more accessible.
 {% include clear-float.html break=0 %}
 
 ## Materials
@@ -51,5 +51,5 @@ Debbie stamped some dog paw prints on the final version which made it look reall
 - Oak veneer plywood from Home Depot
 - Cedar 2x4s
 - {{ site.data.links.kreg }} pocket hole jig and screws
-- Custom built router large radius jig
+- Custom-built large-radius router jig
 {: .sjg-list }

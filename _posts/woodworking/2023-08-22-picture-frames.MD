@@ -1,6 +1,6 @@
 ---
 title: Picture Frames
-description: In this episode, I make some shadow frames for some artwork we have in guest bedroom.
+description: In this episode, I make some shadow frames for some artwork we have in our guest bedroom.
 date: 2023-08-22 18:32:00 -0500
 last_modified_at: 2024-02-17 18:32:00 -0500
 category: [Woodworking, Home Decor]
@@ -14,11 +14,11 @@ media_subpath: /assets/img/posts/picture-frames
 ---
 ## Introduction
 
-These picture frames are sometimes called "Shadow Boxes" or "Shadow Frames". They really add a lot to the artwork that they frame. I have a bunch more to do, but these are a good start.
+These picture frames are sometimes called "shadow boxes" or "shadow frames." They really add a lot to the artwork that they frame. I have a bunch more to do, but these are a good start.
 
 ## Under Construction
 
-Nothing too fancy here, but there is a bit of finesse in making them strong, since the frame thickness is just a little over one centimeter. {{ site.data.links.domino }}s are strategically placed at the mitres to give added strength, and while they are a bit of extra work, they make alignment during the glue-up much easier.
+Nothing too fancy here, but there is a bit of finesse in making them strong since the frame thickness is just a little over one centimetre. {{ site.data.links.domino }}s are strategically placed at the mitres to give added strength, and while they are a bit of extra work, they make alignment during the glue-up much easier.
 
 {% include figure.html img="20230822_184956.avif" align="left" %}
 
@@ -42,7 +42,7 @@ I made these out of poplar. It's a lighter wood, but still strong enough. Not as
 
 ### Being Framed
 
-I used shims to centre the picture vertically and horizontally in the frame. I have some of those woodworkers shims, which are made of plastic and they are of varying thicknesses. But my favorite shims for such a task is playing cards. Yep, good old fashioned playing cards. I keep a deck in the shop at all times for such a purpose.
+I used shims to centre the picture vertically and horizontally in the frame. I have some of those woodworker's shims, which are made of plastic and are of varying thicknesses. But my favorite shims for such a task are playing cards. Yep, good old-fashioned playing cards. I keep a deck in the shop at all times for such a purpose.
 
 The trick to keeping it centred is that if you use 7 cards on the left, then you need to use 7 cards on the right.
 
