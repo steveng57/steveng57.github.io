@@ -18,6 +18,16 @@ pin: true
 
 This is perhaps my most complicated project to date, with the possible exception of [The Daybed]({% post_url /woodworking/2019-12-17-daybed %}). It took about six or seven weeks. The design called for the table to fit in a certain area in our theatre room. We watch movies there, but it's a big room and we also use it for other things. This table is to serve as a craft table for my niece Lilly and any other folk who want to make stuff here. You can make whatever you want at this table.
 
+## Design
+
+{% include figure.html img="sketchup-table.avif" %}
+
+Of course there is the {{ site.data.links.sketchup }}  design.  A lot of detail went into the actual pieces, since the cuts are kind of intricate.  Walnut is pricey, so you don't want to leave too much to chance.
+
+I even went so far on this one as to find a "walnut texture" and add it to the drawing.  It's a little scary how similar it turned out.
+
+{% include clear-float.html %}
+
 ## The Table
 
 {% include figure.html img="IMG_0490.avif" align="left" %}

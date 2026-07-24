@@ -63,3 +63,10 @@ images:
     gallery: true
     thumbnail: false
     caption: "From on High"
+
+  "sketchup-table.avif":
+    source: "sketchup-table.png"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Complete with Walnut Textures"
