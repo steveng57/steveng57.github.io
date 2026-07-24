@@ -48,7 +48,7 @@ images:
   "IMG_1001.avif":
     source: "IMG_1001.HEIC"
     include: true
-    gallery: true
+    gallery: false
     thumbnail: true
     caption: ""
 ```

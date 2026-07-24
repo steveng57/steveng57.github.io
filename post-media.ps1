@@ -254,7 +254,7 @@ function New-MediaManifestImageEntryLines {
         "  - source: $($Image.Name)",
         "    published: $publishedName",
         "    include: true",
-        "    gallery: true",
+        "    gallery: false",
         "    thumbnail: $(ConvertTo-YamlBoolean $Thumbnail)",
         "    caption: `"`""
     )
@@ -302,7 +302,7 @@ function New-MediaManifestContent {
                 Source    = $image.Name
                 Published = $publishedName
                 Include   = $true
-                Gallery   = $true
+                Gallery   = $false
                 Thumbnail = $isCover
                 Caption   = ""
             }
@@ -457,7 +457,7 @@ function Add-MediaManifestEntries {
                 Source    = $item.Name
                 Published = ConvertTo-SiteImageName -ImageName $item.Name
                 Include   = $true
-                Gallery   = $true
+                Gallery   = $false
                 Thumbnail = $false
                 Caption   = ""
             }
