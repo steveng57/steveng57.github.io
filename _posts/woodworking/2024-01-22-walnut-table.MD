@@ -39,6 +39,7 @@ So the legs were fun and different. We set out to mimic the design of our dining
 Do I cut a bunch of similar parts, but have many more parts, then glue them all together? Or do I make fewer parts, but each part more customized? The former is easier to do, but the glue-up is much more difficult. The latter is more complicated to make the pieces, but far fewer pieces to glue up.
 
 I decided on the latter approach and I think it was for the best. The glue-ups were pretty complicated as it was, so I wouldn't want to make them any more difficult.
+
 {% include clear-float.html %}
 
 {% include figure.html img="IMG_0499.avif" align="right" %}
@@ -48,6 +49,7 @@ I decided on the latter approach and I think it was for the best. The glue-ups w
 When it comes to the table top, you start with a bunch of boards. Here they are, laid out and ready for initial milling.
 
 This was a pretty good batch of lumber from {{ site.data.links.kjp }} but there were a few really curved boards, so I had to go back for a couple more.
+
 {% include clear-float.html %}
 
 {% include figure.html img="IMG_0512.avif" align="left" %}
@@ -55,6 +57,7 @@ This was a pretty good batch of lumber from {{ site.data.links.kjp }} but there 
 ### The Glue-up
 
 The tabletop is shown here, glued together and finished with {{ site.data.links.rubio }} walnut oil 2C. Great stuff.
+
 {% include clear-float.html %}
 
 {% include figure.html img="IMG_0516.avif" align="right" %}
@@ -64,6 +67,7 @@ The tabletop is shown here, glued together and finished with {{ site.data.links.
 The assembly of the legs is a surprising amount of work. Next time you are at a dining table, take a look under. Not that I want to encourage this habit at your finer dining establishments, but there is likely to be a whole lot going on under there.
 
 The metal brackets in the corners were probably overkill, as the {{ site.data.links.domino }} XL was used to put in some big 80mm tenons. There are four tenons in each corner, which should give it more than enough strength. BooYah!
+
 {% include clear-float.html break=0 %}
 
 ## The Benches
@@ -83,6 +87,7 @@ The bench legs followed the same general design pattern as the table legs, just 
 The bench tops were a lot easier than the table top. Each of them is a little less than half that of the table top, so there is much less worry about warps and twists.
 
 The photo here makes the tops look a little blotchy. I don't know why. In real life, they are much smoother and look way better than this photo. I gotta work on my photography skills.
+
 {% include clear-float.html %}
 
 {% include figure.html img="IMG_0659.avif" align="left" %}
