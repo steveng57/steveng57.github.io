@@ -22,7 +22,7 @@ This is perhaps my most complicated project to date, with the possible exception
 
 {% include figure.html img="sketchup-table.avif" %}
 
-Of course there is the {{ site.data.links.sketchup }}  design.  A lot of detail went into the actual pieces, since the cuts are kind of intricate.  Walnut is pricey, so you don't want to leave too much to chance.
+Of course there is the {{ site.data.links.sketchup }} design.  A lot of detail went into the actual pieces, since the cuts are kind of intricate.  Walnut is pricey, so you don't want to leave too much to chance.
 
 I even went so far on this one as to find a _walnut texture_ and add it to the drawing.  It's a little scary how similar the real thing turned out to this.
 
