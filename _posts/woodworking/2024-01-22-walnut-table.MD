@@ -26,7 +26,7 @@ Of course there is the {{ site.data.links.sketchup }}  design.  A lot of detail 
 
 I even went so far on this one as to find a _walnut texture_ and add it to the drawing.  It's a little scary how similar the real thing turned out to this.
 
-{% include clear-float.html %}
+{% include clear-float.html break=0 %}
 
 ## The Table
 
