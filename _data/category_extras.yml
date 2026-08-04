@@ -23,10 +23,10 @@
   intro_markdown: |-
     Woodworking projects from the workshop, from early builds to
     more recent experiments with joinery, finishes, and design.
-"Home and Garden":
+"Tech & Home":
   intro_markdown: |-
-    Projects and ideas for improving and beautifying living spaces,
-    indoors and out.  Tech projects for the home and garden also appear here.
+    Tech projects, home improvements, and garden builds — anything
+    that doesn't fit in the workshop but still scratches the maker itch.
 #  featured_slugs:
 #    - walnut-table
 #    - daybed

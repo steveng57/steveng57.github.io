@@ -19,7 +19,7 @@ $targets = @()
 $targets += Get-ChildItem -File -Recurse -Path .\_site\categories -Filter index.html -ErrorAction SilentlyContinue
 $targets += Get-ChildItem -File -Recurse -Path .\_site\tags -Filter index.html -ErrorAction SilentlyContinue
 $targets += Get-ChildItem -File -Recurse -Path .\_site\woodworking -Filter index.html -ErrorAction SilentlyContinue
-$targets += Get-ChildItem -File -Recurse -Path .\_site\home-and-garden -Filter index.html -ErrorAction SilentlyContinue
+$targets += Get-ChildItem -File -Recurse -Path .\_site\tech-home -Filter index.html -ErrorAction SilentlyContinue
 
 $rows = $targets | ForEach-Object { Get-TitleAndDescription $_.FullName }
 

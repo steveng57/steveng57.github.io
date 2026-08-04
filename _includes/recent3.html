@@ -32,6 +32,17 @@
   {% assign posts = site.posts | slice: 0, limit %}
 {% endif %}
 
+{% if include.exclude != blank %}
+  {% assign _excl = include.exclude | split: '|' %}
+  {% assign _deduped = '' | split: '' %}
+  {% for _p in posts %}
+    {% unless _excl contains _p.url %}
+      {% assign _deduped = _deduped | push: _p %}
+    {% endunless %}
+  {% endfor %}
+  {% assign posts = _deduped %}
+{% endif %}
+
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
     {% if include.eager_first and forloop.first %}
