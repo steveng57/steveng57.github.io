@@ -14,7 +14,7 @@ portable and case-correct.
 ## Repository map
 
 - `_posts/<top-category>/`: Markdown posts. Current top-level categories are
-  `woodworking` and `home-and-garden`.
+  `woodworking` and `tech-home`.
 - `assets/img/posts/<slug>/`: source media and generated derivatives for a post.
 - `_data/media/<slug>.yml`: authoritative authoring intent for post images and videos.
 - `_data/img-info.json`: generated dimensions, dates, and EXIF fallback metadata.

@@ -8,7 +8,7 @@ image:
   path: /assets/img/about/IMG_0697.avif
   alt: The most precious thing in my shop.  A gift from the family.
 date: 2024-01-28 10:59:55 -0500
-last_modified_at: 2026-07-22 13:30:00 -0400
+last_modified_at: 2026-08-04 00:00:00 -0400
 toc: true
 ---
 
@@ -18,19 +18,63 @@ toc: true
 
 Welcome to my photo blog of various "maker" things I am up to, mostly woodworking. The above picture is a sign hanging in my workshop, given to me by the family. It's a pretty cool gift.
 
-You can dive right in by clicking on the links in the sidebar on the left (a menu dropdown on mobile devices), or if you want to get a quick tutorial on the way the site works, then you can continue reading below.  Either way, I am here for you.
-
 ## My Latest Posts
 
 Here are my three most recent posts:
 
 {% include recent3.html eager_first=true %}
 
+## Favorite Posts
+
+Here are some of my favorite projects:
+
+{% assign _latest3 = site.posts | slice: 0, 3 %}
+{% capture _excl_latest %}{{ _latest3[0].url }}|{{ _latest3[1].url }}|{{ _latest3[2].url }}{% endcapture %}
+{% include recent3.html mode="favorites" show_title=false limit=nil exclude=_excl_latest %}
+
 ## Recently Modified
 
 And here are some other posts that have been updated recently with new content:
 
-{% include recent3.html mode='modified' limit=3 %}
+{% assign _fav_all = site.posts | where_exp: 'p', 'p.favorite' %}
+{% assign _fav_pinned = _fav_all | where_exp: 'p', 'p.pin' %}
+{% assign _fav_unpinned = _fav_all | where_exp: 'p', 'p.pin != true' %}
+{% assign _favs_ordered = _fav_pinned | concat: _fav_unpinned %}
+{% assign _excl_latest_arr = _excl_latest | split: '|' %}
+{% assign _excl_modified = _excl_latest %}
+{% for _p in _favs_ordered %}
+  {% unless _excl_latest_arr contains _p.url %}
+    {% assign _excl_modified = _excl_modified | append: '|' | append: _p.url %}
+  {% endunless %}
+{% endfor %}
+{% include recent3.html mode='modified' limit=3 exclude=_excl_modified %}
+
+## About the author
+
+I have been focussing more and more on _maker_ type things, including woodworking for the last decade or so. While woodworking is my primary focus, I also like to include other things...anything high tech or gadgety will do quite nicely. Also fair game are life-hacks, yard / garden / house projects and other _maker_ things...but mostly woodworking.
+
+Sometime in late 2016, I started to setup a workshop in the basement. Retirement was around the corner, and one of my father's favorite wisdoms was to _"retire to something, don't retire from something"_. My father is very wise.
+
+I live in a rural suburb of Ottawa called Manotick with my wife Debbie and our little ones, Riley and Daisy.  The little avatar pic in the upper left is of Riley and Ozzie.  Ozzie took his journey over the rainbow bridge in spring 2024.  Boy do I miss that little guy.  There is a video tribute to him [here]({% link ozzie/index.md %}), and below is a great pic of Ozzie with Riley on the left.
+
+{% include figure.html img="/assets/img/about/20150131_134612.avif" align="center" caption="Debbie took this great shot of the boys" %}
+
+{% include clear-float.html break = 2 %}
+
+{% include figure.html img="/assets/img/about/steven-sticker.avif" caption="Enjoy the Blog!" align="left-33"%}
+
+I am also a Pisces, which is silly because there is no science behind that stuff at all. The other thing you should know about me is that I am all about science. Actually, that one fact probably tells you a lot about me, from my political leanings, to my thoughts on religion, climate change, and more.
+
+But if you must know, politics wise, I am fiscally conservative (you can't spend money you don't have), and socially liberal (the only thing I am truly intolerant of, is intolerance). Wait, TMI alert! Way too much information already!
+
+If you'd like to drop me a note with a comment or connect, please use the [contact form]({% link contact/index.html %}) here.
+
+{% include clear-float.html break = 2 %}
+
+## Odds and Ends
+
+I've started a subsite called **'pages'**, just a place to put various thoughts and sometimes rants on things.  It started as a place for me talk about the goings-on in the world, without disrupting the flow of this site, and seems to be evolving into a random mishmash of things coming out of my brain.  You can find it here at:  
+[https://pages.stevengoulet.com](https://pages.stevengoulet.com){:target='_blank' rel='www.stevengoulet.com'}
 
 ## Navigating the Site
 
@@ -71,7 +115,7 @@ For an interesting layout of the posts in chronological order, be sure to check 
 
 ### Categories
 
-The [Categories]({% link _tabs/categories.md %}) link shows the posts group by their categories and sub-categories, which is almost the same as the list of categories in the sidebar but a different view with a few more details.  There are two major categories: [Woodworking]({{ "/woodworking" | relative_url }}), which is where the vast majority of posts exist, and [Home and Garden]({{ "/home-and-garden" | relative_url }}), which only has a couple of posts right now, but I expect more to go there as things progress.
+The [Categories]({% link _tabs/categories.md %}) link shows the posts group by their categories and sub-categories, which is almost the same as the list of categories in the sidebar but a different view with a few more details.  There are two major categories: [Woodworking]({{ "/woodworking" | relative_url }}), which is where the vast majority of posts exist, and [Tech & Home]({{ "/tech-home" | relative_url }}), which only has a couple of posts right now, but I expect more to go there as things progress.
 {: .sjg-br}
 
 ### Tags
@@ -85,38 +129,5 @@ The [Site Stats]({% link site-stats.md %}) page is the technical dashboard for t
 {: .sjg-br}
 
 To all the fans of this website, pictured below, please be [let me know]({% link contact/index.html %}) if you find any bugs or other inaccuracies. This is very much a work in progress.
-
-## Favorite Posts
-
-Here are some of my favorite projects:
-
-{% include recent3.html mode="favorites" show_title=false limit=nil %}
-
-## Odds and Ends
-
-I've started a subsite called **'pages'**, just a place to put various thoughts and sometimes rants on things.  It started as a place for me talk about the goings-on in the world, without disrupting the flow of this site, and seems to be evolving into a random mishmash of things coming out of my brain.  You can find it here at:  
-[https://pages.stevengoulet.com](https://pages.stevengoulet.com){:target='_blank' rel='www.stevengoulet.com'}
-
-## About the author
-
-I have been focussing more and more on _maker_ type things, including woodworking for the last decade or so. While woodworking is my primary focus, I also like to include other things...anything high tech or gadgety will do quite nicely. Also fair game are life-hacks, yard / garden / house projects and other _maker_ things...but mostly woodworking.
-
-Sometime in late 2016, I started to setup a workshop in the basement. Retirement was around the corner, and one of my father's favorite wisdoms was to _"retire to something, don't retire from something"_. My father is very wise.
-
-I live in a rural suburb of Ottawa called Manotick with my wife Debbie and our little ones, Riley and Daisy.  The little avatar pic in the upper left is of Riley and Ozzie.  Ozzie took his journey over the rainbow bridge in spring 2024.  Boy do I miss that little guy.  There is a video tribute to him [here]({% link ozzie/index.md %}), and below is a great pic of Ozzie with Riley on the left.
-
-{% include figure.html img="/assets/img/about/20150131_134612.avif" align="center" caption="Debbie took this great shot of the boys" %}
-
-{% include clear-float.html break = 2 %}
-
-{% include figure.html img="/assets/img/about/steven-sticker.avif" caption="Enjoy the Blog!" align="left-33"%}
-
-I am also a Pisces, which is silly because there is no science behind that stuff at all. The other thing you should know about me is that I am all about science. Actually, that one fact probably tells you a lot about me, from my political leanings, to my thoughts on religion, climate change, and more.
-
-But if you must know, politics wise, I am fiscally conservative (you can't spend money you don't have), and socially liberal (the only thing I am truly intolerant of, is intolerance). Wait, TMI alert! Way too much information already!
-
-If you'd like to drop me a note with a comment or connect, please use the [contact form]({% link contact/index.html %}) here.
-
-{% include clear-float.html break = 2 %}
 
 {% include mydatetime.html date = site.time lang = lang prefix=  "This site was last generated on: "%}{: .post-meta .text-muted}

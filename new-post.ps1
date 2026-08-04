@@ -21,7 +21,7 @@ param(
     [string]$Description,
     [datetime]$Date,
     [string]$Slug,
-    [ValidateSet("Woodworking", "Home and Garden")]
+    [ValidateSet("Woodworking", "Tech & Home")]
     [string]$TopCategory,
     [string]$Subcategory,
     [string[]]$Tags,
@@ -162,10 +162,10 @@ function Select-Category {
     Write-Host ""
     Write-Host "Top category:"
     Write-Host "  1. Woodworking"
-    Write-Host "  2. Home and Garden"
+    Write-Host "  2. Tech & Home"
     $choice = Read-Host "Choose 1 or 2 [1]"
     if ($choice -eq "2") {
-        return "Home and Garden"
+        return "Tech & Home"
     }
 
     return "Woodworking"
