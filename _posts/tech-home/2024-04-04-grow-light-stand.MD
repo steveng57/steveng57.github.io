@@ -10,6 +10,7 @@ image:
   thumb: /thumbnails/IMG_0866.avif
   alt: No, not that kind of grow op!
 media_subpath: /assets/img/posts/grow-light-stand
+series: "Greenhouse & Garden"
 ---
 ## Origins
 

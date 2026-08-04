@@ -10,6 +10,7 @@ image:
   thumb: /thumbnails/IMG_0758C.avif
   alt: Cabinet for Gazebo
 media_subpath: /assets/img/posts/gazebo-cabinet
+series: "Gazebo"
 ---
 ## Background
 

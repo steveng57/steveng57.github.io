@@ -10,6 +10,7 @@ image:
   thumb: /thumbnails/20221122_113942.avif
   alt: Walnut Napkin Holder with White Epoxy Inlay
 media_subpath: /assets/img/posts/napkin-holders
+series: "Kitchen Serving"
 ---
 ## Some Background
 

@@ -10,6 +10,7 @@ image:
   thumb: /thumbnails/IMG_0221.avif
   alt: It's a desert topping and a floor wax
 media_subpath: /assets/img/posts/extension-table
+series: "Theatre Room"
 ---
 ## Some Background
 

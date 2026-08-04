@@ -10,6 +10,7 @@ image:
   thumb: /thumbnails/20210827_212517.avif
   alt: Nature abhors a vacuum
 media_subpath: /assets/img/posts/vacuum-dolly
+series: "Workshop Builds"
 ---
 ## Shop Fun
 

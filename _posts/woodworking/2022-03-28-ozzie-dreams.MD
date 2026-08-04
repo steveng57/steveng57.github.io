@@ -10,6 +10,7 @@ image:
   thumb: /thumbnails/20220328_071254.avif
   alt: Sweet Dreams Ozman
 media_subpath: "/assets/img/posts/ozzie-dreams"
+series: "Pet Projects"
 ---
 ## Origins
 

@@ -10,6 +10,7 @@ image:
   thumb: /thumbnails/IMG_0536.avif
   alt: Beast of a bench
 media_subpath: /assets/img/posts/boys-bench
+series: "Pet Projects"
 ---
 ## Some Background
 

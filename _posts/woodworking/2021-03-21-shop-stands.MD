@@ -10,6 +10,7 @@ image:
   thumb: /thumbnails/20210321_210903.avif
   alt: Waiting for Work
 media_subpath: /assets/img/posts/shop-stands
+series: "Workshop Builds"
 ---
 ## Shop Stuff
 

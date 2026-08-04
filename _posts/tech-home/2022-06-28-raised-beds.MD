@@ -10,6 +10,7 @@ image:
   thumb: /thumbnails/20220628_125950.avif
   alt: Cedar Plant Boxes
 media_subpath: /assets/img/posts/raised-beds
+series: "Greenhouse & Garden"
 ---
 ## Origins
 
