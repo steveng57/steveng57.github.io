@@ -10,6 +10,7 @@ image:
   thumb: /thumbnails/20170724_234953.avif
   alt: Lots of practice carving holes on this one
 media_subpath: /assets/img/posts/bean-bag-toss-game
+series: "Games"
 ---
 ## Background
 

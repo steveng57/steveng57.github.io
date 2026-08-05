@@ -21,6 +21,7 @@ image:
   alt: Where are the drawer fronts?
 media_subpath: /assets/img/posts/theatre-kitchen
 favorite: true
+series: "Theatre Room"
 ---
 ## Introduction
 

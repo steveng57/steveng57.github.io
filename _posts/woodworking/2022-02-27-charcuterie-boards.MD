@@ -10,6 +10,7 @@ image:
   thumb: /thumbnails/20220227_191616.avif
   alt: One for Theresa
 media_subpath: /assets/img/posts/charcuterie-boards
+series: "Kitchen Serving"
 ---
 ## Origins
 

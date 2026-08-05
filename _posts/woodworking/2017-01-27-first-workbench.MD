@@ -11,6 +11,7 @@ image:
   thumb: /thumbnails/20170127_010801.avif
   alt: MDF and 2x4's - pretty simple
 media_subpath: /assets/img/posts/first-workbench
+series: "Workshop Builds"
 ---
 ## Some Background
 

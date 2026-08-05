@@ -10,6 +10,7 @@ image:
   thumb: /thumbnails/20201001_193728.avif
   alt: About 2 weeks to assemble
 media_subpath: /assets/img/posts/assembly-table
+series: "Workshop Builds"
 ---
 ## Background
 

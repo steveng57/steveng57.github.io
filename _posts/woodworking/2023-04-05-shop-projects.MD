@@ -10,6 +10,7 @@ image:
   thumb: /thumbnails/20230405_141755.avif
   alt: Spiffy new router table
 media_subpath: /assets/img/posts/shop-projects
+series: "Workshop Builds"
 ---
 ## Origins
 

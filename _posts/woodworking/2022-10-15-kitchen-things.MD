@@ -10,6 +10,7 @@ image:
   thumb: /thumbnails/IMG_0810.avif
   alt: Odds and Ends in the Kitchen
 media_subpath: /assets/img/posts/kitchen-things
+series: "Kitchen Serving"
 ---
 ## Background
 

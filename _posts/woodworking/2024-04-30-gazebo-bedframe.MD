@@ -11,6 +11,7 @@ image:
   thumb: /thumbnails/gazebo-bedframe-sketchup.avif
   alt: Gazebo Bedframe
 media_subpath: /assets/img/posts/gazebo-bedframe
+series: "Gazebo"
 ---
 ## Background
 We have a small building out in the back, about 12&prime;x16&prime;. It was originally intended to be a furniture storage shed for keeping our outdoor stuff protected from Ottawa winters. Well, the builders were doing such a nice job, and the place turned out way better than expected, so we turned it into a little "Gazebo", a little place to escape to when the world is a bit too crazy, or you just want some quiet on a nice spring day.

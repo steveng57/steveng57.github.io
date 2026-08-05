@@ -10,6 +10,7 @@ image:
   thumb: /thumbnails/20220225_091904.avif
   alt: Puppy paws are a woodworker's rite of passage
 media_subpath: /assets/img/posts/puppy-steps
+series: "Pet Projects"
 ---
 ## Introduction
 
