@@ -26,13 +26,22 @@ layout: nil
         }
         #gallery-filter-bar {
             position: fixed;
-            top: 58px;
             left: 50%;
             transform: translateX(-50%);
             z-index: 10050;
             display: flex;
             gap: 8px;
             padding: 4px 8px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 90vw;
+            top: 58px;
+        }
+        @media (max-width: 640px) {
+            #gallery-filter-bar {
+                bottom: 70px;
+                top: auto;
+            }
         }
         .gallery-filter-btn {
             background: rgba(0, 0, 0, 0.55);
