@@ -15,7 +15,11 @@ last_modified_at: 2026-08-04 00:00:00 -0400
 
 ## Welcome
 
-Welcome to my photo blog of various "maker" things I am up to, mostly woodworking. The above picture is a sign hanging in my workshop, given to me by the family. It's a pretty cool gift. See the [About]({% link _tabs/about.md %}) page to learn more about this site and its author.
+Welcome to my photo blog of various "maker" things I am up to, mostly woodworking. The above picture is a sign hanging in my workshop, given to me by the family. It's a pretty cool gift. 
+
+Below you will find quick links to my most recent posts, my favorites, and some posts that have recently been updated with fresh content.  You can dive into those, or you can navigate the site with the category links on the sidebar.
+
+See the [About]({% link _tabs/about.md %}) page to learn more about this site and its author.
 
 ## My Latest Posts
 
