@@ -71,7 +71,12 @@ For the CPU, I chose the latest from the Intel line, the i9 14th generation.  I 
 
 This was a bit of a departure for me.  The Gigabyte brand of motherboards is targeted a bit more toward gamers, which means it has a lot of overclocking features and flashy RGB lights to add razzle-dazzle to all your components.  I don't need or even want those things, as they can destabilize things, and my PC is hidden behind the desk anyway.
 
-Even so, I went for it as the specs were great: it has the latest and greatest everything, including PCIe 5.0 and M.2.
+Even so, I went for it as the specs were great: it has the latest and greatest everything, including PCIe 5.0 and M.2.  
+
+{% include clear-float.html break=0 %}
+
+> The full name of the motherboard is **GIGABYTE Z790 AORUS PRO X WIFI7 LGA 1700 Intel Z790 X ATX Motherboard with DDR5, 5 x M.2, PCIe 5.0, USB 3.2 Type-C, Wi-Fi 7, 5GbE LAN, Q-Flash Plus, EZ-Latch Plus**. Note that it's not just EZ-Latch, it's EZ-Latch PLUS!
+{: .prompt-tip .sjg-br}
 
 From their website:
 - Supports Intel® Core™ 14th gen processors
@@ -83,9 +88,12 @@ From their website:
 - Fast Networking：5GbE LAN & Wi-Fi 7 with Ultra-high gain antenna
 - Extended Connectivity：HDMI, DP IN, Front & Rear USB-C® 20Gb/s
 - High-Res Audio：ALC1220 & Audiophile Grade Capacitors
+
 {% include clear-float.html %}
 
+
 {% include figure.html img="corsair-ssd.png" align="left" %}
+
 ### NVME 2.0 SSD
 
 This is where a lot of the speed came from. 
