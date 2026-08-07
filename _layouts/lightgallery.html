@@ -91,6 +91,8 @@ window.addEventListener('load', function () {
 if (!window.lightGallery) { return; }
 
 var referrerUrl = document.referrer;
+// Keep the filtering implementation available without displaying its controls.
+var galleryFiltersEnabled = false;
 var currentFilter = 'all';
 var isFiltering = false;
 var inlineGallery;
@@ -202,6 +204,7 @@ function applyFilter(filter) {
 }
 
 function buildFilterBar() {
+    if (!galleryFiltersEnabled) { return; }
     if (document.getElementById('gallery-filter-bar')) { return; }
 
     var present = {};

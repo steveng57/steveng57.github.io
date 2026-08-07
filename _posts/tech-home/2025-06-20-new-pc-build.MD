@@ -91,7 +91,6 @@ From their website:
 
 {% include clear-float.html %}
 
-
 {% include figure.html img="corsair-ssd.png" align="left" %}
 
 ### NVME 2.0 SSD
