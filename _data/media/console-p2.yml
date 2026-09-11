@@ -1,0 +1,72 @@
+cover: "IMG_3060.HEIC"
+
+images:
+  "IMG_3047.avif":
+    source: "IMG_3047.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Frame Bits"
+
+  "IMG_3051.avif":
+    source: "IMG_3051.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Frame Complete"
+
+  "IMG_3060.avif":
+    source: "IMG_3060.HEIC"
+    include: true
+    gallery: false
+    thumbnail: true
+    caption: "Empty Crates"
+
+  "IMG_3064.avif":
+    source: "IMG_3064.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Tyvek Waterproof Wrap"
+
+  "IMG_3067.avif":
+    source: "IMG_3067.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Foam Padding"
+
+  "IMG_3070.avif":
+    source: "IMG_3070.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Strapping"
+
+  "IMG_3072.avif":
+    source: "IMG_3072.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "StrappedCrates"
+
+  "IMG_3076.avif":
+    source: "IMG_3076.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Crates on Palets"
+
+  "IMG_3030.avif":
+    source: "IMG_3030.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Sticks"
+
+  "IMG_3034.avif":
+    source: "IMG_3034.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Sticks turned into palets"

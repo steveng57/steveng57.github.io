@@ -496,6 +496,97 @@
     "width": 154,
     "height": 205
   },
+  "assets/img/posts/console-p2/IMG_3030.avif": {
+    "title": "",
+    "subject": "",
+    "datetaken": "2026-08-12T13:21:20",
+    "width": 1536,
+    "height": 2048
+  },
+  "assets/img/posts/console-p2/IMG_3034.avif": {
+    "title": "",
+    "subject": "",
+    "datetaken": "2026-08-12T14:53:59",
+    "width": 1536,
+    "height": 2048
+  },
+  "assets/img/posts/console-p2/IMG_3047.avif": {
+    "title": "",
+    "subject": "",
+    "datetaken": "2026-08-16T18:39:03",
+    "width": 1536,
+    "height": 2048
+  },
+  "assets/img/posts/console-p2/IMG_3051.avif": {
+    "title": "",
+    "subject": "",
+    "datetaken": "2026-08-16T19:29:28",
+    "width": 2048,
+    "height": 1536
+  },
+  "assets/img/posts/console-p2/IMG_3060.avif": {
+    "title": "",
+    "subject": "",
+    "datetaken": "2026-08-19T18:09:29",
+    "width": 2048,
+    "height": 1536
+  },
+  "assets/img/posts/console-p2/IMG_3062.avif": {
+    "title": "",
+    "subject": "",
+    "datetaken": "2026-08-20T14:57:30",
+    "width": 1536,
+    "height": 2048
+  },
+  "assets/img/posts/console-p2/IMG_3064.avif": {
+    "title": "",
+    "subject": "",
+    "datetaken": "2026-08-21T15:55:07",
+    "width": 1536,
+    "height": 2048
+  },
+  "assets/img/posts/console-p2/IMG_3067.avif": {
+    "title": "",
+    "subject": "",
+    "datetaken": "2026-08-21T15:55:58",
+    "width": 1536,
+    "height": 2048
+  },
+  "assets/img/posts/console-p2/IMG_3070.avif": {
+    "title": "",
+    "subject": "",
+    "datetaken": "2026-08-25T12:09:19",
+    "width": 1536,
+    "height": 2048
+  },
+  "assets/img/posts/console-p2/IMG_3072.avif": {
+    "title": "",
+    "subject": "",
+    "datetaken": "2026-08-25T12:12:50",
+    "width": 1536,
+    "height": 2048
+  },
+  "assets/img/posts/console-p2/IMG_3076.avif": {
+    "title": "",
+    "subject": "",
+    "datetaken": "2026-08-25T20:34:14",
+    "width": 2048,
+    "height": 1536
+  },
+  "assets/img/posts/console-p2/thumbnails-2x/IMG_3060.avif": {
+    "title": "",
+    "subject": "",
+    "datetaken": "2026-08-19T18:09:29",
+    "width": 960,
+    "height": 720
+  },
+  "assets/img/posts/console-p2/thumbnails/IMG_3060.avif": {
+    "title": "",
+    "subject": "",
+    "datetaken": "2026-08-19T18:09:29",
+    "width": 480,
+    "height": 360
+  },
   "assets/img/posts/console/4884155735830755613.avif": {
     "title": "",
     "subject": "",
@@ -3905,6 +3996,20 @@
     "width": 2048,
     "height": 1536
   },
+  "assets/img/posts/walnut-table/sketchup-table.avif": {
+    "title": "",
+    "subject": "",
+    "datetaken": null,
+    "width": 2048,
+    "height": 1403
+  },
+  "assets/img/posts/walnut-table/sketchup-table.png": {
+    "title": "",
+    "subject": "",
+    "datetaken": null,
+    "width": 2059,
+    "height": 1411
+  },
   "assets/img/posts/walnut-table/stream/IMG_0695/poster.avif": {
     "title": "Walnut Table 180",
     "subject": "Walnut Table 180",
@@ -3967,6 +4072,13 @@
     "datetaken": "2024-02-26T14:10:08",
     "width": 205,
     "height": 154
+  },
+  "assets/img/posts/walnut-table/tinyfiles/sketchup-table.avif": {
+    "title": "",
+    "subject": "",
+    "datetaken": null,
+    "width": 206,
+    "height": 141
   },
   "assets/img/posts/yoga-room/20200714_172147328_iOS.avif": {
     "title": "Yoga Room Table",
