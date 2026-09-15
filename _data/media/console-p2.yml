@@ -55,7 +55,7 @@ images:
     include: true
     gallery: false
     thumbnail: false
-    caption: "Crates on Palets"
+    caption: "Crates on Pallets"
 
   "IMG_3030.avif":
     source: "IMG_3030.HEIC"
