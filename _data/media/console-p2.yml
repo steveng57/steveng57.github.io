@@ -48,7 +48,7 @@ images:
     include: true
     gallery: false
     thumbnail: false
-    caption: "StrappedCrates"
+    caption: "Strapped Crates"
 
   "IMG_3076.avif":
     source: "IMG_3076.HEIC"
@@ -69,4 +69,32 @@ images:
     include: true
     gallery: false
     thumbnail: false
-    caption: "Sticks turned into palets"
+    caption: "Sticks turned into pallets"
+
+  "IMG_3106.avif":
+    source: "IMG_3106.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Crates on Pallets"
+
+  "IMG_3110.avif":
+    source: "IMG_3110.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Ramping Up for Transport"
+
+  "IMG_3113.avif":
+    source: "IMG_3113.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Loaded and Ready"
+
+  "IMG_3115.avif":
+    source: "IMG_3115.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "On The Way"
