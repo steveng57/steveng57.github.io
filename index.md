@@ -25,38 +25,4 @@ See the [About]({% link _tabs/about.md %}) page to learn more about this site an
 {% assign favorites_limit = 5 %}
 {% assign recently_modified_limit = 5 %}
 
-## My Latest Posts
-
-Here are my {{ latest_post_limit }} most recent posts:
-
-{% include recent3.html eager_first=true limit=latest_post_limit %}
-
-## Favorite Posts
-
-Here are some of my favorite projects:
-
-{% assign _latest_posts = site.posts | slice: 0, latest_post_limit %}
-{% capture _excl_latest %}{% for _post in _latest_posts %}{% unless forloop.first %}|{% endunless %}{{ _post.url }}{% endfor %}{% endcapture %}
-{% include recent3.html mode="favorites" show_title=false limit=favorites_limit exclude=_excl_latest %}
-
-## Recently Modified
-
-And here are some other posts that have been updated recently with new content:
-
-{% assign _fav_all = site.posts | where_exp: 'p', 'p.favorite' %}
-{% assign _fav_pinned = _fav_all | where_exp: 'p', 'p.pin' %}
-{% assign _fav_unpinned = _fav_all | where_exp: 'p', 'p.pin != true' %}
-{% assign _favs_ordered = _fav_pinned | concat: _fav_unpinned %}
-{% assign _excl_latest_arr = _excl_latest | split: '|' %}
-{% assign _displayed_favorites = '' | split: '' %}
-{% for _p in _favs_ordered %}
-  {% unless _excl_latest_arr contains _p.url %}
-    {% assign _displayed_favorites = _displayed_favorites | push: _p %}
-  {% endunless %}
-{% endfor %}
-{% assign _displayed_favorites = _displayed_favorites | slice: 0, favorites_limit %}
-{% assign _excl_modified = _excl_latest %}
-{% for _p in _displayed_favorites %}
-  {% assign _excl_modified = _excl_modified | append: '|' | append: _p.url %}
-{% endfor %}
-{% include recent3.html mode='modified' limit=recently_modified_limit exclude=_excl_modified %}
+{% include recent3.html mode='homepage' latest_limit=latest_post_limit favorites_limit=favorites_limit recently_modified_limit=recently_modified_limit %}

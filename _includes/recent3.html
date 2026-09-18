@@ -1,56 +1,54 @@
 {% assign mode = include.mode | default: 'latest' %}
-{% assign limit = include.limit %}
-{% assign has_limit = include.limit | default: '' %}
-{% assign show_title = include.show_title | default: true %}
 
-{% if mode == 'favorites' %}
+{% if mode == 'homepage' %}
+  {% assign latest_limit = include.latest_limit | default: 5 %}
+  {% assign favorites_limit = include.favorites_limit | default: 5 %}
+  {% assign recently_modified_limit = include.recently_modified_limit | default: 5 %}
+
+  <h2>My Latest Posts</h2>
+
+  <p>Here are my {{ latest_limit }} most recent posts:</p>
+
+  {% include recent3.html limit=latest_limit eager_first=true %}
+
+  <h2>Favorite Posts</h2>
+
+  <p>Here are some of my favorite projects:</p>
+
+  {% assign _latest_posts = site.posts | slice: 0, latest_limit %}
+  {% capture _excl_latest %}{% for _post in _latest_posts %}{% unless forloop.first %}|{% endunless %}{{ _post.url }}{% endfor %}{% endcapture %}
+  {% include recent3.html mode='favorites' limit=favorites_limit exclude=_excl_latest %}
+
+  <h2>Recently Modified</h2>
+
+  <p>And here are some other posts that have been updated recently with new content:</p>
+
+  {% assign _favorites = site.posts | where_exp: 'p', 'p.favorite' %}
+  {% assign _pinned_favorites = _favorites | where_exp: 'p', 'p.pin' %}
+  {% assign _unpinned_favorites = _favorites | where_exp: 'p', 'p.pin != true' %}
+  {% assign _favorites = _pinned_favorites | concat: _unpinned_favorites %}
+  {% assign _excl_latest_arr = _excl_latest | split: '|' %}
+  {% assign _displayed_favorites = '' | split: '' %}
+  {% for _post in _favorites %}
+    {% unless _excl_latest_arr contains _post.url %}
+      {% assign _displayed_favorites = _displayed_favorites | push: _post %}
+    {% endunless %}
+  {% endfor %}
+  {% assign _displayed_favorites = _displayed_favorites | slice: 0, favorites_limit %}
+  {% assign _excl_modified = _excl_latest %}
+  {% for _post in _displayed_favorites %}
+    {% assign _excl_modified = _excl_modified | append: '|' | append: _post.url %}
+  {% endfor %}
+  {% include recent3.html mode='modified' limit=recently_modified_limit exclude=_excl_modified %}
+{% elsif mode == 'favorites' %}
   {% assign posts = site.posts | where_exp: 'p', 'p.favorite' %}
   {% assign pinned_posts = posts | where_exp: 'p', 'p.pin' %}
   {% assign unpinned_posts = posts | where_exp: 'p', 'p.pin != true' %}
   {% assign posts = pinned_posts | concat: unpinned_posts %}
-  {% if include.exclude != blank %}
-    {% assign _excl = include.exclude | split: '|' %}
-    {% assign _deduped = '' | split: '' %}
-    {% for _p in posts %}
-      {% unless _excl contains _p.url %}
-        {% assign _deduped = _deduped | push: _p %}
-      {% endunless %}
-    {% endfor %}
-    {% assign posts = _deduped %}
-  {% endif %}
-  {% if has_limit != '' %}
-    {% assign posts = posts | slice: 0, limit %}
-  {% endif %}
 {% elsif mode == 'modified' %}
-  {% if has_limit == '' %}
-    {% assign limit = 3 %}
-  {% endif %}
-
-  {% assign recent_by_date = site.posts | slice: 0, 3 %}
-  {% assign recent_url_1 = recent_by_date[0].url %}
-  {% assign recent_url_2 = recent_by_date[1].url %}
-  {% assign recent_url_3 = recent_by_date[2].url %}
-
-  {% assign modified_posts = site.posts | where_exp: 'p', 'p.last_modified_at' | sort: 'last_modified_at' | reverse %}
-  {% assign posts = modified_posts | where_exp: 'p', 'p.url != recent_url_1 and p.url != recent_url_2 and p.url != recent_url_3' %}
-
-  {% if include.exclude != blank %}
-    {% assign _excl = include.exclude | split: '|' %}
-    {% assign _deduped = '' | split: '' %}
-    {% for _p in posts %}
-      {% unless _excl contains _p.url %}
-        {% assign _deduped = _deduped | push: _p %}
-      {% endunless %}
-    {% endfor %}
-    {% assign posts = _deduped %}
-  {% endif %}
-
-  {% assign posts = posts | slice: 0, limit %}
+  {% assign posts = site.posts | where_exp: 'p', 'p.last_modified_at' | sort: 'last_modified_at' | reverse %}
 {% else %}
-  {% if has_limit == '' %}
-    {% assign limit = 5 %}
-  {% endif %}
-  {% assign posts = site.posts | slice: 0, limit %}
+  {% assign posts = site.posts %}
 {% endif %}
 
 {% if include.exclude != blank %}
@@ -62,6 +60,12 @@
     {% endunless %}
   {% endfor %}
   {% assign posts = _deduped %}
+{% endif %}
+
+{% if include.limit != blank %}
+  {% assign posts = posts | slice: 0, include.limit %}
+{% elsif mode == 'latest' %}
+  {% assign posts = posts | slice: 0, 5 %}
 {% endif %}
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
