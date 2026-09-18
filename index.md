@@ -8,7 +8,7 @@ image:
   path: /assets/img/about/IMG_0697.avif
   alt: The most precious thing in my shop.  A gift from the family.
 date: 2024-01-28 10:59:55 -0500
-last_modified_at: 2026-08-04 00:00:00 -0400
+last_modified_at: 2026-09-18 00:00:00 -0400
 ---
 
 {% include header.html %}
