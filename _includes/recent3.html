@@ -8,6 +8,16 @@
   {% assign pinned_posts = posts | where_exp: 'p', 'p.pin' %}
   {% assign unpinned_posts = posts | where_exp: 'p', 'p.pin != true' %}
   {% assign posts = pinned_posts | concat: unpinned_posts %}
+  {% if include.exclude != blank %}
+    {% assign _excl = include.exclude | split: '|' %}
+    {% assign _deduped = '' | split: '' %}
+    {% for _p in posts %}
+      {% unless _excl contains _p.url %}
+        {% assign _deduped = _deduped | push: _p %}
+      {% endunless %}
+    {% endfor %}
+    {% assign posts = _deduped %}
+  {% endif %}
   {% if has_limit != '' %}
     {% assign posts = posts | slice: 0, limit %}
   {% endif %}
@@ -24,10 +34,21 @@
   {% assign modified_posts = site.posts | where_exp: 'p', 'p.last_modified_at' | sort: 'last_modified_at' | reverse %}
   {% assign posts = modified_posts | where_exp: 'p', 'p.url != recent_url_1 and p.url != recent_url_2 and p.url != recent_url_3' %}
 
+  {% if include.exclude != blank %}
+    {% assign _excl = include.exclude | split: '|' %}
+    {% assign _deduped = '' | split: '' %}
+    {% for _p in posts %}
+      {% unless _excl contains _p.url %}
+        {% assign _deduped = _deduped | push: _p %}
+      {% endunless %}
+    {% endfor %}
+    {% assign posts = _deduped %}
+  {% endif %}
+
   {% assign posts = posts | slice: 0, limit %}
 {% else %}
   {% if has_limit == '' %}
-    {% assign limit = 3 %}
+    {% assign limit = 5 %}
   {% endif %}
   {% assign posts = site.posts | slice: 0, limit %}
 {% endif %}
