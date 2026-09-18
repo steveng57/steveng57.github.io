@@ -15,7 +15,21 @@ script_includes:
 
 <article class="px-1" data-toc="{{ enable_toc }}">
   <header>
-    <h1 data-toc-skip>{{ page.title }}</h1>
+    <div class="post-title">
+      <h1 class="d-flex justify-content-between align-items-start gap-3" data-toc-skip>
+        <span>{{ page.title }}</span>
+      {% if page.pin or page.favorite %}
+        <div class="post-status d-flex gap-1" aria-label="Post status">
+          {% if page.pin %}
+            <i class="fas fa-thumbtack fa-fw" title="Pinned" aria-label="Pinned"></i>
+          {% endif %}
+          {% if page.favorite %}
+            <i class="fas fa-heart fa-fw" title="Favorite" aria-label="Favorite"></i>
+          {% endif %}
+        </div>
+      {% endif %}
+      </h1>
+    </div>
     {% if page.description %}
       <div class="post-desc fw-light mb-4">{{- page.description | markdownify -}}</div>
     {% endif %}

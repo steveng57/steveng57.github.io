@@ -104,6 +104,12 @@ main img {
     border-radius: 10px;
 }
 
+.post-title .post-status {
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 1;
+}
+
 /* Shared post-list card styling for home/recent lists and one-off post cards. */
 .post-list {
     margin-top: 2rem;
