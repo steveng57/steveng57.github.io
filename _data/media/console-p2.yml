@@ -76,7 +76,7 @@ images:
     include: true
     gallery: false
     thumbnail: false
-    caption: "Crates on Pallets"
+    caption: "Assessment and Preparation"
 
   "IMG_3110.avif":
     source: "IMG_3110.HEIC"
