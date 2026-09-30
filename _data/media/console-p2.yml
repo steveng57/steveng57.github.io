@@ -98,3 +98,31 @@ images:
     gallery: false
     thumbnail: false
     caption: "On The Way"
+
+  "1000032961.avif":
+    source: "1000032961.jpg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Pallets Off"
+
+  "1000032964.avif":
+    source: "1000032964.jpg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Oak cabinets looking good"
+
+  "1000032966.avif":
+    source: "1000032966.jpg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Needs some walnut"
+
+  "1000032967.avif":
+    source: "1000032967.jpg"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Theres the walnut"
