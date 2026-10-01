@@ -692,19 +692,33 @@
     "width": 1146,
     "height": 2048
   },
-  "assets/img/posts/console-p2/thumbnails-2x/IMG_3060.avif": {
-    "title": "",
-    "subject": "",
-    "datetaken": "2026-08-19T18:09:29",
+  "assets/img/posts/console-p2/thumbnails-2x/Console - 1 Oct 2026, 10_39_34.avif": {
+    "title": "image.png",
+    "subject": "image.png",
+    "datetaken": null,
     "width": 960,
     "height": 720
   },
-  "assets/img/posts/console-p2/thumbnails/IMG_3060.avif": {
-    "title": "",
-    "subject": "",
-    "datetaken": "2026-08-19T18:09:29",
+  "assets/img/posts/console-p2/thumbnails/Console - 1 Oct 2026, 10_39_34.avif": {
+    "title": "image.png",
+    "subject": "image.png",
+    "datetaken": null,
     "width": 480,
     "height": 360
+  },
+  "assets/img/posts/console-p2/tinyfiles/Console - 1 Oct 2026, 10_39_34.avif": {
+    "title": "image.png",
+    "subject": "image.png",
+    "datetaken": null,
+    "width": 145,
+    "height": 109
+  },
+  "assets/img/posts/console-p2/tinyfiles/Console - 1 Oct 2026, 10_39_39.avif": {
+    "title": "image.png",
+    "subject": "image.png",
+    "datetaken": null,
+    "width": 145,
+    "height": 109
   },
   "assets/img/posts/console/4884155735830755613.avif": {
     "title": "",
@@ -1521,7 +1535,7 @@
   "assets/img/posts/fireworks-app/Screenshot-2026-01-21-212456.avif": {
     "title": "Early Versions - Simple Shapes",
     "subject": "Early Versions - Simple Shapes",
-    "datetaken": "2026-01-21T21:32:41.286",
+    "datetaken": "2026-01-21T21:33:18.373",
     "width": 1584,
     "height": 1614
   },
