@@ -315,10 +315,10 @@ foreach ($postFolder in $postFolders)
             if ($imageFile)
             {
                 $imagesToProcess += [pscustomobject]@{
-                    File = $imageFile
-                    Published = Get-PublishedImageName -Image $manifestImage
+                    File           = $imageFile
+                    Published      = Get-PublishedImageName -Image $manifestImage
                     NeedsThumbnail = [bool]$manifestImage.Thumbnail
-                    NeedsTinyfile = [bool]$manifestImage.Gallery
+                    NeedsTinyfile  = [bool]$manifestImage.Gallery
                 }
             }
         }
@@ -333,10 +333,10 @@ foreach ($postFolder in $postFolders)
             $tagTokens = Get-TagTokens -ShellFolder $shellFolder -ShellFile $shellFile -TagIndex $tagIndex
 
             $imagesToProcess += [pscustomobject]@{
-                File = $image
-                Published = ($image.BaseName + ".avif")
+                File           = $image
+                Published      = ($image.BaseName + ".avif")
                 NeedsThumbnail = $tagTokens -contains "thumbnail"
-                NeedsTinyfile = $tagTokens -contains "gallery"
+                NeedsTinyfile  = $tagTokens -contains "gallery"
             }
         }
     }
