@@ -100,7 +100,7 @@ images:
     caption: "On The Way"
 
   "1000032961.avif":
-    source: "1000032961.jpg"
+    source: "1000032961.png"
     include: true
     gallery: false
     thumbnail: false
