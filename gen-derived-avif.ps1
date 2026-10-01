@@ -246,7 +246,7 @@ function Resolve-PostFolders
     }
 
     $sourceDirectory = [System.IO.DirectoryInfo]$sourceItem
-    if ((Get-PrimaryImages -Folder $sourceDirectory).Count -gt 0)
+    if (@(Get-PrimaryImages -Folder $sourceDirectory).Count -gt 0)
     {
         return @($sourceDirectory)
     }

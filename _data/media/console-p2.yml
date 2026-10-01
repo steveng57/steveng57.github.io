@@ -1,4 +1,4 @@
-cover: "IMG_3060.HEIC"
+cover: "Console - 1 Oct 2026, 10_39_34.avif"
 
 images:
   "IMG_3047.avif":
@@ -19,7 +19,7 @@ images:
     source: "IMG_3060.HEIC"
     include: true
     gallery: false
-    thumbnail: true
+    thumbnail: false
     caption: "Empty Crates"
 
   "IMG_3064.avif":
@@ -126,3 +126,38 @@ images:
     gallery: false
     thumbnail: false
     caption: "Theres the walnut"
+
+  "Console - 1 Oct 2026, 10_38_33.avif":
+    source: "Console - 1 Oct 2026, 10_38_33.png"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Head On"
+
+  "Console - 1 Oct 2026, 10_39_20.avif":
+    source: "Console - 1 Oct 2026, 10_39_20.png"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "A Few Decorations"
+
+  "Console - 1 Oct 2026, 10_39_29.avif":
+    source: "Console - 1 Oct 2026, 10_39_29.png"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Getting Started"
+
+  "Console - 1 Oct 2026, 10_39_34.avif":
+    source: "Console - 1 Oct 2026, 10_39_34.png"
+    include: true
+    gallery: true
+    thumbnail: true
+    caption: "I'm Pretty"
+
+  "Console - 1 Oct 2026, 10_39_39.avif":
+    source: "Console - 1 Oct 2026, 10_39_39.png"
+    include: true
+    gallery: true
+    thumbnail: false
+    caption: "My Good Side"
