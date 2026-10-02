@@ -72,7 +72,7 @@ images:
     caption: "Sticks turned into pallets"
 
   "IMG_3106.avif":
-    source: "IMG_3106.HEIC"
+    source: "IMG_3106.png"
     include: true
     gallery: false
     thumbnail: false

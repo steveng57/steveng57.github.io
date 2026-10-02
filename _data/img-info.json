@@ -672,11 +672,18 @@
     "height": 1536
   },
   "assets/img/posts/console-p2/IMG_3106.avif": {
-    "title": "",
-    "subject": "",
-    "datetaken": "2026-09-15T11:52:30",
-    "width": 1536,
-    "height": 2048
+    "title": "image.png",
+    "subject": "image.png",
+    "datetaken": null,
+    "width": 1086,
+    "height": 1448
+  },
+  "assets/img/posts/console-p2/IMG_3106.png": {
+    "title": "image.png",
+    "subject": "image.png",
+    "datetaken": null,
+    "width": 1086,
+    "height": 1448
   },
   "assets/img/posts/console-p2/IMG_3110.avif": {
     "title": "",
