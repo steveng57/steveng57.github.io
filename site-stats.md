@@ -28,6 +28,7 @@ This page is a technical snapshot of the site. It is intended for us geeks to ch
   <div class="stats-card"><span class="stats-value">{{ assets.images }}</span><span class="stats-label">Published images</span></div>
   <div class="stats-card"><span class="stats-value">{{ assets.gallery_images }}</span><span class="stats-label">Gallery images</span></div>
   <div class="stats-card"><span class="stats-value">{{ assets.size }}</span><span class="stats-label">Static assets</span></div>
+  {% unless assets.available %}<p class="stats-note">Asset totals above are only computed on the Cloudflare Pages build; local builds skip the scan to keep <code>jekyll serve</code> fast.</p>{% endunless %}
   <div class="stats-card"><span class="stats-value">{{ build.generated_at | date: "%b %-d, %Y" }}</span><span class="stats-label">Last generated</span></div>
 </div>
 
@@ -102,6 +103,7 @@ This page is a technical snapshot of the site. It is intended for us geeks to ch
 These totals cover static files selected for publication. Original photos, source videos, scripts, and other files intentionally excluded from the generated site are not counted.
 {: .stats-note}
 
+{% if assets.available %}
 <div class="stats-grid">
   <div class="stats-card"><span class="stats-value">{{ assets.files }}</span><span class="stats-label">Static files</span></div>
   <div class="stats-card"><span class="stats-value">{{ assets.images }}</span><span class="stats-label">Images · {{ assets.image_size }}</span></div>
@@ -136,6 +138,9 @@ These totals cover static files selected for publication. Original photos, sourc
     </table>
   </div>
 </details>
+{% else %}
+<p class="stats-note">Static asset scanning is skipped on local and CI builds to keep them fast. View this page on the live Cloudflare Pages site for full asset totals.</p>
+{% endif %}
 
 ## Site configuration
 

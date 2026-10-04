@@ -15,8 +15,14 @@ module Jekyll
 
     def generate(site)
       posts = site.posts.docs
-      static_assets = asset_inventory(site.static_files)
-      static_assets['gallery_images'] = gallery_image_count(site, site.static_files)
+      static_assets = if cloudflare_build?
+                        inventory = asset_inventory(site.static_files)
+                        inventory['gallery_images'] = gallery_image_count(site, site.static_files)
+                        inventory['available'] = true
+                        inventory
+                      else
+                        placeholder_asset_stats
+                      end
 
       site.config['site_stats'] = {
         'build' => build_stats(site),
@@ -114,6 +120,32 @@ module Jekyll
         'video_size' => human_size(video_bytes),
         'formats' => formats,
         'largest' => entries.sort_by { |entry| [-entry['bytes'], entry['path']] }.first(20)
+      }
+    end
+
+    # Scanning every static file (File.size on thousands of photos/videos) is slow
+    # enough to noticeably impact local `jekyll serve` rebuilds, so it only runs
+    # on the real Cloudflare Pages deploy; other builds get placeholder_asset_stats.
+    def cloudflare_build?
+      ENV['CF_PAGES'] == '1'
+    end
+
+    def placeholder_asset_stats
+      {
+        'available' => false,
+        'files' => 0,
+        'bytes' => 0,
+        'size' => '—',
+        'images' => '—',
+        'image_bytes' => 0,
+        'image_size' => '—',
+        'gallery_images' => '—',
+        'videos' => '—',
+        'hls_files' => 0,
+        'video_bytes' => 0,
+        'video_size' => '—',
+        'formats' => [],
+        'largest' => []
       }
     end
 
