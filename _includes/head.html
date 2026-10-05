@@ -25,7 +25,24 @@
     {% include media-url.html src=src subpath=page.media_subpath absolute=true %}
     {%- endcapture -%}
 
+    {%- comment -%}
+    jekyll-seo-tag resolves a bare `image.path` relative to the page's own
+    URL (not the site root) unless it starts with '/'. Reproduce that same
+    rule here so `old_url` matches what it actually rendered into
+    `seo_tags`; otherwise the replace below silently no-ops and the broken
+    `/<page-url>/<filename>` image URL leaks into og:image/twitter:image.
+    {%- endcomment -%}
+    {% assign _seo_raw_first_char = seo_raw_src | slice: 0 %}
+    {% if seo_raw_src contains '://' or _seo_raw_first_char == '/' %}
     {%- capture old_url -%}{{ seo_raw_src | absolute_url }}{%- endcapture -%}
+    {% else %}
+    {% assign _seo_page_dir = page.url %}
+    {% assign _seo_page_dir_last_char = _seo_page_dir | slice: -1 %}
+    {% unless _seo_page_dir_last_char == '/' %}
+    {% assign _seo_page_dir = _seo_page_dir | append: '/' %}
+    {% endunless %}
+    {%- capture old_url -%}{{ _seo_page_dir | append: seo_raw_src | absolute_url }}{%- endcapture -%}
+    {% endif %}
     {%- capture new_url -%}{{ img_url }}{%- endcapture -%}
 
     {% assign seo_tags = seo_tags | replace: old_url, new_url %}
