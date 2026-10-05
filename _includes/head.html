@@ -68,6 +68,24 @@
     {% assign seo_tags = seo_tags | replace: old_meta_clip, new_meta_clip %}
     {% endif %}
 
+    {%- comment -%}
+    Facebook's scraper doesn't reliably recognize a single combined
+    `name="twitter:description" property="og:description"` tag (jekyll-seo-tag's
+    default), flagging og:description as missing. Split it into two
+    dedicated tags.
+    {%- endcomment -%}
+    {% assign _desc_marker = '<meta name="twitter:description" property="og:description" content="' %}
+    {% if seo_tags contains _desc_marker %}
+    {% assign _desc_split = seo_tags | split: _desc_marker %}
+    {% assign _desc_rest = _desc_split[1] | split: '" />' %}
+    {% assign _desc_value = _desc_rest[0] %}
+    {% assign _desc_tail_parts = _desc_rest | slice: 1, _desc_rest.size %}
+    {% assign _desc_tail = _desc_tail_parts | join: '" />' %}
+    {%- capture _desc_tags -%}<meta property="og:description" content="{{ _desc_value }}" />
+    <meta name="twitter:description" content="{{ _desc_value }}" />{%- endcapture -%}
+    {% assign seo_tags = _desc_split[0] | append: _desc_tags | append: _desc_tail %}
+    {% endif %}
+
     {{ seo_tags }}
 
     {%- if site.social.fediverse_handle %}
