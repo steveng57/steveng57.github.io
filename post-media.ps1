@@ -3,11 +3,13 @@
 Set-StrictMode -Version Latest
 . (Join-Path $PSScriptRoot "media-manifest.ps1")
 
-function Assert-SafeImportCandidateNames {
+function Assert-SafeImportCandidateNames
+{
     param([System.IO.FileInfo[]]$Candidates)
 
     $unsafe = @(@($Candidates) | Where-Object { -not (Test-SafeMediaFileName -FileName $_.Name) })
-    if ($unsafe.Count -eq 0) {
+    if ($unsafe.Count -eq 0)
+    {
         return
     }
 
@@ -15,16 +17,19 @@ function Assert-SafeImportCandidateNames {
     throw "These source file names have characters that break site-relative URLs (only letters, digits, '.', '_', '-' are allowed): '$names'. Rename the file(s) before importing."
 }
 
-function ConvertTo-SiteImageName {
+function ConvertTo-SiteImageName
+{
     param([Parameter(Mandatory = $true)][string]$ImageName)
 
     $trimmed = $ImageName.Trim()
     $extension = [System.IO.Path]::GetExtension($trimmed).ToLowerInvariant()
-    if ($extension -in @(".heic", ".jpg", ".jpeg", ".png")) {
+    if ($extension -in @(".heic", ".jpg", ".jpeg", ".png"))
+    {
         $directory = [System.IO.Path]::GetDirectoryName($trimmed)
         $baseName = [System.IO.Path]::GetFileNameWithoutExtension($trimmed)
         $avifName = "$baseName.avif"
-        if ([string]::IsNullOrWhiteSpace($directory)) {
+        if ([string]::IsNullOrWhiteSpace($directory))
+        {
             return $avifName
         }
 
@@ -34,16 +39,19 @@ function ConvertTo-SiteImageName {
     return $trimmed
 }
 
-function ConvertTo-YamlBoolean {
+function ConvertTo-YamlBoolean
+{
     param([bool]$Value)
 
     return $Value.ToString().ToLowerInvariant()
 }
 
-function Get-ImportableMedia {
+function Get-ImportableMedia
+{
     param([string]$Folder)
 
-    if ([string]::IsNullOrWhiteSpace($Folder) -or -not (Test-Path -LiteralPath $Folder)) {
+    if ([string]::IsNullOrWhiteSpace($Folder) -or -not (Test-Path -LiteralPath $Folder))
+    {
         return @()
     }
 
@@ -53,30 +61,37 @@ function Get-ImportableMedia {
         Sort-Object Name)
 }
 
-function Get-ImportableMediaFiles {
+function Get-ImportableMediaFiles
+{
     param([string[]]$Paths)
 
-    if ($null -eq $Paths -or $Paths.Count -eq 0) {
+    if ($null -eq $Paths -or $Paths.Count -eq 0)
+    {
         return @()
     }
 
     $extensions = @(".jpg", ".jpeg", ".png", ".heic", ".avif", ".mp4", ".mov")
     $files = @()
-    foreach ($path in $Paths) {
-        if ([string]::IsNullOrWhiteSpace($path)) {
+    foreach ($path in $Paths)
+    {
+        if ([string]::IsNullOrWhiteSpace($path))
+        {
             continue
         }
 
-        if (-not (Test-Path -LiteralPath $path)) {
+        if (-not (Test-Path -LiteralPath $path))
+        {
             throw "Media file does not exist: $path"
         }
 
         $item = Get-Item -LiteralPath $path
-        if ($item.PSIsContainer) {
+        if ($item.PSIsContainer)
+        {
             throw "Expected a file but got a folder: $path"
         }
 
-        if ($extensions -notcontains $item.Extension.ToLowerInvariant()) {
+        if ($extensions -notcontains $item.Extension.ToLowerInvariant())
+        {
             throw "Unsupported media extension '$($item.Extension)' for $path"
         }
 
@@ -86,7 +101,8 @@ function Get-ImportableMediaFiles {
     return @($files | Sort-Object Name)
 }
 
-function Resolve-CoverSourceName {
+function Resolve-CoverSourceName
+{
     param(
         [Parameter(Mandatory = $true)][string]$CoverValue,
         [System.IO.FileInfo[]]$ImportedCandidates
@@ -101,14 +117,16 @@ function Resolve-CoverSourceName {
         } |
         Select-Object -First 1)
 
-    if ($matchingMaster.Count -gt 0) {
+    if ($matchingMaster.Count -gt 0)
+    {
         return $matchingMaster[0].Name
     }
 
     return $CoverValue
 }
 
-function Get-ImportedImageIncludeBlock {
+function Get-ImportedImageIncludeBlock
+{
     param(
         [System.IO.FileInfo[]]$ImportedCandidates,
         [string]$FallbackImage
@@ -120,13 +138,16 @@ function Get-ImportedImageIncludeBlock {
         ForEach-Object { ConvertTo-SiteImageName -ImageName $_.Name } |
         Sort-Object -Unique)
 
-    if ($imageNames.Count -eq 0 -and -not [string]::IsNullOrWhiteSpace($FallbackImage)) {
+    if ($imageNames.Count -eq 0 -and -not [string]::IsNullOrWhiteSpace($FallbackImage))
+    {
         $imageNames = @($FallbackImage)
     }
 
     $lines = @()
-    foreach ($imageName in $imageNames) {
-        if (-not [string]::IsNullOrWhiteSpace($imageName)) {
+    foreach ($imageName in $imageNames)
+    {
+        if (-not [string]::IsNullOrWhiteSpace($imageName))
+        {
             $lines += "{% include figure.html img=`"$imageName`" %}`r`n`r`n{% include clear-float.html %}"
         }
     }
@@ -134,20 +155,23 @@ function Get-ImportedImageIncludeBlock {
     return ($lines -join "`r`n`r`n")
 }
 
-function ConvertTo-VideoId {
+function ConvertTo-VideoId
+{
     param([Parameter(Mandatory = $true)][string]$Value)
 
     $id = [System.IO.Path]::GetFileNameWithoutExtension($Value).ToLowerInvariant()
     $id = $id -replace "[^a-z0-9]+", "-"
     $id = $id.Trim("-")
-    if ([string]::IsNullOrWhiteSpace($id)) {
+    if ([string]::IsNullOrWhiteSpace($id))
+    {
         return "video"
     }
 
     return "$id-abr"
 }
 
-function Test-ObjectProperty {
+function Test-ObjectProperty
+{
     param(
         $InputObject,
         [Parameter(Mandatory = $true)][string]$Name
@@ -160,22 +184,27 @@ function Test-ObjectProperty {
     )
 }
 
-function Get-VideoOrientation {
+function Get-VideoOrientation
+{
     param([Parameter(Mandatory = $true)][System.IO.FileInfo]$Video)
 
-    if (-not (Get-Command ffprobe -ErrorAction SilentlyContinue)) {
+    if (-not (Get-Command ffprobe -ErrorAction SilentlyContinue))
+    {
         return ""
     }
 
-    try {
+    try
+    {
         $json = & ffprobe -v error -select_streams v:0 -show_entries "stream=width,height:stream_tags=rotate:stream_side_data=rotation" -of json $Video.FullName
-        if ($LASTEXITCODE -ne 0) {
+        if ($LASTEXITCODE -ne 0)
+        {
             return ""
         }
 
         $info = $json | ConvertFrom-Json
         $stream = $info.streams | Select-Object -First 1
-        if (-not $stream) {
+        if (-not $stream)
+        {
             return ""
         }
 
@@ -183,40 +212,49 @@ function Get-VideoOrientation {
         $height = if (Test-ObjectProperty -InputObject $stream -Name "height") { [int]$stream.height } else { 0 }
         $rotation = 0
         if ((Test-ObjectProperty -InputObject $stream -Name "tags") -and
-            (Test-ObjectProperty -InputObject $stream.tags -Name "rotate")) {
+            (Test-ObjectProperty -InputObject $stream.tags -Name "rotate"))
+        {
             $rotation = [int]$stream.tags.rotate
         }
-        elseif (Test-ObjectProperty -InputObject $stream -Name "side_data_list") {
-            foreach ($sideData in @($stream.side_data_list)) {
-                if (Test-ObjectProperty -InputObject $sideData -Name "rotation") {
+        elseif (Test-ObjectProperty -InputObject $stream -Name "side_data_list")
+        {
+            foreach ($sideData in @($stream.side_data_list))
+            {
+                if (Test-ObjectProperty -InputObject $sideData -Name "rotation")
+                {
                     $rotation = [int]$sideData.rotation
                     break
                 }
             }
         }
 
-        if ([Math]::Abs($rotation) % 180 -eq 90) {
+        if ([Math]::Abs($rotation) % 180 -eq 90)
+        {
             $temp = $width
             $width = $height
             $height = $temp
         }
 
-        if ($width -gt 0 -and $height -gt $width) {
+        if ($width -gt 0 -and $height -gt $width)
+        {
             return "portrait"
         }
 
-        if ($width -gt 0 -and $height -gt 0) {
+        if ($width -gt 0 -and $height -gt 0)
+        {
             return "landscape"
         }
     }
-    catch {
+    catch
+    {
         return ""
     }
 
     return ""
 }
 
-function Get-ImportedVideoIncludeBlock {
+function Get-ImportedVideoIncludeBlock
+{
     param(
         [System.IO.FileInfo[]]$ImportedCandidates,
         [string]$PostTitle
@@ -226,12 +264,14 @@ function Get-ImportedVideoIncludeBlock {
         Where-Object { @(".mp4", ".mov") -contains $_.Extension.ToLowerInvariant() } |
         Sort-Object Name)
 
-    if ($videoFiles.Count -eq 0) {
+    if ($videoFiles.Count -eq 0)
+    {
         return ""
     }
 
     $blocks = @()
-    foreach ($video in $videoFiles) {
+    foreach ($video in $videoFiles)
+    {
         $baseName = [System.IO.Path]::GetFileNameWithoutExtension($video.Name)
         $playerId = ConvertTo-VideoId -Value $video.Name
         $mp4Line = if ($video.Extension.ToLowerInvariant() -eq ".mp4") { "  mp4=`"$($video.Name)`"`r`n" } else { "  mp4=`"`"`r`n" }
@@ -255,7 +295,8 @@ ${orientationLine}  title="$(($PostTitle).Replace('"', '&quot;'))"
     return ($blocks -join "`r`n")
 }
 
-function New-MediaManifestImageEntryLines {
+function New-MediaManifestImageEntryLines
+{
     param(
         [Parameter(Mandatory = $true)][System.IO.FileInfo]$Image,
         [bool]$Thumbnail
@@ -272,7 +313,8 @@ function New-MediaManifestImageEntryLines {
     )
 }
 
-function New-MediaManifestVideoEntryLines {
+function New-MediaManifestVideoEntryLines
+{
     param([Parameter(Mandatory = $true)][System.IO.FileInfo]$Video)
 
     $baseName = [System.IO.Path]::GetFileNameWithoutExtension($Video.Name)
@@ -285,7 +327,8 @@ function New-MediaManifestVideoEntryLines {
     )
 }
 
-function New-MediaManifestContent {
+function New-MediaManifestContent
+{
     param(
         [System.IO.FileInfo[]]$ImportedCandidates,
         [string]$CoverSource
@@ -299,15 +342,18 @@ function New-MediaManifestContent {
         Where-Object { @(".mp4", ".mov") -contains $_.Extension.ToLowerInvariant() } |
         Sort-Object Name)
 
-    if ($imageFiles.Count -eq 0 -and $videoFiles.Count -eq 0) {
+    if ($imageFiles.Count -eq 0 -and $videoFiles.Count -eq 0)
+    {
         return ""
     }
 
     $coverBase = [System.IO.Path]::GetFileNameWithoutExtension($CoverSource)
     $images = @()
     $videos = @()
-    if ($imageFiles.Count -gt 0) {
-        foreach ($image in $imageFiles) {
+    if ($imageFiles.Count -gt 0)
+    {
+        foreach ($image in $imageFiles)
+        {
             $isCover = ([System.IO.Path]::GetFileNameWithoutExtension($image.Name) -eq $coverBase)
             $publishedName = ConvertTo-SiteImageName -ImageName $image.Name
             $images += [pscustomobject]@{
@@ -321,8 +367,10 @@ function New-MediaManifestContent {
         }
     }
 
-    if ($videoFiles.Count -gt 0) {
-        foreach ($video in $videoFiles) {
+    if ($videoFiles.Count -gt 0)
+    {
+        foreach ($video in $videoFiles)
+        {
             $baseName = [System.IO.Path]::GetFileNameWithoutExtension($video.Name)
             $videos += [pscustomobject]@{
                 Source    = $video.Name
@@ -337,26 +385,30 @@ function New-MediaManifestContent {
     return ConvertTo-MediaManifestContent -Cover $CoverSource -Images $images -Videos $videos
 }
 
-function Test-HasImportedVideo {
+function Test-HasImportedVideo
+{
     param([System.IO.FileInfo[]]$ImportedCandidates)
 
     return (@($ImportedCandidates | Where-Object { @(".mp4", ".mov") -contains $_.Extension.ToLowerInvariant() }).Count -gt 0)
 }
 
-function Test-HasImportedImage {
+function Test-HasImportedImage
+{
     param([System.IO.FileInfo[]]$ImportedCandidates)
 
     return (@($ImportedCandidates | Where-Object { @(".avif", ".png", ".jpg", ".jpeg", ".heic") -contains $_.Extension.ToLowerInvariant() }).Count -gt 0)
 }
 
-function Invoke-ScopedDerivativeGeneration {
+function Invoke-ScopedDerivativeGeneration
+{
     param(
         [Parameter(Mandatory = $true)][string]$RepoRoot,
         [Parameter(Mandatory = $true)][string]$MediaPath
     )
 
     $generatorPath = Join-Path $RepoRoot "gen-derived-avif.ps1"
-    if (-not (Test-Path -LiteralPath $generatorPath)) {
+    if (-not (Test-Path -LiteralPath $generatorPath))
+    {
         Write-Warning "gen-derived-avif.ps1 was not found; skipping derivative generation."
         return
     }
@@ -365,14 +417,16 @@ function Invoke-ScopedDerivativeGeneration {
     & $generatorPath -PostPath $MediaPath
 }
 
-function Invoke-ScopedHlsGeneration {
+function Invoke-ScopedHlsGeneration
+{
     param(
         [Parameter(Mandatory = $true)][string]$RepoRoot,
         [Parameter(Mandatory = $true)][string]$PostSlug
     )
 
     $generatorPath = Join-Path $RepoRoot "gen-hls.ps1"
-    if (-not (Test-Path -LiteralPath $generatorPath)) {
+    if (-not (Test-Path -LiteralPath $generatorPath))
+    {
         Write-Warning "gen-hls.ps1 was not found; skipping HLS generation."
         return
     }
@@ -381,15 +435,18 @@ function Invoke-ScopedHlsGeneration {
     & $generatorPath -PostsRoot (Join-Path (Join-Path (Join-Path $RepoRoot "assets") "img") "posts") -TargetPosts $PostSlug
 }
 
-function Get-MediaManifestSourceNames {
+function Get-MediaManifestSourceNames
+{
     param([Parameter(Mandatory = $true)][string]$ManifestPath)
 
-    if (-not (Test-Path -LiteralPath $ManifestPath)) {
+    if (-not (Test-Path -LiteralPath $ManifestPath))
+    {
         return @()
     }
 
     $manifest = Read-MediaManifestFile -ManifestPath $ManifestPath
-    if (-not $manifest) {
+    if (-not $manifest)
+    {
         return @()
     }
 
@@ -398,21 +455,24 @@ function Get-MediaManifestSourceNames {
         Where-Object { -not [string]::IsNullOrWhiteSpace($_) })
 }
 
-function Add-ManifestSectionEntries {
+function Add-ManifestSectionEntries
+{
     param(
         [Parameter(Mandatory = $true)][string]$Content,
         [Parameter(Mandatory = $true)][string]$SectionName,
         [string[]]$EntryLines
     )
 
-    if ($EntryLines.Count -eq 0) {
+    if ($EntryLines.Count -eq 0)
+    {
         return $Content
     }
 
     $entryText = ($EntryLines -join "`r`n") + "`r`n"
     $sectionPattern = "(?m)^$([regex]::Escape($SectionName)):\s*$"
     $sectionMatch = [regex]::Match($Content, $sectionPattern)
-    if (-not $sectionMatch.Success) {
+    if (-not $sectionMatch.Success)
+    {
         $prefix = if ($Content.Trim().Length -eq 0) { "" } else { "`r`n" }
         return $Content.TrimEnd() + $prefix + "${SectionName}:`r`n" + $entryText
     }
@@ -420,7 +480,8 @@ function Add-ManifestSectionEntries {
     $afterSection = $sectionMatch.Index + $sectionMatch.Length
     $rest = $Content.Substring($afterSection)
     $nextTopLevel = [regex]::Match($rest, "(?m)^\S[^:`r`n]*:\s*")
-    if ($nextTopLevel.Success) {
+    if ($nextTopLevel.Success)
+    {
         $insertAt = $afterSection + $nextTopLevel.Index
         return $Content.Substring(0, $insertAt).TrimEnd() + "`r`n" + $entryText + $Content.Substring($insertAt)
     }
@@ -428,7 +489,8 @@ function Add-ManifestSectionEntries {
     return $Content.TrimEnd() + "`r`n" + $entryText
 }
 
-function Add-MediaManifestEntries {
+function Add-MediaManifestEntries
+{
     param(
         [Parameter(Mandatory = $true)][string]$ManifestPath,
         [Parameter(Mandatory = $true)][System.IO.FileInfo[]]$ImportedCandidates,
@@ -436,7 +498,8 @@ function Add-MediaManifestEntries {
     )
 
     $manifest = Read-MediaManifestFile -ManifestPath $ManifestPath
-    if (-not $manifest) {
+    if (-not $manifest)
+    {
         $manifest = [pscustomobject]@{
             Cover  = $CoverSource
             Images = @()
@@ -444,7 +507,8 @@ function Add-MediaManifestEntries {
         }
     }
 
-    if ([string]::IsNullOrWhiteSpace($manifest.Cover)) {
+    if ([string]::IsNullOrWhiteSpace($manifest.Cover))
+    {
         $manifest.Cover = $CoverSource
     }
 
@@ -452,19 +516,24 @@ function Add-MediaManifestEntries {
         ForEach-Object { $_.Source } |
         Where-Object { -not [string]::IsNullOrWhiteSpace($_) })
     $newItems = @($ImportedCandidates | Where-Object { $existingSources -notcontains $_.Name })
-    if ($newItems.Count -eq 0) {
+    if ($newItems.Count -eq 0)
+    {
         return @()
     }
 
-    if ([string]::IsNullOrWhiteSpace($manifest.Cover)) {
+    if ([string]::IsNullOrWhiteSpace($manifest.Cover))
+    {
         $firstImage = @($newItems | Where-Object { @(".avif", ".png", ".jpg", ".jpeg", ".heic") -contains $_.Extension.ToLowerInvariant() } | Select-Object -First 1)
-        if ($firstImage.Count -gt 0) {
+        if ($firstImage.Count -gt 0)
+        {
             $manifest.Cover = $firstImage[0].Name
         }
     }
 
-    foreach ($item in $newItems) {
-        if (@(".avif", ".png", ".jpg", ".jpeg", ".heic") -contains $item.Extension.ToLowerInvariant()) {
+    foreach ($item in $newItems)
+    {
+        if (@(".avif", ".png", ".jpg", ".jpeg", ".heic") -contains $item.Extension.ToLowerInvariant())
+        {
             $manifest.Images += [pscustomobject]@{
                 Source    = $item.Name
                 Published = ConvertTo-SiteImageName -ImageName $item.Name
@@ -474,7 +543,8 @@ function Add-MediaManifestEntries {
                 Caption   = ""
             }
         }
-        elseif (@(".mp4", ".mov") -contains $item.Extension.ToLowerInvariant()) {
+        elseif (@(".mp4", ".mov") -contains $item.Extension.ToLowerInvariant())
+        {
             $baseName = [System.IO.Path]::GetFileNameWithoutExtension($item.Name)
             $manifest.Videos += [pscustomobject]@{
                 Source    = $item.Name

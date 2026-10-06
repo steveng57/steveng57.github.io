@@ -2,37 +2,44 @@
 
 Set-StrictMode -Version Latest
 
-function ConvertTo-BoolValue {
+function ConvertTo-BoolValue
+{
     param($Value)
 
-    if ($null -eq $Value) {
+    if ($null -eq $Value)
+    {
         return $false
     }
 
     return @('true', 'yes', '1', 'on') -contains $Value.ToString().Trim().ToLowerInvariant()
 }
 
-function ConvertTo-YamlString {
+function ConvertTo-YamlString
+{
     param([string]$Value)
 
-    if ($null -eq $Value) {
+    if ($null -eq $Value)
+    {
         return '""'
     }
 
     return '"' + ($Value -replace '\\', '\\' -replace '"', '\"') + '"'
 }
 
-function ConvertTo-YamlBoolean {
+function ConvertTo-YamlBoolean
+{
     param([bool]$Value)
 
     return $Value.ToString().ToLowerInvariant()
 }
 
-function Test-SafeMediaFileName {
+function Test-SafeMediaFileName
+{
     param([Parameter(Mandatory = $true)][string]$FileName)
 
     $trimmed = $FileName.Trim()
-    if ([string]::IsNullOrWhiteSpace($trimmed)) {
+    if ([string]::IsNullOrWhiteSpace($trimmed))
+    {
         return $false
     }
 
@@ -42,12 +49,15 @@ function Test-SafeMediaFileName {
     # restrict every path segment (file name and any subfolders, e.g. the
     # `stream/<name>/master.m3u8` HLS layout) to a safe, portable character set.
     $segments = @($trimmed -split '[\\/]' | Where-Object { $_ -ne '' })
-    if ($segments.Count -eq 0) {
+    if ($segments.Count -eq 0)
+    {
         return $false
     }
 
-    foreach ($segment in $segments) {
-        if ($segment -notmatch '^[A-Za-z0-9._-]+$') {
+    foreach ($segment in $segments)
+    {
+        if ($segment -notmatch '^[A-Za-z0-9._-]+$')
+        {
             return $false
         }
     }
@@ -55,27 +65,32 @@ function Test-SafeMediaFileName {
     return $true
 }
 
-function Assert-SafeMediaFileName {
+function Assert-SafeMediaFileName
+{
     param(
         [Parameter(Mandatory = $true)][string]$FileName,
         [string]$Context = "Media file name"
     )
 
-    if (-not (Test-SafeMediaFileName -FileName $FileName)) {
+    if (-not (Test-SafeMediaFileName -FileName $FileName))
+    {
         throw "$Context has characters that break site-relative URLs (only letters, digits, '.', '_', '-' are allowed): '$FileName'. Rename the file before importing it."
     }
 }
 
-function ConvertTo-SiteImageName {
+function ConvertTo-SiteImageName
+{
     param([Parameter(Mandatory = $true)][string]$ImageName)
 
     $trimmed = $ImageName.Trim().Trim('"').Trim("'")
     $extension = [System.IO.Path]::GetExtension($trimmed).ToLowerInvariant()
-    if ($extension -in @(".heic", ".jpg", ".jpeg", ".png")) {
+    if ($extension -in @(".heic", ".jpg", ".jpeg", ".png"))
+    {
         $directory = [System.IO.Path]::GetDirectoryName($trimmed)
         $baseName = [System.IO.Path]::GetFileNameWithoutExtension($trimmed)
         $avifName = "$baseName.avif"
-        if ([string]::IsNullOrWhiteSpace($directory)) {
+        if ([string]::IsNullOrWhiteSpace($directory))
+        {
             return $avifName
         }
 
@@ -85,20 +100,24 @@ function ConvertTo-SiteImageName {
     return $trimmed
 }
 
-function Get-PublishedImageName {
+function Get-PublishedImageName
+{
     param([Parameter(Mandatory = $true)]$Image)
 
-    if ($Image.PSObject.Properties.Name -contains 'Published' -and -not [string]::IsNullOrWhiteSpace($Image.Published)) {
+    if ($Image.PSObject.Properties.Name -contains 'Published' -and -not [string]::IsNullOrWhiteSpace($Image.Published))
+    {
         return $Image.Published
     }
 
     return ConvertTo-SiteImageName -ImageName $Image.Source
 }
 
-function Get-PublishedVideoName {
+function Get-PublishedVideoName
+{
     param([Parameter(Mandatory = $true)]$Video)
 
-    if ($Video.PSObject.Properties.Name -contains 'Published' -and -not [string]::IsNullOrWhiteSpace($Video.Published)) {
+    if ($Video.PSObject.Properties.Name -contains 'Published' -and -not [string]::IsNullOrWhiteSpace($Video.Published))
+    {
         return $Video.Published
     }
 
@@ -106,13 +125,15 @@ function Get-PublishedVideoName {
     return "stream/$baseName/master.m3u8"
 }
 
-function Get-MediaDataDirectory {
+function Get-MediaDataDirectory
+{
     param([string]$RepoRoot = (Get-Location).Path)
 
     return Join-Path (Join-Path $RepoRoot "_data") "media"
 }
 
-function Get-MediaManifestPath {
+function Get-MediaManifestPath
+{
     param(
         [Parameter(Mandatory = $true)][string]$Slug,
         [string]$RepoRoot = (Get-Location).Path
@@ -121,10 +142,12 @@ function Get-MediaManifestPath {
     return Join-Path (Get-MediaDataDirectory -RepoRoot $RepoRoot) "$Slug.yml"
 }
 
-function Read-MediaManifestFile {
+function Read-MediaManifestFile
+{
     param([Parameter(Mandatory = $true)][string]$ManifestPath)
 
-    if (-not (Test-Path -LiteralPath $ManifestPath)) {
+    if (-not (Test-Path -LiteralPath $ManifestPath))
+    {
         return $null
     }
 
@@ -137,18 +160,23 @@ function Read-MediaManifestFile {
     $section = ""
     $currentKey = ""
 
-    foreach ($line in Get-Content -LiteralPath $ManifestPath) {
-        if ($line -match '^\s*#' -or [string]::IsNullOrWhiteSpace($line)) {
+    foreach ($line in Get-Content -LiteralPath $ManifestPath)
+    {
+        if ($line -match '^\s*#' -or [string]::IsNullOrWhiteSpace($line))
+        {
             continue
         }
 
-        if ($line -match '^\s*cover:\s*(.*?)\s*$') {
+        if ($line -match '^\s*cover:\s*(.*?)\s*$')
+        {
             $manifest.Cover = $matches[1].Trim().Trim('"').Trim("'")
             continue
         }
 
-        if ($line -match '^\s*images:\s*$') {
-            if ($current) {
+        if ($line -match '^\s*images:\s*$')
+        {
+            if ($current)
+            {
                 if ($section -eq "images") { $manifest.Images += [pscustomobject]$current }
                 elseif ($section -eq "videos") { $manifest.Videos += [pscustomobject]$current }
             }
@@ -158,8 +186,10 @@ function Read-MediaManifestFile {
             continue
         }
 
-        if ($line -match '^\s*videos:\s*$') {
-            if ($current) {
+        if ($line -match '^\s*videos:\s*$')
+        {
+            if ($current)
+            {
                 if ($section -eq "images") { $manifest.Images += [pscustomobject]$current }
                 elseif ($section -eq "videos") { $manifest.Videos += [pscustomobject]$current }
             }
@@ -169,8 +199,10 @@ function Read-MediaManifestFile {
             continue
         }
 
-        if ($section -eq "images" -and $line -match '^\s*-\s*source:\s*(.+?)\s*$') {
-            if ($current) {
+        if ($section -eq "images" -and $line -match '^\s*-\s*source:\s*(.+?)\s*$')
+        {
+            if ($current)
+            {
                 $manifest.Images += [pscustomobject]$current
             }
 
@@ -186,8 +218,10 @@ function Read-MediaManifestFile {
             continue
         }
 
-        if ($section -eq "videos" -and $line -match '^\s*-\s*source:\s*(.+?)\s*$') {
-            if ($current) {
+        if ($section -eq "videos" -and $line -match '^\s*-\s*source:\s*(.+?)\s*$')
+        {
+            if ($current)
+            {
                 $manifest.Videos += [pscustomobject]$current
             }
 
@@ -202,8 +236,10 @@ function Read-MediaManifestFile {
             continue
         }
 
-        if ($section -eq "images" -and $line -match '^\s{2}["'']?(.+?)["'']?:\s*$') {
-            if ($current) {
+        if ($section -eq "images" -and $line -match '^\s{2}["'']?(.+?)["'']?:\s*$')
+        {
+            if ($current)
+            {
                 $manifest.Images += [pscustomobject]$current
             }
 
@@ -219,8 +255,10 @@ function Read-MediaManifestFile {
             continue
         }
 
-        if ($section -eq "videos" -and $line -match '^\s{2}["'']?(.+?)["'']?:\s*$') {
-            if ($current) {
+        if ($section -eq "videos" -and $line -match '^\s{2}["'']?(.+?)["'']?:\s*$')
+        {
+            if ($current)
+            {
                 $manifest.Videos += [pscustomobject]$current
             }
 
@@ -235,10 +273,12 @@ function Read-MediaManifestFile {
             continue
         }
 
-        if ($current -and $line -match '^\s*(source|published|poster|include|gallery|thumbnail|caption):\s*(.*?)\s*$') {
+        if ($current -and $line -match '^\s*(source|published|poster|include|gallery|thumbnail|caption):\s*(.*?)\s*$')
+        {
             $key = $matches[1].ToLowerInvariant()
             $value = $matches[2].Trim().Trim('"').Trim("'")
-            switch ($key) {
+            switch ($key)
+            {
                 'source' { $current.Source = $value }
                 'published' { $current.Published = $value }
                 'poster' { $current.Poster = $value }
@@ -250,11 +290,14 @@ function Read-MediaManifestFile {
         }
     }
 
-    if ($current) {
-        if ($section -eq "images") {
+    if ($current)
+    {
+        if ($section -eq "images")
+        {
             $manifest.Images += [pscustomobject]$current
         }
-        elseif ($section -eq "videos") {
+        elseif ($section -eq "videos")
+        {
             $manifest.Videos += [pscustomobject]$current
         }
     }
@@ -262,14 +305,16 @@ function Read-MediaManifestFile {
     return [pscustomobject]$manifest
 }
 
-function Read-MediaManifestForFolder {
+function Read-MediaManifestForFolder
+{
     param(
         [Parameter(Mandatory = $true)][System.IO.DirectoryInfo]$Folder,
         [string]$RepoRoot = (Get-Location).Path
     )
 
     $dataManifestPath = Get-MediaManifestPath -Slug $Folder.Name -RepoRoot $RepoRoot
-    if (Test-Path -LiteralPath $dataManifestPath) {
+    if (Test-Path -LiteralPath $dataManifestPath)
+    {
         return Read-MediaManifestFile -ManifestPath $dataManifestPath
     }
 
@@ -277,7 +322,8 @@ function Read-MediaManifestForFolder {
     return Read-MediaManifestFile -ManifestPath $legacyManifestPath
 }
 
-function ConvertTo-MediaManifestContent {
+function ConvertTo-MediaManifestContent
+{
     param(
         [string]$Cover,
         [object[]]$Images,
@@ -285,13 +331,15 @@ function ConvertTo-MediaManifestContent {
     )
 
     $lines = @()
-    if (-not [string]::IsNullOrWhiteSpace($Cover)) {
+    if (-not [string]::IsNullOrWhiteSpace($Cover))
+    {
         $lines += "cover: $(ConvertTo-YamlString $Cover)"
         $lines += ""
     }
 
     $lines += "images:"
-    foreach ($image in @($Images)) {
+    foreach ($image in @($Images))
+    {
         $published = Get-PublishedImageName -Image $image
         $lines += "  $(ConvertTo-YamlString $published):"
         $lines += "    source: $(ConvertTo-YamlString $image.Source)"
@@ -302,9 +350,11 @@ function ConvertTo-MediaManifestContent {
         $lines += ""
     }
 
-    if (@($Videos).Count -gt 0) {
+    if (@($Videos).Count -gt 0)
+    {
         $lines += "videos:"
-        foreach ($video in @($Videos)) {
+        foreach ($video in @($Videos))
+        {
             $published = Get-PublishedVideoName -Video $video
             $lines += "  $(ConvertTo-YamlString $published):"
             $lines += "    source: $(ConvertTo-YamlString $video.Source)"
@@ -318,7 +368,8 @@ function ConvertTo-MediaManifestContent {
     return ($lines -join "`r`n").TrimEnd()
 }
 
-function Write-MediaManifestFile {
+function Write-MediaManifestFile
+{
     param(
         [Parameter(Mandatory = $true)][string]$ManifestPath,
         [Parameter(Mandatory = $true)]$Manifest
