@@ -19,7 +19,7 @@ It was custom-made to fit a particular spot in his kitchen, so I enlisted the he
 
 ## The Coffee Pod Drawer
 
-{% include figure.html img="Sketchup - Coffee Pod Drawer.avif" align="left" %}
+{% include figure.html img="sketchup-coffee-pod-drawer.avif" align="left" %}
 
 ### The Design
 

@@ -28,6 +28,44 @@ function ConvertTo-YamlBoolean {
     return $Value.ToString().ToLowerInvariant()
 }
 
+function Test-SafeMediaFileName {
+    param([Parameter(Mandatory = $true)][string]$FileName)
+
+    $trimmed = $FileName.Trim()
+    if ([string]::IsNullOrWhiteSpace($trimmed)) {
+        return $false
+    }
+
+    # Site-relative URLs are built by simple string concatenation (see
+    # _includes/media-url.html), with no percent-encoding. Spaces, commas, and
+    # other punctuation produce broken/unescaped og:image and asset URLs, so
+    # restrict every path segment (file name and any subfolders, e.g. the
+    # `stream/<name>/master.m3u8` HLS layout) to a safe, portable character set.
+    $segments = @($trimmed -split '[\\/]' | Where-Object { $_ -ne '' })
+    if ($segments.Count -eq 0) {
+        return $false
+    }
+
+    foreach ($segment in $segments) {
+        if ($segment -notmatch '^[A-Za-z0-9._-]+$') {
+            return $false
+        }
+    }
+
+    return $true
+}
+
+function Assert-SafeMediaFileName {
+    param(
+        [Parameter(Mandatory = $true)][string]$FileName,
+        [string]$Context = "Media file name"
+    )
+
+    if (-not (Test-SafeMediaFileName -FileName $FileName)) {
+        throw "$Context has characters that break site-relative URLs (only letters, digits, '.', '_', '-' are allowed): '$FileName'. Rename the file before importing it."
+    }
+}
+
 function ConvertTo-SiteImageName {
     param([Parameter(Mandatory = $true)][string]$ImageName)
 

@@ -300,6 +300,7 @@ try {
     }
 
     $importCandidates = @(Get-ImportableMedia -Folder $ImportFrom)
+    Assert-SafeImportCandidateNames -Candidates $importCandidates
     $CoverSource = Resolve-CoverImage -CurrentValue $CoverImage -ImportedCandidates $importCandidates
     $CoverSource = Resolve-CoverSourceName -CoverValue $CoverSource -ImportedCandidates $importCandidates
     $CoverImage = $CoverSource

@@ -8,8 +8,8 @@ images:
     thumbnail: true
     caption: "Curing"
 
-  "Sketchup - Coffee Pod Drawer.avif":
-    source: "Sketchup - Coffee Pod Drawer.jpeg"
+  "sketchup-coffee-pod-drawer.avif":
+    source: "sketchup-coffee-pod-drawer.jpeg"
     include: true
     gallery: true
     thumbnail: false

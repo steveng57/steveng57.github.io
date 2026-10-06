@@ -3,6 +3,18 @@
 Set-StrictMode -Version Latest
 . (Join-Path $PSScriptRoot "media-manifest.ps1")
 
+function Assert-SafeImportCandidateNames {
+    param([System.IO.FileInfo[]]$Candidates)
+
+    $unsafe = @(@($Candidates) | Where-Object { -not (Test-SafeMediaFileName -FileName $_.Name) })
+    if ($unsafe.Count -eq 0) {
+        return
+    }
+
+    $names = ($unsafe | ForEach-Object { $_.Name }) -join "', '"
+    throw "These source file names have characters that break site-relative URLs (only letters, digits, '.', '_', '-' are allowed): '$names'. Rename the file(s) before importing."
+}
+
 function ConvertTo-SiteImageName {
     param([Parameter(Mandatory = $true)][string]$ImageName)
 

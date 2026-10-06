@@ -322,6 +322,7 @@ try {
     if ($importCandidates.Count -eq 0) {
         throw "No importable media found. Supported extensions: HEIC, JPG, JPEG, PNG, AVIF, MP4, MOV."
     }
+    Assert-SafeImportCandidateNames -Candidates $importCandidates
 
     if (-not $PSBoundParameters.ContainsKey("GenerateDerivatives")) {
         $GenerateDerivatives = Read-YesNo -Prompt "Generate derived image/video assets for imported media now?" -DefaultValue $true

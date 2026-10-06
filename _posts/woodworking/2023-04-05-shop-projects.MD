@@ -18,7 +18,7 @@ In late winter of 2023, I decided a workshop upgrade was due. You can never have
 
 ## Under Construction
 
-{% include figure.html img="Sketchup%20of%20Router%20Table.avif" align="left" %}
+{% include figure.html img="sketchup-router-table.avif" align="left" %}
 
 ### Router Stand
 
@@ -34,7 +34,7 @@ The steel top on the new router table is awesome. It provides nice, level, even 
 
 {% include clear-float.html %}
 
-{% include figure.html img="Sketchup%20of%20Mitre%20Stand.avif" align="left" %}
+{% include figure.html img="sketchup-mitre-stand.avif" align="left" %}
 
 ### Mitre Saw Stand
 

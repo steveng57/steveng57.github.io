@@ -8,15 +8,15 @@ images:
     thumbnail: true
     caption: "Mitre Stand"
 
-  "Sketchup of Router Table.avif":
-    source: "Sketchup of Router Table.jpeg"
+  "sketchup-router-table.avif":
+    source: "sketchup-router-table.jpeg"
     include: true
     gallery: true
     thumbnail: false
     caption: "Router Table Sketchup"
 
-  "Sketchup of Mitre Stand.avif":
-    source: "Sketchup of Mitre Stand.jpeg"
+  "sketchup-mitre-stand.avif":
+    source: "sketchup-mitre-stand.jpeg"
     include: true
     gallery: false
     thumbnail: false

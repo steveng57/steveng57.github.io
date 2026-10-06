@@ -119,6 +119,21 @@ function Test-DuplicateValue {
     }
 }
 
+function Test-SafeFileNameValue {
+    param(
+        [string]$Value,
+        [string]$Context
+    )
+
+    if ([string]::IsNullOrWhiteSpace($Value) -or $Value -match '^[a-z]+://') {
+        return
+    }
+
+    if (-not (Test-SafeMediaFileName -FileName $Value)) {
+        Write-MediaError "$Context has characters that break site-relative URLs (only letters, digits, '.', '_', '-' are allowed): $Value"
+    }
+}
+
 function Test-MediaManifestFile {
     param(
         [System.IO.FileInfo]$ManifestFile,
@@ -142,6 +157,7 @@ function Test-MediaManifestFile {
 
     if (-not [string]::IsNullOrWhiteSpace($manifest.Cover)) {
         Test-ExistingFile -MediaDir $mediaDir -RelativePath $manifest.Cover -Context "$slug cover"
+        Test-SafeFileNameValue -Value $manifest.Cover -Context "$slug cover"
     }
 
     Test-DuplicateValue -Items $manifest.Images -Selector { param($item) Get-PublishedImageName -Image $item } -Context "$slug image published key"
@@ -155,6 +171,7 @@ function Test-MediaManifestFile {
 
         Test-ExistingFile -MediaDir $mediaDir -RelativePath $image.Source -Context "$label source"
         Test-ExistingFile -MediaDir $mediaDir -RelativePath $published -Context "$label published file" -WarningOnly
+        Test-SafeFileNameValue -Value $published -Context "$label published file"
 
         if ($image.Thumbnail) {
             Test-ExistingFile -MediaDir $mediaDir -RelativePath "thumbnails/$published" -Context "$label thumbnail" -WarningOnly
@@ -175,6 +192,7 @@ function Test-MediaManifestFile {
 
         if (-not [string]::IsNullOrWhiteSpace($video.Poster)) {
             Test-ExistingFile -MediaDir $mediaDir -RelativePath $video.Poster -Context "$label poster" -WarningOnly
+            Test-SafeFileNameValue -Value $video.Poster -Context "$label poster"
         }
     }
 }

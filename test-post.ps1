@@ -172,6 +172,10 @@ function Test-RelativeMediaFile {
         return
     }
 
+    if (-not (Test-SafeMediaFileName -FileName $Reference)) {
+        Write-CheckError "$Context has characters that break site-relative URLs (only letters, digits, '.', '_', '-' are allowed): $Reference"
+    }
+
     $pathPart = $Reference
     if ($pathPart.StartsWith("/")) {
         $pathPart = $pathPart.TrimStart("/")
@@ -253,6 +257,10 @@ function Test-MediaManifest {
         else {
             Write-CheckWarning "media manifest published file is not generated yet: $published ($($image.Source))"
         }
+
+        if (-not (Test-SafeMediaFileName -FileName $published)) {
+            Write-CheckError "media manifest published file has characters that break site-relative URLs (only letters, digits, '.', '_', '-' are allowed): $published"
+        }
     }
 
     foreach ($video in $manifest.Videos) {
@@ -280,6 +288,10 @@ function Test-MediaManifest {
             }
             else {
                 Write-CheckWarning "media manifest poster file is not generated yet: $($video.Poster) ($($video.Source))"
+            }
+
+            if (-not (Test-SafeMediaFileName -FileName $video.Poster)) {
+                Write-CheckError "media manifest poster file has characters that break site-relative URLs (only letters, digits, '.', '_', '-' are allowed): $($video.Poster)"
             }
         }
     }
