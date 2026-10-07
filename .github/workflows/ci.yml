@@ -24,6 +24,26 @@ jobs:
           ruby-version: "3.4.11"
           bundler-cache: true
 
+      - name: Validate media manifests
+        shell: pwsh
+        run: ./test-media-manifests.ps1
+
+      - name: Validate posts
+        shell: pwsh
+        run: |
+          $failed = $false
+          $posts = Get-ChildItem -Path ./_posts -Filter "*.MD" -Recurse | Sort-Object FullName
+          foreach ($post in $posts) {
+            Write-Host "::group::$($post.FullName)"
+            ./test-post.ps1 -PostPath $post.FullName
+            if ($LASTEXITCODE -ne 0) { $failed = $true }
+            Write-Host "::endgroup::"
+          }
+          if ($failed) {
+            Write-Host "One or more posts failed validation." -ForegroundColor Red
+            exit 1
+          }
+
       - name: Build site
         env:
           JEKYLL_ENV: production

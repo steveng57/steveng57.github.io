@@ -50,7 +50,7 @@ I give Newegg a **B-** rating overall.  The parts configurator was great, and pr
 
 ## The Parts
 
-{% include figure.html img="Fractal-Case.png" align="right-50" %}
+{% include figure.html img="Fractal-Case.avif" align="right-50" %}
 
 ### The Case 
 
@@ -66,7 +66,7 @@ For the CPU, I chose the latest from the Intel line, the i9 14th generation.  I 
 
 {% include clear-float.html %}
 
-{% include figure.html img="gigabyte-motherboard.png" align="right" %}
+{% include figure.html img="gigabyte-motherboard.avif" align="right" %}
 ### The Motherboard
 
 This was a bit of a departure for me.  The Gigabyte brand of motherboards is targeted a bit more toward gamers, which means it has a lot of overclocking features and flashy RGB lights to add razzle-dazzle to all your components.  I don't need or even want those things, as they can destabilize things, and my PC is hidden behind the desk anyway.
@@ -91,7 +91,7 @@ From their website:
 
 {% include clear-float.html %}
 
-{% include figure.html img="corsair-ssd.png" align="left" %}
+{% include figure.html img="corsair-ssd.avif" align="left" %}
 
 ### NVME 2.0 SSD
 
@@ -105,7 +105,7 @@ This is what a modern "hard drive" looks like.  All chips, no disks.
 
 {% include clear-float.html %}
 
-{% include figure.html img="T1000_3QTR-Front-Right.png" align="right" %}
+{% include figure.html img="T1000_3QTR-Front-Right.avif" align="right" %}
 
 ### The Video Card
 

@@ -42,3 +42,10 @@ images:
     gallery: true
     thumbnail: false
     caption: "In Place"
+
+videos:
+  "stream/daybed2/master.m3u8":
+    source: "daybed2.mp4"
+    poster: "stream/daybed2/poster.avif"
+    include: true
+    caption: ""

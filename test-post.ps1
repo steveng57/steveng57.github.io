@@ -25,24 +25,28 @@ $RepoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $script:ErrorCount = 0
 $script:WarningCount = 0
 
-function Write-CheckError {
+function Write-CheckError
+{
     param([string]$Message)
     $script:ErrorCount++
     Write-Host "[post-check] ERROR: $Message" -ForegroundColor Red
 }
 
-function Write-CheckWarning {
+function Write-CheckWarning
+{
     param([string]$Message)
     $script:WarningCount++
     Write-Host "[post-check] WARN: $Message" -ForegroundColor Yellow
 }
 
-function Write-CheckOk {
+function Write-CheckOk
+{
     param([string]$Message)
     Write-Host "[post-check] OK: $Message" -ForegroundColor Green
 }
 
-function ConvertTo-PostSlug {
+function ConvertTo-PostSlug
+{
     param([Parameter(Mandatory = $true)][string]$Value)
 
     $slug = $Value.ToLowerInvariant()
@@ -51,182 +55,284 @@ function ConvertTo-PostSlug {
     return $slug.Trim("-")
 }
 
-function Resolve-PostPath {
+function Resolve-PostPath
+{
     param(
         [string]$PathValue,
         [string]$SlugValue
     )
 
-    if (-not [string]::IsNullOrWhiteSpace($PathValue)) {
-        if ([System.IO.Path]::IsPathRooted($PathValue)) {
+    if (-not [string]::IsNullOrWhiteSpace($PathValue))
+    {
+        if ([System.IO.Path]::IsPathRooted($PathValue))
+        {
             return $PathValue
         }
         return Join-Path $RepoRoot $PathValue
     }
 
-    if ([string]::IsNullOrWhiteSpace($SlugValue)) {
+    if ([string]::IsNullOrWhiteSpace($SlugValue))
+    {
         throw "Provide either -PostPath or -Slug."
     }
 
     $postsRoot = Join-Path $RepoRoot "_posts"
     $matches = @(Get-ChildItem -Path $postsRoot -Filter "*-$SlugValue.MD" -File -Recurse)
-    if ($matches.Count -eq 0) {
+    if ($matches.Count -eq 0)
+    {
         throw "No post found for slug '$SlugValue'."
     }
-    if ($matches.Count -gt 1) {
+    if ($matches.Count -gt 1)
+    {
         throw "Multiple posts found for slug '$SlugValue': $($matches.FullName -join ', ')"
     }
 
     return $matches[0].FullName
 }
 
-function Get-FrontMatter {
+function Get-FrontMatter
+{
     param([string]$Content)
 
     $match = [regex]::Match($Content, "(?s)\A---\s*\r?\n(.*?)\r?\n---")
-    if (-not $match.Success) {
+    if (-not $match.Success)
+    {
         return $null
     }
 
     return $match.Groups[1].Value
 }
 
-function Get-Scalar {
+function Get-Scalar
+{
     param(
         [string]$FrontMatter,
         [string]$Name
     )
 
     $match = [regex]::Match($FrontMatter, "(?m)^\s*$([regex]::Escape($Name)):\s*(.*?)\s*$")
-    if ($match.Success) {
+    if ($match.Success)
+    {
         return $match.Groups[1].Value.Trim().Trim('"').Trim("'")
     }
 
     return $null
 }
 
-function Get-InlineList {
+function Get-InlineList
+{
     param(
         [string]$FrontMatter,
         [string]$Name
     )
 
     $value = Get-Scalar -FrontMatter $FrontMatter -Name $Name
-    if ([string]::IsNullOrWhiteSpace($value)) {
+    if ([string]::IsNullOrWhiteSpace($value))
+    {
         return @()
     }
 
     $match = [regex]::Match($value, "^\[(.*)\]$")
-    if (-not $match.Success) {
+    if (-not $match.Success)
+    {
         return @()
     }
 
     return @($match.Groups[1].Value -split "," | ForEach-Object { $_.Trim().Trim('"').Trim("'") } | Where-Object { $_ })
 }
 
-function Get-ImageField {
+function Get-ImageField
+{
     param(
         [string]$FrontMatter,
         [string]$Name
     )
 
     $match = [regex]::Match($FrontMatter, "(?ms)^image:\s*\r?\n(.*?)(?=^\S|\z)")
-    if (-not $match.Success) {
+    if (-not $match.Success)
+    {
         return $null
     }
 
     $block = $match.Groups[1].Value
     $field = [regex]::Match($block, "(?m)^\s+$([regex]::Escape($Name)):\s*(.*?)\s*$")
-    if ($field.Success) {
+    if ($field.Success)
+    {
         return $field.Groups[1].Value.Trim().Trim('"').Trim("'")
     }
 
     return $null
 }
 
-function Get-PostSlugFromPath {
+function Get-PostSlugFromPath
+{
     param([string]$PathValue)
 
     $name = [System.IO.Path]::GetFileNameWithoutExtension($PathValue)
-    if ($name -match "^\d{4}-\d{2}-\d{2}-(.+)$") {
+    if ($name -match "^\d{4}-\d{2}-\d{2}-(.+)$")
+    {
         return $matches[1]
     }
 
     return $name
 }
 
-function Test-RelativeMediaFile {
+function Resolve-MediaReferencePath
+{
+    param(
+        [string]$MediaDir,
+        [string]$Reference
+    )
+
+    $pathPart = $Reference
+    if ($pathPart.StartsWith("/"))
+    {
+        $pathPart = $pathPart.TrimStart("/")
+        if ($pathPart.StartsWith("assets/img/posts/"))
+        {
+            return Join-Path $RepoRoot ($pathPart -replace "/", [System.IO.Path]::DirectorySeparatorChar)
+        }
+
+        return Join-Path $MediaDir ($pathPart -replace "/", [System.IO.Path]::DirectorySeparatorChar)
+    }
+
+    $decoded = [System.Uri]::UnescapeDataString($pathPart)
+    return Join-Path $MediaDir ($decoded -replace "/", [System.IO.Path]::DirectorySeparatorChar)
+}
+
+function Test-RelativeMediaFile
+{
     param(
         [string]$MediaDir,
         [string]$Reference,
         [string]$Context
     )
 
-    if ([string]::IsNullOrWhiteSpace($Reference)) {
+    if ([string]::IsNullOrWhiteSpace($Reference))
+    {
         Write-CheckError "$Context is empty."
         return
     }
 
-    if ($Reference -match "^[a-z]+://") {
+    if ($Reference -match "^[a-z]+://")
+    {
         Write-CheckOk "$Context is an external URL."
         return
     }
 
-    if (-not (Test-SafeMediaFileName -FileName $Reference)) {
+    if (-not (Test-SafeMediaFileName -FileName $Reference))
+    {
         Write-CheckError "$Context has characters that break site-relative URLs (only letters, digits, '.', '_', '-' are allowed): $Reference"
     }
 
-    $pathPart = $Reference
-    if ($pathPart.StartsWith("/")) {
-        $pathPart = $pathPart.TrimStart("/")
-        if ($pathPart.StartsWith("assets/img/posts/")) {
-            $candidate = Join-Path $RepoRoot ($pathPart -replace "/", [System.IO.Path]::DirectorySeparatorChar)
-        }
-        else {
-            $candidate = Join-Path $MediaDir ($pathPart -replace "/", [System.IO.Path]::DirectorySeparatorChar)
-        }
-    }
-    else {
-        $decoded = [System.Uri]::UnescapeDataString($pathPart)
-        $candidate = Join-Path $MediaDir ($decoded -replace "/", [System.IO.Path]::DirectorySeparatorChar)
-    }
-
-    if (Test-Path -LiteralPath $candidate) {
+    $candidate = Resolve-MediaReferencePath -MediaDir $MediaDir -Reference $Reference
+    if (Test-Path -LiteralPath $candidate)
+    {
         Write-CheckOk "$Context exists: $Reference"
     }
-    else {
+    else
+    {
         Write-CheckError "$Context is missing: $Reference"
     }
 }
 
-function Test-IncludeReferences {
+function Test-CoverImageHealth
+{
+    param(
+        [string]$MediaDir,
+        [string]$Reference
+    )
+
+    if ([string]::IsNullOrWhiteSpace($Reference) -or $Reference -match "^[a-z]+://")
+    {
+        return
+    }
+
+    $candidate = Resolve-MediaReferencePath -MediaDir $MediaDir -Reference $Reference
+    if (-not (Test-Path -LiteralPath $candidate -PathType Leaf))
+    {
+        return
+    }
+
+    # This is the file jekyll-seo-tag turns into og:image/twitter:image. Facebook
+    # rejects images over 8 MB and shrinks/crops below its recommended 600x315
+    # (minimum 200x200).
+    $file = Get-Item -LiteralPath $candidate
+    $sizeMb = [math]::Round($file.Length / 1MB, 1)
+    if ($file.Length -gt 8MB)
+    {
+        Write-CheckError "Cover image exceeds Facebook's 8 MB og:image limit ($sizeMb MB): $Reference"
+    }
+    elseif ($file.Length -gt 3MB)
+    {
+        Write-CheckWarning "Cover image is large ($sizeMb MB) and may slow page loads: $Reference"
+    }
+
+    $imgInfoPath = Join-Path (Join-Path $RepoRoot "_data") "img-info.json"
+    if (-not (Test-Path -LiteralPath $imgInfoPath -PathType Leaf))
+    {
+        return
+    }
+
+    $key = [System.IO.Path]::GetRelativePath($RepoRoot, $candidate).Replace('\', '/')
+    $imgInfo = Get-Content -LiteralPath $imgInfoPath -Raw | ConvertFrom-Json
+    $infoProperty = $imgInfo.PSObject.Properties[$key]
+    if ($null -eq $infoProperty)
+    {
+        return
+    }
+
+    $info = $infoProperty.Value
+    if ($null -eq $info -or -not $info.width -or -not $info.height)
+    {
+        return
+    }
+
+    if ($info.width -lt 200 -or $info.height -lt 200)
+    {
+        Write-CheckError "Cover image is smaller than Facebook's 200x200 minimum ($($info.width)x$($info.height)): $Reference"
+    }
+    elseif ($info.width -lt 600 -or $info.height -lt 315)
+    {
+        Write-CheckWarning "Cover image is below Facebook's recommended 600x315 size ($($info.width)x$($info.height)): $Reference"
+    }
+}
+
+function Test-IncludeReferences
+{
     param(
         [string]$Content,
         [string]$MediaDir
     )
 
     $includeMatches = [regex]::Matches($Content, "{%\s*include\s+(figure\.html|figure-pair\.html|embed/video-hls\.html)\s+(.*?)%}", "Singleline")
-    foreach ($include in $includeMatches) {
+    foreach ($include in $includeMatches)
+    {
         $includeName = $include.Groups[1].Value
         $args = $include.Groups[2].Value
 
-        foreach ($argName in @("img", "img1", "img2", "poster", "mp4")) {
+        foreach ($argName in @("img", "img1", "img2", "poster", "mp4"))
+        {
             $pattern = "(?:^|\s)$argName\s*=\s*[""']([^""']+)[""']"
-            foreach ($argMatch in [regex]::Matches($args, $pattern)) {
+            foreach ($argMatch in [regex]::Matches($args, $pattern))
+            {
                 Test-RelativeMediaFile -MediaDir $MediaDir -Reference $argMatch.Groups[1].Value -Context "$includeName $argName"
             }
         }
 
-        foreach ($argName in @("master")) {
+        foreach ($argName in @("master"))
+        {
             $pattern = "(?:^|\s)$argName\s*=\s*[""']([^""']+)[""']"
-            foreach ($argMatch in [regex]::Matches($args, $pattern)) {
+            foreach ($argMatch in [regex]::Matches($args, $pattern))
+            {
                 Test-RelativeMediaFile -MediaDir $MediaDir -Reference $argMatch.Groups[1].Value -Context "$includeName $argName"
             }
         }
     }
 }
 
-function Test-MediaManifest {
+function Test-MediaManifest
+{
     param([string]$MediaDir)
 
     $mediaFolder = Get-Item -LiteralPath $MediaDir
@@ -234,94 +340,117 @@ function Test-MediaManifest {
     $legacyManifestPath = Join-Path $MediaDir "media.yml"
     $manifestPath = if (Test-Path -LiteralPath $dataManifestPath) { $dataManifestPath } else { $legacyManifestPath }
     $manifest = Read-MediaManifestFile -ManifestPath $manifestPath
-    if (-not $manifest) {
+    if (-not $manifest)
+    {
         Write-CheckWarning "No media manifest found; using legacy media behavior."
         return
     }
 
     Write-CheckOk "media manifest exists: $manifestPath"
-    foreach ($image in $manifest.Images) {
+    foreach ($image in $manifest.Images)
+    {
         $sourcePath = Join-Path $MediaDir $image.Source
-        if (Test-Path -LiteralPath $sourcePath) {
+        if (Test-Path -LiteralPath $sourcePath)
+        {
             Write-CheckOk "media manifest source exists: $($image.Source)"
         }
-        else {
+        else
+        {
             Write-CheckError "media manifest source is missing: $($image.Source)"
         }
 
         $published = Get-PublishedImageName -Image $image
         $publishedPath = Join-Path $MediaDir $published
-        if (Test-Path -LiteralPath $publishedPath) {
+        if (Test-Path -LiteralPath $publishedPath)
+        {
             Write-CheckOk "media manifest published file exists: $published"
         }
-        else {
+        else
+        {
             Write-CheckWarning "media manifest published file is not generated yet: $published ($($image.Source))"
         }
 
-        if (-not (Test-SafeMediaFileName -FileName $published)) {
+        if (-not (Test-SafeMediaFileName -FileName $published))
+        {
             Write-CheckError "media manifest published file has characters that break site-relative URLs (only letters, digits, '.', '_', '-' are allowed): $published"
         }
     }
 
-    foreach ($video in $manifest.Videos) {
+    foreach ($video in $manifest.Videos)
+    {
         $sourcePath = Join-Path $MediaDir $video.Source
-        if (Test-Path -LiteralPath $sourcePath) {
+        if (Test-Path -LiteralPath $sourcePath)
+        {
             Write-CheckOk "media manifest source exists: $($video.Source)"
         }
-        else {
+        else
+        {
             Write-CheckError "media manifest source is missing: $($video.Source)"
         }
 
         $published = Get-PublishedVideoName -Video $video
         $publishedPath = Join-Path $MediaDir $published
-        if (Test-Path -LiteralPath $publishedPath) {
+        if (Test-Path -LiteralPath $publishedPath)
+        {
             Write-CheckOk "media manifest published file exists: $published"
         }
-        else {
+        else
+        {
             Write-CheckWarning "media manifest published file is not generated yet: $published ($($video.Source))"
         }
 
-        if (-not [string]::IsNullOrWhiteSpace($video.Poster)) {
+        if (-not [string]::IsNullOrWhiteSpace($video.Poster))
+        {
             $posterPath = Join-Path $MediaDir $video.Poster
-            if (Test-Path -LiteralPath $posterPath) {
+            if (Test-Path -LiteralPath $posterPath)
+            {
                 Write-CheckOk "media manifest poster file exists: $($video.Poster)"
             }
-            else {
+            else
+            {
                 Write-CheckWarning "media manifest poster file is not generated yet: $($video.Poster) ($($video.Source))"
             }
 
-            if (-not (Test-SafeMediaFileName -FileName $video.Poster)) {
+            if (-not (Test-SafeMediaFileName -FileName $video.Poster))
+            {
                 Write-CheckError "media manifest poster file has characters that break site-relative URLs (only letters, digits, '.', '_', '-' are allowed): $($video.Poster)"
             }
         }
     }
 }
 
-function Test-JekyllBuild {
+function Test-JekyllBuild
+{
     Push-Location $RepoRoot
-    try {
+    try
+    {
         Write-Host "[post-check] Running bundle exec jekyll build..." -ForegroundColor Cyan
         & bundle exec jekyll build
-        if ($LASTEXITCODE -ne 0) {
+        if ($LASTEXITCODE -ne 0)
+        {
             Write-CheckError "Jekyll build failed with exit code $LASTEXITCODE."
         }
-        else {
+        else
+        {
             Write-CheckOk "Jekyll build passed."
         }
     }
-    finally {
+    finally
+    {
         Pop-Location
     }
 }
 
 $resolvedPostPath = Resolve-PostPath -PathValue $PostPath -SlugValue $Slug
-if (-not (Test-Path -LiteralPath $resolvedPostPath)) {
+if (-not (Test-Path -LiteralPath $resolvedPostPath))
+{
     throw "Post path does not exist: $resolvedPostPath"
 }
 
 $content = Get-Content -LiteralPath $resolvedPostPath -Raw
 $frontMatter = Get-FrontMatter -Content $content
-if ($null -eq $frontMatter) {
+if ($null -eq $frontMatter)
+{
     Write-CheckError "Front matter block was not found."
     exit 1
 }
@@ -345,67 +474,84 @@ foreach ($required in @(
         @{ Name = "image.path"; Value = $imagePath },
         @{ Name = "image.thumb"; Value = $imageThumb },
         @{ Name = "image.alt"; Value = $imageAlt }
-    )) {
-    if ([string]::IsNullOrWhiteSpace($required.Value)) {
+    ))
+{
+    if ([string]::IsNullOrWhiteSpace($required.Value))
+    {
         Write-CheckError "Missing required front matter: $($required.Name)"
     }
-    else {
+    else
+    {
         Write-CheckOk "Found $($required.Name)."
     }
 }
 
-if ($categories.Count -lt 2) {
+if ($categories.Count -lt 2)
+{
     Write-CheckError "category should be an inline hierarchy like [Woodworking, Home Decor]."
 }
-else {
+else
+{
     Write-CheckOk "Category path: $($categories -join ' > ')"
 }
 
-if ($tags.Count -eq 0) {
+if ($tags.Count -eq 0)
+{
     Write-CheckWarning "No inline tags found. If this post uses multiline tags, consider normalizing it for the wizard workflow."
 }
-else {
+else
+{
     Write-CheckOk "Found $($tags.Count) tag(s)."
 }
 
-if (-not [string]::IsNullOrWhiteSpace($mediaSubpath)) {
+if (-not [string]::IsNullOrWhiteSpace($mediaSubpath))
+{
     $normalizedMediaSubpath = $mediaSubpath.Trim('"').Trim("'").TrimEnd("/")
     $expectedMediaSubpath = "/assets/img/posts/$postSlug"
-    if ($normalizedMediaSubpath -ne $expectedMediaSubpath) {
+    if ($normalizedMediaSubpath -ne $expectedMediaSubpath)
+    {
         Write-CheckWarning "media_subpath is '$mediaSubpath'; expected '$expectedMediaSubpath' based on filename."
     }
 
     $mediaRelative = $normalizedMediaSubpath.TrimStart("/") -replace "/", [System.IO.Path]::DirectorySeparatorChar
     $mediaDir = Join-Path $RepoRoot $mediaRelative
-    if (Test-Path -LiteralPath $mediaDir) {
+    if (Test-Path -LiteralPath $mediaDir)
+    {
         Write-CheckOk "Media folder exists: $normalizedMediaSubpath"
     }
-    else {
+    else
+    {
         Write-CheckError "Media folder is missing: $normalizedMediaSubpath"
     }
 
     Test-RelativeMediaFile -MediaDir $mediaDir -Reference $imagePath -Context "Cover image"
     Test-RelativeMediaFile -MediaDir $mediaDir -Reference $imageThumb -Context "Cover thumbnail"
+    Test-CoverImageHealth -MediaDir $mediaDir -Reference $imagePath
     Test-IncludeReferences -Content $content -MediaDir $mediaDir
     Test-MediaManifest -MediaDir $mediaDir
 }
 
 $iconPath = Join-Path (Join-Path $RepoRoot "_data") "category_icons.yml"
-if ($categories.Count -ge 1 -and (Test-Path -LiteralPath $iconPath)) {
+if ($categories.Count -ge 1 -and (Test-Path -LiteralPath $iconPath))
+{
     $iconContent = Get-Content -LiteralPath $iconPath -Raw
-    foreach ($category in $categories) {
+    foreach ($category in $categories)
+    {
         $escapedCategory = [regex]::Escape($category)
-        if ($iconContent -notmatch "(?m)^(`"$escapedCategory`"|$escapedCategory):\s+") {
-            Write-CheckWarning "No category icon configured for '$category'."
+        if ($iconContent -notmatch "(?m)^(`"$escapedCategory`"|$escapedCategory):\s+")
+        {
+            Write-CheckError "No category icon configured for '$category' in _data/category_icons.yml (likely a typo, or a new category/subcategory that needs an icon added)."
         }
     }
 }
 
-if ($BuildCheck) {
+if ($BuildCheck)
+{
     Test-JekyllBuild
 }
 
-if ($script:ErrorCount -gt 0) {
+if ($script:ErrorCount -gt 0)
+{
     Write-Host "[post-check] Completed with $script:ErrorCount error(s) and $script:WarningCount warning(s)." -ForegroundColor Red
     exit 1
 }

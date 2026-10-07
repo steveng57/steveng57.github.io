@@ -28,41 +28,48 @@ $RepoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $script:ErrorCount = 0
 $script:WarningCount = 0
 
-function Write-MediaError {
+function Write-MediaError
+{
     param([string]$Message)
     $script:ErrorCount++
     Write-Host "[media-check] ERROR: $Message" -ForegroundColor Red
 }
 
-function Write-MediaWarning {
+function Write-MediaWarning
+{
     param([string]$Message)
     $script:WarningCount++
     Write-Host "[media-check] WARN: $Message" -ForegroundColor Yellow
 }
 
-function Write-MediaOk {
+function Write-MediaOk
+{
     param([string]$Message)
     Write-Verbose "[media-check] OK: $Message"
 }
 
-function Test-SiteRelativeName {
+function Test-SiteRelativeName
+{
     param(
         [string]$Value,
         [string]$Context
     )
 
-    if ([string]::IsNullOrWhiteSpace($Value)) {
+    if ([string]::IsNullOrWhiteSpace($Value))
+    {
         Write-MediaError "$Context is empty."
         return $false
     }
 
-    if ([System.IO.Path]::IsPathRooted($Value) -or $Value -match '^[a-z]+://') {
+    if ([System.IO.Path]::IsPathRooted($Value) -or $Value -match '^[a-z]+://')
+    {
         Write-MediaError "$Context must be relative to the post media folder: $Value"
         return $false
     }
 
     $parts = $Value -split '[\\/]'
-    if ($parts -contains '..') {
+    if ($parts -contains '..')
+    {
         Write-MediaError "$Context cannot contain '..': $Value"
         return $false
     }
@@ -70,7 +77,8 @@ function Test-SiteRelativeName {
     return $true
 }
 
-function Test-ExistingFile {
+function Test-ExistingFile
+{
     param(
         [string]$MediaDir,
         [string]$RelativePath,
@@ -78,25 +86,30 @@ function Test-ExistingFile {
         [switch]$WarningOnly
     )
 
-    if (-not (Test-SiteRelativeName -Value $RelativePath -Context $Context)) {
+    if (-not (Test-SiteRelativeName -Value $RelativePath -Context $Context))
+    {
         return
     }
 
     $path = Join-Path $MediaDir ($RelativePath -replace '/', [System.IO.Path]::DirectorySeparatorChar)
-    if (Test-Path -LiteralPath $path -PathType Leaf) {
+    if (Test-Path -LiteralPath $path -PathType Leaf)
+    {
         Write-MediaOk "$Context exists: $RelativePath"
         return
     }
 
-    if ($WarningOnly) {
+    if ($WarningOnly)
+    {
         Write-MediaWarning "$Context is not generated yet: $RelativePath"
     }
-    else {
+    else
+    {
         Write-MediaError "$Context is missing: $RelativePath"
     }
 }
 
-function Test-DuplicateValue {
+function Test-DuplicateValue
+{
     param(
         [object[]]$Items,
         [scriptblock]$Selector,
@@ -104,37 +117,91 @@ function Test-DuplicateValue {
     )
 
     $seen = @{}
-    foreach ($item in @($Items)) {
+    foreach ($item in @($Items))
+    {
         $value = (& $Selector $item)
-        if ([string]::IsNullOrWhiteSpace($value)) {
+        if ([string]::IsNullOrWhiteSpace($value))
+        {
             continue
         }
 
-        if ($seen.ContainsKey($value)) {
+        if ($seen.ContainsKey($value))
+        {
             Write-MediaError "$Context is duplicated: $value"
         }
-        else {
+        else
+        {
             $seen[$value] = $true
         }
     }
 }
 
-function Test-SafeFileNameValue {
+function Test-SafeFileNameValue
+{
     param(
         [string]$Value,
         [string]$Context
     )
 
-    if ([string]::IsNullOrWhiteSpace($Value) -or $Value -match '^[a-z]+://') {
+    if ([string]::IsNullOrWhiteSpace($Value) -or $Value -match '^[a-z]+://')
+    {
         return
     }
 
-    if (-not (Test-SafeMediaFileName -FileName $Value)) {
+    if (-not (Test-SafeMediaFileName -FileName $Value))
+    {
         Write-MediaError "$Context has characters that break site-relative URLs (only letters, digits, '.', '_', '-' are allowed): $Value"
     }
 }
 
-function Test-MediaManifestFile {
+function Test-OrphanedMediaFiles
+{
+    param(
+        [string]$MediaDir,
+        [string]$Slug,
+        $Manifest
+    )
+
+    $referenced = New-Object 'System.Collections.Generic.HashSet[string]' ([StringComparer]::OrdinalIgnoreCase)
+    if (-not [string]::IsNullOrWhiteSpace($Manifest.Cover))
+    {
+        [void]$referenced.Add($Manifest.Cover)
+    }
+
+    foreach ($image in @($Manifest.Images))
+    {
+        if (-not [string]::IsNullOrWhiteSpace($image.Source))
+        {
+            [void]$referenced.Add($image.Source)
+        }
+        $published = Get-PublishedImageName -Image $image
+        if (-not [string]::IsNullOrWhiteSpace($published))
+        {
+            [void]$referenced.Add($published)
+        }
+    }
+
+    foreach ($video in @($Manifest.Videos))
+    {
+        if (-not [string]::IsNullOrWhiteSpace($video.Source))
+        {
+            [void]$referenced.Add($video.Source)
+        }
+    }
+
+    # Thumbnails/tinyfiles/lqip/stream are derived side-folders, not scanned here.
+    $topLevelFiles = @(Get-ChildItem -LiteralPath $MediaDir -File | Where-Object { $_.Name -ne 'media.yml' })
+    foreach ($file in $topLevelFiles)
+    {
+        if (-not $referenced.Contains($file.Name))
+        {
+            Write-MediaWarning "$Slug has a media file not referenced by the manifest (unused or forgotten): $($file.Name)"
+        }
+    }
+}
+
+function Test-MediaManifestFile
+{
     param(
         [System.IO.FileInfo]$ManifestFile,
         [string]$AssetsRoot
@@ -144,18 +211,21 @@ function Test-MediaManifestFile {
     $mediaDir = Join-Path $AssetsRoot $slug
     Write-Verbose "[media-check] Checking $slug"
 
-    if (-not (Test-Path -LiteralPath $mediaDir -PathType Container)) {
+    if (-not (Test-Path -LiteralPath $mediaDir -PathType Container))
+    {
         Write-MediaError "media folder is missing for manifest: assets/img/posts/$slug"
         return
     }
 
     $manifest = Read-MediaManifestFile -ManifestPath $ManifestFile.FullName
-    if (-not $manifest) {
+    if (-not $manifest)
+    {
         Write-MediaError "manifest could not be read: $($ManifestFile.FullName)"
         return
     }
 
-    if (-not [string]::IsNullOrWhiteSpace($manifest.Cover)) {
+    if (-not [string]::IsNullOrWhiteSpace($manifest.Cover))
+    {
         Test-ExistingFile -MediaDir $mediaDir -RelativePath $manifest.Cover -Context "$slug cover"
         Test-SafeFileNameValue -Value $manifest.Cover -Context "$slug cover"
     }
@@ -165,7 +235,8 @@ function Test-MediaManifestFile {
     Test-DuplicateValue -Items $manifest.Videos -Selector { param($item) Get-PublishedVideoName -Video $item } -Context "$slug video published key"
     Test-DuplicateValue -Items $manifest.Videos -Selector { param($item) $item.Source } -Context "$slug video source"
 
-    foreach ($image in @($manifest.Images)) {
+    foreach ($image in @($manifest.Images))
+    {
         $published = Get-PublishedImageName -Image $image
         $label = "$slug image $published"
 
@@ -173,67 +244,82 @@ function Test-MediaManifestFile {
         Test-ExistingFile -MediaDir $mediaDir -RelativePath $published -Context "$label published file" -WarningOnly
         Test-SafeFileNameValue -Value $published -Context "$label published file"
 
-        if ($image.Thumbnail) {
+        if ($image.Thumbnail)
+        {
             Test-ExistingFile -MediaDir $mediaDir -RelativePath "thumbnails/$published" -Context "$label thumbnail" -WarningOnly
             Test-ExistingFile -MediaDir $mediaDir -RelativePath "thumbnails-2x/$published" -Context "$label 2x thumbnail" -WarningOnly
         }
 
-        if ($image.Gallery) {
+        if ($image.Gallery)
+        {
             Test-ExistingFile -MediaDir $mediaDir -RelativePath "tinyfiles/$published" -Context "$label gallery tinyfile" -WarningOnly
         }
     }
 
-    foreach ($video in @($manifest.Videos)) {
+    foreach ($video in @($manifest.Videos))
+    {
         $published = Get-PublishedVideoName -Video $video
         $label = "$slug video $published"
 
         Test-ExistingFile -MediaDir $mediaDir -RelativePath $video.Source -Context "$label source"
         Test-ExistingFile -MediaDir $mediaDir -RelativePath $published -Context "$label HLS master" -WarningOnly
 
-        if (-not [string]::IsNullOrWhiteSpace($video.Poster)) {
+        if (-not [string]::IsNullOrWhiteSpace($video.Poster))
+        {
             Test-ExistingFile -MediaDir $mediaDir -RelativePath $video.Poster -Context "$label poster" -WarningOnly
             Test-SafeFileNameValue -Value $video.Poster -Context "$label poster"
         }
     }
+
+    Test-OrphanedMediaFiles -MediaDir $mediaDir -Slug $slug -Manifest $manifest
 }
 
 $mediaDataDir = Get-MediaDataDirectory -RepoRoot $RepoRoot
 $assetsRoot = Join-Path (Join-Path (Join-Path $RepoRoot "assets") "img") "posts"
 
-if (-not (Test-Path -LiteralPath $mediaDataDir -PathType Container)) {
+if (-not (Test-Path -LiteralPath $mediaDataDir -PathType Container))
+{
     throw "Media manifest directory does not exist: $mediaDataDir"
 }
 
-if (-not (Test-Path -LiteralPath $assetsRoot -PathType Container)) {
+if (-not (Test-Path -LiteralPath $assetsRoot -PathType Container))
+{
     throw "Post media directory does not exist: $assetsRoot"
 }
 
-$manifestFiles = if ([string]::IsNullOrWhiteSpace($Slug)) {
+$manifestFiles = if ([string]::IsNullOrWhiteSpace($Slug))
+{
     @(Get-ChildItem -LiteralPath $mediaDataDir -Filter "*.yml" -File | Sort-Object Name)
 }
-else {
+else
+{
     $manifestPath = Get-MediaManifestPath -Slug $Slug -RepoRoot $RepoRoot
-    if (-not (Test-Path -LiteralPath $manifestPath -PathType Leaf)) {
+    if (-not (Test-Path -LiteralPath $manifestPath -PathType Leaf))
+    {
         throw "Media manifest does not exist for slug '$Slug': $manifestPath"
     }
 
     @(Get-Item -LiteralPath $manifestPath)
 }
 
-foreach ($manifestFile in $manifestFiles) {
+foreach ($manifestFile in $manifestFiles)
+{
     Test-MediaManifestFile -ManifestFile $manifestFile -AssetsRoot $assetsRoot
 }
 
 $legacyFiles = @(Get-ChildItem -LiteralPath $assetsRoot -Filter "media.yml" -File -Recurse)
-foreach ($legacyFile in $legacyFiles) {
+foreach ($legacyFile in $legacyFiles)
+{
     Write-MediaWarning "legacy media.yml remains under assets/img/posts: $($legacyFile.FullName)"
 }
 
-if ($TreatWarningsAsErrors -and $script:WarningCount -gt 0) {
+if ($TreatWarningsAsErrors -and $script:WarningCount -gt 0)
+{
     $script:ErrorCount += $script:WarningCount
 }
 
-if ($script:ErrorCount -gt 0) {
+if ($script:ErrorCount -gt 0)
+{
     Write-Host "[media-check] Completed with $script:ErrorCount error(s) and $script:WarningCount warning(s)." -ForegroundColor Red
     exit 1
 }

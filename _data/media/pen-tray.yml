@@ -30,7 +30,7 @@ images:
     caption: "BenchPilot"
 
   "IMG_2359.avif":
-    source: "IMG_2359.HEIC"
+    source: "IMG_2359.jpg"
     include: true
     gallery: false
     thumbnail: false

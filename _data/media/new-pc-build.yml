@@ -15,7 +15,7 @@ images:
     thumbnail: false
     caption: "It has arrived!"
 
-  "Fractal-Case.png":
+  "Fractal-Case.avif":
     source: "Fractal-Case.png"
     include: true
     gallery: false
@@ -29,21 +29,21 @@ images:
     thumbnail: false
     caption: "A Modern CPU"
 
-  "gigabyte-motherboard.png":
+  "gigabyte-motherboard.avif":
     source: "gigabyte-motherboard.png"
     include: true
     gallery: false
     thumbnail: false
     caption: "Gigabyte Motherboard"
 
-  "corsair-ssd.png":
+  "corsair-ssd.avif":
     source: "corsair-ssd.png"
     include: true
     gallery: false
     thumbnail: false
     caption: "A Modern Drive"
 
-  "T1000_3QTR-Front-Right.png":
+  "T1000_3QTR-Front-Right.avif":
     source: "T1000_3QTR-Front-Right.png"
     include: true
     gallery: false
