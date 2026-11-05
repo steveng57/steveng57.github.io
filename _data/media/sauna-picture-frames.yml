@@ -55,7 +55,7 @@ images:
     include: true
     gallery: false
     thumbnail: false
-    caption: "Fine AffogatoFinish"
+    caption: "Fine Affogato Finish"
 
   "Affogato.avif":
     source: "Affogato.jpg"
