@@ -51,6 +51,8 @@
   {% assign posts = site.posts %}
 {% endif %}
 
+{% comment %}Homepage mode renders its lists through the nested includes above.{% endcomment %}
+{% unless include.mode == 'homepage' %}
 {% if include.exclude != blank %}
   {% assign _excl = include.exclude | split: '|' %}
   {% assign _deduped = '' | split: '' %}
@@ -77,3 +79,4 @@
     {% endif %}
   {% endfor %}
 </div>
+{% endunless %}
