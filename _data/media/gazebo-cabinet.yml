@@ -28,3 +28,38 @@ images:
     gallery: false
     thumbnail: false
     caption: "Full Height Shot"
+
+  "IMG_3294.avif":
+    source: "IMG_3294.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Some spare red oak"
+
+  "IMG_3295.avif":
+    source: "IMG_3295.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Made two panels, then put the two together"
+
+  "IMG_3299.avif":
+    source: "IMG_3299.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "A New Thing"
+
+  "IMG_3302.avif":
+    source: "IMG_3302.HEIC"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "A Finger Pull"
+
+  "IMG_3305.avif":
+    source: "IMG_3305.heic"
+    include: true
+    gallery: false
+    thumbnail: false
+    caption: "Door Installed"

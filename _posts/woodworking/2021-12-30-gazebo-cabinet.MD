@@ -4,7 +4,7 @@ description: A custom-fit solid-oak cabinet for the gazebo.
 date: 2021-12-31 18:32:00 -0500
 last_modified_at: 2024-03-07 18:00:14 -0500
 category: [Woodworking, Furniture]
-tags: [Woodworking, Red Oak, Cabinets, Shelves, Dominos]
+tags: [Woodworking, Red Oak, Cabinets, Shelves, Dominos, Finger Pull]
 image:
   path: IMG_0758C.avif
   thumb: /thumbnails/IMG_0758C.avif
@@ -42,9 +42,32 @@ We were going to put a little fridge and microwave in there, but current thinkin
 
 {% include figure.html img="IMG_0759.avif" align="center" %}
 
+## Update: New Door
+
+Debbie wanted a door for the opening on the lower right opening.  This was a great first-project-of-the-season type of thing, as it was pretty minimal, and I got to try something new.
+
+{% include figure-pair.html img1="IMG_3294.avif" img2="IMG_3295.avif" %}
+
+{% include clear-float.html %}
+
+I started with some red oak that I had lying around the shop.  I cut a half-dozen slats and glued them together to make the panel.
+
+{% include figure-pair.html img1="IMG_3299.avif" img2="IMG_3302.avif"%}
+
+{% include clear-float.html %}
+
+The new thing that I got to try was the finger pull.  It requires a special bit and the Shaper Origin.  I have to learn to work with that drill bit a bit better: there was some burning on the inner surfaces.  Luckily, thanks to some sanding and the black finish, you will never see it.
+
+{% include figure.html img="IMG_3305.avif" align="center" %}
+
+{% include clear-float.html %}
+
+The door matches the existing cabinet very well.  I put my standard 2mm reveal around the door and it fit nicely into place on some black onyx Blum hinges.  
+
 ## Materials
 
 - Red Oak {{ site.data.links.kjp }}
 - {{ site.data.links.rubio }} Intense Black Precolour Easy, Black Oil 2C for finish
 - {{ site.data.links.domino }} for pretty much all joinery, except pocket holes for the back stretchers
+- {{ site.data.links.origin }} for cutting the finger pull
 {: .sjg-list }
